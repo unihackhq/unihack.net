@@ -1,0 +1,12 @@
+# Where things are
+source:       ./app
+destination:  ./site
+layouts_dir:  ./app/_layouts
+data_dir:     ./_data
+includes_dir: ./app/_includes
+collections:  null
+
+# Outputting
+permalink:     pretty
+paginate_path: /page:num
+timezone:      Australia/Melbourne

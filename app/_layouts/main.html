@@ -1,0 +1,57 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% if page.slug == 'home' %}
+  <title>UNIHACK 2016 &mdash; Coming Soon &mdash; Melbourne, Australia</title>
+  {% else %}
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK 2016</title>
+  {% endif %}
+  <link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,700|Open+Sans:300,400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header id="gl-head">
+    <div class="wrap">
+      <h1>
+        <span>UNI</span>
+        <span>HACK</span>
+      </h1>
+      <nav id="main-nav">
+        <a class="trigger fa"></a>
+        <ul>
+          <li class="home {% if page.slug == 'home' %}selected{% endif %}"><a href="#">Home</a></li>
+          <li class="past-events {% if page.slug == 'past-events' %}selected{% endif %}"><a href="#">Past Events</a></li>
+          <li class="about {% if page.slug == 'about' %}selected{% endif %}"><a href="#">About Us</a></li>
+          <li class="sponsor {% if page.slug == 'sponsor' %}selected{% endif %}"><a href="#">Sponsor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  {{content}}
+
+  <footer id="gl-foot">
+    <div class="wrap">
+      <div class="col credits">
+        <p>Design and Development by <a href="http://terencehuynh.com">Terence Huynh</a></p>
+        <p>Photography by <a href="http://www.facebook.com/tomsolariphotography/">Tom Solari</a> and <a href="http://www.twitter.com/DeveloperSteve">Steven Cooper</a></p>
+        <p class="gap">Powered by <a href="https://en.wikipedia.org/wiki/Caffeine">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></a></p>
+        <p>Made with <i class="fa fa-heart love"></i> in Melbourne, Australia</p>
+      </div>
+      <div class="col logo">
+        <p>Organised by</p>
+        <p><a class="wired-logo" href="http://wired.org.au"><span>WIRED Monash</span></a></p>
+        <p>&copy; 2015 WIRED Monash. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/site.js"></script>
+</body>
+</html>

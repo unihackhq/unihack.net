@@ -1,0 +1,292 @@
+// main: style.less
+
+#home-hero {
+  width: 100vw;
+  max-width: 100%;
+  height: @hero-height;
+  background: url("../img/home-hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+  margin-top: @head-height;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,0.4);
+    width: 100vw;
+    max-width: 100%;
+    height: @hero-height;
+    content: ' ';
+    display: block;
+  }
+
+  #home-wrap {
+    height: @hero-height;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: @titillium;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: @unihack-accent;
+    margin: 0 0 12px;
+
+    span {
+      display: block;
+
+      b {
+        display: inline-block;
+        padding: 7px;
+        line-height: 2rem;
+        font-weight: 300;
+      }
+    }
+
+    span.boxed b {
+      padding: 7px;
+      background: @unihack-accent;
+      color: black;
+      font-size: 3rem;
+      line-height: 2.5rem;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+    margin: 0 0 0 7px;
+    font-weight: 300;
+  }
+}
+
+#home-about {
+  border-bottom: 0;
+}
+
+#home-about .wrap {
+  * {
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    font-family: @titillium;
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+
+  p {
+    margin-bottom: 28px;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+  }
+
+  p.large {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: @titillium;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Home Page Grid */
+
+.grid {
+  padding: 0;
+  overflow: hidden;
+
+  .grid-item {
+    background: black;
+    display: block;
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grid-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .grid-item .hover {
+    #gradient > .vertical( rgba(0,0,0,0.0), rgba(0,0,0,0.7) );
+    background-color: transparent;
+    position: absolute;
+    z-index: 3;
+    padding: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: table-cell;
+    vertical-align: bottom;
+
+    h4, p {
+      .opacity(0.7);
+      .transition(0.3s);
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      color: white;
+      margin: 0 0 6px;
+      font-family: @titillium;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      margin: 0;
+      color: white;
+    }
+  }
+
+  .grid-item:hover .hover {
+    h4, p {
+      .opacity(1);
+    }
+  }
+
+}
+
+@media (min-width: @screen-sm) {
+  .grid {
+    .grid-item {
+      width: 50%;
+    }
+
+    .grid-item.grid-2x2 {
+      width: 100%;
+      height: 500px;
+
+      .hover h4 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+
+      .hover p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #home-hero {
+    height: @hero-height-xl;
+
+    &:before {
+      height: @hero-height-xl;
+    }
+
+    #home-wrap {
+      height: @hero-height-xl;
+    }
+
+    h2 {
+      font-size: 4rem;
+      line-height: 3.5rem;
+      margin: 0 0 32px;
+
+      span b {
+        line-height: 3.5rem;
+      }
+
+      span.boxed b {
+        font-size: 5rem;
+        line-height: 4.5rem;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin: 0 0 0 7px;
+      font-weight: 300;
+    }
+  }
+  
+  #home-about .wrap {
+    * {
+      margin: 0 auto;
+      max-width: 960px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 21px;
+      text-transform: uppercase;
+      font-family: @titillium;
+      font-size: 1rem;
+      letter-spacing: 4px;
+    }
+
+    p {
+      margin-bottom: 28px;
+      font-size: 1.125rem;
+      line-height: 2rem;
+      font-weight: 300;
+    }
+
+    p.large {
+      font-size: 2rem;
+      line-height: 2.75rem;
+      font-family: @titillium;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+  .grid {
+    .grid-column {
+      float: left;
+      width: 50%;
+    }
+
+    .grid-item.grid-2x2 {
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: @screen-lg) {
+  .grid {
+    margin-bottom: 48px;
+    padding: 0;
+
+    .grid-item.grid-2x2 {
+      height: 586px;
+    }
+  }
+}
+
+@media (min-width: @screen-xl) {
+  .grid {
+    .grid-item.grid-2x2 {
+      height: 720px;
+    }
+  }
+}

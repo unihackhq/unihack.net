@@ -1,0 +1,36 @@
+// main: style.less
+
+* {
+  .box-sizing(border-box);
+}
+
+body {
+  background: @bg-colour;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+p {
+  color: @body-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  .border-top-radius(5px);
+  .border-left-radius(5px);
+  .border-right-radius(5px);
+  .border-bottom-radius(5px);
+  border: 2px solid @link-color;
+  color: @link-color;
+  padding: 5px 9px;
+  line-height: 1;
+}
+
+.btn:hover {
+  background: @link-color-hover;
+  border-color: @link-color-hover;
+  color: white;
+}

@@ -1,0 +1,262 @@
+// main: style.less
+
+.wrap {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 48px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#gl-head {
+  background: @head-bg;
+  height: @head-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  h1 {
+    margin: 0;
+    float: left;
+    height: @head-height;
+    width: @head-height;
+    padding: 11px 0;
+    color: white;
+
+    span {
+      display: block;
+      font-size: 2rem;
+      font-family: "Titillium Web", Open Sans, sans-serif;
+      font-weight: 700;
+      line-height: 1.75rem;
+      letter-spacing: -1px;
+    }
+
+    span.light {
+      font-weight: 300;
+    }
+  }
+}
+
+#main-nav {
+  float: right;
+  height: @head-height;
+
+  ul {
+    list-style: none;
+    display: @head-bg;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: @head-height;
+    left: 0;
+    right: 0;
+    background: black;
+    z-index: 3;
+    border-top: 1px solid #333;
+    display: none;
+
+    li {
+      display: block;
+    }
+
+    a {
+      color: @head-link;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      font-family: @titillium;
+      font-weight: 700;
+      padding: 15px;
+      border-bottom: 1px solid #333;
+      display: block;
+      text-align: center;
+    }
+
+    a:hover {
+      background: lighten(@head-bg, 10%);
+    }
+
+    .home.selected a {
+      color: @unihack-accent;
+    }
+  }
+
+  a.trigger {
+    color: white;
+    display: block;
+    line-height: @head-height;
+    font-size: 1.5rem;
+
+    &:before {
+      content: "\f0c9";
+    }
+  }
+
+}
+
+#gl-foot {
+  text-align: center;
+  background: @footer-bg;
+  position: relative;
+  overflow: hidden;
+
+  .col {
+    padding: 30px 0;
+    margin: 0 -15px;
+    z-index: 4;
+    position: relative;
+  }
+
+  .credits {
+    h6 {
+      margin: 0 0 8px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      font-family: @titillium;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0 0 4px;
+    }
+
+    p.gap {
+      margin: 16px 0 4px;
+    }
+
+    .love {
+      color: #ff0000;
+    }
+  }
+
+  .logo {
+    background: @wired-purple;
+
+    p {
+      margin: 0 0 4px;
+      color: white;
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+    }
+
+    a {
+      height: 65px;
+      width: 200px;
+      background: url("../img/wired-logo-footer.png") top left no-repeat;
+      background-size: contain;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: 0.75rem;
+    margin: 0;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: @footer-text;
+  }
+
+  a {
+    color: @footer-link;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @screen-sm) {
+  #main-nav {
+    height: @head-height;
+
+    ul {
+      display: block !important;
+      position: relative;
+      top: 0;
+      margin: 0 -15px 0 0;
+      padding: 0;
+      border-top: 0;
+
+      li {
+        height: @head-height;
+        display: block;
+        float: left;
+      }
+
+      a {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px 15px;
+        height: @head-height;
+        border-bottom: 0;
+      }
+
+      a:hover {
+        background: lighten(@head-bg, 10%);
+      }
+    }
+
+    a.trigger {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+  .wrap {
+    padding: 0 30px;
+  }
+
+  #gl-foot {
+    padding: 42px 0;
+
+    &:before {
+      position: absolute;
+      content: ' ';
+      width: 50vw;
+      height: 100%;
+      background: @wired-purple;
+      display: block;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+
+    .col {
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      float: left;
+    }
+
+    .credits {
+      text-align: left;
+    }
+
+    .logo {
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: @screen-lg) {
+  .wrap {
+    width: @wrap-lg;
+  }
+}
+
+@media (min-width: @screen-xl) {
+  .wrap {
+    width: @wrap-max;
+  }
+}
