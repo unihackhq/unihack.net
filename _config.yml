@@ -3,6 +3,9 @@ destination:  ./site
 data_dir:     ./_data
 collections:  null
 
+# Exclude DIR
+exclude: [/less]
+
 # Outputting
 permalink:     pretty
 paginate_path: /page:num

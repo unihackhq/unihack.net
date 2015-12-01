@@ -34,3 +34,23 @@ a {
   border-color: @link-color-hover;
   color: white;
 }
+
+.wrap {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row {
+  .make-row();
+}
+
+@media (min-width: @screen-sm) {
+  .section {
+    padding: 48px 0;
+  }
+}

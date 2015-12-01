@@ -1,6 +1,10 @@
----
-layout: compress
----
+<!--
+Hello, it's me
+I was wondering if after all these years you'd like to meet
+To go over everything
+They say that time's supposed to heal ya
+But I ain't done much healing.
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +16,7 @@ layout: compress
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK 2016</title>
   {% endif %}
   <link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,700|Open+Sans:300,400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -25,10 +29,10 @@ layout: compress
       <nav id="main-nav">
         <a class="trigger fa"></a>
         <ul>
-          <li class="home {% if page.slug == 'home' %}selected{% endif %}"><a href="#">Home</a></li>
-          <li class="past-events {% if page.slug == 'past-events' %}selected{% endif %}"><a href="#">Past Events</a></li>
-          <li class="about {% if page.slug == 'about' %}selected{% endif %}"><a href="#">About Us</a></li>
-          <li class="sponsor {% if page.slug == 'sponsor' %}selected{% endif %}"><a href="#">Sponsor</a></li>
+          <li class="home {% if page.page == 'home' %}selected{% endif %}"><a href="#">Home</a></li>
+          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="#">Past Events</a></li>
+          <li class="about {% if page.page == 'about' %}selected{% endif %}"><a href="#">About Us</a></li>
+          <li class="sponsor {% if page.page == 'sponsor' %}selected{% endif %}"><a href="#">Sponsor</a></li>
         </ul>
       </nav>
     </div>
@@ -52,6 +56,6 @@ layout: compress
     </div>
   </footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/site.js"></script>
+  <script type="text/javascript" src="/js/site.js"></script>
 </body>
 </html>

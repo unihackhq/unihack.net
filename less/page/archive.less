@@ -1,0 +1,251 @@
+// main: ../style.less
+
+/* Event Archive Index */
+
+.event-col {
+  .make-column(6);
+}
+
+.event-card {
+  .box-shadow(0px 0px 5px 0px rgba(0,0,0,0.2));
+  border: 1px solid #e9e9e9;
+  margin-bottom: 20px;
+
+  img {
+    margin: 0px -20px 12px -20px;
+    max-width: 100%;
+  }
+
+  a {
+    text-align: center;
+    padding: 0 20px;
+
+    h3 {
+      color: #333;
+      margin: 0px;
+      font-size: 2rem;
+      letter-spacing: -1px;
+      font-family: @titillium;
+    }
+
+    p {
+      color: #999;
+      margin: 0 0 6px;
+    }
+
+    p.subtitle {
+      color: #333;
+      margin: 0 0 28px;
+      font-size: 1.3125rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.event-header,
+.event-header-overlay {
+  height: @event-header-height;
+}
+
+.event-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center bottom;
+  position: relative;
+
+  &:before {
+    #gradient > .vertical( rgba(0,0,0,0.0), rgba(0,0,0,0.7) );
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    content: ' ';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &#unihack-2015 {
+    background-image: url('../img/unihack-2015-event-sm.jpg');
+  }
+}
+
+.event-header-overlay {
+  display: table-cell;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 30px 0;
+
+  h2 {
+    color: white;
+    font-size: 4rem;
+    line-height: 3rem;
+    letter-spacing: -1px;
+    font-family: @titillium;
+    margin: 0 0 10px;
+  }
+
+  p {
+    color: #c0c0c0;
+    font-size: 1.125rem;
+    margin: 0 0 3px;
+  }
+
+  p.subtitle {
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+  }
+}
+
+.event-section {
+  h3 {
+    font-size: 1.3125rem;
+    line-height: 1.3125rem;
+    font-family: @titillium;
+    margin: 0 0 36px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    span {
+      display: inline-block;
+      padding: 0 3px 8px 3px;
+      border-bottom: 5px solid black;
+    }
+  }
+}
+
+#event-by-the-numbers {
+  background: #f0f0f0;
+  .stat-3 {
+    .make-column(3);
+    text-align: center;
+
+    p {
+      font-size: 1.3125rem;
+      margin: 0 0 20px;
+      font-weight: 300;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 3px;
+      font-weight: 700;
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+      letter-spacing: -1px;
+    }
+  }
+}
+
+#event-winners {
+  .winner-top {
+    .make-column(12);
+  }
+
+  .winner-6, .winner {
+    .make-column(6);
+  }
+
+  .winner-card {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+
+    a {
+      display: block;
+      padding: 20px;
+
+      h4 {
+        color: black;
+      }
+    }
+
+    h4 {
+      font-family: @titillium;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+
+    p.team {
+      font-size: 1.3125rem;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    p.university {
+      margin: 4px 0 0;
+      font-size: 0.75rem;
+      color: #969696;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  .winner-card.top {
+    h4 {
+      font-size: 1.125rem;
+    }
+
+    p.team {
+      font-size: 1.75rem;
+    }
+
+    p.university {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media (min-width: @screen-sm) {
+  .event-card {
+    margin-bottom: 0px;
+  }
+
+  .event-header,
+  .event-header-overlay {
+    height: @event-header-height-xl;
+  }
+
+  .event-header {
+    &#unihack-2015 {
+      background-image: url('../img/unihack-2015-event-lg.jpg');
+    }
+  }
+
+  .event-header-overlay {
+    vertical-align: bottom;
+  }
+
+  #event-winners {
+    .winner {
+      .make-column(6);
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+  #event-winners {
+    .winner {
+      .make-column(4);
+    }
+
+    .winner-top {
+      .make-column(6);
+      .make-column-offset(3);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# This file is necessary in order to ensure there is an order to the previous
+# events (in case we run additional UNIHACK-branded events).
+
+- event: unihack-2015
+- event: unihack-2014

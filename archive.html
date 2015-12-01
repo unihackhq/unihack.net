@@ -1,0 +1,34 @@
+---
+layout: history
+title: Past Events
+page: archive
+subpage: index
+---
+
+<div id="page-header">
+  <div class="wrap">
+    <h2>Past Events</h2>
+    <p>Find all the information you need about our past hackathons.</p>
+  </div>
+</div>
+
+<div id="page-events-list" class="section">
+  <div class="wrap">
+    <div class="row">
+      {% for event_hash in site.data.previous_events %}
+      {% assign event = site.data.events[event_hash.event] %}
+      <div class="event-col">
+        <div class="event-card">
+          <a href="{{ event.url }}" class="overlay">
+            <img src="{{ event.img }}" alt="{{ event.title }}" />
+            <h3>{{ event.title }}</h3>
+            <p class="subtitle">{{ event.subtitle }}</p>
+            <p class="date">{{ event.date }}</p>
+            <p class="location">{{ event.location }}</p>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
