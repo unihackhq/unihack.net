@@ -1060,6 +1060,9 @@ a {
 .event-header#unihack-2015 {
   background-image: url('../img/unihack-2015-event-sm.jpg');
 }
+.event-header#unihack-2014 {
+  background-image: url('../img/unihack-2014-event-sm.jpg');
+}
 .event-header-overlay {
   display: table-cell;
   width: 100vw;
@@ -1407,6 +1410,9 @@ a {
   }
   .event-header#unihack-2015 {
     background-image: url('../img/unihack-2015-event-lg.jpg');
+  }
+  .event-header#unihack-2014 {
+    background-image: url('../img/unihack-2014-event-lg.jpg');
   }
   .event-header-overlay {
     padding: 30px 0;
