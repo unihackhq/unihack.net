@@ -8,6 +8,7 @@ body {
   background: @bg-colour;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  padding-top: @head-height;
 }
 
 p {
@@ -16,6 +17,18 @@ p {
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-rounded {
+  .border-top-radius(50%);
+  .border-left-radius(50%);
+  .border-right-radius(50%);
+  .border-bottom-radius(50%);
 }
 
 .btn {
@@ -43,6 +56,23 @@ a {
 .section {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
+
+  h3 {
+    font-size: 1.3125rem;
+    line-height: 1.3125rem;
+    font-family: @titillium;
+    margin: 0 0 36px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    span {
+      display: inline-block;
+      padding: 0 1px 8px 3px;
+      border-bottom: 5px solid black;
+    }
+  }
 }
 
 .row {

@@ -365,12 +365,23 @@ body {
   background: white;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  padding-top: 80px;
 }
 p {
   color: #333333;
 }
 a {
   text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 .btn {
   border-top-left-radius: 5px;
@@ -394,6 +405,21 @@ a {
 .section {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
+}
+.section h3 {
+  font-size: 1.3125rem;
+  line-height: 1.3125rem;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  margin: 0 0 36px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.section h3 span {
+  display: inline-block;
+  padding: 0 1px 8px 3px;
+  border-bottom: 5px solid black;
 }
 .row {
   margin-left: -15px;
@@ -490,7 +516,6 @@ a {
   content: "\f0c9";
 }
 .subnav {
-  margin-top: 80px;
   min-height: 72px;
 }
 .subnav #subnav-header {
@@ -548,16 +573,10 @@ a {
 }
 #page-header h2 {
   font-size: 2rem;
-  margin: 0 0 6px;
+  margin: 0;
   letter-spacing: -1px;
   font-weight: 400;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
-}
-#page-header p {
-  font-weight: 300;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  margin: 0;
 }
 #gl-foot {
   text-align: center;
@@ -739,7 +758,6 @@ a {
   height: 300px;
   background: url("../img/home-hero-bg.jpg") center center no-repeat;
   background-size: cover;
-  margin-top: 80px;
   position: relative;
 }
 #home-hero:before {
@@ -1003,7 +1021,7 @@ a {
   margin-bottom: 20px;
 }
 .event-card img {
-  margin: 0px -20px 12px -20px;
+  margin: 0px -20px 18px -20px;
   max-width: 100%;
 }
 .event-card a {
@@ -1012,7 +1030,7 @@ a {
 }
 .event-card a h3 {
   color: #333;
-  margin: 0px;
+  margin: 0px 0px 5px;
   font-size: 2rem;
   letter-spacing: -1px;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
@@ -1027,6 +1045,12 @@ a {
   font-size: 1.3125rem;
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  .event-card {
+    margin-bottom: 0px;
+  }
+}
+/* Event Header */
 .event-header,
 .event-header-overlay {
   height: 300px;
@@ -1091,22 +1115,6 @@ a {
   font-size: 1.5em;
   line-height: 1.75rem;
   margin-bottom: 30px;
-}
-/* Event Section */
-.event-section h3 {
-  font-size: 1.3125rem;
-  line-height: 1.3125rem;
-  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
-  margin: 0 0 36px;
-  text-align: center;
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.event-section h3 span {
-  display: inline-block;
-  padding: 0 1px 8px 3px;
-  border-bottom: 5px solid black;
 }
 /* By The Numbers */
 #event-by-the-numbers {
@@ -1272,8 +1280,8 @@ a {
 }
 .event-quote p.tweet,
 .event-quote p.haiku {
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 2rem;
+  line-height: 2.75rem;
   font-weight: 700;
   color: white;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
@@ -1284,12 +1292,12 @@ a {
   margin: 0 0 20px;
 }
 .event-quote p.source {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 .event-quote p.source a i {
   color: white;
@@ -1314,10 +1322,6 @@ a {
   margin-bottom: 36px;
 }
 #event-judges .judge img {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
   float: left;
   width: 150px;
   height: 150px;
@@ -1341,9 +1345,6 @@ a {
   margin: 0;
 }
 /* Sponsor */
-.event-sponsors h3 {
-  text-align: left;
-}
 .event-sponsors h3 span {
   padding-left: 0;
   padding-right: 0;
@@ -1354,7 +1355,7 @@ a {
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
   color: #969696;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
   margin: 0 0 12px 0;
   text-transform: uppercase;
   padding: 0 15px;
@@ -1390,6 +1391,10 @@ a {
   width: 100%;
 }
 @media (min-width: 480px) {
+  .event-sponsors h3,
+  .event-sponsors h4 {
+    text-align: left;
+  }
   .event-sponsors .sponsor {
     width: 25%;
   }
@@ -1401,9 +1406,6 @@ a {
   }
 }
 @media (min-width: 768px) {
-  .event-card {
-    margin-bottom: 0px;
-  }
   .event-header,
   .event-header-overlay {
     height: 600px;
@@ -1446,6 +1448,11 @@ a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .event-quote p.tweet,
+  .event-quote p.haiku {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
   }
   #event-judges .judge {
     width: 50%;
@@ -1526,5 +1533,124 @@ a {
   }
   .event-sponsors .sponsor-top {
     width: 25%;
+  }
+}
+.about-boundary {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-boundary p {
+  margin: 0 0 24px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.about-boundary p.intro {
+  font-size: 1.75rem;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.about-boundary p.btn-center {
+  text-align: center;
+  font-weight: 400;
+}
+.about-boundary p:last-child {
+  margin: 0;
+}
+#about-wired {
+  background: #673ab7;
+}
+#about-wired span {
+  border: 0;
+  text-indent: -999em;
+  background: url("../img/wired-logo-footer.png") center center no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 64px;
+}
+#about-wired p {
+  color: white;
+}
+#about-wired a.btn {
+  border-color: white;
+  color: white;
+}
+#about-wired a.btn:hover {
+  background: white;
+  color: #673ab7;
+}
+#about-team {
+  padding-bottom: 0;
+}
+#about-team .team {
+  float: left;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#about-team img {
+  width: 150px;
+  height: 150px;
+  margin: 0 0 12px;
+}
+#about-team p.name {
+  font-size: 1.3125rem;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  margin: 0 0 3px;
+}
+#about-team p.role {
+  font-size: 1rem;
+  margin: 0;
+  color: #969696;
+}
+#about-team p.twitter {
+  margin: 24px 0 0;
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  #about-team .team {
+    width: 33.33333333%;
+  }
+  #about-team img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .about-boundary p {
+    margin: 0 0 32px;
+    font-size: 1.3125rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+  }
+  .about-boundary p.intro {
+    font-size: 2.25rem;
+    font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 3rem;
+    margin: 0 0 42px;
+  }
+  #about-team img {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 12px;
+  }
+  #about-team p.name {
+    font-size: 1.5rem;
+    font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+    margin: 0 0 3px;
+  }
+  #about-team p.role {
+    font-size: 1.125rem;
+    margin: 0;
+    color: #969696;
+  }
+  #about-team p.twitter {
+    margin: 28px 0 0;
   }
 }
