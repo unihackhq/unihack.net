@@ -536,10 +536,10 @@ a {
   display: block;
 }
 .subnav#archive-subnav {
-  background: #2196F3;
+  background: #2196f3;
 }
 .subnav#archive-subnav ul {
-  border-bottom-color: #2196F3;
+  border-bottom-color: #2196f3;
 }
 #page-header {
   background: #f5f5f5;
@@ -1029,7 +1029,7 @@ a {
 }
 .event-header,
 .event-header-overlay {
-  height: 250px;
+  height: 300px;
 }
 .event-header {
   background-size: cover;
@@ -1066,29 +1066,30 @@ a {
   max-width: 100%;
   position: relative;
   z-index: 3;
-  padding: 30px 0;
+  padding: 15px 0;
+  vertical-align: bottom;
 }
 .event-header-overlay h2 {
   color: white;
-  font-size: 4rem;
-  line-height: 3rem;
+  font-size: 2.25rem;
+  line-height: 1.5rem;
   letter-spacing: -1px;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
   margin: 0 0 10px;
 }
 .event-header-overlay p {
   color: #c0c0c0;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   margin: 0 0 3px;
 }
 .event-header-overlay p.subtitle {
-  font-size: 1rem;
   color: white;
   font-weight: 300;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 1.5em;
+  line-height: 1.75rem;
   margin-bottom: 30px;
 }
+/* Event Section */
 .event-section h3 {
   font-size: 1.3125rem;
   line-height: 1.3125rem;
@@ -1101,10 +1102,12 @@ a {
 }
 .event-section h3 span {
   display: inline-block;
-  padding: 0 3px 8px 3px;
+  padding: 0 1px 8px 3px;
   border-bottom: 5px solid black;
 }
+/* By The Numbers */
 #event-by-the-numbers {
+  padding-bottom: 0;
   background: #f0f0f0;
 }
 #event-by-the-numbers .stat-3 {
@@ -1115,16 +1118,17 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   #event-by-the-numbers .stat-3 {
     float: left;
-    width: 25%;
+    width: 50%;
   }
 }
 #event-by-the-numbers .stat-3 p {
   font-size: 1.3125rem;
-  margin: 0 0 20px;
+  margin: 0;
   font-weight: 300;
 }
 #event-by-the-numbers .stat-3 span {
@@ -1135,6 +1139,7 @@ a {
   line-height: 3.5rem;
   letter-spacing: -1px;
 }
+/* Winners */
 #event-winners .winner-top {
   min-height: 1px;
   padding-left: 15px;
@@ -1170,12 +1175,10 @@ a {
   border: 1px solid #e0e0e0;
   margin-bottom: 20px;
 }
-#event-winners .winner-card a {
-  display: block;
-  padding: 20px;
-}
-#event-winners .winner-card a h4 {
-  color: black;
+#event-winners .winner-card img {
+  margin: 0 0 0 -20px;
+  width: 100%;
+  height: auto;
 }
 #event-winners .winner-card h4 {
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
@@ -1198,6 +1201,19 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+#event-winners .winner-card a {
+  display: block;
+  padding: 15px 20px;
+}
+#event-winners .winner-card a h4 {
+  color: black;
+}
+#event-winners .winner-card a:hover p.team {
+  color: #2196f3;
+}
+#event-winners .winner-card.top a {
+  display: inline;
+}
 #event-winners .winner-card.top h4 {
   font-size: 1.125rem;
 }
@@ -1206,6 +1222,180 @@ a {
 }
 #event-winners .winner-card.top p.university {
   font-size: 0.875rem;
+}
+#event-winners .winner-card.top .icon {
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 36px;
+  border-bottom-left-radius: 36px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: -40px auto 12px;
+  position: relative;
+  z-index: 5;
+}
+#event-winners .winner-card.top .icon i {
+  font-size: 2.625rem;
+  color: white;
+  line-height: 3.75rem;
+}
+#event-winners .winner-card.first img {
+  border-bottom: 5px solid #ffc107;
+}
+#event-winners .winner-card.first .icon {
+  background: #ffc107;
+}
+#event-winners .winner-card.second img {
+  border-bottom: 5px solid #90a4ae;
+}
+#event-winners .winner-card.second .icon {
+  background: #90a4ae;
+}
+#event-winners .winner-card.third img {
+  border-bottom: 5px solid #a1887f;
+}
+#event-winners .winner-card.third .icon {
+  background: #a1887f;
+}
+/* Quotes */
+.event-quote .wrap {
+  position: relative;
+}
+.event-quote i.icon {
+  font-size: 3.5rem;
+  color: white;
+  margin: 0 0 20px;
+}
+.event-quote p.tweet,
+.event-quote p.haiku {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+  color: white;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.event-quote p.tweet,
+.event-quote p.haiku.last {
+  margin: 0 0 20px;
+}
+.event-quote p.source {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+.event-quote p.source a i {
+  color: white;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.event-quote p.source a:hover i {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.event-tweet {
+  background: #55acee;
+}
+.event-haiku {
+  background: #7986cb;
+}
+/* Event Judges */
+#event-judges .judge {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 36px;
+}
+#event-judges .judge img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 30px 0 0;
+}
+#event-judges .judge h4 {
+  font-size: 1.5rem;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  margin: 5px 0 0 0;
+}
+#event-judges .judge a.btn {
+  margin: 0;
+  font-size: 0.875rem;
+}
+#event-judges .judge p.role {
+  margin: 0 0 24px 0;
+  font-size: 1.12rem;
+  font-weight: 300;
+}
+#event-judges .judge.last {
+  margin: 0;
+}
+/* Sponsor */
+.event-sponsors h3 {
+  text-align: left;
+}
+.event-sponsors h3 span {
+  padding-left: 0;
+  padding-right: 0;
+}
+.event-sponsors h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  color: #969696;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+.event-sponsors .row {
+  margin-bottom: 36px;
+}
+.event-sponsors .row.last {
+  margin-bottom: 0;
+}
+.event-sponsors .sponsor {
+  padding: 0 15px;
+  float: left;
+  width: 50%;
+}
+.event-sponsors .sponsor h4 {
+  padding: 0;
+}
+.event-sponsors .sponsor a img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.event-sponsors .sponsor a:hover img {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.event-sponsors .sponsor-major {
+  width: 100%;
+}
+.event-sponsors .sponsor-top {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .event-sponsors .sponsor {
+    width: 25%;
+  }
+  .event-sponsors .sponsor-major {
+    width: 50%;
+  }
+  .event-sponsors .sponsor-top {
+    width: 50%;
+  }
 }
 @media (min-width: 768px) {
   .event-card {
@@ -1219,7 +1409,29 @@ a {
     background-image: url('../img/unihack-2015-event-lg.jpg');
   }
   .event-header-overlay {
+    padding: 30px 0;
     vertical-align: bottom;
+  }
+  .event-header-overlay h2 {
+    color: white;
+    font-size: 4rem;
+    line-height: 3rem;
+    letter-spacing: -1px;
+    font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+    margin: 0 0 10px;
+  }
+  .event-header-overlay p {
+    color: #c0c0c0;
+    font-size: 1.125rem;
+    margin: 0 0 3px;
+  }
+  .event-header-overlay p.subtitle {
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
   }
   #event-winners .winner {
     min-height: 1px;
@@ -1228,6 +1440,19 @@ a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  #event-judges .judge {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .event-sponsors .sponsor {
+    width: 20%;
+  }
+  .event-sponsors .sponsor-major {
+    width: 25%;
+  }
+  .event-sponsors .sponsor-top {
+    width: 33.33333333%;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
@@ -1253,6 +1478,15 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  #event-by-the-numbers .stat-3 {
+    margin-bottom: 48px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 @media (min-width: 992px) and (min-width: 768px) {
   #event-winners .winner {
@@ -1269,5 +1503,22 @@ a {
 @media (min-width: 992px) and (min-width: 768px) {
   #event-winners .winner-top {
     margin-left: 25%;
+  }
+}
+@media (min-width: 992px) and (min-width: 768px) {
+  #event-by-the-numbers .stat-3 {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1500px) {
+  .event-sponsors .sponsor {
+    width: 16.66666667%;
+  }
+  .event-sponsors .sponsor-major {
+    width: 20%;
+  }
+  .event-sponsors .sponsor-top {
+    width: 25%;
   }
 }

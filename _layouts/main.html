@@ -10,7 +10,7 @@ But I ain't done much healing.
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% if page.slug == 'home' %}
+  {% if page.page == 'home' %}
   <title>UNIHACK 2016 &mdash; Coming Soon &mdash; Melbourne, Australia</title>
   {% else %}
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK 2016</title>
@@ -29,10 +29,10 @@ But I ain't done much healing.
       <nav id="main-nav">
         <a class="trigger fa"></a>
         <ul>
-          <li class="home {% if page.page == 'home' %}selected{% endif %}"><a href="#">Home</a></li>
-          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="#">Past Events</a></li>
-          <li class="about {% if page.page == 'about' %}selected{% endif %}"><a href="#">About Us</a></li>
-          <li class="sponsor {% if page.page == 'sponsor' %}selected{% endif %}"><a href="#">Sponsor</a></li>
+          <li class="home {% if page.page == 'home' %}selected{% endif %}"><a href="/">Home</a></li>
+          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="/archive/">Past Events</a></li>
+          <li class="about {% if page.page == 'about' %}selected{% endif %}"><a href="/about/">About Us</a></li>
+          <li class="sponsor {% if page.page == 'sponsor' %}selected{% endif %}"><a href="/sponsor">Sponsor</a></li>
         </ul>
       </nav>
     </div>
