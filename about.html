@@ -74,6 +74,7 @@ page: about
         {% endif %}
         <p class="name">{{ person.name }}</p>
         <p class="role">{{ person.position }}</p>
+        <p class="subrole">{{ person.subposition }}</p>
         {% if person.twitter %}
         <p class="twitter">
           <a href="http://twitter.com/{{ person.twitter }}" class="btn">
@@ -84,7 +85,7 @@ page: about
       </div>
       {% endif %}
       {% endfor %}
-      
+
     </div>
   </div>
 </div>

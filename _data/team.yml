@@ -1,42 +1,49 @@
 - name: Hugo Muller-Downing
-  position: President, WIRED Monash
+  position: The Boss
+  subposition: President, WIRED Monash
   twitter: hugojmd
   img: /img/team/hugo.jpg
 
 - name: Terence Huynh
-  position: Co-founder; Lead Organiser
+  position: Lead Organiser
+  subposition: Co-founder, UNIHACK
   twitter: terencehuynh
   img: /img/team/terence.jpg
 
 - name: Matthew Rossi
-  position: Co-founder; Sponsorship
+  position: Sponsorship
+  subposition: Co-founder, UNIHACK
   twitter: MatthewAMRossi
   img: /img/team/matthew.jpg
 
 - name: Lee Hatton
   position: Logistics
+  subposition: General Rep, WIRED Monash
+  img: /img/team/lee.jpg
 
-- name: Sophia Huynh
+- name: Sophie Huynh
   position: Logistics
+  subposition: Vice President, WIRED Monash
   twitter: sphaech
+  img: /img/team/sophie.jpg
 
 - name: Gabriel Huynh
-  position: Logistics
+  position: Finance
+  subposition: Treasurer, WIRED Monash
   twitter: Gaburyeru
+  img: /img/team/gabriel.jpg
 
 - name: Rayen Magpantay
   position: Sponsorship
+  subposition: Industry Officer, WIRED Monash
+  img: /img/team/rayen.jpg
 
 - name: Ami Pasricha
   position: Logistics
+  subposition: Activities Officer, WIRED Monash
+  img: /img/team/ami.jpg
 
 - name: Daniel Stanthorpe
   position: Logistics
-
-- name: Martin Dulics
-  position: President, WIRED Monash (2013-15)
-  past: true
-
-- name: Jake Krelle
-  position: General Rep, WIRED Monash (2014-15)
-  past: true
+  subposition: General Rep, WIRED Monash
+  img: /img/team/daniel.jpg
