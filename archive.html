@@ -14,8 +14,9 @@ subpage: index
 <div id="page-events-list" class="section">
   <div class="wrap">
     <div class="row">
-      {% for event_hash in site.data.previous_events %}
-      {% assign event = site.data.events[event_hash.event] %}
+      {% assign sorted_events = (site.data.events | sort_by: 'id') %}
+      {% for event_hash in sorted_events %}
+      {% assign event = event_hash[1] %}
       <div class="event-col">
         <div class="event-card">
           <a href="{{ event.url }}" class="overlay">

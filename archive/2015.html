@@ -80,115 +80,53 @@ subpage: unihack-2015
   <div class="wrap">
     <h3><span>Winners</span></h3>
     <div class="row">
+      {% for prize in event.winners %}
+      {% if prize.type == "major" and prize.accent == "first" %}
       <div class="winner-top">
-        <div class="winner-card top first">
-          <a href="http://devpost.com/software/destroy-my-idea">
-            <img src="/img/unihack-2015/first-destroy-my-idea.jpg" />
+        <div class="winner-card top {{ prize.accent }}">
+          <a href="{{ prize.url }}">
+            <img src="{{ prize.img }}" alt="{{ prize.prize }} - {{ prize.team }}" />
             <span class="icon"><i class="fa fa-trophy"></i></span>
-            <h4 class="prize">First Place</h4>
-            <p class="team">Destroy My Idea</p>
-            <p class="university">RMIT</p>
+            <h4 class="prize">{{ prize.prize }}</h4>
+            <p class="team">{{ prize.team }}</p>
+            <p class="university">{{ prize.uni }}</p>
           </a>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
     </div>
     <div class="row">
+      {% for prize in event.winners %}
+      {% if prize.type == "major" and prize.accent != "first" %}
       <div class="winner-6">
-        <div class="winner-card top second">
-          <a href="http://devpost.com/software/fite-me">
-            <img src="/img/unihack-2015/second-fite-me.jpg" />
+        <div class="winner-card top {{ prize.accent }}">
+          <a href="{{ prize.url }}">
+            <img src="{{ prize.img }}" alt="{{ prize.prize }} - {{ prize.team }}" />
             <span class="icon"><i class="fa fa-certificate"></i></span>
-            <h4 class="prize">Second Place</h4>
-            <p class="team">Fite Me</p>
-            <p class="university">RMIT/Swinburne</p>
+            <h4 class="prize">{{ prize.prize }}</h4>
+            <p class="team">{{ prize.team }}</p>
+            <p class="university">{{ prize.uni }}</p>
           </a>
         </div>
       </div>
-      <div class="winner-6">
-        <div class="winner-card top third">
-          <a href="http://devpost.com/software/flyte">
-            <img src="/img/unihack-2015/third-flyte.jpg" />
-            <span class="icon"><i class="fa fa-certificate"></i></span>
-            <h4 class="prize">Third Place</h4>
-            <p class="team">Flyte</p>
-            <p class="university">Monash</p>
-          </a>
-        </div>
-      </div>
+      {% endif %}
+      {% endfor %}
     </div>
     <div class="row minor-prize">
+      {% for prize in event.winners %}
+      {% if prize.type != "major" %}
       <div class="winner">
         <div class="winner-card">
-          <a href="http://devpost.com/software/fite-me">
-            <h4 class="prize">Best Design</h4>
-            <p class="team">Fite Me</p>
-            <p class="university">RMIT/Swinburne</p>
+          <a href="{{ prize.url }}">
+            <h4 class="prize">{{ prize.prize }}</h4>
+            <p class="team">{{ prize.team }}</p>
+            <p class="university">{{ prize.uni }}</p>
           </a>
         </div>
       </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/codebreaker">
-            <h4 class="prize">Most Creative Idea</h4>
-            <p class="team">Codebreaker</p>
-            <p class="university">Monash</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/delivar-peer-to-peet-delivery">
-            <h4 class="prize">Freelancer People's Choice Award</h4>
-            <p class="team">Delivar</p>
-            <p class="university">Monash/Melbourne</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/unihack-57g0fa">
-            <h4 class="prize">EY Best First Year Hack</h4>
-            <p class="team">ShipIt/ThisApp</p>
-            <p class="university">Monash</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/chefup">
-            <h4 class="prize">CBA Least Hacky Hack</h4>
-            <p class="team">ChefUp</p>
-            <p class="university">Monash/Swinburne</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/codebreaker">
-            <h4 class="prize">IMC Making Things Happen Prize</h4>
-            <p class="team">Codebreaker</p>
-            <p class="university">Monash</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/fridgebook">
-            <h4 class="prize">Outware Best Mobile Hack</h4>
-            <p class="team">Fridgebook</p>
-            <p class="university">Swinburne/UNSW</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="http://devpost.com/software/delivar-peer-to-peet-delivery">
-            <h4 class="prize">Best Use of Braintree API</h4>
-            <p class="team">Delivar</p>
-            <p class="university">Monash/Melbourne</p>
-          </a>
-        </div>
-      </div>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -209,58 +147,20 @@ subpage: unihack-2015
 <div id="event-judges" class="section event-section">
   <div class="wrap">
     <h3><span>Judges</span></h3>
-    <div class="row">
+    {% for judge in event.judges %}
+    {% cycle '<div class="row">', '', '<div class="row">', '', '<div class="row">', '', '<div class="row">' %}
       <div class="judge">
-        <img src="/img/judges/jason.jpg" class="img-rounded" />
-        <h4>Jason Cormier</h4>
-        <p class="role">Director of Strategy and New Business, Australia, Mashery</p>
-        <a href="https://twitter.com/jadacormier/" class="btn">
-          <i class="fa fa-twitter"></i> @jadacormier
+        <img src="{{ judge.img }}" alt="{{ judge.name }}" class="img-rounded" />
+        <h4>{{ judge.name }}</h4>
+        <p class="role">{{ judge.role }}</p>
+        {% if judge.twitter %}
+        <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
+          <i class="fa fa-twitter"></i> {{ judge.twitter }}
         </a>
+        {% endif %}
       </div>
-      <div class="judge">
-        <img src="/img/judges/atlanta.jpg" class="img-rounded" />
-        <h4>Atlanta Daniel</h4>
-        <p class="role">Formerly from Oxygen Ventures</p>
-        <a href="https://twitter.com/LANTS/" class="btn">
-          <i class="fa fa-twitter"></i> @LANTS
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="judge">
-        <img src="/img/judges/bonnie.png" class="img-rounded" />
-        <h4>Bonnie Macdonald</h4>
-        <p class="role">Consultant, Cyber, PwC</p>
-      </div>
-      <div class="judge">
-        <img src="/img/judges/hadi.jpg" class="img-rounded" />
-        <h4>Hadi Michael</h4>
-        <p class="role">Digital Adviser &amp; Software Engineer, Deloitte Digital</p>
-        <a href="http://twitter.com/hadi_michael/" class="btn">
-          <i class="fa fa-twitter"></i> @hadi_michael
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="judge">
-        <img src="/img/judges/april.jpg" class="img-rounded" />
-        <h4>April Staines</h4>
-        <p class="role">Architect for Digital, NAB &amp; Co-Founder, Girl Geek Academy</p>
-      </div>
-      <div class="judge">
-        <img src="/img/judges/andrew.jpg" class="img-rounded" />
-        <h4>Andrew van der Stock</h4>
-        <p class="role">Principal Consultant, Threat Intelligence</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="judge last">
-        <img src="/img/judges/miguel.jpg" class="img-rounded" />
-        <h4>Miguel Wood</h4>
-        <p class="role">Co-founder &amp; CEO, Euler's Bridge</p>
-      </div>
-    </div>
+    {% cycle '', '</div>', '', '</div>', '', '</div>', '</div>' %}
+    {% endfor %}
   </div>
 </div>
 

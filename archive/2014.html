@@ -54,46 +54,36 @@ subpage: unihack-2014
   <div class="wrap">
     <h3><span>Winners</span></h3>
     <div class="row">
+      {% for prize in event.winners %}
+      {% if prize.type == "major" and prize.accent == "first" %}
       <div class="winner-top">
-        <div class="winner-card top first">
-          <a href="#">
-            <img src="/img/unihack-2014/first-snippet.jpg" />
+        <div class="winner-card top {{ prize.accent }}">
+          <a href="{{ prize.url }}">
+            <img src="{{ prize.img }}" alt="{{ prize.prize }} - {{ prize.team }}" />
             <span class="icon"><i class="fa fa-trophy"></i></span>
-            <h4 class="prize">The Best of the Rest</h4>
-            <p class="team">Snippet (Team LOKE and Friends)</p>
-            <p class="university">Melbourne</p>
+            <h4 class="prize">{{ prize.prize }}</h4>
+            <p class="team">{{ prize.team }}</p>
+            <p class="university">{{ prize.uni }}</p>
           </a>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
     </div>
     <div class="row minor-prize">
+      {% for prize in event.winners %}
+      {% if prize.type != "major" %}
       <div class="winner">
         <div class="winner-card">
-          <a href="#">
-            <h4 class="prize">Best Design</h4>
-            <p class="team">Discovr</p>
-            <p class="university">Monash</p>
+          <a href="{{ prize.url }}">
+            <h4 class="prize">{{ prize.prize }}</h4>
+            <p class="team">{{ prize.team }}</p>
+            <p class="university">{{ prize.uni }}</p>
           </a>
         </div>
       </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="#">
-            <h4 class="prize">Most Creative Idea</h4>
-            <p class="team">Cryptic (Team Test)</p>
-            <p class="university">Melbourne</p>
-          </a>
-        </div>
-      </div>
-      <div class="winner">
-        <div class="winner-card">
-          <a href="#">
-            <h4 class="prize">Best Use of Braintree API</h4>
-            <p class="team">Discovr</p>
-            <p class="university">Monash</p>
-          </a>
-        </div>
-      </div>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -101,55 +91,20 @@ subpage: unihack-2014
 <div id="event-judges" class="section event-section">
   <div class="wrap">
     <h3><span>Judges</span></h3>
-    <div class="row">
+    {% for judge in event.judges %}
+    {% cycle '<div class="row">', '', '<div class="row">', '', '<div class="row">', '', '<div class="row">' %}
       <div class="judge">
-        <img src="/img/judges/jason.jpg" class="img-rounded" />
-        <h4>Jason Cormier</h4>
-        <p class="role">Mashery</p>
-        <a href="https://twitter.com/jadacormier/" class="btn">
-          <i class="fa fa-twitter"></i> @jadacormier
+        <img src="{{ judge.img }}" alt="{{ judge.name }}" class="img-rounded" />
+        <h4>{{ judge.name }}</h4>
+        <p class="role">{{ judge.role }}</p>
+        {% if judge.twitter %}
+        <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
+          <i class="fa fa-twitter"></i> {{ judge.twitter }}
         </a>
+        {% endif %}
       </div>
-      <div class="judge">
-        <img src="/img/judges/joe.jpg" class="img-rounded" />
-        <h4>Joe Brasacchio</h4>
-        <p class="role">PwC</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="judge">
-        <img src="/img/judges/hadi.jpg" class="img-rounded" />
-        <h4>Hadi Michael</h4>
-        <p class="role">Deloitte Digital</p>
-        <a href="http://twitter.com/hadi_michael/" class="btn">
-          <i class="fa fa-twitter"></i> @hadi_michael
-        </a>
-      </div>
-      <div class="judge">
-        <img src="/img/judges/nikki.jpg" class="img-rounded" />
-        <h4>Nikki Parker</h4>
-        <p class="role">Freelancer</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="judge">
-        <img src="/img/judges/justin.jpg" class="img-rounded" />
-        <h4>Justin Taylor</h4>
-        <p class="role">Readify</p>
-      </div>
-      <div class="judge">
-        <img src="/img/judges/andrew.jpg" class="img-rounded" />
-        <h4>Andrew van der Stock</h4>
-        <p class="role">KPMG</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="judge last">
-        <img src="/img/judges/long.jpg" class="img-rounded" />
-        <h4>Long Zheng</h4>
-        <p class="role">Omny</p>
-      </div>
-    </div>
+    {% cycle '', '</div>', '', '</div>', '', '</div>', '</div>' %}
+    {% endfor %}
   </div>
 </div>
 
