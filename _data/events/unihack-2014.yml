@@ -7,7 +7,7 @@ id: 1
 
 # Links
 url: /archive/2014/
-img: /img/unihack-2014-archive.jpg
+img: /img/unihack-2014/unihack-2014-archive.jpg
 
 # Winners
 winners:
@@ -43,7 +43,7 @@ judges:
 
   - name:     Hadi Michael
     img:      /img/judges/hadi.jpg
-    role:     Digital Adviser &amp; Software Engineer, Deloitte Digital
+    role:     Deloitte Digital
     twitter:  hadi_michael
 
   - name:     Nikki Parker
@@ -61,3 +61,29 @@ judges:
   - name:     Long Zheng
     img:      /img/judges/long.jpg
     role:     Omny
+
+# Sponsorship
+sponsors:
+  - tier:       TERA Sponsors
+    type:       sponsor-top
+    companies:  [omny, readify, kpmg]
+
+  - tier:       GIGA Sponsors
+    type:       sponsor-major
+    companies:  [pwc, mashery, deloitte, freelancer]
+
+  - tier:       MEGA Sponsors
+    companies:  [adobe, braintree, msi, australia-post, github, 99designs, ga]
+
+  - tier:       KILO Sponsors
+    row:       last
+    companies:  [monash-fit, aws, uber]
+
+# Partners
+partners:
+  - name:       Venue Partner
+    companies:  [ybf]
+
+  - name:       Assisted By
+    row:        last
+    companies:  [startup-victoria]

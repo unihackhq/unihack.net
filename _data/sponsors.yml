@@ -1,0 +1,131 @@
+omny:
+  name:   Omny
+  url:    http://www.omnyapp.com/
+
+readify:
+  name:   Readify
+  url:    http://www.readify.net/careers/
+
+kpmg:
+  name:   KPMG
+  url:    http://www.kpmg.com/au/en/careers/graduates-students/pages/default.aspx
+
+pwc:
+  name:   PwC
+  url:    http://pwc.com.au/careers/
+
+mashery:
+  name:   Mashery
+  url:    http://www.mashery.com/
+
+deloitte:
+  name:   Deloitte
+  url:    http://yourfuture.deloitte.com.au/
+
+freelancer:
+  name:   Freelancer
+  url:    http://freelancer.com/
+
+adobe:
+  name:   Adobe
+  url:    http://adobe.com/
+
+braintree:
+  name:   Braintree/PayPal
+  url:    http://braintreepayments.com/
+
+msi:
+  name:   University of Melbourne School of Information
+  url:    http://www.msi.unimelb.edu.au/
+
+australia-post:
+  name:   Australia Post
+  url:    http://www.auspost.com.au/graduateprogram/
+
+github:
+  name:   GitHub
+  url:    http://github.com
+
+99designs:
+  name:   99designs
+  url:    http://99designs.com.au/
+
+ga:
+  name:   General Assembly
+  url:    http://ga.co/melbourne
+
+monash-fit:
+  name:   Monash University Faculty of IT
+  url:    http://it.monash.edu/
+
+aws:
+  name:   Amazon Web Services
+  url:    http://aws.amazon.com/
+
+uber:
+  name:   Uber
+  url:    http://uber.com/melbourne/
+
+ybf:
+  name:   York Butter Factory
+  url:    http://yorkbutterfactory.com/
+
+startup-victoria:
+  name:   Startup Victoria
+  url:    https://startupvictoria.com.au/
+
+inspire9:
+  name:   Inspire9
+  url:    http://inspire9.com/
+
+sphero:
+  name:   Sphero
+  url:    http://www.sphero.com/
+
+namecheap:
+  name:   Namecheap
+  url:    https://www.namecheap.com/
+
+digital-ocean:
+  name:   Digital Ocean
+  url:    https://www.digitalocean.com/
+
+atlassian:
+  name:   Atlassian
+  url:    http://www.atlassian.com/
+
+angelcube:
+  name:   Angelcube
+  url:    http://angelcube.com/
+
+zendesk:
+  name:   Zendesk
+  url:    http://zendesk.com/
+
+suncorp:
+  name:   Suncorp Group
+  url:    http://suncorpgroupgraduates.com.au/
+
+outware-mobile:
+  name:   Outware Mobile
+  url:    http://outware.com.au/
+
+ey:
+  name:   EY
+  url:    http://www.ey.com/AU/en/Careers/Students
+
+imc:
+  name:   IMC Pacific
+  url:    http://imcgraduates.com.au/
+
+dius:
+  name:   DiUS
+  url:    http://dius.com.au/careers/
+
+cba:
+  name:   Commonwealth Bank
+  url:    https://www.commbank.com.au/about-us/careers/graduate-recruitment-program/enterprise-services.html
+
+acs:
+  name:   Australian Computing Society
+  url:    http://www.acs.org.au/

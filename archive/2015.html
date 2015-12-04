@@ -131,38 +131,22 @@ subpage: unihack-2015
   </div>
 </div>
 
-<div class="section event-section event-quote event-haiku">
+<div id="u15-haiku" class="section event-section event-quote event-haiku">
   <div class="wrap">
-    <i class="icon fa fa-pencil"></i>
-    <p class="haiku">Innovate Bravely</p>
-    <p class="haiku">Intuitive Thought Leader</p>
-    <p class="haiku last">Paradigm Shift App</p>
-    <p class="source">
-      &mdash; Josh Gatt (@GreaterGattsby)
-      <a href="https://twitter.com/GreaterGattsby/status/632597628258127873"><i class="fa fa-link"></i></a>
-    </p>
+    <div class="quote-overlay">
+      <i class="icon fa fa-pencil"></i>
+      <p class="haiku">Innovate Bravely</p>
+      <p class="haiku">Intuitive Thought Leader</p>
+      <p class="haiku last">Paradigm Shift App</p>
+      <p class="source">
+        &mdash; Josh Gatt (@GreaterGattsby)
+        <a href="https://twitter.com/GreaterGattsby/status/632597628258127873"><i class="fa fa-link"></i></a>
+      </p>
+    </div>
   </div>
 </div>
 
-<div id="event-judges" class="section event-section">
-  <div class="wrap">
-    <h3><span>Judges</span></h3>
-    {% for judge in event.judges %}
-    {% cycle '<div class="row">', '', '<div class="row">', '', '<div class="row">', '', '<div class="row">' %}
-      <div class="judge">
-        <img src="{{ judge.img }}" alt="{{ judge.name }}" class="img-rounded" />
-        <h4>{{ judge.name }}</h4>
-        <p class="role">{{ judge.role }}</p>
-        {% if judge.twitter %}
-        <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
-          <i class="fa fa-twitter"></i> {{ judge.twitter }}
-        </a>
-        {% endif %}
-      </div>
-    {% cycle '', '</div>', '', '</div>', '', '</div>', '</div>' %}
-    {% endfor %}
-  </div>
-</div>
+{% include judges.html %}
 
 <div class="section event-section event-tweet event-quote">
   <div class="wrap">
@@ -175,146 +159,4 @@ subpage: unihack-2015
   </div>
 </div>
 
-<div id="event-sponsors" class="section event-section event-sponsors">
-  <div class="wrap">
-    <h3><span>Sponsors</span></h3>
-    <div class="row">
-      <h4>Platnium Sponsors</h4>
-      <div class="sponsor sponsor-top">
-        <a href="http://pwc.com.au/careers/">
-          <img src="/img/sponsors/pwc.png" alt="PwC" />
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <h4>Gold Sponsors</h4>
-      <div class="sponsor sponsor-major">
-        <a href="http://www.acs.org.au/">
-          <img src="/img/sponsors/acs.png" alt="Australian Computing Society" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="https://www.commbank.com.au/about-us/careers/graduate-recruitment-program/enterprise-services.html">
-          <img src="/img/sponsors/cba.png" alt="Commonwealth Bank" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="http://dius.com.au/careers/">
-          <img src="/img/sponsors/dius.png" alt="DiUS" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="http://freelancer.com/">
-          <img src="/img/sponsors/freelancer.png" alt="Freelancer" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="http://imcgraduates.com.au/">
-          <img src="/img/sponsors/imc.png" alt="IMC Pacific" />
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <h4>Silver Sponsors</h4>
-      <div class="sponsor">
-        <a href="http://www.adobe.com/">
-          <img src="/img/sponsors/adobe.png" alt="Adobe" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.braintree.com/">
-          <img src="/img/sponsors/braintree.png" alt="Braintree" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://yourfuture.deloitte.com.au/">
-          <img src="/img/sponsors/deloitte.png" alt="Deloitte" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.ey.com/AU/en/Careers/Students">
-          <img src="/img/sponsors/ey.png" alt="EY" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://outware.com.au/">
-          <img src="/img/sponsors/outware-mobile.png" alt="Outware Mobile" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.readify.net/careers/">
-          <img src="/img/sponsors/readify.png" alt="Readify" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://suncorpgroupgraduates.com.au/">
-          <img src="/img/sponsors/suncorp.png" alt="Suncorp Group" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.msi.unimelb.edu.au/">
-          <img src="/img/sponsors/msi.png" alt="University of Melbourne" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://zendesk.com/">
-          <img src="/img/sponsors/zendesk.png" alt="Zendesk" />
-        </a>
-      </div>
-    </div>
-    <div class="row tier-2 last">
-      <h4>Bronze Sponsors</h4>
-      <div class="sponsor">
-        <a href="http://angelcube.com/">
-          <img src="/img/sponsors/angelcube.png" alt="Angelcube" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.atlassian.com/">
-          <img src="/img/sponsors/atlassian.png" alt="Atlassian" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.digitalocean.com/">
-          <img src="/img/sponsors/digital-ocean.png" alt="Digital Ocean" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.mashery.com/">
-          <img src="/img/sponsors/mashery.png" alt="Mashery" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.namecheap.com/">
-          <img src="/img/sponsors/namecheap.png" alt="Namecheap" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.sphero.com/">
-          <img src="/img/sponsors/sphero.png" alt="Sphero" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div id="event-partners" class="section event-section event-sponsors">
-  <div class="wrap">
-    <h3><span>Partners</span></h3>
-    <div class="row partner">
-      <div class="sponsor sponsor-major">
-        <h4>University Partner</h4>
-        <a href="http://it.monash.edu/">
-          <img src="/img/sponsors/monash-fit.png" alt="Monash University" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <h4>Venue Partner</h4>
-        <a href="http://inspire9.com/">
-          <img src="/img/sponsors/inspire9.png" alt="Inspire9" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+{% include sponsors-partners.html %}

@@ -1,0 +1,80 @@
+---
+layout: main
+title: Sponsor Us
+page: sponsor
+---
+
+<div id="page-header" class="sponsor">
+  <div id="overlay">
+    <div class="wrap">
+      <h2>Partner with Us</h2>
+      <p>Be part of Melbourne's premier student hackathon</p>
+    </div>
+  </div>
+</div>
+
+<div id="why-sponsor" class="section">
+  <div class="wrap">
+    <div class="text-boundary">
+      <h3><span>Why Sponsor?</span></h3>
+      <p class="intro">
+        We connect you to some of the next generation of IT thinkers and entrepreneurs.
+      </p>
+      <p>
+        Sponsoring UNIHACK is a great way to connect with the top IT students from the University of
+        Melbourne, Monash University, and other universities across Australia. Similar hackathons in the
+        United States have provided sponsors access to many talented students who end up working for
+        them in a couple of years.
+      </p>
+      <p>
+        As a sponsor, you get to:
+      </p>
+      <ul>
+        <li>
+          <strong>Meet and connect with the best students from Australia</strong>, and get early access to them
+          before any other company;
+        </li>
+        <li>
+          <strong>Showcase your products and APIs</strong>, and see talented students make something awesome
+          with them;
+        </li>
+        <li>
+          <strong>Mentor, inspire and encourage students</strong> with their idea and how to accomplish it within
+          24 hours
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="previous-sponsors" class="section event-sponsors">
+  <div class="wrap">
+    <h3><span>Past Sponsors</span></h3>
+    <div class="row last">
+      {%
+        assign sponsors = "atlassian|readify|dius|pwc|sphero|braintree|deloitte|ey|imc|cba|kpmg|99designs" | split: "|"
+      %}
+      {% for sponsor in sponsors %}
+      <div class="sponsor">
+        {% assign data = site.data.sponsors[sponsor] %}
+        <a href="{{ data.url }}">
+          <img src="/img/sponsors/{{ sponsor }}.png" alt="{{ data.name }}" />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="section event-section event-tweet event-quote">
+  <div class="wrap">
+    <i class="icon fa fa-twitter"></i>
+    <p class="tweet">Thank you @UNIHACKMelb for a great event, we had an awesome time! #UNIHACK2015 #hackathon #ideas #innovation</p>
+    <p class="source">
+      &mdash; DiUS (@dius_au)
+      <a href="https://twitter.com/dius_au/status/633095871937146880"><i class="fa fa-link"></i></a>
+    </p>
+  </div>
+</div>
+
+{% include diversity-commitment.html %}

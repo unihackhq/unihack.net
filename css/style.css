@@ -691,6 +691,9 @@ img {
   .wrap {
     padding: 0 30px;
   }
+  #gl-head {
+    position: absolute;
+  }
   .subnav #subnav-header {
     display: none;
   }
@@ -1082,10 +1085,10 @@ img {
   bottom: 0;
 }
 .event-header#unihack-2015 {
-  background-image: url('../img/unihack-2015-event-sm.jpg');
+  background-image: url('../img/unihack-2015/unihack-2015-event-sm.jpg');
 }
 .event-header#unihack-2014 {
-  background-image: url('../img/unihack-2014-event-sm.jpg');
+  background-image: url('../img/unihack-2014/unihack-2014-event-sm.jpg');
 }
 .event-header-overlay {
   display: table-cell;
@@ -1122,32 +1125,22 @@ img {
   background: #f0f0f0;
 }
 #event-by-the-numbers .stat-3 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  width: 50%;
+  float: left;
   text-align: center;
-  margin-bottom: 48px;
-}
-@media (min-width: 768px) {
-  #event-by-the-numbers .stat-3 {
-    float: left;
-    width: 50%;
-  }
+  margin-bottom: 28px;
 }
 #event-by-the-numbers .stat-3 p {
-  font-size: 1.3125rem;
+  font-size: 0.875rem;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 #event-by-the-numbers .stat-3 span {
   display: block;
   margin-bottom: 3px;
   font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   letter-spacing: -1px;
 }
 /* Winners */
@@ -1390,6 +1383,43 @@ img {
 .event-sponsors .sponsor-top {
   width: 100%;
 }
+/* Event 2015 Haiku */
+#u15-haiku {
+  background: url('../img/unihack-2015/haiku-bg.jpg') center center no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 0;
+  position: relative;
+}
+#u15-haiku:before {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  content: ' ';
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#u15-haiku .quote-overlay {
+  display: table-cell;
+  width: 100vw;
+  height: 400px;
+  max-width: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 36px 0;
+  vertical-align: bottom;
+}
 @media (min-width: 480px) {
   .event-sponsors h3,
   .event-sponsors h4 {
@@ -1411,10 +1441,10 @@ img {
     height: 600px;
   }
   .event-header#unihack-2015 {
-    background-image: url('../img/unihack-2015-event-lg.jpg');
+    background-image: url('../img/unihack-2015/unihack-2015-event-lg.jpg');
   }
   .event-header#unihack-2014 {
-    background-image: url('../img/unihack-2014-event-lg.jpg');
+    background-image: url('../img/unihack-2014/unihack-2014-event-lg.jpg');
   }
   .event-header-overlay {
     padding: 30px 0;
@@ -1440,6 +1470,17 @@ img {
     font-size: 2.5rem;
     line-height: 3rem;
     margin-bottom: 30px;
+  }
+  /* By The Numbers */
+  #event-by-the-numbers .stat-3 {
+    width: 25%;
+  }
+  #event-by-the-numbers .stat-3 p {
+    font-size: 1rem;
+  }
+  #event-by-the-numbers .stat-3 span {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
   }
   #event-winners .winner {
     min-height: 1px;
@@ -1467,6 +1508,10 @@ img {
   .event-sponsors .sponsor-top {
     width: 33.33333333%;
   }
+  #u15-haiku,
+  #u15-haiku .quote-overlay {
+    height: 600px;
+  }
 }
 @media (min-width: 768px) and (min-width: 768px) {
   #event-winners .winner {
@@ -1491,14 +1536,17 @@ img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  /* By The Numbers */
   #event-by-the-numbers .stat-3 {
     margin-bottom: 48px;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  }
+  #event-by-the-numbers .stat-3 p {
+    font-size: 1.3125rem;
+    font-weight: 300;
+  }
+  #event-by-the-numbers .stat-3 span {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 }
 @media (min-width: 992px) and (min-width: 768px) {
@@ -1518,12 +1566,6 @@ img {
     margin-left: 25%;
   }
 }
-@media (min-width: 992px) and (min-width: 768px) {
-  #event-by-the-numbers .stat-3 {
-    float: left;
-    width: 25%;
-  }
-}
 @media (min-width: 1500px) {
   .event-sponsors .sponsor {
     width: 16.66666667%;
@@ -1535,18 +1577,19 @@ img {
     width: 25%;
   }
 }
-.about-boundary {
+.text-boundary {
   max-width: 800px;
   margin: 0 auto;
 }
-.about-boundary p {
+.text-boundary p,
+.text-boundary li {
   margin: 0 0 24px;
   font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 400;
   text-align: justify;
 }
-.about-boundary p.intro {
+.text-boundary p.intro {
   font-size: 1.75rem;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -1554,11 +1597,12 @@ img {
   margin: 0 0 30px;
   text-align: center;
 }
-.about-boundary p.btn-center {
+.text-boundary p.btn-center {
   text-align: center;
   font-weight: 400;
 }
-.about-boundary p:last-child {
+.text-boundary p:last-child,
+.text-boundary li:last-child {
   margin: 0;
 }
 #about-wired {
@@ -1627,13 +1671,14 @@ img {
   }
 }
 @media (min-width: 992px) {
-  .about-boundary p {
+  .text-boundary p,
+  .text-boundary li {
     margin: 0 0 32px;
     font-size: 1.3125rem;
     line-height: 2.25rem;
     font-weight: 300;
   }
-  .about-boundary p.intro {
+  .text-boundary p.intro {
     font-size: 2.25rem;
     font-family: "Titillium Web", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -1660,5 +1705,74 @@ img {
   }
   #about-team p.twitter {
     margin: 28px 0 0;
+  }
+}
+#page-header.sponsor {
+  background: url('../img/unihack-sponsor-lg.jpg') center center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  padding: 0;
+}
+#page-header.sponsor:before {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  content: ' ';
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#page-header.sponsor #overlay {
+  display: table-cell;
+  width: 100vw;
+  max-width: 100%;
+  height: 60vh;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 48px 0;
+  text-align: center;
+}
+#page-header.sponsor h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+}
+#page-header.sponsor p {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: #a0a0a0;
+  margin-bottom: 18px;
+}
+#previous-sponsors {
+  padding-bottom: 16px;
+}
+#previous-sponsors h3 {
+  text-align: center;
+}
+#previous-sponsors .sponsor {
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  #previous-sponsors .sponsor {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  #previous-sponsors .sponsor {
+    width: 16.66666667%;
   }
 }

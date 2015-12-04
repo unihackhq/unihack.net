@@ -7,7 +7,7 @@ id: 2
 
 # Links
 url: /archive/2015/
-img: /img/unihack-2015-archive.jpg
+img: /img/unihack-2015/unihack-2015-archive.jpg
 
 # Winners
 winners:
@@ -107,3 +107,28 @@ judges:
   - name:     Miguel Wood
     img:      /img/judges/miguel.jpg
     role:     Co-founder &amp; CEO, Euler's Bridge
+
+sponsors:
+  - tier:       Platnium Sponsor
+    type:       sponsor-top
+    companies:  [pwc]
+
+  - tier:       Gold Sponsors
+    type:       sponsor-major
+    companies:  [acs, cba, dius, freelancer, imc]
+
+  - tier:       Silver Sponsors
+    companies:  [adobe, braintree, deloitte, ey, outware-mobile, readify, suncorp, zendesk]
+
+  - tier:       Bronze Sponsors
+    row:        last
+    companies:  [angelcube, atlassian, digital-ocean, mashery, namecheap, sphero]
+
+# Partners
+partners:
+  - name:       University Partner
+    companies:  [monash-fit, msi]
+
+  - name:       Venue Partner
+    row:        last
+    companies:  [inspire9]

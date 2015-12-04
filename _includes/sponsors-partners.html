@@ -1,0 +1,37 @@
+<div id="event-sponsors" class="section event-section event-sponsors">
+  <div class="wrap">
+    <h3><span>Sponsors</span></h3>
+    {% for tier in event.sponsors %}
+    <div class="row {{ tier.row }}">
+      <h4>{{ tier.tier }}</h4>
+      {% for sponsor_hash in tier.companies %}
+      {% assign sponsor = site.data.sponsors[sponsor_hash] %}
+      <div class="sponsor {{ tier.type }}">
+        <a href="{{ sponsor.url }}">
+          <img src="/img/sponsors/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="event-partners" class="section event-section event-sponsors">
+  <div class="wrap">
+    <h3><span>Partners</span></h3>
+    {% for tier in event.partners %}
+    <div class="row {{ tier.row }}">
+      <h4>{{ tier.name }}</h4>
+      {% for sponsor_hash in tier.companies %}
+      {% assign sponsor = site.data.sponsors[sponsor_hash] %}
+      <div class="sponsor {{ tier.type }}">
+        <a href="{{ sponsor.url }}">
+          <img src="/img/sponsors/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>

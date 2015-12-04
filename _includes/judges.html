@@ -1,0 +1,19 @@
+<div id="event-judges" class="section event-section">
+  <div class="wrap">
+    <h3><span>Judges</span></h3>
+    {% for judge in event.judges %}
+    {% cycle '<div class="row">', '', '<div class="row">', '', '<div class="row">', '', '<div class="row">' %}
+      <div class="judge">
+        <img src="{{ judge.img }}" alt="{{ judge.name }}" class="img-rounded" />
+        <h4>{{ judge.name }}</h4>
+        <p class="role">{{ judge.role }}</p>
+        {% if judge.twitter %}
+        <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
+          <i class="fa fa-twitter"></i> {{ judge.twitter }}
+        </a>
+        {% endif %}
+      </div>
+    {% cycle '', '</div>', '', '</div>', '', '</div>', '</div>' %}
+    {% endfor %}
+  </div>
+</div>

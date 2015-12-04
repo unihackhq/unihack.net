@@ -15,7 +15,7 @@ subpage: index
   <div class="wrap">
     <div class="row">
       {% assign sorted_events = (site.data.events | sort_by: 'id') %}
-      {% for event_hash in sorted_events %}
+      {% for event_hash in sorted_events reversed %}
       {% assign event = event_hash[1] %}
       <div class="event-col">
         <div class="event-card">

@@ -28,11 +28,11 @@
   }
 
   &#unihack-2015 {
-    background-image: url('../img/unihack-2015-event-sm.jpg');
+    background-image: url('../img/unihack-2015/unihack-2015-event-sm.jpg');
   }
 
   &#unihack-2014 {
-    background-image: url('../img/unihack-2014-event-sm.jpg');
+    background-image: url('../img/unihack-2014/unihack-2014-event-sm.jpg');
   }
 }
 
@@ -73,23 +73,25 @@
 #event-by-the-numbers {
   padding-bottom: 0;
   background: #f0f0f0;
+
   .stat-3 {
-    .make-column(6);
+    width: percentage(1/2);
+    float: left;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
 
     p {
-      font-size: 1.3125rem;
+      font-size: 0.875rem;
       margin: 0;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     span {
       display: block;
       margin-bottom: 3px;
       font-weight: 700;
-      font-size: 3.5rem;
-      line-height: 3.5rem;
+      font-size: 2rem;
+      line-height: 2rem;
       letter-spacing: -1px;
     }
   }
@@ -370,6 +372,39 @@
   }
 }
 
+/* Event 2015 Haiku */
+#u15-haiku {
+  background: url('../img/unihack-2015/haiku-bg.jpg') center center no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 0;
+  position: relative;
+
+  &:before {
+    #gradient > .vertical( rgba(0,0,0,0.0), rgba(0,0,0,0.7) );
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    content: ' ';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .quote-overlay {
+    display: table-cell;
+    width: 100vw;
+    height: 400px;
+    max-width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 36px 0;
+    vertical-align: bottom;
+  }
+}
+
 @media (min-width: @screen-xs) {
   .event-sponsors {
     h3, h4 {
@@ -398,11 +433,11 @@
 
   .event-header {
     &#unihack-2015 {
-      background-image: url('../img/unihack-2015-event-lg.jpg');
+      background-image: url('../img/unihack-2015/unihack-2015-event-lg.jpg');
     }
 
     &#unihack-2014 {
-      background-image: url('../img/unihack-2014-event-lg.jpg');
+      background-image: url('../img/unihack-2014/unihack-2014-event-lg.jpg');
     }
   }
 
@@ -432,6 +467,22 @@
       font-size: 2.5rem;
       line-height: 3rem;
       margin-bottom: 30px;
+    }
+  }
+
+  /* By The Numbers */
+  #event-by-the-numbers {
+    .stat-3 {
+      width: percentage(1/4);
+
+      p {
+        font-size: 1rem
+      }
+
+      span {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+      }
     }
   }
 
@@ -468,6 +519,10 @@
       width: percentage(1/3);
     }
   }
+
+  #u15-haiku, #u15-haiku .quote-overlay {
+    height: 600px;
+  }
 }
 
 @media (min-width: @screen-md) {
@@ -482,10 +537,20 @@
     }
   }
 
+  /* By The Numbers */
   #event-by-the-numbers {
     .stat-3 {
       margin-bottom: 48px;
-      .make-column(3);
+
+      p {
+        font-size: 1.3125rem;
+        font-weight: 300;
+      }
+
+      span {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+      }
     }
   }
 }

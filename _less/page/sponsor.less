@@ -1,0 +1,73 @@
+// main: ../style.less
+
+#page-header.sponsor {
+  background: url('../img/unihack-sponsor-lg.jpg') center center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  padding: 0;
+
+  &:before {
+    #gradient > .vertical( rgba(0,0,0,0.0), rgba(0,0,0,0.7) );
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    content: ' ';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #overlay {
+    display: table-cell;
+    width: 100vw;
+    max-width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 48px 0;
+    text-align: center;
+  }
+
+  h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #a0a0a0;
+    margin-bottom: 18px;
+  }
+}
+
+#previous-sponsors {
+  padding-bottom: 16px;
+
+  h3 {
+    text-align: center;
+  }
+
+  .sponsor {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: @screen-sm) {
+  #previous-sponsors .sponsor {
+    width: percentage(1/4);
+  }
+}
+
+@media (min-width: @screen-lg) {
+  #previous-sponsors .sponsor {
+    width: percentage(1/6);
+  }
+}

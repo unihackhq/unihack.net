@@ -88,146 +88,21 @@ subpage: unihack-2014
   </div>
 </div>
 
-<div id="event-judges" class="section event-section">
+<div class="section event-section event-tweet event-quote">
   <div class="wrap">
-    <h3><span>Judges</span></h3>
-    {% for judge in event.judges %}
-    {% cycle '<div class="row">', '', '<div class="row">', '', '<div class="row">', '', '<div class="row">' %}
-      <div class="judge">
-        <img src="{{ judge.img }}" alt="{{ judge.name }}" class="img-rounded" />
-        <h4>{{ judge.name }}</h4>
-        <p class="role">{{ judge.role }}</p>
-        {% if judge.twitter %}
-        <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
-          <i class="fa fa-twitter"></i> {{ judge.twitter }}
-        </a>
-        {% endif %}
-      </div>
-    {% cycle '', '</div>', '', '</div>', '', '</div>', '</div>' %}
-    {% endfor %}
+    <i class="icon fa fa-twitter"></i>
+    <p class="tweet">
+      Production completion: prototype<br />
+      Feeling: tired<br />
+      Stickers gained: many
+    </p>
+    <p class="source">
+      &mdash; Hugo Muller-Downing (@hugojmd)
+      <a href="https://twitter.com/HugoMelb/status/498010508541181952"><i class="fa fa-link"></i></a>
+    </p>
   </div>
 </div>
 
-<div id="event-sponsors" class="section event-section event-sponsors">
-  <div class="wrap">
-    <h3><span>Sponsors</span></h3>
-    <div class="row">
-      <h4>TERA Sponsors</h4>
-      <div class="sponsor sponsor-top">
-        <a href="http://www.omnyapp.com/">
-          <img src="/img/sponsors/omny.png" alt="Omny" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-top">
-        <a href="http://www.readify.net/careers/">
-          <img src="/img/sponsors/readify.png" alt="Readify" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-top">
-        <a href="http://www.kpmg.com/au/en/careers/graduates-students/pages/default.aspx">
-          <img src="/img/sponsors/kpmg.png" alt="KPMG" />
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <h4>GIGA Sponsors</h4>
-      <div class="sponsor sponsor-major">
-        <a href="http://pwc.com.au/careers/">
-          <img src="/img/sponsors/pwc.png" alt="PwC" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="http://www.mashery.com/">
-          <img src="/img/sponsors/mashery.png" alt="Mashery" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="http://yourfuture.deloitte.com.au/">
-          <img src="/img/sponsors/deloitte.png" alt="Deloitte" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <a href="http://freelancer.com/">
-          <img src="/img/sponsors/freelancer.png" alt="Freelancer" />
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <h4>MEGA Sponsors</h4>
-      <div class="sponsor">
-        <a href="http://www.adobe.com/">
-          <img src="/img/sponsors/adobe.png" alt="Adobe" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.braintree.com/">
-          <img src="/img/sponsors/braintree.png" alt="Braintree" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.msi.unimelb.edu.au/">
-          <img src="/img/sponsors/msi.png" alt="University of Melbourne" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://www.auspost.com.au/graduateprogram/">
-          <img src="/img/sponsors/australia-post.png" alt="Australia Post" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://github.com/">
-          <img src="/img/sponsors/github.png" alt="GitHub" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://99designs.com.au/">
-          <img src="/img/sponsors/99designs.png" alt="99designs" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://ga.co/melbourne">
-          <img src="/img/sponsors/ga.png" alt="General Assembly" />
-        </a>
-      </div>
-    </div>
-    <div class="row tier-2 last">
-      <h4>KILO Sponsors</h4>
-      <div class="sponsor">
-        <a href="http://it.monash.edu/">
-          <img src="/img/sponsors/monash-fit.png" alt="Monash University" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://aws.amazon.com/">
-          <img src="/img/sponsors/aws.png" alt="Amazon Web Serviecs" />
-        </a>
-      </div>
-      <div class="sponsor">
-        <a href="http://uber.com/melbourne/">
-          <img src="/img/sponsors/uber.png" alt="Uber" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+{% include judges.html %}
 
-
-<div id="event-partners" class="section event-section event-sponsors">
-  <div class="wrap">
-    <h3><span>Partners</span></h3>
-    <div class="row partner">
-      <div class="sponsor sponsor-major">
-        <h4>Venue Partner</h4>
-        <a href="http://yorkbutterfactory.com/">
-          <img src="/img/sponsors/ybf.png" alt="York Butter Factory" />
-        </a>
-      </div>
-      <div class="sponsor sponsor-major">
-        <h4>Assisted By</h4>
-        <a href="https://startupvictoria.com.au/">
-          <img src="/img/sponsors/startup-victoria.png" alt="Startup Victoria" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+{% include sponsors-partners.html %}
