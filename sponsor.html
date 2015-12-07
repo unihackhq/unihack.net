@@ -51,9 +51,7 @@ page: sponsor
   <div class="wrap">
     <h3><span>Past Sponsors</span></h3>
     <div class="row last">
-      {%
-        assign sponsors = "atlassian|readify|dius|pwc|sphero|braintree|deloitte|ey|imc|cba|kpmg|99designs" | split: "|"
-      %}
+      {% assign sponsors = "atlassian|readify|dius|pwc|sphero|braintree|deloitte|ey|imc|cba|kpmg|99designs" | split: "|" %}
       {% for sponsor in sponsors %}
       <div class="sponsor">
         {% assign data = site.data.sponsors[sponsor] %}
