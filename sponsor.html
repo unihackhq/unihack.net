@@ -66,9 +66,7 @@ page: sponsor
       {% for sponsor in sponsors %}
       <div class="sponsor">
         {% assign data = site.data.sponsors[sponsor] %}
-        <a href="{{ data.url }}">
-          <img src="/img/sponsors/{{ sponsor }}.png" alt="{{ data.name }}" />
-        </a>
+        <img src="/img/sponsors/{{ sponsor }}.png" alt="{{ data.name }}" />
       </div>
       {% endfor %}
     </div>
@@ -86,7 +84,7 @@ page: sponsor
       </p>
       <p class="btn-center">
         <script type="text/javascript">
-  document.write("<a class=\"btn\" href=\"mail" + "to:" + new Array("team","unihack.net").join("@") + "\">" + new Array("team","unihack.net").join("@") + "</" + "a>");
+  document.write("<a class=\"btn\" href=\"mail" + "to:" + new Array("team","unihack.net").join("@") + "\"><i class=\"fa fa-envelope\"></i> " + new Array("team","unihack.net").join("@") + "</" + "a>");
 </script>
       </p>
     </div>

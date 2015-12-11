@@ -458,6 +458,16 @@ img {
   padding: 11px 0;
   color: white;
 }
+#gl-head h1 a span {
+  color: white;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+#gl-head h1 a:hover span {
+  color: #ffeb3b;
+}
 #gl-head h1 span {
   display: block;
   font-size: 2rem;
@@ -803,7 +813,7 @@ img {
   font-weight: 300;
 }
 #home-hero h2 span.boxed b {
-  padding: 7px;
+  padding: 7px 15px;
   background: #ffeb3b;
   color: black;
   font-size: 3rem;
@@ -1728,9 +1738,9 @@ img {
   }
 }
 #page-header.sponsor {
-  background: url('../img/unihack-sponsor-lg.jpg') center center no-repeat;
+  background: url('../img/unihack-sponsor.jpg') center center no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 450px;
   position: relative;
   padding: 0;
 }
@@ -1757,25 +1767,26 @@ img {
   display: table-cell;
   width: 100vw;
   max-width: 100%;
-  height: 60vh;
+  height: 450px;
   position: relative;
   z-index: 3;
   vertical-align: bottom;
-  padding: 48px 0;
+  padding: 30px 0;
   text-align: center;
 }
 #page-header.sponsor h2 {
   color: white;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 12px;
 }
 #page-header.sponsor p {
   margin: 0;
-  font-size: 2rem;
-  line-height: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   font-weight: 300;
   color: #a0a0a0;
-  margin-bottom: 18px;
 }
 #previous-sponsors {
   padding-bottom: 16px;
@@ -1796,9 +1807,11 @@ img {
   color: #b0bec5;
 }
 #sponsor-callout h3 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
   letter-spacing: 0px;
   color: white;
+  margin-bottom: 12px;
 }
 #sponsor-callout a.btn {
   color: white;
@@ -1811,6 +1824,27 @@ img {
 @media (min-width: 768px) {
   #previous-sponsors .sponsor {
     width: 25%;
+  }
+  #page-header.sponsor {
+    background: url('../img/unihack-sponsor-lg.jpg') center center no-repeat;
+    background-size: cover;
+    height: 60vh;
+  }
+  #page-header.sponsor #overlay {
+    height: 60vh;
+    padding: 54px 0;
+  }
+  #page-header.sponsor h2 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    margin-bottom: 24px;
+  }
+  #page-header.sponsor p {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  #sponsor-callout h3 {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
