@@ -372,6 +372,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: #039be5;
 }
 img {
   width: 100%;
@@ -388,14 +389,14 @@ img {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  border: 2px solid #428bca;
-  color: #428bca;
+  border: 2px solid #039be5;
+  color: #039be5;
   padding: 5px 9px;
   line-height: 1;
 }
 .btn:hover {
-  background: #2a6496;
-  border-color: #2a6496;
+  background: #039be5;
+  border-color: #039be5;
   color: white;
 }
 .wrap {
@@ -1660,6 +1661,25 @@ img {
 #about-team p.twitter {
   margin: 24px 0 0;
   font-size: 0.875rem;
+}
+#about-contact p.contact-details {
+  text-align: center;
+}
+#about-contact p.contact-details span {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  color: #616161;
+}
+#about-contact p.contact-details a {
+  color: #9E9E9E;
+  font-size: 1.5rem;
+}
+#about-contact p.contact-details a:hover {
+  color: #039be5;
 }
 @media (min-width: 768px) {
   #about-team .team {
