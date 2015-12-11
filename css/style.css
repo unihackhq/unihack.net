@@ -1766,6 +1766,28 @@ img {
 #previous-sponsors .sponsor {
   margin-bottom: 32px;
 }
+#sponsor-callout {
+  background: #263238;
+  border-bottom: none;
+  padding: 56px 0;
+}
+#sponsor-callout p {
+  text-align: center;
+  color: #b0bec5;
+}
+#sponsor-callout h3 {
+  font-size: 2.25rem;
+  letter-spacing: 0px;
+  color: white;
+}
+#sponsor-callout a.btn {
+  color: white;
+  border-color: white;
+}
+#sponsor-callout a.btn:hover {
+  background: white;
+  color: #263238;
+}
 @media (min-width: 768px) {
   #previous-sponsors .sponsor {
     width: 25%;
