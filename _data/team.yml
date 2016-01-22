@@ -1,16 +1,13 @@
 - name: Hugo M&uuml;ller-Downing
   position: Chair
-  twitter: hugojmd
   img: /img/team/hugo.jpg
 
 - name: Terence Huynh
   position: Vice Chair
-  twitter: terencehuynh
   img: /img/team/terence.jpg
 
 - name: Sophie Huynh
   position: Logistics
-  twitter: sphaech
   img: /img/team/sophie.jpg
 
 - name: Lee Hatton
@@ -19,7 +16,6 @@
 
 - name: Gabriel Huynh
   position: Finance
-  twitter: Gaburyeru
   img: /img/team/gabriel.jpg
 
 - name: Rayen Magpantay
