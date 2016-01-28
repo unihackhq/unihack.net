@@ -1979,9 +1979,13 @@ img {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf000000', endColorstr='#1a000000', GradientType=0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   .unihack-2016 #gl-head h1 {
     display: none;
+  }
+  .unihack-2016 #gl-head a.trigger {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
   .unihack-2016 .only-mob {
     display: none;
