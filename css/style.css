@@ -365,7 +365,7 @@ body {
   background: white;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 p {
   color: #333333;
@@ -440,10 +440,13 @@ img {
   .section {
     padding: 48px 0;
   }
+  body {
+    padding-top: 80px;
+  }
 }
 #gl-head {
   background: #101010;
-  height: 80px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -453,8 +456,8 @@ img {
 #gl-head h1 {
   margin: 0;
   float: left;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   padding: 11px 0;
   color: white;
 }
@@ -470,10 +473,10 @@ img {
 }
 #gl-head h1 span {
   display: block;
-  font-size: 2rem;
+  font-size: 1.45rem;
   font-family: "Titillium Web", Open Sans, sans-serif;
   font-weight: 700;
-  line-height: 1.75rem;
+  line-height: 1.2rem;
   letter-spacing: -1px;
 }
 #gl-head h1 span.light {
@@ -481,50 +484,54 @@ img {
 }
 #main-nav {
   float: right;
-  height: 80px;
+  height: 60px;
 }
 #main-nav ul {
   list-style: none;
-  display: #101010;
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 0;
   right: 0;
-  background: black;
+  background: #ffeb3b;
   z-index: 3;
-  border-top: 1px solid #333;
   display: none;
 }
 #main-nav ul li {
   display: block;
 }
 #main-nav ul a {
-  color: #999999;
+  color: #101010;
   font-size: 0.875rem;
   text-transform: uppercase;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
   font-weight: 700;
   padding: 15px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #bba700;
   display: block;
   text-align: center;
 }
-#main-nav ul a:hover {
-  background: #2a2a2a;
-}
 #main-nav ul .selected a {
-  color: white;
+  background: #eed500;
 }
 #main-nav a.trigger {
   color: white;
   display: block;
-  line-height: 80px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
   font-size: 1.5rem;
+  text-align: center;
+  margin-right: -15px;
+  border-left: 1px solid #333;
 }
 #main-nav a.trigger:before {
   content: "\f0c9";
+}
+#main-nav a.trigger.active {
+  background: #ffeb3b;
+  color: #101010;
 }
 .subnav {
   min-height: 72px;
@@ -651,41 +658,28 @@ img {
   text-decoration: underline;
 }
 @media (min-width: 768px) {
-  #main-nav {
+  #gl-head {
+    position: absolute;
     height: 80px;
+  }
+  #gl-head h1 {
+    height: 80px;
+    width: 80px;
+  }
+  #gl-head h1 span {
+    font-size: 2rem;
+    line-height: 1.8rem;
   }
   #main-nav ul {
-    display: block !important;
-    position: relative;
-    top: 0;
-    margin: 0 -15px 0 0;
-    padding: 0;
-    border-top: 0;
+    top: 80px;
   }
-  #main-nav ul li {
-    height: 80px;
-    display: block;
-    float: left;
-  }
-  #main-nav ul a {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 20px 15px;
-    height: 80px;
-    border-bottom: 0;
-  }
-  #main-nav ul a:hover {
-    background: #2a2a2a;
-  }
-  #main-nav ul .home.selected a {
-    color: #ffeb3b;
-  }
-  #main-nav ul .archive.selected a {
-    color: white;
-    background: #2196F3;
+  #main-nav ul li a {
+    font-size: 1.3125rem;
   }
   #main-nav a.trigger {
-    display: none;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
   }
   #page-header {
     padding: 48px 0;
@@ -702,8 +696,43 @@ img {
   .wrap {
     padding: 0 30px;
   }
-  #gl-head {
-    position: absolute;
+  #main-nav ul {
+    display: block !important;
+    position: relative;
+    top: 0;
+    margin: 0 -15px 0 0;
+    padding: 0;
+    border-top: 0;
+  }
+  #main-nav ul li {
+    height: 80px;
+    display: block;
+    float: left;
+  }
+  #main-nav ul li a {
+    display: table-cell;
+    vertical-align: middle;
+    color: #999999;
+    height: 80px;
+    border-bottom: 0;
+    font-size: 0.875rem;
+  }
+  #main-nav ul li a:hover {
+    background: #2a2a2a;
+    color: #ffffff;
+  }
+  #main-nav ul .selected a {
+    background: transparent;
+    color: white;
+  }
+  #main-nav ul .home.selected a {
+    color: #ffeb3b;
+  }
+  #main-nav ul .archive.selected a {
+    background: #2196F3;
+  }
+  #main-nav a.trigger {
+    display: none;
   }
   .subnav #subnav-header {
     display: none;
@@ -1059,9 +1088,17 @@ img {
   font-size: 1.3125rem;
   font-weight: 300;
 }
+.archive #page-header {
+  display: none;
+}
 @media (min-width: 768px) {
   .event-card {
     margin-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .archive #page-header {
+    display: block;
   }
 }
 /* Event Header */

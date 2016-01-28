@@ -8,7 +8,7 @@ body {
   background: @bg-colour;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  padding-top: @head-height;
+  padding-top: @hmob-height;
 }
 
 p {
@@ -83,5 +83,9 @@ img {
 @media (min-width: @screen-sm) {
   .section {
     padding: 48px 0;
+  }
+
+  body {
+    padding-top: @head-height;
   }
 }

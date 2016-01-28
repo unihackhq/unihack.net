@@ -19,7 +19,8 @@ But I ain't done much healing.
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
+
+<body class="{{ page.page }}">
   <header id="gl-head">
     <div class="wrap">
       <h1>
@@ -32,7 +33,7 @@ But I ain't done much healing.
         <a class="trigger fa"></a>
         <ul>
           <li class="home {% if page.page == 'home' %}selected{% endif %}"><a href="/">Home</a></li>
-          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="/archive/">Past Events</a></li>
+          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="/archive/">Archive</a></li>
           <li class="about {% if page.page == 'about' %}selected{% endif %}"><a href="/about/">About Us</a></li>
           <li class="sponsor {% if page.page == 'sponsor' %}selected{% endif %}"><a href="/sponsor/">Sponsor</a></li>
           <li class="blog"><a href="https://medium.com/unihack-blog/">Blog</a></li>
@@ -41,7 +42,7 @@ But I ain't done much healing.
     </div>
   </header>
 
-  {{content}}
+  {{ content }}
 
   <footer id="gl-foot">
     <div class="wrap">
