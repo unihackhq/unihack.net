@@ -17,6 +17,7 @@ subpage: index
       {% assign sorted_events = (site.data.events | sort_by: 'id') %}
       {% for event_hash in sorted_events reversed %}
       {% assign event = event_hash[1] %}
+      {% if event.past == true %}
       <div class="event-col">
         <div class="event-card">
           <a href="{{ event.url }}" class="overlay">
@@ -28,6 +29,7 @@ subpage: index
           </a>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
