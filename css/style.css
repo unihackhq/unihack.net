@@ -1889,3 +1889,242 @@ img {
     width: 16.66666667%;
   }
 }
+#pre-reg-hero {
+  background: url(../img/unihack-2016/prereg-bg.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  max-width: 100%;
+  height: 250px;
+}
+#pre-reg-hero:before {
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  max-width: 100%;
+  height: 250px;
+  content: ' ';
+  display: block;
+}
+#pre-reg-hero #pre-reg-wrap {
+  display: table-cell;
+  vertical-align: middle;
+  height: 250px;
+  width: 100vw;
+  max-width: 100%;
+}
+#pre-reg-hero .wrap {
+  position: relative;
+  z-index: 5;
+}
+#pre-reg-hero .wrap > p,
+#pre-reg-hero .wrap > h3 {
+  display: none;
+}
+#pre-reg-hero h2.event-logo {
+  margin: 0 0 0 0;
+  display: block;
+}
+#pre-reg-hero h2.event-logo a {
+  background: url(../img/unihack-2016/logo.png) top left no-repeat;
+  height: 128px;
+  width: 94px;
+  text-indent: -999em;
+  display: block;
+}
+#pre-reg-content-mobile p.event-message {
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: #333;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+#pre-reg-content-mobile p.event-message.light {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 16px;
+}
+#uh2016-explore {
+  padding-bottom: 0;
+}
+#uh2016-explore .grid {
+  margin-bottom: 0;
+}
+#uh2016-explore .grid .grid-item {
+  height: 300px;
+}
+@media (min-width: 768px) {
+  .unihack-2016 #gl-head {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.1)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf000000', endColorstr='#1a000000', GradientType=0);
+  }
+  .unihack-2016 #gl-head h1 {
+    display: none;
+  }
+  .unihack-2016 .only-mob {
+    display: none;
+  }
+  .unihack-2016 #pre-reg-subscribe-mobile {
+    display: block;
+  }
+  #pre-reg-hero {
+    height: 70vh;
+    margin-top: -80px;
+  }
+  #pre-reg-hero:before,
+  #pre-reg-hero #pre-reg-wrap {
+    height: 70vh;
+  }
+  #pre-reg-hero h2.event-logo {
+    margin: 0 0 30px 0;
+    display: block;
+  }
+  #pre-reg-hero p.event-message {
+    display: block;
+    font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    color: white;
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin: 0;
+  }
+  #pre-reg-hero p.event-message.light {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    margin-top: 6px;
+  }
+}
+@media (min-width: 992px) {
+  .unihack-2016 #pre-reg-subscribe-mobile {
+    display: none;
+  }
+  #uh2016-explore {
+    padding-bottom: 48px;
+  }
+  #pre-reg-hero {
+    height: 90vh;
+    margin-top: -80px;
+  }
+  #pre-reg-hero:before,
+  #pre-reg-hero #pre-reg-wrap {
+    height: 90vh;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .unihack-2016 #pre-reg-hero h2.event-logo a {
+    background: url(../img/unihack-2016/logo-2x.png) top left no-repeat;
+    background-size: 94px 128px;
+  }
+}
+/* Subscribe */
+#mc-embedded-subscribe-form h3,
+#mc-embedded-subscribe-form h4 {
+  font-size: 1.3125rem;
+  color: black;
+  margin: 0 0 12px 0;
+  text-align: center;
+  font-weight: 300;
+}
+#mc-embedded-subscribe-form .mc-field-group {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 100%;
+  height: 48px;
+  padding: 6px;
+  border: 1px solid black;
+}
+#mc-embedded-subscribe-form .mc-field-group input {
+  width: 100%;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+#mc-embedded-subscribe-form .mc-field-group input:focus {
+  outline: 0;
+}
+#mc-embedded-subscribe-form .mc-button {
+  width: 100%;
+  margin-top: 6px;
+}
+#mc-embedded-subscribe-form .mc-button input {
+  width: 100%;
+  height: 48px;
+  background: black;
+  color: white;
+  border: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 1.125rem;
+}
+#mc-embedded-subscribe-form .mc-button input:focus {
+  outline: 0;
+}
+.hero {
+  display: none;
+}
+.hero #mc-embedded-subscribe-form {
+  margin-top: 120px;
+}
+.hero #mc-embedded-subscribe-form #mc_embed_signup_scroll {
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+}
+.hero #mc-embedded-subscribe-form h3 {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+.hero #mc-embedded-subscribe-form .mc-field-group {
+  float: left;
+  width: 79%;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.hero #mc-embedded-subscribe-form .mc-field-group input {
+  color: white;
+  text-align: left;
+}
+.hero #mc-embedded-subscribe-form .mc-button {
+  float: right;
+  width: 20%;
+  height: 36px;
+  margin-top: 0;
+}
+.hero #mc-embedded-subscribe-form .mc-button input {
+  background: white;
+  color: black;
+  height: 36px;
+}
+@media (min-width: 992px) {
+  .hero {
+    display: block;
+  }
+}

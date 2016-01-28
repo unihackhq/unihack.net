@@ -1,0 +1,165 @@
+// main: ../style.less
+
+#pre-reg-hero {
+  background: url(../img/unihack-2016/prereg-bg.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  max-width: 100%;
+  height: 250px;
+
+  &:before {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
+    width: 100vw;
+    max-width: 100%;
+    height: 250px;
+    content: ' ';
+    display: block;
+  }
+
+  #pre-reg-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    height: 250px;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 5;
+
+    > p, > h3 {
+      display: none;
+    }
+  }
+
+  h2.event-logo {
+    margin: 0 0 0 0;
+    display: block;
+  }
+
+  h2.event-logo a {
+    background: url(../img/unihack-2016/logo.png) top left no-repeat;
+    height: 128px;
+    width: 94px;
+    text-indent: -999em;
+    display: block;
+  }
+}
+
+#pre-reg-content-mobile {
+  p.event-message {
+    font-family: @titillium;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: #333;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+
+    &.light {
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 16px;
+    }
+  }
+}
+
+#uh2016-explore {
+  padding-bottom: 0;
+  .grid {
+    margin-bottom: 0;
+
+    .grid-item {
+      height: 300px;
+    }
+  }
+}
+
+@media (min-width: @screen-sm) {
+  .unihack-2016 {
+    #gl-head {
+      #gradient.vertical(rgba(0,0,0,0.75), rgba(0,0,0,0.1));
+
+      h1 {
+        display: none;
+      }
+    }
+
+    .only-mob {
+      display: none;
+    }
+
+    #pre-reg-subscribe-mobile {
+      display: block;
+    }
+  }
+
+  #pre-reg-hero {
+    height: 70vh;
+    margin-top: -@head-height;
+
+    &:before, #pre-reg-wrap {
+      height: 70vh;
+    }
+
+    h2.event-logo {
+      margin: 0 0 30px 0;
+      display: block;
+    }
+
+    p.event-message {
+      display: block;
+      font-family: @titillium;
+      font-size: 3.5rem;
+      line-height: 4.25rem;
+      color: white;
+      letter-spacing: -2px;
+      font-weight: 700;
+      margin: 0;
+
+      &.light {
+        font-weight: 300;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+  .unihack-2016 {
+    #pre-reg-subscribe-mobile {
+      display: none;
+    }
+  }
+
+  #uh2016-explore {
+    padding-bottom: 48px;
+  }
+
+  #pre-reg-hero {
+    height: 90vh;
+    margin-top: -@head-height;
+
+    &:before, #pre-reg-wrap {
+      height: 90vh;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .unihack-2016 {
+    #pre-reg-hero {
+      h2.event-logo a {
+        background: url(../img/unihack-2016/logo-2x.png) top left no-repeat;
+        background-size: 94px 128px;
+      }
+    }
+  }
+}

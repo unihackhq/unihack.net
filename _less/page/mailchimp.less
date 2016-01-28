@@ -1,0 +1,119 @@
+// main: ../style.less
+/* Subscribe */
+
+#mc-embedded-subscribe-form {
+
+  h3, h4 {
+    font-size: 1.3125rem;
+    color: black;
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .mc-field-group {
+    .border-top-radius(4px);
+    .border-left-radius(4px);
+    .border-right-radius(4px);
+    .border-bottom-radius(4px);
+    width: 100%;
+    height: 48px;
+    padding: 6px;
+    border: 1px solid black;
+
+    input {
+      width: 100%;
+      height: 36px;
+      border: none;
+      background: transparent;
+      color: black;
+      font-size: 1rem;
+      text-align: center;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  .mc-button {
+    width: 100%;
+    margin-top: 6px;
+
+    input {
+      width: 100%;
+      height: 48px;
+      background: black;
+      color: white;
+      border: none;
+      .border-top-radius(4px);
+      .border-left-radius(4px);
+      .border-right-radius(4px);
+      .border-bottom-radius(4px);
+      font-size: 1.125rem;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
+
+.hero {
+  display: none;
+
+  #mc-embedded-subscribe-form {
+    margin-top: 120px;
+
+    #mc_embed_signup_scroll {
+      border: 1px solid white;
+      padding: 7px;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 600px;
+      height: 50px;
+    }
+
+    h3 {
+      text-align: left;
+      color: white;
+      font-weight: bold;
+    }
+
+    .mc-field-group {
+      float: left;
+      width: 79%;
+      height: 36px;
+      padding: 0;
+      border: none;
+      .border-top-radius(0px);
+      .border-left-radius(0px);
+      .border-right-radius(0px);
+      .border-bottom-radius(0px);
+
+      input {
+        color: white;
+        text-align: left;
+      }
+    }
+
+    .mc-button {
+      float: right;
+      width: 20%;
+      height: 36px;
+      margin-top: 0;
+      
+      input {
+        background: white;
+        color: black;
+        height: 36px;
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+  .hero {
+    display: block;
+  }
+}
