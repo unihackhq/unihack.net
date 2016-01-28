@@ -8,18 +8,33 @@ But I ain't done much healing.
 <!DOCTYPE html>
 <html>
 <head>
+  {% capture header %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.og_image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/img/unihack-og.jpg" />
+  {% endif %}
+  {% if page.og_description %}
+  <meta property="og:description" content="{{ page.og_description }}" />
+  {% else %}
+  <meta property="og:description" content="{{ site.description }}" />
+  {% endif %}
   {% if page.page == 'home' %}
-  <title>UNIHACK 2016 &mdash; Coming Soon &mdash; Melbourne, Australia</title>
+  <title>UNIHACK 2016 &mdash; July 30-31 &mdash; Melbourne, Australia</title>
   {% elsif page.title_override == 'true' %}
   <title>{% if page.title %}{{ page.title }}{% endif %}</title>
   {% else %}
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK 2016</title>
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK</title>
   {% endif %}
   <link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,700|Open+Sans:300,400,700" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  {% endcapture %}{{ header | strip_newlines }}
 </head>
 
 <body class="{{ page.page }}">

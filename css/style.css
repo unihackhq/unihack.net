@@ -856,6 +856,18 @@ img {
   margin: 0 0 0 7px;
   font-weight: 300;
 }
+#home-hero p.btn-at {
+  margin-top: 21px;
+}
+#home-hero p.btn-at a.btn {
+  color: white;
+  border-color: white;
+}
+#home-hero p.btn-at a.btn:hover {
+  background: #ffeb3b;
+  color: black;
+  border-color: #ffeb3b;
+}
 #home-about {
   border-bottom: 0;
 }
