@@ -90,25 +90,20 @@
   padding: 0;
 
   .location-image-side {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 60vw;
-    background: url("../img/unihack-2016/location-lab14-alt.jpg") no-repeat top right;
+    background: url("../img/unihack-2016/location-lab14-alt-mob.jpg") no-repeat top right;
+    height: 50vw;
     background-size: cover;
+    margin: 0 -15px;
   }
 
   .location-address-side {
-    width: 38%;
-    padding: 46px 0 30px 32px;
+    width: 100%;
     background: #101010;
+    padding: 42px 0 30px;
     position: relative;
-    z-index: 3;
-    float: right;
+    text-align: center;
 
     h3 {
-      text-align: left;
       color: @unihack-2016-accent;
 
       span {
@@ -234,6 +229,45 @@
       height: 90vh;
     }
   }
+
+  #uh2016-location {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+
+    .location-image-side {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 60vw;
+      height: auto;
+      background: url("../img/unihack-2016/location-lab14-alt.jpg") no-repeat top right;
+      background-size: cover;
+      margin: 0;
+    }
+
+    .location-address-side {
+      width: 38%;
+      padding: 46px 0 30px 32px;
+      background: #101010;
+      position: relative;
+      z-index: 3;
+      float: right;
+      text-align: left;
+
+      h3 {
+        text-align: left;
+        color: @unihack-2016-accent;
+
+        span {
+          border-bottom-color: @unihack-2016-accent;
+        }
+      }
+    }
+  }
+
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

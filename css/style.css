@@ -372,7 +372,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #039be5;
+  color: #039BE5;
 }
 img {
   width: 100%;
@@ -389,14 +389,14 @@ img {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  border: 2px solid #039be5;
-  color: #039be5;
+  border: 2px solid #039BE5;
+  color: #039BE5;
   padding: 5px 9px;
   line-height: 1;
 }
 .btn:hover {
-  background: #039be5;
-  border-color: #039be5;
+  background: #039BE5;
+  border-color: #039BE5;
   color: white;
 }
 .wrap {
@@ -469,7 +469,7 @@ img {
   transition: 0.1s ease-in-out;
 }
 #gl-head h1 a:hover span {
-  color: #ffeb3b;
+  color: #FFEB3B;
 }
 #gl-head h1 span {
   display: block;
@@ -494,7 +494,7 @@ img {
   top: 60px;
   left: 0;
   right: 0;
-  background: #ffeb3b;
+  background: #FFEB3B;
   z-index: 3;
   display: none;
 }
@@ -530,7 +530,7 @@ img {
   content: "\f0c9";
 }
 #main-nav a.trigger.active {
-  background: #ffeb3b;
+  background: #FFEB3B;
   color: #101010;
 }
 .subnav {
@@ -579,10 +579,10 @@ img {
   display: block;
 }
 .subnav#archive-subnav {
-  background: #2196f3;
+  background: #2196F3;
 }
 .subnav#archive-subnav ul {
-  border-bottom-color: #2196f3;
+  border-bottom-color: #2196F3;
 }
 #page-header {
   background: #f5f5f5;
@@ -625,7 +625,7 @@ img {
   color: #ff0000;
 }
 #gl-foot .logo {
-  background: #673ab7;
+  background: #673AB7;
 }
 #gl-foot .logo p {
   margin: 0 0 4px;
@@ -649,10 +649,10 @@ img {
   margin: 0;
   line-height: 1rem;
   text-transform: uppercase;
-  color: #888888;
+  color: #888;
 }
 #gl-foot a {
-  color: #555555;
+  color: #555;
 }
 #gl-foot a:hover {
   text-decoration: underline;
@@ -712,21 +712,21 @@ img {
   #main-nav ul li a {
     display: table-cell;
     vertical-align: middle;
-    color: #999999;
+    color: #999;
     height: 80px;
     border-bottom: 0;
     font-size: 0.875rem;
   }
   #main-nav ul li a:hover {
     background: #2a2a2a;
-    color: #ffffff;
+    color: #fff;
   }
   #main-nav ul .selected a {
     background: transparent;
     color: white;
   }
   #main-nav ul .home.selected a {
-    color: #ffeb3b;
+    color: #FFEB3B;
   }
   #main-nav ul .archive.selected a {
     background: #2196F3;
@@ -765,7 +765,7 @@ img {
     content: ' ';
     width: 50vw;
     height: 100%;
-    background: #673ab7;
+    background: #673AB7;
     display: block;
     right: 0;
     top: 0;
@@ -829,7 +829,7 @@ img {
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  color: #ffeb3b;
+  color: #FFEB3B;
   margin: 0 0 12px;
 }
 #home-hero h2 span {
@@ -843,7 +843,7 @@ img {
 }
 #home-hero h2 span.boxed b {
   padding: 7px 15px;
-  background: #ffeb3b;
+  background: #FFEB3B;
   color: black;
   font-size: 3rem;
   line-height: 2.5rem;
@@ -864,9 +864,9 @@ img {
   border-color: white;
 }
 #home-hero p.btn-at a.btn:hover {
-  background: #ffeb3b;
+  background: #FFEB3B;
   color: black;
-  border-color: #ffeb3b;
+  border-color: #FFEB3B;
 }
 #home-about {
   border-bottom: 0;
@@ -1273,7 +1273,7 @@ img {
   color: black;
 }
 #event-winners .winner-card a:hover p.team {
-  color: #2196f3;
+  color: #2196F3;
 }
 #event-winners .winner-card.top a {
   display: inline;
@@ -1311,16 +1311,16 @@ img {
   background: #ffc107;
 }
 #event-winners .winner-card.second img {
-  border-bottom: 5px solid #90a4ae;
+  border-bottom: 5px solid #90A4AE;
 }
 #event-winners .winner-card.second .icon {
-  background: #90a4ae;
+  background: #90A4AE;
 }
 #event-winners .winner-card.third img {
-  border-bottom: 5px solid #a1887f;
+  border-bottom: 5px solid #A1887F;
 }
 #event-winners .winner-card.third .icon {
-  background: #a1887f;
+  background: #A1887F;
 }
 /* Quotes */
 .event-quote .wrap {
@@ -1365,7 +1365,7 @@ img {
   background: #55acee;
 }
 .event-haiku {
-  background: #7986cb;
+  background: #7986CB;
 }
 /* Event Judges */
 #event-judges .judge {
@@ -1666,7 +1666,7 @@ img {
   margin: 0;
 }
 #about-wired {
-  background: #673ab7;
+  background: #673AB7;
 }
 #about-wired span {
   border: 0;
@@ -1685,7 +1685,7 @@ img {
 }
 #about-wired a.btn:hover {
   background: white;
-  color: #673ab7;
+  color: #673AB7;
 }
 #about-team {
   padding-bottom: 0;
@@ -1738,7 +1738,7 @@ img {
   font-size: 1.5rem;
 }
 #about-contact p.contact-details a:hover {
-  color: #039be5;
+  color: #039BE5;
 }
 @media (min-width: 768px) {
   #about-team .team {
@@ -1853,7 +1853,7 @@ img {
 }
 #sponsor-callout p {
   text-align: center;
-  color: #b0bec5;
+  color: #B0BEC5;
 }
 #sponsor-callout h3 {
   font-size: 1.75rem;
@@ -1977,24 +1977,19 @@ img {
   padding: 0;
 }
 #uh2016-location .location-image-side {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 60vw;
-  background: url("../img/unihack-2016/location-lab14-alt.jpg") no-repeat top right;
+  background: url("../img/unihack-2016/location-lab14-alt-mob.jpg") no-repeat top right;
+  height: 50vw;
   background-size: cover;
+  margin: 0 -15px;
 }
 #uh2016-location .location-address-side {
-  width: 38%;
-  padding: 46px 0 30px 32px;
+  width: 100%;
   background: #101010;
+  padding: 42px 0 30px;
   position: relative;
-  z-index: 3;
-  float: right;
+  text-align: center;
 }
 #uh2016-location .location-address-side h3 {
-  text-align: left;
   color: #52d0ff;
 }
 #uh2016-location .location-address-side h3 span {
@@ -2100,6 +2095,39 @@ img {
   #pre-reg-hero:before,
   #pre-reg-hero #pre-reg-wrap {
     height: 90vh;
+  }
+  #uh2016-location {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+  }
+  #uh2016-location .location-image-side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60vw;
+    height: auto;
+    background: url("../img/unihack-2016/location-lab14-alt.jpg") no-repeat top right;
+    background-size: cover;
+    margin: 0;
+  }
+  #uh2016-location .location-address-side {
+    width: 38%;
+    padding: 46px 0 30px 32px;
+    background: #101010;
+    position: relative;
+    z-index: 3;
+    float: right;
+    text-align: left;
+  }
+  #uh2016-location .location-address-side h3 {
+    text-align: left;
+    color: #52d0ff;
+  }
+  #uh2016-location .location-address-side h3 span {
+    border-bottom-color: #52d0ff;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
