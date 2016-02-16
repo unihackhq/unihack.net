@@ -1,5 +1,7 @@
 // main: ../style.less
 
+@unihack-2016-accent: #52d0ff;
+
 #pre-reg-hero {
   background: url(../img/unihack-2016/prereg-bg.jpg) top center no-repeat;
   background-size: cover;
@@ -80,6 +82,81 @@
   }
 }
 
+#uh2016-location {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #101010;
+  padding: 0;
+
+  .location-image-side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60vw;
+    background: url("../img/unihack-2016/location-lab14-alt.jpg") no-repeat top right;
+    background-size: cover;
+  }
+
+  .location-address-side {
+    width: 38%;
+    padding: 46px 0 30px 32px;
+    background: #101010;
+    position: relative;
+    z-index: 3;
+    float: right;
+
+    h3 {
+      text-align: left;
+      color: @unihack-2016-accent;
+
+      span {
+        border-bottom-color: @unihack-2016-accent;
+      }
+    }
+
+    .address-block {
+      margin-bottom: 72px;
+
+      p.address {
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin: 0 0 4px;
+        color: white;
+      }
+
+      p.map {
+        margin: 24px 0 0 0;
+        a {
+          border-color: white;
+          color: white;
+        }
+        a:hover {
+          background: white;
+          color: #101010;
+        }
+      }
+    }
+
+    .transport-block {
+      h4 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: @titillium;
+        color: @unihack-2016-accent;
+        margin: 0 0 16px;
+      }
+
+      p {
+        color: #969696;
+        margin: 0 0 16px;
+        line-height: 1.75rem;
+      }
+    }
+  }
+}
+
 @media (min-width: @screen-sm) {
   .unihack-2016 {
     #gl-head {
@@ -132,6 +209,7 @@
         font-size: 2.5rem;
         line-height: 3.25rem;
         margin-top: 6px;
+        letter-spacing: -1px;
       }
     }
   }
