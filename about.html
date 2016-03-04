@@ -13,10 +13,8 @@ page: about
       </p>
       <p>
         Inspired by the student hackathons in the United States and Europe, UNIHACK was created in 2014
-        by two university students from Melbourne's two largest universities &mdash; Terence Huynh from
-        Monash University and Matthew Rossi from the University of Melbourne. Since the very first competition
-        at York Butter Factory, UNIHACK has quickly become one of the go-to hackathons for university students
-        nationwide.
+        by WIRED Monash. Since the very first competition at York Butter Factory, UNIHACK has quickly
+        become one of the go-to hackathons for university students nationwide.
       </p>
       <p>
         The main purpose of UNIHACK is to showcase the best and talented students currently residing in our
@@ -75,13 +73,18 @@ page: about
         <p class="name">{{ person.name }}</p>
         <p class="role">{{ person.position }}</p>
         <p class="subrole">{{ person.subposition }}</p>
-        {% if person.twitter %}
-        <p class="twitter">
-          <a href="http://twitter.com/{{ person.twitter }}" class="btn">
-            <i class="fa fa-twitter"></i> {{ person.twitter }}
-          </a>
+        <p class="social">
+          {% if person.twitter %}
+            <a href="http://twitter.com/{{ person.twitter }}">
+              <i class="fa fa-twitter"></i>
+            </a>
+          {% endif %}
+          {% if person.linkedin %}
+            <a href="{{ person.linkedin }}">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          {% endif %}
         </p>
-        {% endif %}
       </div>
       {% endif %}
       {% endfor %}

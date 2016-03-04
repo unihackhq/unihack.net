@@ -61,28 +61,38 @@
 #about-team {
   padding-bottom: 0;
 
+  .row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
   .team {
+    width: 50%;
     float: left;
-    padding: 15px;
-    width: 100%;
+    padding: 15px 10px;
     text-align: center;
     margin-bottom: 30px;
   }
 
   img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0 0 12px;
   }
 
   p.name {
-    font-size: 1.3125rem;
+    font-size: 1rem;
     font-family: @titillium;
     margin: 0 0 3px;
   }
 
   p.role {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
     margin: 0;
     color: #969696;
   }
@@ -96,6 +106,16 @@
   p.twitter {
     margin: 24px 0 0;
     font-size: 0.875rem;
+  }
+
+  a {
+    color: #c0c0c0;
+    font-size: 1.3125rem;
+    margin: 0 2px;
+  }
+
+  a:hover {
+    color: @link-color;
   }
 
 }
@@ -132,8 +152,21 @@
     }
 
     img {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
+    }
+
+    p.name {
+      font-size: 1.5rem;
+      font-family: @titillium;
+      margin: 0 0 3px;
+    }
+
+    p.role {
+      font-size: 1.125rem;
+      margin: 0;
+      color: #969696;
+      text-transform: inherit;
     }
   }
 }
@@ -161,18 +194,6 @@
       width: 200px;
       height: 200px;
       margin: 0 0 12px;
-    }
-
-    p.name {
-      font-size: 1.5rem;
-      font-family: @titillium;
-      margin: 0 0 3px;
-    }
-
-    p.role {
-      font-size: 1.125rem;
-      margin: 0;
-      color: #969696;
     }
 
     p.subrole {
