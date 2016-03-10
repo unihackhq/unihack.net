@@ -1,0 +1,245 @@
+// main: ../style.less
+
+@unihack-2016-accent: #52d0ff;
+@unihack-mini-pink: #d1005d;
+
+#mini-hero {
+  background: url(../img/unihack-2016/prereg-bg.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  max-width: 100%;
+  height: 250px;
+
+  &:before {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
+    width: 100vw;
+    max-width: 100%;
+    height: 250px;
+    content: ' ';
+    display: block;
+  }
+
+  #mini-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    height: 250px;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 5;
+
+    > p, > h3 {
+      display: none;
+    }
+  }
+
+  h2.event-logo {
+    margin: 0 0 0 0;
+    display: block;
+  }
+
+  h2.event-logo a {
+    background: url(../img/unihack-2016/logo.png) top left no-repeat;
+    height: 128px;
+    width: 94px;
+    text-indent: -999em;
+    display: block;
+  }
+}
+
+#mini-location {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #f0f0f0;
+  padding: 0;
+
+  .location-map-side {
+    height: 50vw;
+    margin: 0 -15px;
+  }
+
+  .location-address-side {
+    width: 100%;
+    background: #f0f0f0;
+    padding: 42px 0 30px;
+    position: relative;
+    text-align: center;
+
+    h3 {
+      color: @unihack-mini-pink;
+
+      span {
+        border-bottom-color: @unihack-mini-pink;
+      }
+    }
+
+    .address-block {
+      margin-bottom: 72px;
+
+      p.address {
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin: 0 0 4px;
+      }
+
+      p.map {
+        margin: 24px 0 0 0;
+        a {
+          border-color: white;
+        }
+        a:hover {
+          background: white;
+          color: #101010;
+        }
+      }
+    }
+
+    .transport-block {
+      h4 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: @titillium;
+        color: @unihack-mini-pink;
+        margin: 36px 0 8px;
+      }
+
+      p {
+        color: #777;
+        margin: 0 0 16px;
+        line-height: 1.75rem;
+      }
+    }
+  }
+}
+
+#mini-callout {
+  background: #e914b4;
+  border-bottom: none;
+  padding: 56px 0;
+
+  p {
+    text-align: center;
+    color: #B0BEC5
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: 0px;
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  a.btn {
+    color: white;
+    border-color: white;
+  }
+
+  a.btn:hover {
+    background: white;
+    color: #263238;
+  }
+}
+
+@media (min-width: @screen-sm) {
+  #mini-hero {
+    height: 70vh;
+    margin-top: -@head-height;
+
+    &:before, #pre-reg-wrap {
+      height: 70vh;
+    }
+
+    h2.event-logo {
+      margin: 0 0 30px 0;
+      display: block;
+    }
+
+    p.event-message {
+      display: block;
+      font-family: @titillium;
+      font-size: 3.5rem;
+      line-height: 4.25rem;
+      color: white;
+      letter-spacing: -2px;
+      font-weight: 700;
+      margin: 0;
+
+      &.light {
+        font-weight: 300;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+        margin-top: 6px;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+  #mini-callout {
+    padding: 100px 0;
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+
+  #mini-hero {
+    height: 90vh;
+    margin-top: -@head-height;
+
+    &:before, #mini-wrap {
+      height: 90vh;
+    }
+  }
+
+  #mini-location {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+
+    .location-map-side {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 60vw;
+      height: auto;
+      margin: 0;
+    }
+
+    .location-address-side {
+      width: 38%;
+      padding: 46px 35px 30px 0px;
+      background: #f0f0f0;
+      position: relative;
+      z-index: 3;
+      float: left;
+      text-align: left;
+
+      h3 {
+        text-align: left;
+      }
+    }
+  }
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .unihack-2016 {
+    #mini-hero {
+      h2.event-logo a {
+        background: url(../img/unihack-2016/logo-2x.png) top left no-repeat;
+        background-size: 94px 128px;
+      }
+    }
+  }
+}

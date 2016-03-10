@@ -86,5 +86,9 @@ But I ain't done much healing.
   </footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
+  {% if page.google-maps %}
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkUhRgQ8olWMHZRauELz55rBEBV6eX-P8&sensor=false"></script>
+  <script type="text/javascript" src="/js/{{ page.google-maps }}.js"></script>
+  {% endif %}
 </body>
 </html>
