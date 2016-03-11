@@ -2,9 +2,10 @@
 
 @unihack-2016-accent: #52d0ff;
 @unihack-mini-pink: #d1005d;
+@unihack-mini-orange: #f59807;
 
 #mini-hero {
-  background: url(../img/unihack-2016/prereg-bg.jpg) top center no-repeat;
+  background: url(../img/unihack-mini/bg.jpg) top center no-repeat;
   background-size: cover;
   width: 100vw;
   max-width: 100%;
@@ -13,7 +14,7 @@
   &:before {
     position: absolute;
     z-index: 2;
-    background: rgba(0,0,0,0.3);
+    background: fade(@unihack-mini-pink, 50%);
     width: 100vw;
     max-width: 100%;
     height: 250px;
@@ -24,6 +25,7 @@
   #mini-wrap {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
     height: 250px;
     width: 100vw;
     max-width: 100%;
@@ -44,11 +46,52 @@
   }
 
   h2.event-logo a {
-    background: url(../img/unihack-2016/logo.png) top left no-repeat;
-    height: 128px;
-    width: 94px;
+    background: url(../img/unihack-mini/logo.png) top left no-repeat;
+    background-size: contain;
+    height: 115px;
+    width: 100px;
     text-indent: -999em;
     display: block;
+    margin: 0 auto;
+  }
+}
+
+.unihack-mini #head-bg-mobile {
+  p.event-message {
+    font-family: @titillium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #333;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+
+    &.light {
+      font-weight: 300;
+      font-size: 1.3125rem;
+      line-height: 1.75rem;
+      margin-top: 16px;
+    }
+  }
+
+  p.buy-now {
+    margin: 21px 0 0;
+    text-align: center;
+  }
+}
+
+.unihack-mini .section {
+  h3 {
+    color: @unihack-mini-pink;
+
+    span {
+      border-bottom-color: @unihack-mini-pink;
+    }
+  }
+
+  p.intro {
+    color: @unihack-mini-pink;
   }
 }
 
@@ -70,14 +113,6 @@
     padding: 42px 0 30px;
     position: relative;
     text-align: center;
-
-    h3 {
-      color: @unihack-mini-pink;
-
-      span {
-        border-bottom-color: @unihack-mini-pink;
-      }
-    }
 
     .address-block {
       margin-bottom: 72px;
@@ -119,7 +154,7 @@
 }
 
 #mini-callout {
-  background: #e914b4;
+  background: @unihack-mini-pink;
   border-bottom: none;
   padding: 56px 0;
 
@@ -148,16 +183,22 @@
 }
 
 @media (min-width: @screen-sm) {
+
+  .unihack-mini {
+    .only-mob {
+      display: none;
+    }
+  }
+
   #mini-hero {
     height: 70vh;
-    margin-top: -@head-height;
 
-    &:before, #pre-reg-wrap {
+    &:before, #mini-wrap {
       height: 70vh;
     }
 
     h2.event-logo {
-      margin: 0 0 30px 0;
+      margin: 0 0 42px 0;
       display: block;
     }
 
@@ -165,7 +206,7 @@
       display: block;
       font-family: @titillium;
       font-size: 3.5rem;
-      line-height: 4.25rem;
+      line-height: 4rem;
       color: white;
       letter-spacing: -2px;
       font-weight: 700;
@@ -174,9 +215,25 @@
       &.light {
         font-weight: 300;
         font-size: 2.5rem;
-        line-height: 3.25rem;
-        margin-top: 6px;
+        line-height: 3rem;
+        margin-top: 0px;
         letter-spacing: -1px;
+      }
+    }
+
+    p.buy-now {
+      display: block;
+      font-size: 1.5rem;
+      margin: 42px 0 0;
+
+      a {
+        color: white;
+        border-color: white;
+      }
+
+      a:hover {
+        background: white;
+        color: @unihack-mini-pink;
       }
     }
   }
@@ -191,12 +248,17 @@
 
 @media (min-width: @screen-md) {
 
+  .unihack-mini {
+    #gl-head .selected a {
+      background: @unihack-mini-pink;
+    }
+  }
+
   #mini-hero {
-    height: 90vh;
-    margin-top: -@head-height;
+    height: 80vh;
 
     &:before, #mini-wrap {
-      height: 90vh;
+      height: 80vh;
     }
   }
 
@@ -231,15 +293,4 @@
     }
   }
 
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .unihack-2016 {
-    #mini-hero {
-      h2.event-logo a {
-        background: url(../img/unihack-2016/logo-2x.png) top left no-repeat;
-        background-size: 94px 128px;
-      }
-    }
-  }
 }

@@ -405,6 +405,29 @@
   }
 }
 
+/* Event FAQs */
+#event-faqs {
+  .question {
+    .make-column(12);
+    margin-bottom: 36px;
+
+    h4 {
+      font-weight: 300;
+      color: #333;
+      font-size: 1.3125rem;
+      line-height: 1.75rem;
+      margin: 0 0 16px;
+    }
+
+    p {
+      color: #969696;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin: 0;
+    }
+  }
+}
+
 @media (min-width: @screen-xs) {
   .event-sponsors {
     h3, h4 {
@@ -551,6 +574,12 @@
         font-size: 3.5rem;
         line-height: 3.5rem;
       }
+    }
+  }
+
+  #event-faqs {
+    .question {
+      .make-column(3);
     }
   }
 }
