@@ -3,16 +3,19 @@ layout: main
 title: UNIHACK Mini &mdash; April 9-10
 title-override: true
 page: unihack-mini
+subpage: unihack-mini-2016
 og_description: "UNIHACK Mini - Monash University - April 9-10"
 og_image: /img/unihack-mini/unihack-mini-og.png
 google-maps: unihack-mini
 ---
 
+{% assign event = site.data.events[page.subpage] %}
+
 <div id="mini-hero">
   <div id="mini-wrap">
     <div class="wrap">
       <h2 class="event-logo">
-        <a href="/mini/">UNIHACK 2016</a>
+        <a href="/mini/">UNIHACK Mini</a>
       </h2>
       <p class="event-message">
         Calling all Monash students, UNIHACK Mini is coming!
@@ -77,9 +80,17 @@ google-maps: unihack-mini
     <div class="location-address-side">
       <h3><span>Location</span></h3>
       <div class="address-block">
-        <p class="address">Location TBA</p>
+        <p class="address">Labs 143-146</p>
+        <p class="address">14 Rainforest Walk</p>
         <p class="address">Monash University</p>
         <p class="address">Clayton Campus</p>
+      </div>
+      <div class="transport-block">
+        <h4>How do I enter the building?</h4>
+        <p>
+          You will need to enter from the doors near the G13 and G14 computer labs.
+        </p>
+
       </div>
       <div class="transport-block">
         <h4>How do I get there?</h4>
@@ -103,6 +114,111 @@ google-maps: unihack-mini
     <div class="location-map-side" id="unihack-mini-map"></div>
   </div>
 </div>
+
+<div id="event-schedule" class="section event-section">
+  <div class="wrap">
+    <h3><span>Schedule</span></h3>
+    <div class="row">
+      <div class="day">
+        <h4>Saturday April 9</h4>
+        <table class="sch-table">
+          <tr>
+            <th class="sch-time">Time</th>
+            <th class="sch-activity">Activity</th>
+          </tr>
+          <tr>
+            <td class="sch-time">9:00am</th>
+            <td class="sch-activity">
+              Registration
+              <span>at C1 Lecture Theatre</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">9:45am</th>
+            <td class="sch-activity">
+              Opening Ceremony
+              <span>at C1 Lecture Theatre</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">10:00am</th>
+            <td class="sch-activity">
+              Start Hacking!
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">1:00pm</th>
+            <td class="sch-activity">
+              Lunch
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">2:00pm</th>
+            <td class="sch-activity">
+              Hacking continues!
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">6:00pm</th>
+            <td class="sch-activity">
+              Dinner
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">8:00pm</th>
+            <td class="sch-activity">
+              End of Day One, hacking continues at home
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="day">
+        <h4>Sunday April 10</h4>
+        <table class="sch-table">
+          <tr>
+            <th class="sch-time">Time</th>
+            <th class="sch-activity">Activity</th>
+          </tr>
+          <tr>
+            <td class="sch-time">10:00am</th>
+            <td class="sch-activity">
+              Doors reopen, hacking continues on venue
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">1:00pm</th>
+            <td class="sch-activity">
+              Hacking stops, Lunch
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">2:00pm</th>
+            <td class="sch-activity">
+              Presentations
+              <span>at C1 Lecture Theatre</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">5:00pm*</th>
+            <td class="sch-activity">
+              Winners announced
+              <span>at C1 Lecture Theatre</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="sch-time">5:15pm*</th>
+            <td class="sch-activity">
+              Event finishes!
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include sponsors-partners.html %}
 
 <div id="event-faqs" class="section event-section">
   <div class="wrap">

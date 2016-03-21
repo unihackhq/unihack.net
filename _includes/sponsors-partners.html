@@ -1,3 +1,4 @@
+{% if event.sponsors %}
 <div id="event-sponsors" class="section event-section event-sponsors">
   <div class="wrap">
     <h3><span>Sponsors</span></h3>
@@ -16,7 +17,9 @@
     {% endfor %}
   </div>
 </div>
+{% endif %}
 
+{% if event.partners %}
 <div id="event-partners" class="section event-section event-sponsors">
   <div class="wrap">
     <h3><span>Partners</span></h3>
@@ -35,3 +38,4 @@
     {% endfor %}
   </div>
 </div>
+{% endif %}

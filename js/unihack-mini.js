@@ -1,5 +1,5 @@
 var map;
-var loc = new google.maps.LatLng(-37.9115525,145.1318227);
+var loc = new google.maps.LatLng(-37.910476, 145.13278);
 
 function initialize() {
 
