@@ -1,3 +1,8 @@
 title: UNIHACK Mini 2016
 past: false
 id: 3
+
+# Partners
+partners:
+  - name:       University Partner
+    companies:  [monash-fit]

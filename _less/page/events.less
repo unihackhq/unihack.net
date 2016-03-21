@@ -337,7 +337,7 @@
     margin-bottom: 36px;
   }
 
-  .row.last {
+  .row:last-child {
     margin-bottom: 0;
   }
 
@@ -428,7 +428,67 @@
   }
 }
 
+/* Event Schedule */
+#event-schedule {
+
+  .day {
+    .make-column(12);
+  }
+
+  h4 {
+    font-weight: 300;
+    color: #333;
+    font-size: 1.3125rem;
+    line-height: 1.75rem;
+    margin: 0 0 16px;
+  }
+
+  .sch-table {
+    width: 100%;
+
+    .sch-time {
+      width: 130px;
+    }
+
+    td, th {
+      padding: 10px 0;
+    }
+
+    th {
+      color: #999;
+      text-align: left;
+      border-bottom: 3px solid #c0c0c0;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    td {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    tr:last-child > td {
+      border-bottom: none;
+    }
+
+    td.sch-time {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    td span {
+      font-size: 0.8571428571rem;
+      color: #969696;
+      display: block;
+    }
+  }
+}
+
 @media (min-width: @screen-xs) {
+  #event-faqs, #event-schedule {
+    h3, h4 {
+      text-align: left;
+    }
+  }
   .event-sponsors {
     h3, h4 {
       text-align: left;
@@ -580,6 +640,12 @@
   #event-faqs {
     .question {
       .make-column(3);
+    }
+  }
+
+  #event-schedule {
+    .day {
+      .make-column(6);
     }
   }
 }
