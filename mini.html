@@ -75,45 +75,53 @@ google-maps: unihack-mini
   </div>
 </div>
 
-<div id="mini-location" class="section">
+<div id="event-prizes" class="section event-section">
   <div class="wrap">
-    <div class="location-address-side">
-      <h3><span>Location</span></h3>
-      <div class="address-block">
-        <p class="address">Labs 143-146</p>
-        <p class="address">14 Rainforest Walk</p>
-        <p class="address">Monash University</p>
-        <p class="address">Clayton Campus</p>
+    <h3><span>Prizes</span></h3>
+    <div class="row">
+      <div class="prize">
+        <div class="prize-card top first">
+          <div class="prize-card-inner">
+            <h4>
+              <span class="icon"><i class="fa fa-trophy"></i></span>
+              First Place
+            </h4>
+            <p>Raspberry Pi for every member</p>
+            <p>Future Assembly Tickets</p>
+            <p>Automatic spot in UNIHACK 2016</p>
+          </div>
+        </div>
       </div>
-      <div class="transport-block">
-        <h4>How do I enter the building?</h4>
-        <p>
-          You will need to enter from the doors near the G13 and G14 computer labs.
-        </p>
-
+      <div class="prize">
+        <div class="prize-card top second">
+          <div class="prize-card-inner">
+            <h4>
+              <span class="icon"><i class="fa fa-certificate"></i></span>
+              Second Place
+            </h4>
+            <p>LIFX Colour 1000 for every member</p>
+          </div>
+        </div>
       </div>
-      <div class="transport-block">
-        <h4>How do I get there?</h4>
-        <p>
-          The best way to get to Monash University Clayton is to take a train to
-          Huntingdale Station and take the 900 or 630 bus.
-        </p>
-        <p>
-          Alternatively, you can take a 631, 691, 703, 733, 737, 802, 804, 862, or
-          900 bus. Please note that the 601 shuttle bus does not run on the weekend.
-        </p>
-      </div>
-      <div class="transport-block">
-        <h4>Parking</h4>
-        <p>
-          Parking is free during the weekend. The nearest parking area is the N1
-          Engineering carpark on 10 Research Way.
-        </p>
+      <div class="prize">
+        <div class="prize-card top third">
+          <div class="prize-card-inner">
+            <h4>
+              <span class="icon"><i class="fa fa-certificate"></i></span>
+              Third Place
+            </h4>
+            <p>$50 JB Hi-Fi Gift Card for every member</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="location-map-side" id="unihack-mini-map"></div>
   </div>
 </div>
+
+
+{% include judges.html %}
+
+{% include criteria.html %}
 
 <div id="event-schedule" class="section event-section">
   <div class="wrap">
@@ -217,6 +225,45 @@ google-maps: unihack-mini
   </div>
 </div>
 
+<div id="mini-location" class="section">
+  <div class="wrap">
+    <div class="location-address-side">
+      <h3><span>Location</span></h3>
+      <div class="address-block">
+        <p class="address">Labs 143-146</p>
+        <p class="address">14 Rainforest Walk</p>
+        <p class="address">Monash University</p>
+        <p class="address">Clayton Campus</p>
+      </div>
+      <div class="transport-block">
+        <h4>How do I enter the building?</h4>
+        <p>
+          You will need to enter from the doors near the G13 and G14 computer labs.
+        </p>
+
+      </div>
+      <div class="transport-block">
+        <h4>How do I get there?</h4>
+        <p>
+          The best way to get to Monash University Clayton is to take a train to
+          Huntingdale Station and take the 900 or 630 bus.
+        </p>
+        <p>
+          Alternatively, you can take a 631, 691, 703, 733, 737, 802, 804, 862, or
+          900 bus. Please note that the 601 shuttle bus does not run on the weekend.
+        </p>
+      </div>
+      <div class="transport-block">
+        <h4>Parking</h4>
+        <p>
+          Parking is free during the weekend. The nearest parking area is the N1
+          Engineering carpark on 10 Research Way.
+        </p>
+      </div>
+    </div>
+    <div class="location-map-side" id="unihack-mini-map"></div>
+  </div>
+</div>
 
 {% include sponsors-partners.html %}
 

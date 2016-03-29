@@ -220,6 +220,99 @@
   }
 }
 
+#event-prizes {
+  background: #f0f0f0;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .prize {
+    .make-column(12);
+  }
+
+  .prize-card.top {
+    margin-top: 60px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+
+    .prize-card-inner {
+      padding: 20px;
+      background: white;
+    }
+
+    h4 {
+      font-family: @titillium;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0 0 6px;
+      display: block;
+    }
+
+    p {
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 1.75rem;
+      margin: 0;
+    }
+
+    .icon {
+      .border-top-radius(36px);
+      .border-left-radius(36px);
+      .border-right-radius(36px);
+      .border-bottom-radius(36px);
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin: -55px auto 12px;
+      position: relative;
+      z-index: 5;
+      background: white;
+      letter-spacing: 0;
+
+      i {
+        font-size: 2.625rem;
+        color: white;
+        line-height: 3.75rem;
+      }
+    }
+  }
+
+  .prize-card.top.first {
+    .prize-card-inner {
+      border-top: 5px solid @prize-gold;
+    }
+
+    .icon {
+      background: @prize-gold;
+    }
+  }
+
+  .prize-card.top.second {
+    .prize-card-inner {
+      border-top: 5px solid @prize-silver;
+    }
+
+    .icon {
+      background: @prize-silver;
+    }
+  }
+
+  .prize-card.top.third {
+    .prize-card-inner {
+      border-top: 5px solid @prize-bronze;
+    }
+
+    .icon {
+      background: @prize-bronze;
+    }
+  }
+}
+
 /* Quotes */
 .event-quote {
   .wrap {
@@ -406,8 +499,8 @@
 }
 
 /* Event FAQs */
-#event-faqs {
-  .question {
+#event-faqs, #event-criteria {
+  .question, .criterion {
     .make-column(12);
     margin-bottom: 36px;
 
@@ -428,9 +521,29 @@
   }
 }
 
+/* Event Criteria */
+#event-criteria {
+  background: black;
+
+  h3 {
+    color: white;
+
+    span {
+      border-color: white;
+    }
+  }
+
+  .criterion {
+    text-align: center;
+
+    h4 {
+      color: white;
+    }
+  }
+}
+
 /* Event Schedule */
 #event-schedule {
-
   .day {
     .make-column(12);
   }
@@ -438,9 +551,10 @@
   h4 {
     font-weight: 300;
     color: #333;
-    font-size: 1.3125rem;
+    font-size: 1.5rem;
     line-height: 1.75rem;
     margin: 0 0 16px;
+    text-align: center;
   }
 
   .sch-table {
@@ -484,7 +598,7 @@
 }
 
 @media (min-width: @screen-xs) {
-  #event-faqs, #event-schedule {
+  #event-faqs {
     h3, h4 {
       text-align: left;
     }
@@ -620,6 +734,12 @@
     }
   }
 
+  #event-prizes {
+    .prize {
+      .make-column(4);
+    }
+  }
+
   /* By The Numbers */
   #event-by-the-numbers {
     .stat-3 {
@@ -637,8 +757,8 @@
     }
   }
 
-  #event-faqs {
-    .question {
+  #event-faqs, #event-criteria {
+    .question, .criterion {
       .make-column(3);
     }
   }
