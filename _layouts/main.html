@@ -32,6 +32,7 @@ But I ain't done much healing.
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK</title>
   {% endif %}
   <link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,700|Open+Sans:300,400,700" rel="stylesheet" />
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="/media/css/style.css" />
   {% if page.page_css %}
   <link rel="stylesheet" href="/media/css/{{ page.page_css }}" />
@@ -49,6 +50,7 @@ But I ain't done much healing.
 </head>
 
 <body class="{{ page.page }}">
+  {% if page.no_header != true %}
   <header id="gl-head">
     <div class="wrap">
       <h1>
@@ -70,6 +72,7 @@ But I ain't done much healing.
       </nav>
     </div>
   </header>
+  {% endif %}
 
   {{ content }}
 
@@ -88,6 +91,7 @@ But I ain't done much healing.
     </div>
   </footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="/media/js/site.js"></script>
   {% if page.gmaps %}
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkUhRgQ8olWMHZRauELz55rBEBV6eX-P8&sensor=false"></script>
