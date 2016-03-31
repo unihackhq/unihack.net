@@ -5,11 +5,11 @@ id: 3
 # Judges
 judges:
   - name:     Laura Faulconer
-    img:      /img/judges/laura.jpg
+    img:      /media/img/judges/laura.jpg
     role:     COO, The Generator, Monash University
 
   - name:     James Austin
-    img:      /img/judges/james.jpg
+    img:      /media/img/judges/james.jpg
     role:     Analytics Associate at PwC; former WIRED committee member
 
 # Partners
