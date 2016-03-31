@@ -8,7 +8,7 @@ id: 2
 
 # Links
 url: /archive/2015/
-img: /img/unihack-2015/unihack-2015-archive.jpg
+img: /media/img/unihack-2015/unihack-2015-archive.jpg
 
 # Winners
 winners:
@@ -17,7 +17,7 @@ winners:
     uni:    RMIT
     type:   major
     accent: first
-    img:    /img/unihack-2015/first-destroy-my-idea.jpg
+    img:    /media/img/unihack-2015/first-destroy-my-idea.jpg
     url:    http://devpost.com/software/destroy-my-idea
 
   - prize:  Second Place
@@ -25,7 +25,7 @@ winners:
     uni:    RMIT/Swinburne
     type:   major
     accent: second
-    img:    /img/unihack-2015/second-fite-me.jpg
+    img:    /media/img/unihack-2015/second-fite-me.jpg
     url:    http://devpost.com/software/fite-me
 
   - prize:  Third Place
@@ -33,7 +33,7 @@ winners:
     uni:    Monash
     type:   major
     accent: third
-    img:    /img/unihack-2015/third-flyte.jpg
+    img:    /media/img/unihack-2015/third-flyte.jpg
     url:    http://devpost.com/software/flyte
 
   - prize:  Best Design
@@ -79,34 +79,34 @@ winners:
 # Judges
 judges:
   - name:     Jason Cormier
-    img:      /img/judges/jason.jpg
+    img:      /media/img/judges/jason.jpg
     role:     Director of Strategy and New Business, Australia, Mashery
     twitter:  jadacormier
 
   - name:     Atlanta Daniel
-    img:      /img/judges/atlanta.jpg
+    img:      /media/img/judges/atlanta.jpg
     role:     Formerly from Oxygen Ventures
     twitter:  LANTS
 
   - name:     Bonnie Macdonald
-    img:      /img/judges/bonnie.png
+    img:      /media/img/judges/bonnie.png
     role:     Consultant, Cyber, PwC
 
   - name:     Hadi Michael
-    img:      /img/judges/hadi.jpg
+    img:      /media/img/judges/hadi.jpg
     role:     Digital Adviser &amp; Software Engineer, Deloitte Digital
     twitter:  hadi_michael
 
   - name:     April Staines
-    img:      /img/judges/april.jpg
+    img:      /media/img/judges/april.jpg
     role:     Architect for Digital, NAB &amp; Co-Founder, Girl Geek Academy
 
   - name:     Andrew van der Stock
-    img:      /img/judges/andrew.jpg
+    img:      /media/img/judges/andrew.jpg
     role:     Principal Consultant, Threat Intelligence
 
   - name:     Miguel Wood
-    img:      /img/judges/miguel.jpg
+    img:      /media/img/judges/miguel.jpg
     role:     Co-founder &amp; CEO, Euler's Bridge
 
 sponsors:
