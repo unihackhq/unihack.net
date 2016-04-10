@@ -12,7 +12,14 @@ judges:
     img:      /media/img/judges/james.jpg
     role:     Analytics Associate at PwC; former WIRED committee member
 
+  - name:     Rebecca Martin
+    img:      /media/img/judges/rebecca.jpg
+    role:     Technology Consultant at EY; Hackathon hacker
+
 # Partners
 partners:
-  - name:       University Partner
-    companies:  [monash-fit]
+  - name:       University Partners
+    companies:  [monash-fit, monash-generator]
+
+  - name:       Prize Partners
+    companies:  [lifx, future-assembly]
