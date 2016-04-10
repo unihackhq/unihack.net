@@ -129,3 +129,15 @@ cba:
 acs:
   name:   Australian Computing Society
   url:    http://www.acs.org.au/
+
+monash-generator:
+  name:   The Generator at Monash University
+  url:    https://monash.edu/the-generator
+
+future-assembly:
+  name:   Future Assembly
+  url:    https://futureassembly.io/
+
+lifx:
+  name:   LIFX
+  url:    http://www.lifx.com/
