@@ -7,16 +7,10 @@
       linkedin: http://au.linkedin.com/in/hugomd
 
     - name: Terence Huynh
-      position: Co-founder &amp; Vice Chair
+      position: Founder &amp; Vice Chair
       img: /media/img/team/terence.jpg
       twitter: terencehuynh
       linkedin: http://au.linkedin.com/in/terencehuynh
-
-    - name: Sophie Huynh
-      position: Logistics Lead
-      img: /media/img/team/sophie.jpg
-      twitter: sphaech
-      linkedin: http://au.linkedin.com/in/sphhuynh
 
     - name: Gabriel Huynh
       position: Finance Lead
@@ -24,12 +18,18 @@
       twitter: Gaburyeru
       linkedin: http://au.linkedin.com/in/gabriel-huynh-086618103
 
+    - name: Sophie Huynh
+      position: Logistics Lead
+      img: /media/img/team/sophie.jpg
+      twitter: sphaech
+      linkedin: http://au.linkedin.com/in/sphhuynh
+
     - name: Rayen Magpantay
       position: Sponsorship Lead
       img: /media/img/team/rayen.jpg
       linkedin: http://au.linkedin.com/in/rayemagp
 
-- group: Sponsorship
+- group: Sponsorship Team
   members:
     - name: Lee Hatton
       img: /media/img/team/lee.jpg
@@ -48,8 +48,27 @@
       img: /media/img/team/rohail.jpg
       linkedin: http://www.linkedin.com/in/rohailsingh
 
-- group: Logistics
+- group: Logistics Team
   members:
     - name: Ami Pasricha
       img: /media/img/team/ami.jpg
       linkedin: http://au.linkedin.com/in/ami-pasricha-71790997
+
+    - name: Ghina Yashar
+      img: /media/img/team/ghina.jpg
+      linkedin: https://www.linkedin.com/in/ghina-yashar-99871a117
+
+    - name: Ridham Chandrani
+      img: /media/img/team/ridham.jpg
+      linkedin: https://au.linkedin.com/in/ridham-chandrani-673200107
+
+    - name: Matt Gueit
+      img: /media/img/team/matt.png
+      linkedin: https://au.linkedin.com/in/ridham-chandrani-673200107
+
+    - name: Sanju Parasuraman
+      img: /media/img/team/sanju.jpg
+
+    - name: Arvind Vijayakumar
+      img: /media/img/team/arvind.jpg
+      linkedin: https://au.linkedin.com/in/arvind-vijayakumar-b7a799ab

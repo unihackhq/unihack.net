@@ -62,9 +62,12 @@ page: about
   <div class="wrap">
     <h3><span>The Team</span></h3>
 
+    {% for team in site.data.team %}
+    {% if team.group != "Executive" %}
+    <h4>{{ team.group }}</h4>
+    {% endif %}
     <div class="row">
-
-      {% for team in site.data.group %}
+      {% for person in team.members %}
       <div class="team">
         {% if person.img %}
         <img src="{{ person.img }}" alt="{{ person.name }}" class="img-rounded" />
@@ -86,8 +89,9 @@ page: about
         </p>
       </div>
       {% endfor %}
-
     </div>
+    {% endfor %}
+
   </div>
 </div>
 
