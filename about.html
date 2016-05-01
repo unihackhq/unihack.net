@@ -64,8 +64,7 @@ page: about
 
     <div class="row">
 
-      {% for person in site.data.team %}
-      {% if person.past != true %}
+      {% for team in site.data.group %}
       <div class="team">
         {% if person.img %}
         <img src="{{ person.img }}" alt="{{ person.name }}" class="img-rounded" />
@@ -86,7 +85,6 @@ page: about
           {% endif %}
         </p>
       </div>
-      {% endif %}
       {% endfor %}
 
     </div>

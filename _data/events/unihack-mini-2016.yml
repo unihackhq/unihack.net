@@ -1,6 +1,12 @@
 title: UNIHACK Mini 2016
-past: false
+subtitle: The Hack for First Timers
+past: true
+date: April 9-10, 2016
+location: Monash University Clayton
 id: 3
+
+url: /events/mini-2016/
+img: /media/img/unihack-2015/unihack-2015-archive.jpg
 
 # Judges
 judges:

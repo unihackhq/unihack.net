@@ -1,49 +1,55 @@
-- name: Hugo M&uuml;ller-Downing
-  position: Chair
-  img: /media/img/team/hugo.jpg
-  twitter: hugojmd
-  linkedin: http://au.linkedin.com/in/hugomd
+- group: Executive
+  members:
+    - name: Hugo M&uuml;ller-Downing
+      position: Chair
+      img: /media/img/team/hugo.jpg
+      twitter: hugojmd
+      linkedin: http://au.linkedin.com/in/hugomd
 
-- name: Terence Huynh
-  position: Co-founder &amp; Vice Chair
-  img: /media/img/team/terence.jpg
-  twitter: terencehuynh
-  linkedin: http://au.linkedin.com/in/terencehuynh
+    - name: Terence Huynh
+      position: Co-founder &amp; Vice Chair
+      img: /media/img/team/terence.jpg
+      twitter: terencehuynh
+      linkedin: http://au.linkedin.com/in/terencehuynh
 
-- name: Sophie Huynh
-  position: Logistics
-  img: /media/img/team/sophie.jpg
-  twitter: sphaech
-  linkedin: http://au.linkedin.com/in/sphhuynh
+    - name: Sophie Huynh
+      position: Logistics Lead
+      img: /media/img/team/sophie.jpg
+      twitter: sphaech
+      linkedin: http://au.linkedin.com/in/sphhuynh
 
-- name: Lee Hatton
-  position: Logistics
-  img: /media/img/team/lee.jpg
+    - name: Gabriel Huynh
+      position: Finance Lead
+      img: /media/img/team/gabriel.jpg
+      twitter: Gaburyeru
+      linkedin: http://au.linkedin.com/in/gabriel-huynh-086618103
 
-- name: Gabriel Huynh
-  position: Finance
-  img: /media/img/team/gabriel.jpg
-  twitter: Gaburyeru
-  linkedin: http://au.linkedin.com/in/gabriel-huynh-086618103
+    - name: Rayen Magpantay
+      position: Sponsorship Lead
+      img: /media/img/team/rayen.jpg
+      linkedin: http://au.linkedin.com/in/rayemagp
 
-- name: Robert Koch
-  position: Sponsorship
-  img: /media/img/team/rob.jpg
-  twitter: Kochie_94
-  linkedin: http://au.linkedin.com/in/kochie94
+- group: Sponsorship
+  members:
+    - name: Lee Hatton
+      img: /media/img/team/lee.jpg
 
-- name: Rayen Magpantay
-  position: Sponsorship
-  img: /media/img/team/rayen.jpg
-  linkedin: http://au.linkedin.com/in/rayemagp
+    - name: Robert Koch
+      img: /media/img/team/rob.jpg
+      twitter: Kochie_94
+      linkedin: http://au.linkedin.com/in/kochie94
 
-- name: Sarah Ni
-  position: Sponsorship
-  img: /media/img/team/sarah.jpg
-  twitter: cyber_koi
-  linkedin: http://au.linkedin.com/in/sarahni
+    - name: Sarah Ni
+      img: /media/img/team/sarah.jpg
+      twitter: cyber_koi
+      linkedin: http://au.linkedin.com/in/sarahni
 
-- name: Ami Pasricha
-  position: Logistics
-  img: /media/img/team/ami.jpg
-  linkedin: http://au.linkedin.com/in/ami-pasricha-71790997
+    - name: Rohail Singh
+      img: /media/img/team/rohail.jpg
+      linkedin: http://www.linkedin.com/in/rohailsingh
+
+- group: Logistics
+  members:
+    - name: Ami Pasricha
+      img: /media/img/team/ami.jpg
+      linkedin: http://au.linkedin.com/in/ami-pasricha-71790997
