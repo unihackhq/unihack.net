@@ -94,7 +94,12 @@ But I ain't done much healing.
   <script type="text/javascript" src="/media/js/site.js"></script>
   {% if page.gmaps %}
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkUhRgQ8olWMHZRauELz55rBEBV6eX-P8&sensor=false"></script>
-  <script type="text/javascript" src="/media/js/{{ page.gmaps }}"></script>
+  {% endif %}
+  {% if page.countdown %}
+  <script type="text/javascript" src="/media/js/jquery.countdown.min.js"></script>
+  {% endif %}
+  {% if page.script %}
+  <script type="text/javascript" src="/media/js/{{ page.script }}"></script>
   {% endif %}
 </body>
 </html>
