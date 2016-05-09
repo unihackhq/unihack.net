@@ -26,14 +26,6 @@
     right: 0;
     bottom: 0;
   }
-
-  &#unihack-2015 {
-    background-image: url('../img/unihack-2015/unihack-2015-event-sm.jpg');
-  }
-
-  &#unihack-2014 {
-    background-image: url('../img/unihack-2014/unihack-2014-event-sm.jpg');
-  }
 }
 
 .event-header-overlay {
@@ -227,6 +219,14 @@
     margin-bottom: 0;
   }
 
+  p.more {
+    margin: 48px 0 0;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #666;
+  }
+
   .prize {
     .make-column(12);
   }
@@ -375,6 +375,10 @@
     padding: 0 15px;
     margin-bottom: 36px;
 
+    .judge-content {
+      margin-left: 180px;
+    }
+
     img {
       float: left;
       width: 150px;
@@ -397,6 +401,14 @@
       margin: 0 0 24px 0;
       font-size: 1.12rem;
       font-weight: 300;
+    }
+
+    p.bio {
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+      margin: 0 0 36px 0;
+      color: #808080;
+      display: none;
     }
   }
 
@@ -628,16 +640,6 @@
     height: @event-header-height-xl;
   }
 
-  .event-header {
-    &#unihack-2015 {
-      background-image: url('../img/unihack-2015/unihack-2015-event-lg.jpg');
-    }
-
-    &#unihack-2014 {
-      background-image: url('../img/unihack-2014/unihack-2014-event-lg.jpg');
-    }
-  }
-
   .event-header-overlay {
     padding: 30px 0;
     vertical-align: bottom;
@@ -700,6 +702,10 @@
     .judge {
       width: 50%;
       padding: 0 15px;
+
+      p.bio {
+        display: block;
+      }
     }
   }
 

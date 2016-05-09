@@ -141,3 +141,51 @@ future-assembly:
 lifx:
   name:   LIFX
   url:    http://www.lifx.com/
+
+computershare:
+  name:   Computershare
+  url:    http://www.computershare.com
+
+uber2:
+  name:   Uber
+  url:    http://uber.com/melbourne/
+
+unimelb:
+  name:   Computing and Information Systems
+  url:    http://www.cis.unimelb.edu.au/
+
+wade:
+  name:   Wade Institute
+  url:    http://www.wadeinstitute.org.au
+
+telstra:
+  name:   Telstra
+  url:    http://www.careers.telstra.com/
+
+odecee:
+  name:   Odecee
+  url:    http://odecee.com.au
+
+iress:
+  name:   IRESS
+  url:    https://www.iress.com/au/company/join-us/graduate-program/
+
+seamless:
+  name:   Seamless
+  url:    http://www.seamlesscms.com/
+
+bosch:
+  name:   Bosch
+  url:    http://www.bosch.com.au/en/au/career_2/career.html
+
+estimote:
+  name:   Estimote
+  url:    http://estimote.com/
+
+thoughtworks:
+  name:   Thoughtworks
+  url:    https://www.thoughtworks.com/
+
+cci:
+  name:   Carlton Connect Initiative
+  url:    http://www.carltonconnect.com.au/

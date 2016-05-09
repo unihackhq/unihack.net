@@ -70,12 +70,22 @@
     align-items: flex-start;
   }
 
+  h4 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #969696;
+  }
+
   .team {
     width: 50%;
     float: left;
     padding: 15px 10px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   img {
@@ -86,7 +96,6 @@
 
   p.name {
     font-size: 1rem;
-    font-family: @titillium;
     margin: 0 0 3px;
   }
 
@@ -103,8 +112,8 @@
     color: #969696;
   }
 
-  p.twitter {
-    margin: 24px 0 0;
+  p.social {
+    margin: 12px 0 0;
     font-size: 0.875rem;
   }
 
@@ -157,13 +166,12 @@
     }
 
     p.name {
-      font-size: 1.5rem;
-      font-family: @titillium;
+      font-size: 1.3125rem;
       margin: 0 0 3px;
     }
 
     p.role {
-      font-size: 1.125rem;
+      font-size: 1rem;
       margin: 0;
       color: #969696;
       text-transform: inherit;
@@ -190,9 +198,13 @@
   }
 
   #about-team {
+    .team {
+      width: percentage(1/4);
+    }
+
     img {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       margin: 0 0 12px;
     }
 

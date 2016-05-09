@@ -1,19 +1,34 @@
 <div id="event-judges" class="section event-section">
   <div class="wrap">
     <h3><span>Judges</span></h3>
+
     {% for judge in event.judges %}
-    {% cycle '<div class="row">', '', '<div class="row">', '', '<div class="row">', '', '<div class="row">' %}
+      {% assign row_index = forloop.index0 | modulo:2 %}
+
+      {% if row_index == 0 %}
+        <div class="row">
+      {% endif %}
       <div class="judge">
         <img src="{{ judge.img }}" alt="{{ judge.name }}" class="img-rounded" />
-        <h4>{{ judge.name }}</h4>
-        <p class="role">{{ judge.role }}</p>
-        {% if judge.twitter %}
-        <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
-          <i class="fa fa-twitter"></i> {{ judge.twitter }}
-        </a>
-        {% endif %}
+        <div class="judge-content">
+          <h4>{{ judge.name }}</h4>
+          <p class="role">{{ judge.role }}</p>
+          {% if judge.bio %}
+          <p class="bio">
+            {{ judge.bio }}
+          </p>
+          {% endif %}
+          {% if judge.twitter %}
+          <a href="https://twitter.com/{{ judge.twitter }}/" class="btn">
+            <i class="fa fa-twitter"></i> {{ judge.twitter }}
+          </a>
+          {% endif %}
+        </div>
       </div>
-    {% cycle '', '</div>', '', '</div>', '', '</div>', '</div>' %}
+
+      {% if row_index == 1 or forloop.last %}
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

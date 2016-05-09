@@ -62,11 +62,11 @@ But I ain't done much healing.
       <nav id="main-nav">
         <a class="trigger fa"></a>
         <ul>
-          <li class="unihack-mini {% if page.page == 'unihack-mini' %}selected{% endif %}"><a href="/mini/">Mini</a></li>
           <li class="unihack-2016 {% if page.page == 'unihack-2016' %}selected{% endif %}"><a href="/2016/">2016</a></li>
-          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="/archive/">Archive</a></li>
+          <li class="archive {% if page.page == 'archive' %}selected{% endif %}"><a href="/events/">Archive</a></li>
           <li class="about {% if page.page == 'about' %}selected{% endif %}"><a href="/about/">About Us</a></li>
           <li class="sponsor {% if page.page == 'sponsor' %}selected{% endif %}"><a href="/sponsor/">Sponsor</a></li>
+          <li class="sponsor {% if page.page == 'sponsor' %}selected{% endif %}"><a href="http://unihack.net/press/">Press</a></li>
           <li class="blog"><a href="https://medium.com/unihack-blog/">Blog</a></li>
         </ul>
       </nav>
@@ -95,7 +95,12 @@ But I ain't done much healing.
   <script type="text/javascript" src="/media/js/site.js"></script>
   {% if page.gmaps %}
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkUhRgQ8olWMHZRauELz55rBEBV6eX-P8&sensor=false"></script>
-  <script type="text/javascript" src="/media/js/{{ page.gmaps }}"></script>
+  {% endif %}
+  {% if page.countdown %}
+  <script type="text/javascript" src="/media/js/jquery.countdown.min.js"></script>
+  {% endif %}
+  {% if page.script %}
+  <script type="text/javascript" src="/media/js/{{ page.script }}"></script>
   {% endif %}
 </body>
 </html>
