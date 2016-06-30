@@ -76,14 +76,14 @@ sponsors:
 
   - tier:       Gold Sponsors
     type:       sponsor-major
-    companies:  [computershare, imc, odecee, telstra, thoughtworks, wade]
+    companies:  [computershare, ibm, imc, odecee, rea-group, telstra, thoughtworks, wade]
 
   - tier:       Silver Sponsors
-    companies:  [atlassian, adobe, deloitte, iress, pwc, seamless]
+    companies:  [accenture, acs, atlassian, adobe, b2cloud, deloitte, herald-sun, monash-esolutions, pwc, seamless, xero]
 
   - tier:       Bronze Sponsors
     row:        last
-    companies:  [readify, uber2, outware-mobile, future-assembly, namecheap, sphero, estimote]
+    companies:  [facebook, readify, uber2, outware-mobile, future-assembly, namecheap, sphero, estimote, microsoft, optiver]
 
 # Partners
 partners:
@@ -93,3 +93,7 @@ partners:
   - name:       Venue Partner
     row:        last
     companies:  [cci]
+
+  - name:       Mixer Night Host
+    row:        last
+    companies:  [zendesk]
