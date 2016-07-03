@@ -65,9 +65,10 @@ judges:
     img:      /media/img/judges/bernard.jpg
     role:     Head of UX &amp; Innovation at Foxley, UX Business Consultant
 
-  - name:     TBA
-    img:      /media/img/judges/unknown.png
-    role:     Bosch
+  - name:     Dr. Oliver Wolst
+    img:      /media/img/judges/oliver.jpg
+    role:     Regional President Automotive Electronics, Bosch
+    bio:      "Dr. Oliver Wolst is leading Robert Bosch's Automotive Electronics division in Australia with a portfolio ranging from power diodes manufacturing to product development of body computers and secure gateways for global automotive OEMs. He is holding a PhD in Physics from the Friedrich-Alexander-University in Erlangen (Germany) and pursued postdoctoral research on UV emitting laser diodes at XEROX's Palo Alto Research Center (PARC) at Stanford, California. After joining Bosch in 2004 as a Management Trainee in Stuttgart he was driving research on electrochemically activated high temperature semiconductors for automotive exhaust gas sensing. In 2007 he took over the responsibility for engineering and manufacturing of laser based distance measurement tools within the business unit Power Tools. Mid 2010 he relocated to Singapore for heading the Corporate Research and advanced engineering activities of the Robert Bosch group in Asia Pacific. Dr. Wolst is a Feodor-Lynen-Fellow of the Alexander-von-Humboldt Foundation."
 
 sponsors:
   - tier:       Platnium Sponsor
@@ -76,14 +77,14 @@ sponsors:
 
   - tier:       Gold Sponsors
     type:       sponsor-major
-    companies:  [computershare, imc, odecee, telstra, thoughtworks, wade]
+    companies:  [computershare, ibm, imc, odecee, rea-group, telstra, thoughtworks, wade]
 
   - tier:       Silver Sponsors
-    companies:  [atlassian, adobe, deloitte, iress, pwc, seamless]
+    companies:  [accenture, acs, atlassian, adobe, b2cloud, deloitte, herald-sun, monash-esolutions, pwc, seamless, xero]
 
   - tier:       Bronze Sponsors
     row:        last
-    companies:  [readify, uber2, outware-mobile, future-assembly, namecheap, sphero, estimote]
+    companies:  [facebook, readify, uber2, outware-mobile, future-assembly, namecheap, sphero, estimote, microsoft, optiver]
 
 # Partners
 partners:
@@ -93,3 +94,7 @@ partners:
   - name:       Venue Partner
     row:        last
     companies:  [cci]
+
+  - name:       Mixer Night Host
+    row:        last
+    companies:  [zendesk]
