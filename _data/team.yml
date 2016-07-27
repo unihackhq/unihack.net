@@ -51,7 +51,7 @@
 - group: Logistics Team
   members:
     - name: Ami Pasricha
-      img: /media/img/team/ami.jpg
+      img: /media/img/team/ami2.jpg
       linkedin: http://au.linkedin.com/in/ami-pasricha-71790997
 
     - name: Ghina Yashar
@@ -64,10 +64,7 @@
 
     - name: Matt Gueit
       img: /media/img/team/matt.png
-      linkedin: https://au.linkedin.com/in/ridham-chandrani-673200107
-
-    - name: Sanju Parasuraman
-      img: /media/img/team/sanju.jpg
+      linkedin: http://www.linkedin.com/in/matthew-gueit-ab6b91a0
 
     - name: Arushi Sharma
       img: /media/img/team/arushi.jpg
