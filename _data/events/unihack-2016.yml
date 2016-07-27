@@ -68,7 +68,22 @@ judges:
   - name:     Dr. Oliver Wolst
     img:      /media/img/judges/oliver.jpg
     role:     Regional President Automotive Electronics, Bosch
-    bio:      "Dr. Oliver Wolst is leading Robert Bosch's Automotive Electronics division in Australia with a portfolio ranging from power diodes manufacturing to product development of body computers and secure gateways for global automotive OEMs. He is holding a PhD in Physics from the Friedrich-Alexander-University in Erlangen (Germany) and pursued postdoctoral research on UV emitting laser diodes at XEROX's Palo Alto Research Center (PARC) at Stanford, California. After joining Bosch in 2004 as a Management Trainee in Stuttgart he was driving research on electrochemically activated high temperature semiconductors for automotive exhaust gas sensing. In 2007 he took over the responsibility for engineering and manufacturing of laser based distance measurement tools within the business unit Power Tools. Mid 2010 he relocated to Singapore for heading the Corporate Research and advanced engineering activities of the Robert Bosch group in Asia Pacific. Dr. Wolst is a Feodor-Lynen-Fellow of the Alexander-von-Humboldt Foundation."
+    bio:      "Dr. Oliver Wolst is leading Robert Bosch's Automotive Electronics
+              division in Australia with a portfolio ranging from power diodes
+              manufacturing to product development of body computers and secure
+              gateways for global automotive OEMs. He is holding a PhD in Physics
+              from the Friedrich-Alexander-University in Erlangen (Germany) and
+              pursued postdoctoral research on UV emitting laser diodes at XEROX's
+              Palo Alto Research Center (PARC) at Stanford, California. After
+              joining Bosch in 2004 as a Management Trainee in Stuttgart he was
+              driving research on electrochemically activated high temperature
+              semiconductors for automotive exhaust gas sensing. In 2007 he took
+              over the responsibility for engineering and manufacturing of laser
+              based distance measurement tools within the business unit Power
+              Tools. Mid 2010 he relocated to Singapore for heading the Corporate
+              Research and advanced engineering activities of the Robert Bosch
+              group in Asia Pacific. Dr. Wolst is a Feodor-Lynen-Fellow of the
+              Alexander-von-Humboldt Foundation."
 
 sponsors:
   - tier:       Platnium Sponsor
@@ -84,7 +99,7 @@ sponsors:
 
   - tier:       Bronze Sponsors
     row:        last
-    companies:  [facebook, readify, uber2, outware-mobile, future-assembly, namecheap, sphero, estimote, microsoft, optiver]
+    companies:  [facebook, readify, uber2, outware-mobile, future-assembly, namecheap, sphero, estimote, microsoft, optiver, jemsoft]
 
 # Partners
 partners:
