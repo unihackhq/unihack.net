@@ -231,14 +231,13 @@
     .make-column(12);
   }
 
-  .prize-card.top {
-    margin-top: 60px;
+  .prize-card {
     text-align: center;
     border: 1px solid #e0e0e0;
-    border-top: none;
+    margin-top: 30px;
 
     .prize-card-inner {
-      padding: 20px;
+      padding: 24px 20px;
       background: white;
     }
 
@@ -247,16 +246,40 @@
       font-size: 1.5rem;
       line-height: 1.75rem;
       font-weight: 700;
-      letter-spacing: 1px;
       text-transform: uppercase;
-      margin: 0 0 6px;
+      margin: 0 0 12px;
       display: block;
+
+      span {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
     }
 
     p {
       font-size: 1.125rem;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.75rem;
+      margin: 0 0 12px;
+
+      span {
+        font-size: 1.75rem;
+        line-height: 2rem;
+        letter-spacing: -1px;
+      }
+    }
+
+    p.brief {
+      font-size: 0.875rem;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+      font-weight: 400;
+      color: #888;
+    }
+
+    p:last-child {
       margin: 0;
     }
 
@@ -280,6 +303,11 @@
         line-height: 3.75rem;
       }
     }
+  }
+
+  .prize-card.top {
+    border-top: none;
+    margin-top: 60px;
   }
 
   .prize-card.top.first {
@@ -743,6 +771,13 @@
   #event-prizes {
     .prize {
       .make-column(4);
+    }
+    .prize-top-outer {
+      .make-column(6);
+      .make-column-offset(3);
+    }
+    .prize-top-second {
+      .make-column(6);
     }
   }
 
