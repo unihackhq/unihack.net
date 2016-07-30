@@ -1,7 +1,8 @@
 $(function() {
-  $("#start-countdown").countdown("2016/07/30 9:00:00",  function(event) {
+  $("#start-countdown").countdown("2016/07/31 12:00:00",  function(event) {
+    var totalHours = event.offset.totalDays * 24 + event.offset.hours;
     $(this).text(
-      event.strftime('in %D days %H hours %M minutes %S seconds')
+      event.strftime(totalHours + ' hours %M minutes %S seconds')
     );
   });
 });
