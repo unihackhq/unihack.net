@@ -1,0 +1,72 @@
+/* Footer */
+
+#gl-foot {
+  text-align: center;
+  background: #c0c0c0;
+  position: relative;
+  overflow: hidden;
+
+  .col {
+    padding: 30px 0;
+    margin: 0 -15px;
+    z-index: 4;
+    position: relative;
+  }
+
+  .credits {
+    h6 {
+      margin: 0 0 8px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0 0 4px;
+    }
+
+    p.gap {
+      margin: 16px 0 4px;
+    }
+
+    .love {
+      color: #ff0000;
+    }
+  }
+
+  .logo {
+
+    p {
+      margin: 0 0 4px;
+      font-size: 0.875rem;
+    }
+
+    a {
+      height: 45px;
+      width: 184px;
+      background: url("../img/wired-logo-footer-v2.png") top left no-repeat;
+      background-size: contain;
+      display: inline-block;
+      margin-bottom: 16px;
+      opacity: 0.6;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: 0.75rem;
+    margin: 0;
+    line-height: 1rem;
+    text-transform: uppercase;
+  }
+
+  a {
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
