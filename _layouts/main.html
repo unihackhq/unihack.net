@@ -33,6 +33,7 @@ But I ain't done much healing.
   {% endif %}
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Rubik:500" rel="stylesheet">
   <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ site.github.url }}/css/bootstrap.css" />
   <link rel="stylesheet" href="{{ site.github.url }}/css/style.css" />
   {% if page.page_css %}
   <link rel="stylesheet" href="{{ site.github.url }}/css/{{ page.page_css }}" />
@@ -53,5 +54,19 @@ But I ain't done much healing.
 
   {{ content }}
 
+  <footer id="gl-foot">
+    <div class="unihack-wrap container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Design and Development by <a href="http://terencehuynh.com">Terence Huynh</a></p>
+          <p>Photography by <a href="http://www.facebook.com/tomsolariphotography/">Tom Solari</a></p>
+          <p class="gap">Powered by <a href="https://en.wikipedia.org/wiki/Caffeine">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></a></p>
+          <p>Made with <i class="fa fa-heart love"></i> in Melbourne, Australia</p>
+
+          <p class="copyright">&copy; {{ 'now' | date: "%Y" }} UNIHACK Australia. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

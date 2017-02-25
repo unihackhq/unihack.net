@@ -1,7 +1,7 @@
 ---
 ---
+@import "variables";
 @import "mixins";
-@import "unihack-variables";
 
 #landing-header {
   position: absolute;
@@ -24,53 +24,245 @@
 #landing-wrapper {
   width: 100vw;
   max-width: 100%;
-  height: 90vh;
+  height: 650px;
   background: url("/img/landing-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 
   .landing-inner {
-    height: 90vh;
+    height: 650px;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
     position: relative;
     z-index: 3;
     width: 100vw;
     max-width: 100%;
+    padding: 36px 0;
   }
 
   h2 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 24px;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 
     span {
       display: block;
-      line-height: 64px;
-      margin-bottom: 3px;
+      line-height: 48px;
+      margin-bottom: 1px;
     }
   }
 
   p {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: -1px;
     font-weight: 300;
     margin-bottom: 24px;
   }
 
-  a.btn {
+  a.uh_btn {
     @include unihack-button(#FFFFFF, $unihack-yellow);
-    font-size: 1.3125rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
 
     &:hover {
       color: #303030;
+    }
+  }
+}
+
+#preregister {
+  background: #202020;
+  padding: 42px 0;
+
+  h3 {
+    color: $unihack-yellow;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin: 0 0 5px;
+  }
+
+  p {
+    color: $unihack-yellow;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
+
+#clubs {
+  background: #f0f0f0;
+  position: relative;
+
+  .unihack-wrap {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    line-height: 28px;
+    color: #363636;
+    margin: 0 0 24px 0;
+  }
+
+  p:last-child {
+    margin: 0;
+  }
+
+  h3 {
+    text-indent: -999em;
+    margin: 0 auto 24px auto;
+  }
+
+  a.uh_btn {
+    @include unihack-button(#606060, #606060);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  .wired {
+    background: #700080;
+    padding: 42px 15px;
+
+    h3 {
+      height: 40px;
+      width: 266px;
+      background: url("/img/wired-logo.png") left center no-repeat;
+      background-size: 266px 40px;
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      @include unihack-button(#fff, #fff);
+      &:hover {
+        color: #700080;
+      }
+    }
+  }
+
+  .suits {
+    padding: 42px 15px;
+
+    h3 {
+      height: 40px;
+      width: 107px;
+      background: url("/img/suits-logo.png") left center no-repeat;
+      background-size: 107px 40px;
+    }
+  }
+}
+
+#mc_embed_signup form {
+  padding: 0;
+  font-size: 1rem;
+  font-family: Open Sans, sans-serif;
+
+  .form-control {
+    background: transparent;
+    border: 1px solid #ababab;
+    color: #f0f0f0;
+    font-size: 1rem;
+    font-family: Open Sans, sans-serif;
+  }
+
+  label {
+    color: white;
+  }
+
+  .uh_btn {
+    @include unihack-button($unihack-yellow, $unihack-yellow);
+    background: $unihack-yellow;
+    color: #202020;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  #landing-wrapper {
+    height: 90vh;
+
+    .landing-inner {
+      height: 90vh;
+      vertical-align: middle;
+    }
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 24px;
+      letter-spacing: -4px;
+
+      span {
+        line-height: 64px;
+        margin-bottom: 3px;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      letter-spacing: -1px;
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+
+    a.uh_btn {
+      font-size: 1.3125rem;
+    }
+  }
+
+  #preregister {
+    h3 {
+      font-size: 3rem;
+      letter-spacing: -2px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      letter-spacing: -1px;
+    }
+  }
+
+  #clubs {
+    .unihack-wrap {
+      margin: 0 auto;
+    }
+
+    #wired-background {
+      background: #700080;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 50vw;
+      height: 100%;
+    }
+
+    .suits {
+      padding-left: 30px;
+    }
+
+    .wired {
+      padding-right: 30px;
     }
   }
 }

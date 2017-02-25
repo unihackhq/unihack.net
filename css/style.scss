@@ -1,8 +1,7 @@
 ---
 ---
-@import "vendor/bootstrap-reboot";
-@import "vendor/bootstrap-grid";
-@import "vendor/bootstrap-variables";
+@import "variables";
+@import "mixins";
 
 @import "core";
 @import "layout";
