@@ -197,6 +197,39 @@
   }
 }
 
+#about {
+  padding: 42px 0;
+
+  p {
+    font-size: 1.125rem;
+    line-height: 32px;
+    margin: 0 0 28px;
+    font-weight: 300;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p.big {
+    color: #888;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 42px;
+    line-height: 48px;
+  }
+
+  h3 {
+    color: #888;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin: 0 0 12px;
+  }
+}
+
 @media (min-width: map-get($grid-breakpoints, md)) {
   #landing-wrapper {
     height: 90vh;
