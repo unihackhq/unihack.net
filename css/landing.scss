@@ -195,6 +195,12 @@
     font-family: Open Sans, sans-serif;
     letter-spacing: 0;
   }
+
+  .response {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 18px;
+  }
 }
 
 #about {
@@ -235,10 +241,6 @@
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
-  }
-
-  h4:first-child {
-    margin-top: 6px;
   }
 
   a.social-btn {
@@ -310,6 +312,19 @@
     }
   }
 
+  #about h3 {
+    font-size: 3rem;
+    letter-spacing: -2px;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  #about {
+    h4:first-child {
+      margin-top: 6px;
+    }
+  }
+
   #clubs {
     .unihack-wrap {
       margin: 0 auto;
@@ -334,4 +349,5 @@
       padding-right: 30px;
     }
   }
+
 }
