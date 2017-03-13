@@ -1,0 +1,19 @@
+body.sydney {
+  #gl-head.docked {
+    .unihack-banner-bg, .unihack-logo {
+      background: $unihack-red;
+    }
+  }
+
+  #preregister {
+    h3, p {
+      color: $unihack-red;
+    }
+
+    #mc_embed_signup form .uh_btn {
+      color: white;
+      background: $unihack-red;
+      border-color: $unihack-red;
+    }
+  }
+}

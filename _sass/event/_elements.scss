@@ -53,44 +53,58 @@
   h3, p {
     color: $unihack-yellow;
   }
-}
 
-#mc_embed_signup form {
-  padding: 0;
-  font-size: 1rem;
-  font-family: Open Sans, sans-serif;
-
-  .form-control {
-    background: transparent;
-    border: 1px solid #ababab;
-    color: #f0f0f0;
+  #mc_embed_signup form {
+    padding: 0;
     font-size: 1rem;
     font-family: Open Sans, sans-serif;
+
+    .form-control {
+      background: transparent;
+      border: 1px solid #ababab;
+      color: #f0f0f0;
+      font-size: 1rem;
+      font-family: Open Sans, sans-serif;
+    }
+
+    label {
+      color: white;
+    }
+
+    .uh_btn {
+      @include unihack-button($unihack-yellow, $unihack-yellow);
+      background: $unihack-yellow;
+      color: #404040;
+      padding: 12px 15px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: Open Sans, sans-serif;
+      letter-spacing: 0;
+    }
+
+    .response {
+      font-size: 1rem;
+      color: #b0b0b0;
+      margin-bottom: 18px;
+    }
   }
 
-  label {
-    color: white;
-  }
-
-  .uh_btn {
-    @include unihack-button($unihack-yellow, $unihack-yellow);
-    background: $unihack-yellow;
-    color: #404040;
-    padding: 12px 15px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
-    letter-spacing: 0;
-  }
-
-  .response {
-    font-size: 1rem;
-    color: #b0b0b0;
-    margin-bottom: 18px;
-  }
 }
 
+#preregister.light {
+  background: #e0e0e0;
+
+  #mc_embed_signup form {
+    label {
+      color: #808080;
+    }
+
+    .form-control {
+      color: #606060;
+    }
+  }
+}
 
 @media (min-width: map-get($grid-breakpoints, md)) {
   #faqs {
