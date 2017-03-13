@@ -198,10 +198,6 @@
     .unihack-nav {
       margin-top: 0;
 
-      .mobile-nav > a {
-        margin-right: -10px;
-      }
-
       .desktop-nav ul li a {
         color: $header-nav;
       }
@@ -224,7 +220,7 @@
   }
   #gl-head .unihack-nav .slideover-wrap {
     height: 100vh;
-    right: -10px;
+    right: 0;
     top: 0;
 
     .nav-top {
@@ -237,10 +233,6 @@
   #gl-head {
     .unihack-logo {
       padding: 10px 15px;
-    }
-
-    .unihack-nav .mobile-nav {
-      margin-right: -10px;
     }
 
     .unihack-nav .slideover-wrap {

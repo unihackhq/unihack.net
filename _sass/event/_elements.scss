@@ -1,10 +1,16 @@
-#about {
+#about.event-block {
   h4 {
     font-size: 1.125rem;
     margin: 36px 0 8px;
     text-transform: uppercase;
     font-family: $font-title;
     font-weight: 500;
+  }
+
+  p:not(.big) {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-weight: 300;
   }
 
   a.social-btn {
@@ -102,6 +108,65 @@
 
     .form-control {
       color: #606060;
+    }
+  }
+}
+
+#society {
+  background: #f0f0f0;
+
+  p {
+    color: #363636;
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+
+  p:last-child {
+    margin: 0;
+  }
+
+  h3 {
+    text-indent: -999em;
+    margin: 0 auto 24px auto;
+  }
+
+  a.uh_btn {
+    @include unihack-button(#606060, #606060);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  &.wired {
+    background: #700080;
+    padding: 42px 15px;
+
+    h3 {
+      height: 40px;
+      width: 266px;
+      background: url("/img/wired-logo.png") left center no-repeat;
+      background-size: 266px 40px;
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      @include unihack-button(#fff, #fff);
+      &:hover {
+        color: #700080;
+      }
+    }
+  }
+
+  &.suits {
+    h3 {
+      height: 40px;
+      width: 107px;
+      background: url("/img/suits-logo.png") left center no-repeat;
+      background-size: 107px 40px;
     }
   }
 }
