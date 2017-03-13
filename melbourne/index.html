@@ -13,9 +13,9 @@ short: MEL
         <div class="col-md-12">
           <h2>
             <span>Get ready, Melbourne!</span>
-            <span>August 5-6</span>
+            <span>We are back on August 5.</span>
           </h2>
-          <p>Australia's premier student hackathon is coming back. Are you ready?</p>
+          <p>Mark your calendars, this year will be our biggest and boldest event yet.</p>
           <p>
             <a class="uh_btn" href="#preregister">Pre-Register Now</a>
           </p>
@@ -25,6 +25,9 @@ short: MEL
   </div>
 </div>
 
+{% include event/about.html %}
+
+
 <div class="event-block" id="venue">
   <div class="unihack-wrap container-fluid">
     <div class="row">
@@ -32,77 +35,6 @@ short: MEL
   </div>
 </div>
 
-<div class="event-block" id="faqs">
-  <div class="unihack-wrap container-fluid">
-    <h3>FAQs</h3>
-    <div class="row">
-      <div class="col-md-6 col-lg-3 question">
-        <h4>Who can compete at UNIHACK?</h4>
-        <p>
-          UNIHACK is open to all university and TAFE students in Australia and
-          New Zealand. The only requirement is that you must be an enrolled
-          student when UNIHACK starts. We reserve the right to cancel your
-          ticket if you do not meet this requirement.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>How many people can be in a team?</h4>
-        <p>
-          Teams must have between four and six people. Teams with less than the
-          minimum will be asked to merge before the competition. We reserve the
-          right to relax this requirement on the day on a team-by-team basis.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>Can we work on our idea beforehand?</h4>
-        <p>
-          No. You are not allowed to start any development or design work on
-          your project before UNIHACK. This includes code, graphics, sounds and
-          3D designs. However, you can research any ideas and concepts before
-          the competition begins.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>Can we work on existing projects?</h4>
-        <p>
-          No, you will not be allowed to work on existing projects at UNIHACK.
-          We want to see new ideas that you and your team can come up with in 24
-          hours. However, you can use your own projects in your idea if it is
-          open sourced.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>Do I have to stay overnight?</h4>
-        <p>
-          You are not required to stay overnight. However, you will not be
-          allowed to continue working on your project from home. All work must
-          be done at the venue.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>Can I bring alcohol or smoke?</h4>
-        <p>
-          No. The event is a strictly non-alcoholic and non-smoking event.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>Is there a Code of Conduct?</h4>
-        <p>
-          Yes, there is a code of conduct. UNIHACK follows "The Hack Code of
-          Conduct". This applies to all attendees, sponsors, partners,
-          volunteers and staff. You can view the code of conduct
-          <a href="http://hackcodeofconduct.org/unihack">here</a>.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-3 question">
-        <h4>What should I bring?</h4>
-        <p>
-          A laptop, mobile phone, chargers, and a change of clothes are
-          essential. We highly suggest also bringing a pillow, sleeping bag and
-          toiletries if you want to stay the night.
-        </p>
-      </div>
-    </div>
+{% include event/faq.html %}
 
-  </div>
-</div>
+{% include event/preregister.html %}

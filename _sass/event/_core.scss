@@ -54,7 +54,7 @@
 }
 
 .event-block {
-  padding: 36px 0;
+  padding: 42px 0;
   border-bottom: 1px solid #e0e0e0;
 
   h3 {
@@ -63,28 +63,32 @@
     letter-spacing: -2px;
     font-family: $font-title;
     font-weight: 500;
-    margin: 0 0 36px;
-  }
-}
+    margin: 0 0 42px;
 
-#faqs {
-  .question {
-    margin-bottom: 24px;
-
-    h4 {
-      font-weight: 700;
-      color: #606060;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin: 0 0 16px;
-    }
-
-    p {
-      color: #969696;
-      font-size: 0.875rem;
-      line-height: 1.5rem;
+    &.big-parent {
       margin-bottom: 6px;
     }
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin: 0 0 28px;
+    font-weight: 300;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p.big {
+    color: #888;
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 42px;
+    line-height: 2.75rem;
   }
 }
 
@@ -117,16 +121,6 @@
 
     a.uh_btn {
       font-size: 1.3125rem;
-    }
-  }
-
-  #faqs {
-    .question {
-      h4 {
-        min-height: 60px;
-        border-top: 6px solid #606060;
-        padding-top: 12px;
-      }
     }
   }
 }

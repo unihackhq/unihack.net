@@ -235,33 +235,6 @@
     margin: 0 0 12px;
   }
 
-  h4 {
-    font-size: 1.125rem;
-    margin: 36px 0 8px;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-  }
-
-  a.social-btn {
-    border-radius: 48px;
-    font-size: 2rem;
-    background: #e0e0e0;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    text-align: center;
-    color: #909090;
-
-    &:hover {
-      color: white;
-    }
-  }
-
-  a.social-btn.melb:hover {
-    background: $unihack-yellow;
-    color: #101010;
-  }
 
   a.social-btn.syd:hover {
     background: $unihack-red;
