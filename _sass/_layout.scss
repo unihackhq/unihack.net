@@ -233,19 +233,10 @@
   }
 }
 
-@media (min-width: map-get($grid-breakpoints, md)) {
+@media (min-width: map-get($grid-breakpoints, sm)) {
   #gl-head {
     .unihack-logo {
       padding: 10px 15px;
-    }
-
-    h1 {
-      .short {
-        display: none;
-      }
-      .city {
-        display: block;
-      }
     }
 
     .unihack-nav .mobile-nav {
@@ -259,19 +250,28 @@
   }
 }
 
-@media (min-width: map-get($grid-breakpoints, xl)) {
-  #gl-head .unihack-nav {
-    float: right;
-    padding: 10px 0;
-
-    .mobile-nav {
-      display: none;
+@media (min-width: map-get($grid-breakpoints, md)) {
+  #gl-head {
+    h1 {
+      .short {
+        display: none;
+      }
+      .city {
+        display: block;
+      }
     }
+  }
+}
 
-    .desktop-nav {
-      display: block;
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  #gl-head {
+    .unihack-nav {
+      float: right;
+      padding: 10px 0;
+
+      .mobile-nav {display: none;}
+      .desktop-nav {display: block;}
     }
-
   }
 }
 
