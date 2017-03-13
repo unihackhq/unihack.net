@@ -1,0 +1,8 @@
+- name: About
+  url: /melbourne#about
+
+- name: Venue
+  url: /melbourne#venue
+
+- name: FAQs
+  url: /melbourne#faqs

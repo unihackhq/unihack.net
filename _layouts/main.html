@@ -12,66 +12,12 @@ Now I'm ready
 -->
 <!DOCTYPE html>
 <html>
-<head>
-  {% capture header %}
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  {% if page.og_image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
-  {% else %}
-  <meta property="og:image" content="{{ site.url }}/img/unihack-og.jpg" />
-  {% endif %}
-  {% if page.og_description %}
-  <meta property="og:description" content="{{ page.og_description }}" />
-  {% else %}
-  <meta property="og:description" content="{{ site.description }}" />
-  {% endif %}
-  {% if page.page == 'home' %}
-  <title>UNIHACK 2017 &mdash; August 5-6 &mdash; Melbourne, Australia</title>
-  {% elsif page.title_override == 'true' %}
-  <title>{% if page.title %}{{ page.title }}{% endif %}</title>
-  {% else %}
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK</title>
-  {% endif %}
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Rubik:500" rel="stylesheet">
-  <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ site.github.url }}/css/bootstrap.css" />
-  <link rel="stylesheet" href="{{ site.github.url }}/css/style.css" />
-  {% if page.page_css %}
-  <link rel="stylesheet" href="{{ site.github.url }}/css/{{ page.page_css }}" />
-  {% endif %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-63816174-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  {% endcapture %}{{ header | strip_newlines }}
-</head>
-
+{% include head.html %}
 <body class="{{ page.page }}">
-
-  {{ content }}
-
-  <footer id="gl-foot">
-    <div class="unihack-wrap container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Design and Development by <a href="http://terencehuynh.com">Terence Huynh</a></p>
-          <p>Photography by <a href="http://www.facebook.com/tomsolariphotography/">Tom Solari</a></p>
-          <p class="gap">Powered by <a href="https://en.wikipedia.org/wiki/Caffeine">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></a></p>
-          <p>Made with <i class="fa fa-heart love"></i> in Melbourne, Australia</p>
-
-          <p class="copyright">&copy; {{ 'now' | date: "%Y" }} UNIHACK Australia. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div class="site">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </div>
 </body>
 </html>
