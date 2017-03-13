@@ -1,8 +1,8 @@
 - name: About
-  url: /melbourne#about
+  url: '#about'
 
 - name: Venue
-  url: /melbourne#venue
+  url: '#venue'
 
 - name: FAQs
-  url: /melbourne#faqs
+  url: '#faqs'

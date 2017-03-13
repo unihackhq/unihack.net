@@ -53,6 +53,41 @@
   }
 }
 
+.event-block {
+  padding: 36px 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  h3 {
+    color: #606060;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    font-family: $font-title;
+    font-weight: 500;
+    margin: 0 0 36px;
+  }
+}
+
+#faqs {
+  .question {
+    margin-bottom: 24px;
+
+    h4 {
+      font-weight: 700;
+      color: #606060;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin: 0 0 16px;
+    }
+
+    p {
+      color: #969696;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 6px;
+    }
+  }
+}
+
 @media (min-width: map-get($grid-breakpoints, md)) {
   #event-head {
     height: 90vh;
@@ -82,6 +117,16 @@
 
     a.uh_btn {
       font-size: 1.3125rem;
+    }
+  }
+
+  #faqs {
+    .question {
+      h4 {
+        min-height: 60px;
+        border-top: 6px solid #606060;
+        padding-top: 12px;
+      }
     }
   }
 }
