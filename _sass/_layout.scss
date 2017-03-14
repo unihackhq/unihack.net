@@ -25,12 +25,14 @@
     background: url('/img/UniHack_U_White.png') top left no-repeat;
     background-size: 31px 40px;
     height: 40px;
-    padding-left: 40px;
     font-family: $font-title;
     font-weight: 300;
 
     a {
       color: white;
+      padding-left: 40px;
+      display: block;
+      float: left;
       text-decoration: none;
     }
 

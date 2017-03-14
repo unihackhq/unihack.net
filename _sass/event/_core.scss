@@ -90,6 +90,12 @@
     margin-bottom: 52px;
     line-height: 2.75rem;
   }
+
+  a.uh_btn {
+    @include unihack-button(#808080, #808080);
+    font-weight: 400;
+    letter-spacing: 0;
+  }
 }
 
 .event-block.no-border {

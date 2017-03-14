@@ -3,7 +3,7 @@
   <div class="unihack-wrap container-fluid">
     <div class="unihack-logo">
       <h1>
-        <a href="{{ site.github.url }}">
+        <a href="{{ site.github.url }}{{ page.header_link || default: '/' }}">
           {% if page.city_page == true %}
           <span class="logo">UNIHACK</span>
           <span class="city">{{ page.city }}</span>
