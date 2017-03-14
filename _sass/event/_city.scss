@@ -5,6 +5,11 @@ body.sydney {
     }
   }
 
+  #event-head {
+    background: url("/img/bg/unihack-sydney-laptop.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
   #preregister {
     h3, p {
       color: $unihack-red;

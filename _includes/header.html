@@ -1,4 +1,4 @@
-<header id="gl-head">
+<header id="gl-head" class="{{ include.css }}">
   <div class="unihack-banner-bg"></div>
   <div class="unihack-wrap container-fluid">
     <div class="unihack-logo">
@@ -52,7 +52,7 @@
       <div class="desktop-nav">
         <ul class="nav-list">
           {% for item in site.data.nav[page.nav] %}
-          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          <li><a {% if page.page == 'about-us' and item.name == 'About' %}class="selected"{% endif %} href="{{ item.url }}">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>

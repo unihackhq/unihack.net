@@ -3,6 +3,10 @@
 @import "variables";
 @import "mixins";
 
+html {
+  background: #d0d0d0;
+}
+
 #landing-wrapper {
   width: 100vw;
   max-width: 100%;
@@ -125,97 +129,6 @@
   }
 }
 
-#preregister {
-  background: #404040;
-  padding: 42px 0;
-
-  h3 {
-    color: $unihack-yellow;
-    font-size: 2.5rem;
-    letter-spacing: -2px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin: 0 0 5px;
-  }
-
-  p {
-    color: $unihack-yellow;
-    font-size: 1.3125rem;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 48px;
-  }
-}
-
-#clubs {
-  background: #f0f0f0;
-  position: relative;
-
-  .unihack-wrap {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin: 0;
-  }
-
-  p {
-    line-height: 28px;
-    color: #363636;
-    margin: 0 0 24px 0;
-  }
-
-  p:last-child {
-    margin: 0;
-  }
-
-  h3 {
-    text-indent: -999em;
-    margin: 0 auto 24px auto;
-  }
-
-  a.uh_btn {
-    @include unihack-button(#606060, #606060);
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0;
-  }
-
-  .wired {
-    background: #700080;
-    padding: 42px 15px;
-
-    h3 {
-      height: 40px;
-      width: 266px;
-      background: url("/img/wired-logo.png") left center no-repeat;
-      background-size: 266px 40px;
-    }
-
-    p {
-      color: white;
-    }
-
-    a {
-      @include unihack-button(#fff, #fff);
-      &:hover {
-        color: #700080;
-      }
-    }
-  }
-
-  .suits {
-    padding: 42px 15px;
-
-    h3 {
-      height: 40px;
-      width: 107px;
-      background: url("/img/suits-logo.png") left center no-repeat;
-      background-size: 107px 40px;
-    }
-  }
-}
-
 @media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, lg) - 1) {
   #landing-wrapper {
     .unihack-wrap {
@@ -258,7 +171,9 @@
 
     .city-inner {
       display: block;
+      width: auto;
       height: auto;
+      padding: 0;
     }
 
     h2 {
@@ -288,12 +203,6 @@
 
     .syd-2017 {
       text-align: right;
-    }
-  }
-
-  #about {
-    h4:first-child {
-      margin-top: 6px;
     }
   }
 

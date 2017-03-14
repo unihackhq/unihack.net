@@ -1,8 +1,11 @@
 - name: About
   url: /about/
 
-- name: Sponsor
-  url: /sponsor/
+- name: Blog
+  url: https://medium.com/unihack-blog
 
-- name: Contact
-  url: /contact/
+- name: Press
+  url: http://unihack.net/press
+
+- name: Archive
+  url: http://unihack.net/old

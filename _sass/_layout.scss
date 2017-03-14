@@ -248,11 +248,19 @@
 
   }
 
+  &.page {
+    position: relative;
+    background: $header-bg;
+    height: 60px;
+  }
+
   &.docked {
     position: fixed;
     background: $header-bg;
     height: 60px;
+  }
 
+  &.docked, &.page {
     .unihack-banner-bg {
       background: $unihack-yellow;
       position: absolute;
@@ -276,8 +284,11 @@
       .desktop-nav ul li a {
         color: $header-nav;
       }
-    }
 
+      .desktop-nav ul li a.selected {
+        color: white;
+      }
+    }
   }
 
 }
