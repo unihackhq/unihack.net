@@ -4,9 +4,14 @@
     <div class="unihack-logo">
       <h1>
         <a href="{{ site.github.url }}">
+          {% if page.city_page == true %}
           <span class="logo">UNIHACK</span>
           <span class="city">{{ page.city }}</span>
           <span class="short">{{ page.short }}</span>
+          {% else %}
+          <span class="logo"></span>
+          <span class="brand">UNIHACK</span>
+          {% endif %}
         </a>
       </h1>
     </div>
@@ -30,7 +35,7 @@
           <div class="nav-body">
             <h3>{{ page.city }}</h3>
             <ul class="nav-list">
-            {% for item in site.data.nav[page.page] %}
+            {% for item in site.data.nav[page.nav] %}
             <li><a href="{{ item.url }}">{{ item.name }}</a></li>
             {% endfor %}
             </ul>
@@ -46,7 +51,7 @@
 
       <div class="desktop-nav">
         <ul class="nav-list">
-          {% for item in site.data.nav[page.page] %}
+          {% for item in site.data.nav[page.nav] %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
           {% endfor %}
         </ul>

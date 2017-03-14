@@ -3,55 +3,35 @@
 @import "variables";
 @import "mixins";
 
-#landing-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 60px;
-  z-index: 999;
-  padding-top: 40px;
-
-  h1 {
-    height: 50px;
-    width: 210px;
-    background: url("/img/unihack-logo-white-@2x.png") top left no-repeat;
-    background-size: 210px 50px;
-    text-indent: -999em;
-  }
-}
-
 #landing-wrapper {
   width: 100vw;
   max-width: 100%;
-  height: 650px;
-  background: url("/img/landing-bg.jpg") center center no-repeat;
+  // background: url("/img/landing-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 
   .landing-inner {
-    height: 650px;
-    display: table-cell;
-    vertical-align: bottom;
-    position: relative;
-    z-index: 3;
-    width: 100vw;
-    max-width: 100%;
-    padding: 36px 0;
   }
 
   h2 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 24px;
     letter-spacing: -2px;
-    font-family: 'Rubik', sans-serif;
+    font-family: $font-title;
     font-weight: 500;
 
     span {
       display: block;
-      line-height: 48px;
-      margin-bottom: 1px;
+      line-height: 40px;
+      margin-bottom: 2px;
+    }
+
+    span.light {
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 32px;
+      letter-spacing: -1px;
     }
   }
 
@@ -64,14 +44,83 @@
   }
 
   a.uh_btn {
-    @include unihack-button(#FFFFFF, $unihack-yellow);
+    @include unihack-button(#FFF, #FFF);
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
 
     &:hover {
-      color: #303030;
+      color: $unihack-yellow;
+    }
+  }
+
+  .city, .city-big {
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      content: ' ';
+    }
+  }
+
+  .city {
+    height: 400px;
+  }
+
+  .city-big {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50vw;
+    content: ' ';
+  }
+
+  .city-big.right {
+    right: 0;
+  }
+
+  .city-big.left {
+    left: 0;
+  }
+
+  .city-inner {
+    height: 400px;
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .melb-2017 {
+    background: url("/img/bg/unihack-top.jpg") left center no-repeat;
+    background-size: cover;
+
+    &:before {
+      background: rgba(225, 182, 9, 0.6);
+    }
+  }
+
+  .syd-2017 {
+    background: url("/img/bg/unihack-laptop.jpg") left center no-repeat;
+    background-size: cover;
+
+    &:before {
+      background: rgba(242, 46, 42, 0.5);
+    }
+
+    a.uh_btn {
+      @include unihack-button(#FFF, #FFF);
+
+      &:hover {
+        color: $unihack-red;
+      }
     }
   }
 }
@@ -167,87 +216,49 @@
   }
 }
 
-#mc_embed_signup form {
-  padding: 0;
-  font-size: 1rem;
-  font-family: Open Sans, sans-serif;
+@media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, lg) - 1) {
+  #landing-wrapper {
+    .unihack-wrap {
+      width: 100%;
+    }
 
-  .form-control {
-    background: transparent;
-    border: 1px solid #ababab;
-    color: #f0f0f0;
-    font-size: 1rem;
-    font-family: Open Sans, sans-serif;
-  }
-
-  label {
-    color: white;
-  }
-
-  .uh_btn {
-    @include unihack-button($unihack-yellow, $unihack-yellow);
-    background: $unihack-yellow;
-    color: #404040;
-    padding: 12px 15px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
-    letter-spacing: 0;
-  }
-
-  .response {
-    font-size: 1rem;
-    color: #b0b0b0;
-    margin-bottom: 18px;
+    .city-inner > * {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
-#about {
-  padding: 42px 0;
-
-  p {
-    font-size: 1.125rem;
-    line-height: 32px;
-    margin: 0 0 28px;
-    font-weight: 300;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  p.big {
-    color: #888;
-    font-size: 1.75rem;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 42px;
-    line-height: 48px;
-  }
-
-  h3 {
-    color: #888;
-    font-size: 2.5rem;
-    letter-spacing: -2px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin: 0 0 12px;
-  }
-
-
-  a.social-btn.syd:hover {
-    background: $unihack-red;
-  }
-}
-
-@media (min-width: map-get($grid-breakpoints, md)) {
+@media (min-width: map-get($grid-breakpoints, lg)) {
   #landing-wrapper {
     height: 90vh;
 
     .landing-inner {
       height: 90vh;
+      display: table-cell;
       vertical-align: middle;
+      position: relative;
+      z-index: 3;
+      width: 100vw;
+      max-width: 100%;
+      padding: 20px 0;
+    }
+
+    .city {
+      height: auto;
+      background: transparent;
+
+      &:before {
+        background: transparent;
+        height: 0;
+        width: 0;
+      }
+    }
+
+    .city-inner {
+      display: block;
+      height: auto;
     }
 
     h2 {
@@ -259,39 +270,27 @@
         line-height: 64px;
         margin-bottom: 3px;
       }
-    }
 
-    p {
-      font-size: 2rem;
-      letter-spacing: -1px;
-      font-weight: 300;
-      margin-bottom: 24px;
+      span.light {
+        font-size: 2.75rem;
+        line-height: 44px;
+        letter-spacing: -2px;
+      }
     }
 
     a.uh_btn {
       font-size: 1.3125rem;
     }
-  }
 
-  #preregister {
-    h3 {
-      font-size: 3rem;
-      letter-spacing: -2px;
+    .melb-2017, .syd-2017 {
+      background-position: center center;
     }
 
-    p {
-      font-size: 1.5rem;
-      letter-spacing: -1px;
+    .syd-2017 {
+      text-align: right;
     }
   }
 
-  #about h3 {
-    font-size: 3rem;
-    letter-spacing: -2px;
-  }
-}
-
-@media (min-width: map-get($grid-breakpoints, lg)) {
   #about {
     h4:first-child {
       margin-top: 6px;

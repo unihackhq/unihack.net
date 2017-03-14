@@ -38,17 +38,22 @@
       display: none;
     }
 
-    .short {
+    .short, .brand {
       display: block;
       font-weight: 500;
     }
 
-    .city, .short {
+    .city, .short, .brand {
       font-size: 2rem;
       line-height: 40px;
       color: white;
       letter-spacing: -1px;
     }
+
+    .brand {
+      letter-spacing: -2px;
+    }
+
   }
 
   .city-nav {
