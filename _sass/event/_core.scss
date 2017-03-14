@@ -59,7 +59,7 @@
 
   h3 {
     color: #606060;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: -2px;
     font-family: $font-title;
     font-weight: 500;
@@ -71,8 +71,8 @@
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     margin: 0 0 28px;
     font-weight: 400;
   }
@@ -83,12 +83,12 @@
 
   p.big {
     color: #888;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: -1px;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: 52px;
-    line-height: 2.75rem;
+    margin-bottom: 24px;
+    line-height: 2.25rem;
   }
 
   a.uh_btn {
@@ -131,6 +131,51 @@
 
     a.uh_btn {
       font-size: 1.3125rem;
+    }
+  }
+
+  .event-block {
+    padding: 42px 0;
+    border-bottom: 1px solid #e0e0e0;
+
+    h3 {
+      color: #606060;
+      font-size: 2.5rem;
+      letter-spacing: -2px;
+      font-family: $font-title;
+      font-weight: 500;
+      margin: 0 0 42px;
+
+      &.big-parent {
+        margin-bottom: 6px;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.75rem;
+      margin: 0 0 28px;
+      font-weight: 400;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    p.big {
+      color: #888;
+      font-size: 1.75rem;
+      letter-spacing: -1px;
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 52px;
+      line-height: 2.75rem;
+    }
+
+    a.uh_btn {
+      @include unihack-button(#808080, #808080);
+      font-weight: 400;
+      letter-spacing: 0;
     }
   }
 }
