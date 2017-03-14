@@ -11,6 +11,15 @@
       </h1>
     </div>
 
+    <div class="city-nav">
+      <a href="#" class="city-nav-button"><i class="fa fa-caret-down"></i></a>
+      <ul class="nav-list">
+      {% for item in site.data.nav['core'] %}
+      <li><a class="{{ item.class }}" href="{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+
     <div class="unihack-nav">
       <div class="mobile-nav">
         <a href="#" class="mobile-nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>

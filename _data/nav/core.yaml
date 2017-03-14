@@ -1,5 +1,11 @@
+- name: Home
+  url: /
+  class: home
+
 - name: Melbourne
   url: /melbourne/
+  class: melbourne
 
 - name: Sydney
   url: /sydney/
+  class: sydney
