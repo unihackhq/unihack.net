@@ -4,6 +4,7 @@ page: melbourne
 city_page: true
 city: Melbourne
 short: MEL
+gmaps: melb-2017-map.js
 ---
 
 <div id="event-head">
@@ -27,14 +28,35 @@ short: MEL
 
 {% include event/about.html %}
 
-{% include event/society.html society="wired" %}
+{% include event/society.html society="wired" css="no-border" %}
 
-
-<div class="event-block" id="venue">
+<div class="event-block no-border" id="venue">
   <div class="unihack-wrap container-fluid">
-    <div class="row">
+    <div class="event-location-block">
+      <h3>Venue</h3>
+      <p class="address">Monash Business School</p>
+      <p class="address">Lv 7, 271 Collins Street</p>
+      <p class="address">Melbourne, VIC 3000</p>
+
+      <h4>How do I get there?</h4>
+      <p>
+        The best way to get to 271 Collins Street is to catch a train to Flinders
+        Street Station, and walk to Flinders Lane via the Degraves Street exit.
+      </p>
+      <p>
+        Alternatively, you can catch the 11, 12, 48, 70, 75 or 109 tram to Elizabeth
+        Street; then walk the rest of the way to the venue via Flinders Lane.
+      </p>
+
+      <h4>Where can I park?</h4>
+      <p>
+        If you are driving in, the nearest 24-hour car park is 300 Flinders Street,
+        which is a four minute walk away from 27 Collins Street.
+        Please be aware that this is a paid car park. There is no parking on-site.
+      </p>
     </div>
   </div>
+  <div class="google-maps" id="melb-2017-map"></div>
 </div>
 
 {% include event/faq.html %}

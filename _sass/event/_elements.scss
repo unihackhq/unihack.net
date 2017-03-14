@@ -171,6 +171,61 @@
   }
 }
 
+#venue {
+  background: #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+
+  .google-maps {
+    width: 100vw;
+    height: 300px;
+  }
+
+  .event-location-block {
+    padding: 36px 0px;
+    background: #f0f0f0;
+    position: relative;
+    z-index: 3;
+    text-align: left;
+  }
+
+  h3 {
+    margin: 0 0 18px;
+  }
+
+  p {
+    color: #646464;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p.address {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 2rem;
+    margin: 0 0 6px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 36px 0 12px;
+    text-transform: uppercase;
+    font-family: $font-title;
+    color: #646464;
+  }
+}
+
 @media (min-width: map-get($grid-breakpoints, md)) {
   #faqs {
     .question {
@@ -184,9 +239,26 @@
 }
 
 @media (min-width: map-get($grid-breakpoints, lg)) {
-    #about {
-      h4:first-child {
-        margin-top: 6px;
-      }
+  #about {
+    h4:first-child {
+      margin-top: 6px;
     }
+  }
+
+  #venue {
+    .google-maps {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      width: 60vw;
+      height: auto;
+    }
+
+    .event-location-block {
+      width: 38%;
+      padding: 42px 0 42px 36px;
+      float: right;
+    }
+  }
 }
