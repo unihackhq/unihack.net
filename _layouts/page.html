@@ -15,7 +15,14 @@ Now I'm ready
 {% include head.html %}
 <body class="{{ page.page }}">
   <div class="site">
-    {% include header.html %}
+    {% include header.html css="page" %}
+
+    <div id="page-title">
+      <div class="unihack-wrap container-fluid">
+        <h2>{{ page.title }}</h2>
+      </div>
+    </div>
+
     {{ content }}
     {% include footer.html %}
   </div>

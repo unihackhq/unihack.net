@@ -1,0 +1,12 @@
+<div id="society" class="event-block {{ include.society }} {{ include.css }}">
+  <div class="unihack-wrap container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-6 col-md-8 col-xs-12">
+        {% assign soc = site.data.society[include.society] %}
+        <h3>{{ soc.name }}</h3>
+        <p>{{ soc.desc }}</p>
+        <p><a class="uh_btn" href="{{ soc.link }}">Visit {{ soc.name }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

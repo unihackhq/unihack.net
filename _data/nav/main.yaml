@@ -1,0 +1,11 @@
+- name: About
+  url: /about/
+
+- name: Blog
+  url: https://medium.com/unihack-blog
+
+- name: Press
+  url: http://unihack.net/press
+
+- name: Archive
+  url: http://unihack.net/old

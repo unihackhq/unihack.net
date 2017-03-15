@@ -1,0 +1,63 @@
+<div class="event-block {{ include.css }}" id="about">
+  <div class="unihack-wrap container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <h3 class="big-parent">About Us</h3>
+        <p class="big">
+          We are Australia's premier student hackathon - run for students, by students.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <p>
+          Inspired by the student hackathons in the United States and Europe, UNIHACK was created in 2014 by WIRED Monash.
+          Since then, UNIHACK has quickly become one of the go-to hackathons for university students nationwide.
+        </p>
+        {% if page.city == "Sydney" %}
+        <p>
+          Now, for the first time, UNIHACK is expanding to Sydney - with the help of SUITS, the IT
+          student society at the University of Sydney.
+        </p>
+        {% endif %}
+        <p>
+          Teams have 24 hours to design and build something awesome. It can be anything - a website, a mobile application,
+          a video game, or even something hardware. The important thing is that it needs to work when it is presented
+          to the judges.
+        </p>
+        <p>
+          Whether you are an avid programmer or a first-time hacker, UNIHACK welcomes everyone, regardless of skill level.
+          You will have the opportunity to build, collaborate and learn from your fellow hackers and mentors at the event.
+          The event will also have a number of quick tech talks throughout to help participants learn new or extend their
+          existing skills.
+        </p>
+        {% if page.city == "Melbourne" %}
+        <p>
+          UNIHACK is organised by WIRED Monash, the IT student society at Monash University Clayton.
+        </p>
+        {% endif %}
+        <p>
+          <a href="{{ site.github.url }}/about/" class="uh_btn">Read More</a>
+        </p>
+      </div>
+      <div class="col-md-12 col-lg-3 offset-lg-1">
+        <h4>Follow UNIHACK {{ page.city }} to get the latest info!</h4>
+        {% if page.city == "Melbourne" %}
+        <a href="http://twitter.com/unihackmelb/" class="social-btn melb">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="http://facebook.com/unihackmelb/" class="social-btn melb">
+          <i class="fa fa-facebook"></i>
+        </a>
+        {% elsif page.city == "Sydney" %}
+        <a href="http://twitter.com/unihacksyd/" class="social-btn syd">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="http://facebook.com/unihacksyd/" class="social-btn syd">
+          <i class="fa fa-facebook"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

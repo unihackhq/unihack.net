@@ -1,0 +1,61 @@
+<header id="gl-head" class="{{ include.css }}">
+  <div class="unihack-banner-bg"></div>
+  <div class="unihack-wrap container-fluid">
+    <div class="unihack-logo">
+      <h1>
+        <a href="{{ site.github.url }}{{ page.header_link || default: '/' }}">
+          {% if page.city_page == true %}
+          <span class="logo">UNIHACK</span>
+          <span class="city">{{ page.city }}</span>
+          <span class="short">{{ page.short }}</span>
+          {% else %}
+          <span class="logo"></span>
+          <span class="brand">UNIHACK</span>
+          {% endif %}
+        </a>
+      </h1>
+    </div>
+
+    <div class="city-nav">
+      <a href="#" class="city-nav-button"><i class="fa fa-caret-down"></i></a>
+      <ul class="nav-list">
+      {% for item in site.data.nav['core'] %}
+      <li><a class="{{ item.class }}" href="{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div class="unihack-nav">
+      <div class="mobile-nav">
+        <a href="#" class="mobile-nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <div class="slideover-wrap">
+          <div class="nav-top">
+            <a href="#" class="mobile-inner-btn"><i class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+          <div class="nav-body">
+            <h3>{{ page.city }}</h3>
+            <ul class="nav-list">
+            {% for item in site.data.nav[page.nav] %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            {% endfor %}
+            </ul>
+            <h3>UNIHACK</h3>
+            <ul class="nav-list">
+            {% for item in site.data.nav['core'] %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="desktop-nav">
+        <ul class="nav-list">
+          {% for item in site.data.nav[page.nav] %}
+          <li><a {% if page.page == 'about-us' and item.name == 'About' %}class="selected"{% endif %} href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

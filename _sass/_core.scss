@@ -5,10 +5,6 @@ body {
   font-size: 16px;
 }
 
-.unihack-wrap {
-  margin: 0 10px;
-}
-
 @media (min-width: map-get($grid-breakpoints, md)) {
   .unihack-wrap {
     width: 90%;

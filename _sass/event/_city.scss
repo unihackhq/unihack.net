@@ -1,0 +1,24 @@
+body.sydney {
+  #gl-head.docked {
+    .unihack-banner-bg, .unihack-logo, .city-nav {
+      background: $unihack-red;
+    }
+  }
+
+  #event-head {
+    background: url("/img/bg/unihack-sydney-laptop.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  #preregister {
+    h3, p {
+      color: $unihack-red;
+    }
+
+    #mc_embed_signup form .uh_btn {
+      color: white;
+      background: $unihack-red;
+      border-color: $unihack-red;
+    }
+  }
+}

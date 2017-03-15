@@ -3,55 +3,39 @@
 @import "variables";
 @import "mixins";
 
-#landing-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 60px;
-  z-index: 999;
-  padding-top: 40px;
-
-  h1 {
-    height: 50px;
-    width: 210px;
-    background: url("/img/unihack-logo-white-@2x.png") top left no-repeat;
-    background-size: 210px 50px;
-    text-indent: -999em;
-  }
+html {
+  background: #d0d0d0;
 }
 
 #landing-wrapper {
   width: 100vw;
   max-width: 100%;
-  height: 650px;
-  background: url("/img/landing-bg.jpg") center center no-repeat;
+  // background: url("/img/landing-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 
   .landing-inner {
-    height: 650px;
-    display: table-cell;
-    vertical-align: bottom;
-    position: relative;
-    z-index: 3;
-    width: 100vw;
-    max-width: 100%;
-    padding: 36px 0;
   }
 
   h2 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 24px;
     letter-spacing: -2px;
-    font-family: 'Rubik', sans-serif;
+    font-family: $font-title;
     font-weight: 500;
 
     span {
       display: block;
-      line-height: 48px;
-      margin-bottom: 1px;
+      line-height: 40px;
+      margin-bottom: 2px;
+    }
+
+    span.light {
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 32px;
+      letter-spacing: -1px;
     }
   }
 
@@ -64,217 +48,132 @@
   }
 
   a.uh_btn {
-    @include unihack-button(#FFFFFF, $unihack-yellow);
+    @include unihack-button(#FFF, #FFF);
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
 
     &:hover {
-      color: #303030;
+      color: $unihack-yellow;
     }
   }
-}
 
-#preregister {
-  background: #404040;
-  padding: 42px 0;
-
-  h3 {
-    color: $unihack-yellow;
-    font-size: 2.5rem;
-    letter-spacing: -2px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin: 0 0 5px;
+  .city, .city-big {
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      content: ' ';
+    }
   }
 
-  p {
-    color: $unihack-yellow;
-    font-size: 1.3125rem;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 48px;
+  .city {
+    height: 400px;
   }
-}
 
-#clubs {
-  background: #f0f0f0;
-  position: relative;
+  .city-big {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50vw;
+    content: ' ';
+  }
 
-  .unihack-wrap {
+  .city-big.right {
+    right: 0;
+  }
+
+  .city-big.left {
+    left: 0;
+  }
+
+  .city-inner {
+    height: 400px;
+    display: table-cell;
+    vertical-align: bottom;
     position: relative;
-    z-index: 2;
-    text-align: center;
-    margin: 0;
+    z-index: 3;
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px 0;
   }
 
-  p {
-    line-height: 28px;
-    color: #363636;
-    margin: 0 0 24px 0;
+  .melb-2017 {
+    background: url("/img/bg/unihack-top.jpg") left center no-repeat;
+    background-size: cover;
+
+    &:before {
+      background: rgba(225, 182, 9, 0.6);
+    }
   }
 
-  p:last-child {
-    margin: 0;
-  }
+  .syd-2017 {
+    background: url("/img/bg/unihack-laptop.jpg") left center no-repeat;
+    background-size: cover;
 
-  h3 {
-    text-indent: -999em;
-    margin: 0 auto 24px auto;
-  }
-
-  a.uh_btn {
-    @include unihack-button(#606060, #606060);
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0;
-  }
-
-  .wired {
-    background: #700080;
-    padding: 42px 15px;
-
-    h3 {
-      height: 40px;
-      width: 266px;
-      background: url("/img/wired-logo.png") left center no-repeat;
-      background-size: 266px 40px;
+    &:before {
+      background: rgba(242, 46, 42, 0.5);
     }
 
-    p {
-      color: white;
-    }
+    a.uh_btn {
+      @include unihack-button(#FFF, #FFF);
 
-    a {
-      @include unihack-button(#fff, #fff);
       &:hover {
-        color: #700080;
+        color: $unihack-red;
       }
     }
   }
+}
 
-  .suits {
-    padding: 42px 15px;
+@media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, lg) - 1) {
+  #landing-wrapper {
+    .unihack-wrap {
+      width: 100%;
+    }
 
-    h3 {
-      height: 40px;
-      width: 107px;
-      background: url("/img/suits-logo.png") left center no-repeat;
-      background-size: 107px 40px;
+    .city-inner > * {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
-#mc_embed_signup form {
-  padding: 0;
-  font-size: 1rem;
-  font-family: Open Sans, sans-serif;
-
-  .form-control {
-    background: transparent;
-    border: 1px solid #ababab;
-    color: #f0f0f0;
-    font-size: 1rem;
-    font-family: Open Sans, sans-serif;
-  }
-
-  label {
-    color: white;
-  }
-
-  .uh_btn {
-    @include unihack-button($unihack-yellow, $unihack-yellow);
-    background: $unihack-yellow;
-    color: #404040;
-    padding: 12px 15px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
-    letter-spacing: 0;
-  }
-
-  .response {
-    font-size: 1rem;
-    color: #b0b0b0;
-    margin-bottom: 18px;
-  }
-}
-
-#about {
-  padding: 42px 0;
-
-  p {
-    font-size: 1.125rem;
-    line-height: 32px;
-    margin: 0 0 28px;
-    font-weight: 300;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  p.big {
-    color: #888;
-    font-size: 1.75rem;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 42px;
-    line-height: 48px;
-  }
-
-  h3 {
-    color: #888;
-    font-size: 2.5rem;
-    letter-spacing: -2px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin: 0 0 12px;
-  }
-
-  h4 {
-    font-size: 1.125rem;
-    margin: 36px 0 8px;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-  }
-
-  a.social-btn {
-    border-radius: 48px;
-    font-size: 2rem;
-    background: #e0e0e0;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    text-align: center;
-    color: #909090;
-
-    &:hover {
-      color: white;
-    }
-  }
-
-  a.social-btn.melb:hover {
-    background: $unihack-yellow;
-    color: #101010;
-  }
-
-  a.social-btn.syd:hover {
-    background: $unihack-red;
-  }
-}
-
-@media (min-width: map-get($grid-breakpoints, md)) {
+@media (min-width: map-get($grid-breakpoints, lg)) {
   #landing-wrapper {
     height: 90vh;
 
     .landing-inner {
       height: 90vh;
+      display: table-cell;
       vertical-align: middle;
+      position: relative;
+      z-index: 3;
+      width: 100vw;
+      max-width: 100%;
+      padding: 20px 0;
+    }
+
+    .city {
+      height: auto;
+      background: transparent;
+
+      &:before {
+        background: transparent;
+        height: 0;
+        width: 0;
+      }
+    }
+
+    .city-inner {
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0;
     }
 
     h2 {
@@ -286,42 +185,24 @@
         line-height: 64px;
         margin-bottom: 3px;
       }
-    }
 
-    p {
-      font-size: 2rem;
-      letter-spacing: -1px;
-      font-weight: 300;
-      margin-bottom: 24px;
+      span.light {
+        font-size: 2.75rem;
+        line-height: 44px;
+        letter-spacing: -2px;
+      }
     }
 
     a.uh_btn {
       font-size: 1.3125rem;
     }
-  }
 
-  #preregister {
-    h3 {
-      font-size: 3rem;
-      letter-spacing: -2px;
+    .melb-2017, .syd-2017 {
+      background-position: center center;
     }
 
-    p {
-      font-size: 1.5rem;
-      letter-spacing: -1px;
-    }
-  }
-
-  #about h3 {
-    font-size: 3rem;
-    letter-spacing: -2px;
-  }
-}
-
-@media (min-width: map-get($grid-breakpoints, lg)) {
-  #about {
-    h4:first-child {
-      margin-top: 6px;
+    .syd-2017 {
+      text-align: right;
     }
   }
 

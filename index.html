@@ -1,151 +1,42 @@
 ---
 layout: main
-page: home
+page: main
+nav: main
+city_page: false
 page_css: landing.css
 ---
 
-<header id="landing-header">
-  <div class="container-fluid unihack-wrap">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>UNIHACK</h1>
-      </div>
-    </div>
-  </div>
-</header>
-
 <div id="landing-wrapper">
+  <div class="city-big left melb-2017"></div>
+  <div class="city-big right syd-2017"></div>
   <div class="landing-inner">
     <div class="unihack-wrap container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <h2>
-            <span>Melbourne + Sydney</span>
-            <span>August 2017</span>
-          </h2>
-          <p>Australia's premier student hackathon is coming back. Are you ready?</p>
-          <p>
-            <a class="uh_btn" href="#preregister">Pre-Register Now</a>
-          </p>
+        <div class="col-lg-6 city melb-2017">
+          <div class="city-inner">
+            <h2>
+              <span>Melbourne</span>
+              <span class="light">5-6 August 2017</span>
+            </h2>
+            <p>
+              <a class="uh_btn" href="{{ site.github.url }}/melbourne/">Pre-Register Now</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 city syd-2017">
+          <div class="city-inner">
+            <h2>
+              <span>Sydney</span>
+              <span class="light">Coming in August</span>
+            </h2>
+            <p>
+              <a class="uh_btn" href="{{ site.github.url }}/sydney/">Find Out More</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div id="preregister">
-  <div class="unihack-wrap container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Pre-Register</h3>
-        <p>Do not be the last to find out when we open registration. Sign up below!</p>
-      </div>
-      <div id="mc_embed_signup" class="col-md-8 col-sm-12">
-        <form action="//unihack.us10.list-manage.com/subscribe/post?u=f9152bd9c911cd7b954ba129f&amp;id=9dea7b196d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <div class="mc-field-group form-group">
-            	<label for="mce-EMAIL">Email Address</label>
-            	<input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
-            </div>
-            <div class="mc-field-group form-group">
-            	<label for="mce-FNAME">First Name</label>
-            	<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
-            </div>
-            <div class="mc-field-group form-group">
-            	<label for="mce-LNAME">Last Name</label>
-            	<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
-            </div>
-          	<div id="mce-responses" class="clear">
-          		<div class="response" id="mce-error-response" style="display:none"></div>
-          		<div class="response" id="mce-success-response" style="display:none"></div>
-          	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f9152bd9c911cd7b954ba129f_9dea7b196d" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="uh_btn"></div>
-          </div>
-        </form>
-      </div>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    </div>
-  </div>
-</div>
-
-<div id="about">
-  <div class="unihack-wrap container-fluid">
-    <div class="row">
-      <div class="col-md-12 col-lg-8">
-        <h3>About Us</h3>
-        <p class="big">
-          We are Australia's premier student hackathon - run for students, by students.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-8">
-        <p>
-          Inspired by the student hackathons in the United States and Europe, UNIHACK was created in 2014 by WIRED Monash.
-          Since the very first competition at York Butter Factory, UNIHACK has quickly become one of the go-to hackathons
-          for university students nationwide.
-        </p>
-        <p>
-          The main purpose of UNIHACK is to showcase the best and talented students currently residing in our universities
-          - the very people who will become the next generation of developers, thinkers, and startup entrepreneurs.
-        </p>
-        <p>
-          Teams have 24 hours to design and build something awesome. It can be anything - a website, a mobile application,
-          a video game, or even something hardware. The important thing is that it needs to work when it is presented to
-          the judges.
-        </p>
-        <p>
-          Whether you are an avid programmer or a first-timer, UNIHACK welcomes all types of "hackers" regardless of
-          skill level.
-        </p>
-      </div>
-      <div class="col-md-8 col-lg-4">
-        <h4>Follow UNIHACK Melbourne</h4>
-        <a href="http://twitter.com/unihackmelb/" class="social-btn melb">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="http://facebook.com/unihackmelb/" class="social-btn melb">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <h4>Follow UNIHACK Sydney</h4>
-        <a href="http://twitter.com/unihacksyd/" class="social-btn syd">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="http://facebook.com/unihacksyd/" class="social-btn syd">
-          <i class="fa fa-facebook"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="clubs">
-  <div id="wired-background"></div>
-  <div class="unihack-wrap container-fluid">
-    <div class="row">
-      <div class="col-md-6 col-xs-12 wired">
-        <h3>Wired Monash</h3>
-        <p>
-          UNIHACK Melbourne is organised by WIRED Monash, the society for IT students and those who are curious about
-          all things digital at Monash University Clayton. We aim to provide a relaxed atmosphere
-          where students can meet others who share their love, opinions, and collaborate on projects and competitions.
-        </p>
-        <p>
-          <a class="uh_btn" href="http://wired.org.au">Visit WIRED Monash</a>
-        </p>
-      </div>
-      <div class="col-md-6 col-xs-12 suits">
-        <h3>SUITS</h3>
-        <p>
-          UNIHACK Sydney will be organised by SUITS, the University of Sydney's IT student society. We run
-          social events, hold seminars, teach advanced programming skills, help connect companies with students,
-          and assist communication between staff and students in IT. It is supported by the University of Sydney Union (USU).
-        </p>
-        <p>
-          <a class="uh_btn" href="http://suits.org.au">Visit SUITS</a>
-        </p>
-      </div>
-  </div>
-  </div>
-</div>
+{% include event/preregister.html css="no-border" %}

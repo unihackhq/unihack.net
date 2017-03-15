@@ -1,5 +1,362 @@
-/* Footer */
+/* Header */
+#gl-head {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  position: absolute;
+  z-index: 999;
 
+  .unihack-wrap {
+    z-index: 999;
+    height: 60px;
+  }
+
+  .unihack-logo {
+    margin-top: 20px;
+    height: 60px;
+    float: left;
+    padding: 10px 15px;
+    margin-left: -15px;
+  }
+
+  h1 {
+    float: left;
+    background: url('/img/UniHack_U_White.png') top left no-repeat;
+    background-size: 31px 40px;
+    height: 40px;
+    font-family: $font-title;
+    font-weight: 300;
+
+    a {
+      color: white;
+      padding-left: 40px;
+      display: block;
+      float: left;
+      text-decoration: none;
+    }
+
+    .logo, .city {
+      display: none;
+    }
+
+    .short, .brand {
+      display: block;
+      font-weight: 500;
+    }
+
+    .city, .short, .brand {
+      font-size: 2rem;
+      line-height: 40px;
+      color: white;
+      letter-spacing: -1px;
+    }
+
+    .brand {
+      letter-spacing: -2px;
+    }
+
+  }
+
+  .city-nav {
+    float: left;
+    margin-top: 20px;
+    height: 60px;
+    position: relative;
+    padding: 10px 0px;
+    display: none;
+
+    > a {
+      font-size: 1.5rem;
+      color: white;
+      line-height: 40px;
+      padding: 0 10px;
+      border-left: 1px dotted white;
+      display: block;
+
+      &:hover, &.is-open {
+        background: $overlay-nav-bg;
+        border-left: 1px solid $overlay-nav-bg;
+        margin-top: -10px;
+        padding: 10px;
+      }
+    }
+
+    ul {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: $overlay-nav-bg;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 200px;
+      display: none;
+
+      &.is-open {
+        display: block;
+      }
+
+      li {
+        display: block;
+        float: none;
+        width: 100%;
+        font-size: 1rem;
+
+        &>a {
+          padding: 8px 15px;
+          display: block;
+          color: $header-nav;
+        }
+
+        &>a:hover {
+          background: #444;
+          text-decoration: none;
+        }
+
+        a.melbourne:hover {
+          color: $overlay-nav-bg;
+          background: $unihack-yellow
+        }
+
+        a.sydney:hover {
+          background: $unihack-red;
+          color: white;
+        }
+      }
+
+    }
+  }
+
+  .unihack-nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: -15px;
+
+    .mobile-nav {
+      display: block;
+      position: relative;
+
+      &>a {
+        height: 60px;
+        line-height: 40px;
+        color: white;
+        font-size: 1.75rem;
+        padding: 10px 15px;
+        display: block;
+      }
+
+      &>a:hover, &>a.is-open {
+        background: $overlay-nav-bg;
+      }
+
+      h3 {
+        font-size: 0.875rem;
+        font-family: $font-title;
+        padding: 30px 15px 6px;
+        margin: 0;
+        clear: both;
+        color: white;
+        text-transform: uppercase;
+
+        &:first-child {
+          padding-top: 0px;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        li {
+          display: block;
+          float: none;
+          width: 100%;
+          font-size: 0.875rem;
+
+          &>a {
+            padding: 5px 15px;
+            display: block;
+            color: $header-nav;
+          }
+        }
+      }
+    }
+
+    .desktop-nav {
+      display: none;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 40px;
+
+        li {
+          display: inline-block;
+          height: 40px;
+          font-size: 0.875rem;
+          line-height: 40px;
+        }
+
+        a {
+          padding: 0 15px;
+          display: block;
+          color: white;
+        }
+      }
+    }
+
+    .slideover-wrap {
+      background: $overlay-nav-bg;
+      width: 100vw;
+      right: 0px;
+      top: 60px;
+      position: absolute;
+      z-index: 999;
+      display: none;
+      overflow-x: scroll;
+
+      .nav-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        padding: 0;
+
+        a {
+          height: 60px;
+          line-height: 40px;
+          color: white;
+          font-size: 1.75rem;
+          padding: 10px 15px;
+          display: block;
+          float: right;
+        }
+      }
+
+      .nav-body {
+        padding: 30px 20px;
+        overflow: hidden;
+      }
+
+      &.is-open {
+        display: block;
+      }
+    }
+
+  }
+
+  &.page {
+    position: relative;
+    background: $header-bg;
+    height: 60px;
+  }
+
+  &.docked {
+    position: fixed;
+    background: $header-bg;
+    height: 60px;
+  }
+
+  &.docked, &.page {
+    .unihack-banner-bg {
+      background: $unihack-yellow;
+      position: absolute;
+      z-index: 998;
+      width: 50%;
+      height: 60px;
+    }
+
+    .unihack-wrap {
+      background: $header-bg;
+    }
+
+    .unihack-logo, .city-nav {
+      margin-top: 0;
+      background: $unihack-yellow;
+    }
+
+    .unihack-nav {
+      margin-top: 0;
+
+      .desktop-nav ul li a {
+        color: $header-nav;
+      }
+
+      .desktop-nav ul li a.selected {
+        color: white;
+      }
+    }
+  }
+
+}
+
+.image {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  content: ' ';
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+  #gl-head .unihack-nav .mobile-nav {
+    position: inherit;
+  }
+  #gl-head .unihack-nav .slideover-wrap {
+    height: 100vh;
+    right: 0;
+    top: 0;
+
+    .nav-top {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+  #gl-head {
+    .unihack-logo {
+      padding: 10px 15px;
+    }
+
+    .unihack-nav .slideover-wrap {
+      width: 250px;
+    }
+
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  #gl-head {
+    h1 {
+      .short {
+        display: none;
+      }
+      .city {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  #gl-head {
+    .unihack-nav {
+      float: right;
+      padding: 10px 0;
+
+      .mobile-nav {display: none;}
+      .desktop-nav {display: block;}
+    }
+    .city-nav {display: block;}
+  }
+}
+
+/* Footer */
 #gl-foot {
   text-align: center;
   background: #d0d0d0;
