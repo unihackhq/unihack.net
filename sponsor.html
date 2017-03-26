@@ -1,0 +1,131 @@
+---
+layout: page
+page: sponsorship
+title: Sponsor Us
+nav: main
+city_page: false
+page_css: sponsor.css
+---
+
+<div class="page-block">
+  <div class="unihack-wrap container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8 col-md-12 col-xs-12">
+        <h3><span>Why sponsor?</span></h3>
+        <p class="intro">
+          We connect you to the next generation of developers, thinkers and entrepreneurs.
+        </p>
+        <p>
+          Sponsoring UNIHACK is a great way to connect with the top IT students from the the University of Melbourne,
+          Monash University, the University of Sydney, the UNSW, RMIT and other universities across Australia. Similar
+          hackathons in the United States and Europe have provided sponsors access to many talented students who
+          end up working for them in the future.
+        </p>
+        <p>This is the best time to sponsor UNIHACK - here’s exactly why:</p>
+        <ul>
+          <li>
+            <strong>Meet talented students:</strong> Get access and establish personal relationships with some of the
+            most driven and talented computer science, design, electrical and software engineering
+            students from some of Australia’s top universities – before anyone else.
+          </li>
+          <li>
+            <strong>Witness these students perform</strong> during ideation, planning, building and presentation of
+            their solutions. We provide a real environment for teamwork and execution, outside of the
+            classroom or assessment centre setting.
+          </li>
+          <li>
+            <strong>Real-time adoption of products and feedback:</strong>  This is the time when students will be able to
+            try your product. They’ll be hacking away, trying new things and experimenting on how to
+            bring your API/hardware to be used to the next level in ways you’ve not thought of before.
+            You can also provide feedback and support as a mentor with their ideas and pitch.
+          </li>
+          <li>
+            <strong>Brand recognition and exposure:</strong> Show off your company’s technical side through various
+            means – such as social media promotion, tech workshops, and API/hardware demos.
+          </li>
+          <li>
+            <strong>Promote your organisation’s graduate and internship programs</strong>  through our social media
+            channels and Careers Fair.
+          </li>
+          <li>
+            <strong>Say that you supported UNIHACK</strong>, an event that is promoting innovation in Australia.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="previous-sponsors" class="page-block">
+  <div class="unihack-wrap container-fluid">
+    <h3><span>Previous Sponsors</span></h3>
+
+    <div class="row">
+      {% assign sponsors = "atlassian|readify|dius|pwc|ibm|deloitte|ey|imc|cba|kpmg|xero|bosch" | split: "|" %}
+      {% for sponsor in sponsors %}
+      <div class="col-md-2 col-4">
+        {% assign data = site.data.sponsors[sponsor] %}
+        <img src="{{ site.github.url }}/img/sponsors/{{ sponsor }}.png" alt="{{ data.name }}" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="page-block event-tweet event-quote">
+  <div class="unihack-wrap container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12">
+        <i class="icon fa fa-twitter"></i>
+        <p class="tweet">Great start to #UNIHACK2016! I've heard some awesome ideas - looking forward to seeing what the teams come up with.</p>
+        <p class="source">
+          &mdash; Stefan Petrucev, Developer at Atlassian (@stefanpetrucev)
+          <a href="https://twitter.com/stefanpetrucev/status/759231235432521729"><i class="fa fa-link"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-block">
+  <div class="unihack-wrap container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8 col-md-12 col-12">
+        <h3><span>Diversity Committment</span></h3>
+        <img src="{{ site.github.url }}/img/diversity-commitment.jpg" />
+        <p>
+          The organisers of UNIHACK are committed in increasing the diversity of UNIHACK competitors. We
+          will be collaborating with Women in ICT and Engineering groups across Australia to help promote
+          the event. We will also collaborate with ICT and Engineering groups that represent LGBT students
+          to ensure they are also represented at UNIHACK.
+        </p>
+        <p>
+          We are also committed in producing a harassment-free experience for everyone, regardless of
+          gender, age, sexual orientation, disability and religion. All persons involved in UNIHACK are
+          required to comply with the terms set out in the Hack Code of Conduct this year &mdash; including
+          attendees, sponsors, partners, volunteers and staff.
+        </p>
+        <p class="text-center">
+          <a href="http://hackcodeofconduct.org/unihack" class="uh_btn">Read the Hack Code of Conduct</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-block" id="sponsorship-contact">
+  <div class="unihack-wrap container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8 col-md-12 col-xs-12">
+        <h3><span>Interested in being a sponsor?</span></h3>
+        <p class="text-center big">
+          Download our sponsorship prospectus and get in touch! We will respond to you as soon as possible.
+        </p>
+        <p class="text-center">
+          <a href="https://drive.google.com/file/d/0B6vKwhi9ox3YY09OWVNoeWZ2RHM/view" class="uh_btn">Download Melbourne 2017 Prospectus</a>
+          <a href="https://drive.google.com/file/d/0B6vKwhi9ox3YakpWYzdUa0dqam8/view" class="uh_btn">Download Sydney 2017 Prospectus</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -36,7 +36,7 @@
     }
   }
 
-  p {
+  p, ul li {
     margin: 0 0 28px;
     font-size: 1rem;
     line-height: 2rem;
@@ -63,10 +63,21 @@
     text-align: center;
   }
 
+  li {
+    margin-bottom: 12px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
   a.uh_btn {
     @include unihack-button(#808080, #808080);
     font-weight: 400;
     letter-spacing: 0;
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 5px;
   }
 
   img {
@@ -74,6 +85,7 @@
     height: auto;
     margin: 0 0 28px;
   }
+
 }
 
 @media (min-width: map-get($grid-breakpoints, md)) {
@@ -94,7 +106,7 @@
       font-size: 1.3125rem;
     }
 
-    p {
+    p, ul li {
       margin: 0 0 32px;
       font-size: 1.3125rem;
       line-height: 2.25rem;
@@ -113,6 +125,10 @@
 
     img {
       margin: 0 0 32px;
+    }
+
+    a.uh_btn {
+      display: inline-block;
     }
   }
 }

@@ -220,6 +220,58 @@
   }
 }
 
+/* Quotes */
+.event-quote {
+  i.icon {
+    font-size: 3.5rem;
+    color: white;
+    margin: 0 0 20px;
+  }
+
+  p.tweet, p.haiku {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: white;
+    font-family: $font-title;
+    margin: 0;
+    text-align: left;
+  }
+
+  p.tweet, p.haiku.last {
+    margin: 0 0 20px;
+  }
+
+  p.source {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+
+    a i {
+      color: white;
+      opacity: 0.5;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+
+    a:hover i {
+      opacity: 1;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+  }
+}
+
+.event-tweet {
+  background: $twitter-bg;
+}
+
+.event-haiku {
+  background: $haiku-bg;
+}
+
 @media (min-width: map-get($grid-breakpoints, md)) {
   #faqs {
     .question {
@@ -230,6 +282,14 @@
       }
     }
   }
+
+  .event-quote {
+    p.tweet, p.haiku {
+      font-size: 2.5rem;
+      line-height: 3.25rem;
+    }
+  }
+
 }
 
 @media (min-width: map-get($grid-breakpoints, lg)) {
