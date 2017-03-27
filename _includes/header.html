@@ -52,7 +52,7 @@
       <div class="desktop-nav">
         <ul class="nav-list">
           {% for item in site.data.nav[page.nav] %}
-          <li><a {% if page.page == 'about-us' and item.name == 'About' %}class="selected"{% endif %} href="{{ item.url }}">{{ item.name }}</a></li>
+          <li><a {% if page.page == item.page-match %}class="selected"{% endif %} href="{{ item.url }}">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
