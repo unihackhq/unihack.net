@@ -15,6 +15,7 @@ body {
 @media (min-width: map-get($grid-breakpoints, xl)) {
   .unihack-wrap {
     width: 80%;
+    max-width: 1300px;
     margin: 0 auto;
   }
 }

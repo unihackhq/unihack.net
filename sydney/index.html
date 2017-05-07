@@ -1,13 +1,14 @@
 ---
 layout: main
 css: city sydney
-page: sydney
+nav: sydney
 city_page: true
 city: Sydney
 short: SYD
+gmaps: syd-2017-map.js
 header_link: /sydney
 title_override: true
-title: UNIHACK Sydney &mdash; Coming Soon
+title: UNIHACK Sydney &mdash; August 19-20, 2017
 ---
 
 <div id="event-head">
@@ -16,11 +17,12 @@ title: UNIHACK Sydney &mdash; Coming Soon
       <div class="row">
         <div class="col-md-12">
           <h2>
-            <span>Coming in August.</span>
+            <span>Get ready, Sydney!</span>
+            <span>We are coming on August 19.</span>
           </h2>
-          <p>Sydney, get ready. Australia's best student hackathon has arrived.</p>
+          <p>The Imagination Hackathon is coming! Let's see what you can make in 24 hours.</p>
           <p>
-            <a class="uh_btn" href="#preregister">Pre-Register Now</a>
+            <a class="uh_btn" href="#preregister">Buy Tickets Now!</a>
           </p>
         </div>
       </div>
@@ -32,6 +34,32 @@ title: UNIHACK Sydney &mdash; Coming Soon
 
 {% include event/society.html society="suits" %}
 
+<div class="event-block no-border" id="venue">
+  <div class="unihack-wrap container-fluid">
+    <div class="event-location-block">
+      <h3>Venue</h3>
+      <p class="address">Stone and Chalk</p>
+      <p class="address">50 Bridge Street</p>
+      <p class="address">Sydney, NSW 2000</p>
+
+      <h4>How do I get there?</h4>
+      <p>
+        The best way to get to Stone and Chalk is taking a train/ferry to Circular Quay,
+        then walking down to the corner of Young Street and Bridge Street.
+        For those who wish to take a bus, the nearest bus stop is Circular Quay,
+        Phillip St, Stand C.
+      </p>
+
+      <p>
+        We suggest you visit Transport NSW's website at
+        <a href="https://transportnsw.info/#/">transportnsw.info</a> to plan your
+        travel for the weekend.
+      </p>
+    </div>
+  </div>
+  <div class="google-maps" id="syd-2017-map"></div>
+</div>
+
 {% include event/faq.html %}
 
-{% include event/preregister.html css="light" %}
+{% include event/register.html %}
