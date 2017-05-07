@@ -8,6 +8,13 @@ body.sydney {
   #event-head {
     background: url("/img/bg/unihack-sydney-laptop.jpg") center center no-repeat;
     background-size: cover;
+
+
+    a.uh_btn:hover {
+      color: $unihack-red;
+      border-color: white;
+      background: white;
+    }
   }
 
   #preregister {
@@ -19,6 +26,18 @@ body.sydney {
       color: white;
       background: $unihack-red;
       border-color: $unihack-red;
+    }
+  }
+
+  #register {
+    background-color: $unihack-red;
+
+    a.uh_btn {
+      &:hover {
+        color: $unihack-red;
+        border-color: white;
+        background: white;
+      }
     }
   }
 }

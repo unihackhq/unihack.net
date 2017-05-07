@@ -89,7 +89,6 @@
       margin-bottom: 18px;
     }
   }
-
 }
 
 #preregister.light {
@@ -104,6 +103,29 @@
       color: #606060;
     }
   }
+}
+
+#register {
+  background: #404040;
+  padding: 42px 0;
+  text-align: center;
+
+  h3, p {
+    color: white;
+  }
+
+  h3 {
+    margin-bottom: 12px;
+  }
+
+  a.uh_btn {
+    @include unihack-button(white, #404040);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
 }
 
 #society {
@@ -156,11 +178,25 @@
   }
 
   &.suits {
+    background: #1b2564;
+    padding: 42px 15px;
+
     h3 {
       height: 40px;
       width: 107px;
       background: url("/img/suits-logo.png") left center no-repeat;
       background-size: 107px 40px;
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      @include unihack-button(#fff, #fff);
+      &:hover {
+        color: #1b2564;
+      }
     }
   }
 }
@@ -288,6 +324,21 @@
       font-size: 2.5rem;
       line-height: 3.25rem;
     }
+  }
+
+  #register {
+
+    h3 {
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 2rem;
+    }
+
   }
 
 }
