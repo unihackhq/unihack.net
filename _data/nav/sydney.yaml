@@ -1,8 +1,11 @@
 - name: About
   url: '#about'
 
+- name: Venue
+  url: '#venue'
+
 - name: FAQs
   url: '#faqs'
 
-- name: Pre-register
-  url: '#preregister'
+- name: Register
+  url: '#register'
