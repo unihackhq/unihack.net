@@ -46,6 +46,31 @@
   }
 }
 
+#judging {
+  .criterion {
+    margin-bottom: 24px;
+
+    h4 {
+      font-weight: 500;
+      color: #606060;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      margin: 0 0 16px;
+      font-family: $font-title;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    p {
+      color: #969696;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 6px;
+    }
+  }
+}
+
 #preregister {
   background: #404040;
   padding: 42px 0;
