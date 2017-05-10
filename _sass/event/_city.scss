@@ -41,3 +41,23 @@ body.sydney {
     }
   }
 }
+
+body.melbourne {
+  #register {
+    background-color: $unihack-yellow;
+
+    p, h3 {
+      color: #404040;
+    }
+
+    a.uh_btn {
+      color: #404040;
+      border-color: #404040;
+
+      &:hover {
+        color: $unihack-yellow;
+        background: #404040;
+      }
+    }
+  }
+}

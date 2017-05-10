@@ -8,7 +8,7 @@ html {
 }
 
 #clubs {
-  background: #f0f0f0;
+  background: #1b2564;
   position: relative;
 
   .unihack-wrap {
@@ -66,12 +66,24 @@ html {
 
   .suits {
     padding: 42px 15px;
+    background: #1b2564;
+
+    p {
+      color: white;
+    }
 
     h3 {
       height: 40px;
       width: 107px;
       background: url("/img/suits-logo.png") left center no-repeat;
       background-size: 107px 40px;
+    }
+
+    a {
+      @include unihack-button(#fff, #fff);
+      &:hover {
+        color: #1b2564;
+      }
     }
   }
 }

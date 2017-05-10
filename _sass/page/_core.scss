@@ -19,6 +19,10 @@
   padding: 36px 0;
   border-bottom: 1px solid #e0e0e0;
 
+  &.no-border {
+    border-bottom: none;
+  }
+
   h3 {
     color: #606060;
     font-size: 1.125rem;
