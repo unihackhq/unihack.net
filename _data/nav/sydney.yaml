@@ -3,6 +3,9 @@
 
 - name: Venue
   url: '#venue'
+  
+- name: Diversity
+  url: '#diversity'
 
 - name: FAQs
   url: '#faqs'
