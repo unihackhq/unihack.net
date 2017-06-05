@@ -3,6 +3,12 @@
   {% capture header %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="google-site-verification" content="O20BzIHl22d_9QmHNpQ4QCo3RYIe7i3dCFW9bcEbWSk" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
   {% if page.description %}
   <meta name="description" content="{{ page.description }}" >
   <meta property="og:description" content="{{ page.description }}" />
@@ -10,21 +16,22 @@
   <meta name="description" content="{{ site.description }}" >
   <meta property="og:description" content="{{ site.description }}" />
   {% endif %}
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
   {% if page.og_image %}
   <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
   {% else %}
   <meta property="og:image" content="{{ site.url }}/img/unihack-og.jpg" />
   {% endif %}
-  {% if page.page == 'main' %}
+
+  {% if page.page == 'home' %}
   <title>UNIHACK &mdash; Australia's premier student hackathon</title>
-  {% elsif page.title_override == 'true' %}
-  <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+  <meta property="og:title" content="UNIHACK &mdash; Australia's premier student hackathon" />
+  {% elsif page.title_override == true && page.title %}
+  <title>{{ page.title }}</title>
+  <meta property="og:title" content="{{ page.title }}" />
   {% else %}
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} UNIHACK</title>
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}UNIHACK</title>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash; {% endif %}UNIHACK" />
   {% endif %}
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Rubik:400,500" rel="stylesheet">
