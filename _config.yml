@@ -13,7 +13,7 @@ timezone:      Australia/Melbourne
 
 # Site Meta
 url: http://unihack.net
-description: "UNIHACK is Melbourne's premier student hackathon, organised by WIRED Monash"
+description: "UNIHACK is Australia's premier student hackathon, based in Melbourne and Sydney. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!"
 
 gems:
   - jekyll-coffeescript
