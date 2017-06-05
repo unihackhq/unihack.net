@@ -3,6 +3,11 @@
   {% capture header %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" >
+  {% else %}
+  <meta name="description" content="{{ site.description }}" >
+  {% endif %}
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
@@ -12,8 +17,8 @@
   {% else %}
   <meta property="og:image" content="{{ site.url }}/img/unihack-og.jpg" />
   {% endif %}
-  {% if page.og_description %}
-  <meta property="og:description" content="{{ page.og_description }}" />
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
   {% else %}
   <meta property="og:description" content="{{ site.description }}" />
   {% endif %}
