@@ -1,5 +1,5 @@
 event-info:
-    name: UNIHACK Melbourne 2017
+    name:      UNIHACK Melbourne 2017
 
 sponsors:
   - tier:       Diamond Sponsor
@@ -23,6 +23,6 @@ partners:
     type:       col-md-2 col-4
     companies:  [monash-fit, unimelb]
 
-  #- name:       Diversity Scholarship Partners
-  #  type:       col-md-2 col-4
-  #  companies:  [sap, ga, startupvic]
+  # - name:       Diversity Scholarship Partners
+  #   type:       col-md-2 col-4
+  #   companies:  [sap, ga, startup-victoria]
