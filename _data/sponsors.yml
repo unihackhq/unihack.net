@@ -233,3 +233,35 @@ optiver:
 jemsoft:
   name:   jemsoft
   url:    http://www.jemsoft.com.au/
+
+data61:
+  name:   Data61
+  url:    https://www.data61.csiro.au/
+
+coles:
+  name:   Coles
+  url:    https://www.colescareers.com.au/
+
+ittybittyapps:
+  name:   Itty Bitty Apps
+  url:    http://www.ittybittyapps.com/
+
+soniq:
+  name:   Soniq
+  url:    https://www.soniq.com/au/
+
+square:
+  name:   Square
+  url:    https://squareup.com/au
+
+academy-xi:
+  name:   Academy Xi
+  url:    https://academyxi.com/
+
+jetbrains:
+  name:   JetBrains
+  url:    https://www.jetbrains.com/
+
+bluecats:
+  name:   BlueCats
+  url:    http://www.bluecats.com/

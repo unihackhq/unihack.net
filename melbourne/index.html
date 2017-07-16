@@ -12,6 +12,8 @@ title: UNIHACK Melbourne &mdash; August 5-6, 2017
 description: UNIHACK is Melbourne's premier student hackathon, running in August at Monash Business School. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!
 ---
 
+{% assign event = site.data.events['2017-melbourne'] %}
+
 <div id="event-head">
   <div class="event-head-inner">
     <div class="unihack-wrap container-fluid">
@@ -30,10 +32,6 @@ description: UNIHACK is Melbourne's premier student hackathon, running in August
     </div>
   </div>
 </div>
-
-{% include event/about.html %}
-
-{% include event/society.html society="wired" css="no-border" %}
 
 <div class="event-block no-border" id="venue">
   <div class="unihack-wrap container-fluid">
@@ -109,7 +107,12 @@ description: UNIHACK is Melbourne's premier student hackathon, running in August
   </div>
 </div>
 
+{% include event/sponsor_partner.html %}
 
 {% include event/faq.html %}
+
+{% include event/about.html %}
+
+{% include event/society.html society="wired" css="no-border" %}
 
 {% include event/register.html url="https://unihack2017melb.eventbrite.com/?aff=website" %}
