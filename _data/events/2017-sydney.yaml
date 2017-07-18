@@ -1,0 +1,15 @@
+event-info:
+    name:      UNIHACK Sydney 2017
+
+sponsors:
+  - tier:       Diamond Sponsor
+    type:       col-md-4
+    companies:  [accenture]
+
+  - tier:       Emerald Sponsors
+    type:       col-md-3 col-6
+    companies:  [thoughtworks, data61, imc, atlassian, cba, microsoft]
+
+  - tier:       Ruby Sponsors
+    type:       col-md-2 col-4
+    companies:  [suncorp, iress, adobe, academy-xi, square, pin-payments, jetbrains, bluecats, soniq]

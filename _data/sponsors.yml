@@ -269,3 +269,15 @@ bluecats:
 sap:
   name:   SAP
   url:    https://www.sap.com/australia
+
+cultureamp:
+  name:   Culture Amp
+  url:    https://www.cultureamp.com/
+
+carsales:
+  name:   Carsales
+  url:    http://careers.carsalesnetwork.com.au/jobs
+
+pin-payments:
+  name:   Pin Payments
+  url:    https://pin.net.au/

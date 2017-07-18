@@ -12,16 +12,20 @@ sponsors:
 
   - tier:       Ruby Sponsors
     type:       col-md-2 col-4
-    companies:  [xero, ittybittyapps, atlassian, monash-esolutions, adobe, soniq]
+    companies:  [xero, ittybittyapps, atlassian, monash-esolutions, adobe, soniq, carsales]
 
   - tier:       Sapphire Sponsors
     type:       col-md-2 col-4
-    companies:  [facebook, ey, 99designs, square, academy-xi, jetbrains, future-assembly, bluecats]
+    companies:  [facebook, ey, 99designs, square, academy-xi, jetbrains, future-assembly, bluecats, pin-payments]
 
 partners:
   - name:       University Partner
     type:       col-md-2 col-4
     companies:  [monash-fit, unimelb]
+
+  - name:       Mixer Night Venue Host
+    type:       col-md-2 col-4
+    companies:  [cultureamp]
 
   # - name:       Diversity Scholarship Partners
   #   type:       col-md-2 col-4

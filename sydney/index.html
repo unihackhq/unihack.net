@@ -12,6 +12,8 @@ title: UNIHACK Sydney &mdash; August 19-20, 2017
 description: UNIHACK is Sydney's premier student hackathon, running in August at Stone and Chalk, Sydney CBD. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!
 ---
 
+{% assign event = site.data.events['2017-sydney'] %}
+
 <div id="event-head">
   <div class="event-head-inner">
     <div class="unihack-wrap container-fluid">
@@ -31,9 +33,6 @@ description: UNIHACK is Sydney's premier student hackathon, running in August at
   </div>
 </div>
 
-{% include event/about.html %}
-
-{% include event/society.html society="suits" %}
 
 <div class="event-block no-border" id="venue">
   <div class="unihack-wrap container-fluid">
@@ -103,6 +102,12 @@ description: UNIHACK is Sydney's premier student hackathon, running in August at
   </div>
 </div>
 
+{% include event/sponsor_partner.html %}
+
 {% include event/faq.html %}
+
+{% include event/about.html %}
+
+{% include event/society.html society="suits" %}
 
 {% include event/register.html url="https://unihack2017syd.eventbrite.com/?aff=website" %}

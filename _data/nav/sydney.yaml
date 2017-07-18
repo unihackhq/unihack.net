@@ -1,11 +1,11 @@
-- name: About
-  url: '#about'
-
 - name: Venue
   url: '#venue'
-  
+
 - name: Diversity
   url: '#diversity'
+
+- name: Sponsors
+  url: '#sponsors'
 
 - name: FAQs
   url: '#faqs'
