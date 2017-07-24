@@ -13,14 +13,19 @@
       </div>
       <div class="col-md-6 col-lg-3 question">
         <h4>How many people can be in a team?</h4>
+        {% if page.city == "Melbourne" %}
         <p>
           Teams must have between four and six people.
-          {% if page.city == "Melbourne" %}
           Teams with less than the
           minimum will be asked to merge before the competition. We reserve the
           right to relax this requirement on the day on a team-by-team basis.
-          {% endif %}
         </p>
+        {% else %}
+        <p>
+          Teams can have up to six people. You can be in a team of one if you
+          wish - but we don't advise that!
+        </p>
+        {% endif %}
       </div>
       <div class="col-md-6 col-lg-3 question">
         <h4>Can we work on our idea beforehand?</h4>
