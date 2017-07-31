@@ -393,6 +393,139 @@
   }
 }
 
+#prizes.event-block {
+  background: #f0f0f0;
+
+  h3 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  p.more {
+    margin: 36px 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  .prize-card {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin-top: 30px;
+
+    .prize-card-inner {
+      padding: 24px 20px;
+      background: white;
+    }
+
+    h4 {
+      font-family: $font-title;
+      font-size: 1.3125rem;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0 0 6px;
+      display: block;
+
+      span {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+      margin: 0 0 12px;
+
+      span {
+        font-size: 1.75rem;
+        line-height: 2rem;
+        font-weight: 300;
+        letter-spacing: -1px;
+      }
+    }
+
+    p.brief {
+      font-size: 0.875rem;
+      letter-spacing: 0;
+      line-height: 1.3125rem;
+      margin-bottom: 24px;
+      font-weight: 400;
+      color: #888;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+
+    .icon {
+      @include border-radius(36px);
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin: -55px auto 12px;
+      position: relative;
+      z-index: 5;
+      background: white;
+      letter-spacing: 0;
+
+      i {
+        font-size: 2.625rem;
+        color: white;
+        line-height: 3.75rem;
+      }
+    }
+  }
+
+  .prize-card.top {
+    border-top: none;
+    margin-top: 60px;
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+
+  .prize-card.top.first {
+    .prize-card-inner {
+      border-top: 5px solid $prize-gold;
+    }
+
+    .icon {
+      background: $prize-gold;
+    }
+  }
+
+  .prize-card.top.second {
+    .prize-card-inner {
+      border-top: 5px solid $prize-silver;
+    }
+
+    .icon {
+      background: $prize-silver;
+    }
+  }
+
+  .prize-card.top.third {
+    .prize-card-inner {
+      border-top: 5px solid $prize-bronze;
+    }
+
+    .icon {
+      background: $prize-bronze;
+    }
+  }
+}
+
+
 @media (max-width: map-get($grid-breakpoints, md)-1) {
   #diversity h3 {
     margin-bottom: 18px;
