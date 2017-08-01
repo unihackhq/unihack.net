@@ -454,7 +454,7 @@
     }
 
     p.brief {
-      font-size: 0.875rem;
+      font-size: 0.875rem !important;
       letter-spacing: 0;
       line-height: 1.3125rem;
       margin-bottom: 24px;
@@ -525,6 +525,57 @@
   }
 }
 
+#judges.event-block {
+  .judge {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+    margin-bottom: 36px;
+
+    .judge-content {
+      margin-left: 120px;
+    }
+
+    img {
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 0 30px 0 0;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      font-family: $font-title;
+      letter-spacing: -1px;
+      margin: 5px 0 8px 0;
+    }
+
+    a.uh_btn {
+      margin: 0;
+      font-size: 0.875rem;
+    }
+
+    p.bio {
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+      margin: 0 0 36px 0;
+      color: #808080;
+      display: none;
+    }
+
+    p.job {
+      margin: 0 0 24px 0;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+  }
+
+  .judge.last {
+    margin: 0;
+  }
+}
+
 
 @media (max-width: map-get($grid-breakpoints, md)-1) {
   #diversity h3 {
@@ -580,8 +631,9 @@
     }
 
   }
-
 }
+
+
 
 @media (min-width: map-get($grid-breakpoints, lg)) {
   #about {
@@ -626,6 +678,46 @@
       width: 38%;
       padding: 42px 0 42px 36px;
       float: right;
+    }
+  }
+
+  #judges.event-block {
+    .judge {
+      .judge-content {
+        margin-left: 180px;
+      }
+
+      img {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 0 30px 0 0;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        margin: 5px 0 3px 0;
+      }
+
+      a.btn {
+        margin: 0;
+        font-size: 0.875rem;
+      }
+
+      p.bio {
+        display: block;
+      }
+
+      p.job {
+        margin: 0 0 24px 0;
+        font-size: 1.125rem;
+        font-weight: 300;
+      }
+
+    }
+
+    .judge.last {
+      margin: 0;
     }
   }
 }

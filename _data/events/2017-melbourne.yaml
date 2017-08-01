@@ -1,6 +1,86 @@
 event-info:
     name:      UNIHACK Melbourne 2017
 
+judges:
+- name:       Raanan Zion
+  job:        Advanced App Engineering Senior Manager, Accenture
+  img:        /img/melbourne/judges/rannan.jpg
+  bio:        Raanan Zion has worked for Accenture for over ten years, and
+              currently leads Accenture's efforts into Big Data - using Splunk
+              to drive insight into OSS&BSS to improve various performance
+              operational gaps, and reviewing Big Data strategies for various
+              clients. He has experience in the Telecommunications industry,
+              developing digital frameworks and building the digital billing
+              platform for a client.
+- name:       Dayle Stevens
+  job:        Divisional CIO, Support Services Technology, NAB
+  twitter:    Dayle_Stevens
+  img:        /img/melbourne/judges/dayle.jpg
+  bio:        Dayle Stevens is a Divisonal CIO at NAB, leading 1000+ people that
+              plans, build and runs the technology supporting the bank. She is
+              also the founder of NAB's Women in Technology program, creating sustainable
+              change for women in technology, and bringing diversity &amp; inclusion
+              into focus at NAB. With 25 years in IT, she was a winner of the ACS'
+              Digital Disruptor Awards in 2016, and named in the CI050, recognising
+              Australia's top CIOs, in 2016.
+- name:       Lessa Charlotte
+  job:        Community Strategy Consultant & Events Curator
+  img:        /img/melbourne/judges/lessa.jpg
+  twitter:    leesacharlotte
+  bio:        Lessa Charlotte is a co-founder of the Whisky Social; Vice Chair of
+              the Melbourne Global Shapers Hub; and previously the Manager of
+              the Henley Club, connecting young professionals who have a shared
+              curiosity and drive to create social impact. In 2016, she was
+              the Entrepreneurship Ambassador for the Generator, and continues
+              to assist Monash in industry engagement. Leesa has also been
+              involved in advocacy for unpaid work, internships, sexual assault
+              and LGBTQIA+ rights through mentoring and advisory roles. In addition,
+              she is a singer, massive pop culture nerd (with a podcast about
+              Battlestar Galatica) and whisky enthusiast.
+- name:       Alfred Glickman
+  job:        Senior Developer, Odecee
+  img:        /img/melbourne/judges/alfred.jpg
+  bio:        Alfred Glickman is a passionate innovator with over 16 years
+              in Melbourne IT industry; working with car manufacturers, major
+              banks, insurance agencies, multiple government departments and
+              start-ups. Active in the hackathon scene, he is passionate about
+              IoT and VR. He is also focused on making a social difference and
+              improving people's lives through innovation.
+- name:       Marina Paronetto
+  job:        Founder, PowerhouseHQ; Senior Innovation Manager, PwC
+  img:        /img/melbourne/judges/marina.jpg
+  twitter:    marinaparonetto
+  bio:        Marina works in as the Senior Innovation Manager for PwC, helping large
+              organisations reimagine their products, services and systems using human-centred
+              methodologies. She also founded PowwerhouseHQ, an organisation that aims to
+              nurture and drive positive change. Active in the startup scene, she led the first
+              Startup Weekend Women and Startup Weekend Education in Australia. She also co-founded
+              the Female Founders Committee in Startup Victoria; and is a pioneer at the Young Social
+              Pioneers program from FYA.
+- name:       Remya Ramesh
+  job:        Experience Design Lead, Seamless
+  img:        /img/melbourne/judges/remya.jpg
+  twitter:    rem_ram
+  bio:        As a one-time engineer, it's no surprise that Remya's interest in
+              technology straddles user experience design and product development.
+              Featured as one of GovInsider's "Women in GovTech" in 2016,
+              Remya heads up the Experience Design team at Seamless. She's an
+              outspoken advocate for inclusive design and is passionate about
+              creating products and experiences customers love. Remya is an active
+              member of the tech community and co-runs the Girl Geek Dinners and
+              LadiesThatUX groups in Melbourne.
+- name:       Long Zheng
+  job:        Cofounder and Head of Product, Omny Studio
+  twitter:    longzheng
+  img:        /img/melbourne/judges/long.jpg
+  bio:        Long Zheng is a passionate entrepreneur focused on creating apps and
+              services with a great user experience. Before Omny Studio, he
+              wrote a popular tech blog at istartedsomething.com, design and
+              developed the MetroTwit Twitter app for Windows, developed a
+              public transport timetable Google Glass app and co-developed a
+              Windows Phone jailbreak. Long recently published an unofficial
+              mobile app for myki, MyPal.
+
 sponsors:
   - tier:       Diamond Sponsor
     type:       col-md-4
