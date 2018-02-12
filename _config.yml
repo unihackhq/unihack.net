@@ -15,6 +15,3 @@ timezone:      Australia/Melbourne
 url: http://unihack.net
 og_image: /img/unihack-og.jpg
 description: "UNIHACK is Australia's premier student hackathon, based in Melbourne and Sydney. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!"
-
-gems:
-  - jekyll-coffeescript
