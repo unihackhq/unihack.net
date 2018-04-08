@@ -1,6 +1,6 @@
 wired:
   name: WIRED Monash
-  desc: UNIHACK Melbourne is organised by WIRED Monash, the society for IT
+  desc: UNIHACK Melbourne was born out of WIRED Monash, the society for IT
         students and those who are curious about all things digital at Monash
         University Clayton. We aim to provide a relaxed atmosphere where
         students can meet others who share their love, opinions, and collaborate
@@ -9,7 +9,7 @@ wired:
 
 suits:
   name: SUITS
-  desc: UNIHACK Sydney will be organised by SUITS, the University of Sydney's IT
+  desc: UNIHACK Sydney is organised by SUITS, the University of Sydney's IT
         student society. We run social events, hold seminars, teach advanced
         programming skills, help connect companies with students, and assist
         communication between staff and students in IT. It is supported by the
