@@ -42,9 +42,14 @@ $(function() {
 
   return $(window).scroll(function() {
     const header = $('#gl-head');
-    if(($(window).scrollTop() > 100) && !header.hasClass('docked')) {
+    const site = $('.site');
+    if (($(window).scrollTop() > 100) && !header.hasClass('docked')) {
+      if ($(header).hasClass('page')) {
+        site.addClass('has-docked');
+      }
       return header.addClass('docked');
-    } else if(($(window).scrollTop() <= 100) && header.hasClass('docked')) {
+    } else if (($(window).scrollTop() <= 100) && header.hasClass('docked')) {
+      site.removeClass('has-docked');
       return header.removeClass('docked');
     }
   });
