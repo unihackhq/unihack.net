@@ -32,7 +32,7 @@ When we collect Personal Information we will, where appropriate and where possib
 
 ### Third Parties
 
-We will primarily collect your Personal Information only from you. However, we also will be provided with information by several third parties, such as our third-part ticketing platform [Eventbrite](https://www.eventbrite.com.au/), payment provider [Pin Payments](https://pinpayments.com/), communications system [Slack](https://slack.com/) and hackathon management service, [DevPost](https://devpost.com/). In such a case we will take reasonable steps to ensure that you are made aware of the information provided to us by the third party.
+We will primarily collect your Personal Information only from you. However, we also will be provided with information by several third parties, such as our third-party ticketing platform [Eventbrite](https://www.eventbrite.com.au/), payment provider [Pin Payments](https://pinpayments.com/), communications system [Slack](https://slack.com/) and hackathon management service [DevPost](https://devpost.com/). In such a case we will take reasonable steps to ensure that you are made aware of the information provided to us by the third party.
 
 ### Disclosure of Personal Information
 
