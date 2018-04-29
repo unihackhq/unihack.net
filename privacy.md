@@ -14,7 +14,7 @@ city_page: false
 {::options parse_block_html="true" /}
 <div class="col-lg-8 col-md-12 col-xs-12">
 
-**UNIHACK INCORPORATED** is the not-for-profit organisation committed to running enjoyable, informative and inclusive hackathons for university students. We are bound by this policy which outlines our ongoing obligations to you in respect of how we manage your Personal Information.
+**UNIHACK INCORPORATED** is the not-for-profit organisation committed to running enjoyable, informative and inclusive hackathons for tertiary students. We are bound by this policy which outlines our ongoing obligations to you in respect of how we manage your Personal Information.
 
 We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The APPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information.
 
