@@ -36,10 +36,9 @@ We will primarily collect your Personal Information only from you. However, we a
 
 ### Disclosure of Personal Information
 
-Your Personal Information may be disclosed in a number of circumstances including the following:
+Your Personal Information may be disclosed to third-parties where you consent to the disclosure. These third-parties may include but are not limited to the host universities/TAFEs and/or our sponsorship partners.
 
-* Third parties where you consent to the use or disclosure; and
-* Where required or authorised by law.
+Where required by law, we will also disclose Personal Information to authorised governmental bodies.
 
 ### Security of Personal Information
 
