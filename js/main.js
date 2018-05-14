@@ -54,3 +54,17 @@ $(function() {
     }
   });
 });
+
+$(function obfuscationBanter() {
+  const phoneLink = document.createElement('a');
+  const phoneNumber = ['61', '3', '8595', '5272'];
+  phoneLink.href = ':let'.split('').reverse().join('') + phoneNumber.join('');
+  phoneLink.innerText = '+' + phoneNumber.join(' ');
+  $('.phone-substitute').append(phoneLink);
+
+  const emailLink = document.createElement('a');
+  const email = ['team', '@', 'unihack.net'];
+  emailLink.href = ':otliam'.split('').reverse().join('') + email.join('');
+  emailLink.innerText = email.join('');
+  $('.email-substitute').append(emailLink);
+});
