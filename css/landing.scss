@@ -9,11 +9,10 @@ html {
   min-width: 400px;
   width: 100vw;
   max-width: 100%;
-  background: url('/img/landing-bg.jpg') center center no-repeat;
+  background: url('/img/landing/melbourne.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
   .landing-inner {
-    padding: 20px;
     min-height: 600px;
     height: 60vh;
     display: table-cell;
@@ -57,6 +56,76 @@ html {
     }
   }
 }
+
+.city, .city-big {
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    content: ' ';
+  }
+}
+
+.city {
+  height: 400px;
+}
+
+.city-big {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50vw;
+  content: ' ';
+}
+
+.city-big.right {
+  right: 0;
+}
+
+.city-big.left {
+  left: 0;
+}
+
+.city-inner {
+  height: 400px;
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  z-index: 3;
+  width: 100vw;
+  max-width: 100%;
+  padding: 20px 0;
+}
+
+.melb-2018 {
+  background: url("/img/landing/melbourne.jpg") left center no-repeat;
+  background-size: cover;
+
+  &:before {
+    background: rgba(225, 182, 9, 0.6);
+  }
+}
+
+.syd-2018 {
+  background: url("/img/landing/sydney.jpg") left center no-repeat;
+  background-size: cover;
+
+  &:before {
+    background: rgba(242, 46, 42, 0.5);
+  }
+
+  a.uh_btn {
+    @include unihack-button(#FFF, #FFF);
+
+    &:hover {
+      color: $unihack-red;
+    }
+  }
+}
+
 @media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, lg) - 1) {
   #landing-wrapper {
     .unihack-wrap {
@@ -114,11 +183,11 @@ html {
     a.uh_btn {
       font-size: 1.3125rem;
     }
-    .melb-2017,
-    .syd-2017 {
+    .melb-2018,
+    .syd-2018 {
       background-position: center center;
     }
-    .syd-2017 {
+    .syd-2018 {
       text-align: right;
     }
   }
