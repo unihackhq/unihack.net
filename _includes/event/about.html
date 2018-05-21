@@ -4,7 +4,7 @@
       <div class="col-md-12 col-lg-8">
         <h3 class="big-parent">About Us</h3>
         <p class="big">
-          We are Australia's premier student hackathon - run for students, by students.
+          We are Australia's premier student hackathon &mdash; run for students, by students.
         </p>
       </div>
     </div>
@@ -14,12 +14,6 @@
           Inspired by the student hackathons in the United States and Europe, UNIHACK was created in 2014 by WIRED Monash.
           Since then, UNIHACK has quickly become one of the go-to hackathons for university students nationwide.
         </p>
-        {% if page.city == "Sydney" %}
-        <p>
-          Now, for the first time, UNIHACK is expanding to Sydney - with the help of SUITS, the IT
-          student society at the University of Sydney.
-        </p>
-        {% endif %}
         <p>
           Teams have 24 hours to design and build something awesome. It can be anything - a website, a mobile application,
           a video game, or even something hardware. The important thing is that it needs to work when it is presented
@@ -33,7 +27,14 @@
         </p>
         {% if page.city == "Melbourne" %}
         <p>
-          UNIHACK is organised by WIRED Monash, the IT student society at Monash University Clayton.
+          UNIHACK is organised with <a href="http://wired.org.au">WIRED Monash</a>, the IT student society at
+          Monash University Clayton.
+        </p>
+        {% endif %}
+        {% if page.city == "Sydney" %}
+        <p>
+          UNIHACK is organised with <a href="http://suits.org.au">SUITS</a>, the IT student society at
+          the University of Sydney.
         </p>
         {% endif %}
         <p>

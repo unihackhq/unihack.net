@@ -5,10 +5,10 @@ city_page: true
 nav: melbourne
 city: Melbourne
 short: MEL
+gmaps: melb-2018-map.js
 header_link: /melbourne
 title_override: true
-title: UNIHACK Melbourne
-description: UNIHACK is Melbourne's premier student hackathon, coming back soon!
+title: UNIHACK Melbourne &mdash; July 28-29, 2018
 ---
 
 <div id="event-head">
@@ -16,10 +16,13 @@ description: UNIHACK is Melbourne's premier student hackathon, coming back soon!
     <div class="unihack-wrap container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h2>Hey Melbourne 👋</h2>
-          <p>We have some exciting details to announce soon.</p>
+          <h2>
+            <span>UNIHACK Melbourne is back.</span>
+            <span>Get excited for July 28!</span>
+          </h2>
+          <p>Our best hackathon yet is coming soon – grab your tickets now!</p>
           <p>
-            <a class="uh_btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduZcv6PdegHo3HpRAD0SkS4y6BJp1a4TlvSUdm6TwgCthixg/viewform">Register for updates</a>
+            <a class="uh_btn" href="https://unihack2018melb.eventbrite.com/?aff=website">Register Now</a>
           </p>
         </div>
       </div>
@@ -27,4 +30,51 @@ description: UNIHACK is Melbourne's premier student hackathon, coming back soon!
   </div>
 </div>
 
+{% include event/about.html %}
+
+<div class="event-block no-border" id="venue">
+  <div class="unihack-wrap container-fluid">
+    <div class="event-location-block">
+      <h3>Venue</h3>
+      <p class="address">Telstra Gurrowa Innovation Lab</p>
+      <p class="address">Level 2, 242 Exhibition St</p>
+      <p class="address">Melbourne, VIC 3000</p>
+
+      <h4>How do I get there?</h4>
+      <p>
+        The best way to get to Gurrowa Lab is to catch a train to Parliament
+        station, and take the Lonsdale Street Exit. Alternatively, take a train
+        to Melbourne Central and walk down Lonsdale Street.
+      </p>
+      <p>
+        The venue is also located adjacent to the Elizabeth Street bus interchange,
+        accessible to bus routes 302 303, 304, 305, 309, 318, 350, 905, 906, 907 and 908.
+      </p>
+    </div>
+  </div>
+  <div class="google-maps" id="melb-2018-map"></div>
+</div>
+
+<div class="page-block event-tweet event-quote no-border">
+  <div class="unihack-wrap container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12">
+        <i class="icon fa fa-twitter"></i>
+        <p class="tweet">
+          This afternoon can't come quick enough! Can’t wait to see what 100
+          students can imagine &amp; build in a weekend. <a href="https://twitter.com/hashtag/unihack2017">#unihack2017</a>
+        </p>
+        <p class="source">
+          &mdash; Dayle Stevens, Divisional CIO at AGL &amp; Director at Robogals (@Dayle_Stevens)
+          <a href="https://twitter.com/Dayle_Stevens/status/893999082246512640"><i class="fa fa-link"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include event/faq.html %}
+
 {% include event/society.html society="wired" css="no-border" %}
+
+{% include event/register.html url="https://unihack2018melb.eventbrite.com/?aff=website" %}
