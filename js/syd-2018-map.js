@@ -1,5 +1,5 @@
 var map;
-var loc = new google.maps.LatLng(-33.862980, 151.211460);
+var loc = new google.maps.LatLng(-33.881958, 151.195237);
 
 function initialize() {
 
@@ -17,7 +17,7 @@ function initialize() {
 
   // map options
   var mapOptions = {
-    zoom: 17,
+    zoom: 16,
     minZoom: 14,
     center: loc,
     disableDefaultUI: true,
@@ -28,14 +28,14 @@ function initialize() {
   };
 
   // create map
-  map = new google.maps.Map(document.getElementById("syd-2017-map"),
+  map = new google.maps.Map(document.getElementById("syd-2018-map"),
       mapOptions);
 
   // create marker
   var marker = new google.maps.Marker({
       position: loc,
       map: map,
-      title: 'Monash University'
+      title: 'Coder Academy'
   });
 
 };
