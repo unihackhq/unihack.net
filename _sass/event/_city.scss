@@ -1,3 +1,38 @@
+body.melbourne {
+  #event-head {
+    background: url("/img/landing/melbourne.jpg") center center no-repeat;
+    background-size: cover;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: $unihack-yellow-overlay;
+      content: ' ';
+    }
+  }
+
+  #register {
+    background-color: $unihack-yellow;
+
+    p, h3 {
+      color: #404040;
+    }
+
+    a.uh_btn {
+      color: #404040;
+      border-color: #404040;
+
+      &:hover {
+        color: $unihack-yellow;
+        background: #404040;
+      }
+    }
+  }
+}
+
 body.sydney {
   #gl-head.docked {
     .unihack-banner-bg, .unihack-logo, .city-nav {
@@ -6,8 +41,18 @@ body.sydney {
   }
 
   #event-head {
-    background: url("/img/landing/sydney-blur.jpg") center center no-repeat;
+    background: url("/img/landing/sydney.jpg") center center no-repeat;
     background-size: cover;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: $unihack-red-overlay;
+      content: ' ';
+    }
 
     a.uh_btn:hover {
       color: $unihack-red;
@@ -36,26 +81,6 @@ body.sydney {
         color: $unihack-red;
         border-color: white;
         background: white;
-      }
-    }
-  }
-}
-
-body.melbourne {
-  #register {
-    background-color: $unihack-yellow;
-
-    p, h3 {
-      color: #404040;
-    }
-
-    a.uh_btn {
-      color: #404040;
-      border-color: #404040;
-
-      &:hover {
-        color: $unihack-yellow;
-        background: #404040;
       }
     }
   }
