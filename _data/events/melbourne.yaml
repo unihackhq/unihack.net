@@ -1,0 +1,25 @@
+event-info:
+  name: UNIHACK Melbourne 2018
+
+sponsors:
+- tier: Platnium Sponsor
+  type: col-md-4
+  companies: [telstra]
+
+- tier: Gold Sponsors
+  type: col-md-3 col-6
+  companies: [accenture, atlassian, bosch, imc, wade, xero]
+  missing: [australia-post, wisetech, infosys]
+
+- tier: Silver Sponsors
+  type: col-md-2 col-4
+  companies: [carsales, facebook, medipass, monash-esolutions, monash-fit]
+  missing: [versent, nab-labs, gridstone]
+
+- tier: Bronze Sponsors
+  type: col-md-2 col-4
+  companies: [jane-street, unimelb, wolfram, tech-domains, iotcores]
+
+- tier: Mixer Night Venue Host
+  type: col-md-2 col-4
+  companies: [ybf]

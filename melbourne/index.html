@@ -12,6 +12,8 @@ title: UNIHACK Melbourne &mdash; July 28-29, 2018
 description: UNIHACK is Melbourne's premier student hackathon, running in late July at the Telstra Gurrowa Innovation Lab. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!
 ---
 
+{% assign event = site.data.events['melbourne'] %}
+
 <div id="event-head">
   <div class="event-head-inner">
     <div class="unihack-wrap container-fluid">
@@ -77,6 +79,8 @@ description: UNIHACK is Melbourne's premier student hackathon, running in late J
     </div>
   </div>
 </div>
+
+{% include event/sponsor_partner.html %}
 
 {% include event/faq.html %}
 
