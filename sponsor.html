@@ -81,7 +81,7 @@ page_css: sponsor.css
       {% assign sponsors = "atlassian|readify|dius|pwc|ibm|deloitte|ey|imc|cba|kpmg|xero|bosch" | split: "|" %}
       {% for sponsor in sponsors %}
       <div class="col-md-2 col-4">
-        {% assign data = site.data.sponsors[sponsor] %}
+        {% assign data = site.data.old_sponsors[sponsor] %}
         <img src="/img/sponsors-old/{{ sponsor }}.png" alt="{{ data.name }}" />
       </div>
       {% endfor %}

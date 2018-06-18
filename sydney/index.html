@@ -12,6 +12,8 @@ title: UNIHACK Sydney
 description: UNIHACK is Sydney's premier student hackathon, running in August at Coder Academy. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!
 ---
 
+{% assign event = site.data.events['sydney'] %}
+
 <div id="event-head">
   <div class="event-head-inner">
     <div class="unihack-wrap container-fluid">
@@ -75,6 +77,8 @@ description: UNIHACK is Sydney's premier student hackathon, running in August at
     </div>
   </div>
 </div>
+
+{% include event/sponsor_partner.html %}
 
 {% include event/faq.html %}
 

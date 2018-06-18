@@ -1,0 +1,21 @@
+event-info:
+  name: UNIHACK Sydney 2018
+
+sponsors:
+- tier: Platnium Sponsor
+  type: col-md-4
+  companies: [infosys]
+
+- tier: Gold Sponsors
+  type: col-md-3 col-6
+  companies: [atlassian, imc, swipejobs, thoughtworks]
+  missing: [wisetech]
+
+# - tier: Silver Sponsors
+#   type: col-md-2 col-4
+#   missing: [dolby]
+#
+- tier: Bronze Sponsors
+  type: col-md-2 col-4
+  companies: [wolfram]
+  missing: [janestreet]

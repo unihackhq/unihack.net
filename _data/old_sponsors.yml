@@ -281,15 +281,3 @@ carsales:
 pin-payments:
   name:   Pin Payments
   url:    https://pin.net.au/
-
-medipass:
-  name:   Medipass
-  url:    https://medipass.com.au/
-
-wisetech:
-  name:   WiseTech Global
-  url:    https://pin.net.au/
-
-infosys:
-  name:   InfoSys Australia
-  url:    https://pin.net.au/

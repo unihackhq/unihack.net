@@ -8,8 +8,8 @@ sponsors:
 
 - tier: Gold Sponsors
   type: col-md-3 col-6
-  companies: [accenture, atlassian, bosch, imc, wade, xero]
-  missing: [australia-post, wisetech, infosys]
+  companies: [accenture, atlassian, bosch, imc, infosys, wade, xero]
+  missing: [australia-post, wisetech]
 
 - tier: Silver Sponsors
   type: col-md-2 col-4
@@ -18,7 +18,8 @@ sponsors:
 
 - tier: Bronze Sponsors
   type: col-md-2 col-4
-  companies: [jane-street, unimelb, wolfram, tech-domains, iotcores]
+  companies: [unimelb, wolfram]
+  missing: [janestreet, tech-domains, iotcores]
 
 - tier: Mixer Night Venue Host
   type: col-md-2 col-4
