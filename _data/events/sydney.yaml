@@ -17,5 +17,4 @@ sponsors:
 #
 - tier: Bronze Sponsors
   type: col-md-2 col-4
-  companies: [wolfram]
-  missing: [janestreet]
+  companies: [janestreet, wolfram]

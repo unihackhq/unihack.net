@@ -18,8 +18,8 @@ sponsors:
 
 - tier: Bronze Sponsors
   type: col-md-2 col-4
-  companies: [unimelb, wolfram]
-  missing: [janestreet, tech-domains, iotcores]
+  companies: [janestreet, unimelb, wolfram]
+  missing: [tech-domains]
 
 - tier: Mixer Night Venue Host
   type: col-md-2 col-4
