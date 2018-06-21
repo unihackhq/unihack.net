@@ -1,0 +1,283 @@
+omny:
+  name:   Omny
+  url:    http://www.omnyapp.com/
+
+readify:
+  name:   Readify
+  url:    http://www.readify.net/careers/
+
+kpmg:
+  name:   KPMG
+  url:    http://www.kpmg.com/au/en/careers/graduates-students/pages/default.aspx
+
+pwc:
+  name:   PwC
+  url:    http://pwc.com.au/careers/
+
+mashery:
+  name:   Mashery
+  url:    http://www.mashery.com/
+
+deloitte:
+  name:   Deloitte
+  url:    http://yourfuture.deloitte.com.au/
+
+freelancer:
+  name:   Freelancer
+  url:    http://freelancer.com/
+
+adobe:
+  name:   Adobe
+  url:    http://adobe.com/
+
+braintree:
+  name:   Braintree/PayPal
+  url:    http://braintreepayments.com/
+
+msi:
+  name:   University of Melbourne School of Information
+  url:    http://www.msi.unimelb.edu.au/
+
+australia-post:
+  name:   Australia Post
+  url:    http://www.auspost.com.au/graduateprogram/
+
+github:
+  name:   GitHub
+  url:    http://github.com
+
+99designs:
+  name:   99designs
+  url:    http://99designs.com.au/
+
+ga:
+  name:   General Assembly
+  url:    http://ga.co/melbourne
+
+monash-fit:
+  name:   Monash University Faculty of IT
+  url:    http://it.monash.edu/
+
+aws:
+  name:   Amazon Web Services
+  url:    http://aws.amazon.com/
+
+uber:
+  name:   Uber
+  url:    http://uber.com/melbourne/
+
+ybf:
+  name:   York Butter Factory
+  url:    http://yorkbutterfactory.com/
+
+startup-victoria:
+  name:   Startup Victoria
+  url:    https://startupvictoria.com.au/
+
+inspire9:
+  name:   Inspire9
+  url:    http://inspire9.com/
+
+sphero:
+  name:   Sphero
+  url:    http://www.sphero.com/
+
+namecheap:
+  name:   Namecheap
+  url:    https://www.namecheap.com/
+
+digital-ocean:
+  name:   Digital Ocean
+  url:    https://www.digitalocean.com/
+
+atlassian:
+  name:   Atlassian
+  url:    http://www.atlassian.com/
+
+angelcube:
+  name:   Angelcube
+  url:    http://angelcube.com/
+
+zendesk:
+  name:   Zendesk
+  url:    http://zendesk.com/
+
+suncorp:
+  name:   Suncorp Group
+  url:    http://suncorpgroupgraduates.com.au/
+
+outware-mobile:
+  name:   Outware Mobile
+  url:    http://outware.com.au/
+
+ey:
+  name:   EY
+  url:    http://www.ey.com/AU/en/Careers/Students
+
+imc:
+  name:   IMC Pacific
+  url:    http://imcgraduates.com.au/
+
+dius:
+  name:   DiUS
+  url:    http://dius.com.au/careers/
+
+cba:
+  name:   Commonwealth Bank
+  url:    https://www.commbank.com.au/about-us/careers/graduate-recruitment-program/enterprise-services.html
+
+acs:
+  name:   Australian Computing Society
+  url:    http://www.acs.org.au/
+
+monash-generator:
+  name:   The Generator at Monash University
+  url:    https://monash.edu/the-generator
+
+future-assembly:
+  name:   Future Assembly
+  url:    https://futureassembly.io/
+
+lifx:
+  name:   LIFX
+  url:    http://www.lifx.com/
+
+computershare:
+  name:   Computershare
+  url:    http://www.computershare.com
+
+uber2:
+  name:   Uber
+  url:    http://uber.com/melbourne/
+
+unimelb:
+  name:   Computing and Information Systems
+  url:    http://www.cis.unimelb.edu.au/
+
+wade:
+  name:   Wade Institute
+  url:    http://www.wadeinstitute.org.au
+
+telstra:
+  name:   Telstra
+  url:    http://www.careers.telstra.com/
+
+odecee:
+  name:   Odecee
+  url:    http://odecee.com.au
+
+iress:
+  name:   IRESS
+  url:    https://www.iress.com/au/company/join-us/graduate-program/
+
+seamless:
+  name:   Seamless
+  url:    http://www.seamlesscms.com/
+
+bosch:
+  name:   Bosch
+  url:    http://www.bosch.com.au/en/au/career_2/career.html
+
+estimote:
+  name:   Estimote
+  url:    http://estimote.com/
+
+thoughtworks:
+  name:   Thoughtworks
+  url:    https://www.thoughtworks.com/
+
+cci:
+  name:   Carlton Connect Initiative
+  url:    http://www.carltonconnect.com.au/
+
+rea-group:
+  name:   REA Group
+  url:    https://www.rea-group.com/
+
+ibm:
+  name:   IBM
+  url:    http://www.ibm.com.au/
+
+accenture:
+  name:   Accenture
+  url:    https://www.accenture.com/au-en
+
+b2cloud:
+  name:   b2cloud
+  url:    http://www.b2cloud.com.au/
+
+monash-esolutions:
+  name:   Monash University eSolutions
+  url:    https://monash.edu.au/esolutions/
+
+herald-sun:
+  name:   Herald Sun
+  url:    http://www.heraldsun.com.au/
+
+xero:
+  name:   Xero
+  url:    http://www.xero.com/
+
+microsoft:
+  name:   Microsoft
+  url:    http://www.microsoft.com/
+
+facebook:
+  name:   Facebook
+  url:    http://www.facebook.com/
+
+optiver:
+  name:   Optiver
+  url:    http://www.optiver.com/sydney/
+
+jemsoft:
+  name:   jemsoft
+  url:    http://www.jemsoft.com.au/
+
+data61:
+  name:   Data61
+  url:    https://www.data61.csiro.au/
+
+coles:
+  name:   Coles
+  url:    https://www.colescareers.com.au/
+
+ittybittyapps:
+  name:   Itty Bitty Apps
+  url:    http://www.ittybittyapps.com/
+
+soniq:
+  name:   Soniq
+  url:    https://www.soniq.com/au/
+
+square:
+  name:   Square
+  url:    https://squareup.com/au
+
+academy-xi:
+  name:   Academy Xi
+  url:    https://academyxi.com/
+
+jetbrains:
+  name:   JetBrains
+  url:    https://www.jetbrains.com/
+
+bluecats:
+  name:   BlueCats
+  url:    http://www.bluecats.com/
+
+sap:
+  name:   SAP
+  url:    https://www.sap.com/australia
+
+cultureamp:
+  name:   Culture Amp
+  url:    https://www.cultureamp.com/
+
+carsales:
+  name:   Carsales
+  url:    http://careers.carsalesnetwork.com.au/jobs
+
+pin-payments:
+  name:   Pin Payments
+  url:    https://pin.net.au/

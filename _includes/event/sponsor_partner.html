@@ -9,12 +9,16 @@
       {% assign sponsor = site.data.sponsors[sponsor_hash] %}
       <div class="sponsor {{ tier.type }}">
         <a href="{{ sponsor.url }}">
-          <img src="/img/sponsors-2017/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
+          <img src="/img/sponsors/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
         </a>
       </div>
       {% endfor %}
     </div>
     {% endfor %}
+    <p class="text-center">
+      <a href="/sponsor" class="uh_btn">Looking to sponsor?</a>
+    </p>
+
   </div>
 </div>
 {% endif %}
@@ -30,7 +34,7 @@
       {% assign sponsor = site.data.sponsors[sponsor_hash] %}
       <div class="sponsor {{ tier.type }}">
         <a href="{{ sponsor.url }}">
-          <img src="/img/sponsors-2017/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
+          <img src="/img/sponsors/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
         </a>
       </div>
       {% endfor %}
