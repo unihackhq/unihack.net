@@ -3,18 +3,20 @@ event-info:
 
 sponsors:
 - tier: Platinum Sponsor
-  type: col-md-4
+  row: col-12
+  type: col-md-4 col-sm-6 col-6
   companies: [infosys]
 
 - tier: Gold Sponsors
-  type: col-md-3 col-6
-  companies: [atlassian, imc, swipejobs, thoughtworks]
-  missing: [wisetech]
+  row: col-12
+  type: col-md-3 col-sm-4 col-6
+  companies: [atlassian, imc, swipejobs, thoughtworks, wisetech]
 
 # - tier: Silver Sponsors
 #   type: col-md-2 col-4
 #   missing: [dolby]
 #
 - tier: Bronze Sponsors
-  type: col-md-2 col-4
+  row: col-12
+  type: col-md-2 col-sm-3 col-6
   companies: [janestreet, wolfram]

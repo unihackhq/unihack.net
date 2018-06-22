@@ -3,24 +3,34 @@ event-info:
 
 sponsors:
 - tier: Platinum Sponsor
-  type: col-md-4
-  companies: [telstra]
+  row: col-sm-6 col-12
+  type: col-md-8 col-sm-10 col-6
+  companies: [readify]
+
+- tier: Venue Sponsor
+  row: col-sm-6 col-12
+  type: col-md-8 col-sm-10 col-6
+  companies: [telstra-labs]
 
 - tier: Gold Sponsors
-  type: col-md-3 col-6
-  companies: [accenture, atlassian, bosch, imc, infosys, wade, xero]
-  missing: [australia-post, wisetech]
+  row: col-12
+  type: col-md-3 col-sm-4 col-6
+  companies: [accenture, atlassian, bosch, imc, infosys, wade, wisetech, xero]
+  missing: [australia-post]
 
 - tier: Silver Sponsors
-  type: col-md-2 col-4
+  row: col-12
+  type: col-md-2 col-sm-3 col-6
   companies: [carsales, facebook, medipass, monash-esolutions, monash-fit]
   missing: [versent, nab-labs, gridstone]
 
 - tier: Bronze Sponsors
-  type: col-md-2 col-4
+  row: col-12
+  type: col-md-2 col-sm-3 col-6
   companies: [janestreet, unimelb, wolfram]
   missing: [tech-domains]
 
 - tier: Mixer Night Venue Host
+  row: col-12
   type: col-md-2 col-4
   companies: [ybf]

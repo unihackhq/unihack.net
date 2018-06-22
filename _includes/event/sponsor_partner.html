@@ -2,19 +2,23 @@
 <div class="event-block sponsors-block" id="sponsors">
   <div class="unihack-wrap container-fluid">
     <h3>Sponsors</h3>
+    <div class="row">
     {% for tier in event.sponsors %}
-    <h4>{{ tier.tier }}</h4>
-    <div class="row justify-content-center {{ tier.row }}">
-      {% for sponsor_hash in tier.companies %}
-      {% assign sponsor = site.data.sponsors[sponsor_hash] %}
-      <div class="sponsor {{ tier.type }}">
-        <a href="{{ sponsor.url }}">
-          <img src="/img/sponsors/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
-        </a>
+      <div class="{{ tier.row }}">
+        <h4>{{ tier.tier }}</h4>
+        <div class="row justify-content-center">
+          {% for sponsor_hash in tier.companies %}
+          {% assign sponsor = site.data.sponsors[sponsor_hash] %}
+          <div class="sponsor {{ tier.type }}">
+            <a href="{{ sponsor.url }}">
+              <img src="/img/sponsors/{{ sponsor_hash }}.png" alt="{{ sponsor.name }}" />
+            </a>
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
-    </div>
     {% endfor %}
+    </div>
     <p class="text-center">
       <a href="/sponsor" class="uh_btn">Looking to sponsor?</a>
     </p>
