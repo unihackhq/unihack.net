@@ -85,3 +85,15 @@ swipejobs:
 janestreet:
   name:   Jane Street
   url:    https://www.janestreet.com/
+
+readify:
+  name:   Readify
+  url:    https://readify.net/
+
+telstra-labs:
+  name:   Telstra Labs
+  url:    https://labs.telstra.com/
+
+wisetech:
+  name:   WiseTech Global
+  url:    http://www.wisetechglobal.com/
