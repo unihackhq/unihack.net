@@ -101,3 +101,7 @@ wisetech:
 gridstone:
   name:   Gridstone
   url:    https://gridstone.com.au/
+
+australiapost:
+  name:   Australia Post
+  url:    https://auspost.com.au/
