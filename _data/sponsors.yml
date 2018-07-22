@@ -105,3 +105,19 @@ gridstone:
 australiapost:
   name:   Australia Post
   url:    https://auspost.com.au/
+
+versent:
+  name:   Versent
+  url:    https://versent.com.au
+
+nab-labs:
+  name:   NAB Labs
+  url:    https://www.nab.com.au/
+
+hex:
+  name:   Hacker Exchange
+  url:    http://www.hacker.exchange/
+
+tech-domains:
+  name:   get.tech
+  url:    https://get.tech/
