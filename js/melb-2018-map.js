@@ -35,7 +35,7 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: loc,
       map: map,
-      title: 'Telstra Gurrowa Innovation Lab'
+      title: 'Telstra Labs'
   });
 
 };
