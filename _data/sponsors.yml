@@ -121,3 +121,23 @@ hex:
 tech-domains:
   name:   get.tech
   url:    https://get.tech/
+
+ddd:
+  name:   DDD Melbourne
+  url:    https://www.dddmelbourne.com/
+
+vonex:
+  name:   Vonex
+  url:    https://www.vonex.com.au/
+
+sketch:
+  name:   Sketch
+  url:    https://www.sketchapp.com/
+
+cbre:
+  name:   CBRE
+  url:    https://www.cbre.com.au/
+
+dolby:
+  name:   Dolby
+  url:    https://www.dolby.com/

@@ -402,14 +402,6 @@
 #prizes.event-block {
   background: #f0f0f0;
 
-  .row {
-    margin-bottom: 30px;
-  }
-
-  .row:last-child {
-    margin-bottom: 0;
-  }
-
   h3 {
     margin-bottom: 0;
     text-align: center;
@@ -434,6 +426,7 @@
     border: 1px solid #e0e0e0;
     background: white;
     flex: 1;
+    margin-bottom: 30px;
 
     .prize-card-inner {
       padding: 24px 20px;

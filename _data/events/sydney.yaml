@@ -10,13 +10,14 @@ sponsors:
 - tier: Gold Sponsors
   row: col-12
   type: col-md-3 col-sm-4 col-6
-  companies: [atlassian, imc, swipejobs, thoughtworks, wisetech]
+  companies: [atlassian, cbre, imc, swipejobs, thoughtworks, wisetech]
 
-# - tier: Silver Sponsors
-#   type: col-md-2 col-4
-#   missing: [dolby]
-#
+- tier: Silver Sponsors
+  row: col-12
+  type: col-md-2 col-sm-3 col-6
+  companies: [dolby]
+
 - tier: Bronze Sponsors
   row: col-12
   type: col-md-2 col-sm-3 col-6
-  companies: [janestreet, wolfram]
+  companies: [janestreet, wolfram, sketch]
