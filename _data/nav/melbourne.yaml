@@ -4,5 +4,5 @@
 - name: FAQs
   url: '#faqs'
 
-- name: Register
-  url: '#register'
+# - name: Register
+#   url: '#register'
