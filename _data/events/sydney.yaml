@@ -13,7 +13,8 @@ sponsors:
   companies: [atlassian, cbre, imc, swipejobs, thoughtworks, wisetech]
 
 - tier: Silver Sponsors
-  type: col-md-2 col-4
+  row: col-12
+  type: col-md-2 col-sm-3 col-6
   companies: [dolby]
 
 - tier: Bronze Sponsors
