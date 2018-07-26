@@ -22,11 +22,15 @@ sponsors:
   type: col-md-2 col-sm-3 col-6
   companies: [carsales, facebook, gridstone, medipass, monash-esolutions, monash-fit, nab-labs, versent]
 
+- tier: Coffee Sponsor
+  row: col-12
+  type: col-md-2 col-sm-3 col-6
+  companies: [vonex]
+
 - tier: Bronze Sponsors
   row: col-12
   type: col-md-2 col-sm-3 col-6
-  companies: [janestreet, unimelb, wolfram, hex, tech-domains]
-  missing: [tech-domains]
+  companies: [hex, janestreet, unimelb, wolfram, sketch, tech-domains, ddd]
 
 - tier: Mixer Night Venue Host
   row: col-12
