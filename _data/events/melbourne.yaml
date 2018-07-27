@@ -36,3 +36,88 @@ sponsors:
   row: col-12
   type: col-md-2 col-4
   companies: [ybf]
+
+judges:
+  - title: Main Prize Judges
+    judges:
+    - name: Bruce Hardy
+      job:  Innovation Practice Lead, Telstra
+      twitter: brucehardyco
+      img:  img/melbourne/judges/bruce.png
+      bio:  Bruce is the Innovation Practice Lead at Telstra Labs - Telstra’s world
+            class innovation and technology laboratory. He leads and develops teams
+            using human centred design, lean start up and agile principles to transform
+            ideas into break through solutions for consumers and enterprise. He’s
+            also an intellectual property lawyer with almost a decade of experience
+            in working with technology, innovation and brand leaders to unlock the
+            value of their innovations.Outside of the commercial world, Bruce is a
+            founding member and former CEO of BottledSnail Productions - a creative
+            production company for Melbourne’s legal industry. In its first 5 years
+            BottledSnail has delivered $750,000 of creative projects and involved
+            over 350 legal professionals in its creative programs and in 2017
+            was recognised with the Law Institute of Victoria's Presidential award
+            for its impact on the legal community.
+    - name: Kelly Benson
+      job:  Senior Consultant, Thoughtworks
+      twitter: _kellybenson_
+      img:  img/melbourne/judges/kelly.png
+      bio:  Kelly has over seventeen years development experience. She completed a
+            degree in Computer Science/Software Development at Deakin and has worked in
+            Perth, London, Melbourne and Sydney. In May she visited Port Moresby,
+            Papua New Guinea as a participant and second place getter in the 2018
+            APEC App Challenge, a hackathon run by APEC and the Asia Foundation.
+            She has experience in all aspects of the development life cycle, a
+            love of Agile and enjoys teaching and sharing good development practices
+            with others.
+    - name: Ren Butler
+      job:  General Manager, Inspire9
+      twitter: MsRenButler
+      img:  img/melbourne/judges/ren.png
+      bio:  Before joining the Inspire9 team, she worked with and in startups, innovation
+            and ecosystem capacity building in Australia for the past four years as a
+            freelancer as well as with an accelerator program.  Her experience spans
+            teaching, applied technologies and business systems. Having moved from
+            California to Melbourne five years ago, Ren's explored the connections
+            between community, science and business for over a decade across the globe.
+            This landed her in the curious and amazing world of tech startups and
+            innovation, fostering connection between knowledge, resources, and people.
+            She's helped hundreds of founders get funding, built international partnerships,
+            and craft their early-stage business ideas into viable market-ready businesses.
+    - name: Michelle Mannering
+      job:  Founder, MishManners and Hackathon Extraordinaire
+      twitter: MishManners
+      img:  img/melbourne/judges/michelle.png
+      bio:  Michelle is a Content Producer in the realms of innovation and technology.
+            Known as the "Hackathon Queen", she works with awesome companies to create
+            and deliver hackathons and workshops. You'll often find her on stage MC'ing or
+            speaking on a range of topics from artificial intelligence, to business,
+            community engagement, the future of work, and esports.
+    - name: Long Zheng
+      job:  Cofounder and Head of Product, Omny Studio
+      twitter: longzheng
+      img:  img/melbourne/judges/long.jpg
+      bio:  Long Zheng is a passionate entrepreneur focused on creating apps and
+            services with a great user experience. Before Omny Studio, he
+            wrote a popular tech blog at istartedsomething.com, design and
+            developed the MetroTwit Twitter app for Windows, developed a
+            public transport timetable Google Glass app and co-developed a
+            Windows Phone jailbreak. Long recently published an unofficial
+            mobile app for myki, MyPal.
+  - title: Category Judges
+    judges:
+    - name: Tung Van Truong (for Best Design)
+      job:  Senior UX Designer, Cognizant
+      twitter: tung_airways
+      img:  img/melbourne/judges/tung.png
+      bio:  Enjoys experimenting at the edge of technology and human behaviour.
+            Part of winning teams in hackathons that tackled big challenges in health
+            research and patient experience, mining and sustainability. Believes the best
+            energy usage is the two feet that you are born with and curiosity is the
+            elixir of youth.
+    - name: Barry Ramirez (for Most Creative Idea)
+      job:  A/NZ Cloud Innovation Advisory Practice Leader, IBM
+      img:  img/melbourne/judges/barry.png
+      bio:  Barry leads the Cloud Innovation Advisory Practice for IBM Australia
+            and New Zealand, which helps customers discover, shape and realise the
+            Cloud-Powered transformations achievable through Cloud, DevOps, and the
+            Startup Mindset
