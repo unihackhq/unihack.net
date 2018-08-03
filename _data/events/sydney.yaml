@@ -21,3 +21,27 @@ sponsors:
   row: col-12
   type: col-md-2 col-sm-3 col-6
   companies: [janestreet, wolfram, sketch]
+
+judges:
+  - title: Main Prize Judges
+    judges:
+    - name: Sharon Lu
+      job:  General Manager at Tyro Fintech Hub
+      twitter: SwitchSharonOn
+      img:  img/sydney/judges/sharon.jpg
+      bio:  
+    - name: Anthony Quinn
+      job:  UX Lead at Telstra
+      twitter: AnthonyQuinnArt
+      img:  img/sydney/judges/anthony.jpg
+      bio:  
+    - name: Oren Nachman
+      job:  Software Development Manager at Amazon
+      twitter: OrenNachman
+      img:  img/sydney/judges/oren.jpg
+      bio:  
+    - name: Guy Wallace
+      job:  Investment Analyst at Reinventure
+      twitter: guywallace_
+      img:  img/sydney/judges/guy.jpg
+      bio:  
