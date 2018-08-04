@@ -5,11 +5,10 @@ city_page: true
 nav: melbourne
 city: Melbourne
 short: MEL
-gmaps: melb-2018-map.js
 header_link: /melbourne
 title_override: true
-title: UNIHACK Melbourne &mdash; July 28-29, 2018
-description: UNIHACK is Melbourne's premier student hackathon, running in late July at Telstra Labs. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!
+title: UNIHACK Melbourne
+description: UNIHACK is Melbourne's premier student hackathon, coming back in 2019!
 ---
 
 {% assign event = site.data.events['melbourne'] %}
@@ -20,12 +19,11 @@ description: UNIHACK is Melbourne's premier student hackathon, running in late J
       <div class="row">
         <div class="col-md-12">
           <h2>
-            <span>UNIHACK Melbourne is back.</span>
-            <span>Who will win?</span>
+            <span>UNIHACK Melbourne 2018 is over.</span>
+            <span>See you next year!</span>
           </h2>
-          <p>The competition begins on 9am, Saturday July 28.</p>
           <p>
-            <a class="uh_btn" href="https://twitter.com/unihackmelb">Follow Live</a>
+          <a class="uh_btn" href="https://unihack2018mel.devpost.com">See who won</a>
           </p>
         </div>
       </div>
@@ -35,56 +33,9 @@ description: UNIHACK is Melbourne's premier student hackathon, running in late J
 
 {% include event/about.html %}
 
-<div class="event-block no-border" id="venue">
-  <div class="unihack-wrap container-fluid">
-    <div class="event-location-block">
-      <h3>Venue</h3>
-      <p class="address">Telstra Labs</p>
-      <p class="address">Level 2, 242 Exhibition St</p>
-      <p class="address">Melbourne, VIC 3000</p>
-
-      <h4>How do I get there?</h4>
-      <p>
-        The best way to get to Telstra Labs is to catch a train to Parliament
-        station, and take the Lonsdale Street Exit. Alternatively, take a train
-        to Melbourne Central and walk down Lonsdale Street.
-      </p>
-      <p>
-        The venue is also located adjacent to the Elizabeth Street bus interchange,
-        accessible to bus routes 302 303, 304, 305, 309, 318, 350, 905, 906, 907 and 908.
-      </p>
-    </div>
-  </div>
-  <div class="google-maps" id="melb-2018-map"></div>
-</div>
-
-{% include event/judging.html %}
-
 {% include event/judges.html %}
 
-{% include event/melbourne/prizes.html %}
-
-<div class="page-block event-tweet event-quote no-border">
-  <div class="unihack-wrap container-fluid">
-    <div class="row justify-content-md-center">
-      <div class="col-md-12">
-        <i class="icon fa fa-twitter"></i>
-        <p class="tweet">
-          This afternoon can't come quick enough! Can’t wait to see what 100
-          students can imagine &amp; build in a weekend. <a href="https://twitter.com/hashtag/unihack2017">#unihack2017</a>
-        </p>
-        <p class="source">
-          &mdash; Dayle Stevens, Divisional CIO at AGL &amp; Director at Robogals (@Dayle_Stevens)
-          <a href="https://twitter.com/Dayle_Stevens/status/893999082246512640"><i class="fa fa-link"></i></a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
 {% include event/sponsor_partner.html %}
-
-{% include event/faq.html %}
 
 {% include event/society.html society="wired" css="no-border" %}
 
