@@ -5,11 +5,10 @@ nav: sydney
 city_page: true
 city: Sydney
 short: SYD
-gmaps: syd-2018-map.js
 header_link: /sydney
 title_override: true
 title: UNIHACK Sydney
-description: UNIHACK is Sydney's premier student hackathon, running in August at Coder Academy. Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes. Solve a problem, impress us and win some prizes!
+description: UNIHACK is Sydney's premier student hackathon, coming back in 2019!
 ---
 
 {% assign event = site.data.events['sydney'] %}
@@ -20,12 +19,11 @@ description: UNIHACK is Sydney's premier student hackathon, running in August at
       <div class="row">
         <div class="col-md-12">
           <h2>
-            <span>UNIHACK Sydney is back.</span>
-            <span>Who will win?</span>
+            <span>UNIHACK Sydney is over for 2018.</span>
+            <span>See you next year!</span>
           </h2>
-          <p>The competition begins on 9am, Saturday August 4.</p>
           <p>
-            <a class="uh_btn" href="https://twitter.com/unihacksyd">Follow Live</a>
+            <a class="uh_btn" href="http://unihack2018syd.devpost.com">See who won</a>
           </p>
         </div>
       </div>
@@ -35,55 +33,8 @@ description: UNIHACK is Sydney's premier student hackathon, running in August at
 
 {% include event/about.html %}
 
-<div class="event-block no-border" id="venue">
-  <div class="unihack-wrap container-fluid">
-    <div class="event-location-block">
-      <h3>Venue</h3>
-      <p class="address">Coder Academy Sydney</p>
-      <p class="address">7 Kelly Street</p>
-      <p class="address">Ultimo, NSW 2007</p>
-
-      <h4>How do I get there?</h4>
-      <p>
-        Coder Academy is a short walk from Sydney Central station. Take exit 7 then walk down
-        Broadway and Wattle Street, until you arrive at Kelly Street.
-      </p>
-      <p>
-        The venue is also located a short walk from busses that service Broadway Shopping Centre,
-        as well as a short walk from Light Rail services.
-      </p>
-    </div>
-  </div>
-  <div class="google-maps" id="syd-2018-map"></div>
-</div>
-
-{% include event/judging.html %}
-
 {% include event/judges.html %}
-
-{% include event/sydney/prizes.html %}
-
-<div class="page-block event-tweet event-quote no-border">
-  <div class="unihack-wrap container-fluid">
-    <div class="row justify-content-md-center">
-      <div class="col-md-12">
-        <i class="icon fa fa-twitter"></i>
-        <p class="tweet">
-          Absolutely love hearing all the ideas at <a href="https://twitter.com/unihacksyd/">@unihacksyd</a> !! Excited to hear who the winners are 🎉
-        </p>
-        <p class="source">
-          &mdash; Jenny Chu, Product Manager at Atlassian &amp; GM at Textbook Ventures (@j_ennychu)
-          <a href="https://twitter.com/j_ennychu/status/899130527256412160"><i class="fa fa-link"></i></a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
 {% include event/sponsor_partner.html %}
 
-{% include event/faq.html %}
-
 {% include event/society.html society="suits" css="no-border" %}
-
-{% include event/register.html url="https://unihack2018syd.eventbrite.com.au/?aff=website" %}
