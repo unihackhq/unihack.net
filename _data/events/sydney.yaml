@@ -25,23 +25,27 @@ sponsors:
 judges:
   - title: Main Prize Judges
     judges:
+    - name: Niranjan Murthy
+      job:  Senior Principal at Infosys
+      img:  img/judge-placeholder.png
+      bio:
     - name: Sharon Lu
       job:  General Manager at Tyro Fintech Hub
       twitter: SwitchSharonOn
       img:  img/sydney/judges/sharon.jpg
-      bio:  
+      bio:
     - name: Anthony Quinn
       job:  UX Lead at Telstra
       twitter: AnthonyQuinnArt
       img:  img/sydney/judges/anthony.jpg
-      bio:  
+      bio:
     - name: Oren Nachman
       job:  Software Development Manager at Amazon
       twitter: OrenNachman
       img:  img/sydney/judges/oren.jpg
-      bio:  
+      bio:
     - name: Guy Wallace
       job:  Investment Analyst at Reinventure
       twitter: guywallace_
       img:  img/sydney/judges/guy.jpg
-      bio:  
+      bio:
