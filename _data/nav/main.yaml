@@ -3,8 +3,7 @@
   page-match: about-us
 
 - name: Sponsor
-  url: /sponsor/
-  page-match: sponsorship
+  url: /sponsorship/
 
 - name: Blog
   url: https://medium.com/unihack-blog
