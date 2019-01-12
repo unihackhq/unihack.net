@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "unihack-test",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
+}

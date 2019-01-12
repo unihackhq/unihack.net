@@ -1,9 +1,0 @@
-- name: About
-  url: /about/
-  page-match: about-us
-
-- name: Sponsor
-  url: /sponsorship/
-
-- name: Blog
-  url: https://medium.com/unihack-blog

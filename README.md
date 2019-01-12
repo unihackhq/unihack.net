@@ -1,13 +1,9 @@
-# UNIHACK Site
+# WIP UNIHACK Site
 
-The site for UNIHACK – Australia's premier student hackathon.
+Uses NextJS (React) with TypeScript and Sass
 
-Running the site locally requires [Ruby](https://www.ruby-lang.org) and [Bundler](http://bundler.io/).
+## Install
+`npm install`
 
-## Development
-
-To install required dependencies and serve the site locally:
-
-        bundle
-
-        bundle exec jekyll server
+## Start server
+`npm start`
