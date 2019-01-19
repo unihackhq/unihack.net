@@ -6,4 +6,4 @@ Uses NextJS (React) with TypeScript and Sass
 `npm install`
 
 ## Start server
-`npm start`
+`npm run dev`
