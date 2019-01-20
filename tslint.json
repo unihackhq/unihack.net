@@ -12,6 +12,7 @@
   },
   "rules": {
     "interface-over-type-literal": false,
+    "jsx-boolean-value": false,
     "jsx-curly-spacing": "always",
     "no-console": false,
     "object-literal-sort-keys": false,

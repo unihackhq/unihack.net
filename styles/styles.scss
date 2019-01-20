@@ -1,0 +1,93 @@
+$base: 8px;
+$yellow: #FCC300;
+$grey: #2E383F;
+
+$fonts: 'Rubik', Helvetica, Arial;
+
+// Breakpoints
+@mixin xsm {
+  @media (min-width: 0em) { @content; }
+}
+
+@mixin ksm {
+  @media (min-width: 22em) { @content; }  //352px
+}
+
+@mixin sm {
+  @media (min-width: 37.5em) { @content; }  //600px
+}
+
+@mixin md {
+  @media (min-width: 50em) { @content; }  //800px
+}
+
+@mixin lg {
+  @media (min-width: 64em) { @content; }  //1024px
+}
+
+@mixin xl {
+  @media (min-width: 70em) { @content; }  //1120px
+}
+
+@mixin xxl {
+  @media (min-width: 80em) { @content; }  //1280px
+}
+
+@mixin page-margin {
+  @include xsm {
+    margin-left: $base;
+    margin-right: $base;
+  }
+
+  @include sm {
+    margin-left: $base * 3;
+    margin-right: $base * 3;
+
+  }
+
+  @include lg {
+    width: 970px;
+    margin: 0 auto;
+  }
+
+  @include xl {
+    width: 1100px;
+  }
+}
+
+@mixin button($color: $yellow) {
+  height: 40px;
+  border: 1px solid $color;
+  border-radius: 4px;
+  font-family: $fonts;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  background-color: $color;
+  // margin-top: 16px;
+  padding: $base $base * 2;
+
+  transition: all .2s;
+
+  &:hover {
+    background-color: lighten($color, 7%);
+    cursor: pointer;
+  }
+
+  &:focus, &:active {
+    background-color: darken($color, 7%);
+  }
+}
+
+@mixin link($color: black) {
+  color: $color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  
+  &:visited {
+    color: $color;
+  }
+}

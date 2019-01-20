@@ -1,12 +1,14 @@
+@import '../../styles/styles.scss';
+
 body {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.test {
-  background-color: rgb(255, 181, 181);
+.main {
+  font-family: $fonts;
 }
