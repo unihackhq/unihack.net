@@ -10,6 +10,7 @@
     padding-bottom: $base * 9;
 
     &-title {
+      @include heading-sizes;
 
       h1 {
         margin: 0;
@@ -33,8 +34,6 @@
       }
 
       h2 {
-        margin: 0;
-        font-size: 40px;
         font-weight: 400;
         margin-top: $base * 3;
       }

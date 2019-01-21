@@ -1,0 +1,29 @@
+@import '../../styles/styles.scss';
+
+.city-banner {
+  width: 100%;
+  padding: $base * 5 $base * 6;
+  @include heading-sizes;
+  @include link;
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  &.Melbourne {
+    background-color: $yellow;
+  }
+
+  &.Sydney {
+    background-color: $red;
+    color: white;
+  }
+
+  h2.thin {
+    font-weight: 300;
+  }
+}
