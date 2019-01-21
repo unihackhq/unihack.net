@@ -2,6 +2,7 @@ $base: 8px;
 $yellow: #FCC300;
 $red: #D42E2A;
 $grey: #2E383F;
+$navy: #2C383E;
 
 $fonts: 'Rubik', Helvetica, Arial;
 
@@ -106,6 +107,8 @@ $fonts: 'Rubik', Helvetica, Arial;
 
   h3 {
     margin: 0;
+    font-size: 32px;
+    font-weight: 500;
   }
 
   h4 {

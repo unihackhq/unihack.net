@@ -1,0 +1,14 @@
+@import '../../styles/styles.scss';
+
+.sponsor {
+  background-color: $navy;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+
+    padding-top: $base * 4;
+    padding-bottom: $base * 4;
+    color: white;
+  }
+}

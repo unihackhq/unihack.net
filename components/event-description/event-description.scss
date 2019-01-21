@@ -7,43 +7,50 @@
   padding-top: $base * 7;
   padding-bottom: $base * 7;
   font-size: 18px;
+  background-color: white;
 
-  @include page-margin;
-  @include heading-sizes;
-  color: $grey;
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    color: $grey;
 
-  .values {
-    display: flex;
-    justify-content: space-between;
-    margin-top: $base * 4;
-
-    @include xsm {
-      flex-direction: column;
-    }
-
-    @include md {
-      flex-direction: row;
-    }
-
-    .value {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    h2 {
       text-align: center;
+    }
 
-      padding-left: $base * 2;
-      padding-right: $base * 2;
-
-      img {
-        width: 200px;
+    .values {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $base * 4;
+  
+      @include xsm {
+        flex-direction: column;
       }
-
-      p {
-        font-weight: 300;
+  
+      @include md {
+        flex-direction: row;
       }
-
-      b {
-        font-weight: 400;
+  
+      .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        padding-left: $base * 2;
+        padding-right: $base * 2;
+  
+        img {
+          width: 200px;
+        }
+  
+        p {
+          font-weight: 300;
+        }
+  
+        b {
+          font-weight: 400;
+        }
       }
     }
   }

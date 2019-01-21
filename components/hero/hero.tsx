@@ -2,7 +2,7 @@ import './hero.scss';
 import Header from '../header/header';
 
 const Hero = () => (
-  <div className="hero">
+  <section className="hero">
     <Header/>
     <div className="hero-content">
       <div className="hero-content-title">
@@ -14,7 +14,7 @@ const Hero = () => (
       </div>
       <button className="grey">Interested?</button>
     </div>
-  </div>
+  </section>
 );
 
 export default Hero;

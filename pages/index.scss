@@ -1,5 +1,9 @@
 @import '../styles/styles.scss';
 
+body {
+  background-color: $yellow;
+}
+
 .cities {
   display: flex;
   @include xsm {
