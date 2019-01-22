@@ -2,12 +2,19 @@
 
 .hero {
   background-color: $yellow;
-  max-height: 100vh;
 
   &-content {
     @include page-margin;
-    padding-top: $base * 9;
-    padding-bottom: $base * 9;
+
+    @include xsm {
+      padding-top: $base * 4;
+      padding-bottom: $base * 8;
+    }
+
+    @include sm {
+      padding-top: $base * 9;
+      padding-bottom: $base * 12;
+    }
 
     &-title {
       @include heading-sizes;
@@ -39,8 +46,8 @@
       }
     }
 
-    button.grey {
-      @include button($grey);
+    button.secondary-btn {
+      @include secondary-button;
       margin-top: $base;
     }
   }

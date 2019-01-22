@@ -10,7 +10,7 @@ import Sponsor from '../components/sponsor/sponsor';
 export default () => (
   <div>
     <Head>
-      <title>My page title</title>
+      <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
     <Page withHeader={false}>
       <Hero/>

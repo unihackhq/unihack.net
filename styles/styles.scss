@@ -57,19 +57,20 @@ $fonts: 'Rubik', Helvetica, Arial;
   }
 }
 
-@mixin button($color: $yellow) {
+@mixin button-base {
   height: 40px;
-  border: 1px solid $color;
   border-radius: 4px;
   font-family: $fonts;
   font-size: 16px;
   line-height: 16px;
-  color: #fff;
-  background-color: $color;
-  // margin-top: 16px;
   padding: $base $base * 2;
 
   transition: all .2s;
+}
+
+@mixin button-styles($color: $yellow) {
+  border: 1px solid $color;
+  background-color: $color;
 
   &:hover {
     background-color: lighten($color, 7%);
@@ -79,6 +80,19 @@ $fonts: 'Rubik', Helvetica, Arial;
   &:focus, &:active {
     background-color: darken($color, 7%);
   }
+}
+
+@mixin primary-button {
+  @include button-base;
+  @include button-styles($yellow);
+  color: black;
+  font-weight: 500;
+}
+
+@mixin secondary-button {
+  @include button-base;
+  @include button-styles($grey);
+  color: white;
 }
 
 @mixin link($color: black) {

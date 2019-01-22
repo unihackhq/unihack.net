@@ -12,7 +12,7 @@ const Hero = () => (
         </h1>
         <h2>March 16-17</h2>
       </div>
-      <button className="grey">Interested?</button>
+      <button className="secondary-btn">Interested?</button>
     </div>
   </section>
 );

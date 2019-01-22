@@ -10,5 +10,23 @@
     padding-top: $base * 4;
     padding-bottom: $base * 4;
     color: white;
+    font-size: 18px;
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    span {
+      color: $yellow;
+    }
+
+    .actions {
+      margin-top: $base * 4;
+
+      .primary-btn {
+        @include primary-button;
+        margin-right: $base * 2;
+      }
+    }
   }
 }
