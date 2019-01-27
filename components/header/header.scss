@@ -1,22 +1,48 @@
 @import '../../styles/styles.scss';
 
 .header {
-  @include page-margin;
-  display: flex;
-
-  @include xsm {
-    height: $base * 8;
-    justify-content: center
+  &.solid {
+    background-color: $yellow;
   }
-
-  @include sm {
-    height: $base * 12;
-    justify-content: space-between;
-  }
-
-  .logo {
+  
+  &-content {
+    @include page-margin;
     display: flex;
-    align-items: center;
+
+    @include xsm {
+      height: $base * 8;
+      justify-content: space-between;
+    }
+
+    @include sm {
+      height: $base * 12;
+      justify-content: space-between;
+    }
+  }
+  
+  &-logo {
+    display: flex;
+
+    &-content {
+      @include link;
+      @include heading-sizes;
+  
+      &:hover {
+        text-decoration: none;
+      }
+  
+      display: flex;
+      align-items: center;
+  
+      &-img {
+        width: 30px;
+        margin-right: 4px;
+      }
+  
+      &-name {
+        letter-spacing: -2px;
+      }
+    }
   }
 
   .nav {

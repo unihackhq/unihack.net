@@ -46,9 +46,9 @@
       }
     }
 
-    button.secondary-btn {
-      @include secondary-button;
-      margin-top: $base;
+    button.secondary {
+      // @include secondary-button;
+      margin-top: $base * 2;
     }
   }
 }

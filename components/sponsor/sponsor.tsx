@@ -1,5 +1,6 @@
 import './sponsor.scss';
 import Link from 'next/link';
+import Button from '../button/button';
 
 const Sponsor = () => (
   <section className="sponsor">
@@ -18,8 +19,8 @@ const Sponsor = () => (
         <li>Witness students' technical and business prowess and channel them into your recruitment pipeline.</li>
       </ul>
       <div className="actions">
-        <Link href=""><button className="primary-btn">Enquire now</button></Link>
-        <Link href="/sponsorship"><button className="primary-btn">More info</button></Link>
+        <Link href=""><Button type="primary">Enquire now</Button></Link>
+        <Link href="/sponsorship"><Button type="primary">More info</Button></Link>
       </div>
     </div>
   </section>

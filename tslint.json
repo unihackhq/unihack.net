@@ -11,9 +11,12 @@
     ]
   },
   "rules": {
+    "interface-name": false,
     "interface-over-type-literal": false,
     "jsx-boolean-value": false,
     "jsx-curly-spacing": "always",
+    "jsx-no-multiline-js": false,
+    "member-ordering": false,
     "no-console": false,
     "object-literal-sort-keys": false,
     "one-variable-per-declaration": false,

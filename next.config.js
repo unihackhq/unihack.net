@@ -20,7 +20,8 @@ module.exports = (phase, { defaultConfig }) => {
       exportPathMap: function () {
         return {
           '/': { page: '/' },
-          '/about': { page: '/about' }
+          '/about': { page: '/about' },
+          '/sponsorship': { page: '/sponsorship' }
         }
       }
     }

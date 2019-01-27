@@ -1,0 +1,74 @@
+@import '../../styles/styles.scss';
+
+.sponsorship-hero {
+  min-height: 60vh;
+
+  background: #ccc;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+
+  &-content {
+    @include page-margin;
+    font-family: $fontsBasic;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+
+    @include xsm {
+      padding-top: $base * 4;
+      padding-bottom: $base * 8;
+    }
+
+    @include sm {
+      padding-top: $base * 9;
+      padding-bottom: $base * 12;
+    }
+  }
+
+  .hero-quote {
+    @include xsm {
+      margin-top: 120px;
+    }
+
+    @include md {
+      margin-top: 0;
+    }
+  }
+
+  .quote {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    padding: 8px 0;
+    border-left: 20px solid #ffcb25;
+    max-width: 14em;
+    margin: 0;
+  }
+
+  .highlight {
+    background-color: #ffcb25;
+    padding: 9px 0;
+    color: #202020;
+    display: inline;
+    margin: 0;
+    font-weight: 500;
+
+    .offset {
+      font-weight: 600;
+      position: relative;
+      left: -10px;
+    }
+  }
+
+  .quote-from {
+    font-size: 1rem;
+    line-height: 1;
+    padding: 8px 10px;
+    margin: 0;
+    display: inline-block;
+    background: #202020;
+    color: #ffcb25;
+    font-weight: 400;
+  }
+}

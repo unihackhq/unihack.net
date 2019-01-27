@@ -2,8 +2,8 @@ import Head from 'next/head';
 import './index.scss';
 
 import Page from '../layouts/page/page';
-import Hero from '../components/hero/hero';
-import EventDescription from '../components/event-description/event-description';
+import Hero from '../sections/hero/hero';
+import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '../components/city-banner/city-banner';
 import Sponsor from '../components/sponsor/sponsor';
 
@@ -12,7 +12,7 @@ export default () => (
     <Head>
       <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
-    <Page withHeader={false}>
+    <Page featureBackground>
       <Hero/>
       <EventDescription/>
       <section className="cities">

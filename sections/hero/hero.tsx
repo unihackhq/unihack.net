@@ -1,5 +1,6 @@
 import './hero.scss';
-import Header from '../header/header';
+import Header from '../../components/header/header';
+import Button from '../../components/button/button';
 
 const Hero = () => (
   <section className="hero">
@@ -12,7 +13,7 @@ const Hero = () => (
         </h1>
         <h2>March 16-17</h2>
       </div>
-      <button className="secondary-btn">Interested?</button>
+      <Button type="secondary">Interested?</Button>
     </div>
   </section>
 );

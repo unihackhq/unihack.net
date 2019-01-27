@@ -3,9 +3,12 @@ $yellow: #FCC300;
 $red: #D42E2A;
 $grey: #2E383F;
 $navy: #2C383E;
+$blue: #19607D;
 
-$fonts: 'Rubik', Helvetica, Arial;
+$fonts: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$fontsBasic: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+$floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 // Breakpoints
 @mixin xsm {
   @media (min-width: 0em) { @content; }
@@ -37,14 +40,15 @@ $fonts: 'Rubik', Helvetica, Arial;
 
 @mixin page-margin {
   @include xsm {
-    margin-left: $base;
-    margin-right: $base;
+    width: calc(100% - 32px);
+    margin-left: $base * 2;
+    margin-right: $base * 2;
   }
 
   @include sm {
+    width: calc(100% - 48px);
     margin-left: $base * 3;
     margin-right: $base * 3;
-
   }
 
   @include lg {
@@ -57,55 +61,26 @@ $fonts: 'Rubik', Helvetica, Arial;
   }
 }
 
-@mixin button-base {
-  height: 40px;
-  border-radius: 4px;
-  font-family: $fonts;
-  font-size: 16px;
-  line-height: 16px;
-  padding: $base $base * 2;
-
-  transition: all .2s;
-}
-
-@mixin button-styles($color: $yellow) {
-  border: 1px solid $color;
-  background-color: $color;
-
-  &:hover {
-    background-color: lighten($color, 7%);
-    cursor: pointer;
-  }
-
-  &:focus, &:active {
-    background-color: darken($color, 7%);
-  }
-}
-
-@mixin primary-button {
-  @include button-base;
-  @include button-styles($yellow);
-  color: black;
-  font-weight: 500;
-}
-
-@mixin secondary-button {
-  @include button-base;
-  @include button-styles($grey);
-  color: white;
-}
-
-@mixin link($color: black) {
+@mixin link-base($color) {
   color: $color;
   text-decoration: none;
+  cursor: pointer;
+
+  &:visited {
+    color: $color;
+  }
+}
+
+@mixin link-underline($color: black) {
+  @include link-base($color);
   
   &:hover {
     text-decoration: underline;
   }
-  
-  &:visited {
-    color: $color;
-  }
+}
+
+@mixin link($color: black) {
+  @include link-base($color);
 }
 
 @mixin heading-sizes {

@@ -23,8 +23,7 @@
     .actions {
       margin-top: $base * 4;
 
-      .primary-btn {
-        @include primary-button;
+      button:not(:last-of-type){
         margin-right: $base * 2;
       }
     }
