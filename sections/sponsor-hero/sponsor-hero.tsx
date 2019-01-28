@@ -1,8 +1,8 @@
-import './sponsorship-hero.scss';
+import './sponsor-hero.scss';
 
-const SponsorshipHero = () => (
-  <section className="sponsorship-hero" style={{backgroundImage: 'url(/static/images/sponsorship-hero.jpg)'}}>
-    <div className="sponsorship-hero-content">
+const SponsorHero = () => (
+  <section className="sponsor-hero" style={{backgroundImage: 'url(/static/images/sponsor-hero.jpg)'}}>
+    <div className="sponsor-hero-content">
       <div className="hero-quote">
         <p className="quote">
           <strong className="highlight">
@@ -17,4 +17,4 @@ const SponsorshipHero = () => (
   </section>
 );
 
-export default SponsorshipHero;
+export default SponsorHero;

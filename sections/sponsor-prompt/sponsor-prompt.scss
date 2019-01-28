@@ -1,6 +1,6 @@
 @import '../../styles/styles.scss';
 
-.sponsor {
+.sponsor-prompt {
   background-color: $navy;
 
   &-content {
@@ -9,22 +9,30 @@
 
     padding-top: $base * 4;
     padding-bottom: $base * 4;
-    color: white;
-    font-size: 18px;
+    color: #C6C6C6;
+    font-size: 16px;
 
-    ul {
-      margin-bottom: 0;
+    h3 {
+      color: $yellow;
+      margin-bottom: $base;
     }
 
-    span {
+    h4 {
       color: $yellow;
+      font-weight: 400;
+      margin-bottom: $base * 2;
+    }
+
+    p a {
+      @include link-underline(#C6C6C6);
+      font-weight: 500;
     }
 
     .actions {
       display: flex;
       margin-top: $base * 4;
 
-      :not(:last-child){
+      :not(:last-of-type){
         margin-right: $base * 2;
       }
     }

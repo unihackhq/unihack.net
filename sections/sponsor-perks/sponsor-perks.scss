@@ -1,0 +1,24 @@
+@import '../../styles/styles.scss';
+
+.sponsor-perks {
+  background-color: $light_grey;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    padding-top: $base * 5;
+    padding-bottom: $base * 5;
+    
+    h3 {
+      margin-bottom: 16px;
+    }
+
+    .perks {
+      .perk-item {
+        &:not(:last-of-type) {
+          margin-bottom: $base * 2;
+        }
+      }
+    }
+  }
+}

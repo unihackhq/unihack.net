@@ -1,7 +1,8 @@
 @import '../../styles/styles.scss';
 
-button.btn {
+a.btn-link {
   @include button-base;
+  @include link;
 
   &.primary {
     @include button-styles($yellow);
