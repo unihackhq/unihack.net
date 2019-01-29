@@ -1,7 +1,14 @@
 @import '../../styles/styles.scss';
 
 .sponsor-hero {
-  min-height: 60vh;
+
+  @include xsm {
+    min-height: 40vh;
+  }
+
+  @include md {
+    min-height: 60vh;
+  }
 
   background: #ccc;
   background-size: cover;
@@ -38,7 +45,14 @@
   }
 
   .quote {
-    font-size: 2.25rem;
+    @include xsm {
+      font-size: 1.5rem;
+    }
+    
+    @include md {
+      font-size: 2.25rem;
+    }
+    
     line-height: 1.25;
     padding: 8px 0;
     border-left: 20px solid #ffcb25;

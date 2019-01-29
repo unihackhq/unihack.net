@@ -1,12 +1,22 @@
 import './tiers-table.scss';
 import React from 'react';
 
-type State = { currentPackage: string };
+type State = {
+  currentPackage: string,
+  isTableHeaderFixed: boolean
+};
 
 class TiersTable extends React.Component<{}, State> {
   constructor(props: any) {
     super(props);
-    this.state = { currentPackage: 'silver'};
+    this.state = {
+      currentPackage: 'silver',
+      isTableHeaderFixed: false
+    };
+  }
+
+  public componentDidMount() {
+    window.addEventListener('scroll', this.scrollListener, { passive: true });
   }
 
   private updateMobileTable = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -21,13 +31,28 @@ class TiersTable extends React.Component<{}, State> {
     target.classList.toggle('active');
   }
 
+  private scrollListener = () => {
+    const selector = document.querySelector('.pkg-mobile-selector');
+    const table = document.querySelector('.pkg-table');
+
+    if (selector && table) {
+      const rect = table.getBoundingClientRect();
+
+      if (rect && rect.top < -50 && rect.bottom > 50) {
+        selector.classList.add('fixed');
+      } else {
+        selector.classList.remove('fixed');
+      }
+    }
+  }
+
   public render() {
     return (
       <section className="get-involved">
         <div className="get-involved-content">
           <h3>Get Involved</h3>
           <div className="container pkg-container" data-package={this.state.currentPackage}>
-            <div className="pkg-mobile-selector">
+            <div className={`pkg-mobile-selector ${this.state.isTableHeaderFixed ? 'fixed' : ''}`}>
               <div className="pkg-mobile-selector__container">
                 <button className="pkg-mobile-selector__button" data-package="com" onClick={this.updateMobileTable}>
                   Bronze

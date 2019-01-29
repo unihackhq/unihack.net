@@ -50,7 +50,7 @@
     }
 
     .actions {
-      display: flex;
+      @include action-container;
     }
   }
 }

@@ -63,6 +63,28 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   }
 }
 
+@mixin action-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include xsm {
+    flex-direction: column;
+
+    :not(:last-of-type){
+      margin-bottom: $base * 2;
+    }
+  }
+
+  @include sm {
+    flex-direction: row;
+    margin-bottom: 0;
+
+    :not(:last-of-type){
+      margin-right: $base * 2;
+    }
+  }
+}
+
 // Buttons
 @mixin button-base {
   display: flex;
@@ -92,7 +114,6 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
     background-color: darken($color, 7%);
   }
 }
-
 
 // Links
 @mixin link-base($color) {

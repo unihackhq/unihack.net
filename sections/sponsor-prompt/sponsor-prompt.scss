@@ -29,12 +29,8 @@
     }
 
     .actions {
-      display: flex;
+      @include action-container;
       margin-top: $base * 4;
-
-      :not(:last-of-type){
-        margin-right: $base * 2;
-      }
     }
   }
 }

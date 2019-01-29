@@ -1,0 +1,78 @@
+@import '../../styles/styles.scss';
+
+.footer {
+  background-color: $yellow;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+
+    padding-top: $base * 6;
+    padding-bottom: $base * 6;
+    font-size: 16px;
+    
+    display: flex;
+
+    @include xsm {
+      flex-direction: column;
+    }
+
+    @include sm {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: $base;
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      color: $grey;
+      line-height: 20px;
+
+      .links {
+        margin-bottom: $base;
+
+        a {
+          @include link-underline;
+          color: black;
+
+          &:not(:last-of-type) {
+            margin-right: $base * 4;
+          }
+        }
+      }
+
+      &.first {
+        @include xsm {
+          justify-content: center;
+          text-align: center;
+          margin-bottom: $base * 4;
+        }
+
+        @include sm {
+          justify-content: flex-start;
+          text-align: left;
+          margin-bottom: 0;
+        }
+      }
+
+      &.second {
+
+        @include xsm {
+          justify-content: center;
+          text-align: center;
+        }
+
+        @include sm {
+          justify-content: flex-end;
+          text-align: right;
+        }
+      }
+    }
+
+  }
+}

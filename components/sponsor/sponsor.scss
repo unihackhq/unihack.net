@@ -21,12 +21,8 @@
     }
 
     .actions {
-      display: flex;
+      @include action-container;
       margin-top: $base * 4;
-
-      :not(:last-child){
-        margin-right: $base * 2;
-      }
     }
   }
 }

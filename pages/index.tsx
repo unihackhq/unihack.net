@@ -6,6 +6,7 @@ import Hero from '../sections/hero/hero';
 import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '../components/city-banner/city-banner';
 import Sponsor from '../components/sponsor/sponsor';
+import Footer from '../components/footer/footer';
 
 export default () => (
   <div>
@@ -20,6 +21,7 @@ export default () => (
         <CityBanner city="Sydney" year="2018" href="/sydney" left/>
       </section>
       <Sponsor/>
+      <Footer/>
     </Page>
   </div>
 );

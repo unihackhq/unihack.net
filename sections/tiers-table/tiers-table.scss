@@ -34,7 +34,7 @@
       flex: 1 1 auto;
     }
 
-    .pkg-mobile-selector.sticky .pkg-mobile-selector__container {
+    .pkg-mobile-selector.fixed .pkg-mobile-selector__container {
       position: fixed;
       top: 0;
       left: 0;
@@ -100,7 +100,7 @@
       margin-bottom: 20px;
     }
 
-    .pkg-table.sticky-selector {
+    .pkg-table.fixed-selector {
       margin-top: 3rem;
     }
 
