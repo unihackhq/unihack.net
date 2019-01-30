@@ -3,7 +3,7 @@ import Link from 'next/link';
 import './button-link.scss';
 
 type Props = {
-  type?: 'primary' | 'secondary',
+  type: 'primary' | 'secondary',
   href: string,
   target?: string,
   children: ReactNode

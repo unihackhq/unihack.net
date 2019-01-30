@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Head from 'next/head';
 
 import './page.scss';
+import Footer from '../../components/footer/footer';
 import { COLORS } from '../../styles/styles';
 
 type Props = {
@@ -28,7 +29,7 @@ const Page = (props: Props) => {
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"/>
       </Head>
       { props.children }
-      {/* <Footer /> */}
+      <Footer/>
     </div>
   );
 };

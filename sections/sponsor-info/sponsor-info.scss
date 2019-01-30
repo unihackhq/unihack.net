@@ -7,6 +7,7 @@
   font-size: 18px;
   padding-top: $base * 5;
   padding-bottom: $base * 5;
+  background-color: $light_grey;
 
   &-content {
     @include page-margin;

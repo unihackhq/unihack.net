@@ -1,6 +1,8 @@
 @import '../../styles/styles.scss';
 
 .sponsor-addons {
+  background-color: $light_grey;
+  
   &-content {
     @include page-margin;
     @include heading-sizes;

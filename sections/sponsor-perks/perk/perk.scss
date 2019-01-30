@@ -24,7 +24,13 @@
 
     .perk-img {
       img {
-        border-radius: 0 5px 5px 0;
+        @include xsm {
+          border-radius: 5px 5px 0 0;
+        }
+        
+        @include md {
+          border-radius: 0 5px 5px 0;
+        }
       }
     }
   }
@@ -36,7 +42,15 @@
       height: 100%;
       display: block;
 
-      border-radius: 5px 0 0 5px;
+      @include xsm {
+        border-radius: 5px 5px 0 0;
+      }
+      
+      @include md {
+        border-radius: 5px 0 0 5px;
+      }
+
+      
     }
   }
 
