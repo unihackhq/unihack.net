@@ -11,7 +11,13 @@
   }
 
   &.right {
-    text-align: right;
+    @include xsm {
+      text-align: left;
+    }
+
+    @include md {
+      text-align: right;
+    }
   }
 
   &.Melbourne {

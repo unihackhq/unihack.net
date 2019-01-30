@@ -13,7 +13,7 @@ const Hero = () => (
         </h1>
         <h2>March 16-17</h2>
       </div>
-      <ButtonLink href="/" type="secondary">Check out our event</ButtonLink>
+      <ButtonLink href="https://www.facebook.com/events/742383822828074" type="secondary">Check out our event</ButtonLink>
     </div>
   </section>
 );
