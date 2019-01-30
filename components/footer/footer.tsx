@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './footer.scss';
 
 const Footer = () => (
@@ -5,8 +6,8 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-content-col first">
         <div className="links">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
+          <Link href="/privacy"><a>Privacy Policy</a></Link>
+          <Link href="/terms"><a>Terms of Service</a></Link>
         </div>
         <p>Proudly made in Melbourne 🇦🇺</p>
         <p>© 2019 UNIHACK Incorporated. All rights reserved.</p>

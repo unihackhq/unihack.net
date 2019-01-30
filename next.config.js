@@ -21,7 +21,9 @@ module.exports = (phase, { defaultConfig }) => {
         return {
           '/': { page: '/' },
           '/about': { page: '/about' },
-          '/sponsorship': { page: '/sponsorship' }
+          '/sponsorship': { page: '/sponsorship' },
+          '/privacy': { page: '/privacy' },
+          '/terms': { page: '/terms' }
         }
       }
     }

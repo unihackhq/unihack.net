@@ -1,0 +1,53 @@
+@import '../../styles/styles.scss';
+
+.privacy-policy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: $base * 7;
+  padding-bottom: $base * 7;
+  background-color: white;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    align-self: flex-start;
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: $base * 3;
+    margin-bottom: $base * 3;
+    font-variant: small-caps;
+    background-color: $yellow;
+    padding: 0 $base * 3;
+    padding-bottom: 4px;
+  }
+
+  p {
+    width: 100%;
+
+    @include xsm {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    @include md {
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+
+  a {
+    @include link;
+    text-decoration: underline;
+  }
+}

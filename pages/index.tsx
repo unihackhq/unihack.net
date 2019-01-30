@@ -16,8 +16,8 @@ export default () => (
       <Hero/>
       <EventDescription/>
       <section className="cities">
-        <CityBanner city="Melbourne" year="2018" href="/melbourne" left={false}/>
-        <CityBanner city="Sydney" year="2018" href="/sydney" left/>
+        <CityBanner city="Melbourne" year="2018" href="https://unihack2018mel.devpost.com/" left={false}/>
+        <CityBanner city="Sydney" year="2018" href="https://unihack2018syd.devpost.com/" left/>
       </section>
       <Sponsor/>
     </Page>
