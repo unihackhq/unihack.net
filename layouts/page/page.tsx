@@ -23,6 +23,12 @@ Router.onRouteChangeComplete = () => {
   }
 };
 
+const description = `
+  UNIHACK is Australia's premier student hackathon, based in Melbourne and Sydney.
+  Students get 24 hours to design and build something awesome – an app, website, piece of hardware... anything goes.
+  Solve a problem, impress us and win some prizes!
+`;
+
 type Props = {
   featureBackground?: boolean,
   children: ReactNode
@@ -36,6 +42,16 @@ const Page = (props: Props) => {
       </style>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://unihack.net/"/>
+        <meta name="description" content={description}/>
+        <meta property="og:description" content={description}/>
+        <meta property="og:image" content="https://unihack.net/static/images/og-image.png"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@UNIHACKMelb"/>
+        <meta name="twitter:title" content="UNIHACK"/>
+        <meta name="twitter:description" content={description}/>
+        <meta name="twitter:image" content="https://unihack.net/static/images/og-image.png"/>
         <link rel="shortcut icon" href="/static/favicons/favicon.ico"/>
         <link rel="icon" type="image/png" href="/static/favicons/favicon-16x16.png" sizes="16x16"/>
         <link rel="icon" type="image/png" href="/static/favicons/favicon-32x32.png" sizes="32x32"/>

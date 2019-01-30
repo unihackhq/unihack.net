@@ -87,7 +87,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
 // Buttons
 @mixin button-base {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 40px;
