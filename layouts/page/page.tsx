@@ -1,9 +1,27 @@
 import { ReactNode } from 'react';
 import Head from 'next/head';
+import Router from 'next/router';
 
 import './page.scss';
 import Footer from '../../components/footer/footer';
 import { COLORS } from '../../styles/styles';
+
+declare global {
+  interface Window {
+    gtag: any;
+    gaTrackingId: any;
+  }
+}
+
+Router.onRouteChangeComplete = () => {
+  if (window.gtag) {
+    window.gtag('config', window.gaTrackingId, {
+      page_location: window.location.href,
+      page_path: window.location.pathname,
+      page_title: window.document.title,
+    });
+  }
+};
 
 type Props = {
   featureBackground?: boolean,
@@ -13,7 +31,6 @@ type Props = {
 const Page = (props: Props) => {
   return (
     <div className="main">
-
       <style jsx global>
         {`body { background-color: ${props.featureBackground ? COLORS.YELLOW : COLORS.LIGHT_GREY}; }`}
       </style>
@@ -27,6 +44,18 @@ const Page = (props: Props) => {
         <link rel="apple-touch-icon" sizes="152x152" href="/static/favicons/apple-touch-icon-152x152.png"/>
         <link rel="apple-touch-icon" sizes="167x167" href="/static/favicons/apple-touch-icon-167x167.png"/>
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"/>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=UA-63816174-2`} />
+        <script
+          dangerouslySetInnerHTML={{ __html: `
+            window.dataLayer = window.dataLayer || []
+            window.gaTrackingId = 'UA-63816174-2';
+            function gtag(){
+              dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+            gtag('config', 'UA-63816174-2')
+          `}}
+        />
       </Head>
       { props.children }
       <Footer/>
