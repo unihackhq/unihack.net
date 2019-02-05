@@ -126,7 +126,7 @@ class TiersTable extends React.Component<{}, State> {
                     $30,000
                   </div>
                   <div className="pkg-table__max">
-                    Max 2 sponsors
+                    Max 1 sponsor
                   </div>
                 </div>
               </div>
