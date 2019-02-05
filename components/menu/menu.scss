@@ -1,0 +1,76 @@
+@import '../../styles/styles.scss';
+
+.menu {
+  z-index: 999;
+
+  @include xsm {
+    .nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+  
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      &.nav-show {
+        display: flex;
+      }
+    }
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .menu-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border: 0;
+      border-radius: 20px;
+      cursor: pointer;
+  
+      box-shadow: $floatingShadow;
+  
+      &:hover {
+        background-color: lighten(black, 7%);
+        transform: translateY(1px);
+      }
+  
+      &:active, &:focus {
+        outline: none;
+      }
+  
+      &:focus {
+        box-shadow: 0 0 0 4px white;
+      }
+    }
+  }
+
+  @include md {
+    display: flex;
+    align-items: center;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+  
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-container {
+      display: none;
+    }
+  }
+}

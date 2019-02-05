@@ -1,0 +1,36 @@
+@import '../../styles/styles.scss';
+
+.sponsor-prompt {
+  background-color: $navy;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+
+    padding-top: $base * 4;
+    padding-bottom: $base * 4;
+    color: #C6C6C6;
+    font-size: 16px;
+
+    h3 {
+      color: $yellow;
+      margin-bottom: $base;
+    }
+
+    h4 {
+      color: $yellow;
+      font-weight: 400;
+      margin-bottom: $base * 2;
+    }
+
+    p a {
+      @include link-underline(#C6C6C6);
+      font-weight: 500;
+    }
+
+    .actions {
+      @include action-container;
+      margin-top: $base * 4;
+    }
+  }
+}

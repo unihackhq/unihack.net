@@ -1,0 +1,28 @@
+@import '../../styles/styles.scss';
+
+.sponsor {
+  background-color: $navy;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+
+    padding-top: $base * 4;
+    padding-bottom: $base * 4;
+    color: white;
+    font-size: 18px;
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    span {
+      color: $yellow;
+    }
+
+    .actions {
+      @include action-container;
+      margin-top: $base * 4;
+    }
+  }
+}

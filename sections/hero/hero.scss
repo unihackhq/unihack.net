@@ -1,0 +1,50 @@
+@import '../../styles/styles.scss';
+
+.hero {
+  background-color: $yellow;
+
+  &-content {
+    @include page-margin;
+
+    @include xsm {
+      padding-top: $base * 4;
+      padding-bottom: $base * 8;
+    }
+
+    @include sm {
+      padding-top: $base * 9;
+      padding-bottom: $base * 12;
+    }
+
+    &-title {
+      @include heading-sizes;
+      margin-bottom: $base * 2;
+
+      h1 {
+        margin: 0;
+        font-weight: 500;
+
+        @include xsm {
+          font-size: 60px;
+        }
+        
+        @include sm {
+          font-size: 120px;
+        }
+
+        span {
+          display: block;
+        }
+
+        .thin {
+          font-weight: 300;
+        }
+      }
+
+      h2 {
+        font-weight: 400;
+        margin-top: $base * 3;
+      }
+    }
+  }
+}

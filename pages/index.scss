@@ -1,0 +1,12 @@
+@import '../styles/styles.scss';
+
+.cities {
+  display: flex;
+  @include xsm {
+    flex-direction: column;
+  }
+
+  @include sm {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "UNIHACK Website",
+  "alias": ["unihack.net", "www.unihack.net"],
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
+}

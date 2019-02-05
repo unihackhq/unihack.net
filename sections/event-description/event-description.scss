@@ -1,0 +1,57 @@
+@import '../../styles/styles.scss';
+
+.event-description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: $base * 7;
+  padding-bottom: $base * 7;
+  font-size: 18px;
+  background-color: white;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    color: $grey;
+
+    h2 {
+      text-align: center;
+    }
+
+    .values {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $base * 4;
+  
+      @include xsm {
+        flex-direction: column;
+      }
+  
+      @include md {
+        flex-direction: row;
+      }
+  
+      .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        padding-left: $base * 2;
+        padding-right: $base * 2;
+  
+        img {
+          width: 200px;
+        }
+  
+        p {
+          font-weight: 300;
+        }
+  
+        b {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

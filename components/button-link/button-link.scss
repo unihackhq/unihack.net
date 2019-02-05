@@ -1,0 +1,16 @@
+@import '../../styles/styles.scss';
+
+a.btn-link {
+  @include button-base;
+  @include link;
+
+  &.primary {
+    @include button-styles($yellow);
+    color: black;
+  }
+
+  &.secondary {
+    @include button-styles($grey);
+    color: white;
+  }
+}
