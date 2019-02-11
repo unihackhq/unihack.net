@@ -17,6 +17,7 @@ module.exports = (phase, { defaultConfig }) => {
 
   return withTypescript(withSass(
     {
+      target: 'serverless',
       exportPathMap: function () {
         return {
           '/': { page: '/' },
