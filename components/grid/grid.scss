@@ -1,0 +1,21 @@
+@import '../../styles/styles.scss';
+
+.grid {
+  display: grid;
+  margin-bottom: 24px;
+
+  @include xsm {
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  @include md {
+    grid-gap: 24px 48px;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
