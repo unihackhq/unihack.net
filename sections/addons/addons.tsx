@@ -5,18 +5,18 @@ import ButtonLink from '../../components/button-link/button-link';
 const Addons = () => (
   <section className="sponsor-addons">
     <div className="sponsor-addons-content">
-      <h4>Addons</h4>
+      <h3>Addons</h3>
       <div className="addons">
         <Card className="addon-card">
-          <p><strong>Additional Mentors</strong></p>
+          <p>Additional Mentors</p>
           <span>$250</span>
         </Card>
         <Card className="addon-card">
-          <p><strong>Additional Guests</strong></p>
+          <p>Additional Guests</p>
           <span>$150</span>
         </Card>
         <Card className="addon-card">
-          <p><strong>Resume and attendee lists</strong></p>
+          <p>Resume and attendee lists</p>
           <span>$450</span>
         </Card>
       </div>

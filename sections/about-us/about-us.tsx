@@ -3,9 +3,9 @@ import './about-us.scss';
 const AboutUs = () => (
   <section className="about-us">
     <div className="about-us-content">
-      <h2>About Us</h2>
-      <h3>Who are we</h3>
-      <h4><i>We are Australia's largest and premier student hackathon - run for students, by students.</i></h4>
+      <h1>About Us</h1>
+      <h2>Who are we</h2>
+      <h3><i>We are Australia's largest and premier student hackathon - run for students, by students.</i></h3>
       <p>
         Inspired by the student hackathons in the United States and Europe,
         UNIHACK was created in 2014 by WIRED Monash.

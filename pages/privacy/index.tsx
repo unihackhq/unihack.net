@@ -12,9 +12,9 @@ export default () => (
     </Head>
     <Page featureBackground>
       <Header withLogo solid/>
-      <section className="terms">
-        <div className="terms-content">
-          <h2>Privacy Policy</h2>
+      <section className="privacy-policy">
+        <div className="privacy-policy-content">
+          <h1>Privacy Policy</h1>
           <p>
             <strong>UNIHACK INCORPORATED</strong> is the not-for-profit organisation committed to running enjoyable,
             informative and inclusive hackathons for tertiary students.
@@ -29,7 +29,7 @@ export default () => (
             Australian Information Commissioner at <a href="https://oaic.gov.au">https://oaic.gov.au</a>.
           </p>
 
-          <h3>What is personal information and why do we collect it?</h3>
+          <h2>What is personal information and why do we collect it?</h2>
           <p>
             Personal Information is information or an opinion that identifies an individual.
             Examples of Personal Information we collect include: names, gender, addresses, email addresses, phone numbers,
@@ -52,7 +52,7 @@ export default () => (
             collecting the information and how we plan to use it.
           </p>
 
-          <h3>Third Parties</h3>
+          <h2>Third Parties</h2>
           <p>
             We will primarily collect your Personal Information only from you. However, we also will be provided with information by several
             third parties, such as our third-party ticketing platform <a href="https://www.eventbrite.com.au/">Eventbrite</a>,
@@ -63,7 +63,7 @@ export default () => (
             the information provided to us by the third party.
           </p>
 
-          <h3>Disclosure of personal information</h3>
+          <h2>Disclosure of personal information</h2>
           <p>
             Your Personal Information may be disclosed to third-parties where you consent to the disclosure.
             These third-parties may include but are not limited to the host universities/TAFEs and/or our sponsorship partners.
@@ -72,7 +72,7 @@ export default () => (
             Where required by law, we will also disclose Personal Information to authorised governmental bodies.
           </p>
 
-          <h3>Security of personal information</h3>
+          <h2>Security of personal information</h2>
           <p>
             Your Personal Information is stored in a manner that reasonably protects it from misuse and loss and from unauthorized access,
             modification or disclosure.
@@ -83,7 +83,7 @@ export default () => (
             participant files which will be kept by us for a minimum of 7 years.
           </p>
 
-          <h3>Access to your personal information</h3>
+          <h2>Access to your personal information</h2>
           <p>
             You may access the Personal Information we hold about you and to update and/or correct it, subject to certain exceptions.
             If you wish to access your Personal Information, please contact us in writing.
@@ -95,7 +95,7 @@ export default () => (
             In order to protect your Personal Information we may require identification from you before releasing the requested information.
           </p>
 
-          <h3>Maintaining the Quality of your Personal Information</h3>
+          <h2>Maintaining the Quality of your Personal Information</h2>
           <p>
             It is an important to us that your Personal Information is up to date. We will take reasonable steps to make sure that your
             Personal Information is accurate, complete and up-to-date. If you find that the information we have is not up to date or is
@@ -103,12 +103,12 @@ export default () => (
             quality services to you.
           </p>
 
-          <h3>Policy updates</h3>
+          <h2>Policy updates</h2>
           <p>
             This Policy may change from time to time and is available on our website.
           </p>
 
-          <h3>Privacy Policy complaints and enquiries</h3>
+          <h2>Privacy Policy complaints and enquiries</h2>
           <p>
             If you have any queries or complaints about our Privacy Policy please
             contact us at: <a href="mailto:team@unihack.net">team@unihack.net</a>
