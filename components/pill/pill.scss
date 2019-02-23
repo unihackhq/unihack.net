@@ -61,13 +61,17 @@
   }
 
   p {
-    strong.yellow {
-      color: $yellow;
+    strong {
+      font-weight: 500;
+
+      &.yellow {
+        color: $yellow;
+      }
     }
 
     span {
       font-size: 28px;
-      font-weight: 700;
+      font-weight: 500;
       margin-bottom: 3px;
       line-height: 1;
       display: block;

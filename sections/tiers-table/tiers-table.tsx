@@ -50,7 +50,7 @@ class TiersTable extends React.Component<{}, State> {
     return (
       <section className="get-involved">
         <div className="get-involved-content">
-          <h3>Get Involved</h3>
+          <h2>Get Involved</h2>
           <div className="container pkg-container" data-package={this.state.currentPackage}>
             <div className={`pkg-mobile-selector ${this.state.isTableHeaderFixed ? 'fixed' : ''}`}>
               <div className="pkg-mobile-selector__container">

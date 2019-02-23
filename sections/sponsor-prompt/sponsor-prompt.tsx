@@ -4,8 +4,8 @@ import ButtonLink from '../../components/button-link/button-link';
 const SponsorPrompt = () => (
   <section className="sponsor-prompt" id="sponsor-prompt">
     <div className="sponsor-prompt-content">
-      <h3>Interested?</h3>
-      <h4>Contact us for more information</h4>
+      <h2>Interested?</h2>
+      <h3>Contact us for more information</h3>
       <p>
         We are happy to discuss customisations according to your needs.
         Send us an email to

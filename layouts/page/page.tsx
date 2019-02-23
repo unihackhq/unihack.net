@@ -59,7 +59,7 @@ const Page = (props: Props) => {
         <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon-180x180.png"/>
         <link rel="apple-touch-icon" sizes="152x152" href="/static/favicons/apple-touch-icon-152x152.png"/>
         <link rel="apple-touch-icon" sizes="167x167" href="/static/favicons/apple-touch-icon-167x167.png"/>
-        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet"/>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=UA-63816174-2`} />
         <script
           dangerouslySetInnerHTML={{ __html: `

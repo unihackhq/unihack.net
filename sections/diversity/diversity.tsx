@@ -4,7 +4,7 @@ import ButtonLink from '../../components/button-link/button-link';
 const Diversity = () => (
   <section className="diversity">
     <div className="diversity-content">
-      <h3>Diversity Commitment</h3>
+      <h2>Diversity Commitment</h2>
       <img src="/static/images/diversity-commitment.jpg"/>
       <p>
         The organisers of UNIHACK are committed in increasing the diversity of UNIHACK competitors.

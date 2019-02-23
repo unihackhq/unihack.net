@@ -19,7 +19,7 @@ const SponsorPerks = () => {
   return (
     <section className="sponsor-perks">
       <div className="sponsor-perks-content">
-        <h3>Perks in Detail</h3>
+        <h2>Perks in Detail</h2>
         <div className="perks">
           {perks}
         </div>

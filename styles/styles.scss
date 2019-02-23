@@ -142,22 +142,37 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 @mixin heading-sizes {
   h1 {
     margin: 0;
-  }
-
-  h2 {
-    margin: 0;
     font-size: 40px;
     font-weight: 500;
   }
 
-  h3 {
+  h2 {
     margin: 0;
     font-size: 32px;
+    font-weight: 500;
+
+    &.section-title {
+      font-size: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 24px;
     font-weight: 500;
   }
 
   h4 {
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 500;
   }
+}
+
+@mixin subtitle {
+  margin: 0;
+  font-style: italic;
+  font-size: 20px;
 }

@@ -16,11 +16,11 @@
     align-items: center;
   }
 
-  h2 {
+  h1 {
     align-self: flex-start;
   }
 
-  h3 {
+  h2 {
     text-align: center;
     text-transform: lowercase;
     margin-top: $base * 3;
@@ -44,6 +44,10 @@
       font-size: 22px;
       font-weight: 300;
     }
+  }
+
+  strong {
+    font-weight: 500;
   }
 
   a {
