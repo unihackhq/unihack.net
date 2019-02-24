@@ -13,13 +13,13 @@ export default () => (
       <Header withLogo solid/>
       <section className="terms">
         <div className="terms-content">
-          <h2>Terms of Service</h2>
+          <h1>Terms of Service</h1>
           <p>
             <strong>UNIHACK INCORPORATED</strong> is an Australian-owned and non-for-profit company.
             All payments will be invoiced in Australian Dollars unless otherwise agreed upon in writing.
           </p>
 
-          <h3>UNIHACK competitor refund policy</h3>
+          <h2 className="highlighted">UNIHACK competitor refund policy</h2>
           <p>
             Unfortunately we cannot offer refunds for any competitor tickets, however you are able transfer your
             ticket to another student willing to compete.
@@ -29,7 +29,7 @@ export default () => (
             to find other students looking for tickets.
           </p>
 
-          <h3>UNIHACK company sponsorship refund policy</h3>
+          <h2 className="highlighted">UNIHACK company sponsorship refund policy</h2>
           <p>
             Since sponsorship goes directly into the running of hackathons and takes effect immediately
              we cannot offer refunds for sponsorship.
