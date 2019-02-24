@@ -1,0 +1,62 @@
+@import '../../../styles/styles.scss';
+
+.event-page-sponsors {
+  background-color: $light_grey;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    display: flex;
+    flex-direction: column;
+    padding-top: $base * 6;
+    padding-bottom: $base * 6;
+
+    .section-title {
+      color: $grey;
+    }
+
+    .subtitle {
+      @include subtitle;
+      color: $grey;
+    }
+
+    .tier-title {
+      margin-top: $base * 6;
+      margin-bottom: $base * 3;
+    }
+
+    .highlighted {
+      &.venue {
+        background-color: $grey;
+        color: $light_grey;
+      }
+
+      &.platinum {
+        background-color: #B9C4CB;
+      }
+
+      &.silver {
+        background-color: #E0E0E0;
+      }
+    }
+
+    .primary-companies {
+      display: flex;
+      justify-content: space-around;
+      
+      .company-section {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+
+        img {
+          width: 300px;
+          margin-top: $base;
+        }
+      }
+      
+
+      
+    }
+  }
+}
