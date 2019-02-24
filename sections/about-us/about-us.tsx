@@ -4,7 +4,7 @@ const AboutUs = () => (
   <section className="about-us">
     <div className="about-us-content">
       <h1>About Us</h1>
-      <h2>Who are we</h2>
+      <h2 className="highlighted">Who are we</h2>
       <h3><i>We are Australia's largest and premier student hackathon - run for students, by students.</i></h3>
       <p>
         Inspired by the student hackathons in the United States and Europe,
