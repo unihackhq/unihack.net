@@ -75,6 +75,20 @@
       {
         "name": "NAB",
         "imagePath": "/nab.png"
+      },
+      {
+        "name": "Twilio",
+        "imagePath": "/twilio.png"
+      }
+    ],
+    "academicGold": [
+      {
+        "name": "Monash Generator",
+        "imagePath": "/monash-generator.png"
+      },
+      {
+        "name": "Wade Institute",
+        "imagePath": "/wade-institute.png"
       }
     ]
   } 
