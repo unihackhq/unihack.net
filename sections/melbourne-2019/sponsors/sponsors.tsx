@@ -26,6 +26,8 @@ const Sponsors = () => {
         <Grid items={sponsorData.sponsors.gold} basePath={sponsorData.base}/>
         <h2 className="tier-title highlighted silver">Silver</h2>
         <Grid items={sponsorData.sponsors.silver} basePath={sponsorData.base}/>
+        <h2 className="tier-title highlighted academic-gold">Academic Gold</h2>
+        <Grid items={sponsorData.sponsors.academicGold} basePath={sponsorData.base}/>
       </div>
     </section>
   );
