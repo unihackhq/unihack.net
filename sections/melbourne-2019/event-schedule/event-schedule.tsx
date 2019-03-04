@@ -1,7 +1,7 @@
 import './event-schedule.scss';
 import React from 'react';
 import Schedule from '../../../components/schedule/schedule';
-import scheduleData from '../../../static/content/2019/schedule.json';
+import scheduleData from '../../../content/2019/schedule.json';
 import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedule-item.interface';
 
 type Day = 'saturday' | 'sunday';

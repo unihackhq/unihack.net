@@ -93,6 +93,10 @@
     ],
     "other": [
       {
+        "name": "Adobe",
+        "imagePath": "/adobe.png"
+      },
+      {
         "name": ".Co Domains",
         "imagePath": "/co-domains.png"
       },
