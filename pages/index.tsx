@@ -7,6 +7,7 @@ import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '../components/city-banner/city-banner';
 import Sponsor from '../components/sponsor/sponsor';
 import Sponsors from '../sections/melbourne-2019/sponsors/sponsors';
+// import EventSchedule from '../sections/melbourne-2019/event-schedule/event-schedule';
 
 export default () => (
   <div>
@@ -15,6 +16,7 @@ export default () => (
     </Head>
     <Page featureBackground>
       <Hero/>
+      {/* <EventSchedule/> */}
       <Sponsors/>
       <EventDescription/>
       <section className="cities">
