@@ -1,6 +1,6 @@
 import './sponsors.scss';
 import Grid from '../../../components/grid/grid';
-import sponsorData from '../../../content/2019/sponsors.json';
+import sponsorData from '../../../static/content/2019/sponsors.json';
 
 const Sponsors = () => {
   const venueSponsorPath = sponsorData.base + sponsorData.sponsors.venue.imagePath;
@@ -24,10 +24,12 @@ const Sponsors = () => {
 
         <h2 className="tier-title highlighted">Gold</h2>
         <Grid items={sponsorData.sponsors.gold} basePath={sponsorData.base}/>
-        <h2 className="tier-title highlighted silver">Silver</h2>
-        <Grid items={sponsorData.sponsors.silver} basePath={sponsorData.base}/>
         <h2 className="tier-title highlighted academic-gold">Academic Gold</h2>
         <Grid items={sponsorData.sponsors.academicGold} basePath={sponsorData.base}/>
+        <h2 className="tier-title highlighted silver">Silver</h2>
+        <Grid items={sponsorData.sponsors.silver} basePath={sponsorData.base}/>
+        <h2 className="tier-title highlighted other">Other sponsors</h2>
+        <Grid items={sponsorData.sponsors.other} basePath={sponsorData.base}/>
       </div>
     </section>
   );

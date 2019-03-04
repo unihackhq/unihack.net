@@ -1,6 +1,6 @@
 import './sponsor-perks.scss';
 import Perk from './perk/perk';
-import perkData from '../../content/perks.json';
+import perkData from '../../static/content/perks.json';
 
 const SponsorPerks = () => {
   const perks = perkData.map((perk, index) => (
