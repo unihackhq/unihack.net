@@ -1,6 +1,6 @@
 import './sponsors.scss';
 import Grid from '../../../components/grid/grid';
-import sponsorData from '../../../static/content/2019/sponsors.json';
+import sponsorData from '../../../content/2019/sponsors.json';
 
 const Sponsors = () => {
   const venueSponsorPath = sponsorData.base + sponsorData.sponsors.venue.imagePath;
