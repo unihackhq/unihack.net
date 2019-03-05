@@ -7,9 +7,11 @@ type Props = {
 };
 
 const Grid = (props: Props) => {
-  const gridItems = props.items.map((item: GridItemI) =>
-    <img src={`${props.basePath}${item.imagePath}`} alt={item.name} key={item.name}/>
-  );
+  const gridItems = props.items.map((item: GridItemI) => (
+    <span key={item.name}>
+      <img src={`${props.basePath}${item.imagePath}`} alt={item.name}/>
+    </span>
+  ));
 
   return (
     <div className="grid">
