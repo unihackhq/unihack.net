@@ -21,7 +21,7 @@ const Perk = (props: Props) => {
         <img src={props.imgSrc}/>
       </div>
       <div className="perk-desc">
-        <h4>{props.title}</h4>
+        <h3>{props.title}</h3>
         <p>{props.children}</p>
         {listItems ? <ul>{listItems}</ul> : ''}
       </div>

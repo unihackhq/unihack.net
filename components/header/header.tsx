@@ -15,7 +15,7 @@ const Logo = () => (
   <Link href="/">
     <a className="header-logo-content">
       <img className="header-logo-content-img" src={'/static/images/unihack.svg'}/>
-      <h3 className="header-logo-content-name">UNIHACK</h3>
+      <h2 className="header-logo-content-name">UNIHACK</h2>
     </a>
   </Link>
 );

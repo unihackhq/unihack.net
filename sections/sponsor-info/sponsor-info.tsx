@@ -4,7 +4,7 @@ import Pill from '../../components/pill/pill';
 const SponsorInfo = () => (
   <section className="sponsor-info">
     <div className="sponsor-info-content">
-      <h3>What is UNIHACK?</h3>
+      <h2>What is UNIHACK?</h2>
       <p className="details no-margin">When: <strong>March 16 - 17</strong></p>
       <p className="details no-margin">Where: <strong>Melbourne</strong></p>
       <p className="details">

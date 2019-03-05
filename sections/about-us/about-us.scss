@@ -15,21 +15,11 @@
     flex-direction: column;
     align-items: center;
 
-    h2 {
+    h1 {
       align-self: flex-start;
     }
 
     h3 {
-      text-align: center;
-      text-transform: lowercase;
-      margin-bottom: $base * 3;
-      font-variant: small-caps;
-      background-color: $yellow;
-      padding: 0 $base * 3;
-      padding-bottom: 4px;
-    }
-
-    h4 {
       color: #808080;
       text-align: center;
       font-weight: 400;

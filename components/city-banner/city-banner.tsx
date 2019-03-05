@@ -5,7 +5,7 @@ type Props = {
   city: string,
   year: string,
   href: string,
-  left: boolean
+  left?: boolean
 };
 
 const CityBanner = (props: Props) => (

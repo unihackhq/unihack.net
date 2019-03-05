@@ -16,19 +16,12 @@
     align-items: center;
   }
 
-  h2 {
+  h1 {
     align-self: flex-start;
   }
 
-  h3 {
-    text-align: center;
-    text-transform: lowercase;
+  h2 {
     margin-top: $base * 3;
-    margin-bottom: $base * 3;
-    font-variant: small-caps;
-    background-color: $yellow;
-    padding: 0 $base * 3;
-    padding-bottom: 4px;
   }
 
   p {
@@ -44,6 +37,10 @@
       font-size: 22px;
       font-weight: 300;
     }
+  }
+
+  strong {
+    font-weight: 500;
   }
 
   a {
