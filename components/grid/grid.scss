@@ -5,8 +5,13 @@
   margin-bottom: 24px;
 
   @include xsm {
-    grid-gap: 20px;
+    grid-gap: 24px 24px;
     grid-template-columns: repeat(3,1fr);
+  }
+
+  @include sm {
+    grid-gap: 24px 32px;
+    grid-template-columns: repeat(4,1fr);
   }
 
   @include md {

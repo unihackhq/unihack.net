@@ -11,7 +11,7 @@ const Hero = () => (
           <span>UNIHACK</span>
           <span className="thin">2019</span>
         </h1>
-        <h2>March 16-17</h2>
+        <h2>March 16-17 @ Telstra Labs</h2>
       </div>
       <ButtonLink href="https://www.facebook.com/events/742383822828074" type="secondary">Check out our event</ButtonLink>
     </div>

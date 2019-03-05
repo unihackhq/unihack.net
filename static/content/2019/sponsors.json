@@ -90,6 +90,24 @@
         "name": "Wade Institute",
         "imagePath": "/wade-institute.png"
       }
+    ],
+    "other": [
+      {
+        "name": ".Co Domains",
+        "imagePath": "/co-domains.png"
+      },
+      {
+        "name": "Splunk",
+        "imagePath": "/splunk.png"
+      },
+      {
+        "name": "Wacom",
+        "imagePath": "/wacom.png"
+      },
+      {
+        "name": "Wolfram",
+        "imagePath": "/wolfram.png"
+      }
     ]
   } 
 }

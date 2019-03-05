@@ -3,7 +3,6 @@ $yellow: #FCC300;
 $red: #D42E2A;
 $grey: #2E383F;
 $light_grey: #F3F4F5;
-$navy: #2C383E;
 $blue: #19607D;
 
 $fonts: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -188,8 +187,15 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   }
 }
 
+@mixin body-size {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @mixin subtitle {
   margin: 0;
   font-style: italic;
   font-size: 20px;
+  margin-bottom: $base * 2;
 }

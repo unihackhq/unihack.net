@@ -34,19 +34,32 @@
       &.platinum {
         background-color: #B9C4CB;
       }
+      
+      &.academic-gold {
+        background-color: $yellow;
+      }
 
       &.silver {
         background-color: #E0E0E0;
       }
 
-      &.academic-gold {
-        background-color: $yellow;
+      &.other {
+        background-color: #D28764;
       }
     }
 
     .primary-companies {
       display: flex;
       justify-content: space-around;
+      align-items: center;
+
+      @include xsm {
+        flex-direction: column;
+      }
+
+      @include md {
+        flex-direction: row;
+      }
       
       .company-section {
         display: flex;

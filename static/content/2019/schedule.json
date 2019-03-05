@@ -1,0 +1,86 @@
+{
+  "saturday": [
+    {
+      "startTime": "2019-03-16 09:30",
+      "endTime": "2019-03-16 09:45",
+      "title": "Arrive at Telstra Labs"
+    },
+    {
+      "startTime": "2019-03-16 09:45",
+      "endTime": "2019-03-16 10:45",
+      "title": "Careers Fair"
+    },
+    {
+      "startTime": "2019-03-16 11:00",
+      "endTime": "2019-03-16 11:45",
+      "title": "Opening Ceremony"
+    },
+    {
+      "startTime": "2019-03-16 12:00",
+      "endTime": "2019-03-16 12:30",
+      "title": "Hacking Begins!"
+    },
+    {
+      "startTime": "2019-03-16 13:00",
+      "endTime": "2019-03-16 14:00",
+      "title": "Lunch"
+    },
+    {
+      "startTime": "2019-03-16 15:30",
+      "endTime": "2019-03-16 17:30",
+      "title": "Mentoring Session 1"
+    },
+    {
+      "startTime": "2019-03-16 19:30",
+      "endTime": "2019-03-16 20:30",
+      "title": "Dinner"
+    },
+    {
+      "startTime": "2019-03-16 22:00",
+      "endTime": "2019-03-16 22:05",
+      "title": "Doors lock"
+    }
+  ],
+  "sunday": [
+    {
+      "startTime": "2019-03-17 06:00",
+      "endTime": "2019-03-17 07:00",
+      "title": "Doors re-open"
+    },
+    {
+      "startTime": "2019-03-17 08:00",
+      "endTime": "2019-03-17 09:00",
+      "title": "Breakfast"
+    },
+    {
+      "startTime": "2019-03-17 09:30",
+      "endTime": "2019-03-17 11:30",
+      "title": "Mentoring Session 2"
+    },
+    {
+      "startTime": "2019-03-17 12:00",
+      "endTime": "2019-03-17 13:00",
+      "title": "Hacking Ends! + Lunch"
+    },
+    {
+      "startTime": "2019-03-17 13:00",
+      "endTime": "2019-03-17 13:30",
+      "title": "Setup Expo Hall"
+    },
+    {
+      "startTime": "2019-03-17 13:30",
+      "endTime": "2019-03-17 16:30",
+      "title": "Expo Hall Opens"
+    },
+    {
+      "startTime": "2019-03-17 16:30",
+      "endTime": "2019-03-17 16:40",
+      "title": "Expo Hall Closes"
+    },
+    {
+      "startTime": "2019-03-17 17:30",
+      "endTime": "2019-03-17 18:30",
+      "title": "Closing Ceremony"
+    }
+  ]
+}
