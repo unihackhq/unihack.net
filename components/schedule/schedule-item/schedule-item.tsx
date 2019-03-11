@@ -12,12 +12,15 @@ const ScheduleItem = (props: Props) => {
   const futureClass = props.isFuture ? 'future' : '';
 
   return (
-    <tr className={`schedule-item ${activeClass} ${futureClass}`}>
-      <td className="schedule-item-indicator-line"/>
-      <td className="schedule-item-indicator"/>
-      <td className="schedule-item-time">{props.scheduleItem.startTime}</td>
-      <td className="schedule-item-title">{props.scheduleItem.title}</td>
-    </tr>
+    <div className={`schedule-item ${activeClass} ${futureClass}`}>
+      <div className="schedule-item-indicator">
+        <div className="schedule-item-indicator-line head"/>
+        <div className="schedule-item-indicator-dot"/>
+        <div className="schedule-item-indicator-line tail"/>
+      </div>
+      <div className="schedule-item-time">{props.scheduleItem.startTime}</div>
+      <div className="schedule-item-title">{props.scheduleItem.title}</div>
+    </div>
   );
 };
 

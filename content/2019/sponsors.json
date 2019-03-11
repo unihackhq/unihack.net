@@ -101,6 +101,10 @@
         "imagePath": "/co-domains.png"
       },
       {
+        "name": "Scorptec",
+        "imagePath": "/scorptec.png"
+      },
+      {
         "name": "Splunk",
         "imagePath": "/splunk.png"
       },

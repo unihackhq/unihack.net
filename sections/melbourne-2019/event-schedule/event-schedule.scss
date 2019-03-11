@@ -67,7 +67,7 @@
           background-color: transparent;
           border: none;
           color: $light_grey;
-          padding: 0 $base;
+          padding: 0 ($base * 2);
           -webkit-appearance: button;
           cursor: pointer;
           outline: none;

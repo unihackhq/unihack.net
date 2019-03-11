@@ -7,8 +7,8 @@ $past-grey: #AFAFAF;
   display: flex;
   align-items: center;
   color: $past-grey;
-  padding: $base 0;
-  border-bottom: 1px solid $past-grey;
+  height: $base * 5;
+  border-bottom: 1px solid lighten($grey, 14%);
   position: relative;
 
   &.active {
@@ -20,68 +20,103 @@ $past-grey: #AFAFAF;
   }
 
   &.active, &.future {
-    .schedule-item-indicator {
+    .schedule-item-indicator-dot {
       border: 4px solid $yellow;
-    }
-
-    .schedule-item-indicator-line {
-      background: $yellow;
     }
   }
 
-  td {
-    padding: 0;
+  &.active {
+    .schedule-item-indicator-line {
+      background: $yellow;
+
+      &.head {
+        background: $past-grey;
+      }
+    }
+    + .active, + .future {
+      .schedule-item-indicator-line {
+        background-color: $yellow;
+      }
+    }
+  }
+
+  &.future {
+    .schedule-item-indicator-line.tail {
+      background-color: $yellow;
+    }
+
+    + .future {
+      .schedule-item-indicator-line {
+        background-color: $yellow;
+      }
+    }
   }
 
   &-indicator {
-    border-radius: 50%;
-    border: 4px solid $past-grey;
-    width: $base * 3;
-    height: $base * 3;
-    position: relative;
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    &-line {
+      width: 14px;
+      height: 100%;
+      margin: -2px 0;
+      background-color: $past-grey;
+      border-left: 4px solid $grey;
+      border-right: 4px solid $grey;
+    }
+
+    &-dot {
+      position: relative;
+      width: $base * 3;
+      height: $base * 3;
+      border-radius: 50%;
+      border: 4px solid $past-grey;
+      flex-shrink: 0;
+    }
     
     @include xsm {
       margin-right: $base;
     }
 
     @include sm {
+      margin-left: $base * 2;
       margin-right: $base * 3;
     }
   }
 
-  &-indicator-line {
-    position: absolute;
-    top: 31px;
-    left: 1px;
-    width: 14px;
-    height: 19px;
-    background: $past-grey;
-    z-index: 0;
-    margin: 0 4px;
-    border-left: 4px solid $grey;
-    border-right: 4px solid $grey;
+  &:first-of-type {
+    .schedule-item-indicator-line.head {
+      background-color: $grey;
+    }
   }
 
   &:last-of-type {
-    .schedule-item-indicator-line {
-      display: none;
+    .schedule-item-indicator-line.tail {
+      z-index: -1;
+      background-color: $grey;
     }
   }
 
   &-time {
     font-weight: 500;
     flex-shrink: 0;
+    padding: $base 0;
 
     @include xsm {
-      margin-right: $base;
+      padding-right: $base;
       flex-basis: 30%;
     }
 
     @include sm {
-      margin-right: $base * 3;
-      flex-basis: 20%;
+      padding-right: $base * 3;
+      flex-basis: 30%;
     }
   }
 
+  &-title {
+    padding: $base 0;
+    width: 100%;
+  }
 }
