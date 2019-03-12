@@ -1,5 +1,6 @@
 import './event-schedule.scss';
 import React from 'react';
+import * as moment from 'moment';
 import Schedule from '../../../components/schedule/schedule';
 import scheduleData from '../../../content/2019/schedule.json';
 import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedule-item.interface';
@@ -14,9 +15,14 @@ type State = {
 class EventSchedule extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
+
+    const validDays = Object.keys(scheduleData);
+    let day = moment().format('dddd').toLowerCase() as Day;
+    day = validDays.includes(day) ? day : 'saturday';
+
     this.state = {
-      day: 'saturday',
-      events: scheduleData.saturday
+      day,
+      events: scheduleData[day]
     };
   }
 
