@@ -38,10 +38,12 @@
         }
         
         @include xsm {
+          padding-top: $base * 3;
           width: 100%;
         }
-  
+        
         @include md {
+          padding-left: $base * 5;
           width: 50%;
         }
       }
