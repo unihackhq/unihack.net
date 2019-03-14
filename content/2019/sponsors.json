@@ -101,6 +101,10 @@
         "imagePath": "/co-domains.png"
       },
       {
+        "name": "Rakuten",
+        "imagePath": "/rakuten.png"
+      },
+      {
         "name": "Scorptec",
         "imagePath": "/scorptec.png"
       },
