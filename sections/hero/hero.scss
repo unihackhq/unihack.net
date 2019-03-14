@@ -45,6 +45,11 @@
         font-weight: 400;
         margin-top: $base * 3;
       }
+
+      a {
+        @include link;
+        text-decoration: underline;
+      }
     }
   }
 }

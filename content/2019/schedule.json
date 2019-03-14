@@ -3,7 +3,7 @@
     {
       "startTime": "2019-03-16 09:30",
       "endTime": "2019-03-16 09:45",
-      "title": "Arrive at Telstra Labs"
+      "title": "Registration"
     },
     {
       "startTime": "2019-03-16 09:45",
@@ -28,7 +28,7 @@
     {
       "startTime": "2019-03-16 15:30",
       "endTime": "2019-03-16 17:30",
-      "title": "Mentoring Session 1"
+      "title": "Ideation Session"
     },
     {
       "startTime": "2019-03-16 19:30",
@@ -38,14 +38,19 @@
     {
       "startTime": "2019-03-16 22:00",
       "endTime": "2019-03-16 22:05",
-      "title": "Doors lock"
+      "title": "Doors Lock"
     }
   ],
   "sunday": [
     {
+      "startTime": "2019-03-17 01:00",
+      "endTime": "2019-03-17 01:30",
+      "title": "Midnight Snack"
+    },
+    {
       "startTime": "2019-03-17 06:00",
       "endTime": "2019-03-17 07:00",
-      "title": "Doors re-open"
+      "title": "Doors Reopen"
     },
     {
       "startTime": "2019-03-17 08:00",
@@ -55,32 +60,42 @@
     {
       "startTime": "2019-03-17 09:30",
       "endTime": "2019-03-17 11:30",
-      "title": "Mentoring Session 2"
+      "title": "Pitching Workshop"
     },
     {
       "startTime": "2019-03-17 12:00",
       "endTime": "2019-03-17 13:00",
-      "title": "Hacking Ends! + Lunch"
+      "title": "Hacking Stops!"
+    },
+    {
+      "startTime": "2019-03-17 12:00",
+      "endTime": "2019-03-17 13:00",
+      "title": "Lunch"
     },
     {
       "startTime": "2019-03-17 13:00",
       "endTime": "2019-03-17 13:30",
-      "title": "Setup Expo Hall"
+      "title": "Expo Setup"
     },
     {
       "startTime": "2019-03-17 13:30",
       "endTime": "2019-03-17 16:30",
-      "title": "Expo Hall Opens"
+      "title": "Expo"
     },
     {
       "startTime": "2019-03-17 16:30",
       "endTime": "2019-03-17 16:40",
-      "title": "Expo Hall Closes"
+      "title": "Expo Ends"
     },
     {
       "startTime": "2019-03-17 17:30",
       "endTime": "2019-03-17 18:30",
       "title": "Closing Ceremony"
+    },
+    {
+      "startTime": "2019-03-17 18:30",
+      "endTime": "2019-03-17 19:00",
+      "title": "End"
     }
   ]
 }
