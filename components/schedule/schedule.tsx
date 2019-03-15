@@ -38,12 +38,13 @@ class Schedule extends React.Component<Props, State> {
 
   // Create an interval to check if the schedule should update
   public componentDidMount() {
+    this.state = { time: moment() };
     this.interval = setInterval(
       () => this.shouldUpdate(),
       60000
     );
   }
-  
+
   public componentWillUnmount() {
     clearInterval(this.interval);
   }
