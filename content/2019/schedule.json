@@ -1,100 +1,100 @@
 {
   "saturday": [
     {
-      "startTime": "2019-03-16 09:30",
-      "endTime": "2019-03-16 09:45",
+      "startTime": "2019-03-16 09:30 +1100",
+      "endTime": "2019-03-16 09:45 +1100",
       "title": "Registration"
     },
     {
-      "startTime": "2019-03-16 09:45",
-      "endTime": "2019-03-16 10:45",
+      "startTime": "2019-03-16 09:45 +1100",
+      "endTime": "2019-03-16 10:45 +1100",
       "title": "Careers Fair"
     },
     {
-      "startTime": "2019-03-16 11:00",
-      "endTime": "2019-03-16 11:45",
+      "startTime": "2019-03-16 11:00 +1100",
+      "endTime": "2019-03-16 11:45 +1100",
       "title": "Opening Ceremony"
     },
     {
-      "startTime": "2019-03-16 12:00",
-      "endTime": "2019-03-16 12:30",
+      "startTime": "2019-03-16 12:00 +1100",
+      "endTime": "2019-03-16 12:30 +1100",
       "title": "Hacking Begins!"
     },
     {
-      "startTime": "2019-03-16 13:00",
-      "endTime": "2019-03-16 14:00",
+      "startTime": "2019-03-16 13:00 +1100",
+      "endTime": "2019-03-16 14:00 +1100",
       "title": "Lunch"
     },
     {
-      "startTime": "2019-03-16 15:30",
-      "endTime": "2019-03-16 17:30",
+      "startTime": "2019-03-16 15:30 +1100",
+      "endTime": "2019-03-16 17:30 +1100",
       "title": "Ideation Session"
     },
     {
-      "startTime": "2019-03-16 19:30",
-      "endTime": "2019-03-16 20:30",
+      "startTime": "2019-03-16 19:30 +1100",
+      "endTime": "2019-03-16 20:30 +1100",
       "title": "Dinner"
     },
     {
-      "startTime": "2019-03-16 22:00",
-      "endTime": "2019-03-16 22:05",
+      "startTime": "2019-03-16 22:00 +1100",
+      "endTime": "2019-03-16 22:05 +1100",
       "title": "Doors Lock"
     }
   ],
   "sunday": [
     {
-      "startTime": "2019-03-17 01:00",
-      "endTime": "2019-03-17 01:30",
+      "startTime": "2019-03-17 01:00 +1100",
+      "endTime": "2019-03-17 01:30 +1100",
       "title": "Midnight Snack"
     },
     {
-      "startTime": "2019-03-17 06:00",
-      "endTime": "2019-03-17 07:00",
+      "startTime": "2019-03-17 06:00 +1100",
+      "endTime": "2019-03-17 07:00 +1100",
       "title": "Doors Reopen"
     },
     {
-      "startTime": "2019-03-17 08:00",
-      "endTime": "2019-03-17 09:00",
+      "startTime": "2019-03-17 08:00 +1100",
+      "endTime": "2019-03-17 09:00 +1100",
       "title": "Breakfast"
     },
     {
-      "startTime": "2019-03-17 09:30",
-      "endTime": "2019-03-17 11:30",
+      "startTime": "2019-03-17 09:30 +1100",
+      "endTime": "2019-03-17 11:30 +1100",
       "title": "Pitching Workshop"
     },
     {
-      "startTime": "2019-03-17 12:00",
-      "endTime": "2019-03-17 13:00",
+      "startTime": "2019-03-17 12:00 +1100",
+      "endTime": "2019-03-17 13:00 +1100",
       "title": "Hacking Stops!"
     },
     {
-      "startTime": "2019-03-17 12:00",
-      "endTime": "2019-03-17 13:00",
+      "startTime": "2019-03-17 12:00 +1100",
+      "endTime": "2019-03-17 13:00 +1100",
       "title": "Lunch"
     },
     {
-      "startTime": "2019-03-17 13:00",
-      "endTime": "2019-03-17 13:30",
+      "startTime": "2019-03-17 13:00 +1100",
+      "endTime": "2019-03-17 13:30 +1100",
       "title": "Expo Setup"
     },
     {
-      "startTime": "2019-03-17 13:30",
-      "endTime": "2019-03-17 16:30",
+      "startTime": "2019-03-17 13:30 +1100",
+      "endTime": "2019-03-17 16:30 +1100",
       "title": "Expo"
     },
     {
-      "startTime": "2019-03-17 16:30",
-      "endTime": "2019-03-17 16:40",
+      "startTime": "2019-03-17 16:30 +1100",
+      "endTime": "2019-03-17 16:40 +1100",
       "title": "Expo Ends"
     },
     {
-      "startTime": "2019-03-17 17:30",
-      "endTime": "2019-03-17 18:30",
+      "startTime": "2019-03-17 17:30 +1100",
+      "endTime": "2019-03-17 18:30 +1100",
       "title": "Closing Ceremony"
     },
     {
-      "startTime": "2019-03-17 18:30",
-      "endTime": "2019-03-17 19:00",
+      "startTime": "2019-03-17 18:30 +1100",
+      "endTime": "2019-03-17 19:00 +1100",
       "title": "End"
     }
   ]

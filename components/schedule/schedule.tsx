@@ -50,7 +50,7 @@ class Schedule extends React.Component<Props, State> {
   }
 
   private convertTime(time: string) {
-    return moment(time, 'YYYY-MM-DD HH:mm');
+    return moment(time, 'YYYY-MM-DD HH:mm Z');
   }
 
   private buildScheduleItems(state: State) {
