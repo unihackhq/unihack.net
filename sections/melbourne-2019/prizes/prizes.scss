@@ -1,0 +1,47 @@
+@import '../../../styles/styles.scss';
+
+.event-page-prizes {
+  background-color: $yellow;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    display: flex;
+    flex-direction: column;
+    padding-top: $base * 6;
+    padding-bottom: $base * 6;
+
+    .section-title {
+      color: $grey;
+    }
+
+    .subtitle {
+      @include subtitle;
+      color: $grey;
+    }
+
+    h2, h3 {
+      color: $grey;
+    }
+
+    .criteria-grid {
+      display: grid;
+      grid-gap: 24px 32px;
+      grid-template-columns: repeat(1,1fr);
+      margin-top: $base * 2;
+
+      @include md {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    .devpost-prompt {
+      margin-top: $base * 2;
+    }
+
+    .btn-link {
+      align-self: flex-start;
+      margin-top: $base * 2;
+    }
+  }
+}
