@@ -51,5 +51,11 @@
         text-decoration: underline;
       }
     }
+    
+    .btn-link {
+      &:not(:first-of-type) {
+        margin-left: $base * 2;
+      }
+    }
   }
 }

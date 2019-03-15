@@ -20,6 +20,7 @@ const Hero = () => (
         </h2>
       </div>
       <ButtonLink href="https://www.facebook.com/events/742383822828074" type="secondary">Check out our event</ButtonLink>
+      <ButtonLink href="https://unihack2019.devpost.com/" type="secondary">Devpost</ButtonLink>
     </div>
   </section>
 );

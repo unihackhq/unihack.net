@@ -105,6 +105,10 @@
         "imagePath": "/rakuten.png"
       },
       {
+        "name": "Razer",
+        "imagePath": "/razer.png"
+      },
+      {
         "name": "Scorptec",
         "imagePath": "/scorptec.png"
       },

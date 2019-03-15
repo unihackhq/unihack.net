@@ -8,6 +8,7 @@ import CityBanner from '../components/city-banner/city-banner';
 import Sponsor from '../components/sponsor/sponsor';
 import Sponsors from '../sections/melbourne-2019/sponsors/sponsors';
 import EventSchedule from '../sections/melbourne-2019/event-schedule/event-schedule';
+import Prizes from '../sections/melbourne-2019/prizes/prizes';
 
 export default () => (
   <div>
@@ -18,6 +19,7 @@ export default () => (
       <Hero/>
       <EventSchedule/>
       <Sponsors/>
+      <Prizes/>
       <EventDescription/>
       <section className="cities">
         <CityBanner city="Melbourne" year="2018" href="https://unihack2018mel.devpost.com/"/>
