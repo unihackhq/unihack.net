@@ -13,17 +13,27 @@ type State = {
 };
 
 class EventSchedule extends React.Component<Props, State> {
+  private defaultDay: Day = 'saturday';
+
   constructor(props: Props) {
     super(props);
 
-    const validDays = Object.keys(scheduleData);
-    let day = moment().format('dddd').toLowerCase() as Day;
-    day = validDays.includes(day) ? day : 'saturday';
-
+    const day = this.defaultDay;
     this.state = {
       day,
       events: scheduleData[day]
     };
+  }
+
+  public componentDidMount() {
+    const validDays = Object.keys(scheduleData);
+    let day = moment().format('dddd').toLowerCase() as Day;
+
+    day = validDays.includes(day) ? day : this.defaultDay;
+    this.setState({
+      day,
+      events: scheduleData[day]
+    });
   }
 
   private setDay = (day: Day) => () => {
