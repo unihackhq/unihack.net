@@ -1,5 +1,5 @@
 {
-  "name": "unihackhq",
+  "name": "unihack.net",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,36 +8,34 @@
     "build": "next build",
     "start": "next start",
     "lint": "tslint **/*.tsx",
-    "export": "next export",
-    "deploy": "gh-pages -b master -d out"
+    "export": "next export"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unihackhq/unihackhq.github.io.git"
+    "url": "git+https://github.com/unihackhq/unihack.net.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/unihackhq/unihackhq.github.io/issues"
+    "url": "https://github.com/unihackhq/unihack.net/issues"
   },
-  "homepage": "https://github.com/unihackhq/unihackhq.github.io#readme",
+  "homepage": "https://github.com/unihackhq/unihack.net#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
     "moment": "^2.24.0",
-    "next": "^8.0.3",
-    "node-sass": "^4.11.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@types/next": "^7.0.6",
-    "@types/react": "^16.7.18",
-    "@types/styled-jsx": "^2.2.7",
-    "gh-pages": "^2.0.1",
-    "tslint": "^5.12.0",
-    "tslint-react": "^3.6.0",
-    "typescript": "^3.2.2"
+    "@types/next": "^8.0.5",
+    "@types/react": "^16.8.16",
+    "@types/styled-jsx": "^2.2.8",
+    "tslint": "^5.16.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.5"
   }
 }
