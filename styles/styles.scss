@@ -1,5 +1,7 @@
 $base: 8px;
-$yellow: #FCC300;
+$primary: #FCC300;
+$secondary: #1F252A;
+
 $red: #D42E2A;
 $grey: #2E383F;
 $light_grey: #F3F4F5;
@@ -80,61 +82,9 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
     :not(:last-of-type){
       margin-right: $base * 2;
+      margin-bottom: 0;
     }
   }
-}
-
-// Buttons
-@mixin button-base {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: $base $base * 2;
-
-  font-family: $fonts;
-  font-size: 16px;
-  font-weight: 500;
-
-  border-radius: 4px;
-  transition: all .2s;
-}
-
-@mixin button-styles($color) {
-  border: 1px solid $color;
-  background-color: $color;
-
-  &:hover {
-    background-color: lighten($color, 7%);
-    cursor: pointer;
-  }
-
-  &:active {
-    background-color: darken($color, 7%);
-  }
-}
-
-// Links
-@mixin link-base($color) {
-  color: $color;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:visited {
-    color: $color;
-  }
-}
-
-@mixin link-underline($color: black) {
-  @include link-base($color);
-  
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@mixin link($color: black) {
-  @include link-base($color);
 }
 
 // Typography
@@ -162,7 +112,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
     }
 
     &.highlighted {
-      background-color: $yellow;
+      background-color: $primary;
       margin-bottom: $base * 3;
       padding: 0 $base * 3;
       padding-bottom: 4px;
@@ -193,9 +143,72 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   line-height: 20px;
 }
 
+@mixin body-bold {
+  @include body-size;
+  font-weight: 500;
+}
+
 @mixin subtitle {
   margin: 0;
   font-style: italic;
   font-size: 20px;
   margin-bottom: $base * 2;
+}
+
+// Buttons
+@mixin button-base {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: $base $base * 3;
+
+  font-family: $fonts;
+  @include body-bold;
+
+  border-radius: 25px;
+  transition: all .2s;
+}
+
+@mixin primary-button {
+  border: 2px solid $primary;
+  color: $primary;
+
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+  }
+}
+
+@mixin secondary-button {
+  border: 2px solid black;
+  color: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+// Links
+@mixin link-base($color) {
+  color: $color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:visited {
+    color: $color;
+  }
+}
+
+@mixin link-underline($color: black) {
+  @include link-base($color);
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin link($color: black) {
+  @include link-base($color);
 }

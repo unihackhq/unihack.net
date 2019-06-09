@@ -1,7 +1,7 @@
 @import '../../styles/styles.scss';
 
 .hero {
-  background-color: $yellow;
+  background-color: $primary;
 
   &-content {
     @include page-margin;
@@ -51,11 +51,10 @@
         text-decoration: underline;
       }
     }
-    
-    .btn-link {
-      &:not(:first-of-type) {
-        margin-left: $base * 2;
-      }
+
+    .actions {
+      @include action-container;
+      margin-top: $base * 4;
     }
   }
 }

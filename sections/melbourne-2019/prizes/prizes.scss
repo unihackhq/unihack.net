@@ -1,7 +1,7 @@
 @import '../../../styles/styles.scss';
 
 .event-page-prizes {
-  background-color: $yellow;
+  background-color: $primary;
 
   &-content {
     @include page-margin;
@@ -12,16 +12,16 @@
     padding-bottom: $base * 6;
 
     .section-title {
-      color: $grey;
+      color: $secondary;
     }
 
     .subtitle {
       @include subtitle;
-      color: $grey;
+      color: $secondary;
     }
 
     h2, h3 {
-      color: $grey;
+      color: $secondary;
     }
 
     .criteria-grid {

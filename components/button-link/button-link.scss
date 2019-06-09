@@ -5,12 +5,10 @@ a.btn-link {
   @include link;
 
   &.primary {
-    @include button-styles($yellow);
-    color: black;
+    @include primary-button;
   }
 
   &.secondary {
-    @include button-styles($grey);
-    color: white;
+    @include secondary-button;
   }
 }

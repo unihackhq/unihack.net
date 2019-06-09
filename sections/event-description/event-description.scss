@@ -12,7 +12,7 @@
   &-content {
     @include page-margin;
     @include heading-sizes;
-    color: $grey;
+    color: $secondary;
 
     h2 {
       text-align: center;

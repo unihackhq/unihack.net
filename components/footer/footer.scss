@@ -1,7 +1,7 @@
 @import '../../styles/styles.scss';
 
 .footer {
-  background-color: $yellow;
+  background-color: $primary;
 
   &-content {
     @include page-margin;
@@ -30,7 +30,7 @@
     &-col {
       display: flex;
       flex-direction: column;
-      color: $grey;
+      color: $secondary;
       line-height: 20px;
 
       .links {

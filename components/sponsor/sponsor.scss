@@ -1,7 +1,7 @@
 @import '../../styles/styles.scss';
 
 .sponsor {
-  background-color: $grey;
+  background-color: $secondary;
 
   &-content {
     @include page-margin;
@@ -17,7 +17,7 @@
     }
 
     span {
-      color: $yellow;
+      color: $primary;
     }
 
     .actions {

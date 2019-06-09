@@ -1,7 +1,7 @@
 @import '../../styles/styles.scss';
 
 .sponsor-prompt {
-  background-color: $grey;
+  background-color: $secondary;
 
   &-content {
     @include page-margin;
@@ -13,12 +13,12 @@
     font-size: 16px;
 
     h2 {
-      color: $yellow;
+      color: $primary;
       margin-bottom: $base;
     }
 
     h3 {
-      color: $yellow;
+      color: $primary;
       font-weight: 400;
       margin-bottom: $base * 2;
     }

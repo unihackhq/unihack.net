@@ -73,9 +73,6 @@ class EventSchedule extends React.Component<Props, State> {
               </div>
               <Schedule data={this.state.events}/>
             </div>
-            <div className="schedule-map">
-              <img src="/static/images/venue-map-2019.png"/>
-            </div>
           </div>
         </div>
       </section>
