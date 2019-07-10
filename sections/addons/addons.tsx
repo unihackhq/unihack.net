@@ -21,7 +21,7 @@ const Addons = () => (
         </Card>
       </div>
       <div className="actions">
-        <ButtonLink type="primary" href="#sponsor-prompt">Interested?</ButtonLink>
+        <ButtonLink type="secondary" href="#sponsor-prompt">Interested?</ButtonLink>
       </div>
     </div>
   </section>

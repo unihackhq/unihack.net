@@ -12,12 +12,12 @@
     padding-bottom: $base * 6;
 
     .section-title {
-      color: $grey;
+      color: $secondary;
     }
 
     .subtitle {
       @include subtitle;
-      color: $grey;
+      color: $secondary;
     }
 
     .tier-title {
@@ -27,7 +27,7 @@
 
     .highlighted {
       &.venue {
-        background-color: $grey;
+        background-color: $secondary;
         color: $light_grey;
       }
 
@@ -36,7 +36,7 @@
       }
       
       &.academic-gold {
-        background-color: $yellow;
+        background-color: $primary;
       }
 
       &.silver {

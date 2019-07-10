@@ -1,7 +1,7 @@
 @import '../../../styles/styles.scss';
 
 .event-page-schedule {
-  background-color: $grey;
+  background-color: $secondary;
 
   &-content {
     @include page-margin;
@@ -76,12 +76,12 @@
           margin-right: $base * 3;
   
           &:hover {
-            color: $yellow;
+            color: $primary;
           }
   
           &.active, &:focus {
-            color: $yellow;
-            border-bottom: 2px solid $yellow;
+            color: $primary;
+            border-bottom: 2px solid $primary;
           }
         }
       }

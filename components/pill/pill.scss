@@ -11,7 +11,7 @@
   font-size: 16px;
 
   &-grey {
-    background-color: $grey;
+    background-color: $secondary;
     color: white;
     z-index: 2;
 
@@ -43,7 +43,7 @@
   }
 
   &-yellow {
-    background-color: $yellow;
+    background-color: $primary;
     text-align: center;
     color: black;
     z-index: 0;
@@ -65,7 +65,7 @@
       font-weight: 500;
 
       &.yellow {
-        color: $yellow;
+        color: $primary;
       }
     }
 
