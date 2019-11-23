@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "",
+      "price": "",
+      "colour": "",
+      "maxCapacity": "",
+      "perks": [],
+      "customPerks": [{ "perkID": "", "content": "" }]
+    }
+  ],
+  "perks": [
+    {
+      "id": 1,
+      "name": "",
+      "description": ""
+    }
+  ]
+}

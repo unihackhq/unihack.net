@@ -5,11 +5,11 @@ import Page from '../../layouts/page/page';
 import Header from '../../components/header/header';
 import SponsorHero from '../../sections/sponsor-hero/sponsor-hero';
 import SponsorInfo from '../../sections/sponsor-info/sponsor-info';
-import TiersTable from '../../sections/tiers-table/tiers-table';
 import Addons from '../../sections/addons/addons';
 import PreviousSponsors from '../../sections/previous-sponsors/previous-sponsors';
 import SponsorPerks from '../../sections/sponsor-perks/sponsor-perks';
 import SponsorPrompt from '../../sections/sponsor-prompt/sponsor-prompt';
+import Table from '../../components/table/table';
 
 export default () => (
   <div>
@@ -20,7 +20,7 @@ export default () => (
       <Header withLogo solid/>
       <SponsorHero/>
       <SponsorInfo/>
-      <TiersTable/>
+      <Table/>
       <Addons/>
       <PreviousSponsors/>
       <SponsorPerks/>
