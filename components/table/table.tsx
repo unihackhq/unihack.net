@@ -1,14 +1,28 @@
 import React from 'react';
 import './table.scss';
 import Column from './column/column';
+import data from '../../content/2020/sponsorship-packages.json';
 
-const Table = () => (
-  <div>
-    <Column title="Bronze" subtitle="" footerText="$750" colour="#FFE4C2"/>
-    <Column title="Silver" subtitle="" footerText="$1,500" colour="#E4E6E9"/>
-    <Column title="Gold" subtitle="max 10 sponsors" footerText="$3,000" colour="#FEE795"/>
-    <Column title="Platinum" subtitle="max 2 sponsors" footerText="$10,000" colour="#A3ADB8"/>
-  </div>
-);
+type Package = {
+    name: string,
+    price: string,
+    colour: string,
+    maxCapacity: string,
+    perks: object,
+    customPerks: object
+};
+
+const Table = () => {
+    const packages = data.packages;
+    return (
+        <div>
+            {packages.map((tier: Package) => {
+                const capacity = parseInt(tier.maxCapacity, 10);
+                const subtitle = capacity > 0 ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}` : '';
+                return (<Column key={tier.name} title={tier.name} subtitle={subtitle} footerText={tier.price} colour={tier.colour}/>);
+            })}
+        </div>
+    );
+};
 
 export default Table;
