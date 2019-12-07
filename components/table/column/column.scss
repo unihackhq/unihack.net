@@ -1,0 +1,42 @@
+@import '../../../styles/styles.scss';
+$subtitleColour: #515151;
+
+.column {
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  
+  width: 124px;
+
+  @include sm {
+    width: 176px;
+  }
+
+  &-header, &-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include heading-sizes;
+    
+    p {
+      font-size: 13px;
+      color: $subtitleColour;
+      margin: 0;
+      line-height: 16px;
+      height: 16px;
+    }
+  }
+
+  .column-divider {
+    width: 100%;
+  }
+
+  &-header {
+    padding: $base * 4 0 $base * 2;
+  }
+
+  &-footer {
+    padding: $base * 4 0;
+  }
+}
