@@ -1,0 +1,17 @@
+@import '../../../styles/styles.scss';
+
+.row {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  padding-left: $base * 2;
+  grid-row: auto;
+
+
+  p {
+    @include body-size;
+    vertical-align: middle;
+    width: 280px;
+  }
+}

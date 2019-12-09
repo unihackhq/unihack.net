@@ -16,7 +16,7 @@ export default () => (
     <Head>
       <title>UNIHACK 2019 — Sponsorship</title>
     </Head>
-    <Page featureBackground>
+    <Page>
       <Header withLogo solid/>
       <SponsorHero/>
       <SponsorInfo/>
