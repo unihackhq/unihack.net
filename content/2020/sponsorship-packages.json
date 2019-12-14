@@ -31,7 +31,8 @@
       "customPerks": [
         { "perkID": 5, "content": "2" },
         { "perkID": 6, "content": "2" }
-      ]    },
+      ]
+    },
     {
       "id": 4,
       "name": "Platinum",
@@ -42,7 +43,8 @@
       "customPerks": [
         { "perkID": 5, "content": "4" },
         { "perkID": 6, "content": "3" }
-      ]    }
+      ]
+    }
   ],
   "perks": [
     {
@@ -77,8 +79,8 @@
     },
     {
       "id": 7,
-      "name": "Your Company Logo on all UNIHACK Merchandise",
-      "description": "including participant handbooks, t-shirts and banners."
+      "name": "Your Company Logo on UNIHACK merch",
+      "description": "Including participant handbooks, t-shirts and banners."
     },
     {
       "id": 8,
@@ -117,7 +119,7 @@
     },
     {
       "id": 15,
-      "name": "Opening & Closing Ceremony Keynote Speech",
+      "name": "Opening & Closing Ceremony Keynote",
       "description": "Kick off the hackathon with a speech by your most esteemed representative."
     },
     {

@@ -6,10 +6,25 @@ $subtitleColour: #515151;
   display: inline-flex;
   flex-direction: column;
   justify-self: end;
+  grid-row: 1 / -1;
 
-  width: 124px;
+  min-width: 80%;
+  margin-right: $base * 2;
+
+  scroll-snap-align: start;
 
   @include sm {
+    min-width: 50%;
+    margin-right: $base * 4;
+  }
+
+  @include md {
+    width: 148px;
+    min-width: auto;
+    margin-right: 0;
+  }
+
+  @include xl {
     width: 176px;
   }
 
@@ -20,6 +35,14 @@ $subtitleColour: #515151;
     align-items: center;
 
     @include heading-sizes;
+
+    h3 {
+      font-size: 18px;
+
+      @include md {
+        font-size: 24px;
+      }
+    }
 
     p {
       font-size: 13px;

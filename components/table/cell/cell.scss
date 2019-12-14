@@ -8,4 +8,9 @@
   align-items: center;
 
   margin-bottom: $base * 2;
+
+  p {
+    @include body-bold;
+    font-size: 20px;
+  }
 }

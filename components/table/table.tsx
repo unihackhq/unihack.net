@@ -27,26 +27,28 @@ const Table = () => {
           );
         })}
       </div>
-      {packages.map((tier: PackageI) => {
-        const capacity = parseInt(tier.maxCapacity, 10);
-        const subtitle =
-          capacity > 0
-            ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}`
-            : '';
-        return (
-          <Column
-            key={tier.id}
-            title={tier.name}
-            subtitle={subtitle}
-            footerText={tier.price}
-            colour={tier.colour}
-            id={tier.id}
-            perks={tier.perks}
-            customPerks={tier.customPerks}
-            totalPerks={totalPerks}
-          />
-        );
-      })}
+      <div className="columns">
+        {packages.map((tier: PackageI) => {
+          const capacity = parseInt(tier.maxCapacity, 10);
+          const subtitle =
+            capacity > 0
+              ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}`
+              : '';
+          return (
+            <Column
+              key={tier.id}
+              title={tier.name}
+              subtitle={subtitle}
+              footerText={tier.price}
+              colour={tier.colour}
+              id={tier.id}
+              perks={tier.perks}
+              customPerks={tier.customPerks}
+              totalPerks={totalPerks}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

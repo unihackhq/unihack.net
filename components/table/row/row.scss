@@ -7,11 +7,20 @@
   background-color: rgba($color: #fff, $alpha: 0.5);
   padding-left: $base * 2;
   grid-row: auto;
-
+  border-radius: 20px;
 
   p {
     @include body-size;
     vertical-align: middle;
-    width: 280px;
+    width: 50%;
+    font-size: 14px;
+
+    @include sm {
+      font-size: 16px;
+    }
+
+    @include md {
+      width: 240px
+    }
   }
 }
