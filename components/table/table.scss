@@ -1,18 +1,17 @@
 @import '../../styles/styles.scss';
 
 .table {
-  @include page-margin;
-
   display: grid;
   width: 100%;
   grid-template-columns: 50% auto;
   column-gap: $base * 2;
-  row-gap: $base * 2;
+  row-gap: $base;
   position: relative;
 
   @include md {
     grid-template-columns: 240px auto;
     column-gap: $base * 3;
+    row-gap: $base * 2;
   }
 
   .rows {
@@ -20,9 +19,13 @@
     width: 100%;
     grid-column: 1 / span 5;
     grid-row: 2 / auto;
-    row-gap: $base * 2;
+    row-gap: $base;
     z-index: -1;
     position: absolute;
+
+    @include md {
+      row-gap: $base * 2;
+    }
   }
 
   .columns {

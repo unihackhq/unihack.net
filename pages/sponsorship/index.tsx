@@ -9,7 +9,7 @@ import Addons from '../../sections/addons/addons';
 import PreviousSponsors from '../../sections/previous-sponsors/previous-sponsors';
 import SponsorPerks from '../../sections/sponsor-perks/sponsor-perks';
 import SponsorPrompt from '../../sections/sponsor-prompt/sponsor-prompt';
-import Table from '../../components/table/table';
+import TiersTable from '../../sections/tiers-table/tiers-table';
 
 export default () => (
   <div>
@@ -17,14 +17,14 @@ export default () => (
       <title>UNIHACK 2019 — Sponsorship</title>
     </Head>
     <Page>
-      <Header withLogo solid/>
-      <SponsorHero/>
-      <SponsorInfo/>
-      <Table/>
-      <Addons/>
-      <PreviousSponsors/>
-      <SponsorPerks/>
-      <SponsorPrompt/>
+      <Header withLogo solid />
+      <SponsorHero />
+      <SponsorInfo />
+      <TiersTable />
+      <Addons />
+      <PreviousSponsors />
+      <SponsorPerks />
+      <SponsorPrompt />
     </Page>
   </div>
 );

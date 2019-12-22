@@ -7,10 +7,14 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: $base * 2;
+  margin-bottom: $base;
+
+  @include md {
+    margin-bottom: $base * 2;
+  }
 
   p {
     @include body-bold;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
