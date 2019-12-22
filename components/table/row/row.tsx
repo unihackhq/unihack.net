@@ -1,8 +1,8 @@
 import React from 'react';
 import './row.scss';
-import { PerkI } from '../perk.interface';
+import { RowI } from './row.interface';
 
-const Row = (props: PerkI) => (
+const Row = (props: RowI) => (
   <div className="row">
     <p>{props.name}</p>
   </div>

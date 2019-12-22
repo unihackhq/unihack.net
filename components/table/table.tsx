@@ -2,49 +2,40 @@ import React from 'react';
 import './table.scss';
 import Column from './column/column';
 import Row from './row/row';
-import { PackageI } from './package.interface';
-import { PerkI } from './perk.interface';
-import data from '../../content/2020/sponsorship-packages.json';
+import { ColumnI } from './column/column.interface';
+import { RowI } from './row/row.interface';
 
-const Table = () => {
-  const packages: PackageI[] = data.packages;
-  const perks: PerkI[] = data.perks;
-  const totalPerks = data.perks.length;
+type Props = {
+  columns: ColumnI[];
+  rows: RowI[];
+};
+
+const Table = (props: Props) => {
+  const totalRows = props.rows.length;
 
   return (
     <div
       className="table"
-      style={{ gridTemplateRows: `96px repeat(${totalPerks}, 40px) 96px` }}
+      style={{ gridTemplateRows: `96px repeat(${totalRows}, 40px) 96px` }}
     >
       <div className="rows">
-        {perks.map((perk: PerkI) => {
+        {props.rows.map((row: RowI) => {
           return (
-            <Row
-              key={perk.id}
-              name={perk.name}
-              description={perk.description}
-            />
+            <Row key={row.id} name={row.name} description={row.description} />
           );
         })}
       </div>
       <div className="columns">
-        {packages.map((tier: PackageI) => {
-          const capacity = parseInt(tier.maxCapacity, 10);
-          const subtitle =
-            capacity > 0
-              ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}`
-              : '';
+        {props.columns.map((column: ColumnI) => {
           return (
             <Column
-              key={tier.id}
-              title={tier.name}
-              subtitle={subtitle}
-              footerText={tier.price}
-              colour={tier.colour}
-              id={tier.id}
-              perks={tier.perks}
-              customPerks={tier.customPerks}
-              totalPerks={totalPerks}
+              key={column.id}
+              title={column.title}
+              subtitle={column.subtitle}
+              footerText={column.footerText}
+              accentColour={column.accentColour}
+              id={column.id}
+              cellData={column.cellData}
             />
           );
         })}

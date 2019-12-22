@@ -1,19 +1,10 @@
 import React from 'react';
 import './column.scss';
 import Cell from '../cell/cell';
+import { CellI } from '../cell/cell.interface';
+import { ColumnI } from './column.interface';
 
-type Props = {
-  id: number;
-  title: string;
-  subtitle: string;
-  colour: string;
-  footerText: string;
-  perks: number[];
-  customPerks: Array<{ perkID: number; content: string }>;
-  totalPerks: number;
-};
-
-const Column = (props: Props) => (
+const Column = (props: ColumnI) => (
   <div className="column" style={{ gridColumn: props.id }}>
     <div className="column-header">
       <h3>{props.title}</h3>
@@ -21,12 +12,12 @@ const Column = (props: Props) => (
     </div>
     <div
       className="column-divider"
-      style={{ borderTop: `4px solid ${props.colour}` }}
+      style={{ borderTopColor: props.accentColour }}
     />
-    <div className="column-content">{createCells(props)}</div>
+    <div className="column-content">{createCells(props.cellData)}</div>
     <div
       className="column-divider"
-      style={{ borderTop: `4px solid ${props.colour}` }}
+      style={{ borderTopColor: props.accentColour }}
     />
     <div className="column-footer">
       <h3>{props.footerText}</h3>
@@ -34,36 +25,14 @@ const Column = (props: Props) => (
   </div>
 );
 
-const generateKey = (prefix: string, value: number) => {
-  return `${prefix}-${value}`;
-};
-
-const createCells = (props: Props) => {
+const createCells = (cellData: CellI[]) => {
+  console.log(cellData);
   const cells: JSX.Element[] = [];
-
-  // Active perks
-  props.perks.map(perk => {
-    cells[perk - 1] = (
-      <Cell key={generateKey(props.title, perk - 1)} checked={true} />
+  cellData.map((cell: CellI, index: number) => {
+    cells[index] = (
+      <Cell key={cell.key} checked={cell.isChecked} content={cell.content} />
     );
   });
-
-  // Custom perks
-  props.customPerks.map(perk => {
-    cells[perk.perkID - 1] = (
-      <Cell
-        key={generateKey(props.title, perk.perkID - 1)}
-        content={perk.content}
-      />
-    );
-  });
-
-  // Inactive perks
-  while (cells.length < props.totalPerks) {
-    cells[cells.length] = (
-      <Cell key={generateKey(props.title, cells.length + 1)} checked={false} />
-    );
-  }
 
   return cells;
 };

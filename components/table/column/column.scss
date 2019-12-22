@@ -61,6 +61,8 @@ $subtitleColour: #515151;
 
   &-divider {
     width: 100%;
+    border-top-width: 4px;
+    border-top-style: solid;
   }
 
   &-header {
