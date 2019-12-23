@@ -26,7 +26,6 @@ const Column = (props: ColumnI) => (
 );
 
 const createCells = (cellData: CellI[]) => {
-  console.log(cellData);
   const cells: JSX.Element[] = [];
   cellData.map((cell: CellI, index: number) => {
     cells[index] = (

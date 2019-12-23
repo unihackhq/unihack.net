@@ -6,7 +6,7 @@ const SponsorInfo = () => (
     <div className="sponsor-info-content">
       <h2>What is UNIHACK?</h2>
       <p className="details no-margin">
-        When: <strong>March 16 - 17</strong>
+        When: <strong>March 14 - 15, 2020</strong>
       </p>
       <p className="details no-margin">
         Where: <strong>Melbourne</strong>
