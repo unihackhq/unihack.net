@@ -5,20 +5,47 @@ $subtitleColour: #515151;
   background-color: white;
   display: inline-flex;
   flex-direction: column;
-  
-  width: 124px;
+  justify-self: end;
+  grid-row: 1 / -1;
+
+  min-width: 80%;
+  margin-right: $base * 2;
+
+  scroll-snap-align: start;
 
   @include sm {
+    min-width: 50%;
+    margin-right: $base * 4;
+  }
+
+  @include md {
+    width: 148px;
+    min-width: auto;
+    margin-right: 0;
+  }
+
+  @include xl {
     width: 176px;
   }
 
-  &-header, &-footer {
+  &-header,
+  &-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @include heading-sizes;
-    
+
+    h3 {
+      font-size: 18px;
+      line-height: 22px;
+
+      @include md {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
     p {
       font-size: 13px;
       color: $subtitleColour;
@@ -26,14 +53,20 @@ $subtitleColour: #515151;
       line-height: 16px;
       height: 16px;
     }
+
+    +.column-divider {
+      padding-bottom: $base * 2;
+    }
   }
 
-  .column-divider {
+  &-divider {
     width: 100%;
+    border-top-width: 4px;
+    border-top-style: solid;
   }
 
   &-header {
-    padding: $base * 4 0 $base * 2;
+    padding: $base * 4 0 14px;
   }
 
   &-footer {

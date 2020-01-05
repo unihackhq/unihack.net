@@ -1,26 +1,45 @@
 import React from 'react';
 import './table.scss';
 import Column from './column/column';
-import data from '../../content/2020/sponsorship-packages.json';
+import Row from './row/row';
+import { ColumnI } from './column/column.interface';
+import { RowI } from './row/row.interface';
 
-type Package = {
-  name: string,
-  price: string,
-  colour: string,
-  maxCapacity: string,
-  perks: object,
-  customPerks: object
+type Props = {
+  columns: ColumnI[];
+  rows: RowI[];
 };
 
-const Table = () => {
-  const packages = data.packages;
+const Table = (props: Props) => {
+  const totalRows = props.rows.length;
+
   return (
-    <div>
-      {packages.map((tier: Package) => {
-        const capacity = parseInt(tier.maxCapacity, 10);
-        const subtitle = capacity > 0 ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}` : '';
-        return (<Column key={tier.name} title={tier.name} subtitle={subtitle} footerText={tier.price} colour={tier.colour}/>);
-      })}
+    <div
+      className="table"
+      style={{ gridTemplateRows: `96px repeat(${totalRows}, 40px) 96px` }}
+    >
+      <div className="rows">
+        {props.rows.map((row: RowI) => {
+          return (
+            <Row key={row.id} name={row.name} description={row.description} />
+          );
+        })}
+      </div>
+      <div className="columns">
+        {props.columns.map((column: ColumnI) => {
+          return (
+            <Column
+              key={column.id}
+              title={column.title}
+              subtitle={column.subtitle}
+              footerText={column.footerText}
+              accentColour={column.accentColour}
+              id={column.id}
+              cellData={column.cellData}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

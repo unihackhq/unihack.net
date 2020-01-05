@@ -1,16 +1,12 @@
 {
   "defaultSeverity": "error",
-  "extends": [
-    "tslint:recommended",
-    "tslint-react"
-  ],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "jsRules": {},
   "linterOptions": {
-    "exclude": [
-      "node_modules/**/*.ts"
-    ]
+    "exclude": ["node_modules/**/*.ts"]
   },
   "rules": {
+    "prettier": true,
     "interface-name": false,
     "interface-over-type-literal": false,
     "jsx-boolean-value": false,
@@ -23,7 +19,8 @@
     "object-literal-sort-keys": false,
     "one-variable-per-declaration": false,
     "ordered-imports": [
-      false, {
+      false,
+      {
         "grouped-imports": false,
         "import-sources-order": "any",
         "named-imports-order": "case-insensitive"
