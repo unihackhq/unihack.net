@@ -20,18 +20,19 @@
       color: $secondary;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
       color: $secondary;
     }
 
     .criteria-grid {
       display: grid;
-      grid-gap: 24px 32px;
-      grid-template-columns: repeat(1,1fr);
+      gap: 24px 32px;
+      grid-template-columns: repeat(1, 1fr);
       margin-top: $base * 2;
 
       @include md {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
