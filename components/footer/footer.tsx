@@ -10,7 +10,7 @@ const Footer = () => (
           <Link href="/terms"><a>Terms of Service</a></Link>
         </div>
         <p>Proudly made in Melbourne 🇦🇺</p>
-        <p>© 2019 UNIHACK Incorporated. All rights reserved.</p>
+        <p>© 2020 UNIHACK Incorporated. All rights reserved.</p>
       </div>
       <div className="footer-content-col second">
         <div className="links">
