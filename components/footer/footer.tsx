@@ -8,16 +8,12 @@ const Footer = () => (
         <div className="links">
           <Link href="/privacy"><a>Privacy Policy</a></Link>
           <Link href="/terms"><a>Terms of Service</a></Link>
+          <Link href="mailto:team@unihack.net?subject=General Enquiry"><a>Contact Us</a></Link>
         </div>
-        <p>Proudly made in Melbourne 🇦🇺</p>
-        <p>© 2020 UNIHACK Incorporated. All rights reserved.</p>
       </div>
       <div className="footer-content-col second">
-        <div className="links">
-          <a href="mailto:team@unihack.net">team@unihack.net</a>
-        </div>
-        <p>ABN: 85 369 194 065</p>
-        <p>101/6 Lord Street, Richmond, VIC 3121</p>
+        <p>Proudly made in Melbourne 🇦🇺</p>
+        <p>© 2020 UNIHACK Incorporated</p>
       </div>
     </div>
   </section>
