@@ -6,9 +6,6 @@ import Hero from '../sections/hero/hero';
 import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '../components/city-banner/city-banner';
 import Sponsor from '../components/sponsor/sponsor';
-import Sponsors from '../sections/melbourne-2019/sponsors/sponsors';
-import EventSchedule from '../sections/melbourne-2019/event-schedule/event-schedule';
-import Prizes from '../sections/melbourne-2019/prizes/prizes';
 
 export default () => (
   <div>
@@ -17,12 +14,9 @@ export default () => (
     </Head>
     <Page featureBackground>
       <Hero/>
-      <EventSchedule/>
-      <Sponsors/>
-      <Prizes/>
       <EventDescription/>
       <section className="cities">
-        <CityBanner city="Melbourne" year="2018" href="https://unihack2018mel.devpost.com/"/>
+        <CityBanner city="Melbourne" year="2019" href="https://unihack2019.devpost.com/"/>
         <CityBanner city="Sydney" year="2018" href="https://unihack2018syd.devpost.com/" left/>
       </section>
       <Sponsor/>
