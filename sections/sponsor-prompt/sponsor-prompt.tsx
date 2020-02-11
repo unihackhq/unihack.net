@@ -8,11 +8,10 @@ const SponsorPrompt = () => (
       <h3>Contact us for more information</h3>
       <p>
         We're happy to discuss customisations according to your needs. Send us
-        an email at
+        an email at{' '}
         <a href="mailto:sponsorship@melbourne.unihack.net">
-          {' '}
-          sponsorship@melbourne.unihack.net{' '}
-        </a>
+          sponsorship@melbourne.unihack.net
+        </a>{' '}
         and we’ll follow-up within 24 hours.
       </p>
       <p>

@@ -3,7 +3,7 @@ import Header from '../../components/header/header';
 
 const Hero = () => (
   <section className="hero">
-    <Header/>
+    <Header />
     <div className="hero-content">
       <div className="hero-content-title">
         <h1 className="title">
@@ -11,7 +11,7 @@ const Hero = () => (
           <span className="thin">2020</span>
         </h1>
         <h2>
-          <span>March 14-15</span>
+          <span>March 28-29</span>
         </h2>
       </div>
     </div>
