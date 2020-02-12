@@ -27,7 +27,7 @@ const SponsorPrompt = () => (
         </ButtonLink>
         <ButtonLink
           type="primary"
-          href="https://drive.google.com/file/d/0B9ZGzCFzWB_BUnFzTE9QbDhTV3lrTjRrQ3dSSjVnbHQydFEw/view"
+          href="https://drive.google.com/file/d/1j6YP-lWaBPJ8S1XWWrL6N78USNloTNNw/view"
           target="_blank"
         >
           Download prospectus
