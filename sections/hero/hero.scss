@@ -27,7 +27,7 @@
         @include xsm {
           font-size: 60px;
         }
-        
+
         @include sm {
           font-size: 120px;
         }
@@ -55,6 +55,15 @@
     .actions {
       @include action-container;
       margin-top: $base * 4;
+
+      a.fb-link {
+        @include body-bold;
+        @include link-underline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+      }
     }
   }
 }
