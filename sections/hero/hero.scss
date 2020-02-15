@@ -7,8 +7,8 @@
     @include page-margin;
 
     @include xsm {
-      padding-top: $base * 4;
-      padding-bottom: $base * 8;
+      padding-top: $base * 12;
+      padding-bottom: $base * 4;
     }
 
     @include sm {
@@ -22,6 +22,7 @@
 
       h1 {
         margin: 0;
+        line-height: 1;
         font-weight: 500;
 
         @include xsm {
@@ -44,6 +45,7 @@
       h2 {
         font-weight: 400;
         margin-top: $base * 3;
+        text-align: left;
       }
 
       a {

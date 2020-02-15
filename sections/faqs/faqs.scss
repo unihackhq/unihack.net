@@ -1,0 +1,46 @@
+@import '../../styles/styles.scss';
+
+.faqs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: $base * 7;
+  padding-bottom: $base * 7;
+  font-size: 18px;
+  border-top: 1px solid #d0d0d0;
+  background-color: white;
+
+  &-content {
+    @include page-margin;
+    @include heading-sizes;
+    color: $secondary;
+
+    h2 {
+      margin-bottom: $base * 6;
+    }
+  }
+
+  &-questions-grid {
+    display: grid;
+    grid-column-gap: $base * 6;
+    grid-row-gap: $base * 4;
+    grid-template-columns: 1fr;
+
+    @include sm {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include md {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h3 {
+      font-size: 21px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+}

@@ -10,3 +10,21 @@
     flex-direction: row;
   }
 }
+
+#mlh-trust-badge {
+  display: block;
+  max-width: 120px;
+  min-width: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+
+  @include xsm {
+    position: absolute;
+    left: 16px;
+  }
+
+  @include md {
+    left: 60px;
+  }
+}

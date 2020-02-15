@@ -1,44 +1,61 @@
 $base: 8px;
-$primary: #FCC300;
-$secondary: #1F252A;
+$primary: #fcc300;
+$secondary: #1f252a;
 
-$red: #D42E2A;
-$grey: #2E383F;
-$light_grey: #F3F4F5;
-$blue: #19607D;
+$red: #d42e2a;
+$grey: #2e383f;
+$light_grey: #f3f4f5;
+$blue: #19607d;
 
-$fonts: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$fontsBasic: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$fonts: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+$fontsBasic: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
 // Breakpoints
 @mixin xsm {
-  @media (min-width: 0em) { @content; }
+  @media (min-width: 0em) {
+    @content;
+  }
 }
 
 @mixin ksm {
-  @media (min-width: 22em) { @content; }  //352px
+  @media (min-width: 22em) {
+    @content;
+  } //352px
 }
 
 @mixin sm {
-  @media (min-width: 37.5em) { @content; }  //600px
+  @media (min-width: 37.5em) {
+    @content;
+  } //600px
 }
 
 @mixin md {
-  @media (min-width: 50em) { @content; }  //800px
+  @media (min-width: 50em) {
+    @content;
+  } //800px
 }
 
 @mixin lg {
-  @media (min-width: 64em) { @content; }  //1024px
+  @media (min-width: 64em) {
+    @content;
+  } //1024px
 }
 
 @mixin xl {
-  @media (min-width: 70em) { @content; }  //1120px
+  @media (min-width: 70em) {
+    @content;
+  } //1120px
 }
 
 @mixin xxl {
-  @media (min-width: 80em) { @content; }  //1280px
+  @media (min-width: 80em) {
+    @content;
+  } //1280px
 }
 
 @mixin page-margin {
@@ -71,7 +88,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   @include xsm {
     flex-direction: column;
 
-    :not(:last-of-type){
+    :not(:last-of-type) {
       margin-bottom: $base * 2;
     }
   }
@@ -80,7 +97,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
     flex-direction: row;
     margin-bottom: 0;
 
-    :not(:last-of-type){
+    :not(:last-of-type) {
       margin-right: $base * 3;
       margin-bottom: 0;
     }
@@ -100,6 +117,10 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
     font-size: 32px;
     font-weight: 500;
 
+    @include sm {
+      text-align: center;
+    }
+
     &.section-title {
       font-weight: 700;
       text-transform: uppercase;
@@ -108,7 +129,6 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
       @include md {
         font-size: 80px;
       }
-      
     }
 
     &.highlighted {
@@ -167,7 +187,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   @include body-bold;
 
   border-radius: 25px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 @mixin primary-button {
@@ -203,7 +223,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
 @mixin link-underline($color: black) {
   @include link-base($color);
-  
+
   &:hover {
     text-decoration: underline;
   }
