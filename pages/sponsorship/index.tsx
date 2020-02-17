@@ -14,7 +14,7 @@ import TiersTable from '../../sections/tiers-table/tiers-table';
 export default () => (
   <div>
     <Head>
-      <title>UNIHACK 2019 — Sponsorship</title>
+      <title>UNIHACK 2020 — Sponsorship</title>
     </Head>
     <Page>
       <Header withLogo solid />
