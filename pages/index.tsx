@@ -32,16 +32,5 @@ export default () => (
       </section>
       <Sponsor />
     </Page>
-    <a
-      id="mlh-trust-badge"
-      href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=black"
-      target="_blank"
-    >
-      <img
-        src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-black.svg"
-        alt="Major League Hacking 2020 Hackathon Season"
-        style={{ width: '100%' }}
-      />
-    </a>
   </div>
 );

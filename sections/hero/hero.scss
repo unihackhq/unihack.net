@@ -5,6 +5,7 @@
 
   &-content {
     @include page-margin;
+    position: relative;
 
     @include xsm {
       padding-top: $base * 12;
@@ -16,35 +17,52 @@
       padding-bottom: $base * 12;
     }
 
+    &-logo {
+      width: 72px;
+      height: 96px;
+      margin-bottom: $base * 4;
+
+      @include md {
+        float: left;
+        width: 148px;
+        height: 196px;
+        margin-left: -200px;
+      }
+    }
+
     &-title {
       @include heading-sizes;
       margin-bottom: $base * 2;
 
+      @include md {
+        padding-left: 200px;
+      }
+
       h1 {
         margin: 0;
-        line-height: 1;
-        font-weight: 500;
+        letter-spacing: -3px;
+        font-weight: 300;
 
         @include xsm {
           font-size: 60px;
+          line-height: 40px;
         }
 
-        @include sm {
+        @include md {
           font-size: 120px;
+          line-height: 90px;
         }
 
         span {
           display: block;
-        }
-
-        .thin {
-          font-weight: 300;
+          font-weight: 500;
+          margin-bottom: $base * 2;
         }
       }
 
       h2 {
         font-weight: 400;
-        margin-top: $base * 3;
+        margin-top: $base * 4;
         text-align: left;
       }
 
@@ -58,6 +76,10 @@
       @include action-container;
       margin-top: $base * 4;
 
+      @include md {
+        padding-left: 200px;
+      }
+
       a.fb-link {
         @include body-bold;
         @include link-underline;
@@ -67,5 +89,27 @@
         height: 50px;
       }
     }
+  }
+}
+
+#mlh-trust-badge {
+  display: block;
+  width: 70px;
+  z-index: 10000;
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+  transition: all 0.2s;
+
+  @include xsm {
+    top: $base * -8;
+  }
+
+  @include sm {
+    top: $base * -12;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
