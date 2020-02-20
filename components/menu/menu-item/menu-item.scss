@@ -16,7 +16,9 @@
     font-weight: 500;
     text-transform: uppercase;
 
-    @include link;
+    & a {
+      @include link;
+    }
 
     &:hover {
       background-color: darken(white, 7%);
@@ -29,8 +31,6 @@
   }
 
   @include md {
-    @include link-underline;
-
     margin-bottom: 0;
     padding: 0;
 
@@ -39,7 +39,11 @@
     font-weight: normal;
     text-transform: none;
 
-    &:hover {
+    & a {
+      @include link-underline;
+    }
+
+    & a:hover {
       background-color: transparent;
       transform: none;
     }
@@ -48,5 +52,4 @@
       margin-left: $base * 5;
     }
   }
-  
 }
