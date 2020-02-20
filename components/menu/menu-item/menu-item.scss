@@ -20,7 +20,7 @@
       @include link;
     }
 
-    &:hover {
+    & a:hover {
       background-color: darken(white, 7%);
       transform: translateY(1px);
     }
