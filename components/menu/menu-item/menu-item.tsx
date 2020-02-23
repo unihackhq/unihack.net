@@ -4,16 +4,16 @@ import Link from 'next/link';
 import './menu-item.scss';
 
 type Props = {
-  href: string,
-  children: ReactNode
+  href: string;
+  children: ReactNode;
 };
 
 const MenuItem = (props: Props) => (
-  <Link href={props.href}>
-    <a className="menu-item">
-      <li>{props.children}</li>
-    </a>
-  </Link>
+  <li className="menu-item">
+    <Link href={props.href}>
+      <a>{props.children}</a>
+    </Link>
+  </li>
 );
 
 export default MenuItem;

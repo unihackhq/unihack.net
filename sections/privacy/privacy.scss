@@ -16,6 +16,8 @@
     align-items: center;
 
     p {
+      margin-top: 0;
+      margin-bottom: $base * 3;
       @include xsm {
         font-size: 16px;
         font-weight: 400;

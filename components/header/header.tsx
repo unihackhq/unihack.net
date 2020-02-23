@@ -5,25 +5,28 @@ import Menu from '../menu/menu';
 import { MenuItemI } from '../menu/menu-item/menu-item.interface';
 
 type Props = {
-  withLogo?: boolean,
-  solid?: boolean
+  withLogo?: boolean;
+  solid?: boolean;
 };
 
 type State = { isMenuOpen: boolean };
 
 const Logo = () => (
-  <Link href="/">
+  <Link href="/" passHref>
     <a className="header-logo-content">
-      <img className="header-logo-content-img" src={'/static/images/unihack.svg'}/>
+      <img
+        className="header-logo-content-img"
+        src={'/static/images/unihack.svg'}
+      />
       <h2 className="header-logo-content-name">UNIHACK</h2>
     </a>
   </Link>
 );
 
 const menuItems: MenuItemI[] = [
-  {text: 'About', href: '/about'},
-  {text: 'Sponsor', href: '/sponsorship'},
-  {text: 'Blog', href: 'https://medium.com/unihack-blog'}
+  { text: 'About', href: '/about' },
+  { text: 'Sponsor', href: '/sponsorship' },
+  { text: 'Blog', href: 'https://medium.com/unihack-blog' }
 ];
 
 class Header extends React.Component<Props, State> {
@@ -33,17 +36,21 @@ class Header extends React.Component<Props, State> {
   }
 
   private toggleMenu = () => {
-    this.setState({isMenuOpen: !this.state.isMenuOpen});
-  }
+    this.setState({ isMenuOpen: !this.state.isMenuOpen });
+  };
 
   public render() {
     return (
       <div className={`header ${this.props.solid ? 'solid' : ''}`}>
         <div className="header-content">
           <div className="header-logo">
-            { this.props.withLogo ? <Logo/> : '' }
+            {this.props.withLogo ? <Logo /> : ''}
           </div>
-          <Menu items={menuItems} isOpen={this.state.isMenuOpen} onClick={this.toggleMenu}/>
+          <Menu
+            items={menuItems}
+            isOpen={this.state.isMenuOpen}
+            onClick={this.toggleMenu}
+          />
         </div>
       </div>
     );

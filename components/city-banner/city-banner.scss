@@ -6,11 +6,11 @@
   @include heading-sizes;
   @include link-underline;
 
-  &.left {
+  &.left h2 {
     text-align: left;
   }
 
-  &.right {
+  &.right h2 {
     @include xsm {
       text-align: left;
     }

@@ -2,26 +2,8 @@
 
 .menu-item {
   @include xsm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 40px;
+    display: block;
     margin-bottom: $base + 4px;
-    padding: $base * 2;
-    border-radius: 20px;
-
-    background-color: white;
-    box-shadow: $floatingShadow;
-    font-weight: 500;
-    text-transform: uppercase;
-
-    @include link;
-
-    &:hover {
-      background-color: darken(white, 7%);
-      transform: translateY(1px);
-    }
   }
 
   @include sm {
@@ -29,24 +11,49 @@
   }
 
   @include md {
-    @include link-underline;
-
     margin-bottom: 0;
-    padding: 0;
-
-    background-color: transparent;
-    box-shadow: none;
-    font-weight: normal;
-    text-transform: none;
-
-    &:hover {
-      background-color: transparent;
-      transform: none;
-    }
-
     &:not(:first-of-type) {
       margin-left: $base * 5;
     }
   }
-  
+
+  & a {
+    @include xsm {
+      @include link;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: $base * 2;
+      height: 40px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: $floatingShadow;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    @include md {
+      display: block;
+      height: auto;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      box-shadow: none;
+      font-weight: normal;
+      text-transform: none;
+    }
+
+    &:hover {
+      @include xsm {
+        background-color: darken(white, 7%);
+        transform: translateY(1px);
+      }
+
+      @include md {
+        text-decoration: underline;
+        background-color: transparent;
+        transform: none;
+      }
+    }
+  }
 }
