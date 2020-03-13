@@ -1,0 +1,27 @@
+@import '../../styles/styles.scss';
+
+.alert {
+  background: #d50000;
+  color: white;
+  font-size: 1.125rem;
+
+  @include xsm {
+    padding: $base * 4 $base * 2;
+    text-align: left;
+  }
+
+  @include sm {
+    padding: $base * 4;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  span {
+    font-weight: 600;
+    display: block;
+  }
+}
