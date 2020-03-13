@@ -12,22 +12,38 @@ const Hero = () => (
           <span>UNIHACK</span> 2020
         </h1>
         <h2>
-          <span>March 28-29</span>
+          <span>POSTPONED</span>
         </h2>
       </div>
       <div className="actions">
         <ButtonLink
-          type="secondary"
-          href="https://www.eventbrite.com.au/e/unihack-melbourne-2020-tickets-92874212269"
-        >
-          Get tickets
+            type="secondary"
+            href="https://www.notion.so/unihack/UNIHACK-2020-and-COVID-19-405d863cb8904b22837ecc85e577d9c9"
+          >
+          Latest Updates
         </ButtonLink>
-        <a
-          className="fb-link"
-          href="https://www.facebook.com/events/874105723059342/"
-        >
-          View Facebook event
-        </a>
+        <ButtonLink
+            type="secondary"
+            href="https://facebook.com/unihackmelb"
+          >
+          Visit our Facebook
+        </ButtonLink>
+      {
+      //
+      //   <ButtonLink
+      //     type="secondary"
+      //     href="https://www.eventbrite.com.au/e/unihack-melbourne-2020-tickets-92874212269"
+      //   >
+      //     Get tickets
+      //   </ButtonLink>
+      //   <a
+      //     className="fb-link"
+      //     href="https://www.facebook.com/events/874105723059342/"
+      //   >
+      //     View Facebook event
+      //   </a>
+      //
+      }
       </div>
       <a
         id="mlh-trust-badge"
