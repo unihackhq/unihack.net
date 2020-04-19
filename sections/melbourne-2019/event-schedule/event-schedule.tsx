@@ -1,6 +1,6 @@
 import './event-schedule.scss';
 import React from 'react';
-import * as moment from 'moment';
+import moment from 'moment';
 import Schedule from '../../../components/schedule/schedule';
 import scheduleData from '../../../content/2019/schedule.json';
 import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedule-item.interface';
@@ -8,8 +8,8 @@ import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedu
 type Day = 'saturday' | 'sunday';
 type Props = {};
 type State = {
-  day: Day,
-  events: ScheduleItemI[]
+  day: Day;
+  events: ScheduleItemI[];
 };
 
 class EventSchedule extends React.Component<Props, State> {
@@ -27,7 +27,9 @@ class EventSchedule extends React.Component<Props, State> {
 
   public componentDidMount() {
     const validDays = Object.keys(scheduleData);
-    let day = moment().format('dddd').toLowerCase() as Day;
+    let day = moment()
+      .format('dddd')
+      .toLowerCase() as Day;
 
     day = validDays.includes(day) ? day : this.defaultDay;
     this.setState({
@@ -41,7 +43,7 @@ class EventSchedule extends React.Component<Props, State> {
       day,
       events: scheduleData[day]
     });
-  }
+  };
 
   private isActive(day: Day): boolean {
     return this.state.day === day ? true : false;
@@ -53,7 +55,10 @@ class EventSchedule extends React.Component<Props, State> {
 
   private getSelectorButtons(day: Day) {
     return (
-      <button className={`day-selector ${this.isActive(day) ? 'active' : ''}`} onClick={this.setDay(day)}>
+      <button
+        className={`day-selector ${this.isActive(day) ? 'active' : ''}`}
+        onClick={this.setDay(day)}
+      >
         <h3>{this.titleCase(day)}</h3>
       </button>
     );
@@ -71,7 +76,7 @@ class EventSchedule extends React.Component<Props, State> {
                 {this.getSelectorButtons('saturday')}
                 {this.getSelectorButtons('sunday')}
               </div>
-              <Schedule data={this.state.events}/>
+              <Schedule data={this.state.events} />
             </div>
           </div>
         </div>
