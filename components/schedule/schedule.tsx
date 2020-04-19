@@ -1,16 +1,16 @@
 import React from 'react';
-import * as moment from 'moment';
+import moment from 'moment';
 import './schedule.scss';
 import ScheduleItem from './schedule-item/schedule-item';
 import { ScheduleItemI } from './schedule-item/schedule-item.interface';
 
 type Props = {
-  data: ScheduleItemI[]
+  data: ScheduleItemI[];
 };
 
 type State = {
-  time: moment.Moment,
-  currentItem?: ScheduleItemI
+  time: moment.Moment;
+  currentItem?: ScheduleItemI;
 };
 
 class Schedule extends React.Component<Props, State> {
@@ -38,10 +38,7 @@ class Schedule extends React.Component<Props, State> {
 
   // Create an interval to check if the schedule should update
   public componentDidMount() {
-    this.interval = setInterval(
-      () => this.shouldUpdate(),
-      60000
-    );
+    this.interval = setInterval(() => this.shouldUpdate(), 60000);
   }
 
   public componentWillUnmount() {
@@ -53,7 +50,7 @@ class Schedule extends React.Component<Props, State> {
   }
 
   private buildScheduleItems(state: State) {
-    return this.props.data.map((scheduleEvent) => {
+    return this.props.data.map(scheduleEvent => {
       const startTime = this.convertTime(scheduleEvent.startTime);
 
       if (startTime.isValid()) {
@@ -65,7 +62,8 @@ class Schedule extends React.Component<Props, State> {
         const endTime = this.convertTime(scheduleEvent.endTime);
         const now = state.time;
 
-        let isActiveEvent = false, isFutureEvent = false;
+        let isActiveEvent = false,
+          isFutureEvent = false;
 
         if (now < endTime) {
           if (now >= startTime) {
@@ -90,9 +88,7 @@ class Schedule extends React.Component<Props, State> {
 
   public render() {
     return (
-      <div className="schedule">
-        {this.buildScheduleItems(this.state)}
-      </div>
+      <div className="schedule">{this.buildScheduleItems(this.state)}</div>
     );
   }
 }

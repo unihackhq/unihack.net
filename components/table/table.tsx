@@ -3,11 +3,11 @@ import './table.scss';
 import Column from './column/column';
 import Row from './row/row';
 import { ColumnI } from './column/column.interface';
-import { RowI } from './row/row.interface';
+import { RowData } from './row/row.interface';
 
 type Props = {
   columns: ColumnI[];
-  rows: RowI[];
+  rows: RowData[];
 };
 
 const Table = (props: Props) => {
@@ -19,7 +19,7 @@ const Table = (props: Props) => {
       style={{ gridTemplateRows: `96px repeat(${totalRows}, 40px) 96px` }}
     >
       <div className="rows">
-        {props.rows.map((row: RowI) => {
+        {props.rows.map((row: RowData) => {
           return (
             <Row key={row.id} name={row.name} description={row.description} />
           );

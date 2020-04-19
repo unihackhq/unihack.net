@@ -8,7 +8,7 @@ type Props = {
 const Alert = (props: Props) => {
   const { link, message } = props;
   return (
-    <div class="alert">
+    <div className="alert">
       <a href={link}>{message}</a>
     </div>
   );

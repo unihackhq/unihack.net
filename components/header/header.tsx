@@ -12,21 +12,17 @@ type Props = {
 type State = { isMenuOpen: boolean };
 
 const Logo = () => (
-  <Link href="/" passHref>
+  <Link href="/">
     <a className="header-logo-content">
-      <img
-        className="header-logo-content-img"
-        src={'/static/images/unihack.svg'}
-      />
+      <img className="header-logo-content-img" src={'/images/unihack.svg'} />
       <h2 className="header-logo-content-name">UNIHACK</h2>
     </a>
   </Link>
 );
 
 const menuItems: MenuItemI[] = [
-  { text: 'About', href: '/about' },
   { text: 'Sponsor', href: '/sponsorship' },
-  { text: 'Blog', href: 'https://medium.com/unihack-blog' }
+  { text: 'About', href: '/about' }
 ];
 
 class Header extends React.Component<Props, State> {
