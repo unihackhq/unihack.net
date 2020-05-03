@@ -1,5 +1,5 @@
 {
-  "base": "/static/images/sponsors",
+  "base": "/images/sponsors",
   "sponsors": {
     "venue": {
       "name": "Telstra",
@@ -125,5 +125,5 @@
         "imagePath": "/wolfram.png"
       }
     ]
-  } 
+  }
 }

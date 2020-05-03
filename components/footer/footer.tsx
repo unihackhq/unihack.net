@@ -6,9 +6,15 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-content-col first">
         <div className="links">
-          <Link href="/privacy"><a>Privacy Policy</a></Link>
-          <Link href="/terms"><a>Terms of Service</a></Link>
-          <Link href="mailto:team@unihack.net?subject=General Enquiry"><a>Contact Us</a></Link>
+          <Link href="/privacy">
+            <a>Privacy Policy</a>
+          </Link>
+          <Link href="/terms">
+            <a>Terms of Service</a>
+          </Link>
+          <a href="mailto:team@unihack.net?subject=General Enquiry">
+            Contact Us
+          </a>
         </div>
       </div>
       <div className="footer-content-col second">
