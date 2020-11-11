@@ -1,6 +1,4 @@
-const withSass = require('@zeit/next-sass');
-
-module.exports = withSass({
+module.exports = {
   target: 'serverless',
   exportPathMap: function() {
     return {
@@ -11,4 +9,4 @@ module.exports = withSass({
       '/terms': { page: '/terms' }
     };
   }
-});
+};

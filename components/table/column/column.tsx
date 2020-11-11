@@ -1,25 +1,27 @@
 import React from 'react';
-import './column.scss';
+import styles from './column.module.scss';
 import Cell from '../cell/cell';
 import { CellI } from '../cell/cell.interface';
 import { ColumnI } from './column.interface';
 
 const Column = (props: ColumnI) => (
-  <div className="column" style={{ gridColumn: props.id }}>
-    <div className="column-header">
+  <div className={styles.column} style={{ gridColumn: props.id }}>
+    <div className={styles['column-header']}>
       <h3>{props.title}</h3>
       <p>{props.subtitle}</p>
     </div>
     <div
-      className="column-divider"
+      className={styles['column-divider']}
       style={{ borderTopColor: props.accentColour }}
     />
-    <div className="column-content">{createCells(props.cellData)}</div>
+    <div className={styles['column-content']}>
+      {createCells(props.cellData)}
+    </div>
     <div
-      className="column-divider"
+      className={styles['column-divider']}
       style={{ borderTopColor: props.accentColour }}
     />
-    <div className="column-footer">
+    <div className={styles['column-footer']}>
       <h3>{props.footerText}</h3>
     </div>
   </div>

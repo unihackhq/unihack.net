@@ -1,11 +1,11 @@
-import './faqs.scss';
+import styles from './faqs.module.scss';
 import questions from '../../content/faqs.json';
 
 const Faqs = () => (
-  <section className="faqs">
-    <div className="faqs-content">
+  <section className={styles.faqs}>
+    <div className={styles['faqs-content']}>
       <h2>Frequently Asked Questions</h2>
-      <div className="faqs-questions-grid">
+      <div className={styles['faqs-questions-grid']}>
         {questions.map((question, index) => {
           const { title, answer, html = false } = question;
           return (

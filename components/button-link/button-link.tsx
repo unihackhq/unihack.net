@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
-import './button-link.scss';
+import styles from './button-link.module.scss';
 
 type Props = {
   type: 'primary' | 'secondary';
@@ -20,7 +20,7 @@ const ButtonLink = (props: Props) => {
 const ButtonLinkInternal = (props: Props) => (
   <Link href={props.href}>
     <a
-      className={'btn-link ' + props.type}
+      className={`${styles['btn-link']} ${styles[props.type]}`}
       target={props.target ? props.target : ''}
     >
       {props.children}
@@ -30,7 +30,7 @@ const ButtonLinkInternal = (props: Props) => (
 
 const ButtonLinkExternal = (props: Props) => (
   <a
-    className={'btn-link ' + props.type}
+    className={`${styles['btn-link']} ${styles[props.type]}`}
     href={props.href}
     target={props.target ? props.target : ''}
   >

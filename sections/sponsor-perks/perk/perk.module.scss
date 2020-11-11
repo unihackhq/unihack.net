@@ -17,23 +17,6 @@
     }
   }
 
-  &.alt {
-    @include md {
-      flex-direction: row-reverse;
-    }
-
-    .perk-img {
-      img {
-        @include xsm {
-          border-radius: 5px 5px 0 0;
-        }
-        
-        @include md {
-          border-radius: 0 5px 5px 0;
-        }
-      }
-    }
-  }
 
   .perk-img {
     img {

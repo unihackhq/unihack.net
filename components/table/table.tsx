@@ -1,5 +1,5 @@
 import React from 'react';
-import './table.scss';
+import styles from './table.module.scss';
 import Column from './column/column';
 import Row from './row/row';
 import { ColumnI } from './column/column.interface';
@@ -15,17 +15,17 @@ const Table = (props: Props) => {
 
   return (
     <div
-      className="table"
+      className={styles.table}
       style={{ gridTemplateRows: `96px repeat(${totalRows}, 40px) 96px` }}
     >
-      <div className="rows">
+      <div className={styles.rows}>
         {props.rows.map((row: RowData) => {
           return (
             <Row key={row.id} name={row.name} description={row.description} />
           );
         })}
       </div>
-      <div className="columns">
+      <div className={styles.columns}>
         {props.columns.map((column: ColumnI) => {
           return (
             <Column

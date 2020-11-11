@@ -1,5 +1,5 @@
 import React from 'react';
-import './tiers-table.scss';
+import styles from './tiers-table.module.scss';
 import Table from '../../components/table/table';
 import { ColumnI } from '../../components/table/column/column.interface';
 import { CellI } from '../../components/table/cell/cell.interface';
@@ -8,7 +8,7 @@ import { CustomPerkI } from './custom-perk.interface';
 import data from '../../content/2020/sponsorship-packages.json';
 
 const TiersTable = () => (
-  <section className="get-involved">
+  <section className={styles['get-involved']}>
     <h2>Get Involved</h2>
     <Table columns={transformPackages(data)} rows={data.perks} />
   </section>

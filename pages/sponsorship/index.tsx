@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import './sponsorship.scss';
 
 import Page from '../../layouts/page/page';
 import Header from '../../components/header/header';

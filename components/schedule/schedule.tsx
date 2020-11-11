@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import './schedule.scss';
+import styles from './schedule.module.scss';
 import ScheduleItem from './schedule-item/schedule-item';
 import { ScheduleItemI } from './schedule-item/schedule-item.interface';
 
@@ -88,7 +88,9 @@ class Schedule extends React.Component<Props, State> {
 
   public render() {
     return (
-      <div className="schedule">{this.buildScheduleItems(this.state)}</div>
+      <div className={styles.schedule}>
+        {this.buildScheduleItems(this.state)}
+      </div>
     );
   }
 }

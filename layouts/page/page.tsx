@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import Head from 'next/head';
 
-import './page.scss';
+import styles from './page.module.scss';
 import Footer from '../../components/footer/footer';
 import { COLORS } from '../../styles/styles';
 
@@ -18,7 +18,7 @@ type Props = {
 
 const Page = (props: Props) => {
   return (
-    <div className="main">
+    <div className={styles.main}>
       <style jsx global>
         {`
           body {

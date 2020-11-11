@@ -1,4 +1,4 @@
-import './menu.scss';
+import styles from './menu.module.scss';
 import MenuItem from './menu-item/menu-item';
 import { MenuItemI } from './menu-item/menu-item.interface';
 
@@ -15,16 +15,16 @@ const Menu = (props: Props) => {
     </MenuItem>
   ));
 
-  const navClass = props.isOpen ? 'nav-show' : '';
+  const navClass = props.isOpen ? styles['nav-show'] : null;
 
   return (
-    <div className="menu">
-      <div className="menu-container">
-        <button className="menu-btn" onClick={props.onClick}>
+    <div className={styles.menu}>
+      <div className={styles['menu-container']}>
+        <button className={styles['menu-btn']} onClick={props.onClick}>
           <img src="/images/menu-icon.svg" />
         </button>
       </div>
-      <ul className={`nav ${navClass}`}>{menuItems}</ul>
+      <ul className={`${styles.nav} ${navClass}`}>{menuItems}</ul>
     </div>
   );
 };

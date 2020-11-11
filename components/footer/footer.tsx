@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import './footer.scss';
+import styles from './footer.module.scss';
 
 const Footer = () => (
-  <section className="footer">
-    <div className="footer-content">
-      <div className="footer-content-col first">
-        <div className="links">
+  <section className={styles.footer}>
+    <div className={styles['footer-content']}>
+      <div className={`${styles['footer-content-col']} ${styles.first}`}>
+        <div className={styles.links}>
           <Link href="/privacy">
             <a>Privacy Policy</a>
           </Link>
@@ -17,7 +17,7 @@ const Footer = () => (
           </a>
         </div>
       </div>
-      <div className="footer-content-col second">
+      <div className={`${styles['footer-content-col']} ${styles.second}`}>
         <p>Proudly made in Melbourne 🇦🇺</p>
         <p>© 2020 UNIHACK Incorporated</p>
       </div>

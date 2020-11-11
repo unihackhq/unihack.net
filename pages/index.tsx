@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import './index.scss';
+import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
 import Hero from '../sections/hero/hero';
@@ -22,7 +22,7 @@ export default () => (
       <Hero />
       <EventDescription />
       <Faqs />
-      <section className="cities">
+      <section className={styles.cities}>
         <CityBanner
           city="Melbourne"
           year="2019"

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 
-import './menu-item.scss';
+import styles from './menu-item.module.scss';
 
 type Props = {
   href: string;
@@ -9,7 +9,7 @@ type Props = {
 };
 
 const MenuItem = (props: Props) => (
-  <li className="menu-item">
+  <li className={styles['menu-item']}>
     <Link href={props.href}>
       <a>{props.children}</a>
     </Link>

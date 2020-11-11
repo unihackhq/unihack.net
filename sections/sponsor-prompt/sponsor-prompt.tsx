@@ -1,9 +1,9 @@
-import './sponsor-prompt.scss';
+import styles from './sponsor-prompt.module.scss';
 import ButtonLink from '../../components/button-link/button-link';
 
 const SponsorPrompt = () => (
-  <section className="sponsor-prompt" id="sponsor-prompt">
-    <div className="sponsor-prompt-content">
+  <section className={styles['sponsor-prompt']} id="sponsor-prompt">
+    <div className={styles['sponsor-prompt-content']}>
       <h2>Interested?</h2>
       <h3>Contact us for more information</h3>
       <p>
@@ -18,7 +18,7 @@ const SponsorPrompt = () => (
         For more information on the available tiers and addons, please download
         our prospectus below.
       </p>
-      <div className="actions">
+      <div className={styles.actions}>
         <ButtonLink
           type="primary"
           href="mailto:sponsorship@melbourne.unihack.net?subject=General Sponsorship Enquiry"

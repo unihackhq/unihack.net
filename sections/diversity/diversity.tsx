@@ -1,9 +1,9 @@
-import './diversity.scss';
+import styles from './diversity.module.scss';
 import ButtonLink from '../../components/button-link/button-link';
 
 const Diversity = () => (
-  <section className="diversity">
-    <div className="diversity-content">
+  <section className={styles.diversity}>
+    <div className={styles['diversity-content']}>
       <h2>Diversity Commitment</h2>
       <img src="/images/diversity-commitment.jpg" />
       <p>
