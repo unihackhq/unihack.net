@@ -1,4 +1,4 @@
-import './schedule-item.scss';
+import styles from './schedule-item.module.scss';
 import { ScheduleItemI } from './schedule-item.interface';
 
 type Props = {
@@ -8,18 +8,26 @@ type Props = {
 };
 
 const ScheduleItem = (props: Props) => {
-  const activeClass = props.isActive ? 'active' : '';
-  const futureClass = props.isFuture ? 'future' : '';
+  const activeClass = props.isActive ? styles.active : '';
+  const futureClass = props.isFuture ? styles.future : '';
 
   return (
-    <div className={`schedule-item ${activeClass} ${futureClass}`}>
-      <div className="schedule-item-indicator">
-        <div className="schedule-item-indicator-line head"/>
-        <div className="schedule-item-indicator-dot"/>
-        <div className="schedule-item-indicator-line tail"/>
+    <div className={`${styles['schedule-item']} ${activeClass} ${futureClass}`}>
+      <div className={styles['schedule-item-indicator']}>
+        <div
+          className={`${styles['schedule-item-indicator-line']} ${styles.head}`}
+        />
+        <div className={styles['schedule-item-indicator-dot']} />
+        <div
+          className={`${styles['schedule-item-indicator-line']} ${styles.tail}`}
+        />
       </div>
-      <div className="schedule-item-time">{props.scheduleItem.startTime}</div>
-      <div className="schedule-item-title">{props.scheduleItem.title}</div>
+      <div className={styles['schedule-item-time']}>
+        {props.scheduleItem.startTime}
+      </div>
+      <div className={styles['schedule-item-title']}>
+        {props.scheduleItem.title}
+      </div>
     </div>
   );
 };

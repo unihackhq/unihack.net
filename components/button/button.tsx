@@ -1,13 +1,15 @@
 import { ReactNode } from 'react';
-import './button.scss';
+import styles from './button.module.scss';
 
 type Props = {
-  type?: 'primary' | 'secondary',
-  children: ReactNode
+  type: 'primary' | 'secondary';
+  children: ReactNode;
 };
 
 const Button = (props: Props) => (
-  <button className={'btn ' + props.type}>{props.children}</button>
+  <button className={`${styles.btn} ${styles[props.type]}`}>
+    {props.children}
+  </button>
 );
 
 export default Button;

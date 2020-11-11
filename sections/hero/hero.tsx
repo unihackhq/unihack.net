@@ -1,21 +1,24 @@
-import './hero.scss';
+import styles from './hero.module.scss';
 import Header from '../../components/header/header';
 import ButtonLink from '../../components/button-link/button-link';
 
 const Hero = () => (
-  <section className="hero">
+  <section className={styles.hero}>
     <Header />
-    <div className="hero-content">
-      <div className="hero-content-title">
-        <img className="hero-content-logo" src={'/images/unihack.svg'} />
-        <h1 className="title">
+    <div className={styles['hero-content']}>
+      <div className={styles['hero-content-title']}>
+        <img
+          className={styles['hero-content-logo']}
+          src={'/images/unihack.svg'}
+        />
+        <h1 className={styles.title}>
           <span>UNIHACK</span> 2020
         </h1>
         <h2>
           <span>POSTPONED</span>
         </h2>
       </div>
-      <div className="actions">
+      <div className={styles.actions}>
         <ButtonLink
           type="secondary"
           href="https://www.notion.so/unihack/UNIHACK-2020-and-COVID-19-405d863cb8904b22837ecc85e577d9c9"
@@ -43,6 +46,7 @@ const Hero = () => (
         }
       </div>
       <a
+        className={styles['mlh-trust-badge']}
         id="mlh-trust-badge"
         href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=black"
         target="_blank"

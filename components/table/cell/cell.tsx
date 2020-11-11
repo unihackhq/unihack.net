@@ -1,5 +1,5 @@
 import React from 'react';
-import './cell.scss';
+import styles from './cell.module.scss';
 
 type Props = {
   checked?: boolean;
@@ -7,9 +7,9 @@ type Props = {
 };
 
 const Cell = (props: Props) => (
-  <div className="cell">
+  <div className={styles.cell}>
     {props.content ? (
-      <p className="cell-content">{props.content}</p>
+      <p className={styles['cell-content']}>{props.content}</p>
     ) : props.checked ? (
       <Tick />
     ) : (

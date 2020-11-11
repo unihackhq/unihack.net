@@ -1,8 +1,7 @@
 @import '../../styles/styles.scss';
 
-a.btn-link {
+.btn {
   @include button-base;
-  @include link;
 
   &.primary {
     @include primary-button;

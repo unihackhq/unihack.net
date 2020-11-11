@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import './about.scss';
 
 import Page from '../../layouts/page/page';
 import Header from '../../components/header/header';
@@ -13,10 +12,10 @@ export default () => (
       <title>About Us - UNIHACK</title>
     </Head>
     <Page featureBackground>
-      <Header withLogo solid/>
-      <AboutUs/>
-      <Diversity/>
-      <Privacy/>
+      <Header withLogo solid />
+      <AboutUs />
+      <Diversity />
+      <Privacy />
     </Page>
   </div>
 );

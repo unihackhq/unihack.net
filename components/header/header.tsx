@@ -1,4 +1,4 @@
-import './header.scss';
+import styles from './header.module.scss';
 import React from 'react';
 import Link from 'next/link';
 import Menu from '../menu/menu';
@@ -13,9 +13,12 @@ type State = { isMenuOpen: boolean };
 
 const Logo = () => (
   <Link href="/">
-    <a className="header-logo-content">
-      <img className="header-logo-content-img" src={'/images/unihack.svg'} />
-      <h2 className="header-logo-content-name">UNIHACK</h2>
+    <a className={styles['header-logo-content']}>
+      <img
+        className={styles['header-logo-content-img']}
+        src={'/images/unihack.svg'}
+      />
+      <h2 className={styles['header-logo-content-name']}>UNIHACK</h2>
     </a>
   </Link>
 );
@@ -37,9 +40,11 @@ class Header extends React.Component<Props, State> {
 
   public render() {
     return (
-      <div className={`header ${this.props.solid ? 'solid' : ''}`}>
-        <div className="header-content">
-          <div className="header-logo">
+      <div
+        className={`${styles.header} ${this.props.solid ? styles.solid : null}`}
+      >
+        <div className={styles['header-content']}>
+          <div className={styles['header-logo']}>
             {this.props.withLogo ? <Logo /> : ''}
           </div>
           <Menu

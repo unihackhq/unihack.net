@@ -1,27 +1,27 @@
-import './sponsor-info.scss';
+import styles from './sponsor-info.module.scss';
 import Pill from '../../components/pill/pill';
 
 const SponsorInfo = () => (
-  <section className="sponsor-info">
-    <div className="sponsor-info-content">
+  <section className={styles['sponsor-info']}>
+    <div className={styles['sponsor-info-content']}>
       <h2>What is UNIHACK?</h2>
-      <p className="details no-margin">
+      <p className={`${styles.details} ${styles['no-margin']}`}>
         When: <strong>POSTPONED</strong>
       </p>
-      <p className="details no-margin">
+      <p className={`${styles.details} ${styles['no-margin']}`}>
         Where: <strong>Melbourne</strong>
       </p>
-      <p className="details">
+      <p className={styles.details}>
         UNIHACK is a 24-hour hackathon with the mission to provide a creative
         space for engineering, design and product students to build innovative
         projects that are ready to go to market. Come join us in the Imagination
         Revolution.
       </p>
-      <div className="pills">
+      <div className={styles.pills}>
         <Pill color="grey">
           Hacking since 2014 with <strong>seven successful hackathons</strong>,
           UNIHACK is{' '}
-          <strong className="yellow">
+          <strong className={styles.yellow}>
             Australia’s largest student hackathon
           </strong>
           .

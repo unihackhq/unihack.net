@@ -1,5 +1,3 @@
-@import '../../styles/styles.scss';
-
 html {
   scroll-behavior: smooth;
 }
@@ -11,8 +9,4 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-.main {
-  font-family: $fonts;
 }

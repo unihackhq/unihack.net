@@ -1,8 +1,8 @@
-import './event-description.scss';
+import styles from './event-description.module.scss';
 
 const EventDescription = () => (
-  <section className="event-description">
-    <div className="event-description-content">
+  <section className={styles['event-description']}>
+    <div className={styles['event-description-content']}>
       <h2>What is UNIHACK?</h2>
       <p>
         We are Australia’s largest student hackathon. We bring together a
@@ -15,8 +15,8 @@ const EventDescription = () => (
         really!), pitch it, and win prizes. We will provide you with the
         mentors, workshops, and plenty of food and drinks to keep you going!
       </p>
-      <div className="values">
-        <div className="value">
+      <div className={styles.values}>
+        <div className={styles.value}>
           <img src="/images/lightbulb.png" alt="A drawing of a lightbulb." />
           <h4>Imagination</h4>
           <p>
@@ -25,7 +25,7 @@ const EventDescription = () => (
           </p>
           <b>#creativity</b>
         </div>
-        <div className="value">
+        <div className={styles.value}>
           <img src="/images/handshake.png" alt="A drawing of a handshake." />
           <h4>Collaboration</h4>
           <p>
@@ -34,7 +34,7 @@ const EventDescription = () => (
           </p>
           <b>#community</b>
         </div>
-        <div className="value">
+        <div className={styles.value}>
           <img src="/images/laptop.png" alt="A drawing of a laptop." />
           <h4>Build</h4>
           <p>

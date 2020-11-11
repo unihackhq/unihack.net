@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
-import './pill.scss';
+import styles from './pill.module.scss';
 
 type Props = {
-  color: string,
-  children: ReactNode
+  color: string;
+  children: ReactNode;
 };
 
 const Pill = (props: Props) => (
-  <div className={'pill pill-' + props.color}>
+  <div className={`${styles.pill} ${styles[`pill-${props.color}`]}`}>
     <p>{props.children}</p>
   </div>
 );

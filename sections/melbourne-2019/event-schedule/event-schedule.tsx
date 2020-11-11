@@ -1,4 +1,4 @@
-import './event-schedule.scss';
+import styles from './event-schedule.module.scss';
 import React from 'react';
 import moment from 'moment';
 import Schedule from '../../../components/schedule/schedule';
@@ -66,13 +66,13 @@ class EventSchedule extends React.Component<Props, State> {
 
   public render() {
     return (
-      <section className="event-page-schedule">
-        <div className="event-page-schedule-content">
-          <h2 className="section-title">Schedule</h2>
-          <p className="subtitle">What, when, and where...</p>
-          <div className="schedule-main">
-            <div className="schedule-controller">
-              <div className="day-selectors">
+      <section className={styles['event-page-schedule']}>
+        <div className={styles['event-page-schedule-content']}>
+          <h2 className={styles['section-title']}>Schedule</h2>
+          <p className={styles.subtitle}>What, when, and where...</p>
+          <div className={styles['schedule-main']}>
+            <div className={styles['schedule-controller']}>
+              <div className={styles['day-selectors']}>
                 {this.getSelectorButtons('saturday')}
                 {this.getSelectorButtons('sunday')}
               </div>

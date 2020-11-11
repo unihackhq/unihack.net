@@ -1,4 +1,4 @@
-import './alert.scss';
+import styles from './alert.module.scss';
 
 type Props = {
   link: string;
@@ -8,7 +8,7 @@ type Props = {
 const Alert = (props: Props) => {
   const { link, message } = props;
   return (
-    <div className="alert">
+    <div className={styles.alert}>
       <a href={link}>{message}</a>
     </div>
   );
