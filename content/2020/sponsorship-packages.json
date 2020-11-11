@@ -16,10 +16,7 @@
       "colour": "#E4E6E9",
       "maxCapacity": "",
       "perks": [1, 2, 3, 4],
-      "customPerks": [
-        { "perkID": 5, "content": "1" },
-        { "perkID": 6, "content": "1" }
-      ]
+      "customPerks": [{ "perkID": 5, "content": "1" }]
     },
     {
       "id": 3,
@@ -27,11 +24,8 @@
       "price": "$3,000",
       "colour": "#FEE795",
       "maxCapacity": "10",
-      "perks": [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
-      "customPerks": [
-        { "perkID": 5, "content": "2" },
-        { "perkID": 6, "content": "2" }
-      ]
+      "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10],
+      "customPerks": [{ "perkID": 5, "content": "2" }]
     },
     {
       "id": 4,
@@ -39,11 +33,8 @@
       "price": "$10,000",
       "colour": "#A3ADB8",
       "maxCapacity": "2",
-      "perks": [1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-      "customPerks": [
-        { "perkID": 5, "content": "4" },
-        { "perkID": 6, "content": "3" }
-      ]
+      "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
+      "customPerks": [{ "perkID": 5, "content": "4" }]
     }
   ],
   "perks": [
@@ -74,51 +65,41 @@
     },
     {
       "id": 6,
-      "name": "Send Guests",
-      "description": "Get your recruiters and business managers to check out our talent"
-    },
-    {
-      "id": 7,
       "name": "Your Company Logo on UNIHACK merch",
       "description": "Including participant handbooks, t-shirts and banners."
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Run Recruitment Campaigns",
       "description": "On-the-day recruitment and job opportunity mailouts."
     },
     {
-      "id": 9,
-      "name": "Video Promotions",
-      "description": "Get interviewed to put the spotlight on your company."
-    },
-    {
-      "id": 10,
+      "id": 8,
       "name": "Resume and Attendee List",
       "description": "Receive resumes of competitors who opt-in."
     },
     {
-      "id": 11,
-      "name": "Careers Fair",
+      "id": 9,
+      "name": "Pre-hack Event",
       "description": "Engage with students before the hackathon."
     },
     {
-      "id": 12,
+      "id": 10,
       "name": "Tool Demo",
       "description": "Opt to sponsor a tool and demo it for 5 minutes during the Opening Ceremony"
     },
     {
-      "id": 13,
+      "id": 11,
       "name": "Opening & Closing Ceremony Keynote",
       "description": "Kick off the hackathon with a speech by your most esteemed representative."
     },
     {
-      "id": 14,
+      "id": 12,
       "name": "Judge Seat & Main Prize Presentation",
       "description": "Get to judge all the hacks and present the main prizes."
     },
     {
-      "id": 15,
+      "id": 13,
       "name": "Company Name beside UNIHACK logo",
       "description": "All promotions will have your company’s name."
     }
