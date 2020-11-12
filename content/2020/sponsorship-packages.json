@@ -6,7 +6,7 @@
       "price": "$750",
       "colour": "#FFE4C2",
       "maxCapacity": "",
-      "perks": [1, 2, 3, 4],
+      "perks": [1, 2, 3],
       "customPerks": []
     },
     {
@@ -40,53 +40,53 @@
   "perks": [
     {
       "id": 1,
-      "name": "Company Giveaways",
+      "name": "Company giveaways",
       "description": "Swag, tools and APIs."
     },
     {
       "id": 2,
-      "name": "Mailouts and Announcements",
+      "name": "Mailouts and announcements",
       "description": "Get your brand out to our community."
     },
     {
       "id": 3,
-      "name": "API & Tools Roundup",
+      "name": "API & tools roundup",
       "description": "Include branding on social media posts, marketing material."
     },
     {
       "id": 4,
-      "name": "Custom Prizes",
+      "name": "Custom prizes",
       "description": "Increase exposure for your brand, product or API through themed custom prizes."
     },
     {
       "id": 5,
-      "name": "Send Mentors",
+      "name": "Send mentors",
       "description": "Work with students during the hackathon and find your next team hire."
     },
     {
       "id": 6,
-      "name": "Your Company Logo on UNIHACK merch",
+      "name": "Your company logo on UNIHACK merch",
       "description": "Including participant handbooks, t-shirts and banners."
     },
     {
       "id": 7,
-      "name": "Run Recruitment Campaigns",
+      "name": "Run recruitment campaigns",
       "description": "On-the-day recruitment and job opportunity mailouts."
     },
     {
       "id": 8,
-      "name": "Resume and Attendee List",
+      "name": "Resume and attendee list",
       "description": "Receive resumes of competitors who opt-in."
     },
     {
       "id": 9,
-      "name": "Pre-hack Event",
+      "name": "Pre-hack event",
       "description": "Engage with students before the hackathon."
     },
     {
       "id": 10,
-      "name": "Tool Demo",
-      "description": "Opt to sponsor a tool and demo it for 5 minutes during the Opening Ceremony"
+      "name": "Product/API demo",
+      "description": "Show off a product or API that students can use during the hack with a 5 minute demo during the Opening Ceremony"
     },
     {
       "id": 11,
@@ -95,12 +95,12 @@
     },
     {
       "id": 12,
-      "name": "Judge Seat & Main Prize Presentation",
+      "name": "Judge seat & Main prize presentation",
       "description": "Get to judge all the hacks and present the main prizes."
     },
     {
       "id": 13,
-      "name": "Company Name beside UNIHACK logo",
+      "name": "Company name beside UNIHACK logo",
       "description": "All promotions will have your company’s name."
     }
   ]
