@@ -1,36 +1,36 @@
 [
   {
-    "title": "Careers Fair and Careers Roundup",
-    "imgSrc": "/images/perks/careers.jpg",
-    "desc": "We invite a limited set of major sponsors and community partners (accelerators, nonprofits, VCs) in a careers fair at the start of the event to promote internship and graduate opportunities and to help students discover new career paths they might have been unaware of.",
+    "title": "Pre-hack Event",
+    "imgSrc": "/images/perks/workshops.jpg",
+    "desc": "Run a workshop (1 hour) or Q&A panel (30 mins) in the lead up to the hackathon. Share your knowledge and expertise in a workshop of your choice, or highlight your company's culture and promote opportunities in a Q&A panel with students to help them discover new career paths.",
     "listItems": []
   },
   {
-    "title": "Mentoring Sessions and Interviews",
+    "title": "Mentoring Sessions",
     "imgSrc": "/images/perks/mentoring.jpg",
-    "desc": "We invite mentors and guests from your company to get involved to help students and give valuable advice that would help students well after their academic careers.",
+    "desc": "Invited mentors have the opportunity to directly engage with and help students in structured mentoring sessions. Whether you're hands-on with code or more of a holistic product person, there's a mentoring session waiting for you!",
     "listItems": []
   },
   {
     "title": "Branding on UNIHACK",
     "imgSrc": "/images/perks/branding.jpg",
-    "desc": "Take your brand to the next level with UNIHACK with:",
+    "desc": "Take your brand to the next level with UNIHACK.",
     "listItems": [
-      "Logos and content on the website and UNIHACK in-event collateral",
-      "Opportunities through our social media and newsletter that reach competitors and university students alike",
-      "In-Event Promotions by sending mentors or providing giveaways"
+      "Your logos and content on the UNIHACK website and in-event collateral",
+      "Promote opportunities through our social media channels and email newsletter that reach competitors and university students alike",
+      "In-Event promotions by sending mentors or providing giveaways"
     ]
   },
   {
     "title": "Company Giveaways",
     "imgSrc": "/images/perks/giveaways.jpg",
-    "desc": "We’ll distribute your company swag, APIs and tooling to teams before and during the event.",
+    "desc": "Stickers and mugs, or water bottles and API credits? Whatever swag you bring, we’ll distribute to participants.",
     "listItems": []
   },
   {
     "title": "API and Tools Roundup",
     "imgSrc": "/images/perks/api.jpg",
-    "desc": "Closer to the event, we generate campaigns around software, hardware or various tools provided by companies. Promote to our 200+ competitors and get them to adopt company-sponsored software or hardware.",
+    "desc": "Closer to the event, we generate campaigns around software, hardware or various tools provided by companies. Promote to our 200+ competitors and get them to adopt your product today!",
     "listItems": []
   }
 ]

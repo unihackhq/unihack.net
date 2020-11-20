@@ -6,7 +6,7 @@
       "price": "$750",
       "colour": "#FFE4C2",
       "maxCapacity": "",
-      "perks": [1, 2, 3, 4],
+      "perks": [1, 2, 3],
       "customPerks": []
     },
     {
@@ -16,110 +16,91 @@
       "colour": "#E4E6E9",
       "maxCapacity": "",
       "perks": [1, 2, 3, 4],
-      "customPerks": [
-        { "perkID": 5, "content": "1" },
-        { "perkID": 6, "content": "1" }
-      ]
+      "customPerks": [{ "perkID": 5, "content": "2" }]
     },
     {
       "id": 3,
       "name": "Gold",
       "price": "$3,000",
       "colour": "#FEE795",
-      "maxCapacity": "10",
-      "perks": [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
-      "customPerks": [
-        { "perkID": 5, "content": "2" },
-        { "perkID": 6, "content": "2" }
-      ]
+      "maxCapacity": "15",
+      "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10],
+      "customPerks": [{ "perkID": 5, "content": "3" }]
     },
     {
       "id": 4,
       "name": "Platinum",
       "price": "$10,000",
       "colour": "#A3ADB8",
-      "maxCapacity": "2",
-      "perks": [1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-      "customPerks": [
-        { "perkID": 5, "content": "4" },
-        { "perkID": 6, "content": "3" }
-      ]
+      "maxCapacity": "1",
+      "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
+      "customPerks": [{ "perkID": 5, "content": "6" }]
     }
   ],
   "perks": [
     {
       "id": 1,
-      "name": "Company Giveaways",
+      "name": "Company giveaways",
       "description": "Swag, tools and APIs."
     },
     {
       "id": 2,
-      "name": "Mailouts and Announcements",
+      "name": "Mailouts and announcements",
       "description": "Get your brand out to our community."
     },
     {
       "id": 3,
-      "name": "API & Tools Roundup",
+      "name": "API & tools roundup",
       "description": "Include branding on social media posts, marketing material."
     },
     {
       "id": 4,
-      "name": "Custom Prizes",
+      "name": "Custom prizes",
       "description": "Increase exposure for your brand, product or API through themed custom prizes."
     },
     {
       "id": 5,
-      "name": "Send Mentors",
+      "name": "Send mentors",
       "description": "Work with students during the hackathon and find your next team hire."
     },
     {
       "id": 6,
-      "name": "Send Guests",
-      "description": "Get your recruiters and business managers to check out our talent"
-    },
-    {
-      "id": 7,
-      "name": "Your Company Logo on UNIHACK merch",
+      "name": "Your company logo on UNIHACK merch",
       "description": "Including participant handbooks, t-shirts and banners."
     },
     {
-      "id": 8,
-      "name": "Run Recruitment Campaigns",
+      "id": 7,
+      "name": "Run recruitment campaigns",
       "description": "On-the-day recruitment and job opportunity mailouts."
     },
     {
-      "id": 9,
-      "name": "Video Promotions",
-      "description": "Get interviewed to put the spotlight on your company."
-    },
-    {
-      "id": 10,
-      "name": "Resume and Attendee List",
+      "id": 8,
+      "name": "Resume and attendee list",
       "description": "Receive resumes of competitors who opt-in."
     },
     {
-      "id": 11,
-      "name": "Careers Fair",
+      "id": 9,
+      "name": "Pre-hack event",
       "description": "Engage with students before the hackathon."
     },
     {
-      "id": 12,
-      "name": "Tool Demo",
-      "description": "Opt to sponsor a tool and demo it for 5 minutes during the Opening Ceremony"
+      "id": 10,
+      "name": "Product/API demo",
+      "description": "Show off a product or API that students can use during the hack with a 5 minute demo during the Opening Ceremony"
     },
     {
-      "id": 13,
+      "id": 11,
       "name": "Opening & Closing Ceremony Keynote",
       "description": "Kick off the hackathon with a speech by your most esteemed representative."
     },
     {
-      "id": 14,
-      "name": "Judge Seat & Main Prize Presentation",
+      "id": 12,
+      "name": "Judge seat & Main prize presentation",
       "description": "Get to judge all the hacks and present the main prizes."
     },
     {
-      "id": 15,
-      "name": "Company Name beside UNIHACK logo",
+      "id": 13,
+      "name": "Company name beside UNIHACK logo",
       "description": "All promotions will have your company’s name."
     }
   ]
