@@ -16,25 +16,25 @@
       "colour": "#E4E6E9",
       "maxCapacity": "",
       "perks": [1, 2, 3, 4],
-      "customPerks": [{ "perkID": 5, "content": "1" }]
+      "customPerks": [{ "perkID": 5, "content": "2" }]
     },
     {
       "id": 3,
       "name": "Gold",
       "price": "$3,000",
       "colour": "#FEE795",
-      "maxCapacity": "10",
+      "maxCapacity": "15",
       "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10],
-      "customPerks": [{ "perkID": 5, "content": "2" }]
+      "customPerks": [{ "perkID": 5, "content": "3" }]
     },
     {
       "id": 4,
       "name": "Platinum",
       "price": "$10,000",
       "colour": "#A3ADB8",
-      "maxCapacity": "2",
+      "maxCapacity": "1",
       "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
-      "customPerks": [{ "perkID": 5, "content": "4" }]
+      "customPerks": [{ "perkID": 5, "content": "6" }]
     }
   ],
   "perks": [
