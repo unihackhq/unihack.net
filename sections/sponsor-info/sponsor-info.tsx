@@ -6,16 +6,16 @@ const SponsorInfo = () => (
     <div className={styles['sponsor-info-content']}>
       <h2>What is UNIHACK?</h2>
       <p className={`${styles.details} ${styles['no-margin']}`}>
-        When: <strong>POSTPONED</strong>
+        When: <strong>5-7 March, 2021</strong>
       </p>
       <p className={`${styles.details} ${styles['no-margin']}`}>
-        Where: <strong>Melbourne</strong>
+        Where: <strong>Online</strong>
       </p>
       <p className={styles.details}>
-        UNIHACK is a 24-hour hackathon with the mission to provide a creative
-        space for engineering, design and product students to build innovative
-        projects that are ready to go to market. Come join us in the Imagination
-        Revolution.
+        UNIHACK 2021 is a 46-hour hackathon with the mission to provide a
+        creative space for engineering, design and product students to build
+        innovative projects that are ready to go to market. Come join us in the
+        Imagination Revolution.
       </p>
       <div className={styles.pills}>
         <Pill color="grey">

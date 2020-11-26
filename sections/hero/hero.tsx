@@ -12,19 +12,13 @@ const Hero = () => (
           src={'/images/unihack.svg'}
         />
         <h1 className={styles.title}>
-          <span>UNIHACK</span> 2020
+          <span>UNIHACK</span> 2021
         </h1>
         <h2>
-          <span>POSTPONED</span>
+          <span>5-7 March · Online · Stay tuned...</span>
         </h2>
       </div>
       <div className={styles.actions}>
-        <ButtonLink
-          type="secondary"
-          href="https://www.notion.so/unihack/UNIHACK-2020-and-COVID-19-405d863cb8904b22837ecc85e577d9c9"
-        >
-          Latest Updates
-        </ButtonLink>
         <ButtonLink type="secondary" href="https://facebook.com/unihackmelb">
           Visit our Facebook
         </ButtonLink>

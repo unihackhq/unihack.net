@@ -14,13 +14,9 @@ import TiersTable from '../../sections/tiers-table/tiers-table';
 export default () => (
   <div>
     <Head>
-      <title>UNIHACK 2020 — Sponsorship</title>
+      <title>UNIHACK 2021 — Sponsorship</title>
     </Head>
     <Page>
-      <Alert
-        link="https://www.notion.so/unihack/UNIHACK-2020-and-COVID-19-405d863cb8904b22837ecc85e577d9c9"
-        message="UNIHACK 2020 has been postponed due to COVID-19. Click to read more."
-      />
       <Header withLogo solid />
       <SponsorHero />
       <SponsorInfo />
