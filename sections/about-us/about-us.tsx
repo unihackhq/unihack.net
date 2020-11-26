@@ -18,7 +18,7 @@ const AboutUs = () => (
         students nationwide.
       </p>
       <p>
-        Teams have 24 hours to design and build something awesome. It can be
+        Teams have 46 hours to design and build something awesome. It can be
         anything - a website, a mobile application, a video game, or even
         something hardware. The important thing is that it needs to work when it
         is presented to the judges.
