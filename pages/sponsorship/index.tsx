@@ -2,7 +2,6 @@ import Head from 'next/head';
 
 import Page from '../../layouts/page/page';
 import Header from '../../components/header/header';
-import Alert from '../../components/alert/alert';
 import SponsorHero from '../../sections/sponsor-hero/sponsor-hero';
 import SponsorInfo from '../../sections/sponsor-info/sponsor-info';
 import Addons from '../../sections/addons/addons';
