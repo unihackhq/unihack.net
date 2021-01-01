@@ -12,10 +12,10 @@ const SponsorInfo = () => (
         Where: <strong>Melbourne</strong>
       </p>
       <p className={styles.details}>
-        UNIHACK is a 24-hour hackathon with the mission to provide a creative
-        space for engineering, design and product students to build innovative
-        projects that are ready to go to market. Come join us in the Imagination
-        Revolution.
+        UNIHACK 2021 is a 48-hour hackathon with the mission to provide a
+        creative space for engineering, design and product students to build
+        innovative projects that are ready to go to market. Come join us in the
+        Imagination Revolution.
       </p>
       <div className={styles.pills}>
         <Pill color="grey">
