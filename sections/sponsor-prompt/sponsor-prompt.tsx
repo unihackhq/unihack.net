@@ -14,10 +14,10 @@ const SponsorPrompt = () => (
         </a>{' '}
         and we’ll follow-up within 24 hours.
       </p>
-      <p>
+      {/* <p>
         For more information on the available tiers and addons, please download
         our prospectus below.
-      </p>
+      </p> */}
       <div className={styles.actions}>
         <ButtonLink
           type="primary"
@@ -25,13 +25,13 @@ const SponsorPrompt = () => (
         >
           Enquire now
         </ButtonLink>
-        <ButtonLink
+        {/* <ButtonLink
           type="primary"
           href="https://drive.google.com/file/d/1j6YP-lWaBPJ8S1XWWrL6N78USNloTNNw/view"
           target="_blank"
         >
           Download prospectus
-        </ButtonLink>
+        </ButtonLink> */}
       </div>
     </div>
   </section>

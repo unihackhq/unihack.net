@@ -12,7 +12,7 @@ const Hero = () => (
           src={'/images/unihack.svg'}
         />
         <h1 className={styles.title}>
-          <span>UNIHACK</span> 2020
+          <span>UNIHACK</span> 2021
         </h1>
         <h2>
           <span>5-7 March · Online · Australia-wide</span>
