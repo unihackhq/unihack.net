@@ -3,7 +3,6 @@
 .city-banner {
   width: 100%;
   padding: $base * 5 $base * 6;
-  @include heading-sizes;
   @include link-underline;
 
   &.left h2 {

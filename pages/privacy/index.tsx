@@ -36,9 +36,7 @@ export default () => (
             <a href="https://oaic.gov.au">https://oaic.gov.au</a>.
           </p>
 
-          <H2 className={styles.highlighted}>
-            What is personal information and why do we collect it?
-          </H2>
+          <H2>What is personal information and why do we collect it?</H2>
           <p>
             Personal Information is information or an opinion that identifies an
             individual. Examples of Personal Information we collect include:
@@ -70,7 +68,7 @@ export default () => (
             and how we plan to use it.
           </p>
 
-          <H2 className={styles.highlighted}>Third Parties</H2>
+          <H2>Third Parties</H2>
           <p>
             We will primarily collect your Personal Information only from you.
             However, we also will be provided with information by several third
@@ -84,9 +82,7 @@ export default () => (
             information provided to us by the third party.
           </p>
 
-          <H2 className={styles.highlighted}>
-            Disclosure of personal information
-          </H2>
+          <H2>Disclosure of personal information</H2>
           <p>
             Your Personal Information may be disclosed to third-parties where
             you consent to the disclosure. These third-parties may include but
@@ -98,9 +94,7 @@ export default () => (
             authorised governmental bodies.
           </p>
 
-          <H2 className={styles.highlighted}>
-            Security of personal information
-          </H2>
+          <H2>Security of personal information</H2>
           <p>
             Your Personal Information is stored in a manner that reasonably
             protects it from misuse and loss and from unauthorized access,
@@ -114,9 +108,7 @@ export default () => (
             files which will be kept by us for a minimum of 7 years.
           </p>
 
-          <H2 className={styles.highlighted}>
-            Access to your personal information
-          </H2>
+          <H2>Access to your personal information</H2>
           <p>
             You may access the Personal Information we hold about you and to
             update and/or correct it, subject to certain exceptions. If you wish
@@ -131,9 +123,7 @@ export default () => (
             identification from you before releasing the requested information.
           </p>
 
-          <H2 className={styles.highlighted}>
-            Maintaining the Quality of your Personal Information
-          </H2>
+          <H2>Maintaining the Quality of your Personal Information</H2>
           <p>
             It is an important to us that your Personal Information is up to
             date. We will take reasonable steps to make sure that your Personal
@@ -143,15 +133,13 @@ export default () => (
             ensure we can continue to provide quality services to you.
           </p>
 
-          <H2 className={styles.highlighted}>Policy updates</H2>
+          <H2>Policy updates</H2>
           <p>
             This Policy may change from time to time and is available on our
             website.
           </p>
 
-          <H2 className={styles.highlighted}>
-            Privacy Policy complaints and enquiries
-          </H2>
+          <H2>Privacy Policy complaints and enquiries</H2>
           <p>
             If you have any queries or complaints about our Privacy Policy
             please contact us at:{' '}

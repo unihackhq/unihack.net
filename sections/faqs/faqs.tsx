@@ -1,6 +1,6 @@
 import styles from './faqs.module.scss';
 import questions from '../../content/faqs.json';
-import { H3 } from '@components/typography/typography';
+import { H3, Text } from '@components/typography/typography';
 
 const Faqs = () => (
   <section className={styles.faqs}>
@@ -12,11 +12,7 @@ const Faqs = () => (
           return (
             <div key={`faqs-q${index}`}>
               <H3>{title}</H3>
-              {html ? (
-                <p dangerouslySetInnerHTML={{ __html: answer }}></p>
-              ) : (
-                <p>{answer}</p>
-              )}
+              {html ? <Text html={answer} /> : <Text>{answer}</Text>}
             </div>
           );
         })}

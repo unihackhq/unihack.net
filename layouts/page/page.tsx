@@ -80,8 +80,9 @@ const Page = (props: Props) => {
           sizes="167x167"
           href="/favicons/apple-touch-icon-167x167.png"
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
           rel="stylesheet"
         />
       </Head>

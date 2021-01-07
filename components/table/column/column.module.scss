@@ -34,18 +34,6 @@ $subtitleColour: #515151;
     flex-direction: column;
     align-items: center;
 
-    @include heading-sizes;
-
-    h3 {
-      font-size: 18px;
-      line-height: 22px;
-
-      @include md {
-        font-size: 24px;
-        line-height: 30px;
-      }
-    }
-
     p {
       font-size: 13px;
       color: $subtitleColour;

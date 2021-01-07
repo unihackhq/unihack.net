@@ -25,7 +25,6 @@
 
     &-content {
       @include link;
-      @include heading-sizes;
   
       &:hover {
         text-decoration: none;
@@ -37,10 +36,6 @@
       &-img {
         width: 30px;
         margin-right: 4px;
-      }
-  
-      &-name {
-        letter-spacing: -2px;
       }
     }
   }

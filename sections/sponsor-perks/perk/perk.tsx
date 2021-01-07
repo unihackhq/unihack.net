@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import styles from './perk.module.scss';
 import Card from '@components/card/card';
-import { H3 } from '@components/typography/typography';
+import { H3, Text } from '@components/typography/typography';
 
 type Props = {
   className: string;
@@ -23,7 +23,7 @@ const Perk = (props: Props) => {
       </div>
       <div className={styles['perk-desc']}>
         <H3>{props.title}</H3>
-        <p>{props.children}</p>
+        <Text>{props.children}</Text>
         {listItems ? <ul>{listItems}</ul> : ''}
       </div>
     </Card>

@@ -5,7 +5,6 @@
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     padding-top: $base * 5;
     padding-bottom: $base * 5;
     

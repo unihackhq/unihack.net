@@ -31,7 +31,6 @@
     }
 
     &-title {
-      @include heading-sizes;
       margin-bottom: $base * 2;
 
       @include md {
@@ -78,15 +77,6 @@
 
       @include md {
         padding-left: 200px;
-      }
-
-      a.fb-link {
-        @include body-bold;
-        @include link-underline;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
       }
     }
   }

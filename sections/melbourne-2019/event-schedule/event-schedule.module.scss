@@ -5,7 +5,6 @@
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     display: flex;
     flex-direction: column;
     padding-top: $base * 6;
@@ -63,7 +62,6 @@
         margin-bottom: $base;
   
         .day-selector {
-          @include heading-sizes;
           display: flex;
           align-self: flex-start;
           background-color: transparent;

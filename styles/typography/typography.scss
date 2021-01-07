@@ -2,7 +2,7 @@
 @import '../styles.scss';
 
 @mixin hxl {
-  @include heading-base;
+  @include no-margin;
   @include hxl-mobile;
 
   @include md {
@@ -11,7 +11,7 @@
 }
 
 @mixin hl {
-  @include heading-base;
+  @include no-margin;
   @include hl-mobile;
 
   @include md {
@@ -20,7 +20,7 @@
 }
 
 @mixin h1 {
-  @include heading-base;
+  @include no-margin;
   @include h1-mobile;
 
   @include md {
@@ -29,7 +29,7 @@
 }
 
 @mixin h2 {
-  @include heading-base;
+  @include no-margin;
   @include h3-desktop;
 
   @include md {
@@ -38,7 +38,7 @@
 }
 
 @mixin h3 {
-  @include heading-base;
+  @include no-margin;
   @include h4-desktop;
 
   @include md {
@@ -47,6 +47,24 @@
 }
 
 @mixin h4 {
-  @include heading-base;
+  @include no-margin;
   @include h4-desktop;
+}
+
+@mixin body {
+  @include no-margin;
+  @include body-mobile;
+
+  @include md {
+    @include body-desktop;
+  }
+}
+
+@mixin body-bold {
+  @include no-margin;
+  @include body-bold-mobile;
+
+  @include md {
+    @include body-bold-desktop;
+  }
 }

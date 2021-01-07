@@ -23,3 +23,11 @@
 .h4 {
   @include h4;
 }
+
+.body {
+  @include body;
+}
+
+.body-bold {
+  @include body-bold;
+}
