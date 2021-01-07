@@ -1,16 +1,17 @@
+import { H1, H2, H3 } from '@components/typography/typography';
 import styles from './about-us.module.scss';
 
 const AboutUs = () => (
   <section className={styles['about-us']}>
     <div className={styles['about-us-content']}>
-      <h1>About Us</h1>
-      <h2 className={styles.highlighted}>Who are we</h2>
-      <h3>
+      <H1>About Us</H1>
+      <H2 className={styles.highlighted}>Who are we</H2>
+      <H3>
         <i>
           We are Australia's largest and premier student hackathon - run for
           students, by students.
         </i>
-      </h3>
+      </H3>
       <p>
         Inspired by the student hackathons in the United States and Europe,
         UNIHACK was created in 2014 by WIRED Monash. Since then, UNIHACK has

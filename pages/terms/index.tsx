@@ -1,8 +1,10 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from './terms.module.scss';
 
-import Page from '../../layouts/page/page';
-import Header from '../../components/header/header';
+import Page from '@layouts/page/page';
+import Header from '@components/header/header';
+import { H1, H2 } from '@components/typography/typography';
 
 export default () => (
   <div>
@@ -13,16 +15,16 @@ export default () => (
       <Header withLogo solid />
       <section className={styles.terms}>
         <div className={styles['terms-content']}>
-          <h1>Terms of Service</h1>
+          <H1>Terms of Service</H1>
           <p>
             <strong>UNIHACK INCORPORATED</strong> is an Australian-owned and
             non-for-profit company. All payments will be invoiced in Australian
             Dollars unless otherwise agreed upon in writing.
           </p>
 
-          <h2 className={styles.highlighted}>
+          <H2 className={styles.highlighted}>
             UNIHACK competitor refund policy
-          </h2>
+          </H2>
           <p>
             Unfortunately we cannot offer refunds for any competitor tickets,
             however you are able transfer your ticket to another student willing
@@ -35,9 +37,9 @@ export default () => (
             tickets.
           </p>
 
-          <h2 className={styles.highlighted}>
+          <H2 className={styles.highlighted}>
             UNIHACK company sponsorship refund policy
-          </h2>
+          </H2>
           <p>
             Since sponsorship goes directly into the running of hackathons and
             takes effect immediately we cannot offer refunds for sponsorship.

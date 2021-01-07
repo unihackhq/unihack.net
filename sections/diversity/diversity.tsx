@@ -1,10 +1,12 @@
+import React from 'react';
 import styles from './diversity.module.scss';
-import ButtonLink from '../../components/button-link/button-link';
+import ButtonLink from '@components/button-link/button-link';
+import { H2 } from '@components/typography/typography';
 
 const Diversity = () => (
   <section className={styles.diversity}>
     <div className={styles['diversity-content']}>
-      <h2>Diversity Commitment</h2>
+      <H2>Diversity Commitment</H2>
       <img src="/images/diversity-commitment.jpg" />
       <p>
         The organisers of UNIHACK are committed in increasing the diversity of

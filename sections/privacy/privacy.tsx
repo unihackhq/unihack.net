@@ -1,10 +1,12 @@
+import React from 'react';
 import styles from './privacy.module.scss';
-import ButtonLink from '../../components/button-link/button-link';
+import ButtonLink from '@components/button-link/button-link';
+import { H2 } from '@components/typography/typography';
 
 const Privacy = () => (
   <section className={styles.privacy}>
     <div className={styles['privacy-content']}>
-      <h2 className={styles.highlighted}>Your Privacy</h2>
+      <H2 className={styles.highlighted}>Your Privacy</H2>
       <p>
         We are committed to respecting your privacy and safeguarding any
         personal information you provide us with, and aim to only collect

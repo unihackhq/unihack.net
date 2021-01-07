@@ -1,6 +1,7 @@
 import styles from './sponsor-perks.module.scss';
 import Perk from './perk/perk';
 import perkData from '../../content/perks.json';
+import { H2 } from '@components/typography/typography';
 
 const SponsorPerks = () => {
   const perks = perkData.map(perk => (
@@ -18,7 +19,7 @@ const SponsorPerks = () => {
   return (
     <section className={styles['sponsor-perks']}>
       <div className={styles['sponsor-perks-content']}>
-        <h2>Perks in Detail</h2>
+        <H2>Perks in Detail</H2>
         <div className={styles.perks}>{perks}</div>
       </div>
     </section>

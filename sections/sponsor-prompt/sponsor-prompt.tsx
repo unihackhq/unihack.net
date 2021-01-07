@@ -1,11 +1,13 @@
+import React from 'react';
 import styles from './sponsor-prompt.module.scss';
-import ButtonLink from '../../components/button-link/button-link';
+import ButtonLink from '@components/button-link/button-link';
+import { H2, H3 } from '@components/typography/typography';
 
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
     <div className={styles['sponsor-prompt-content']}>
-      <h2>Interested?</h2>
-      <h3>Contact us for more information</h3>
+      <H2>Interested?</H2>
+      <H3>Contact us for more information</H3>
       <p>
         We're happy to discuss customisations according to your needs. Send us
         an email at{' '}

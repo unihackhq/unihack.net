@@ -3,11 +3,12 @@ import styles from './column.module.scss';
 import Cell from '../cell/cell';
 import { CellI } from '../cell/cell.interface';
 import { ColumnI } from './column.interface';
+import { H3 } from '@components/typography/typography';
 
 const Column = (props: ColumnI) => (
   <div className={styles.column} style={{ gridColumn: props.id }}>
     <div className={styles['column-header']}>
-      <h3>{props.title}</h3>
+      <H3>{props.title}</H3>
       <p>{props.subtitle}</p>
     </div>
     <div
@@ -22,7 +23,7 @@ const Column = (props: ColumnI) => (
       style={{ borderTopColor: props.accentColour }}
     />
     <div className={styles['column-footer']}>
-      <h3>{props.footerText}</h3>
+      <H3>{props.footerText}</H3>
     </div>
   </div>
 );

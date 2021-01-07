@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from './tiers-table.module.scss';
-import Table from '../../components/table/table';
-import { ColumnI } from '../../components/table/column/column.interface';
-import { CellI } from '../../components/table/cell/cell.interface';
+import Table from '@components/table/table';
+import { ColumnI } from '@components/table/column/column.interface';
+import { CellI } from '@components/table/cell/cell.interface';
+import { H2 } from '@components/typography/typography';
 import { PackageI } from './package.interface';
 import { CustomPerkI } from './custom-perk.interface';
 import data from '../../content/2020/sponsorship-packages.json';
 
 const TiersTable = () => (
   <section className={styles['get-involved']}>
-    <h2>Get Involved</h2>
+    <H2>Get Involved</H2>
     <Table columns={transformPackages(data)} rows={data.perks} />
   </section>
 );

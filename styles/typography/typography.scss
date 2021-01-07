@@ -1,0 +1,52 @@
+@import './typography-base.scss';
+@import '../styles.scss';
+
+@mixin hxl {
+  @include heading-base;
+  @include hxl-mobile;
+
+  @include md {
+    @include hxl-desktop;
+  }
+}
+
+@mixin hl {
+  @include heading-base;
+  @include hl-mobile;
+
+  @include md {
+    @include hl-desktop;
+  }
+}
+
+@mixin h1 {
+  @include heading-base;
+  @include h1-mobile;
+
+  @include md {
+    @include h1-desktop;
+  }
+}
+
+@mixin h2 {
+  @include heading-base;
+  @include h3-desktop;
+
+  @include md {
+    @include h2-desktop;
+  }
+}
+
+@mixin h3 {
+  @include heading-base;
+  @include h4-desktop;
+
+  @include md {
+    @include h3-desktop;
+  }
+}
+
+@mixin h4 {
+  @include heading-base;
+  @include h4-desktop;
+}

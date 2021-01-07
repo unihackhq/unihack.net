@@ -1,3 +1,4 @@
+import { H2 } from '@components/typography/typography';
 import styles from './city-banner.module.scss';
 
 type Props = {
@@ -15,8 +16,8 @@ const CityBanner = (props: Props) => (
     href={props.href}
     target="_blank"
   >
-    <h2>{props.city}</h2>
-    <h2 className={styles.thin}>{props.year}</h2>
+    <H2>{props.city}</H2>
+    <H2 className={styles.thin}>{props.year}</H2>
   </a>
 );
 

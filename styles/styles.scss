@@ -106,17 +106,8 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
 // Typography
 @mixin heading-sizes {
-  h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 500;
-  }
 
   h2 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 500;
-
     @include sm {
       text-align: center;
     }
@@ -144,17 +135,6 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
     }
   }
 
-  h3 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 500;
-  }
-
-  h4 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
-  }
 }
 
 @mixin body-size {

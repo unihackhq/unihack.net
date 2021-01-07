@@ -1,9 +1,11 @@
+import React from 'react';
 import styles from './event-description.module.scss';
+import { H2, H4 } from '@components/typography/typography';
 
 const EventDescription = () => (
   <section className={styles['event-description']}>
     <div className={styles['event-description-content']}>
-      <h2>What is UNIHACK?</h2>
+      <H2>What is UNIHACK?</H2>
       <p>
         We are Australia’s largest student hackathon. We bring together a
         diverse range of students to collaborate and bring innovative ideas to
@@ -18,7 +20,7 @@ const EventDescription = () => (
       <div className={styles.values}>
         <div className={styles.value}>
           <img src="/images/lightbulb.png" alt="A drawing of a lightbulb." />
-          <h4>Imagination</h4>
+          <H4>Imagination</H4>
           <p>
             We believe students are the ones who imagine the future without
             limitations.
@@ -27,7 +29,7 @@ const EventDescription = () => (
         </div>
         <div className={styles.value}>
           <img src="/images/handshake.png" alt="A drawing of a handshake." />
-          <h4>Collaboration</h4>
+          <H4>Collaboration</H4>
           <p>
             We create a supportive community that promotes diversity and
             inclusion.
@@ -36,7 +38,7 @@ const EventDescription = () => (
         </div>
         <div className={styles.value}>
           <img src="/images/laptop.png" alt="A drawing of a laptop." />
-          <h4>Build</h4>
+          <H4>Build</H4>
           <p>
             We embrace technology to build amazing ideas through software and
             hardware.
