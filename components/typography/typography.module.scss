@@ -2,6 +2,10 @@
 
 .hxl {
   @include hxl;
+
+  &.underline {
+    @include underline;
+  }
 }
 
 .hl {

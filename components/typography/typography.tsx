@@ -7,10 +7,13 @@ const cx = classNames.bind(styles);
 type HeadingProps = {
   children: ReactNode;
   className?: string;
+  underline?: boolean;
 };
 
 const HXL = (props: HeadingProps) => (
-  <h1 className={cx('hxl', props.className)}>{props.children}</h1>
+  <h1 className={cx('hxl', props.className, { underline: props.underline })}>
+    {props.children}
+  </h1>
 );
 
 const HL = (props: HeadingProps) => (
