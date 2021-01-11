@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import Head from 'next/head';
 
 import styles from './page.module.scss';
-import Footer from '../../components/footer/footer';
+import Footer from '@components/footer/footer';
 import { COLORS } from '../../styles/styles';
 
 const description = `
@@ -86,7 +86,7 @@ const Page = (props: Props) => {
           rel="stylesheet"
         />
       </Head>
-      {props.children}
+      <div className={styles['main-content']}>{props.children}</div>
       <Footer />
     </div>
   );
