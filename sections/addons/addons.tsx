@@ -1,23 +1,24 @@
 import styles from './addons.module.scss';
-import Card from '../../components/card/card';
-import ButtonLink from '../../components/button-link/button-link';
+import Card from '@components/card/card';
+import ButtonLink from '@components/button-link/button-link';
+import { H3, Text } from '@components/typography/typography';
 
 const Addons = () => (
   <section className={styles['sponsor-addons']}>
     <div className={styles['sponsor-addons-content']}>
-      <h3>Addons</h3>
+      <H3>Addons</H3>
       <div className={styles.addons}>
         <Card className={styles['addon-card']}>
-          <p>Additional Mentors</p>
-          <span>$250</span>
+          <Text>Additional Mentors</Text>
+          <Text bold>$250</Text>
         </Card>
         <Card className={styles['addon-card']}>
-          <p>Additional Guests</p>
-          <span>$150</span>
+          <Text>Additional Guests</Text>
+          <Text bold>$150</Text>
         </Card>
         <Card className={styles['addon-card']}>
-          <p>Resume and attendee lists</p>
-          <span>$450</span>
+          <Text>Resume and attendee lists</Text>
+          <Text bold>$450</Text>
         </Card>
       </div>
       <div className={styles.actions}>

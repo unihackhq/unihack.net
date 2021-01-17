@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import styles from './perk.module.scss';
-import Card from '../../../components/card/card';
+import Card from '@components/card/card';
+import { H3, Text } from '@components/typography/typography';
 
 type Props = {
   className: string;
@@ -21,8 +22,8 @@ const Perk = (props: Props) => {
         <img src={props.imgSrc} />
       </div>
       <div className={styles['perk-desc']}>
-        <h3>{props.title}</h3>
-        <p>{props.children}</p>
+        <H3>{props.title}</H3>
+        <Text>{props.children}</Text>
         {listItems ? <ul>{listItems}</ul> : ''}
       </div>
     </Card>

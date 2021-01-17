@@ -5,12 +5,10 @@
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
 
     padding-top: $base * 4;
     padding-bottom: $base * 4;
     color: white;
-    font-size: 18px;
 
     ul {
       margin-bottom: 0;

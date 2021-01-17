@@ -3,7 +3,6 @@
 $past-grey: #AFAFAF;
 
 .schedule-item {
-  @include body-size;
   display: flex;
   align-items: center;
   color: $past-grey;

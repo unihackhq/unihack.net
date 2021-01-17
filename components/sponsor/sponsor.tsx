@@ -1,11 +1,13 @@
+import React from 'react';
 import styles from './sponsor.module.scss';
 import ButtonLink from '../button-link/button-link';
+import { H3, Text } from '@components/typography/typography';
 
 const Sponsor = () => (
   <section className={styles.sponsor}>
     <div className={styles['sponsor-content']}>
-      <h3>Sponsor</h3>
-      <p>When you sponsor UNIHACK, you can:</p>
+      <H3>Sponsor</H3>
+      <Text>When you sponsor UNIHACK, you can:</Text>
       <ul>
         <li>
           Put your company at the forefront during Grad Application period.

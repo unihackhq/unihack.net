@@ -1,8 +1,10 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from './terms.module.scss';
 
-import Page from '../../layouts/page/page';
-import Header from '../../components/header/header';
+import Page from '@layouts/page/page';
+import Header from '@components/header/header';
+import { H2, HL, Text } from '@components/typography/typography';
 
 export default () => (
   <div>
@@ -13,39 +15,39 @@ export default () => (
       <Header withLogo solid />
       <section className={styles.terms}>
         <div className={styles['terms-content']}>
-          <h1>Terms of Service</h1>
-          <p>
+          <HL>Terms of Service</HL>
+          <Text>
             <strong>UNIHACK INCORPORATED</strong> is an Australian-owned and
             non-for-profit company. All payments will be invoiced in Australian
             Dollars unless otherwise agreed upon in writing.
-          </p>
+          </Text>
 
-          <h2 className={styles.highlighted}>
+          <H2 className={styles.highlighted}>
             UNIHACK competitor refund policy
-          </h2>
-          <p>
+          </H2>
+          <Text>
             Unfortunately we cannot offer refunds for any competitor tickets,
             however you are able transfer your ticket to another student willing
             to compete.
-          </p>
-          <p>
+          </Text>
+          <Text>
             Our{' '}
             <a href="https://facebook.com/groups/unihackers/">Facebook Group</a>{' '}
             is the recommended medium to find other students looking for
             tickets.
-          </p>
+          </Text>
 
-          <h2 className={styles.highlighted}>
+          <H2 className={styles.highlighted}>
             UNIHACK company sponsorship refund policy
-          </h2>
-          <p>
+          </H2>
+          <Text>
             Since sponsorship goes directly into the running of hackathons and
             takes effect immediately we cannot offer refunds for sponsorship.
-          </p>
-          <p>
+          </Text>
+          <Text>
             We may however be able to offer compensation in credit towards
             another year of sponsorship.
-          </p>
+          </Text>
         </div>
       </section>
     </Page>

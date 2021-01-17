@@ -1,5 +1,7 @@
+import React from 'react';
 import styles from './sponsors.module.scss';
-import Grid from '../../../components/grid/grid';
+import Grid from '@components/grid/grid';
+import { H2 } from '@components/typography/typography';
 import sponsorData from '../../../content/2019/sponsors.json';
 
 const Sponsors = () => {
@@ -11,17 +13,17 @@ const Sponsors = () => {
   return (
     <section className={styles['event-page-sponsors']}>
       <div className={styles['event-page-sponsors-content']}>
-        <h2 className={styles['section-title']}>Sponsors</h2>
+        <H2>Sponsors</H2>
         <p className={styles.subtitle}>
           Without whom this event would not happen...
         </p>
         <div className={styles['primary-companies']}>
           <div className={styles['company-section']}>
-            <h2
+            <H2
               className={`${styles['tier-title']} ${styles.highlighted} ${styles.platinum}`}
             >
               Platinum
-            </h2>
+            </H2>
             <img
               className={styles['company-logo']}
               src={platinumSponsorPath}
@@ -29,11 +31,11 @@ const Sponsors = () => {
             />
           </div>
           <div className={styles['company-section']}>
-            <h2
+            <H2
               className={`${styles['tier-title']} ${styles.highlighted} ${styles.venue}`}
             >
               Venue Sponsor
-            </h2>
+            </H2>
             <img
               className={styles['company-logo']}
               src={venueSponsorPath}
@@ -42,33 +44,35 @@ const Sponsors = () => {
           </div>
         </div>
 
-        <h2 className={`${styles['tier-title']} ${styles.highlighted}`}>
+        <H2
+          className={`${styles['tier-title']} ${styles.highlighted} ${styles.gold}`}
+        >
           Gold
-        </h2>
+        </H2>
         <Grid items={sponsorData.sponsors.gold} basePath={sponsorData.base} />
 
-        <h2
+        <H2
           className={`${styles['tier-title']} ${styles.highlighted} ${styles['academic-gold']}`}
         >
           Academic Gold
-        </h2>
+        </H2>
         <Grid
           items={sponsorData.sponsors.academicGold}
           basePath={sponsorData.base}
         />
 
-        <h2
+        <H2
           className={`${styles['tier-title']} ${styles.highlighted} ${styles.silver}`}
         >
           Silver
-        </h2>
+        </H2>
         <Grid items={sponsorData.sponsors.silver} basePath={sponsorData.base} />
 
-        <h2
+        <H2
           className={`${styles['tier-title']} ${styles.highlighted} ${styles.other}`}
         >
           Other sponsors
-        </h2>
+        </H2>
         <Grid items={sponsorData.sponsors.other} basePath={sponsorData.base} />
       </div>
     </section>

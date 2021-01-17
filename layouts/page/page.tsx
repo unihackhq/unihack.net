@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import Head from 'next/head';
 
 import styles from './page.module.scss';
-import Footer from '../../components/footer/footer';
+import Footer from '@components/footer/footer';
 import { COLORS } from '../../styles/styles';
 
 const description = `
@@ -80,12 +80,13 @@ const Page = (props: Props) => {
           sizes="167x167"
           href="/favicons/apple-touch-icon-167x167.png"
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
           rel="stylesheet"
         />
       </Head>
-      {props.children}
+      <div className={styles['main-content']}>{props.children}</div>
       <Footer />
     </div>
   );

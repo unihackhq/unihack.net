@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './footer.module.scss';
+import { Text } from '@components/typography/typography';
 
 const Footer = () => (
   <section className={styles.footer}>
@@ -18,8 +19,8 @@ const Footer = () => (
         </div>
       </div>
       <div className={`${styles['footer-content-col']} ${styles.second}`}>
-        <p>Proudly made in Melbourne 🇦🇺</p>
-        <p>© 2020 UNIHACK Incorporated</p>
+        <Text>Proudly made in Melbourne 🇦🇺</Text>
+        <Text>© 2020 UNIHACK Incorporated</Text>
       </div>
     </div>
   </section>

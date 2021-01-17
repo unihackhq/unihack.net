@@ -1,6 +1,7 @@
 import styles from './hero.module.scss';
 import Header from '../../components/header/header';
 import ButtonLink from '../../components/button-link/button-link';
+import { H1, H2 } from '@components/typography/typography';
 
 const Hero = () => (
   <section className={styles.hero}>
@@ -11,12 +12,12 @@ const Hero = () => (
           className={styles['hero-content-logo']}
           src={'/images/unihack.svg'}
         />
-        <h1 className={styles.title}>
+        <H1 className={styles.title}>
           <span>UNIHACK</span> 2021
-        </h1>
-        <h2>
+        </H1>
+        <H2>
           <span>5-7 March · Online · Australia-wide</span>
-        </h2>
+        </H2>
       </div>
       <div className={styles.actions}>
         <ButtonLink

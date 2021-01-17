@@ -12,7 +12,6 @@
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     color: $secondary;
 
     h2 {
@@ -35,12 +34,8 @@
     }
 
     h3 {
-      font-size: 21px;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
-    p {
-      line-height: 1.5;
-    }
   }
 }

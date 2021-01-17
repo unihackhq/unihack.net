@@ -1,10 +1,11 @@
 import styles from './sponsor-info.module.scss';
 import Pill from '../../components/pill/pill';
+import { H2 } from '../../components/typography/typography';
 
 const SponsorInfo = () => (
   <section className={styles['sponsor-info']}>
     <div className={styles['sponsor-info-content']}>
-      <h2>What is UNIHACK?</h2>
+      <H2>What is UNIHACK?</H2>
       <p className={`${styles.details} ${styles['no-margin']}`}>
         When: <strong>5-7 March, 2021</strong>
       </p>

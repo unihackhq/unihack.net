@@ -5,7 +5,6 @@
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     display: flex;
     flex-direction: column;
     padding-top: $base * 6;
