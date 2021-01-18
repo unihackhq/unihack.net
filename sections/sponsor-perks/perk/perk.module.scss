@@ -2,13 +2,17 @@
 
 .perk {
   display: flex;
+  border-radius: 0px;
 
   @include xsm {
     flex-direction: column;
   }
 
   @include md {
-    flex-direction: row;
+    display: inline-table;
+    width: $base * 58;
+    height: $base * 76;
+    margin-right: $base * 8;
   }
 
   .perk-img, .perk-desc {
@@ -25,19 +29,15 @@
       height: 100%;
       display: block;
 
-      @include xsm {
-        border-radius: 5px 5px 0 0;
-      }
       
-      @include md {
-        border-radius: 5px 0 0 5px;
-      }
     }
   }
 
   .perk-desc {
     padding: $base * 3;
     color: $secondary;
+    text-align: left;
+    white-space: normal;
 
     h3 {
       margin-bottom: $base * 2;

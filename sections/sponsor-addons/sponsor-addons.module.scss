@@ -7,10 +7,6 @@
     @include page-margin;
     padding-bottom: $base * 5;
 
-    h3 {
-      margin-bottom: $base * 2;
-    }
-
     .addons {
       display: flex;
       margin-bottom: $base * 2;
@@ -20,17 +16,22 @@
       }
 
       @include md {
-        flex-direction: row;
+        flex-direction: column;
       }
 
       .addon-card {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        flex-direction: row;
         font-size: 18px;
+        padding: 10px;
+        height: 40px;
+        margin-top: $base;
         width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        @include md {
+          width: 50%;
+        }
 
         &:not(:last-of-type) {
           @include xsm {
@@ -43,9 +44,11 @@
           }
         }
 
-        p {
-          margin: 0;
-          margin-bottom: $base;
+        .right-text {
+          float: right;
+          margin-left: auto;
+          margin-right: 0;
+          font-weight: bold;
         }
       }
     }

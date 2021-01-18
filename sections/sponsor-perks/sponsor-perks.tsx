@@ -19,7 +19,7 @@ const SponsorPerks = () => {
   return (
     <section className={styles['sponsor-perks']}>
       <div className={styles['sponsor-perks-content']}>
-        <H2>Perks in Detail</H2>
+        <H2>Perks</H2>
         <div className={styles.perks}>{perks}</div>
       </div>
     </section>
