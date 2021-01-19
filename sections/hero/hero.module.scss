@@ -92,24 +92,3 @@
   }
 }
 
-.mlh-trust-badge {
-  display: block;
-  width: 70px;
-  z-index: 10000;
-  position: absolute;
-  left: 0;
-  opacity: 0.5;
-  transition: all 0.2s;
-
-  @include xsm {
-    top: $base * -8;
-  }
-
-  @include sm {
-    top: $base * -12;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-}
