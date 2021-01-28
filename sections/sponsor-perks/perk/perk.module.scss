@@ -10,12 +10,13 @@
 
   @include md {
     display: inline-table;
-    width: $base * 58;
-    height: $base * 76;
+    max-width: 464px;
+    max-height: 608px;
     margin-right: $base * 8;
   }
 
-  .perk-img, .perk-desc {
+  .perk-img,
+  .perk-desc {
     @include md {
       flex: 1 1 50%;
     }
@@ -29,7 +30,6 @@
       height: 100%;
       display: block;
 
-      
     }
   }
 

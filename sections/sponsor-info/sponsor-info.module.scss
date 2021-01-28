@@ -14,9 +14,10 @@
     box-shadow: $floatingShadow;
   }
 
-  .icon-section{
+  .icon-section {
     display: flex;
     margin-bottom: $base * 2;
+
     img {
       margin-right: 20px;
     }
@@ -24,28 +25,28 @@
 
   &-content-left {
     color: $secondary;
+
     @include md {
       width: 50%;
     }
+
     padding: $base * 5;
-    background-color: rgba($light_grey, .87); 
+    background-color: rgba($light_grey, .87);
     backdrop-filter: blur(10px);
     text-align-last: left;
+
     h2 {
       margin-bottom: $base * 2;
     }
-    h3 {
-    }
+
     p {
       margin-bottom: $base * 2;
     }
-    a {
-      margin: 2px;
-    }
   }
+
   &-content-right {
     @include md {
-    width: 50%;
+      width: 50%;
     }
   }
 

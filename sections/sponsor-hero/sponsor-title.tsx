@@ -3,7 +3,7 @@ import { HXL } from '@components/typography/typography'
 
 const SponsorHero = () => (
   <section className={styles['sponsor-title']}>
-    <HXL underline>Sponsorship.</HXL>
+    <HXL underlineColor='underline-green'>Sponsorship.</HXL>
   </section>
 );
 

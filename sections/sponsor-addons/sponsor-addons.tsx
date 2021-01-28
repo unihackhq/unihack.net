@@ -1,5 +1,4 @@
 import styles from './sponsor-addons.module.scss';
-import Card from '@components/card/card';
 import ButtonLink from '@components/button-link/button-link';
 import { H3, Text } from '@components/typography/typography';
 
@@ -10,14 +9,14 @@ const Addons = () => (
       <Text>Don’t want to pick favourites? You don’t have to!<br />
        Bring additional mentors and guests to assist students and experience all that UNIHACK has to offer.</Text>
       <div className={styles.addons}>
-        <Card className={styles['addon-card']}>
+        <div className={styles['addon-card']}>
           <Text>Additional Mentors</Text>
-          <span className={styles['right-text']}> <Text bold>$250</Text></span>
-        </Card>
-        <Card className={styles['addon-card']}>
+          <Text bold>$250</Text>
+        </div>
+        <div className={styles['addon-card']}>
           <Text>Resume and attendee lists</Text>
-          <span className={styles['right-text']}><Text bold>$450</Text></span>
-        </Card>
+          <Text bold>$450</Text>
+        </div>
       </div>
       <div className={styles.actions}>
         <ButtonLink type="secondary" href="#sponsor-prompt">

@@ -23,10 +23,6 @@ const SponsorInfo = () => (
         </Text>
         <div className={`${styles.details} ${styles['icon-section']}`}><Icon icon="Calendar" /> <H3 >5-7 March, 2021</H3></div>
         <div className={`${styles.details} ${styles['icon-section']}`}><Icon icon="Location" /> <H3 >Online</H3></div>
-        <div className={`${styles.details}`}>
-          <ButtonLink href="/privacy" type="primary">Download Prospectus</ButtonLink>
-          <ButtonLink href="/privacy" type="secondary">Download Secondary</ButtonLink>
-        </div>
       </div>
       <div className={styles['sponsor-info-content-right']}>
 

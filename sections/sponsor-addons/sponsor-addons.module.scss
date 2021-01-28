@@ -2,7 +2,7 @@
 
 .sponsor-addons {
   background-color: $light_grey;
-  
+
   &-content {
     @include page-margin;
     padding-bottom: $base * 5;
@@ -29,6 +29,9 @@
         width: 100%;
         border-radius: 0px;
         box-shadow: none;
+        justify-content: space-between;
+        background-color: $white;
+
         @include md {
           width: 50%;
         }
@@ -44,12 +47,6 @@
           }
         }
 
-        .right-text {
-          float: right;
-          margin-left: auto;
-          margin-right: 0;
-          font-weight: bold;
-        }
       }
     }
 
