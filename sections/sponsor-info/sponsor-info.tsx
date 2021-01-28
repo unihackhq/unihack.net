@@ -1,5 +1,4 @@
 import styles from './sponsor-info.module.scss';
-import ButtonLink from '../../components/button-link/button-link';
 import { H3, H2, Text } from '@components/typography/typography'
 import Icon from '@components/icon/icon'
 
