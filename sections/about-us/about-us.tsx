@@ -4,7 +4,7 @@ import styles from './about-us.module.scss';
 const AboutUs = () => (
   <section className={styles['about-us']}>
     <div className={styles['about-us-content']}>
-      <HXL underline>About Us</HXL>
+      <HXL underlineColor='underline-primary'>About Us</HXL>
       <H2>Who are we</H2>
       <H3>
         <i>

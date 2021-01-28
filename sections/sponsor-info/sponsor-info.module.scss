@@ -8,36 +8,45 @@
   padding-top: $base * 5;
   padding-bottom: $base * 5;
   background-color: $light_grey;
+  @include page-margin;
 
   &-content {
-    @include page-margin;
+    box-shadow: $floatingShadow;
+  }
+
+  .icon-section {
+    display: flex;
+    margin-bottom: $base * 2;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &-content-left {
     color: $secondary;
-    
+
+    @include md {
+      width: 50%;
+    }
+
+    padding: $base * 5;
+    background-color: rgba($light_grey, .87);
+    backdrop-filter: blur(10px);
+    text-align-last: left;
+
     h2 {
       margin-bottom: $base * 2;
     }
 
-    p.details {
-      font-family: $fontsBasic;
-      font-size: 20px;
-      line-height: 32px;
-      color: black;
-
-      &.no-margin {
-        margin: 0;
-      }
+    p {
+      margin-bottom: $base * 2;
     }
+  }
 
-    .pills {
-      display: flex;
-
-      @include xsm {
-        flex-flow: column nowrap;
-      }
-
-      @include md {
-        flex-flow: initial;
-      }
+  &-content-right {
+    @include md {
+      width: 50%;
     }
   }
 
