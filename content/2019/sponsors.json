@@ -7,7 +7,7 @@
     },
     "platinum": {
       "name": "PwC",
-      "imagePath": "/pwc.png"
+      "imagePath": "/PwC.svg"
     },
     "gold": [
       {
@@ -16,7 +16,7 @@
       },
       {
         "name": "Atlassian",
-        "imagePath": "/atlassian.png"
+        "imagePath": "/Atlassian.svg"
       },
       {
         "name": "Blitzm",
@@ -28,7 +28,7 @@
       },
       {
         "name": "Carsales",
-        "imagePath": "/carsales.png"
+        "imagePath": "/Carsales.svg"
       },
       {
         "name": "Coles",
@@ -40,21 +40,21 @@
       },
       {
         "name": "Medipass",
-        "imagePath": "/medipass.png"
+        "imagePath": "/Medipass.svg"
       },
       {
         "name": "Microsoft",
-        "imagePath": "/microsoft.png"
+        "imagePath": "/Microsoft.svg"
       },
       {
         "name": "Xero",
-        "imagePath": "/xero.png"
+        "imagePath": "/Xero.svg"
       }
     ],
     "silver": [
       {
         "name": "Australia Post",
-        "imagePath": "/australiapost.png"
+        "imagePath": "/Australia Post.svg"
       },
       {
         "name": "Cognizant",
@@ -62,7 +62,7 @@
       },
       {
         "name": "GitHub",
-        "imagePath": "/github.png"
+        "imagePath": "/GitHub.svg"
       },
       {
         "name": "Monash FIT",
@@ -78,7 +78,7 @@
       },
       {
         "name": "Twilio",
-        "imagePath": "/twilio.png"
+        "imagePath": "/Twilio.svg"
       }
     ],
     "academicGold": [

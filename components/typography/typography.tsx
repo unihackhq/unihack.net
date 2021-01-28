@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 type HeadingProps = {
   children: ReactNode;
   className?: string;
-  underlineColor?: 'underline-primary' | 'underline-green'
+  underlineColor?: 'underline-primary' | 'underline-green';
 };
 
 const HXL = (props: HeadingProps) => (
@@ -40,15 +40,15 @@ type TextProps = {
   bold?: boolean;
   children?: ReactNode;
   html?: any;
-};
+} & React.HTMLAttributes<HTMLParagraphElement>;
 
 const Text = (props: TextProps) => {
-  const className = cx('body', { 'body-bold': props.bold });
+  const className = cx('body', { 'body-bold': props.bold }, props.className);
   return props.html ? (
     <p className={className} dangerouslySetInnerHTML={{ __html: props.html }} />
   ) : (
-      <p className={className}>{props.children}</p>
-    );
+    <p className={className}>{props.children}</p>
+  );
 };
 
 export { HXL, HL, H1, H2, H3, H4, Text };

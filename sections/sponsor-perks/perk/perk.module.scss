@@ -15,14 +15,6 @@
     margin-right: $base * 8;
   }
 
-  .perk-img,
-  .perk-desc {
-    @include md {
-      flex: 1 1 50%;
-    }
-  }
-
-
   .perk-img {
     img {
       object-fit: cover;
@@ -38,13 +30,5 @@
     color: $secondary;
     text-align: left;
     white-space: normal;
-
-    h3 {
-      margin-bottom: $base * 2;
-    }
-
-    li {
-      line-height: 1.5
-    }
   }
 }

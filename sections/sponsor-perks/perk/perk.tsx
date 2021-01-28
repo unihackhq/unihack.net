@@ -1,7 +1,8 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import styles from './perk.module.scss';
 import Card from '@components/card/card';
 import { H3, Text } from '@components/typography/typography';
+import Stack from '@components/stack/stack';
 
 type Props = {
   className: string;
@@ -13,7 +14,11 @@ type Props = {
 
 const Perk = (props: Props) => {
   const listItems = props.listItems
-    ? props.listItems.map((item, index) => <li key={index}>{item}</li>)
+    ? props.listItems.map((item, index) => (
+        <li key={index}>
+          <Text>{item}</Text>
+        </li>
+      ))
     : '';
 
   return (
@@ -21,11 +26,13 @@ const Perk = (props: Props) => {
       <div className={styles['perk-img']}>
         <img src={props.imgSrc} />
       </div>
-      <div className={styles['perk-desc']}>
+      <Stack size="medium" className={styles['perk-desc']}>
         <H3>{props.title}</H3>
-        <Text>{props.children}</Text>
-        {listItems ? <ul>{listItems}</ul> : ''}
-      </div>
+        <div className="text-content">
+          <Text>{props.children}</Text>
+          {listItems ? <ul>{listItems}</ul> : ''}
+        </div>
+      </Stack>
     </Card>
   );
 };

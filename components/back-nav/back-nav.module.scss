@@ -4,8 +4,7 @@
   @include page-margin;
   padding-top: $base * 2;
   
-  p {
-    cursor: pointer;
-    width: fit-content;
+  a {
+    @include link;
   }
 }

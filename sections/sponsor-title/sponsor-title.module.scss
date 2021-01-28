@@ -1,6 +1,6 @@
 @import '../../styles/styles.scss';
 
 .sponsor-title {
+  display: flex;
   @include page-margin;
-
 }

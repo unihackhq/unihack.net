@@ -1,4 +1,5 @@
 @import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
 
 .sponsor-prompt {
   background-color: $secondary;
@@ -6,29 +7,22 @@
   &-content {
     @include page-margin;
 
-    padding-top: $base * 4;
-    padding-bottom: $base * 4;
-    color: #C6C6C6;
+    padding-top: $xlarge;
+    padding-bottom: $xlarge;
+    color: $white;
     font-size: 16px;
 
     h2 {
       color: $primary;
-      margin-bottom: $base;
-    }
-
-    h3 {
-      color: $primary;
-      margin-bottom: $base * 2;
     }
 
     p a {
-      @include link-underline(#C6C6C6);
+      @include link-underline($white);
       font-weight: 500;
     }
 
     .actions {
       @include action-container;
-      margin-top: $base * 4;
     }
   }
 }

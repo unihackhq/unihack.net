@@ -1,6 +1,6 @@
 @import '../../styles/styles.scss';
 
-.sponsor-info {
+.sponsor-hero {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,13 +35,6 @@
     backdrop-filter: blur(10px);
     text-align-last: left;
 
-    h2 {
-      margin-bottom: $base * 2;
-    }
-
-    p {
-      margin-bottom: $base * 2;
-    }
   }
 
   &-content-right {

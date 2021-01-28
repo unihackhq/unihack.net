@@ -1,0 +1,39 @@
+@import '../../styles/spacing.scss';
+
+.stack {
+  &-xsmall {
+    > * + * {
+      padding-top: $xsmall;
+    }
+  }
+
+  &-small {
+    > * + * {
+      padding-top: $small;
+    }
+  }
+
+  &-medium {
+    > * + * {
+      padding-top: $medium;
+    }
+  }
+
+  &-large {
+    > * + * {
+      padding-top: $large;
+    }
+  }
+
+  &-xlarge {
+    > * + * {
+      padding-top: $xlarge;
+    }
+  }
+
+  &-xxlarge {
+    > * + * {
+      padding-top: $xxlarge;
+    }
+  }
+}
