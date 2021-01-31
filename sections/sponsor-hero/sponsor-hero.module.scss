@@ -1,12 +1,10 @@
 @import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
 
 .sponsor-hero {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 18px;
-  padding-top: $base * 5;
-  padding-bottom: $base * 5;
   background-color: $light_grey;
   @include page-margin;
 
@@ -16,7 +14,7 @@
 
   .icon-section {
     display: flex;
-    margin-bottom: $base * 2;
+    align-items: center;
 
     img {
       margin-right: 20px;
@@ -25,13 +23,15 @@
 
   &-content-left {
     color: $secondary;
+    padding: $space-large $space-medium;
 
     @include md {
       width: 50%;
+      padding: $space-xlarge;
     }
 
-    padding: $base * 5;
-    background-color: rgba($light_grey, .87);
+    
+    background-color: rgba($white, .87);
     backdrop-filter: blur(10px);
     text-align-last: left;
 

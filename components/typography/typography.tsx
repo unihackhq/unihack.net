@@ -7,11 +7,13 @@ const cx = classNames.bind(styles);
 type HeadingProps = {
   children: ReactNode;
   className?: string;
-  underlineColor?: 'underline-primary' | 'underline-green';
+  underlineColor?: 'yellow' | 'midori' | 'pacific' | 'salmon';
 };
 
 const HXL = (props: HeadingProps) => (
-  <h1 className={cx('hxl', props.className, props.underlineColor)}>
+  <h1
+    className={cx('hxl', props.className, `underline-${props.underlineColor}`)}
+  >
     {props.children}
   </h1>
 );

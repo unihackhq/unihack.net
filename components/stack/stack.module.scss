@@ -3,37 +3,37 @@
 .stack {
   &-xsmall {
     > * + * {
-      padding-top: $xsmall;
+      padding-top: $space-xsmall;
     }
   }
 
   &-small {
     > * + * {
-      padding-top: $small;
+      padding-top: $space-small;
     }
   }
 
   &-medium {
     > * + * {
-      padding-top: $medium;
+      padding-top: $space-medium;
     }
   }
 
   &-large {
     > * + * {
-      padding-top: $large;
+      padding-top: $space-large;
     }
   }
 
   &-xlarge {
     > * + * {
-      padding-top: $xlarge;
+      padding-top: $space-xlarge;
     }
   }
 
   &-xxlarge {
     > * + * {
-      padding-top: $xxlarge;
+      padding-top: $space-xxlarge;
     }
   }
 }

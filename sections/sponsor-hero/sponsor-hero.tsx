@@ -27,14 +27,16 @@ const SponsorHero = () => (
             </Stack>
             <Text bold>Come join us in the Imagination Revolution!</Text>
           </Stack>
-          <div className="icon-labels">
-            <div className={`${styles.details} ${styles['icon-section']}`}>
-              <Icon icon="Calendar" /> <H3>5-7 March, 2021</H3>
+          <Stack size="small">
+            <div className={`${styles['icon-section']}`}>
+              <Icon icon="Calendar" />
+              <H3>5-7 March, 2021</H3>
             </div>
-            <div className={`${styles.details} ${styles['icon-section']}`}>
-              <Icon icon="Location" /> <H3>Online</H3>
+            <div className={`${styles['icon-section']}`}>
+              <Icon icon="Location" />
+              <H3>Online</H3>
             </div>
-          </div>
+          </Stack>
         </Stack>
       </div>
     </div>

@@ -11,7 +11,7 @@
     color: white;
 
     ul {
-      margin-bottom: 0;
+      margin: 0;
     }
 
     span {
@@ -20,7 +20,6 @@
 
     .actions {
       @include action-container;
-      margin-top: $base * 4;
     }
   }
 }

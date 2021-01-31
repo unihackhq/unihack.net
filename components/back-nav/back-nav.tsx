@@ -4,21 +4,16 @@ import styles from './back-nav.module.scss';
 import { Text } from '@components/typography/typography';
 
 type Props = {
-  className?: string;
   route: string;
   children: ReactNode;
 };
 
 const BackNav = (props: Props) => (
-  <section className={styles['back-nav']}>
-    <Link href={props.route}>
-      <a>
-        <Text className={`${props.className ? props.className : ''}`}>
-          ← {props.children}
-        </Text>
-      </a>
-    </Link>
-  </section>
+  <Link href={props.route}>
+    <a className={styles['back-nav']}>
+      <Text>← {props.children}</Text>
+    </a>
+  </Link>
 );
 
 export default BackNav;

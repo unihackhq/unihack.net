@@ -13,13 +13,13 @@ type Props = {
 };
 
 const Perk = (props: Props) => {
-  const listItems = props.listItems
+  const listItems = props.listItems.length
     ? props.listItems.map((item, index) => (
         <li key={index}>
           <Text>{item}</Text>
         </li>
       ))
-    : '';
+    : null;
 
   return (
     <Card noInset className={`${styles.perk} ${props.className}`}>

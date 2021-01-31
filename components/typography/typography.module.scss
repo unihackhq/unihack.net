@@ -3,12 +3,22 @@
 .hxl {
   @include hxl;
 
-  &.underline-primary {
-    @include underline($primary);
-  }
+  &.underline {
+    &-yellow {
+      @include underline($primary);
+    }
 
-  &.underline-green {
-    @include underline($green);
+    &-midori {
+      @include underline($midori);
+    }
+
+    &-pacific {
+      @include underline($pacific);
+    }
+
+    &-salmon {
+      @include underline($salmon);
+    }
   }
 }
 

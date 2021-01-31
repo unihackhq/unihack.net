@@ -2,13 +2,15 @@
 @import '../../styles/spacing.scss';
 
 .sponsor-prompt {
-  background-color: $secondary;
+  &-container {
+    background-color: $secondary;
+  }
 
   &-content {
     @include page-margin;
 
-    padding-top: $xlarge;
-    padding-bottom: $xlarge;
+    padding-top: $space-xlarge;
+    padding-bottom: $space-xlarge;
     color: $white;
     font-size: 16px;
 

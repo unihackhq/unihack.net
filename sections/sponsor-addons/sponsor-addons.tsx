@@ -18,7 +18,7 @@ const Addons = () => (
         <Stack size="small" className={styles.addons}>
           <div>
             <div className={styles['addon-card-content']}>
-              <Text>Additional Mentors</Text>
+              <Text>Additional mentors</Text>
               <Text bold>$250</Text>
             </div>
           </div>
