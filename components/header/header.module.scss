@@ -5,13 +5,16 @@
   &-content {
     @include page-margin;
     display: flex;
+
     
     @include xsm {
+      height: 64px;
       padding: 16px 0px;
       justify-content: space-between;
     }
     
     @include sm {
+      height: 88px;
       padding: 24px 0px;
       justify-content: space-between;
     }
@@ -21,7 +24,6 @@
     display: flex;
 
     &-content {
-      
 
       svg {
         width: auto;
