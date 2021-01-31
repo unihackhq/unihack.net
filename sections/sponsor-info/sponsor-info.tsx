@@ -1,40 +1,30 @@
 import styles from './sponsor-info.module.scss';
-import Pill from '../../components/pill/pill';
-import { H2 } from '../../components/typography/typography';
+import { H3, H2, Text } from '@components/typography/typography'
+import Icon from '@components/icon/icon'
+
 
 const SponsorInfo = () => (
   <section className={styles['sponsor-info']}>
-    <div className={styles['sponsor-info-content']}>
-      <H2>What is UNIHACK?</H2>
-      <p className={`${styles.details} ${styles['no-margin']}`}>
-        When: <strong>5-7 March, 2021</strong>
-      </p>
-      <p className={`${styles.details} ${styles['no-margin']}`}>
-        Where: <strong>Online</strong>
-      </p>
-      <p className={styles.details}>
-        UNIHACK 2021 is a 48-hour hackathon with the mission to provide a
-        creative space for engineering, design and product students to build
-        innovative projects that are ready to go to market. Come join us in the
-        Imagination Revolution.
-      </p>
-      <div className={styles.pills}>
-        <Pill color="grey">
-          Hacking since 2014 with <strong>seven successful hackathons</strong>,
-          UNIHACK is{' '}
-          <strong className={styles.yellow}>
-            Australia’s largest student hackathon
-          </strong>
-          .
-        </Pill>
-        <Pill color="blue">
-          <span>40%</span>
-          year-on-year participant growth
-        </Pill>
-        <Pill color="yellow">
-          <span>35-50%</span>
-          increase in sponsorship
-        </Pill>
+    <div
+      className={styles['sponsor-info-content']}
+      style={{ background: 'url(/images/sponsor-hero.jpg)', backgroundSize: 'cover' }}
+    >
+      <div className={styles['sponsor-info-content-left']}>
+        <H2>What is UNIHACK?</H2>
+        <Text>
+          UNIHACK 2021 is a 48-hour hackathon with the mission to provide a
+          creative space for engineering, design and product students to build
+          innovative projects that are ready to go to market. Come join us in the
+          Imagination Revolution.
+      </Text>
+        <Text bold>
+          Come join us in the Imagination Revolution!
+        </Text>
+        <div className={`${styles.details} ${styles['icon-section']}`}><Icon icon="Calendar" /> <H3 >5-7 March, 2021</H3></div>
+        <div className={`${styles.details} ${styles['icon-section']}`}><Icon icon="Location" /> <H3 >Online</H3></div>
+      </div>
+      <div className={styles['sponsor-info-content-right']}>
+
       </div>
     </div>
   </section>

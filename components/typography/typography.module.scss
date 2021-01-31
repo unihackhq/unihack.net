@@ -3,8 +3,12 @@
 .hxl {
   @include hxl;
 
-  &.underline {
-    @include underline;
+  &.underline-primary {
+    @include underline($primary);
+  }
+
+  &.underline-green {
+    @include underline($green);
   }
 }
 

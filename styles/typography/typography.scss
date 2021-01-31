@@ -70,7 +70,7 @@
   }
 }
 
-@mixin underline {
+@mixin underline($color) {
   &:before {
     content: "";
     display: block;
@@ -78,11 +78,11 @@
     width: 100%;
     z-index: -1;
     bottom: 4px;
-    border-bottom: 8px solid $primary;
-    
+    border-bottom: 8px solid $color;
+
     @include md {
       bottom: 8px;
-      border-bottom: 16px solid $primary;
+      border-bottom: 16px solid $color;
     }
   }
 }
