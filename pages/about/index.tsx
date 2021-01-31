@@ -12,7 +12,7 @@ export default () => (
       <title>About Us - UNIHACK</title>
     </Head>
     <Page featureBackground>
-      <Header withLogo solid />
+      <Header />
       <AboutUs />
       <Diversity />
       <Privacy />

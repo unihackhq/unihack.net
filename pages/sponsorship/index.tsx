@@ -16,7 +16,7 @@ export default () => (
       <title>UNIHACK 2021 — Sponsorship</title>
     </Head>
     <Page>
-      <Header withLogo solid />
+      <Header />
       <SponsorHero />
       <SponsorInfo />
       <TiersTable />
