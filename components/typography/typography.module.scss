@@ -4,7 +4,21 @@
   @include hxl;
 
   &.underline {
-    @include underline;
+    &-yellow {
+      @include underline($primary);
+    }
+
+    &-midori {
+      @include underline($midori);
+    }
+
+    &-pacific {
+      @include underline($pacific);
+    }
+
+    &-salmon {
+      @include underline($salmon);
+    }
   }
 }
 

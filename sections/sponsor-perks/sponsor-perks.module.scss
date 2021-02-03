@@ -1,21 +1,36 @@
 @import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
 
 .sponsor-perks {
-  background-color: $light_grey;
+  &-container {
+    background-color: $secondary;
+    padding-top: $space-xxlarge;
+    padding-bottom: $space-xxlarge;
+  }
+
+  &-header {
+    @include page-margin;
+    color: $light_grey;
+  }
 
   &-content {
-    @include page-margin;
-    padding-top: $base * 5;
-    padding-bottom: $base * 5;
-    
-    h2 {
-      margin-bottom: 16px;
+    @include md {
+      padding-left: 10%;
+      padding-right: 10%;
+      overflow-y: hidden;
+      white-space: nowrap;
     }
 
     .perks {
+      margin-top: $space-large;
+
       .perk-item {
         &:not(:last-of-type) {
           margin-bottom: $base * 2;
+
+          @include md {
+            margin-bottom: 0;
+          }
         }
       }
     }
