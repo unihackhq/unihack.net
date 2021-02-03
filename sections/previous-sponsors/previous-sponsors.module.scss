@@ -1,22 +1,15 @@
 @import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
 
 .previous-sponsors {
-  background-color: white;
+  background-color: $light_grey;
   
   &-content {
     @include page-margin;
-    padding-top: $base * 5;
-    padding-bottom: $base * 5;
 
-    h2 {
-      margin-bottom: $base * 2;
-    }
-
-    p {
+    h3 {
       text-transform: uppercase;
-      font-size: 24px;
       text-align: center;
-      color: $secondary;
     }
   }
 }

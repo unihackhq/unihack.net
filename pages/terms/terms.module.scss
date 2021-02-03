@@ -6,7 +6,6 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  background-color: white;
 
   &-content {
     @include page-margin;
@@ -17,10 +16,6 @@
 
   h1 {
     align-self: flex-start;
-  }
-
-  h2 {
-    margin-top: $base * 3;
   }
 
   p {
