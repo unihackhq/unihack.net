@@ -13,7 +13,7 @@ export default () => (
       <title>Terms of Service - UNIHACK</title>
     </Head>
     <Page>
-      <Header withLogo solid />
+      <Header />
       <section className={styles.terms}>
         <div className={styles['terms-content']}>
           <Stack size="medium">

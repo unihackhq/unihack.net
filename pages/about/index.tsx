@@ -14,7 +14,7 @@ export default () => (
       <title>About Us - UNIHACK</title>
     </Head>
     <Page>
-      <Header withLogo solid />
+      <Header />
       <PageNavigation
         backLinkTitle="Home"
         backLinkHref="/"

@@ -14,7 +14,7 @@ export default () => (
       <title>Privacy Policy - UNIHACK</title>
     </Head>
     <Page>
-      <Header withLogo solid />
+      <Header />
       <section className={styles['privacy-policy']}>
         <div className={styles['privacy-policy-content']}>
           <Stack size="medium">

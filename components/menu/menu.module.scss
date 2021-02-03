@@ -11,6 +11,7 @@
   
       list-style: none;
       margin: 0;
+      margin-top: $base;
       padding: 0;
   
       &.nav-show {
@@ -31,26 +32,31 @@
       align-items: center;
       justify-content: center;
   
-      width: 40px;
-      height: 40px;
-      background-color: black;
-      border: 0;
-      border-radius: 20px;
+      width: 32px;
+      height: 30px;
+      border: 2px solid $secondary;
+      background-color: white;
       cursor: pointer;
   
-      box-shadow: $floatingShadow;
+      box-shadow: 4px 4px 0px $secondary;
   
       &:hover {
-        background-color: lighten(black, 7%);
-        transform: translateY(1px);
+        box-shadow: 3px 3px 0px 0px $secondary;
+        transform: translate(1px, 1px);
       }
   
-      &:active, &:focus {
-        outline: none;
+      &:active {
+        box-shadow: none;
+        transform: translate(4px, 4px);
       }
   
       &:focus {
-        box-shadow: 0 0 0 4px white;
+        outline: none;
+      }
+
+      svg {
+        width: 20px;
+        height: 16px;
       }
     }
   }
