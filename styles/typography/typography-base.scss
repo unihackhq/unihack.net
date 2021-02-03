@@ -1,6 +1,13 @@
+@mixin hxl-desktop-large {
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
 @mixin hxl-desktop {
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 64px;
+  line-height: 64px;
   font-weight: 600;
   letter-spacing: -0.06em;
 }
@@ -12,9 +19,16 @@
   letter-spacing: -0.06em;
 }
 
-@mixin hl-desktop {
+@mixin hl-desktop-large {
   font-size: 64px;
   line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+@mixin hl-desktop {
+  font-size: 56px;
+  line-height: 64px;
   font-weight: 600;
   letter-spacing: -0.06em;
 }

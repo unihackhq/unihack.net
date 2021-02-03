@@ -1,83 +1,87 @@
+@import '../../styles/colours.scss';
+@import '../../styles/spacing.scss';
 @import '../../styles/styles.scss';
 
 .hero {
-  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $space-xxlarge;
+  
+  &-graphic {
+    width: 100%;
+  }
 
   &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     @include page-margin;
-    position: relative;
 
-    @include xsm {
-      padding-top: $base * 12;
-      padding-bottom: $base * 4;
-    }
-
-    @include sm {
-      padding-top: $base * 9;
-      padding-bottom: $base * 12;
-    }
-
-    &-logo {
-      width: 72px;
-      height: 96px;
-      margin-bottom: $base * 4;
-
-      @include md {
-        float: left;
-        width: 148px;
-        height: 196px;
-        margin-left: -200px;
-      }
+    @include md {
+      align-items: center;
+      width: auto;
+      margin: 0;
+      
     }
 
     &-title {
-      margin-bottom: $base * 2;
+      display: flex;
+      flex-direction: column;
 
       @include md {
-        padding-left: 200px;
+        align-items: center;
       }
-
-      h1 {
-        margin: 0;
-        letter-spacing: -3px;
-        font-weight: 300;
-
-        @include xsm {
-          font-size: 60px;
-          line-height: 40px;
-        }
+      
+      &-xl {
+        display: flex;
+        flex-direction: column;
 
         @include md {
-          font-size: 120px;
-          line-height: 90px;
-        }
-
-        span {
           display: block;
-          font-weight: 500;
-          margin-bottom: $base * 2;
         }
       }
+    }
 
-      h2 {
-        font-weight: 400;
-        margin-top: $base * 4;
-        text-align: left;
-      }
+    &-subtitle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
-      a {
-        @include link;
-        text-decoration: underline;
+      @include md {
+        display: block;
       }
     }
 
     .actions {
       @include action-container;
-      margin-top: $base * 4;
 
-      @include md {
-        padding-left: 200px;
-      }
+      align-self: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .salmon {
+    color: $salmon;
+  }
+
+  .midori {
+    color: $midori;
+  }
+
+  .pacific {
+    color: $pacific;
+  }
+
+  .yellow {
+    color: $primary;
+  }
+
+  .mobile-only {
+    display: none;
+
+    @include md {
+      display: inline;
     }
   }
 }
