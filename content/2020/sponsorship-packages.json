@@ -45,7 +45,7 @@
     },
     {
       "id": 2,
-      "name": "Mailouts and announcements",
+      "name": "Mailouts and social posts",
       "description": "Get your brand out to our community."
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "name": "Your company logo on UNIHACK merch",
+      "name": "Branding on UNIHACK merch",
       "description": "Including participant handbooks, t-shirts and banners."
     },
     {
@@ -90,17 +90,17 @@
     },
     {
       "id": 11,
-      "name": "Opening & Closing Ceremony Keynote",
+      "name": "Opening & closing keynote",
       "description": "Kick off the hackathon with a speech by your most esteemed representative."
     },
     {
       "id": 12,
-      "name": "Judge seat & Main prize presentation",
+      "name": "Judge & award main prize",
       "description": "Get to judge all the hacks and present the main prizes."
     },
     {
       "id": 13,
-      "name": "Company name beside UNIHACK logo",
+      "name": "Co-branding",
       "description": "All promotions will have your company’s name."
     }
   ]

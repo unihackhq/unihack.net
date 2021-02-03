@@ -1,13 +1,6 @@
-$base: 8px;
-$primary: #fcc300;
-$secondary: #1f252a;
-
-$red: #d42e2a;
-$light_grey: #f3f4f5;
-$blue: #19607d;
-
-$white: #ffffff;
-$green: #06BE5A;
+@import './breakpoints.scss';
+@import './colours.scss';
+@import './variables.scss';
 
 $fonts: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
   Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -16,49 +9,6 @@ $fontsBasic: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
-
-// Breakpoints
-@mixin xsm {
-  @media (min-width: 0em) {
-    @content;
-  }
-}
-
-@mixin ksm {
-  @media (min-width: 22em) {
-    @content;
-  } //352px
-}
-
-@mixin sm {
-  @media (min-width: 37.5em) {
-    @content;
-  } //600px
-}
-
-@mixin md {
-  @media (min-width: 50em) {
-    @content;
-  } //800px
-}
-
-@mixin lg {
-  @media (min-width: 64em) {
-    @content;
-  } //1024px
-}
-
-@mixin xl {
-  @media (min-width: 70em) {
-    @content;
-  } //1120px
-}
-
-@mixin xxl {
-  @media (min-width: 80em) {
-    @content;
-  } //1280px
-}
 
 @mixin page-margin {
   @include xsm {
