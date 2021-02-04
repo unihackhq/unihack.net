@@ -1,0 +1,41 @@
+@import '../../styles/styles.scss';
+
+.sponsor-addons {
+  background-color: $light_grey;
+
+  &-content {
+    @include page-margin;
+
+    .addons {
+      display: flex;
+
+      @include xsm {
+        flex-direction: column;
+      }
+
+      @include md {
+        flex-direction: column;
+      }
+
+      .addon-card-content {
+        display: flex;
+        flex-direction: row;
+        padding: 8px 16px;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        justify-content: space-between;
+        background-color: $white;
+
+        @include md {
+          width: 50%;
+        }
+
+      }
+    }
+
+    .actions {
+      @include action-container;
+    }
+  }
+}

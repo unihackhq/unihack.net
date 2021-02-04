@@ -6,28 +6,12 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  background-color: white;
+  background-color: $light_grey;
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    p {
-      margin-top: 0;
-      margin-bottom: $base * 3;
-      @include xsm {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-
-      @include md {
-        font-size: 22px;
-        font-weight: 300;
-      }
-    }
   }
 }

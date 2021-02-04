@@ -56,7 +56,9 @@ class EventSchedule extends React.Component<Props, State> {
   private getSelectorButtons(day: Day) {
     return (
       <button
-        className={`day-selector ${this.isActive(day) ? 'active' : ''}`}
+        className={`${styles['day-selector']} ${
+          this.isActive(day) ? styles.active : ''
+        }`}
         onClick={this.setDay(day)}
       >
         <h3>{this.titleCase(day)}</h3>

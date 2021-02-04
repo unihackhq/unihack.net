@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './row.module.scss';
 import { RowI } from './row.interface';
+import { Text } from '@components/typography/typography';
 
 const Row = (props: RowI) => (
   <div className={styles.row}>
-    <p>{props.name}</p>
+    <Text>{props.name}</Text>
   </div>
 );
 

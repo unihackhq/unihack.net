@@ -1,88 +1,46 @@
 @import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
 
 .sponsor-hero {
-
-  @include xsm {
-    min-height: 40vh;
-  }
-
-  @include md {
-    min-height: 60vh;
-  }
-
-  background: #ccc;
-  background-size: cover;
-  background-position: top;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $light_grey;
+  @include page-margin;
 
   &-content {
-    @include page-margin;
-    font-family: $fontsBasic;
-    align-items: center;
+    box-shadow: $floatingShadow;
+  }
+
+  .icon-section {
     display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
+    align-items: center;
 
-    @include xsm {
-      padding-top: $base * 4;
-      padding-bottom: $base * 8;
-    }
-
-    @include sm {
-      padding-top: $base * 9;
-      padding-bottom: $base * 12;
+    img {
+      margin-right: 20px;
     }
   }
 
-  .hero-quote {
-    @include xsm {
-      margin-top: 120px;
-    }
+  &-content-left {
+    color: $secondary;
+    padding: $space-large $space-medium;
 
     @include md {
-      margin-top: 0;
+      width: 50%;
+      padding: $space-xlarge;
     }
+
+    
+    background-color: rgba($white, .87);
+    backdrop-filter: blur(10px);
+    text-align-last: left;
+
   }
 
-  .quote {
-    @include xsm {
-      font-size: 1.5rem;
-    }
-    
+  &-content-right {
     @include md {
-      font-size: 2.25rem;
-    }
-    
-    line-height: 1.25;
-    padding: 8px 0;
-    border-left: 20px solid #ffcb25;
-    max-width: 14em;
-    margin: 0;
-  }
-
-  .highlight {
-    background-color: #ffcb25;
-    padding: 9px 0;
-    color: #202020;
-    display: inline;
-    margin: 0;
-    font-weight: 500;
-
-    .offset {
-      font-weight: 600;
-      position: relative;
-      left: -10px;
+      width: 50%;
     }
   }
 
-  .quote-from {
-    font-size: 1rem;
-    line-height: 1;
-    padding: 8px 10px;
-    margin: 0;
-    display: inline-block;
-    background: #202020;
-    color: #ffcb25;
-    font-weight: 400;
-  }
 }

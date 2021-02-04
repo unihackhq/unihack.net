@@ -6,16 +6,9 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  font-size: 18px;
-  background-color: white;
-
-  p {
-    line-height: 1.5;
-  }
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     color: $secondary;
 
     .values {
@@ -44,13 +37,6 @@
           width: 200px;
         }
 
-        p {
-          font-weight: 300;
-        }
-
-        b {
-          font-weight: 400;
-        }
       }
     }
   }

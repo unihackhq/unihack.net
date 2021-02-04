@@ -1,62 +1,14 @@
-$base: 8px;
-$primary: #fcc300;
-$secondary: #1f252a;
+@import './breakpoints.scss';
+@import './colours.scss';
+@import './variables.scss';
 
-$red: #d42e2a;
-$grey: #2e383f;
-$light_grey: #f3f4f5;
-$blue: #19607d;
-
-$fonts: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+$fonts: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
   Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol';
 $fontsBasic: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
-
-// Breakpoints
-@mixin xsm {
-  @media (min-width: 0em) {
-    @content;
-  }
-}
-
-@mixin ksm {
-  @media (min-width: 22em) {
-    @content;
-  } //352px
-}
-
-@mixin sm {
-  @media (min-width: 37.5em) {
-    @content;
-  } //600px
-}
-
-@mixin md {
-  @media (min-width: 50em) {
-    @content;
-  } //800px
-}
-
-@mixin lg {
-  @media (min-width: 64em) {
-    @content;
-  } //1024px
-}
-
-@mixin xl {
-  @media (min-width: 70em) {
-    @content;
-  } //1120px
-}
-
-@mixin xxl {
-  @media (min-width: 80em) {
-    @content;
-  } //1280px
-}
 
 @mixin page-margin {
   @include xsm {
@@ -104,70 +56,6 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   }
 }
 
-// Typography
-@mixin heading-sizes {
-  h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 500;
-  }
-
-  h2 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 500;
-
-    @include sm {
-      text-align: center;
-    }
-
-    &.section-title {
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 40px;
-
-      @include md {
-        font-size: 80px;
-      }
-    }
-
-    &.highlighted {
-      background-color: $primary;
-      margin-bottom: $base * 3;
-      padding: 0 $base * 3;
-      padding-bottom: 4px;
-      align-self: center;
-
-      text-align: center;
-      text-transform: lowercase;
-      font-variant: small-caps;
-    }
-  }
-
-  h3 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 500;
-  }
-
-  h4 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
-  }
-}
-
-@mixin body-size {
-  margin: 0;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-@mixin body-bold {
-  @include body-size;
-  font-weight: 500;
-}
-
 @mixin subtitle {
   margin: 0;
   font-style: italic;
@@ -184,7 +72,9 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   padding: $base $base * 3;
 
   font-family: $fonts;
-  @include body-bold;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 
   border-radius: 25px;
   transition: all 0.2s;

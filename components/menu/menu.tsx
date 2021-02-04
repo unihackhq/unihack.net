@@ -21,7 +21,35 @@ const Menu = (props: Props) => {
     <div className={styles.menu}>
       <div className={styles['menu-container']}>
         <button className={styles['menu-btn']} onClick={props.onClick}>
-          <img src="/images/menu-icon.svg" />
+          <svg
+            width="20"
+            height="16"
+            viewBox="0 0 20 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 2H18"
+              stroke="#1F252A"
+              strokeWidth="3"
+              strokeLinecap="square"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M2 8H18"
+              stroke="#1F252A"
+              strokeWidth="3"
+              strokeLinecap="square"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M2 14H18"
+              stroke="#1F252A"
+              strokeWidth="3"
+              strokeLinecap="square"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
       </div>
       <ul className={`${styles.nav} ${navClass}`}>{menuItems}</ul>

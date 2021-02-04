@@ -2,10 +2,6 @@
 
 .get-involved {
   @include page-margin;
-  @include heading-sizes;
   margin-bottom: $base * 3;
 
-  h2 {
-    margin-bottom: $base * 2;
-  }
 }

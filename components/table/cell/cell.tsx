@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './cell.module.scss';
+import { Text } from '@components/typography/typography';
 
 type Props = {
   checked?: boolean;
@@ -9,7 +10,7 @@ type Props = {
 const Cell = (props: Props) => (
   <div className={styles.cell}>
     {props.content ? (
-      <p className={styles['cell-content']}>{props.content}</p>
+      <Text bold>{props.content}</Text>
     ) : props.checked ? (
       <Tick />
     ) : (

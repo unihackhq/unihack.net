@@ -6,18 +6,11 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  font-size: 18px;
-  border-top: 1px solid #d0d0d0;
-  background-color: white;
+  
 
   &-content {
     @include page-margin;
-    @include heading-sizes;
     color: $secondary;
-
-    h2 {
-      margin-bottom: $base * 6;
-    }
   }
 
   &-questions-grid {
@@ -34,13 +27,6 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    h3 {
-      font-size: 21px;
-      margin-bottom: 6px;
-    }
 
-    p {
-      line-height: 1.5;
-    }
   }
 }
