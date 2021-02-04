@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 
@@ -7,15 +8,20 @@ import Faqs from '../sections/faqs/faqs';
 import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
+import Header from '@components/header/header';
+import Divider from '@components/divider/divider';
 
 export default () => (
   <div>
     <Head>
       <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
-    <Page featureBackground>
+    <Page>
+      <Header />
       <Hero />
+      <Divider />
       <EventDescription />
+      <Divider />
       <Faqs />
       <section className={styles.cities}>
         <CityBanner
