@@ -7,7 +7,11 @@ const Hero = () => (
   <section className={styles.hero}>
     <Stack size="xlarge" className={styles['hero-content']}>
       <Stack size="large" className={styles['hero-content-title']}>
-        <img className={styles['hero-graphic']} src={'/images/2021-hero.svg'} />
+        <img
+          className={styles['hero-graphic']}
+          src={'/images/2021-hero.svg'}
+          alt="UNIHACK 2021 graphic featuring interconnected laptops surrounding a 3D UNIHACK logo"
+        />
         <Stack size="small" className={styles['hero-content-title']}>
           <HXL className={styles['hero-content-title-xl']}>
             <span className={styles.salmon}>Create. </span>

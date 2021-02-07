@@ -15,6 +15,7 @@ const CityBanner = (props: Props) => (
     }`}
     href={props.href}
     target="_blank"
+    rel="noopener"
   >
     <H2>{props.city}</H2>
     <H2 className={styles.thin}>{props.year}</H2>

@@ -6,7 +6,7 @@ import { MenuItemI } from '../menu/menu-item/menu-item.interface';
 
 const Logo = () => (
   <Link href="/">
-    <a className={styles['header-logo-content']}>
+    <a className={styles['header-logo-content']} aria-label="UNIHACK Home">
       <svg
         width="176"
         height="40"
