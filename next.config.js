@@ -10,6 +10,11 @@ module.exports = {
         source: '/mentor-info',
         destination: 'https://www.notion.so/unihack/Mentor-Information-Pack-2021-a5473d95671147ba80ca93f5c5980558',
         permanent: false
+      },
+      {
+        source: '/mentor-brief',
+        destination: 'https://www.notion.so/unihack/Mentor-Information-Pack-2021-a5473d95671147ba80ca93f5c5980558',
+        permanent: false
       }
     ]
   },
