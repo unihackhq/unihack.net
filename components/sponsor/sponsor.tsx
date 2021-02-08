@@ -39,7 +39,7 @@ const Sponsor = () => (
             Enquire now
           </ButtonLink>
           <ButtonLink type="primary" href="/sponsorship">
-            More info
+            More about sponsorship
           </ButtonLink>
         </div>
       </Stack>
