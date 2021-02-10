@@ -8,9 +8,9 @@ type Props = {
 
 const Grid = (props: Props) => {
   const gridItems = props.items.map((item: GridItemI) => (
-    <span key={item.name}>
+    <div key={item.name}>
       <img src={`${props.basePath}${item.imagePath}`} alt={item.name} />
-    </span>
+    </div>
   ));
 
   return <div className={styles.grid}>{gridItems}</div>;

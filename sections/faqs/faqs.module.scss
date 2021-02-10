@@ -4,9 +4,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: $base * 7;
-  padding-bottom: $base * 7;
-  
 
   &-content {
     @include page-margin;
