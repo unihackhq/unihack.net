@@ -1,9 +1,12 @@
 import React from 'react';
+import classNames from 'classnames/bind';
 import styles from './column.module.scss';
 import Cell from '../cell/cell';
 import { CellI } from '../cell/cell.interface';
 import { ColumnI } from './column.interface';
 import { H3 } from '@components/typography/typography';
+
+const cx = classNames.bind(styles);
 
 const Column = (props: ColumnI) => (
   <div className={styles.column} style={{ gridColumn: props.id }}>
@@ -12,15 +15,13 @@ const Column = (props: ColumnI) => (
       <p>{props.subtitle}</p>
     </div>
     <div
-      className={styles['column-divider']}
-      style={{ borderTopColor: props.accentColour }}
+      className={cx('column-divider', `column-divider-${props.accentColour}`)}
     />
     <div className={styles['column-content']}>
       {createCells(props.cellData)}
     </div>
     <div
-      className={styles['column-divider']}
-      style={{ borderTopColor: props.accentColour }}
+      className={cx('column-divider', `column-divider-${props.accentColour}`)}
     />
     <div className={styles['column-footer']}>
       <H3>{props.footerText}</H3>

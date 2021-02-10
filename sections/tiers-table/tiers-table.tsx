@@ -33,7 +33,7 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
       id: tier.id,
       title: tier.name,
       subtitle,
-      accentColour: tier.colour,
+      accentColour: tier.name.toLowerCase(),
       footerText: tier.price,
       cellData: transformPackagePerks(tier, sponsorshipData.perks.length)
     };

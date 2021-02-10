@@ -40,19 +40,19 @@
       border: none;
       
       &.platinum {
-        border-top: 4px solid #A3ADB8;
+        border-top: 4px solid $platinum;
       }
 
       &.gold {
-        border-top: 4px solid #FEE795;
+        border-top: 4px solid $gold;
       }
 
       &.silver {
-        border-top: 4px solid #E4E6E9;
+        border-top: 4px solid $silver;
       }
 
       &.bronze {
-        border-top: 4px solid #FFE4C2;
+        border-top: 4px solid $bronze;
       }
     }
   }

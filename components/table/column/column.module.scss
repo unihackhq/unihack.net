@@ -51,6 +51,22 @@ $subtitleColour: #515151;
     width: 100%;
     border-top-width: 4px;
     border-top-style: solid;
+
+    &-platinum {
+      border-top-color: $platinum;
+    }
+
+    &-gold {
+      border-top-color: $gold;
+    }
+
+    &-silver {
+      border-top-color: $silver;
+    }
+
+    &-bronze {
+      border-top-color: $bronze;
+    }
   }
 
   &-header {
