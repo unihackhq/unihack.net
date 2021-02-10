@@ -7,8 +7,6 @@
     @include page-margin;
     display: flex;
     flex-direction: column;
-    padding-top: $base * 6;
-    padding-bottom: $base * 6;
 
     .section-title {
       color: $secondary;
@@ -17,62 +15,44 @@
     .subtitle {
       @include subtitle;
       color: $secondary;
-    }
+    } 
 
-    .tier-title {
-      margin-top: $base * 6;
-      margin-bottom: $base * 3;
-    }
+    .logo-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
 
-    .highlighted {
-      &.venue {
-        background-color: $secondary;
-        color: $light_grey;
+      .company-logo {
+        width: 50%;
+        height: auto;
+
+        @include md {
+          height: 150px;
+          width: auto;
+        }
       }
+    }
 
+    .tier-accent {
+      width: 100%;
+      margin: 0;
+      border: none;
+      
       &.platinum {
-        background-color: #B9C4CB;
+        border-top: 4px solid #A3ADB8;
       }
 
       &.gold {
-        background-color: $primary;
-      }
-      
-      &.academic-gold {
-        background-color: $primary;
+        border-top: 4px solid #FEE795;
       }
 
       &.silver {
-        background-color: #E0E0E0;
+        border-top: 4px solid #E4E6E9;
       }
 
-      &.other {
-        background-color: #D28764;
-      }
-    }
-
-    .primary-companies {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      @include xsm {
-        flex-direction: column;
-      }
-
-      @include md {
-        flex-direction: row;
-      }
-      
-      .company-section {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-
-        img {
-          width: 300px;
-          margin-top: $base;
-        }
+      &.bronze {
+        border-top: 4px solid #FFE4C2;
       }
     }
   }

@@ -21,6 +21,12 @@
       "name": "GitHub",
       "imagePath": "/GitHub.svg"
     },
+
+    {
+      "name": "Australia Post",
+      "imagePath": "/Australia Post.svg"
+    },
+
     {
       "name": "PwC",
       "imagePath": "/PwC.svg"
@@ -28,10 +34,6 @@
     {
       "name": "Telstra",
       "imagePath": "/Telstra.svg"
-    },
-    {
-      "name": "Australia Post",
-      "imagePath": "/Australia Post.svg"
     },
     {
       "name": "Xero",
@@ -58,7 +60,7 @@
     },
     {
       "name": "Monash University",
-      "imagePath": "/Monash University.svg"
+      "imagePath": "/Monash FIT.svg"
     },
     {
       "name": "University of Melbourne",
