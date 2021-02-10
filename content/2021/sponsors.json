@@ -24,7 +24,7 @@
       },
       {
         "name": "DigIO",
-        "imagePath": "/Digio.svg"
+        "imagePath": "/DigIO.svg"
       },
       {
         "name": "Latitude",
@@ -72,7 +72,7 @@
       },
       {
         "name": "HERE",
-        "imagePath": "/Here.svg"
+        "imagePath": "/HERE.svg"
       },
       {
         "name": "Wacom",
