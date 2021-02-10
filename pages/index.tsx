@@ -11,7 +11,6 @@ import Sponsor from '@components/sponsor/sponsor';
 import Header from '@components/header/header';
 import Divider from '@components/divider/divider';
 import Sponsors from 'sections/melbourne-2019/sponsors/sponsors';
-import EventSchedule from 'sections/melbourne-2019/event-schedule/event-schedule';
 import Stack from '@components/stack/stack';
 
 export default () => (
