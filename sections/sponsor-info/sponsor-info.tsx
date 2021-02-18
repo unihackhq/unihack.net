@@ -1,6 +1,8 @@
 import styles from './sponsor-info.module.scss';
 import { H3, H2, Text } from '@components/typography/typography'
 import Icon from '@components/icon/icon'
+import Button from '@components/button/button'
+import ButtonLink from '@components/button/button-link'
 
 
 const SponsorInfo = () => (
@@ -22,6 +24,8 @@ const SponsorInfo = () => (
         </Text>
         <div className={`${styles.details} ${styles['icon-section']}`}><Icon icon="Calendar" /> <H3 >5-7 March, 2021</H3></div>
         <div className={`${styles.details} ${styles['icon-section']}`}><Icon icon="Location" /> <H3 >Online</H3></div>
+        <Button type='primary' active theme='light' children={<Text>HI</Text>} />
+        <ButtonLink type='secondary' active theme='light' children={<Text>HI</Text>} href='/privacy'></ButtonLink>
       </div>
       <div className={styles['sponsor-info-content-right']}>
 

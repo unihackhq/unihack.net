@@ -1,9 +1,11 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
-import styles from './button-link.module.scss';
+import styles from '../button/button.module.scss';
 
 type Props = {
   type: 'primary' | 'secondary';
+  theme: 'light' | 'dark';
+  active?: boolean;
   href: string;
   target?: string;
   children: ReactNode;
@@ -13,14 +15,14 @@ const ButtonLink = (props: Props) => {
   return isInternalLink(props.href) ? (
     <ButtonLinkInternal {...props} />
   ) : (
-    <ButtonLinkExternal {...props} />
-  );
+      <ButtonLinkExternal {...props} />
+    );
 };
 
 const ButtonLinkInternal = (props: Props) => (
   <Link href={props.href}>
     <a
-      className={`${styles['btn-link']} ${styles[props.type]}`}
+      className={`${styles['btn-link']} ${styles[props.type]} ${styles[props.theme]} ${styles.btn}  ${props.active ? styles['active'] : ''}`}
       target={props.target ? props.target : ''}
     >
       {props.children}
@@ -30,7 +32,7 @@ const ButtonLinkInternal = (props: Props) => (
 
 const ButtonLinkExternal = (props: Props) => (
   <a
-    className={`${styles['btn-link']} ${styles[props.type]}`}
+    className={`${styles['btn-link']} ${styles[props.type]} ${styles[props.theme]} ${styles.btn}  ${props.active ? styles['active'] : ''}`}
     href={props.href}
     target={props.target ? props.target : ''}
   >

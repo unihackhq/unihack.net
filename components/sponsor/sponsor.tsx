@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './sponsor.module.scss';
-import ButtonLink from '../button-link/button-link';
+import ButtonLink from '../button/button-link';
 import { H3, Text } from '@components/typography/typography';
 
 const Sponsor = () => (

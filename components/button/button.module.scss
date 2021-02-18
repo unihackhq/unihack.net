@@ -3,11 +3,33 @@
 .btn {
   @include button-base;
 
+  &.active {
+    @include active;
+  }
+
   &.primary {
-    @include primary-button;
+    &.dark {
+      @include primary-button(#1F252A);
+    }
+
+    &.light {
+      @include primary-button($white);
+    }
+  }
+
+  &.link {
+    @include link;
   }
 
   &.secondary {
-    @include secondary-button;
+    &.light {
+      @include secondary-button(rgba(31, 37, 42, 0.5));
+    }
+
+    &.dark {
+      @include secondary-button(rgba(31, 37, 42, 0.5));
+    }
+
   }
+
 }

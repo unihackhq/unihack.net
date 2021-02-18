@@ -1,5 +1,5 @@
 import styles from './sponsor-addons.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H3, Text } from '@components/typography/typography';
 
 const Addons = () => (

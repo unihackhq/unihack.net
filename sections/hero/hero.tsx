@@ -1,6 +1,6 @@
 import styles from './hero.module.scss';
 import Header from '../../components/header/header';
-import ButtonLink from '../../components/button-link/button-link';
+import ButtonLink from '../../components/button/button-link';
 import { H1, H2 } from '@components/typography/typography';
 
 const Hero = () => (

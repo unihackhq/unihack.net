@@ -1,5 +1,5 @@
 import styles from './prizes.module.scss';
-import ButtonLink from '../../../components/button-link/button-link';
+import ButtonLink from '../../../components/button/button-link';
 import Card from '../../../components/card/card';
 import { H2, H3, Text } from '@components/typography/typography';
 

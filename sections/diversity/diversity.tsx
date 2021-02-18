@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './diversity.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H2, Text } from '@components/typography/typography';
 
 const Diversity = () => (
