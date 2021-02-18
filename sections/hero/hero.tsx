@@ -1,24 +1,35 @@
 import styles from './hero.module.scss';
-import Header from '../../components/header/header';
-import ButtonLink from '../../components/button/button-link';
-import { H1, H2 } from '@components/typography/typography';
+import ButtonLink from '@components/button/button-link';
+import { H1, HL, HXL } from '@components/typography/typography';
+import Stack from '@components/stack/stack';
 
 const Hero = () => (
   <section className={styles.hero}>
-    <Header />
-    <div className={styles['hero-content']}>
-      <div className={styles['hero-content-title']}>
+    <Stack size="xlarge" className={styles['hero-content']}>
+      <Stack size="large" className={styles['hero-content-title']}>
         <img
-          className={styles['hero-content-logo']}
-          src={'/images/unihack.svg'}
+          className={styles['hero-graphic']}
+          src={'/images/2021-hero.svg'}
+          alt="UNIHACK 2021 graphic featuring interconnected laptops surrounding a 3D UNIHACK logo"
         />
-        <H1 className={styles.title}>
-          <span>UNIHACK</span> 2021
-        </H1>
-        <H2>
-          <span>5-7 March · Online · Australia-wide</span>
-        </H2>
-      </div>
+        <Stack size="small" className={styles['hero-content-title']}>
+          <HXL className={styles['hero-content-title-xl']}>
+            <span className={styles.salmon}>Create. </span>
+            <span className={styles.midori}>Experience. </span>
+            <span className={styles.pacific}>Share. </span>
+          </HXL>
+          <HL>
+            at UNIHACK <span className={styles.yellow}>2021</span>
+          </HL>
+        </Stack>
+      </Stack>
+      <H1 className={styles['hero-content-subtitle']}>
+        <span>5-7 March</span>
+        <span className={styles['mobile-only']}> · </span>
+        <span>Online</span>
+        <span className={styles['mobile-only']}> · </span>
+        <span>Australia-wide</span>
+      </H1>
       <div className={styles.actions}>
         <ButtonLink
           type="secondary"
@@ -35,7 +46,7 @@ const Hero = () => (
           View Facebook event
         </ButtonLink>
       </div>
-    </div>
+    </Stack>
   </section>
 );
 

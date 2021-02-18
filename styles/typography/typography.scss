@@ -9,6 +9,10 @@
   @include md {
     @include hxl-desktop;
   }
+
+  @include xl {
+    @include hxl-desktop-large;
+  }
 }
 
 @mixin hl {
@@ -17,6 +21,10 @@
 
   @include md {
     @include hl-desktop;
+  }
+
+  @include xl {
+    @include hl-desktop-large;
   }
 }
 

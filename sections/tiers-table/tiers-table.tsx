@@ -3,15 +3,23 @@ import styles from './tiers-table.module.scss';
 import Table from '@components/table/table';
 import { ColumnI } from '@components/table/column/column.interface';
 import { CellI } from '@components/table/cell/cell.interface';
-import { H2 } from '@components/typography/typography';
+import { H2, Text } from '@components/typography/typography';
+import Stack from '@components/stack/stack';
 import { PackageI } from './package.interface';
 import { CustomPerkI } from './custom-perk.interface';
 import data from '../../content/2020/sponsorship-packages.json';
 
 const TiersTable = () => (
   <section className={styles['get-involved']}>
-    <H2>Get Involved</H2>
-    <Table columns={transformPackages(data)} rows={data.perks} />
+    <Stack size="medium">
+      <Stack size="small">
+        <H2>Get Involved</H2>
+        <Text>
+          We offer a range of packages to suit any organisation, small or large.
+        </Text>
+      </Stack>
+      <Table columns={transformPackages(data)} rows={data.perks} />
+    </Stack>
   </section>
 );
 
@@ -25,7 +33,7 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
       id: tier.id,
       title: tier.name,
       subtitle,
-      accentColour: tier.colour,
+      accentColour: tier.name.toLowerCase(),
       footerText: tier.price,
       cellData: transformPackagePerks(tier, sponsorshipData.perks.length)
     };

@@ -1,0 +1,25 @@
+@import '../../styles/styles.scss';
+
+.page-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include page-margin;
+
+  @include xsm {
+    padding-top: $base * 4;
+  }
+
+  @include md {
+    padding-top: $base * 10;
+  }
+
+  a {
+    z-index: 1;
+  }
+
+  h1 {
+    display: flex;
+    z-index: 0;
+  }
+}

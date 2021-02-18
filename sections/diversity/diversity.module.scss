@@ -6,7 +6,7 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  background-color: $light_grey;
+  background-color: $white;
 
   &-content {
     @include page-margin;
@@ -24,7 +24,8 @@
       }
 
       @include md {
-        width: 80%;
+        height: 500px;
+        object-fit: cover;
       }
     }
 

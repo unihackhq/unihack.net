@@ -4,7 +4,6 @@
       "id": 1,
       "name": "Bronze",
       "price": "$750",
-      "colour": "#FFE4C2",
       "maxCapacity": "",
       "perks": [1, 2, 3],
       "customPerks": []
@@ -13,7 +12,6 @@
       "id": 2,
       "name": "Silver",
       "price": "$1,500",
-      "colour": "#E4E6E9",
       "maxCapacity": "",
       "perks": [1, 2, 3, 4],
       "customPerks": [{ "perkID": 5, "content": "2" }]
@@ -22,7 +20,6 @@
       "id": 3,
       "name": "Gold",
       "price": "$3,000",
-      "colour": "#FEE795",
       "maxCapacity": "15",
       "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10],
       "customPerks": [{ "perkID": 5, "content": "3" }]
@@ -31,7 +28,6 @@
       "id": 4,
       "name": "Platinum",
       "price": "$10,000",
-      "colour": "#A3ADB8",
       "maxCapacity": "1",
       "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
       "customPerks": [{ "perkID": 5, "content": "6" }]
@@ -45,7 +41,7 @@
     },
     {
       "id": 2,
-      "name": "Mailouts and announcements",
+      "name": "Mailouts and social posts",
       "description": "Get your brand out to our community."
     },
     {
@@ -65,7 +61,7 @@
     },
     {
       "id": 6,
-      "name": "Your company logo on UNIHACK merch",
+      "name": "Branding on UNIHACK merch",
       "description": "Including participant handbooks, t-shirts and banners."
     },
     {
@@ -90,17 +86,17 @@
     },
     {
       "id": 11,
-      "name": "Opening & Closing Ceremony Keynote",
+      "name": "Opening & closing keynote",
       "description": "Kick off the hackathon with a speech by your most esteemed representative."
     },
     {
       "id": 12,
-      "name": "Judge seat & Main prize presentation",
+      "name": "Judge & award main prize",
       "description": "Get to judge all the hacks and present the main prizes."
     },
     {
       "id": 13,
-      "name": "Company name beside UNIHACK logo",
+      "name": "Co-branding",
       "description": "All promotions will have your company’s name."
     }
   ]

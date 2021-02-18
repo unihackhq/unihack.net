@@ -1,0 +1,83 @@
+{
+  "base": "/images/sponsors",
+  "sponsors": {
+    "platinum": {
+      "name": "Australia Post",
+      "imagePath": "/Australia Post.svg"
+    },
+    "gold": [
+      {
+        "name": "Arcitecta",
+        "imagePath": "/Arcitecta.svg"
+      },
+      {
+        "name": "Atlassian",
+        "imagePath": "/Atlassian.svg"
+      },
+      {
+        "name": "Carsales",
+        "imagePath": "/Carsales.svg"
+      },
+      {
+        "name": "Coles",
+        "imagePath": "/Coles.svg"
+      },
+      {
+        "name": "DigIO",
+        "imagePath": "/DigIO.svg"
+      },
+      {
+        "name": "Latitude",
+        "imagePath": "/Latitude.svg"
+      },
+      {
+        "name": "Medipass",
+        "imagePath": "/Medipass.svg"
+      },
+      {
+        "name": "PwC",
+        "imagePath": "/PwC.svg"
+      },
+      {
+        "name": "Telstra Developer",
+        "imagePath": "/Telstra Developer.svg"
+      },
+      {
+        "name": "Xero",
+        "imagePath": "/Xero.svg"
+      }
+    ],
+    "silver": [
+      {
+        "name": "Bosch",
+        "imagePath": "/Bosch.svg"
+      },
+      {
+        "name": "Monash FIT",
+        "imagePath": "/Monash FIT.svg"
+      },
+      {
+        "name": "Twilio",
+        "imagePath": "/Twilio.svg"
+      }
+    ],
+    "bronze": [
+      {
+        "name": "Adobe",
+        "imagePath": "/Adobe.svg"
+      },
+      {
+        "name": "echoAR",
+        "imagePath": "/echoAR.svg"
+      },
+      {
+        "name": "HERE",
+        "imagePath": "/HERE.svg"
+      },
+      {
+        "name": "Wacom",
+        "imagePath": "/Wacom.svg"
+      }
+    ]
+  }
+}

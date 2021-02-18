@@ -2,64 +2,69 @@
   "base": "/images/sponsors",
   "sponsors": [
     {
-      "name": "Facebook",
-      "imagePath": "/facebook.png"
-    },
-    {
       "name": "Atlassian",
-      "imagePath": "/atlassian.png"
+      "imagePath": "/Atlassian.svg"
     },
     {
       "name": "Microsoft",
-      "imagePath": "/microsoft.png"
+      "imagePath": "/Microsoft.svg"
     },
     {
-      "name": "Bosch",
-      "imagePath": "/bosch.png"
+      "name": "Google",
+      "imagePath": "/Google.svg"
     },
     {
-      "name": "Xero",
-      "imagePath": "/xero.png"
-    },
-    {
-      "name": "REA Group",
-      "imagePath": "/rea.png"
-    },
-    {
-      "name": "Telstra",
-      "imagePath": "/telstra.png"
-    },
-    {
-      "name": "Accenture",
-      "imagePath": "/accenture.png"
-    },
-    {
-      "name": "PwC",
-      "imagePath": "/pwc.png"
-    },
-    {
-      "name": "Infosys",
-      "imagePath": "/infosys.png"
+      "name": "Facebook",
+      "imagePath": "/Facebook.svg"
     },
     {
       "name": "GitHub",
-      "imagePath": "/github.png"
+      "imagePath": "/GitHub.svg"
+    },
+
+    {
+      "name": "Australia Post",
+      "imagePath": "/Australia Post.svg"
+    },
+
+    {
+      "name": "PwC",
+      "imagePath": "/PwC.svg"
     },
     {
-      "name": "Adobe",
-      "imagePath": "/adobe.png"
+      "name": "Telstra",
+      "imagePath": "/Telstra.svg"
     },
     {
-      "name": "Data61",
-      "imagePath": "/data61.png"
+      "name": "Xero",
+      "imagePath": "/Xero.svg"
     },
     {
-      "name": "University of Melbourne",
-      "imagePath": "/unimelb.png"
+      "name": "Carsales",
+      "imagePath": "/Carsales.svg"
+    },
+
+    {
+      "name": "REA Group",
+      "imagePath": "/REA Group.svg"
+    },
+
+    {
+      "name": "Medipass",
+      "imagePath": "/Medipass.svg"
+    },
+
+    {
+      "name": "Twilio",
+      "imagePath": "/Twilio.svg"
     },
     {
       "name": "Monash University",
-      "imagePath": "/monash.png"
+      "imagePath": "/Monash FIT.svg"
+    },
+    {
+      "name": "University of Melbourne",
+      "imagePath": "/UniMelb.svg"
     }
   ]
 }

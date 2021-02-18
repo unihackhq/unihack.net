@@ -1,0 +1,46 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+
+.sponsor-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $light_grey;
+  @include page-margin;
+
+  &-content {
+    box-shadow: $floatingShadow;
+  }
+
+  .icon-section {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &-content-left {
+    color: $secondary;
+    padding: $space-large $space-medium;
+
+    @include md {
+      width: 50%;
+      padding: $space-xlarge;
+    }
+
+    
+    background-color: rgba($white, .87);
+    backdrop-filter: blur(10px);
+    text-align-last: left;
+
+  }
+
+  &-content-right {
+    @include md {
+      width: 50%;
+    }
+  }
+
+}

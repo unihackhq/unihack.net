@@ -1,21 +1,21 @@
 @import '../../styles/styles.scss';
 
 .header {
-  &.solid {
-    background-color: $primary;
-  }
-  
+
   &-content {
     @include page-margin;
     display: flex;
 
+    
     @include xsm {
-      height: $base * 8;
+      height: 64px;
+      padding: 16px 0px;
       justify-content: space-between;
     }
-
+    
     @include sm {
-      height: $base * 12;
+      height: 88px;
+      padding: 24px 0px;
       justify-content: space-between;
     }
   }
@@ -24,19 +24,19 @@
     display: flex;
 
     &-content {
-      @include link;
-  
-      &:hover {
-        text-decoration: none;
+
+      svg {
+        width: auto;
+        height: 32px;
+
+        @include md {
+          height: 40px;
+
+        }
       }
-  
+
       display: flex;
       align-items: center;
-  
-      &-img {
-        width: 30px;
-        margin-right: 4px;
-      }
     }
   }
 

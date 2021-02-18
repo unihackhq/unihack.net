@@ -1,34 +1,36 @@
 @import '../../styles/styles.scss';
 
 .grid {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 24px;
 
-  span {
-    @include xsm {
-      width: 50%;
-      padding: 16px;
-    }
-
-    @include ksm {
-      width: 40%;
-    }
-  
-    @include sm {
-      width: 180px;
-      padding: 16px 24px;
-    }
-
-    @include md {
-      width: 220px;
-    }
-
-    img {
-      width: 100%;
-    }
+  @include ksm {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
   }
 
+  @include sm {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+
+  @include md {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 32px;
+  }
+
+  @include md {
+    gap: 32px 48px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }

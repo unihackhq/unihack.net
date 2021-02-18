@@ -1,23 +1,24 @@
 import styles from './faqs.module.scss';
 import questions from '../../content/faqs.json';
-import { H3, Text } from '@components/typography/typography';
+import { H2, H3, Text } from '@components/typography/typography';
+import Stack from '@components/stack/stack';
 
 const Faqs = () => (
   <section className={styles.faqs}>
-    <div className={styles['faqs-content']}>
-      <h2>Frequently Asked Questions</h2>
+    <Stack className={styles['faqs-content']} size="large">
+      <H2>Frequently Asked Questions</H2>
       <div className={styles['faqs-questions-grid']}>
         {questions.map((question, index) => {
           const { title, answer, html = false } = question;
           return (
-            <div key={`faqs-q${index}`}>
+            <Stack key={`faqs-q${index}`} size="small">
               <H3>{title}</H3>
               {html ? <Text html={answer} /> : <Text>{answer}</Text>}
-            </div>
+            </Stack>
           );
         })}
       </div>
-    </div>
+    </Stack>
   </section>
 );
 

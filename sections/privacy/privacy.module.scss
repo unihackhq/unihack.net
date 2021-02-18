@@ -6,16 +6,12 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  background-color: white;
+  background-color: $light_grey;
 
   &-content {
     @include page-margin;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    p {
-      margin-bottom: $base * 3;
-    }
   }
 }
