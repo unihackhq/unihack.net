@@ -22,12 +22,14 @@ const Hero = () => (
       <div className={styles.actions}>
         <ButtonLink
           type="secondary"
+          theme="dark"
           href="https://www.eventbrite.com.au/e/unihack-melbourne-2021-tickets-134461017523"
         >
           Get tickets
         </ButtonLink>
         <ButtonLink
           type="secondary"
+          theme="light"
           href="https://www.facebook.com/events/243709813780048/"
         >
           View Facebook event

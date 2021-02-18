@@ -157,18 +157,18 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   line-height: 24px;
   text-align: center;
   align-items: center;
-  width: 146px;
+  min-width: 146px;
   height: 48px;
   top: 24px;
   transition: all 0.2s;
 
+  &:active {
+    box-shadow: revert;
+  }
+
   * {
     margin-top: 20px;
   }
-}
-
-@mixin active {
-  box-shadow: none;
 }
 
 @mixin primary-button($color) {
