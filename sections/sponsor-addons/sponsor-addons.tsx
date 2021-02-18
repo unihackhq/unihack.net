@@ -30,7 +30,7 @@ const Addons = () => (
           </div>
         </Stack>
         <div className={styles.actions}>
-          <ButtonLink type="secondary" href="#sponsor-prompt">
+          <ButtonLink type="primary" theme="light" href="#sponsor-prompt">
             Interested?
           </ButtonLink>
         </div>

@@ -33,12 +33,13 @@ const Sponsor = () => (
 
         <div className={styles.actions}>
           <ButtonLink
+            theme="dark"
             type="primary"
             href="mailto:sponsorship@melbourne.unihack.net?subject=General Sponsorship Enquiry"
           >
             Enquire now
           </ButtonLink>
-          <ButtonLink type="primary" href="/sponsorship">
+          <ButtonLink type="secondary" theme="dark" href="/sponsorship">
             More about sponsorship
           </ButtonLink>
         </div>

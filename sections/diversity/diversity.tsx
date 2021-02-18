@@ -26,6 +26,7 @@ const Diversity = () => (
         </Text>
         <div className="actions">
           <ButtonLink
+            theme="dark"
             href="http://hackcodeofconduct.org/unihack"
             type="secondary"
           >

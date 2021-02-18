@@ -15,7 +15,7 @@ const Privacy = () => (
           information essential to the running of our hackathons.
         </Text>
         <div className="actions">
-          <ButtonLink href="/privacy" type="secondary">
+          <ButtonLink href="/privacy" theme="light" type="primary">
             View our Privacy Policy
           </ButtonLink>
         </div>

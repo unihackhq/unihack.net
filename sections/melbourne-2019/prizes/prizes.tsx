@@ -48,7 +48,7 @@ const Prizes = () => {
         </div>
 
         <H3 className={styles['devpost-prompt']}>Find out more on Devpost</H3>
-        <ButtonLink href="https://unihack2019.devpost.com/" type="secondary">
+        <ButtonLink href="https://unihack2019.devpost.com/" theme="dark" type="secondary">
           View prizes
         </ButtonLink>
       </div>

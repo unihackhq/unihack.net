@@ -5,25 +5,22 @@
 
   &.primary {
     &.dark {
-      @include primary-button($secondary);
+      @include button-theme($white, $white, 'transparent');
     }
 
     &.light {
-      @include primary-button($white);
+      @include button-theme($secondary, $black, $white);
     }
   }
 
-  &.link {
-    @include link;
-  }
 
   &.secondary {
     &.light {
-      @include secondary-button(rgba(255, 255, 255, 0.5));
+      @include button-theme(rgba(31, 37, 42, 0.5), $black, $white);
     }
 
     &.dark {
-      @include secondary-button(rgba(31, 37, 42, 0.5));
+      @include button-theme(rgba(255, 255, 255, 0.5), $white, 'transparent');
     }
 
   }

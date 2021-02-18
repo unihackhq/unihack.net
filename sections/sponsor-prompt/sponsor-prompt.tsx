@@ -26,6 +26,7 @@ const SponsorPrompt = () => (
         <div className={styles.actions}>
           <ButtonLink
             type="primary"
+            theme="dark"
             href="mailto:sponsorship@melbourne.unihack.net?subject=General Sponsorship Enquiry"
           >
             Enquire now
