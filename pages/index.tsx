@@ -5,15 +5,15 @@ import styles from './index.module.scss';
 import Page from '../layouts/page/page';
 import Hero from '../sections/hero/hero';
 import Faqs from '../sections/faqs/faqs';
-import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
 import Header from '@components/header/header';
 import Divider from '@components/divider/divider';
 import Sponsors from 'sections/melbourne-2019/sponsors/sponsors';
 import Stack from '@components/stack/stack';
+import EventSchedule from 'sections/melbourne-2019/event-schedule/event-schedule';
 
-export default () => (
+const Index = () => (
   <div>
     <Head>
       <title>UNIHACK — Australia's premier student hackathon</title>
@@ -23,9 +23,8 @@ export default () => (
       <Stack size="xxlarge">
         <Hero />
         <Divider />
+        <EventSchedule />
         <Sponsors />
-        <Divider />
-        <EventDescription />
         <Divider />
         <Faqs />
         <section className={styles.cities}>
@@ -46,3 +45,5 @@ export default () => (
     </Page>
   </div>
 );
+
+export default Index;
