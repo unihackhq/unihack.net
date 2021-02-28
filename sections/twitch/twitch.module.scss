@@ -1,0 +1,18 @@
+@import '../../styles/colours.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/styles.scss';
+
+.twitch {
+    background-color: $secondary;
+    padding-bottom: 20px;
+
+    &-content {
+        @include page-margin;
+        color: $white;
+        text-align: center;
+
+        &-event {
+            text-align: left;
+        }
+    }
+}
