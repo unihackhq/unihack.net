@@ -1,0 +1,79 @@
+{
+  "prizes": {
+    "main": [
+      {
+        "title": "1st Place",
+        "imagePath": "/images/prizes/first-place.svg",
+        "contents": [
+          "$4000 cash",
+          "Amazon Echo Dot with Clock (Gen 4) for each team member",
+          "Anker Powercore+ USB-C Charger for each team member"
+        ]
+      },
+      {
+        "title": "2nd Place",
+        "imagePath": "/images/prizes/second-place.svg",
+        "contents": [
+          "$2000 cash",
+          "$50 Redballon Voucher for each team member",
+          "Amazon Echo Dot (Gen 3) for each team member"
+        ]
+      },
+      {
+        "title": "3rd Place",
+        "imagePath": "/images/prizes/third-place.svg",
+        "contents": ["1000 cash", "Kaiser Baas Drones for each team member"]
+      }
+    ],
+    "category": [
+      {
+        "title": "Best Design",
+        "description": "Awarded to the most usable and best looking user interface",
+        "imagePath": "/images/prizes/best-design.svg",
+        "contents": ["Adobe Creative Cloud subscriptions for each member"]
+      },
+      {
+        "title": "Most Creative Idea",
+        "description": "The project that has the most original idea or reinvention",
+        "imagePath": "/images/prizes/most-creative.svg",
+        "contents": ["Wacom Tablets for each member"]
+      },
+      {
+        "title": "Best Social Impact",
+        "description": "The best idea that addresses one of the UN Sustainable Development Goals, or another pressing issue in our society today",
+        "imagePath": "/images/prizes/best-social-impact.svg",
+        "contents": [
+          "Wacoco Minipresso NS (and sustainable Nespresso pods) for each team member"
+        ]
+      }
+    ],
+    "sponsor": [
+      {
+        "title": "The Greatest Makers",
+        "description": "The project that offers the most innovative solution through experimentation, iterative learning and discovery",
+        "imagePath": "/images/sponsors/Arcitecta.svg",
+        "contents": [
+          "Arcitecta swag pack worth over $300 for each member. Includes a sleek mechanical keyboard, a drop-proof laptop bag, and an sustainably-sourced and locally-printed Arcitecta hoodie."
+        ]
+      },
+      {
+        "title": "Best User-Centric Hack",
+        "description": "Transparent, Simple and Empowering",
+        "imagePath": "/images/sponsors/Medipass.svg",
+        "contents": ["$150 Bellroy voucher for each team member"]
+      },
+      {
+        "title": "Best IoT Hack",
+        "description": "",
+        "imagePath": "/images/sponsors/Telstra.svg",
+        "contents": ["An Arduino IoT Starter Kit"]
+      },
+      {
+        "title": "Community Prize",
+        "description": "",
+        "imagePath": "/images/sponsors/Australia Post.svg",
+        "contents": ["TBC"]
+      }
+    ]
+  }
+}

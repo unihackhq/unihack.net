@@ -2,7 +2,7 @@ import styles from './event-schedule.module.scss';
 import React from 'react';
 import moment from 'moment';
 import Schedule from '../../../components/schedule/schedule';
-import scheduleData from '../../../content/2019/schedule.json';
+import scheduleData from '../../../content/2021/schedule.json';
 import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedule-item.interface';
 import { H3, HL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
