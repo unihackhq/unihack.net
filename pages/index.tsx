@@ -23,6 +23,7 @@ export default () => (
       <Header />
       <Stack size="xxlarge">
         <Hero />
+        {/* TODO: Comment out Stream until we are ready */}
         <Stream/>
         <Divider />
         <Sponsors />
