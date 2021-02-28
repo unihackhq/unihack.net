@@ -43,24 +43,21 @@ function FindCurrentEvent(){
 
 
   for (const event of events) {
-    let startTime = moment(new Date(event.startTime))
-    let endTime = moment(new Date(event.endTime))
-
     let statTimeDiff = +new Date(event.startTime) - +new Date();
     let endTimeDiff = +new Date(event.endTime) - +new Date();
 
     if (statTimeDiff <= 0 && endTimeDiff >= 0){
-      return {name: event.title, info:`${startTime.format('h:mm a')} - ${endTime.format('h:mm a')}`}
+      return event.title
     }
   }
 
-  return {name: "", info: ""}
+  return ""
 }
 
 const Stream = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  const event = FindCurrentEvent()
+  const eventName = FindCurrentEvent()
 
   useEffect(() => {
     const timer=setTimeout(() => {
@@ -79,7 +76,7 @@ const Stream = () => {
         {/* TODO: Update channel name */}
         <TwitchPlayer muted width="100%" height="590px" channel="ranboolive" />
         <div className={styles['twitch-content-event']}>
-        <H3>{event.name}</H3>
+        <H3>{eventName}</H3>
         </div>
         </Stack>
       </div>
