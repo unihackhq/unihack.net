@@ -4,7 +4,6 @@ import styles from './twitch.module.scss';
 import { H2, H3 } from '@components/typography/typography';
 import Stack from '@components/stack/stack'
 import scheduleData from '../../content/2019/schedule.json';
-import moment from 'moment';
 
 
 
