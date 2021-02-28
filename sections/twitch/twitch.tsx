@@ -10,6 +10,7 @@ import moment from 'moment';
 
 function calculateTimeLeft(){
   // Date object is for Sydney/Melbourne time 12am 
+  // TODO: Fix up date
   let difference =  +new Date('2021-03-7 12:00 +1100') - +new Date();
   let timeLeft = {hours:0, minutes:0, seconds: 0};
   let timeString = ""
@@ -27,11 +28,19 @@ function calculateTimeLeft(){
 return timeString;
 }
 
+interface Event {
+  startTime: string,
+  endTime: string,
+  title: string,
+}
+
 function FindCurrentEvent(){
-  let events = []
-  for (const day of Object.keys(scheduleData)) {
-    events = events.concat(scheduleData[day])
-  }
+  let events:Event[] = []
+
+  //TODO: Add Friday
+  events = events.concat(scheduleData["saturday"])
+  events = events.concat(scheduleData["sunday"])
+
 
   for (const event of events) {
     let startTime = moment(new Date(event.startTime))
@@ -67,10 +76,10 @@ const Stream = () => {
       <div className={styles['twitch-content']}>
         <Stack size='small'>
         <H2>{timeLeft}</H2>  
-        <TwitchPlayer width="100%" height="590px" channel="ranboolive" />
+        {/* TODO: Update channel name */}
+        <TwitchPlayer muted width="100%" height="590px" channel="ranboolive" />
         <div className={styles['twitch-content-event']}>
         <H3>{event.name}</H3>
-        <Text>{event.info}</Text>
         </div>
         </Stack>
       </div>
