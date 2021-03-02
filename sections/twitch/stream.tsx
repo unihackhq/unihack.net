@@ -1,16 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { TwitchPlayer } from 'react-twitch-embed';
-import styles from './twitch.module.scss';
+import styles from './stream.module.scss';
 import { H2, H3 } from '@components/typography/typography';
 import Stack from '@components/stack/stack'
-import scheduleData from '../../content/2019/schedule.json';
-
-
+import scheduleData from '../../content/2021/schedule.json';
 
 function calculateTimeLeft(){
-  // Date object is for Sydney/Melbourne time 12am 
-  // TODO: Fix up date
-  let difference =  +new Date('2021-03-7 12:00 +1100') - +new Date();
+  // Date object is for Sydney/Melbourne time 7th March 2021 5pm 
+  let difference =  +new Date('2021-03-7 17:00 +1100') - +new Date();
   let timeLeft = {hours:0, minutes:0, seconds: 0};
   let timeString = ""
 
@@ -36,7 +33,7 @@ interface Event {
 function FindCurrentEvent(){
   let events:Event[] = []
 
-  //TODO: Add Friday
+  events = events.concat(scheduleData["friday"])
   events = events.concat(scheduleData["saturday"])
   events = events.concat(scheduleData["sunday"])
 
@@ -68,13 +65,12 @@ const Stream = () => {
 
  
   return (
-    <section className={styles.twitch}>
-      <div className={styles['twitch-content']}>
+    <section className={styles.stream}>
+      <div className={styles['stream-content']}>
         <Stack size='small'>
         <H2>{timeLeft}</H2>  
-        {/* TODO: Update channel name */}
-        <TwitchPlayer muted width="100%" height="590px" channel="ranboolive" />
-        <div className={styles['twitch-content-event']}>
+        <TwitchPlayer muted width="100%" height="590px" channel="unihack" />
+        <div className={styles['stream-content-event']}>
         <H3>{eventName}</H3>
         </div>
         </Stack>

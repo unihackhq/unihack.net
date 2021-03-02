@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 import Page from '../layouts/page/page';
 import Hero from '../sections/hero/hero';
 import Faqs from '../sections/faqs/faqs';
-import Stream from '../sections/twitch/twitch';
+import Stream from '../sections/twitch/stream';
 import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
 import Header from '@components/header/header';
