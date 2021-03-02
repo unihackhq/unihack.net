@@ -2,10 +2,12 @@ import styles from './event-schedule.module.scss';
 import React from 'react';
 import moment from 'moment';
 import Schedule from '../../../components/schedule/schedule';
-import scheduleData from '../../../content/2019/schedule.json';
+import scheduleData from '../../../content/2021/schedule.json';
 import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedule-item.interface';
+import { H3, HL, Text } from '@components/typography/typography';
+import Stack from '@components/stack/stack';
 
-type Day = 'saturday' | 'sunday';
+type Day = 'friday' | 'saturday' | 'sunday';
 type Props = {};
 type State = {
   day: Day;
@@ -13,7 +15,7 @@ type State = {
 };
 
 class EventSchedule extends React.Component<Props, State> {
-  private defaultDay: Day = 'saturday';
+  private defaultDay: Day = 'friday';
 
   constructor(props: Props) {
     super(props);
@@ -61,7 +63,7 @@ class EventSchedule extends React.Component<Props, State> {
         }`}
         onClick={this.setDay(day)}
       >
-        <h3>{this.titleCase(day)}</h3>
+        <H3>{this.titleCase(day)}</H3>
       </button>
     );
   }
@@ -70,17 +72,27 @@ class EventSchedule extends React.Component<Props, State> {
     return (
       <section className={styles['event-page-schedule']}>
         <div className={styles['event-page-schedule-content']}>
-          <h2 className={styles['section-title']}>Schedule</h2>
-          <p className={styles.subtitle}>What, when, and where...</p>
-          <div className={styles['schedule-main']}>
-            <div className={styles['schedule-controller']}>
-              <div className={styles['day-selectors']}>
-                {this.getSelectorButtons('saturday')}
-                {this.getSelectorButtons('sunday')}
-              </div>
-              <Schedule data={this.state.events} />
+          <Stack size="xlarge">
+            <Stack size="small">
+              <HL className={styles['section-title']}>Schedule</HL>
+              <Text className={styles.subtitle}>
+                What's on now and what’s coming up later.
+              </Text>
+            </Stack>
+            <div className={styles['schedule-main']}>
+              <Stack size="small" className={styles['schedule-controller']}>
+                <div className={styles['day-selectors']}>
+                  {this.getSelectorButtons('friday')}
+                  {this.getSelectorButtons('saturday')}
+                  {this.getSelectorButtons('sunday')}
+                </div>
+                <Schedule data={this.state.events} />
+              </Stack>
             </div>
-          </div>
+            <Text bold className={styles.subtitle}>
+              Please note winners will be announced here live Sunday 14 March.
+            </Text>
+          </Stack>
         </div>
       </section>
     );

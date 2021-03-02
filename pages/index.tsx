@@ -6,15 +6,16 @@ import Page from '../layouts/page/page';
 import Hero from '../sections/hero/hero';
 import Faqs from '../sections/faqs/faqs';
 import Stream from '../sections/twitch/twitch';
-import EventDescription from '../sections/event-description/event-description';
 import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
 import Header from '@components/header/header';
 import Divider from '@components/divider/divider';
 import Sponsors from 'sections/melbourne-2019/sponsors/sponsors';
 import Stack from '@components/stack/stack';
+import EventSchedule from 'sections/melbourne-2019/event-schedule/event-schedule';
+import Prizes from 'sections/melbourne-2019/prizes/prizes';
 
-export default () => (
+const Index = () => (
   <div>
     <Head>
       <title>UNIHACK — Australia's premier student hackathon</title>
@@ -23,12 +24,12 @@ export default () => (
       <Header />
       <Stack size="xxlarge">
         <Hero />
-        {/* TODO: Comment out Stream until we are ready */}
         <Stream/>
         <Divider />
-        <Sponsors />
+        <EventSchedule />
+        <Prizes />
         <Divider />
-        <EventDescription />
+        <Sponsors />
         <Divider />
         <Faqs />
         <section className={styles.cities}>
@@ -49,3 +50,5 @@ export default () => (
     </Page>
   </div>
 );
+
+export default Index;

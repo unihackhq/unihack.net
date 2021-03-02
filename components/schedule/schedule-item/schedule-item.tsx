@@ -1,5 +1,6 @@
 import styles from './schedule-item.module.scss';
 import { ScheduleItemI } from './schedule-item.interface';
+import { Text } from '@components/typography/typography';
 
 type Props = {
   scheduleItem: ScheduleItemI;
@@ -22,12 +23,12 @@ const ScheduleItem = (props: Props) => {
           className={`${styles['schedule-item-indicator-line']} ${styles.tail}`}
         />
       </div>
-      <div className={styles['schedule-item-time']}>
+      <Text bold className={styles['schedule-item-time']}>
         {props.scheduleItem.startTime}
-      </div>
-      <div className={styles['schedule-item-title']}>
+      </Text>
+      <Text className={styles['schedule-item-title']}>
         {props.scheduleItem.title}
-      </div>
+      </Text>
     </div>
   );
 };

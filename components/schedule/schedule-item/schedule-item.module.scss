@@ -1,6 +1,6 @@
 @import '../../../styles/styles.scss';
 
-$past-grey: #AFAFAF;
+$past-grey: #6c6c6c;
 
 .schedule-item {
   display: flex;
@@ -102,7 +102,6 @@ $past-grey: #AFAFAF;
   }
 
   &-time {
-    font-weight: 500;
     flex-shrink: 0;
     padding: $base 0;
 
