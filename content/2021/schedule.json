@@ -1,0 +1,73 @@
+{
+  "friday": [
+    {
+      "startTime": "2021-03-05 18:00 +1100",
+      "endTime": "2021-03-05 19:00 +1100",
+      "title": "Opening Ceremony"
+    },
+    {
+      "startTime": "2021-03-05 19:00 +1100",
+      "endTime": "2021-03-05 19:00 +1100",
+      "title": "Hacking Begins!"
+    },
+    {
+      "startTime": "2021-03-05 19:00 +1100",
+      "endTime": "2021-03-05 19:30 +1100",
+      "title": "Team Formation Session"
+    },
+    {
+      "startTime": "2021-03-05 20:00 +1100",
+      "endTime": "2021-03-05 20:15 +1100",
+      "title": "Registration & Check-in"
+    }
+  ],
+  "saturday": [
+    {
+      "startTime": "2021-03-06 09:00 +1100",
+      "endTime": "2021-03-06 09:30 +1100",
+      "title": "Checkpoint #1"
+    },
+    {
+      "startTime": "2021-03-06 10:30 +1100",
+      "endTime": "2021-03-06 12:30 +1100",
+      "title": "Ideation Workshop"
+    },
+    {
+      "startTime": "2021-03-06 14:00 +1100",
+      "endTime": "2021-03-06 14:30 +1100",
+      "title": "Checkpoint #2"
+    },
+    {
+      "startTime": "2021-03-06 20:00 +1100",
+      "endTime": "2021-03-06 20:30 +1100",
+      "title": "Checkpoint #3"
+    }
+  ],
+  "sunday": [
+    {
+      "startTime": "2021-03-07 00:00 +1100",
+      "endTime": "2021-03-07 00:30 +1100",
+      "title": "🤔"
+    },
+    {
+      "startTime": "2021-03-07 09:00 +1100",
+      "endTime": "2021-03-07 09:30 +1100",
+      "title": "Checkpoint #4"
+    },
+    {
+      "startTime": "2021-03-07 10:30 +1100",
+      "endTime": "2021-03-07 12:30 +1100",
+      "title": "Pitching Workshop"
+    },
+    {
+      "startTime": "2021-03-07 17:00 +1100",
+      "endTime": "2021-03-07 17:30 +1100",
+      "title": "Hacking Ends!"
+    },
+    {
+      "startTime": "2021-03-07 17:30 +1100",
+      "endTime": "2021-03-07 18:00 +1100",
+      "title": "Closing Ceremony"
+    }
+  ]
+}

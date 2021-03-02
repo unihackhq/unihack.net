@@ -12,6 +12,7 @@ import Divider from '@components/divider/divider';
 import Sponsors from 'sections/melbourne-2019/sponsors/sponsors';
 import Stack from '@components/stack/stack';
 import EventSchedule from 'sections/melbourne-2019/event-schedule/event-schedule';
+import Prizes from 'sections/melbourne-2019/prizes/prizes';
 
 const Index = () => (
   <div>
@@ -24,6 +25,8 @@ const Index = () => (
         <Hero />
         <Divider />
         <EventSchedule />
+        <Prizes />
+        <Divider />
         <Sponsors />
         <Divider />
         <Faqs />
