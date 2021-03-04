@@ -3,16 +3,30 @@
 @import '../../styles/styles.scss';
 
 .stream {
-    background-color: $secondary;
-    padding-bottom: 20px;
+  background-color: $secondary;
 
-    &-content {
-        @include page-margin;
-        color: $white;
-        text-align: center;
+  &-content {
+    color: $white;
+    text-align: center;
 
-        &-event {
-            text-align: left;
-        }
+    @include md {
+      @include page-margin;
     }
+
+    .stream-container {
+      height: 260px;
+
+      @include sm {
+        height: 400px;
+      }
+
+      @include md {
+        height: 546px;
+      }
+
+      @include lg {
+        height: 619px;
+      }
+    }
+  }
 }

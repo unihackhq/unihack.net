@@ -1,82 +1,64 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { TwitchPlayer } from 'react-twitch-embed';
 import styles from './stream.module.scss';
-import { H2, H3 } from '@components/typography/typography';
-import Stack from '@components/stack/stack'
-import scheduleData from '../../content/2021/schedule.json';
+import { H2 } from '@components/typography/typography';
+import Stack from '@components/stack/stack';
 
-function calculateTimeLeft(){
-  // Date object is for Sydney/Melbourne time 7th March 2021 5pm 
-  let difference =  +new Date('2021-03-7 17:00 +1100') - +new Date();
-  let timeLeft = {hours:0, minutes:0, seconds: 0};
-  let timeString = ""
+function calculateTimeLeft() {
+  // Date object is for Sydney/Melbourne time 7th March 2021 5pm
+  const difference = +new Date('2021-03-07 17:00 +1100') - +new Date();
+  let timeLeft = { hours: '00', minutes: '00', seconds: '00' };
+  let timeString = '';
 
   if (difference > 0) {
     timeLeft = {
-      hours: Math.floor((difference / (1000 * 60 * 60))),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60)
-  };
-  timeString = `${timeLeft.hours}:${timeLeft.minutes}:${timeLeft.seconds} remaining`
-} else {
-  timeString = "Good Luck Everyone 🚀"
-}
-return timeString;
-}
+      hours: Math.floor(difference / (1000 * 60 * 60)).toString(),
+      minutes: Math.floor((difference / 1000 / 60) % 60).toString(),
+      seconds: Math.floor((difference / 1000) % 60).toString()
+    };
 
-interface Event {
-  startTime: string,
-  endTime: string,
-  title: string,
-}
-
-function FindCurrentEvent(){
-  let events:Event[] = []
-
-  events = events.concat(scheduleData["friday"])
-  events = events.concat(scheduleData["saturday"])
-  events = events.concat(scheduleData["sunday"])
-
-
-  for (const event of events) {
-    let statTimeDiff = +new Date(event.startTime) - +new Date();
-    let endTimeDiff = +new Date(event.endTime) - +new Date();
-
-    if (statTimeDiff <= 0 && endTimeDiff >= 0){
-      return event.title
+    if (timeLeft.hours.length < 2) {
+      timeLeft.hours = `0${timeLeft.hours}`;
     }
-  }
 
-  return ""
+    if (timeLeft.minutes.length < 2) {
+      timeLeft.minutes = `0${timeLeft.minutes}`;
+    }
+
+    if (timeLeft.seconds.length < 2) {
+      timeLeft.seconds = `0${timeLeft.seconds}`;
+    }
+
+    timeString = `${timeLeft.hours}:${timeLeft.minutes}:${timeLeft.seconds} remaining`;
+  } else {
+    timeString = 'Good luck everyone! 🚀';
+  }
+  return timeString;
 }
 
 const Stream = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  const eventName = FindCurrentEvent()
-
   useEffect(() => {
-    const timer=setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     // Clear timeout if the component is unmounted
-    return () => clearTimeout(timer);
-  });
+    return () => clearInterval(timer);
+  }, []);
 
- 
   return (
     <section className={styles.stream}>
       <div className={styles['stream-content']}>
-        <Stack size='small'>
-        <H2>{timeLeft}</H2>  
-        <TwitchPlayer muted width="100%" height="590px" channel="unihack" />
-        <div className={styles['stream-content-event']}>
-        <H3>{eventName}</H3>
-        </div>
+        <Stack size="medium">
+          <H2>{timeLeft}</H2>
+          <div className={styles['stream-container']}>
+            <TwitchPlayer muted width="100%" height="100%" channel="unihack" />
+          </div>
         </Stack>
       </div>
     </section>
   );
-}
+};
 
 export default Stream;

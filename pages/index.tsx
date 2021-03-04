@@ -25,12 +25,12 @@ const Index = () => (
       <Stack size="xxlarge">
         <Hero />
         <Stream />
-        <Divider color="dark" />
+        <Divider dark />
         <EventSchedule />
         <Prizes />
-        <Divider color="light" />
+        <Divider />
         <Sponsors />
-        <Divider color="light" />
+        <Divider />
         <Faqs />
         <section className={styles.cities}>
           <CityBanner
