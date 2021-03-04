@@ -53,7 +53,7 @@ const Prizes = () => {
             <Stack size="xsmall">
               <H4>💡 Originality and Creativity</H4>
               <Text>
-                How unique is the hack? Does it solve a new problem, or has a
+                How unique is the hack? Does it solve a new problem, or have a
                 new take on an existing problem?
               </Text>
             </Stack>
