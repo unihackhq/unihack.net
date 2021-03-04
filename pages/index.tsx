@@ -3,7 +3,6 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
-import Hero from '../sections/hero/hero';
 import Faqs from '../sections/faqs/faqs';
 import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
@@ -20,10 +19,8 @@ const Index = () => (
       <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
     <Page>
-      <Header />
+      <Header dark />
       <Stack size="xxlarge">
-        <Hero />
-        <Divider />
         <EventSchedule />
         <Prizes />
         <Divider />
