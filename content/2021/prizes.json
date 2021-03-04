@@ -64,15 +64,15 @@
       },
       {
         "title": "Best IoT Hack",
-        "description": "",
+        "description": "The most innovative idea that best utilises the benefits of the Internet of Things",
         "imagePath": "/images/sponsors/Telstra.svg",
         "contents": ["An Arduino IoT Starter Kit"]
       },
       {
         "title": "Community Prize",
-        "description": "",
+        "description": "For the hack that helps the community the most",
         "imagePath": "/images/sponsors/Australia Post.svg",
-        "contents": ["TBC"]
+        "contents": ["$100 gift cards for each team member"]
       }
     ]
   }
