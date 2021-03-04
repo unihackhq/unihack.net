@@ -1,37 +1,37 @@
 @import '../../styles/styles.scss';
 
 .header {
+  &.dark {
+    background-color: $secondary;
+  }
 
   &-content {
     @include page-margin;
     display: flex;
 
-    
     @include xsm {
       height: 64px;
       padding: 16px 0px;
       justify-content: space-between;
     }
-    
+
     @include sm {
       height: 88px;
       padding: 24px 0px;
       justify-content: space-between;
     }
   }
-  
+
   &-logo {
     display: flex;
 
     &-content {
-
       svg {
         width: auto;
         height: 32px;
 
         @include md {
           height: 40px;
-
         }
       }
 
@@ -51,7 +51,7 @@
       &:not(:first-of-type) {
         margin-left: $base * 5;
       }
-      
+
       a {
         @include link;
       }

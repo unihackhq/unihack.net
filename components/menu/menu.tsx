@@ -5,12 +5,13 @@ import { MenuItemI } from './menu-item/menu-item.interface';
 type Props = {
   items: MenuItemI[];
   isOpen: boolean;
+  dark?: boolean;
   onClick: () => void;
 };
 
 const Menu = (props: Props) => {
   const menuItems = props.items.map(item => (
-    <MenuItem key={item.text} href={item.href}>
+    <MenuItem dark={props.dark} key={item.text} href={item.href}>
       {item.text}
     </MenuItem>
   ));
