@@ -4,6 +4,7 @@ import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
 import Faqs from '../sections/faqs/faqs';
+import Stream from '../sections/stream/stream';
 import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
 import Header from '@components/header/header';
@@ -21,6 +22,8 @@ const Index = () => (
     <Page>
       <Header dark />
       <Stack size="xxlarge">
+        <Stream />
+        <Divider dark />
         <EventSchedule />
         <Prizes />
         <Divider />

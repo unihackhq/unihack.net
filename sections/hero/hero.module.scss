@@ -5,7 +5,8 @@
 .hero {
   display: flex;
   flex-direction: column;
-  
+  margin-bottom: 20px;
+
   &-graphic {
     width: 100%;
     height: auto;
@@ -21,7 +22,7 @@
       align-items: center;
       width: auto;
       margin: 0;
-      
+
     }
 
     &-title {
@@ -31,7 +32,7 @@
       @include md {
         align-items: center;
       }
-      
+
       &-xl {
         display: flex;
         flex-direction: column;
@@ -85,4 +86,3 @@
     }
   }
 }
-
