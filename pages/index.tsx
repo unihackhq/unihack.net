@@ -20,10 +20,8 @@ const Index = () => (
       <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
     <Page>
-      <Header />
+      <Header dark />
       <Stack size="xxlarge">
-        <Hero />
-        <Divider />
         <EventSchedule />
         <Prizes />
         <Divider />
