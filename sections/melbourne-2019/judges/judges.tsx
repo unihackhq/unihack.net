@@ -5,8 +5,12 @@ import Stack from '@components/stack/stack';
 import judgeData from '../../../content/2021/judges.json';
 import { Judge } from '@components/judge/judge';
 
+type PropTypes = {
+  title: string;
+  panel: any[];
+};
 const Judges = () => {
-  const renderSection = ({ title, panel }) => {
+  const renderSection = ({ title, panel }: PropTypes) => {
     return (
       <>
         <H2>{title}</H2>
