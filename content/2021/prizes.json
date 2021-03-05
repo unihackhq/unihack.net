@@ -57,6 +57,34 @@
         ]
       },
       {
+        "title": "The Data Analytics Prize",
+        "description": "Calling all data lovers! We are looking for compelling insights derived from data. Incorporate data analytics and visualisation incorporated as part of your final solution and as part of the pitch.",
+        "imagePath": "/images/sponsors/PwC.svg",
+        "contents": [
+          "For the team:",
+          "Garmin Forerunner 45s Sports Watch",
+          "Jabra Elite 75t True Wireless In-Ear Headphones",
+          "Fitbit Versa 2 Smart Fitness Watch"
+        ]
+      },
+      {
+        "title": "The Creative Pitch Prize",
+        "description": "We are looking for the most compelling and quality pitch! Tell us your story, sell your idea to us and don't be afraid to get creative and incorporate other digital tools and technology!",
+        "imagePath": "/images/sponsors/PwC.svg",
+        "contents": [
+          "For the team:",
+          "Sennheiser HD 458BT Over-Ear Wireless Noise Cancelling Headphones",
+          "Ryze Tello Drone Boost Combo",
+          "Logitech G PRO X Mechanical Gaming Keyboard"
+        ]
+      },
+      {
+        "title": "Community Prize",
+        "description": "For the hack that helps the community the most",
+        "imagePath": "/images/sponsors/Australia Post.svg",
+        "contents": ["$100 gift cards for each team member"]
+      },
+      {
         "title": "Best User-Centric Hack",
         "description": "Transparent, Simple and Empowering",
         "imagePath": "/images/sponsors/Medipass.svg",
@@ -69,10 +97,25 @@
         "contents": ["An Arduino IoT Starter Kit"]
       },
       {
-        "title": "Community Prize",
-        "description": "For the hack that helps the community the most",
-        "imagePath": "/images/sponsors/Australia Post.svg",
-        "contents": ["$100 gift cards for each team member"]
+        "title": "Customer Obsessed",
+        "description": "Inspiring customers through best value food and drink solutions to make lives easier",
+        "imagePath": "/images/sponsors/Coles.svg",
+        "contents": ["Coles Gift Cards to the value of $1800 for the team"]
+      },
+      {
+        "title": "Best use of Twilio",
+        "description": "For the hack that best makes use of the Twilio API",
+        "imagePath": "/images/sponsors/Twilio.svg",
+        "contents": ["AirPods for each team member"]
+      },
+      {
+        "title": "Best use of EchoAR",
+        "description": "The best app that used EchoAR for their augmented or virtual reality (AR/VR) application",
+        "imagePath": "/images/sponsors/echoAR.svg",
+        "contents": [
+          "$50 Amazon Gift Card for the team",
+          "3-month free Business Tier access for each team member"
+        ]
       }
     ]
   }
