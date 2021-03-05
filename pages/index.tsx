@@ -13,6 +13,7 @@ import Sponsors from 'sections/melbourne-2019/sponsors/sponsors';
 import Stack from '@components/stack/stack';
 import EventSchedule from 'sections/melbourne-2019/event-schedule/event-schedule';
 import Prizes from 'sections/melbourne-2019/prizes/prizes';
+import Judges from 'sections/melbourne-2019/judges/judges';
 
 const Index = () => (
   <div>
@@ -26,7 +27,7 @@ const Index = () => (
         <Divider dark />
         <EventSchedule />
         <Prizes />
-        <Divider />
+        <Judges />
         <Sponsors />
         <Divider />
         <Faqs />
