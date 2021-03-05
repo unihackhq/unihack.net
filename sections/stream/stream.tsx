@@ -6,7 +6,7 @@ import Stack from '@components/stack/stack';
 
 function calculateTimeLeft() {
   // Date object is for Sydney/Melbourne time 7th March 2021 5pm
-  const start = +new Date('2021/03/05 19:00 +1100');
+  const start = +new Date('2021/03/05 18:30 +1100');
   const now = +new Date();
   let timeString = '';
 
