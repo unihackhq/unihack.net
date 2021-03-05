@@ -4,28 +4,37 @@
 .event-page-judges {
   background-color: $secondary;
   margin-top: 64px;
+  padding-bottom: 64px;
 
   &-content {
     @include page-margin;
     color: $white;
   }
 
-  &-panel {
+  &-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: $base * 4;
-    @include md {
+    gap: $base * 2;
+
+    @include lg {
       grid-template-columns: 1fr 1fr;
+      gap: $base * 4;
     }
-  }
 
-  &-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    h2 {
+      margin-top: $base * 2;
+      padding-top: $base * 2;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      @include lg {
+        padding-top: $base * 4;
+        grid-column: 1 / span 2;
+      }
 
-    &:last-child {
-      border-bottom: 0px solid transparent;
+      &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+      }
     }
   }
 }

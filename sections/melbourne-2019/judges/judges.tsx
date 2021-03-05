@@ -8,14 +8,12 @@ import { Judge } from '@components/judge/judge';
 const Judges = () => {
   const renderSection = ({ title, panel }) => {
     return (
-      <Stack size="small" className={styles['event-page-judges-section']}>
+      <>
         <H2>{title}</H2>
-        <div className={styles['event-page-judges-panel']}>
-          {panel.map(judge => (
-            <Judge key={judge.title} judge={judge} />
-          ))}
-        </div>
-      </Stack>
+        {panel.map(judge => (
+          <Judge key={judge.title} judge={judge} />
+        ))}
+      </>
     );
   };
 
@@ -26,7 +24,9 @@ const Judges = () => {
           <HL>Judges</HL>
           <Text>Here to be impressed, so make an impression.</Text>
         </Stack>
-        {judgeData.judges.map(renderSection)}
+        <div className={styles['event-page-judges-grid']}>
+          {judgeData.judges.map(renderSection)}
+        </div>
       </Stack>
     </Stack>
   );
