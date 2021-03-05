@@ -1,0 +1,90 @@
+{
+  "judges": [
+    {
+      "title": "Main Prize",
+      "panel": [
+        {
+          "name": "John Allsopp",
+          "title": "Founder",
+          "org": "Web Directions",
+          "imagePath": "images/judges/john-allsopp.jpg"
+        },
+        {
+          "name": "Jeanette Cheah",
+          "title": "CEO & Founder",
+          "org": "Hacker Exchange",
+          "imagePath": "images/judges/jeanette-cheah.jpg"
+        },
+        {
+          "name": "Rob Crocitti",
+          "title": "Head of Engineering, Digital & Service Design",
+          "org": "Australia Post",
+          "imagePath": "images/judges/rob-crocitti.jpg"
+        },
+        {
+          "name": "Max Lee",
+          "title": "Software Engineer",
+          "org": "Google",
+          "imagePath": "images/judges/max-lee.jpg"
+        },
+        {
+          "name": "Akanksha Malik",
+          "title": "Data Scientist",
+          "org": "Telstra Purple",
+          "imagePath": "images/judges/akanksha-malik.jpeg"
+        },
+        {
+          "name": "Bec Martin",
+          "title": "CTO",
+          "org": "MailTumble",
+          "imagePath": "images/judges/bec-martin.jpg"
+        },
+        {
+          "name": "Long Zheng",
+          "title": "Head of Product - Podcasting",
+          "org": "Triton Digital",
+          "imagePath": "images/judges/long-zheng.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Most Creative Idea",
+      "panel": [
+        {
+          "name": "Luannie Dang",
+          "title": "Co-founder",
+          "org": "Shooting Unicorns / Pory.io",
+          "imagePath": "images/judges/luannie-dang.jpg"
+        },
+        {
+          "name": "Samantha Wong",
+          "title": "Co-founder",
+          "org": "Shooting Unicorns / Pory.io",
+          "imagePath": "images/judges/samantha-wong.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Best Design",
+      "panel": [
+        {
+          "name": "Jake Moxey",
+          "title": "Senior Frontend Engineer",
+          "org": "Coinjar",
+          "imagePath": "images/judges/jake-moxey.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Best Social Impact Hack",
+      "panel": [
+        {
+          "name": "Sophia Huynh",
+          "title": "Program Director",
+          "org": "UN Sustainable Development Solutions Network",
+          "imagePath": "images/judges/sophia-huynh.jpg"
+        }
+      ]
+    }
+  ]
+}

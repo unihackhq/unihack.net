@@ -1,0 +1,31 @@
+@import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
+
+.event-page-judges {
+  background-color: $secondary;
+  margin-top: 64px;
+
+  &-content {
+    @include page-margin;
+    color: $white;
+  }
+
+  &-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $base * 4;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:last-child {
+      border-bottom: 0px solid transparent;
+    }
+  }
+}

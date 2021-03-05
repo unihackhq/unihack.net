@@ -1,0 +1,38 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/breakpoints.scss';
+
+.judge {
+  padding: 0;
+  border: 2px solid $salmon;
+  padding: ($base * 2);
+  box-shadow: 4px 4px 0px $salmon;
+  display: flex;
+
+  @include md {
+    padding: ($base * 3);
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    @include lg {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  .content {
+    margin-left: $base * 3;
+    h3 {
+      margin-bottom: $base;
+    }
+
+    p.title,
+    p.org {
+      margin: 0;
+    }
+  }
+}
