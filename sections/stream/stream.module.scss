@@ -1,0 +1,33 @@
+@import '../../styles/colours.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/styles.scss';
+
+.stream {
+  background-color: $secondary;
+  padding-top: 24px;
+
+  &-content {
+    color: $white;
+    text-align: center;
+
+    @include md {
+      @include page-margin;
+    }
+
+    .stream-container {
+      height: 260px;
+
+      @include sm {
+        height: 400px;
+      }
+
+      @include md {
+        height: 546px;
+      }
+
+      @include lg {
+        height: 619px;
+      }
+    }
+  }
+}

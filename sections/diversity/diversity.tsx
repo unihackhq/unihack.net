@@ -26,7 +26,7 @@ const Diversity = () => (
         </Text>
         <div className="actions">
           <ButtonLink
-            href="http://hackcodeofconduct.org/unihack"
+            href="https://github.com/unihackhq/rules/blob/master/code-of-conduct.md"
             type="secondary"
           >
             Read the Hack Code of Conduct

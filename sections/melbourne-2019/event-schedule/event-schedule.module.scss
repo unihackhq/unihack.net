@@ -1,21 +1,20 @@
 @import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
 
 .event-page-schedule {
   background-color: $secondary;
+  padding-bottom: $space-xxlarge;
 
   &-content {
     @include page-margin;
     display: flex;
     flex-direction: column;
-    padding-top: $base * 6;
-    padding-bottom: $base * 6;
 
     .section-title {
       color: $light_grey;
     }
 
     .subtitle {
-      @include subtitle;
       color: $light_grey;
     }
 
@@ -59,7 +58,6 @@
 
       .day-selectors {
         display: flex;
-        margin-bottom: $base;
   
         .day-selector {
           display: flex;
@@ -67,11 +65,12 @@
           background-color: transparent;
           border: none;
           color: $light_grey;
-          padding: 0 ($base * 2);
+          padding: 0 ($base);
+          font-family: inherit;
           -webkit-appearance: button;
           cursor: pointer;
           outline: none;
-          margin-right: $base * 3;
+          margin-right: $space-large;
   
           &:hover {
             color: $primary;

@@ -1,6 +1,14 @@
 @import '../../../styles/styles.scss';
 
 .menu-item {
+  &.dark {
+    & a {
+      @include md {
+        @include link-underline($white);
+      }
+    }
+  }
+
   @include xsm {
     display: block;
     margin-bottom: $base + 4px;

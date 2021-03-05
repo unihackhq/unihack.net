@@ -2,20 +2,12 @@
 
 .event-page-sponsors {
   background-color: $light_grey;
+  color: $secondary;
 
   &-content {
     @include page-margin;
     display: flex;
     flex-direction: column;
-
-    .section-title {
-      color: $secondary;
-    }
-
-    .subtitle {
-      @include subtitle;
-      color: $secondary;
-    } 
 
     .logo-center {
       display: flex;
