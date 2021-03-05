@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './judge.module.scss';
-import Stack from '@components/stack/stack';
 import { H3, Text } from '@components/typography/typography';
 import { JudgeModel } from './judge.model';
 
