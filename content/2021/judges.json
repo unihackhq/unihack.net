@@ -7,13 +7,33 @@
           "name": "John Allsopp",
           "title": "Founder",
           "org": "Web Directions",
-          "imagePath": "images/judges/john-allsopp.jpg"
+          "imagePath": "images/judges/john-allsopp.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://webdirections.org"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/johnallsopp"
+            }
+          ]
         },
         {
           "name": "Jeanette Cheah",
           "title": "CEO & Founder",
           "org": "Hacker Exchange",
-          "imagePath": "images/judges/jeanette-cheah.jpg"
+          "imagePath": "images/judges/jeanette-cheah.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://hacker.exchange/"
+            },
+            {
+              "name": "Instagram",
+              "href": "https://instagram.com/hackerexchange"
+            }
+          ]
         },
         {
           "name": "Rob Crocitti",
@@ -31,19 +51,37 @@
           "name": "Akanksha Malik",
           "title": "Data Scientist",
           "org": "Telstra Purple",
-          "imagePath": "images/judges/akanksha-malik.jpeg"
+          "imagePath": "images/judges/akanksha-malik.jpeg",
+          "links": [
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/akankshamalik96"
+            }
+          ]
         },
         {
           "name": "Bec Martin",
           "title": "CTO",
           "org": "MailTumble",
-          "imagePath": "images/judges/bec-martin.jpg"
+          "imagePath": "images/judges/bec-martin.jpg",
+          "links": [
+            {
+              "name": "LinkedIn",
+              "href": "https://www.linkedin.com/in/bec-martin-8806a938/"
+            }
+          ]
         },
         {
           "name": "Long Zheng",
           "title": "Head of Product - Podcasting",
           "org": "Triton Digital",
-          "imagePath": "images/judges/long-zheng.jpg"
+          "imagePath": "images/judges/long-zheng.jpg",
+          "links": [
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/longzheng"
+            }
+          ]
         }
       ]
     },
@@ -54,13 +92,25 @@
           "name": "Luannie Dang",
           "title": "Co-founder",
           "org": "Shooting Unicorns / Pory.io",
-          "imagePath": "images/judges/luannie-dang.jpg"
+          "imagePath": "images/judges/luannie-dang.jpg",
+          "links": [
+            {
+              "name": "Instagram",
+              "href": "https://instagram.com/shooting.unicorns"
+            }
+          ]
         },
         {
           "name": "Samantha Wong",
           "title": "Co-founder",
           "org": "Shooting Unicorns / Pory.io",
-          "imagePath": "images/judges/samantha-wong.jpg"
+          "imagePath": "images/judges/samantha-wong.jpg",
+          "links": [
+            {
+              "name": "Instagram",
+              "href": "https://instagram.com/shooting.unicorns"
+            }
+          ]
         }
       ]
     },
@@ -71,7 +121,13 @@
           "name": "Jake Moxey",
           "title": "Senior Frontend Engineer",
           "org": "Coinjar",
-          "imagePath": "images/judges/jake-moxey.jpg"
+          "imagePath": "images/judges/jake-moxey.jpg",
+          "links": [
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/jxom_"
+            }
+          ]
         }
       ]
     },
@@ -82,7 +138,17 @@
           "name": "Sophia Huynh",
           "title": "Program Director",
           "org": "UN Sustainable Development Solutions Network",
-          "imagePath": "images/judges/sophia-huynh.jpg"
+          "imagePath": "images/judges/sophia-huynh.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://sdsnyouth.org/"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/SDSNYouth"
+            }
+          ]
         }
       ]
     }

@@ -16,6 +16,16 @@ export const Judge = ({ judge }: PropTypes) => {
         <H3>{judge.name}</H3>
         <Text className={styles.title}>{judge.title}</Text>
         <Text className={styles.org}>{judge.org}</Text>
+
+        {!!judge.links && (
+          <ul>
+            {judge.links.map(({ name, href }) => (
+              <li key="name">
+                <a href={href}>{name}</a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

@@ -5,17 +5,30 @@
 .judge {
   padding: 0;
   border: 2px solid $salmon;
-  padding: ($base * 2);
   box-shadow: 4px 4px 0px $salmon;
+  padding: $base * 3;
   display: flex;
+  align-items: center;
 
-  @include md {
-    padding: ($base * 3);
+  &:nth-of-type(4n + 2) {
+    border: 2px solid $midori;
+    box-shadow: 4px 4px 0px $midori;
+  }
+
+  &:nth-of-type(4n + 3) {
+    border: 2px solid $pacific;
+    box-shadow: 4px 4px 0px $pacific;
+  }
+
+  &:nth-of-type(4n + 4) {
+    border: 2px solid $primary;
+    box-shadow: 4px 4px 0px $primary;
   }
 
   img {
     width: 120px;
     height: 120px;
+    margin-right: $base * 3;
     border-radius: 50%;
 
     @include lg {
@@ -25,14 +38,38 @@
   }
 
   .content {
-    margin-left: $base * 3;
     h3 {
       margin-bottom: $base;
     }
 
-    p.title,
+    p.title {
+      margin: 0;
+      font-weight: 600;
+    }
+
     p.org {
       margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: ($base * 2) 0 0;
+      padding: 0;
+
+      a {
+        color: #f3f4f5;
+        opacity: 0.5;
+      }
+
+      a:hover {
+        opacity: 1;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: $base;
+        font-size: 14px;
+      }
     }
   }
 }
