@@ -95,11 +95,23 @@
         "contents": ["An Arduino IoT Starter Kit"]
       },
       {
+        "title": "Customer Obsessed",
+        "description": "Inspiring customers through best value food and drink solutions to make lives easier",
+        "imagePath": "/images/sponsors/Coles.svg",
+        "contents": ["Coles Gift Cards to the value of $1800 for the team"]
+      },
+      {
+        "title": "Best use of Twilio",
+        "description": "For the hack that best makes use of the Twilio API",
+        "imagePath": "/images/sponsors/Twilio.svg",
+        "contents": ["AirPods for each team member"]
+      },
+      {
         "title": "Best use of EchoAR",
         "description": "The best app that used EchoAR for their augmented or virtual reality (AR/VR) application",
         "imagePath": "/images/sponsors/echoAR.svg",
         "contents": [
-          "$50 Amazon Gift Card (for the team)",
+          "$50 Amazon Gift Card for the team",
           "3-month free Business Tier access for each team member"
         ]
       }
