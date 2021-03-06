@@ -82,7 +82,10 @@
         "title": "Community Prize",
         "description": "For the hack that helps the community the most",
         "imagePath": "/images/sponsors/Australia Post.svg",
-        "contents": ["$100 gift cards for each team member"]
+        "contents": [
+          "$100 gift cards for each team member",
+          "3 copies of 'How to Supercharge your first 6 months as a Software Developer' eBook for the team"
+        ]
       },
       {
         "title": "Best User-Centric Hack",
@@ -116,6 +119,12 @@
           "$50 Amazon Gift Card for the team",
           "3-month free Business Tier access for each team member"
         ]
+      },
+      {
+        "title": "Be Curious",
+        "description": "For the team that demonstrates curiosity through constant learning. It could be through showing how many ideas (and dead ends!) you’ve chased, insights you’ve gathered or cool tech you’ve hacked together. Show us how curious you’ve been.",
+        "imagePath": "/images/sponsors/Latitude.svg",
+        "contents": ["Pre-paid shopping vouchers"]
       }
     ]
   }
