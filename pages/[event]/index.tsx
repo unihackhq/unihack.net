@@ -53,7 +53,10 @@ const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
 // This function gets called at build time
 export const getStaticPaths: GetStaticPaths = async () => {
   const eventsDirectory = path.join(process.cwd(), 'content/events');
-  const events = await fs.readdir(eventsDirectory);
+  let events = await fs.readdir(eventsDirectory);
+
+  // Filter out hidden files
+  events = events.filter(item => !/(^|\/)\.[^\/\.]/g.test(item));
 
   // Get the paths we want to pre-render based on event directories
   const paths = events.map((event: string) => {
