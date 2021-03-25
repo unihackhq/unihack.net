@@ -1,8 +1,10 @@
 @import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
 
 .event-page-sponsors {
   background-color: $light_grey;
   color: $secondary;
+  padding-bottom: 64px;
 
   &-content {
     @include page-margin;
@@ -22,6 +24,14 @@
         @include md {
           height: 150px;
           width: auto;
+        }
+      }
+
+      > * + * {
+        padding-left: $space-medium;
+
+        @include md {
+          padding-left: $space-xlarge;
         }
       }
     }

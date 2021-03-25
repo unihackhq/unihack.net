@@ -1,14 +1,16 @@
 {
   "base": "/images/sponsors",
   "sponsors": {
-    "venue": {
-      "name": "Telstra",
-      "imagePath": "/telstra-readify.png"
-    },
-    "platinum": {
-      "name": "PwC",
-      "imagePath": "/PwC.svg"
-    },
+    "platinum": [
+      {
+        "name": "PwC",
+        "imagePath": "/PwC.svg"
+      },
+      {
+        "name": "Telstra",
+        "imagePath": "/telstra-readify.png"
+      }
+    ],
     "gold": [
       {
         "name": "Accenture",
@@ -24,7 +26,7 @@
       },
       {
         "name": "Bosch",
-        "imagePath": "/bosch.png"
+        "imagePath": "/Bosch.svg"
       },
       {
         "name": "Carsales",
@@ -32,7 +34,7 @@
       },
       {
         "name": "Coles",
-        "imagePath": "/coles.png"
+        "imagePath": "/Coles.svg"
       },
       {
         "name": "KPMG",
@@ -58,7 +60,7 @@
       },
       {
         "name": "Cognizant",
-        "imagePath": "/cognizant.png"
+        "imagePath": "/Cognizant.svg"
       },
       {
         "name": "GitHub",
@@ -79,22 +81,20 @@
       {
         "name": "Twilio",
         "imagePath": "/Twilio.svg"
-      }
-    ],
-    "academicGold": [
+      },
       {
         "name": "Monash Generator",
         "imagePath": "/monash-generator.png"
       },
       {
         "name": "Wade Institute",
-        "imagePath": "/wade-institute.png"
+        "imagePath": "/Wade Institute.svg"
       }
     ],
-    "other": [
+    "bronze": [
       {
         "name": "Adobe",
-        "imagePath": "/adobe.png"
+        "imagePath": "/Adobe.svg"
       },
       {
         "name": ".Co Domains",
@@ -118,7 +118,7 @@
       },
       {
         "name": "Wacom",
-        "imagePath": "/wacom.png"
+        "imagePath": "/Wacom.svg"
       },
       {
         "name": "Wolfram",

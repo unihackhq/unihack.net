@@ -2,22 +2,22 @@ import React from 'react';
 import styles from './judges.module.scss';
 import { H2, HL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
-import judgeData from '../../../content/2021/judges.json';
 import { Judge } from '@components/judge/judge';
+import { JudgeGroup } from './judge-group.model';
 
 type PropTypes = {
-  title: string;
-  panel: any[];
+  data: JudgeGroup[];
 };
-const Judges = () => {
-  const renderSection = ({ title, panel }: PropTypes) => {
+
+const Judges = ({ data }: PropTypes) => {
+  const renderSection = ({ title, panel }: JudgeGroup) => {
     return (
-      <>
+      <React.Fragment key={title}>
         <H2>{title}</H2>
         {panel.map(judge => (
-          <Judge key={judge.title} judge={judge} />
+          <Judge key={judge.name} judge={judge} />
         ))}
-      </>
+      </React.Fragment>
     );
   };
 
@@ -29,7 +29,7 @@ const Judges = () => {
           <Text>Here to be impressed, so make an impression.</Text>
         </Stack>
         <div className={styles['event-page-judges-grid']}>
-          {judgeData.judges.map(renderSection)}
+          {data.map(renderSection)}
         </div>
       </Stack>
     </Stack>

@@ -1,49 +1,51 @@
 import styles from './event-schedule.module.scss';
 import React from 'react';
 import moment from 'moment';
-import Schedule from '../../../components/schedule/schedule';
-import scheduleData from '../../../content/2021/schedule.json';
-import { ScheduleItemI } from '../../../components/schedule/schedule-item/schedule-item.interface';
+import Schedule from '@components/schedule/schedule';
+import { ScheduleItemI } from '@components/schedule/schedule-item/schedule-item.interface';
 import { H3, HL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import { Day, EventScheduleData } from './event-schedule-data.model';
 
-type Day = 'friday' | 'saturday' | 'sunday';
-type Props = {};
+type PropTypes = {
+  data: EventScheduleData;
+};
+
 type State = {
+  allDays: Day[];
   day: Day;
   events: ScheduleItemI[];
 };
 
-class EventSchedule extends React.Component<Props, State> {
-  private defaultDay: Day = 'friday';
-
-  constructor(props: Props) {
+class EventSchedule extends React.Component<PropTypes, State> {
+  constructor(props: PropTypes) {
     super(props);
+    const day = Object.keys(props.data)[0] as Day;
 
-    const day = this.defaultDay;
     this.state = {
+      allDays: Object.keys(props.data) as Day[],
       day,
-      events: scheduleData[day]
+      events: props.data[day]
     };
   }
 
   public componentDidMount() {
-    const validDays = Object.keys(scheduleData);
+    const validDays = this.state.allDays;
     let day = moment()
       .format('dddd')
       .toLowerCase() as Day;
 
-    day = validDays.includes(day) ? day : this.defaultDay;
+    day = validDays.includes(day) ? day : this.state.day;
     this.setState({
       day,
-      events: scheduleData[day]
+      events: this.props.data[day]
     });
   }
 
   private setDay = (day: Day) => () => {
     this.setState({
       day,
-      events: scheduleData[day]
+      events: this.props.data[day]
     });
   };
 
@@ -58,6 +60,7 @@ class EventSchedule extends React.Component<Props, State> {
   private getSelectorButtons(day: Day) {
     return (
       <button
+        key={day}
         className={`${styles['day-selector']} ${
           this.isActive(day) ? styles.active : ''
         }`}
@@ -82,9 +85,7 @@ class EventSchedule extends React.Component<Props, State> {
             <div className={styles['schedule-main']}>
               <Stack size="small" className={styles['schedule-controller']}>
                 <div className={styles['day-selectors']}>
-                  {this.getSelectorButtons('friday')}
-                  {this.getSelectorButtons('saturday')}
-                  {this.getSelectorButtons('sunday')}
+                  {this.state.allDays.map(day => this.getSelectorButtons(day))}
                 </div>
                 <Schedule data={this.state.events} />
               </Stack>

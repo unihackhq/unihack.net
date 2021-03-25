@@ -1,10 +1,12 @@
 {
   "base": "/images/sponsors",
   "sponsors": {
-    "platinum": {
-      "name": "Australia Post",
-      "imagePath": "/Australia Post.svg"
-    },
+    "platinum": [
+      {
+        "name": "Australia Post",
+        "imagePath": "/Australia Post.svg"
+      }
+    ],
     "gold": [
       {
         "name": "Arcitecta",

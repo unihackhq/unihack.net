@@ -2,13 +2,14 @@ import React from 'react';
 import styles from './sponsors.module.scss';
 import Grid from '@components/grid/grid';
 import { H2, HL, Text } from '@components/typography/typography';
-import sponsorData from '../../../content/2021/sponsors.json';
 import Stack from '@components/stack/stack';
+import { SponsorData } from './sponsor-data.model';
 
-const Sponsors = () => {
-  const platinumSponsorPath =
-    sponsorData.base + sponsorData.sponsors.platinum.imagePath;
+type PropTypes = {
+  data: SponsorData;
+};
 
+const Sponsors = ({ data }: PropTypes) => {
   return (
     <section className={styles['event-page-sponsors']}>
       <Stack size="xlarge" className={styles['event-page-sponsors-content']}>
@@ -23,11 +24,16 @@ const Sponsors = () => {
               <hr className={`${styles['tier-accent']} ${styles.platinum}`} />
             </div>
             <div className={styles['logo-center']}>
-              <img
-                className={styles['company-logo']}
-                src={platinumSponsorPath}
-                alt={sponsorData.sponsors.platinum.name}
-              />
+              {data.sponsors.platinum.map(sponsor => {
+                return (
+                  <img
+                    key={sponsor.name}
+                    className={styles['company-logo']}
+                    src={data.base + sponsor.imagePath}
+                    alt={sponsor.name}
+                  />
+                );
+              })}
             </div>
           </Stack>
 
@@ -36,10 +42,7 @@ const Sponsors = () => {
               <H2>Gold</H2>
               <hr className={`${styles['tier-accent']} ${styles.gold}`} />
             </div>
-            <Grid
-              items={sponsorData.sponsors.gold}
-              basePath={sponsorData.base}
-            />
+            <Grid items={data.sponsors.gold} basePath={data.base} />
           </Stack>
 
           <Stack size="large">
@@ -48,10 +51,7 @@ const Sponsors = () => {
               <hr className={`${styles['tier-accent']} ${styles.silver}`} />
             </div>
 
-            <Grid
-              items={sponsorData.sponsors.silver}
-              basePath={sponsorData.base}
-            />
+            <Grid items={data.sponsors.silver} basePath={data.base} />
           </Stack>
 
           <Stack size="large">
@@ -60,10 +60,7 @@ const Sponsors = () => {
               <hr className={`${styles['tier-accent']} ${styles.bronze}`} />
             </div>
 
-            <Grid
-              items={sponsorData.sponsors.bronze}
-              basePath={sponsorData.base}
-            />
+            <Grid items={data.sponsors.bronze} basePath={data.base} />
           </Stack>
         </Stack>
       </Stack>

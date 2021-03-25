@@ -3,18 +3,22 @@ import styles from './prizes.module.scss';
 import { H2, H3, H4, HL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { Prize } from '@components/prize/prize';
-import prizeData from '../../../content/2021/prizes.json';
+import { PrizeData } from './prize-data.model';
 
-const Prizes = () => {
-  const mainPrizes = prizeData.prizes.main.map(prize => {
+type PropTypes = {
+  data: PrizeData;
+};
+
+const Prizes = ({ data }: PropTypes) => {
+  const mainPrizes = data.main.map(prize => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
-  const categoryPrizes = prizeData.prizes.category.map(prize => {
+  const categoryPrizes = data.category.map(prize => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
-  const sponsorPrizes = prizeData.prizes.sponsor.map(prize => {
+  const sponsorPrizes = data.sponsor.map(prize => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
