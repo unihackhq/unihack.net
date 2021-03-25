@@ -9,17 +9,16 @@ import Header from '@components/header/header';
 import Sponsor from '@components/sponsor/sponsor';
 import Stack from '@components/stack/stack';
 import Page from '@layouts/page/page';
-import Judges from '@sections/melbourne-2019/judges/judges';
-import { JudgeGroup } from '@sections/melbourne-2019/judges/judge-group.model';
-import Prizes from '@sections/melbourne-2019/prizes/prizes';
-import Sponsors from '@sections/melbourne-2019/sponsors/sponsors';
-import { PrizeData } from '@sections/melbourne-2019/prizes/prize-data.model';
-import { SponsorData } from '@sections/melbourne-2019/sponsors/sponsor-data.model';
-import { EventScheduleData } from '@sections/melbourne-2019/event-schedule/event-schedule-data.model';
+import Judges from '@sections/event-info/judges/judges';
+import { JudgeGroup } from '@sections/event-info/judges/judge-group.model';
+import Prizes from '@sections/event-info/prizes/prizes';
+import Sponsors from '@sections/event-info/sponsors/sponsors';
+import { PrizeData } from '@sections/event-info/prizes/prize-data.model';
+import { SponsorData } from '@sections/event-info/sponsors/sponsor-data.model';
+import { EventScheduleData } from '@sections/event-info/event-schedule/event-schedule-data.model';
 
 const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
-  console.log(props);
 
   return (
     <div>
