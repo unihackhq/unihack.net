@@ -16,18 +16,30 @@ import Sponsors from '@sections/event-info/sponsors/sponsors';
 import { PrizeData } from '@sections/event-info/prizes/prize-data.model';
 import { SponsorData } from '@sections/event-info/sponsors/sponsor-data.model';
 import { EventScheduleData } from '@sections/event-info/event-schedule/event-schedule-data.model';
+import EventHero, {
+  EventInfo
+} from '@sections/event-info/event-hero/event-hero';
+import Divider from '@components/divider/divider';
+import { StatType } from '@components/stats-banner/stat/stat';
 
 const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
+  const event = router.query.event;
 
   return (
     <div>
       <Head>
-        <title>UNIHACK {router.query.event}</title>
+        <title>UNIHACK {event}</title>
       </Head>
       <Page>
         <Header />
         <Stack size="xxlarge">
+          <EventHero
+            stats={props.stats}
+            event={event as string}
+            info={props.info}
+          />
+          <Divider />
           <Prizes data={props.prizes.prizes} />
           <Judges data={props.judges.judges} />
           <Sponsors data={props.sponsors} />
@@ -94,6 +106,8 @@ type Content = {
   };
   schedule: EventScheduleData;
   sponsors: SponsorData;
+  stats: StatType[];
+  info: EventInfo;
 };
 
 export default Event;

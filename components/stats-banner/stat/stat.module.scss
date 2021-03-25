@@ -1,0 +1,37 @@
+@import '../../../styles/colours.scss';
+
+.stat {
+  color: $salmon;
+
+  &:nth-of-type(4n + 2) {
+    color: $midori;
+  }
+
+  &:nth-of-type(4n + 3) {
+    color: $pacific;
+  }
+
+  &:nth-of-type(4n + 4) {
+    color: $primary;
+  }
+
+  .salmon {
+    color: $salmon;
+  }
+
+  .midori {
+    color: $midori;
+  }
+
+  .pacific {
+    color: $pacific;
+  }
+
+  .yellow {
+    color: $primary;
+  }
+
+  .name {
+    color: $secondary;
+  }
+}

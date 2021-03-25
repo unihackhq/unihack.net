@@ -12,15 +12,6 @@
     box-shadow: $floatingShadow;
   }
 
-  .icon-section {
-    display: flex;
-    align-items: center;
-
-    img {
-      margin-right: 20px;
-    }
-  }
-
   &-content-left {
     color: $secondary;
     padding: $space-large $space-medium;

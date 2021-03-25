@@ -1,0 +1,56 @@
+@import '../../../styles/colours.scss';
+@import '../../../styles/styles.scss';
+
+.hero {
+  @include page-margin;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &-header {
+    display: flex;
+
+    &-info {
+      width: 50%;
+      height: auto;
+    }
+
+    &-graphic {
+      display: flex;
+      width: 50%;
+      
+      @include md {
+        padding-top: $base * 10;
+      };
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .salmon {
+    color: $salmon;
+  }
+
+  .midori {
+    color: $midori;
+  }
+
+  .pacific {
+    color: $pacific;
+  }
+
+  .yellow {
+    color: $primary;
+  }
+
+  .mobile-only {
+    display: none;
+
+    @include md {
+      display: inline;
+    }
+  }
+}

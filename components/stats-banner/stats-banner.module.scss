@@ -1,0 +1,11 @@
+@import '../../styles/breakpoints.scss';
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @include md {
+    width: 80%;
+  }
+}

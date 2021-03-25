@@ -4,7 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  @include page-margin;
+
+  &.with-margin {
+    @include page-margin;
+  }
 
   @include xsm {
     padding-top: $base * 4;
@@ -21,5 +24,6 @@
   h1 {
     display: flex;
     z-index: 0;
+    color: $secondary;
   }
 }

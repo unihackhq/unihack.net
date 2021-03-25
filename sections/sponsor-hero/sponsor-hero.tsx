@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './sponsor-hero.module.scss';
-import { H3, H2, Text } from '@components/typography/typography';
-import Icon from '@components/icon/icon';
+import { H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import { IconLabel } from '@components/icon-label/icon-label';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
@@ -28,14 +28,8 @@ const SponsorHero = () => (
             <Text bold>Come join us in the Imagination Revolution!</Text>
           </Stack>
           <Stack size="small">
-            <div className={`${styles['icon-section']}`}>
-              <Icon icon="Calendar" />
-              <H3>5-7 March, 2021</H3>
-            </div>
-            <div className={`${styles['icon-section']}`}>
-              <Icon icon="Location" />
-              <H3>Online</H3>
-            </div>
+            <IconLabel icon="Calendar">5-7 March, 2021</IconLabel>
+            <IconLabel icon="Location">Online</IconLabel>
           </Stack>
         </Stack>
       </div>
