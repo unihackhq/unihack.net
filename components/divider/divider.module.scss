@@ -1,8 +1,18 @@
 @import '../../styles/styles.scss';
 
 .hr {
-  margin: 0;
-  @include page-margin;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  &.dark{
+    background-color: $secondary;
+
+    .hr-content {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .hr-content {
+    @include page-margin;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0;
+  }
 }

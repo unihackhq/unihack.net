@@ -11,6 +11,7 @@ type Props = {
 type State = {
   time: moment.Moment;
   currentItem?: ScheduleItemI;
+  isMounted: boolean;
 };
 
 class Schedule extends React.Component<Props, State> {
@@ -19,7 +20,7 @@ class Schedule extends React.Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
-    this.state = { time: moment() };
+    this.state = { time: moment(), isMounted: false };
   }
 
   private shouldUpdate() {
@@ -38,6 +39,7 @@ class Schedule extends React.Component<Props, State> {
 
   // Create an interval to check if the schedule should update
   public componentDidMount() {
+    this.setState({ ...this.state, isMounted: true });
     this.interval = setInterval(() => this.shouldUpdate(), 60000);
   }
 
@@ -87,11 +89,11 @@ class Schedule extends React.Component<Props, State> {
   }
 
   public render() {
-    return (
+    return this.state.isMounted ? (
       <div className={styles.schedule}>
         {this.buildScheduleItems(this.state)}
       </div>
-    );
+    ) : null;
   }
 }
 

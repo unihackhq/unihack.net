@@ -1,37 +1,25 @@
 @import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
 
 .event-page-prizes {
-  background-color: $primary;
-
   &-content {
     @include page-margin;
     display: flex;
     flex-direction: column;
-    padding-top: $base * 6;
-    padding-bottom: $base * 6;
+    color: $secondary;
 
-    .section-title {
-      color: $secondary;
+    .prize-section {
+      padding-bottom: $space-xlarge;
     }
 
-    .subtitle {
-      @include subtitle;
-      color: $secondary;
-    }
-
-    h2,
-    h3 {
-      color: $secondary;
-    }
-
-    .criteria-grid {
+    .prize-grid {
       display: grid;
-      gap: 24px 32px;
-      grid-template-columns: repeat(1, 1fr);
-      margin-top: $base * 2;
+      grid-template-columns: auto;
+      gap: $space-medium;
 
-      @include md {
-        grid-template-columns: repeat(2, 1fr);
+      @include lg {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
@@ -42,6 +30,26 @@
     .btn-link {
       align-self: flex-start;
       margin-top: $base * 2;
+    }
+  }
+
+  .judging-section {
+    background-color: $secondary;
+    padding-bottom: $space-xlarge;
+    color: $light_grey;
+
+    .judging-section-content {
+      @include page-margin;
+    }
+
+    .criteria-grid {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 32px;
+
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }

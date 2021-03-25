@@ -222,7 +222,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   }
 }
 
-@mixin link-underline($color: black) {
+@mixin link-underline($color: $secondary) {
   @include link-base($color);
 
   &:hover {
@@ -230,6 +230,6 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   }
 }
 
-@mixin link($color: black) {
+@mixin link($color: $secondary) {
   @include link-base($color);
 }
