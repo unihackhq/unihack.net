@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './brand-hero.module.scss';
 import ButtonLink from '@components/button-link/button-link';
-import { H1, H2, HL, HXL } from '@components/typography/typography';
+import { H2, HXL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
 const BrandHero = () => (
