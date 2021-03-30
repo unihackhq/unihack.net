@@ -1,3 +1,4 @@
+import React from 'react';
 import { H2 } from '@components/typography/typography';
 import styles from './city-banner.module.scss';
 
@@ -14,8 +15,7 @@ const CityBanner = (props: Props) => (
       props.left ? styles.left : styles.right
     }`}
     href={props.href}
-    target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
   >
     <H2>{props.city}</H2>
     <H2 className={styles.thin}>{props.year}</H2>
