@@ -9,6 +9,7 @@ import { StatType } from '@components/stats-banner/stat/stat';
 export type EventInfo = {
   date: string;
   location: string;
+  devpostUrl: string;
 };
 
 type Props = {

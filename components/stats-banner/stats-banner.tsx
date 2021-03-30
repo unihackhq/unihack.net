@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stat, StatType } from './stat/stat';
 import styles from './stats-banner.module.scss';
 
@@ -7,7 +8,7 @@ type Stats = {
 
 export const StatsBanner = ({ stats }: Stats) => (
   <div className={styles.stats}>
-    {stats.map(stat => {
+    {stats.map((stat) => {
       return (
         <Stat
           key={stat.name}

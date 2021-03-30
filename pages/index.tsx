@@ -9,7 +9,7 @@ import Sponsor from '@components/sponsor/sponsor';
 import Header from '@components/header/header';
 import Divider from '@components/divider/divider';
 import Stack from '@components/stack/stack';
-import Hero from 'sections/hero/hero';
+import BrandHero from 'sections/brand-hero/brand-hero';
 
 const Index = () => (
   <div>
@@ -19,7 +19,7 @@ const Index = () => (
     <Page>
       <Header />
       <Stack size="xxlarge">
-        <Hero />
+        <BrandHero />
         <Divider />
         <Faqs />
         <section className={styles.cities}>

@@ -10,17 +10,19 @@ import Sponsor from '@components/sponsor/sponsor';
 import Stack from '@components/stack/stack';
 import Page from '@layouts/page/page';
 import Judges from '@sections/event-info/judges/judges';
-import { JudgeGroup } from '@sections/event-info/judges/judge-group.model';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
+import Winners from '@sections/event-info/winners/winners';
+import { JudgeGroup } from '@sections/event-info/judges/judge-group.model';
 import { PrizeData } from '@sections/event-info/prizes/prize-data.model';
 import { SponsorData } from '@sections/event-info/sponsors/sponsor-data.model';
 import { EventScheduleData } from '@sections/event-info/event-schedule/event-schedule-data.model';
 import EventHero, {
-  EventInfo
+  EventInfo,
 } from '@sections/event-info/event-hero/event-hero';
 import Divider from '@components/divider/divider';
 import { StatType } from '@components/stats-banner/stat/stat';
+import { WinnerModel } from '@components/winner/winner.model';
 
 const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
@@ -40,6 +42,8 @@ const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
             info={props.info}
           />
           <Divider />
+          <Winners data={props.winners} devpostUrl={props.info.devpostUrl} />
+          <Divider />
           <Prizes data={props.prizes.prizes} />
           <Judges data={props.judges.judges} />
           <Sponsors data={props.sponsors} />
@@ -56,7 +60,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   let events = await fs.readdir(eventsDirectory);
 
   // Filter out hidden files
-  events = events.filter(item => !/(^|\/)\.[^\/\.]/g.test(item));
+  events = events.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
 
   // Get the paths we want to pre-render based on event directories
   const paths = events.map((event: string) => {
@@ -77,13 +81,13 @@ export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
 
   const filenames = await fs.readdir(eventContentDirectory);
 
-  const content = filenames.map(async filename => {
+  const content = filenames.map(async (filename) => {
     const filePath = path.join(eventContentDirectory, filename);
     const fileContents = await fs.readFile(filePath, 'utf8');
 
     // Return an object where the property name is the filename minus the ".json" extension
     return {
-      [path.parse(filename).name]: JSON.parse(fileContents)
+      [path.parse(filename).name]: JSON.parse(fileContents),
     };
   });
 
@@ -95,8 +99,8 @@ export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
 
   return {
     props: {
-      ...transformedContent
-    }
+      ...transformedContent,
+    },
   };
 };
 
@@ -111,6 +115,7 @@ type Content = {
   sponsors: SponsorData;
   stats: StatType[];
   info: EventInfo;
+  winners: WinnerModel[];
 };
 
 export default Event;

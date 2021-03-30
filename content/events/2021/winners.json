@@ -1,0 +1,191 @@
+[
+  {
+    "hack": {
+      "name": "Scalr.io",
+      "description": "Scalr is a click and forget, easy to use ML platform.",
+      "imagePath": "https://res.cloudinary.com/devpost/image/fetch/s--9_Zg5a99--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://i.imgur.com/vfMe54K.png",
+      "devpostUrl": "https://devpost.com/software/scalr-ht4loi",
+      "prizes": [
+        { "title": "1st Place", "imagePath": "/images/prizes/first-place.svg" }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "koff",
+      "description": "Identify Covid with a Koff",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/422/978/datas/gallery.jpg",
+      "devpostUrl": "https://devpost.com/software/koff",
+      "prizes": [
+        { "title": "2nd Place", "imagePath": "/images/prizes/second-place.svg" }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "adiona",
+      "description": "A station that will safely and efficiently check guests in.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/422/073/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/adiona",
+      "prizes": [
+        { "title": "3rd Place", "imagePath": "/images/prizes/third-place.svg" },
+        {
+          "title": "Best use of Twilio",
+          "imagePath": "/images/sponsors/Twilio.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Culie",
+      "description": "Matching job seekers to employers based on cultural fit.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/422/866/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/culie",
+      "prizes": [
+        {
+          "title": "Best Design",
+          "imagePath": "/images/prizes/best-design.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Tiles",
+      "description": "An interactive digital canvas.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/422/941/datas/medium.jpg",
+      "devpostUrl": "https://devpost.com/software/tiles-ftqcsp",
+      "prizes": [
+        {
+          "title": "Most Creative Idea",
+          "imagePath": "/images/prizes/most-creative.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "SkyNet",
+      "description": "An easily deployable, effective communication system.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/422/473/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/skynet-ela2x3",
+      "prizes": [
+        {
+          "title": "Best Social Impact",
+          "imagePath": "/images/prizes/best-social-impact.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Sense+",
+      "description": "A proactive approach to helping those in need.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/429/222/datas/medium.jpeg",
+      "devpostUrl": "https://devpost.com/software/sense-unl741",
+      "prizes": [
+        {
+          "title": "People's Choice",
+          "imagePath": "/images/prizes/social-impact.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Andromeda",
+      "description": "Using satellite imagery to detect ocean plastic.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/423/085/datas/medium.jpg",
+      "devpostUrl": "https://devpost.com/software/andromeda",
+      "prizes": [
+        {
+          "title": "The Greatest Makers",
+          "imagePath": "/images/sponsors/Arcitecta.svg"
+        },
+        {
+          "title": "Be Curious",
+          "imagePath": "/images/sponsors/Latitude.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "TuteBite",
+      "description": "A private tutor booking system helping all students.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/422/901/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/tute-bite",
+      "prizes": [
+        {
+          "title": "Best User-Centric Hack",
+          "imagePath": "/images/sponsors/Medipass.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "UrineDoc",
+      "description": "Monitoring the health of patients using fast urine tests.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/422/946/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/urinedoc",
+      "prizes": [
+        {
+          "title": "Best IoT Hack",
+          "imagePath": "/images/sponsors/Telstra.svg"
+        },
+        {
+          "title": "Community Prize",
+          "imagePath": "/images/sponsors/Australia Post.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Swiftly",
+      "description": "A cloud-based sports analytics platform.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/422/548/datas/gallery.jpg",
+      "devpostUrl": "https://devpost.com/software/project-lymqria6usj1",
+      "prizes": [
+        {
+          "title": "Data Analytics Prize",
+          "imagePath": "/images/sponsors/PwC.svg"
+        },
+        {
+          "title": "Best use of EchoAR",
+          "imagePath": "/images/sponsors/echoAR.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "FoodMatch",
+      "description": "Changing the way food is distributed.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/421/767/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/foodmatch-7ro6nq",
+      "prizes": [
+        {
+          "title": "Customer Obsessed",
+          "imagePath": "/images/sponsors/Coles.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Gecko",
+      "description": "Helping friends achieve their goals through accountability.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/422/042/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/gecko-oeh8sy",
+      "prizes": [
+        {
+          "title": "Creative Pitch Prize",
+          "imagePath": "/images/sponsors/PwC.svg"
+        }
+      ]
+    }
+  }
+]

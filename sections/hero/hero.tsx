@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './hero.module.scss';
 import ButtonLink from '@components/button-link/button-link';
 import { H1, HL, HXL } from '@components/typography/typography';

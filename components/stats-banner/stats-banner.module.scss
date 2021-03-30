@@ -1,11 +1,24 @@
 @import '../../styles/breakpoints.scss';
+@import '../../styles/spacing.scss';
 
 .stats {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin: 0 auto;
 
-  @include md {
-    width: 80%;
+  > * + * {
+    padding-top: $space-medium;
   }
+
+  @include sm {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+
+    > * + * {
+      padding: 0;
+    }
+  }
+  
 }

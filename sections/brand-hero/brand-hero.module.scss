@@ -1,0 +1,43 @@
+@import '../../styles/colours.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/styles.scss';
+
+.brand-hero {
+  display: flex;
+  flex-direction: row;
+  @include page-margin;
+  padding-top: $space-xxlarge;
+  color: $secondary;
+
+  &-info {
+    width: 50%;
+  }
+
+  .salmon {
+    color: $salmon;
+  }
+
+  .midori {
+    color: $midori;
+  }
+
+  .pacific {
+    color: $pacific;
+  }
+
+  &-graphic {
+    display: flex;
+    width: 50%;
+
+    img {
+      display: none;
+
+      @include sm {
+        display: block
+      }
+      
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
+
+.event-page-winners {
+  @include page-margin;
+  display: flex;
+  flex-direction: column;
+  color: $secondary;
+
+  .winners-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: $space-medium $space-medium;
+    
+    @include lg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $space-xlarge $space-medium;
+    }
+  }
+
+  .actions {
+    @include action-container;
+  }
+}
