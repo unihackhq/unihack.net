@@ -1,5 +1,5 @@
 import styles from './sponsor-addons.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H3, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -30,7 +30,7 @@ const Addons = () => (
           </div>
         </Stack>
         <div className={styles.actions}>
-          <ButtonLink type="secondary" href="#sponsor-prompt">
+          <ButtonLink type="primary" theme="light" href="#sponsor-prompt">
             Interested?
           </ButtonLink>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './sponsor-prompt.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -26,6 +26,7 @@ const SponsorPrompt = () => (
         <div className={styles.actions}>
           <ButtonLink
             type="primary"
+            theme="dark"
             href="mailto:sponsorship@melbourne.unihack.net?subject=General Sponsorship Enquiry"
           >
             Enquire now

@@ -2,11 +2,8 @@
 @import './colours.scss';
 @import './variables.scss';
 
-$fonts: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol';
-$fontsBasic: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$fonts: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$fontsBasic: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
@@ -68,35 +65,31 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  padding: $base $base * 3;
-
+  padding: 14px 24px;
   font-family: $fonts;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-
-  border-radius: 25px;
+  height: 48px;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
-@mixin primary-button {
-  border: 2px solid $primary;
-  color: $primary;
+@mixin button-theme($border, $color, $background) {
+  border: 2px solid $border;
+  box-shadow: 4px 4px 0px $border;
+  color: $color;
+  background-color: $background;
 
   &:hover {
-    background-color: $primary;
-    color: $secondary;
+    box-shadow: 3px 3px 0px $border;
+    transform: translateX(1px) translateY(1px);
   }
-}
 
-@mixin secondary-button {
-  border: 2px solid black;
-  color: black;
-
-  &:hover {
-    background-color: black;
-    color: white;
+  &:active {
+    box-shadow: 0px 0px 0px $border;
+    transform: translateX(4px) translateY(4px);
+    outline: none;
   }
 }
 

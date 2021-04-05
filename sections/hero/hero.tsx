@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './hero.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H1, HL, HXL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -33,13 +33,15 @@ const Hero = () => (
       </H1>
       <div className={styles.actions}>
         <ButtonLink
-          type="secondary"
+          type="primary"
+          theme="light"
           href="https://www.eventbrite.com.au/e/unihack-melbourne-2021-tickets-134461017523"
         >
           Get tickets
         </ButtonLink>
         <ButtonLink
-          type="secondary"
+          type="primary"
+          theme="light"
           href="https://www.facebook.com/events/243709813780048/"
         >
           View Facebook event

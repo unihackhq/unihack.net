@@ -4,10 +4,25 @@
   @include button-base;
 
   &.primary {
-    @include primary-button;
+    &.dark {
+      @include button-theme($white, $white, $secondary);
+    }
+
+    &.light {
+      @include button-theme($secondary, $secondary, $white);
+    }
   }
 
+
   &.secondary {
-    @include secondary-button;
+    &.light {
+      @include button-theme(rgba(31, 37, 42, 0.5), $secondary, $white);
+    }
+
+    &.dark {
+      @include button-theme(rgba(255, 255, 255, 0.5), $white, $secondary);
+    }
+
   }
+
 }
