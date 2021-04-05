@@ -10,7 +10,11 @@
   color: $secondary;
 
   &-info {
-    width: 50%;
+    width: 100%;
+
+    @include sm {
+      width: 50%;
+    }
   }
 
   .salmon {
@@ -26,8 +30,12 @@
   }
 
   &-graphic {
-    display: flex;
-    width: 50%;
+    display: none;
+    
+    @include sm {
+      display: flex;
+      width: 50%;
+    }
 
     img {
       display: none;
