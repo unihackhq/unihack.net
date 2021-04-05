@@ -4,7 +4,7 @@ import { HL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { WinnerModel } from '@components/winner/winner.model';
 import { Winner } from '@components/winner/winner';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 
 type PropTypes = {
   data: WinnerModel[];
@@ -25,7 +25,12 @@ const Winners = ({ data, devpostUrl }: PropTypes) => {
       <div className={styles['winners-grid']}>{winners}</div>
 
       <div className={styles.actions}>
-        <ButtonLink type="primary" href={devpostUrl} target="_blank">
+        <ButtonLink
+          type="primary"
+          theme="light"
+          href={devpostUrl}
+          target="_blank"
+        >
           See all the projects on Devpost
         </ButtonLink>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './brand-hero.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H2, HXL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -14,7 +14,7 @@ const BrandHero = () => (
       </div>
       <H2>UNIHACK 2021 has concluded.</H2>
       <div className={styles.actions}>
-        <ButtonLink type="primary" href="/2021">
+        <ButtonLink type="primary" theme="light" href="/2021">
           More from UNIHACK 2021
         </ButtonLink>
       </div>
