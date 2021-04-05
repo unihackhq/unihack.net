@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './privacy.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -15,7 +15,7 @@ const Privacy = () => (
           information essential to the running of our hackathons.
         </Text>
         <div className="actions">
-          <ButtonLink href="/privacy" type="secondary">
+          <ButtonLink href="/privacy" theme="light" type="primary">
             View our Privacy Policy
           </ButtonLink>
         </div>

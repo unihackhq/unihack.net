@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './sponsor.module.scss';
-import ButtonLink from '../button-link/button-link';
+import ButtonLink from '../button/button-link';
 import { H3, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -33,12 +33,13 @@ const Sponsor = () => (
 
         <div className={styles.actions}>
           <ButtonLink
+            theme="dark"
             type="primary"
             href="mailto:sponsorship@melbourne.unihack.net?subject=General Sponsorship Enquiry"
           >
             Enquire now
           </ButtonLink>
-          <ButtonLink type="primary" href="/sponsorship">
+          <ButtonLink type="secondary" theme="dark" href="/sponsorship">
             More about sponsorship
           </ButtonLink>
         </div>

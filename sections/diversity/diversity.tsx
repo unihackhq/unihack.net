@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './diversity.module.scss';
-import ButtonLink from '@components/button-link/button-link';
+import ButtonLink from '@components/button/button-link';
 import { H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -26,6 +26,7 @@ const Diversity = () => (
         </Text>
         <div className="actions">
           <ButtonLink
+            theme="dark"
             href="https://github.com/unihackhq/rules/blob/master/code-of-conduct.md"
             type="secondary"
           >
