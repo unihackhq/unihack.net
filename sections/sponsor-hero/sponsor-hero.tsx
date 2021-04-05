@@ -10,7 +10,7 @@ const SponsorHero = () => (
       className={styles['sponsor-hero-content']}
       style={{
         background: 'url(/images/sponsor-hero.jpg)',
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
       }}
     >
       <div className={styles['sponsor-hero-content-left']}>
@@ -19,8 +19,8 @@ const SponsorHero = () => (
             <Stack size="medium">
               <H2>What is UNIHACK?</H2>
               <Text>
-                UNIHACK 2021 is a 48-hour hackathon with the mission to provide
-                a creative space for engineering, design and product students to
+                UNIHACK is a 48-hour hackathon with the mission to provide a
+                creative space for engineering, design and product students to
                 build innovative projects that are ready to go to market. Come
                 join us in the Imagination Revolution.
               </Text>
@@ -28,8 +28,8 @@ const SponsorHero = () => (
             <Text bold>Come join us in the Imagination Revolution!</Text>
           </Stack>
           <Stack size="small">
-            <IconLabel icon="Calendar">5-7 March, 2021</IconLabel>
-            <IconLabel icon="Location">Online</IconLabel>
+            <IconLabel icon="Calendar">Next event TBC</IconLabel>
+            <IconLabel icon="Location">TBC</IconLabel>
           </Stack>
         </Stack>
       </div>
