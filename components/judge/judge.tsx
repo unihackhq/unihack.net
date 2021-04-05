@@ -19,7 +19,7 @@ export const Judge = ({ judge }: PropTypes) => {
         {!!judge.links && (
           <ul>
             {judge.links.map(({ name, href }) => (
-              <li key="name">
+              <li key={name}>
                 <a href={href}>{name}</a>
               </li>
             ))}

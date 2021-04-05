@@ -1,0 +1,61 @@
+@import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
+
+.event-page-sponsors {
+  background-color: $light_grey;
+  color: $secondary;
+  padding-bottom: 64px;
+
+  &-content {
+    @include page-margin;
+    display: flex;
+    flex-direction: column;
+
+    .logo-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .company-logo {
+        width: 50%;
+        height: auto;
+
+        @include md {
+          height: 150px;
+          width: auto;
+        }
+      }
+
+      > * + * {
+        padding-left: $space-medium;
+
+        @include md {
+          padding-left: $space-xlarge;
+        }
+      }
+    }
+
+    .tier-accent {
+      width: 100%;
+      margin: 0;
+      border: none;
+      
+      &.platinum {
+        border-top: 4px solid $platinum;
+      }
+
+      &.gold {
+        border-top: 4px solid $gold;
+      }
+
+      &.silver {
+        border-top: 4px solid $silver;
+      }
+
+      &.bronze {
+        border-top: 4px solid $bronze;
+      }
+    }
+  }
+}

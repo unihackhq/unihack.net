@@ -1,0 +1,71 @@
+{
+  "judges": [
+    {
+      "title": "Main Prize",
+      "panel": [
+        {
+          "name": "Olga Goloshchapova",
+          "title": "Lead Developer",
+          "org": "REA Group",
+          "imagePath": "images/judges/olga-goloshchapova.png"
+        },
+        {
+          "name": "Keith Swann",
+          "title": "Lead Product Manager",
+          "org": "Origin Energy",
+          "imagePath": "images/judges/keith-swann.png"
+        },
+        {
+          "name": "Jessica Abad Kelly",
+          "title": "Strategy & Innovation Manager",
+          "org": "Deloitte",
+          "imagePath": "images/judges/jessica-abad-kelly.png"
+        },
+        {
+          "name": "Long Zheng",
+          "title": "Head of Product",
+          "org": "Omny",
+          "imagePath": "images/judges/long-zheng.png"
+        },
+        {
+          "name": "Raanan Zion",
+          "title": "Director of Platforms and Innovation",
+          "org": "PwC",
+          "imagePath": "images/judges/raanan-zion.png"
+        }
+      ]
+    },
+    {
+      "title": "Most Creative Idea",
+      "panel": [
+        {
+          "name": "Sophia Huynh",
+          "title": "Program Director",
+          "org": "UN Sustainable Development Solutions Network",
+          "imagePath": "images/judges/sophia-huynh.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://sdsnyouth.org/"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/SDSNYouth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Best Design",
+      "panel": [
+        {
+          "name": "Tung Truong",
+          "title": "Senior UX Designer",
+          "org": "Cognizant",
+          "imagePath": "images/judges/tung-truong.png"
+        }
+      ]
+    }
+  ]
+}

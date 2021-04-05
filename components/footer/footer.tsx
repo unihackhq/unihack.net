@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
       <div className={`${styles['footer-content-col']} ${styles.second}`}>
         <Text>Proudly made in Melbourne 🇦🇺</Text>
-        <Text>© 2020 UNIHACK Incorporated</Text>
+        <Text>© 2021 UNIHACK Incorporated</Text>
       </div>
     </div>
   </section>
