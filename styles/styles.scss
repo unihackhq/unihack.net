@@ -1,107 +1,9 @@
-$fonts: 'Poppins',
--apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-'Apple Color Emoji',
-'Segoe UI Emoji',
-'Segoe UI Symbol';
-$fontsBasic: -apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-'Apple Color Emoji',
-'Segoe UI Emoji',
-'Segoe UI Symbol';
-
-$floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
-
-// Breakpoints
-@mixin xsm {
-  @media (min-width: 0em) {
-    @content;
-  }
-}
-
-@mixin ksm {
-  @media (min-width: 22em) {
-    @content;
-  }
-
-  //352px
-}
-
-@mixin sm {
-  @media (min-width: 37.5em) {
-    @content;
-  }
-
-  //600px
-}
-
-@mixin md {
-  @media (min-width: 50em) {
-    @content;
-  }
-
-  //800px
-}
-
-@mixin lg {
-  @media (min-width: 64em) {
-    @content;
-  }
-
-  //1024px
-}
-
-@mixin xl {
-  @media (min-width: 70em) {
-    @content;
-  }
-
-  //1120px
-}
-
-@mixin xxl {
-  @media (min-width: 80em) {
-    @content;
-  }
-
-  //1280px
-}
-
 @import './breakpoints.scss';
 @import './colours.scss';
 @import './variables.scss';
 
-$fonts: 'Poppins',
--apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-'Apple Color Emoji',
-'Segoe UI Emoji',
-'Segoe UI Symbol';
-$fontsBasic: -apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-'Apple Color Emoji',
-'Segoe UI Emoji',
-'Segoe UI Symbol';
+$fonts: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$fontsBasic: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
 
@@ -163,15 +65,11 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
   padding: 14px 24px;
-  box-sizing: border-box;
   font-family: $fonts;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  text-align: center;
-  min-width: 146px;
   height: 48px;
   transition: all 0.2s;
   text-decoration: none;
@@ -189,7 +87,7 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   }
 
   &:active {
-    box-shadow: 0px 0px 0px #000000;
+    box-shadow: 0px 0px 0px $border;
     transform: translateX(4px) translateY(4px);
     outline: none;
   }
