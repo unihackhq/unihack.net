@@ -1,7 +1,7 @@
 # UNIHACK Site - unihack.net
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the source code that powers the [unihack.net](unihack.net) website. This
@@ -36,6 +36,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/anthonycr0"><img src="https://avatars.githubusercontent.com/u/19167953?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anthony Roberts</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=anthonycr0" title="Code">💻</a> <a href="#design-anthonycr0" title="Design">🎨</a> <a href="#data-anthonycr0" title="Data">🔣</a></td>
     <td align="center"><a href="http://terencehuynh.com/"><img src="https://avatars.githubusercontent.com/u/1747517?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Terence Huynh</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=terencehuynh" title="Code">💻</a> <a href="#design-terencehuynh" title="Design">🎨</a> <a href="#data-terencehuynh" title="Data">🔣</a></td>
     <td align="center"><a href="https://joshparnham.com/"><img src="https://avatars.githubusercontent.com/u/712727?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josh Parnham</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=josh-" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sameersyedhd"><img src="https://avatars.githubusercontent.com/u/39996545?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sameersyedhd</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=sameersyedhd" title="Code">💻</a></td>
   </tr>
 </table>
 
