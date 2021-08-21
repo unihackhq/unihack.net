@@ -1,0 +1,26 @@
+{
+  "projectName": "unihack.net",
+  "projectOwner": "unihackhq",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "anthonycr0",
+      "name": "Anthony Roberts",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19167953?v=4",
+      "profile": "https://github.com/anthonycr0",
+      "contributions": [
+        "code",
+        "design",
+        "data"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
