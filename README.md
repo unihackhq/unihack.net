@@ -1,13 +1,21 @@
 # UNIHACK Site - unihack.net
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the source code that powers the [unihack.net](unihack.net) website. This
 website is running on the [Next.js][next.js] framework, using both [TypeScript][typescript] and [SASS][sass].
 
 ## Getting Started
+
+### Requirements
+
+You will need:
+
+- Node 10.x or above
 
 ### Installing
 
@@ -18,11 +26,47 @@ command:
 npm install
 ```
 
-### Running Dev Mode
+### Running Locally
+
+You can run this locally in development mode by running the following command:
 
 ```
 npm run dev
 ```
+
+Development mode includes hot-code reloading, error reporting and other
+functionality from Next.js. You can read more [here](https://nextjs.org/docs/api-reference/cli#development)
+
+To view the website, visit `http://localhost:3000`.
+
+You can also run it locally in "production mode" - which allows you to see what
+the site looks like when deployed _before_ you merge. You can do this by:
+
+```
+npm run build
+npm start
+```
+
+You can read more about production mode [here](https://nextjs.org/docs/api-reference/cli#production)
+
+### Linting
+
+We use `tslint` to ensure code consistency, readability, and maintainability. You
+can run this through:
+
+```
+npm run lint
+```
+
+### Folder Structure
+
+- `components`: Primitive React components used on our website
+- `content`: Content and JSON blobs (e.g. judge biographies, event information)
+- `layouts`: Core layouts
+- `pages`: Next.js pages
+- `public`: Next.js location to serve static files (e.g. images, robots.txt)
+- `sections`: Page sections - takes in content and components
+- `styles`: Global styles and SASS stylesheet variables
 
 ## Contributors ✨
 
