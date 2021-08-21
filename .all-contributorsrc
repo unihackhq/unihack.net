@@ -31,6 +31,15 @@
         "design",
         "data"
       ]
+    },
+    {
+      "login": "josh-",
+      "name": "Josh Parnham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/712727?v=4",
+      "profile": "https://joshparnham.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
