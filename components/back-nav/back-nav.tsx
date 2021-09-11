@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import styles from './back-nav.module.scss';
-import { Text } from '@components/typography/typography';
 
 type Props = {
   route: string;
@@ -10,9 +9,7 @@ type Props = {
 
 const BackNav = (props: Props) => (
   <Link href={props.route}>
-    <a className={styles['back-nav']}>
-      <Text>← {props.children}</Text>
-    </a>
+    <a className={styles['back-nav']}>← {props.children}</a>
   </Link>
 );
 

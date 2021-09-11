@@ -1,9 +1,9 @@
 @import '../../styles/styles.scss';
 
 .header {
-  &.dark {
-    background-color: $secondary;
-  }
+  background-color: $white;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  border-top: 5px solid $primary;
 
   &-content {
     @include page-margin;
@@ -16,8 +16,7 @@
     }
 
     @include sm {
-      height: 88px;
-      padding: 24px 0px;
+      height: 72px;
       justify-content: space-between;
     }
   }
