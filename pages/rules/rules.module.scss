@@ -1,6 +1,7 @@
 @import '../../styles/styles.scss';
+@import '../../styles/typography/typography.scss';
 
-.rules{
+.rules {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,5 +22,13 @@
   a {
     @include link;
     text-decoration: underline;
+  }
+
+  p {
+    @include body;
+  }
+
+  strong {
+    @include body-bold;
   }
 }

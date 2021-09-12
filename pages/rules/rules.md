@@ -1,12 +1,8 @@
-## UNIHACK Competition Rules
-
-![v2021-rc.02](https://img.shields.io/badge/version-2021--rc.02-blue?style=for-the-badge)
-
 ⚠️ All UNIHACK competitors must follow the following rules when participating in
 any UNIHACK event. Please read them carefully. If you have any questions or concerns
 please raise them with a UNIHACK organiser.
 
-### Section 1: Eligibility
+## Section 1: Eligibility
 
 1.  Teams must comprise of four to six people.
 
@@ -23,7 +19,7 @@ please raise them with a UNIHACK organiser.
     > 📆 If you were studying in 2020 and have since graduated, **you are still eligible**
     > to compete at UNIHACK 2021.
 
-### Section 2: Projects
+## Section 2: Projects
 
 1.  Teams have 48 hours to build a prototype. There are no restrictions on what
     form it should take, programming languages, or devices.
@@ -44,7 +40,7 @@ please raise them with a UNIHACK organiser.
     for the competition, but at your own expense. You must list of all third-party
     material and APIs, including anything that was purchased, in your submission.
 
-### Section 3: Safety
+## Section 3: Safety
 
 1.  All competitors agree to follow the Code of Conduct and act in an appropriate
     manner.
@@ -56,7 +52,7 @@ please raise them with a UNIHACK organiser.
     that they see as appropriate. This may include calling in the police and reporting
     the behaviour.
 
-### Section 4: Breaches
+## Section 4: Breaches
 
 1.  The Organisers reserve the right to ask teams to present their code for review if
     they suspect their project or prototype breaches the Competition Rules.
