@@ -13,11 +13,12 @@ export const Logo: React.FC<PropTypes> = ({
   wordmarkColor = '#1F252A',
   showWordmark
 }) => {
+  const width = showWordmark ? 176 : 34;
   return (
     <svg
-      width="176"
+      width={width}
       height="40"
-      viewBox="0 0 176 40"
+      viewBox={`0 0 ${width} 40`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

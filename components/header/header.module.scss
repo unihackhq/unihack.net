@@ -4,6 +4,8 @@
   background-color: $white;
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
   border-top: 5px solid $primary;
+  position: relative;
+  z-index: 999;
 
   &-content {
     @include page-margin;
