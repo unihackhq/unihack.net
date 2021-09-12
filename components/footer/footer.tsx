@@ -34,7 +34,7 @@ const Footer = () => (
           </li>
         </ul>
         <div className={styles.copyright}>
-          <Text>© 2021 UNIHACK Incorporated</Text>
+          <Text>© {new Date().getFullYear()} UNIHACK Incorporated</Text>
           <Text>Proudly made in Melbourne 🇦🇺</Text>
         </div>
       </div>
