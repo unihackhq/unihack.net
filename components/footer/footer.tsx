@@ -41,12 +41,12 @@ const Footer = () => (
       <div className={styles['footer-social']}>
         <ul>
           <li>
-            <a href="https://twitter.com/unihackmelb">
+            <a href="https://twitter.com/unihackhq">
               <Icon icon="Twitter" />
             </a>
           </li>
           <li>
-            <a href="https://facebook.com/unihackmelb">
+            <a href="https://facebook.com/unihackhq">
               <Icon icon="Facebook" />
             </a>
           </li>
