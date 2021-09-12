@@ -5,13 +5,12 @@ import { MenuItemI } from './menu-item/menu-item.interface';
 type Props = {
   items: MenuItemI[];
   isOpen: boolean;
-  dark?: boolean;
   onClick: () => void;
 };
 
 const Menu = (props: Props) => {
   const menuItems = props.items.map(item => (
-    <MenuItem dark={props.dark} key={item.text} href={item.href}>
+    <MenuItem key={item.text} href={item.href}>
       {item.text}
     </MenuItem>
   ));
@@ -19,7 +18,7 @@ const Menu = (props: Props) => {
   const navClass = props.isOpen ? styles['nav-show'] : null;
 
   return (
-    <div className={styles.menu}>
+    <nav className={styles.menu}>
       <div className={styles['menu-container']}>
         <button className={styles['menu-btn']} onClick={props.onClick}>
           <svg
@@ -54,7 +53,7 @@ const Menu = (props: Props) => {
         </button>
       </div>
       <ul className={`${styles.nav} ${navClass}`}>{menuItems}</ul>
-    </div>
+    </nav>
   );
 };
 

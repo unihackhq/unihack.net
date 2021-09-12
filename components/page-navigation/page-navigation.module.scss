@@ -4,26 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: $base * 6;
 
   &.with-margin {
     @include page-margin;
   }
 
-  @include xsm {
-    padding-top: $base * 4;
-  }
-
-  @include md {
-    padding-top: $base * 10;
-  }
-
   a {
     z-index: 1;
+    opacity: 0.5;
+    font-size: 14px;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
   }
 
   h1 {
     display: flex;
     z-index: 0;
     color: $secondary;
+    margin-top: $base;
   }
 }
