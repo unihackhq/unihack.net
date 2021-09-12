@@ -41,22 +41,22 @@ const Footer = () => (
       <div className={styles['footer-social']}>
         <ul>
           <li>
-            <a href="mailto:team@unihack.net?subject=General Enquiry">
+            <a href="https://twitter.com/unihackmelb">
               <Icon icon="Twitter" />
             </a>
           </li>
           <li>
-            <a href="mailto:team@unihack.net?subject=General Enquiry">
+            <a href="https://facebook.com/unihackmelb">
               <Icon icon="Facebook" />
             </a>
           </li>
           <li>
-            <a href="mailto:team@unihack.net?subject=General Enquiry">
+            <a href="https://instagram.com/unihack">
               <Icon icon="Instagram" />
             </a>
           </li>
           <li>
-            <a href="mailto:team@unihack.net?subject=General Enquiry">
+            <a href="https://www.linkedin.com/company/unihack-inc/">
               <Icon icon="LinkedIn" />
             </a>
           </li>
