@@ -29,9 +29,17 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
+      '/rules': { page: '/rules' },
       '/sponsorship': { page: '/sponsorship' },
       '/privacy': { page: '/privacy' },
       '/terms': { page: '/terms' }
     };
   }
 };
+
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)$/
+});
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
+});

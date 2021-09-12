@@ -1,0 +1,34 @@
+@import '../../styles/styles.scss';
+@import '../../styles/typography/typography.scss';
+
+.rules {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: $base * 7;
+  padding-bottom: $base * 7;
+
+  &-content {
+    @include page-margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    align-self: flex-start;
+  }
+
+  a {
+    @include link;
+    text-decoration: underline;
+  }
+
+  p {
+    @include body;
+  }
+
+  strong {
+    @include body-bold;
+  }
+}
