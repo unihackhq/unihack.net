@@ -35,7 +35,7 @@ const Sponsor = () => (
           <ButtonLink
             theme="dark"
             type="primary"
-            href="mailto:sponsorship@melbourne.unihack.net?subject=General Sponsorship Enquiry"
+            href="mailto:sponsorship@unihack.net?subject=General Sponsorship Enquiry"
           >
             Enquire now
           </ButtonLink>
