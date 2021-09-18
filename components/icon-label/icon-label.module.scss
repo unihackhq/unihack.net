@@ -4,7 +4,22 @@
   display: flex;
   align-items: center;
 
+  &-with-title {
+    align-items: flex-start;
+  }
+
   img {
     margin-right: $space-small;
+  }
+
+  h4 {
+    margin-bottom: $base / 2;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 28px;
+    margin: 0;
+    font-weight: 400;
   }
 }

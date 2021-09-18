@@ -2,36 +2,61 @@
 @import '../../styles/spacing.scss';
 
 .sponsor-hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: $light_grey;
   @include page-margin;
+  position: relative;
 
-  &-content {
-    box-shadow: $floatingShadow;
+  > img {
+    display: block;
+    width: 100%;
+
+    @include lg {
+      width: 800px;
+    }
+
+    @include xl {
+      width: 850px;
+    }
   }
 
-  &-content-left {
+  &-content {
+    background: $white;
     color: $secondary;
     padding: $space-large $space-medium;
 
     @include md {
-      width: 50%;
+      background-color: rgba($white, 0.87);
+      backdrop-filter: blur(10px);
+      width: 350px;
       padding: $space-xlarge;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      bottom: 0;
     }
 
-    
-    background-color: rgba($white, .87);
-    backdrop-filter: blur(10px);
-    text-align-last: left;
+    @include lg {
+      background: $white;
+      backdrop-filter: unset;
+      width: 420px;
+      top: 140px;
+      bottom: unset;
+    }
 
-  }
+    @include xl {
+      width: 450px;
+    }
 
-  &-content-right {
-    @include md {
-      width: 50%;
+    &-subtitle {
+      font-weight: 600;
+      line-height: 42px;
+      font-size: 32px;
+      color: $midori;
+      letter-spacing: -1px;
+      margin: 0;
+      @include lg {
+        line-height: 54px;
+        font-size: 42px;
+      }
     }
   }
-
 }
