@@ -3,6 +3,7 @@ import styles from './sponsor-prompt.module.scss';
 import ButtonLink from '@components/button/button-link';
 import { H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import { event, AnalyticsCategory } from '../../lib/gtag';
 
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
@@ -13,7 +14,16 @@ const SponsorPrompt = () => (
           <Text>
             We're happy to discuss customisations according to your needs. Send
             us an email at{' '}
-            <a href="mailto:sponsorship@unihack.net">
+            <a
+              href="mailto:sponsorship@unihack.net"
+              onClick={() =>
+                event({
+                  action: 'prompt_email_clicked',
+                  category: AnalyticsCategory.SPONSORSHIP,
+                  label: 'Clicked on Prompt Email'
+                })
+              }
+            >
               sponsorship@unihack.net
             </a>{' '}
             and we’ll follow-up within 24 hours.
@@ -28,6 +38,13 @@ const SponsorPrompt = () => (
             type="primary"
             theme="dark"
             href="mailto:sponsorship@unihack.net?subject=General Sponsorship Enquiry"
+            onClick={() => {
+              event({
+                action: 'prompt_button_clicked',
+                category: AnalyticsCategory.SPONSORSHIP,
+                label: 'Clicked on Prompt Button'
+              });
+            }}
           >
             Enquire now
           </ButtonLink>

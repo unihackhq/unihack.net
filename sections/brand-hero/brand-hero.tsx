@@ -3,6 +3,7 @@ import styles from './brand-hero.module.scss';
 import ButtonLink from '@components/button/button-link';
 import { H2, HXL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import { event, AnalyticsCategory } from '../../lib/gtag';
 
 const BrandHero = () => (
   <section className={styles['brand-hero']}>
@@ -14,7 +15,18 @@ const BrandHero = () => (
       </div>
       <H2>UNIHACK 2021 has concluded.</H2>
       <div className={styles.actions}>
-        <ButtonLink type="primary" theme="light" href="/2021">
+        <ButtonLink
+          type="primary"
+          theme="light"
+          href="/2021"
+          onClick={() => {
+            event({
+              action: 'brand_hero_button_clicked',
+              category: AnalyticsCategory.EVENT,
+              label: 'Clicked "More from UNIHACK 2021"'
+            });
+          }}
+        >
           More from UNIHACK 2021
         </ButtonLink>
       </div>
