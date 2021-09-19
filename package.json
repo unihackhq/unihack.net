@@ -42,7 +42,7 @@
     "@types/styled-jsx": "^2.2.8",
     "all-contributors-cli": "^6.20.0",
     "classnames": "^2.2.6",
-    "prettier": "1.19.1",
+    "prettier": "2.4.1",
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
