@@ -14,8 +14,20 @@
       "imagePath": "/Google.svg"
     },
     {
-      "name": "Facebook",
-      "imagePath": "/Facebook.svg"
+      "name": "Xero",
+      "imagePath": "/Xero.svg"
+    },
+    {
+      "name": "Coles",
+      "imagePath": "/Coles.svg"
+    },
+    {
+      "name": "Australia Post",
+      "imagePath": "/Australia Post.svg"
+    },
+    {
+      "name": "PwC",
+      "imagePath": "/PwC.svg"
     },
     {
       "name": "GitHub",
@@ -23,22 +35,10 @@
     },
 
     {
-      "name": "Australia Post",
-      "imagePath": "/Australia Post.svg"
-    },
-
-    {
-      "name": "PwC",
-      "imagePath": "/PwC.svg"
-    },
-    {
       "name": "Telstra",
       "imagePath": "/Telstra.svg"
     },
-    {
-      "name": "Xero",
-      "imagePath": "/Xero.svg"
-    },
+
     {
       "name": "Carsales",
       "imagePath": "/Carsales.svg"

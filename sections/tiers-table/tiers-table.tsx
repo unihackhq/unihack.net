@@ -12,7 +12,10 @@ const TiersTable = () => (
   <section className={styles['get-involved']}>
     <H2XL>Get Involved</H2XL>
     <p>
-      We offer a range of packages to suit any organisation, small or large.
+      One size doesn't fit all - to discuss how we can tailor your UNIHACK
+      experience, email us at{' '}
+      <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a> and
+      we'll be in touch!
     </p>
     <Table columns={transformPackages(data)} rows={data.perks} />
   </section>

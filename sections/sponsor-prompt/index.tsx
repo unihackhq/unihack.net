@@ -12,32 +12,22 @@ const SponsorPrompt = () => (
         <Stack size="small">
           <H2XL>Become a sponsor today!</H2XL>
           <Text>
-            We're happy to discuss customisations according to your needs. Send
-            us an email at{' '}
-            <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a>{' '}
-            and we’ll follow-up within 24 hours.
+            Working with UNIHACK as a sponsor provides companies a unique
+            opportunity to connect with some of the University's most talented
+            students. Interested in sponsoring UNIHACK 2022? Email us at{' '}
+            <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a>
+            !
           </Text>
-          {/* <p>
-        For more information on the available tiers and addons, please download
-        our prospectus below.
-      </p> */}
         </Stack>
         <div className={styles.actions}>
           <ButtonLink
+            className={styles['sponsor-prompt-link']}
             type="primary"
             theme="dark"
-            className={styles['sponsor-prompt-link']}
             href="mailto:sponsorship@unihack.net?subject=General Sponsorship Enquiry"
           >
-            Enquire now
+            Enquire Now
           </ButtonLink>
-          {/* <ButtonLink
-          type="primary"
-          href="https://drive.google.com/file/d/1j6YP-lWaBPJ8S1XWWrL6N78USNloTNNw/view"
-          target="_blank"
-        >
-          Download prospectus
-        </ButtonLink> */}
         </div>
       </Stack>
     </div>

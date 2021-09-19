@@ -57,6 +57,7 @@
       line-height: 28px;
       font-weight: 200;
       margin: 0 0 $base * 2;
+
       & a {
         @include link-underline($white);
         font-weight: 600;

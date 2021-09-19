@@ -21,4 +21,9 @@
       text-align: center;
     }
   }
+
+  a {
+    @include link;
+    font-weight: 600;
+  }
 }
