@@ -76,7 +76,7 @@
     },
     {
       "id": 9,
-      "name": "Pre-hack event",
+      "name": "Host an event (or workshop)",
       "description": "Engage with students before the hackathon."
     },
     {
@@ -86,7 +86,7 @@
     },
     {
       "id": 11,
-      "name": "Opening & closing keynote",
+      "name": "Keynote address",
       "description": "Kick off the hackathon with a speech by your most esteemed representative."
     },
     {
