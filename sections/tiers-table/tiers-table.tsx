@@ -15,7 +15,8 @@ const TiersTable = () => (
       <Stack size="small">
         <H2>Get Involved</H2>
         <Text>
-          We offer a range of packages to suit any organisation, small or large.
+          One size doesn't fit all - to discuss how we can tailor your UNIHACK
+          experience, email us at sponsorship@unihack.net and we'll be in touch!
         </Text>
       </Stack>
       <Table columns={transformPackages(data)} rows={data.perks} />
