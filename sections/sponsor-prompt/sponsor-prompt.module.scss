@@ -2,29 +2,73 @@
 @import '../../styles/spacing.scss';
 
 .sponsor-prompt {
+  background: $midori;
+  padding-bottom: $space-xxlarge;
+
   &-container {
-    background-color: $secondary;
+    @include page-margin;
+    position: relative;
+  }
+
+  &-image {
+    position: absolute;
+    display: none;
+    background: $midori url('../../public/images/sponsor-callout.jpg') center
+      center no-repeat;
+    background-size: cover;
+
+    @include md {
+      display: block;
+      top: -$space-xxlarge;
+      bottom: -$space-xxlarge;
+      right: -$base * 3;
+      left: 400px;
+    }
+
+    @include lg {
+      left: 440px;
+      right: calc((970px - 100vw) / 2);
+    }
+
+    @include xl {
+      left: 480px;
+      right: calc((1100px - 100vw) / 2);
+    }
   }
 
   &-content {
-    @include page-margin;
-
-    padding-top: $space-xlarge;
-    padding-bottom: $space-xlarge;
     color: $white;
-    font-size: 16px;
 
-    h2 {
-      color: $primary;
+    @include md {
+      width: 360px;
     }
 
-    p a {
-      @include link-underline($white);
-      font-weight: 500;
+    @include lg {
+      width: 400px;
+    }
+
+    h2 {
+      color: $white;
+      margin: 0 0 $base * 2;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 200;
+      margin: 0 0 $base * 2;
+      & a {
+        @include link-underline($white);
+        font-weight: 600;
+      }
     }
 
     .actions {
       @include action-container;
     }
+  }
+
+  &-link {
+    background-color: transparent !important;
   }
 }

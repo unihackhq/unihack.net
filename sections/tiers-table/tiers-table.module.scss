@@ -1,7 +1,24 @@
 @import '../../styles/styles.scss';
+@import '../../styles/typography/typography.scss';
 
 .get-involved {
   @include page-margin;
   margin-bottom: $base * 3;
 
+  h2 {
+    margin: 0 0 $base * 2;
+    @include md {
+      text-align: center;
+    }
+  }
+
+  > p {
+    font-weight: 300;
+    margin: 0 0 $base * 4;
+    @include md {
+      font-size: 21px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
 }

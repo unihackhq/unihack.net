@@ -1,6 +1,9 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import classNames from 'classnames/bind';
 import styles from '../button/button.module.scss';
+
+const cx = classNames.bind(styles);
 
 type Props = {
   type: 'primary' | 'secondary';
@@ -8,20 +11,21 @@ type Props = {
   href: string;
   target?: string;
   children: ReactNode;
+  className?: string;
 };
 
 const ButtonLink = (props: Props) => {
   return isInternalLink(props.href) ? (
     <ButtonLinkInternal {...props} />
   ) : (
-      <ButtonLinkExternal {...props} />
-    );
+    <ButtonLinkExternal {...props} />
+  );
 };
 
 const ButtonLinkInternal = (props: Props) => (
   <Link href={props.href}>
     <a
-      className={`${styles['btn-link']} ${styles[props.type]} ${styles[props.theme]} ${styles.btn}`}
+      className={cx(props.type, props.theme, 'btn', props.className)}
       target={props.target ? props.target : ''}
     >
       {props.children}
@@ -31,7 +35,7 @@ const ButtonLinkInternal = (props: Props) => (
 
 const ButtonLinkExternal = (props: Props) => (
   <a
-    className={`${styles['btn-link']} ${styles[props.type]} ${styles[props.theme]} ${styles.btn}`}
+    className={cx(props.type, props.theme, 'btn', props.className)}
     href={props.href}
     target={props.target ? props.target : ''}
   >

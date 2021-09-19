@@ -111,3 +111,17 @@
   font-weight: 600;
   letter-spacing: 0;
 }
+
+@mixin h2xl-mobile {
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+@mixin h2xl-desktop {
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}

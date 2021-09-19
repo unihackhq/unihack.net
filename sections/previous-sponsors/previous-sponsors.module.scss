@@ -3,11 +3,21 @@
 
 .previous-sponsors {
   background-color: $light_grey;
-  
+  padding-bottom: $space-xxlarge;
+
+  h2 {
+    margin-bottom: $base * 2;
+    @include md {
+      text-align: center;
+    }
+  }
+
   &-content {
     @include page-margin;
 
-    h3 {
+    p {
+      font-size: 21px;
+      margin-top: $base * 2;
       text-transform: uppercase;
       text-align: center;
     }
