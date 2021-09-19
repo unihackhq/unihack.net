@@ -10,6 +10,7 @@ type Props = {
   theme: 'light' | 'dark';
   href: string;
   target?: string;
+  onClick?: () => void;
   children: ReactNode;
   className?: string;
 };
@@ -27,6 +28,7 @@ const ButtonLinkInternal = (props: Props) => (
     <a
       className={cx(props.type, props.theme, 'btn', props.className)}
       target={props.target ? props.target : ''}
+      onClick={props.onClick}
     >
       {props.children}
     </a>
@@ -38,6 +40,7 @@ const ButtonLinkExternal = (props: Props) => (
     className={cx(props.type, props.theme, 'btn', props.className)}
     href={props.href}
     target={props.target ? props.target : ''}
+    onClick={props.onClick}
   >
     {props.children}
   </a>
