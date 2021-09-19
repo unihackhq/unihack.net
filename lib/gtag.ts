@@ -1,4 +1,4 @@
-export const GA_TRACKING_ID = 'UA-63816174-2';
+export const GA_TRACKING_ID = 'UA-206861683-1';
 
 declare global {
   interface Window {
