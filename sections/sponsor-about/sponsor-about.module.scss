@@ -1,0 +1,44 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/typography/typography.scss';
+
+.sponsor-about {
+  padding-bottom: $space-xxlarge;
+
+  &-container {
+    @include page-margin;
+  }
+
+  &-content {
+    margin-top: -$base * 3;
+
+    @include lg {
+      width: 500px;
+    }
+
+    @include xl {
+      width: 580px;
+    }
+
+    h2 {
+      margin: 0 0 $base * 2;
+
+      @include xl {
+        margin: 0 0 $base * 3;
+      }
+    }
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 $base * 2;
+      }
+      @include md {
+        font-size: 18px;
+        line-height: 28px;
+        &:not(:last-child) {
+          margin: 0 0 $base * 3;
+        }
+      }
+    }
+  }
+}
