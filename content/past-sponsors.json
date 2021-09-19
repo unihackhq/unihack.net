@@ -33,30 +33,37 @@
       "name": "GitHub",
       "imagePath": "/GitHub.svg"
     },
-
+    {
+      "name": "Twilio",
+      "imagePath": "/Twilio.svg"
+    },
     {
       "name": "Telstra",
       "imagePath": "/Telstra.svg"
     },
-
-    {
-      "name": "Carsales",
-      "imagePath": "/Carsales.svg"
-    },
-
-    {
-      "name": "REA Group",
-      "imagePath": "/REA Group.svg"
-    },
-
     {
       "name": "Medipass",
       "imagePath": "/Medipass.svg"
     },
-
     {
-      "name": "Twilio",
-      "imagePath": "/Twilio.svg"
+      "name": "Carsales",
+      "imagePath": "/Carsales.svg"
+    },
+    {
+      "name": "REA Group",
+      "imagePath": "/REA Group.svg"
+    },
+    {
+      "name": "DigIO",
+      "imagePath": "/DigIO.svg"
+    },
+    {
+      "name": "Adobe",
+      "imagePath": "/Adobe.svg"
+    },
+    {
+      "name": "Facebook",
+      "imagePath": "/Facebook.svg"
     },
     {
       "name": "Monash University",

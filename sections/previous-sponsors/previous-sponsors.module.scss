@@ -1,5 +1,6 @@
 @import '../../styles/styles.scss';
 @import '../../styles/spacing.scss';
+@import '../../styles/typography/typography.scss';
 
 .previous-sponsors {
   background-color: $light_grey;
@@ -7,12 +8,12 @@
 
   h2 {
     margin-bottom: $base * 2;
-    @include md {
-      text-align: center;
-    }
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 28px;
   }
 
-  &-content {
+  &-container {
     @include page-margin;
 
     p {
@@ -20,6 +21,17 @@
       margin-top: $base * 2;
       text-transform: uppercase;
       text-align: center;
+    }
+  }
+
+  &-content {
+    @include lg {
+      margin-top: -$base * 4;
+      width: 500px;
+    }
+
+    @include xl {
+      width: 600px;
     }
   }
 }

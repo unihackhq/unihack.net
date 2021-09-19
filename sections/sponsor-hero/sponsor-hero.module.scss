@@ -19,25 +19,51 @@
   }
 
   &-content {
-    background: $white;
+    background: $primary;
     color: $secondary;
-    padding: $space-large $space-medium;
+    padding: $space-large $space-medium 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -$space-large;
+      left: 0;
+      right: $space-large;
+      border-width: $space-large / 2;
+      border-style: solid;
+      border-color: $primary;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -$space-large;
+      right: 0;
+      border-width: $space-large $space-large 0 0;
+      border-style: solid;
+      border-color: darken($primary, 10%) transparent;
+    }
 
     @include md {
-      background-color: rgba($white, 0.87);
-      backdrop-filter: blur(10px);
-      width: 350px;
-      padding: $space-xlarge;
+      padding: $space-xlarge $space-xlarge 0;
+      &:after {
+        bottom: -$space-xlarge;
+        right: $space-xlarge;
+        border-width: $space-xlarge / 2;
+      }
+      &:before {
+        bottom: -$space-xlarge;
+        border-width: $space-xlarge $space-xlarge 0 0;
+      }
+    }
+
+    @include lg {
       position: absolute;
       top: 0px;
       right: 0;
       bottom: 0;
-    }
-
-    @include lg {
-      background: $white;
-      backdrop-filter: unset;
-      width: 420px;
+      width: 400px;
       top: 140px;
       bottom: unset;
     }
@@ -46,16 +72,37 @@
       width: 450px;
     }
 
-    &-subtitle {
-      font-weight: 600;
-      line-height: 42px;
-      font-size: 32px;
-      color: $midori;
-      letter-spacing: -1px;
-      margin: 0;
-      @include lg {
-        line-height: 54px;
-        font-size: 42px;
+    &-text {
+      margin: 0 0 $base * 4;
+
+      h1 {
+        font-weight: 600;
+        line-height: 42px;
+        font-size: 32px;
+        letter-spacing: -1px;
+        margin: 0 0 $base * 2;
+
+        @include lg {
+          line-height: 48px;
+          font-size: 36px;
+        }
+
+        @include xl {
+          line-height: 54px;
+          font-size: 42px;
+        }
+      }
+
+      p {
+        margin: 0 0 $base * 2;
+
+        strong {
+          font-weight: 600;
+        }
+
+        &:last-child {
+          margin: 0 0 $base * 0;
+        }
       }
     }
   }

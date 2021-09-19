@@ -21,11 +21,16 @@
   @include md {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    gap: 32px;
+    gap: 32px 48px;
   }
 
-  @include md {
-    gap: 32px 48px;
+  &-small {
+    @include md {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   img {

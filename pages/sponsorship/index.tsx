@@ -8,9 +8,7 @@ import PreviousSponsors from '@sections/previous-sponsors/previous-sponsors';
 import SponsorPerks from '@sections/sponsor-perks/sponsor-perks';
 import SponsorPrompt from '@sections/sponsor-prompt';
 import TiersTable from '@sections/tiers-table/tiers-table';
-import SponsorAbout from '@sections/sponsor-about';
 import Stack from '@components/stack/stack';
-import { PageNavigation } from '@components/page-navigation/page-navigation';
 import styles from './sponsorship.module.scss';
 
 export default () => (
@@ -20,23 +18,15 @@ export default () => (
     </Head>
     <Page>
       <Header />
-      <PageNavigation
-        backLinkTitle="Home"
-        backLinkHref="/"
-        underlineColor="midori"
-      >
-        Sponsorship.
-      </PageNavigation>
       <Stack className={styles.content} size="xxlarge">
         <SponsorHero />
-        <SponsorAbout />
+        <PreviousSponsors />
         <Stack size="large" className={styles.tiers}>
           <TiersTable />
           <Addons />
         </Stack>
-        <SponsorPrompt />
         <SponsorPerks />
-        <PreviousSponsors />
+        <SponsorPrompt />
       </Stack>
     </Page>
   </div>
