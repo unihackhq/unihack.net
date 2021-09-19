@@ -3,7 +3,8 @@
 
 .previous-sponsors {
   background-color: $light_grey;
-  
+  padding-bottom: $space-xxlarge;
+
   &-content {
     @include page-margin;
 

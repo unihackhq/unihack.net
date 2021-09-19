@@ -16,7 +16,9 @@ const TiersTable = () => (
         <H2>Get Involved</H2>
         <Text>
           One size doesn't fit all - to discuss how we can tailor your UNIHACK
-          experience, email us at sponsorship@unihack.net and we'll be in touch!
+          experience, email us at{' '}
+          <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a>{' '}
+          and we'll be in touch!
         </Text>
       </Stack>
       <Table columns={transformPackages(data)} rows={data.perks} />

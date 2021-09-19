@@ -5,7 +5,6 @@
   &-container {
     background-color: $secondary;
     padding-top: $space-xxlarge;
-    padding-bottom: $space-xxlarge;
   }
 
   &-header {
@@ -14,24 +13,30 @@
   }
 
   &-content {
-    @include md {
-      padding-left: 10%;
-      padding-right: 10%;
-      overflow-y: hidden;
-      white-space: nowrap;
-    }
+    @include offset-scroll;
+    padding-bottom: $space-xxlarge;
 
     .perks {
       margin-top: $space-large;
+      display: grid;
+      grid-gap: $base;
+
+      @include sm {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: $base * 2;
+      }
+
+      @include lg {
+        display: flex;
+        &:after {
+          display: block;
+          content: '';
+          padding-right: $space-xxlarge;
+        }
+      }
 
       .perk-item {
-        &:not(:last-of-type) {
-          margin-bottom: $base * 2;
-
-          @include md {
-            margin-bottom: 0;
-          }
-        }
+        flex-shrink: 0;
       }
     }
   }

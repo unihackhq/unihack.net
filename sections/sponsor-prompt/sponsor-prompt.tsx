@@ -7,19 +7,21 @@ import Stack from '@components/stack/stack';
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
     <div className={styles['sponsor-prompt-container']}>
+      <span className={styles['sponsor-prompt-image']}></span>
       <Stack size="medium" className={styles['sponsor-prompt-content']}>
         <Stack size="small">
           <H2>Contact us to become a sponsor today!</H2>
           <Text>
             Working with UNIHACK as a sponsor provides companies a unique
             opportunity to connect with some of the University's most talented
-            students. Interested in sponsoring UNIHACK 2022? Email us at
+            students. Interested in sponsoring UNIHACK 2022? Email us at{' '}
             <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a>
             !
           </Text>
         </Stack>
         <div className={styles.actions}>
           <ButtonLink
+            className={styles['sponsor-prompt-link']}
             type="primary"
             theme="dark"
             href="mailto:sponsorship@unihack.net?subject=General Sponsorship Enquiry"
