@@ -4,4 +4,8 @@
   @include page-margin;
   margin-bottom: $base * 3;
 
+  a {
+    @include link;
+    font-weight: 600;
+  }
 }

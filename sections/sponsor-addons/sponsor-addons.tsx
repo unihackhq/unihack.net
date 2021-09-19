@@ -2,6 +2,7 @@ import styles from './sponsor-addons.module.scss';
 import ButtonLink from '@components/button/button-link';
 import { H3, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import { event, AnalyticsCategory } from '../../lib/gtag';
 
 const Addons = () => (
   <section className={styles['sponsor-addons']}>
@@ -30,7 +31,18 @@ const Addons = () => (
           </div>
         </Stack>
         <div className={styles.actions}>
-          <ButtonLink type="primary" theme="light" href="#sponsor-prompt">
+          <ButtonLink
+            type="primary"
+            theme="light"
+            href="#sponsor-prompt"
+            onClick={() => {
+              event({
+                action: 'addons_button_clicked',
+                category: AnalyticsCategory.SPONSORSHIP,
+                label: 'Clicked on Addons "Interested?" Button'
+              });
+            }}
+          >
             Interested?
           </ButtonLink>
         </div>
