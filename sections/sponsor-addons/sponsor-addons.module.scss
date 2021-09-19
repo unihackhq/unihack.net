@@ -30,12 +30,7 @@
         @include md {
           width: 50%;
         }
-
       }
-    }
-
-    .actions {
-      @include action-container;
     }
   }
 }

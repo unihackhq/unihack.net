@@ -19,7 +19,7 @@
   }
 
   &-content {
-    background: $primary;
+    background: $primary-l50;
     color: $secondary;
     padding: $space-large $space-medium 0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
@@ -32,7 +32,7 @@
       right: $space-large;
       border-width: $space-large / 2;
       border-style: solid;
-      border-color: $primary;
+      border-color: $primary-l50;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
     }
     &:before {
@@ -42,7 +42,7 @@
       right: 0;
       border-width: $space-large $space-large 0 0;
       border-style: solid;
-      border-color: darken($primary, 10%) transparent;
+      border-color: darken($primary-l50, 10%) transparent;
     }
 
     @include md {
