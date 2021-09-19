@@ -9,20 +9,16 @@ const Addons = () => (
         <Stack size="xsmall">
           <H3 className={styles['addons-header']}>Want more?</H3>
         </Stack>
-        <Stack size="small" className={styles.addons}>
-          <div>
-            <div className={styles['addon-card-content']}>
-              <Text>Additional mentors</Text>
-              <Text bold>$250</Text>
-            </div>
+        <div className={styles.addons}>
+          <div className={styles['addon-card-content']}>
+            <Text>Additional mentors</Text>
+            <Text bold>$250</Text>
           </div>
-          <div>
-            <div className={styles['addon-card-content']}>
-              <Text>Resume and attendee lists</Text>
-              <Text bold>$450</Text>
-            </div>
+          <div className={styles['addon-card-content']}>
+            <Text>Resume and attendee lists</Text>
+            <Text bold>$450</Text>
           </div>
-        </Stack>
+        </div>
       </Stack>
     </div>
   </section>

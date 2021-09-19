@@ -1,4 +1,6 @@
 @import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/typography/typography.scss';
 
 .sponsor-addons {
   background-color: $light_grey;
@@ -7,28 +9,29 @@
     @include page-margin;
 
     .addons {
-      display: flex;
-
-      @include xsm {
-        flex-direction: column;
-      }
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: $base * 2;
 
       @include md {
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $base * 4;
       }
 
       .addon-card-content {
+        padding: $base * 2;
         display: flex;
-        flex-direction: row;
-        padding: 8px 16px;
-        width: 100%;
-        border-radius: 0px;
-        box-shadow: none;
         justify-content: space-between;
+        align-items: center;
         background-color: $white;
 
-        @include md {
-          width: 50%;
+        p:last-child {
+          @include h3;
+        }
+
+        @include sm {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: $base * 4;
         }
       }
     }

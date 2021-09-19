@@ -25,7 +25,7 @@
   }
 
   &-small {
-    @include md {
+    @include sm {
       grid-template-columns: repeat(3, 1fr);
     }
   }
