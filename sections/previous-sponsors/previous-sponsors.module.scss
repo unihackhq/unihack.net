@@ -16,6 +16,11 @@
   &-container {
     @include page-margin;
 
+    @include lg {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
     p {
       font-size: 21px;
       margin-top: $base * 2;

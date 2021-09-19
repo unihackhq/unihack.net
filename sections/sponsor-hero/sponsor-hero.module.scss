@@ -11,10 +11,12 @@
 
     @include lg {
       width: 800px;
+      margin-left: 170px;
     }
 
     @include xl {
       width: 850px;
+      margin-left: 250px;
     }
   }
 
@@ -61,7 +63,7 @@
     @include lg {
       position: absolute;
       top: 0px;
-      right: 0;
+      left: 0;
       bottom: 0;
       width: 400px;
       top: 140px;
