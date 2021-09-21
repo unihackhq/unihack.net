@@ -15,7 +15,7 @@ import styles from './sponsorship.module.scss';
 export default () => (
   <div>
     <Head>
-      <title>UNIHACK 2021 — Sponsorship</title>
+      <title>UNIHACK 2022 — Sponsorship</title>
     </Head>
     <Page>
       <Header />
