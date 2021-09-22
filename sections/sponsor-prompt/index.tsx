@@ -14,8 +14,11 @@ const SponsorPrompt = () => (
           <H2XL>Become a sponsor today!</H2XL>
           <Text>
             Working with UNIHACK as a sponsor provides companies a unique
-            opportunity to connect with some of the University's most talented
-            students. Interested in sponsoring UNIHACK 2022? Email us at{' '}
+            opportunity to connect with some of the most talented university
+            students.
+          </Text>
+          <Text>
+            Interested in sponsoring UNIHACK 2022? Email us at{' '}
             <a
               href="mailto:sponsorship@unihack.net"
               onClick={() =>
