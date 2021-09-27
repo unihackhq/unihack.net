@@ -94,7 +94,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "nick-ang",
+      "name": "Nick Ang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87055485?v=4",
+      "profile": "https://github.com/nick-ang",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
