@@ -10,7 +10,7 @@ type PropTypes = {
 export const Judge = ({ judge }: PropTypes) => {
   return (
     <div className={styles.judge}>
-      <img src={judge.imagePath} alt="" />
+      <img src={`/${judge.imagePath}`} alt="" />
       <div className={styles.content}>
         <H3>{judge.name}</H3>
         <Text className={styles.title}>{judge.title}</Text>

@@ -18,7 +18,7 @@ const BrandHero = () => (
         <ButtonLink
           type="primary"
           theme="light"
-          href="/2021"
+          href="/events/2021"
           onClick={() => {
             event({
               action: 'brand_hero_button_clicked',
