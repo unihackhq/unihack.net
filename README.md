@@ -1,9 +1,7 @@
 # UNIHACK Site - unihack.net
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the source code that powers the [unihack.net](unihack.net) website. This
@@ -88,6 +86,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/hugomd"><img src="https://avatars.githubusercontent.com/u/1646536?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hugo</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=hugomd" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sph-huynh"><img src="https://avatars.githubusercontent.com/u/13181562?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sph-huynh</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=sph-huynh" title="Code">💻</a></td>
+    <td align="center"><a href="https://auspham.dev/"><img src="https://avatars.githubusercontent.com/u/16440123?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Austin (Thang Pham)</b></sub></a><br /><a href="https://github.com/unihackhq/unihack.net/commits?author=rockmanvnx6" title="Code">💻</a></td>
   </tr>
 </table>
 
