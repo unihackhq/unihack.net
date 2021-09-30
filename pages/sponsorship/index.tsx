@@ -4,6 +4,7 @@ import Page from '@layouts/page/page';
 import Header from '@components/header/header';
 import SponsorHero from '@sections/sponsor-hero/sponsor-hero';
 import Addons from '@sections/sponsor-addons/sponsor-addons';
+import PreviousSponsors from '@sections/previous-sponsors/previous-sponsors';
 import SponsorPerks from '@sections/sponsor-perks/sponsor-perks';
 import SponsorPrompt from '@sections/sponsor-prompt';
 import TiersTable from '@sections/tiers-table/tiers-table';
@@ -19,6 +20,7 @@ export default () => (
       <Header />
       <Stack size="xxlarge">
         <SponsorHero />
+        <PreviousSponsors />
         <Stack size="large" className={styles.tiers}>
           <TiersTable />
           <Addons />

@@ -1,0 +1,37 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/typography/typography.scss';
+
+.previous-sponsors {
+  padding: 0 0 $space-xxlarge;
+
+  h2 {
+    margin-bottom: $base * 4;
+    text-align: center;
+  }
+
+  &-wrapper {
+    max-width: 1200px;
+    padding: $space-xxlarge;
+    margin: -$space-xxlarge auto 0;
+    position: relative;
+    background: white;
+  }
+
+  &-container {
+    @include page-margin;
+
+    p {
+      font-size: 21px;
+      margin-top: $base * 2;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+.previous-sponsors-grid {
+  @include md {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+}

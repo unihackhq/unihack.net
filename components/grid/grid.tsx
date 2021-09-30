@@ -7,20 +7,17 @@ const cx = classNames.bind(styles);
 type Props = {
   items: GridItemI[];
   basePath: string;
-  small?: boolean;
+  style?: string;
 };
 
-const Grid = (props: Props) => {
-  const gridItems = props.items.map((item: GridItemI) => (
+const Grid = ({ style, basePath, items }: Props) => {
+  const gridItems = items.map((item: GridItemI) => (
     <div key={item.name}>
-      <img src={`${props.basePath}${item.imagePath}`} alt={item.name} />
+      <img src={`${basePath}${item.imagePath}`} alt={item.name} />
     </div>
   ));
 
-  const styles = ['grid'];
-  if (props.small) styles.push('grid-small');
-
-  return <div className={cx(...styles)}>{gridItems}</div>;
+  return <div className={cx('grid', style)}>{gridItems}</div>;
 };
 
 export default Grid;

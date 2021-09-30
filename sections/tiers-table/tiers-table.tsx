@@ -10,7 +10,7 @@ import data from '../../content/2020/sponsorship-packages.json';
 
 const TiersTable = () => (
   <section className={styles['get-involved']}>
-    <H2XL>Get Involved</H2XL>
+    <H2XL>Which tier is right for you?</H2XL>
     <p>
       One size doesn't fit all - to discuss how we can tailor your UNIHACK
       experience, email us at{' '}
@@ -33,7 +33,7 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
       subtitle,
       accentColour: tier.name.toLowerCase(),
       footerText: tier.price,
-      cellData: transformPackagePerks(tier, sponsorshipData.perks.length)
+      cellData: transformPackagePerks(tier, sponsorshipData.perks.length),
     };
   });
 };
@@ -45,7 +45,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   tier.perks.map((perk: number) => {
     cells[perk - 1] = {
       key: generateKey(tier.name, perk - 1),
-      isChecked: true
+      isChecked: true,
     };
   });
 
@@ -53,7 +53,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   tier.customPerks.map((perk: CustomPerkI) => {
     cells[perk.perkID - 1] = {
       key: generateKey(tier.name, perk.perkID - 1),
-      content: perk.content
+      content: perk.content,
     };
   });
 
@@ -61,7 +61,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   while (cells.length < totalPerks) {
     cells[cells.length] = {
       key: generateKey(tier.name, cells.length + 1),
-      isChecked: false
+      isChecked: false,
     };
   }
 
