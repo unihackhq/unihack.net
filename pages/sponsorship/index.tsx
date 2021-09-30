@@ -17,7 +17,7 @@ export default () => (
     </Head>
     <Page>
       <Header />
-      <Stack className={styles.content} size="xxlarge">
+      <Stack size="xxlarge">
         <SponsorHero />
         <Stack size="large" className={styles.tiers}>
           <TiersTable />

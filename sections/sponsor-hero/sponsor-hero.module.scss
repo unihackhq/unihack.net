@@ -3,102 +3,31 @@
 @import '../../styles/typography/typography.scss';
 
 .sponsor-hero {
-  padding-bottom: $space-xxlarge;
+  padding: $space-xxlarge 0;
+  background: black url('../../public/images/sponsor-hero.png') center center
+    no-repeat;
+  background-size: cover;
+  height: 720px;
+  display: flex;
+  align-content: center;
+  align-items: center;
 
   &-container {
     @include page-margin;
-    display: flex;
-    flex-direction: column;
-
-    @include md {
-      flex-direction: row;
-    }
-  }
-}
-
-.sponsor-event-info {
-  margin-bottom: $space-xlarge;
-  @include md {
-    flex: 1;
-    margin-right: $space-large;
-  }
-  @include lg {
-    flex: unset;
-    margin-right: $space-xlarge;
-    width: 400px;
-  }
-  @include xl {
-    width: 450px;
-  }
-}
-
-.sponsor-previous-sponsors {
-  @include md {
-    flex: 1;
-  }
-
-  h2 {
-    margin-bottom: $base * 2;
-    font-weight: 300;
-    letter-spacing: -1px;
-    font-size: 28px;
-  }
-}
-
-.sponsor-stack-content {
-  h4 {
-    margin-bottom: $base * 0.5;
-    font-size: 14px;
-    line-height: 16px;
-
-    @include lg {
-      font-size: 18px;
-      line-height: 20px;
-    }
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 21px;
-    margin: 0;
-    font-weight: 400;
-
-    @include md {
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    @include lg {
-      font-size: 21px;
-      line-height: 28px;
-    }
-  }
-}
-
-.post-it-note {
-  background: $primary-l70;
-  color: $secondary;
-  padding: $space-medium;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
-
-  @include lg {
-    padding: $space-xlarge;
-    margin: 0;
-  }
-
-  &-text {
-    margin: 0 0 $base * 3;
-
-    @include lg {
-      margin: 0 0 $base * 4;
-    }
+    max-width: 760px;
+    text-align: center;
 
     h1 {
       font-weight: 600;
       line-height: 42px;
       font-size: 32px;
       letter-spacing: -1px;
-      margin: 0 0 $base * 2;
+      margin: 0 0 $base * 4;
+      color: $primary;
+
+      span {
+        display: inline-block;
+      }
 
       @include lg {
         line-height: 48px;
@@ -106,47 +35,39 @@
       }
 
       @include xl {
-        line-height: 54px;
-        font-size: 42px;
-      }
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      li {
-        @include body;
-        position: relative;
-        margin-bottom: $base;
-        padding: 0 0 0 $base * 4;
-
-        &:before {
-          left: 0;
-          font-size: 21px;
-          content: '\2713';
-          color: $midori;
-          font-weight: bold;
-          position: absolute;
-          text-align: left;
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
+        line-height: 70px;
+        font-size: 64px;
       }
     }
 
     p {
-      margin: 0 0 $base * 2;
+      margin: 0 0 $base * 4;
+      font-size: 18px;
+      line-height: 21px;
+      color: white;
+    }
+  }
 
-      strong {
-        font-weight: 600;
+  &-link {
+    background-color: transparent !important;
+  }
+
+  &-event-data {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 0 0 $base * 4;
+
+    &-content {
+      margin: 0 $base * 2;
+
+      h4 {
+        color: white;
       }
-
-      &:last-child {
-        margin: 0 0 $base * 0;
+      p {
+        color: white;
+        padding-bottom: $base;
+        border-bottom: 3px solid $primary;
       }
     }
   }

@@ -1,61 +1,52 @@
 import React from 'react';
 import styles from './sponsor-hero.module.scss';
-import Stack from '@components/stack/stack';
-import { H2, Text } from '@components/typography/typography';
-import { IconLabel } from '@components/icon-label/icon-label';
-import Grid from '@components/grid/grid';
-import pastSponsors from '@content/past-sponsors.json';
-
-const PostItNote = () => (
-  <div className={styles['post-it-note']}>
-    <div className={styles['post-it-note-text']}>
-      <h1>Come join us in the Imagination Revolution!</h1>
-      <Text>
-        UNIHACK is where Australia's upcoming generation of tech disrupters
-        build and showcase their innovative and market-ready projects over a
-        48-hour period.
-      </Text>
-      <ul>
-        <li>Meet and recruit amazing talent</li>
-        <li>Undertake brand promotion</li>
-        <li>Receive live product feedback</li>
-      </ul>
-    </div>
-    <Stack size="large">
-      <IconLabel
-        icon="Location"
-        title="Location"
-        style={styles['sponsor-stack-content']}
-      >
-        Remote (Australia &amp; New Zealand)
-      </IconLabel>
-      <IconLabel
-        icon="Calendar"
-        title="Date"
-        style={styles['sponsor-stack-content']}
-      >
-        TBA, Early 2022
-      </IconLabel>
-    </Stack>
-  </div>
-);
+import { Text } from '@components/typography/typography';
+import { IconLabelWithTitle } from '@components/icon-label/icon-label';
+import ButtonLink from '@components/button/button-link';
+import { event, AnalyticsCategory } from '../../lib/gtag';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
     <div className={styles['sponsor-hero-container']}>
-      <div className={styles['sponsor-event-info']}>
-        <PostItNote />
+      <h1>
+        Join us in the <span>imagination revolution</span>
+      </h1>
+      <Text>
+        UNIHACK is where Australia’s upcoming generation of tech disrupters
+        build and showcase their innovative and market-ready projects over a
+        48-hour period.
+      </Text>
+      <div className={styles['sponsor-hero-event-data']}>
+        <IconLabelWithTitle
+          icon="Location_White"
+          title="Location"
+          style={styles['sponsor-hero-event-data-content']}
+        >
+          Australia &amp; New Zealand
+        </IconLabelWithTitle>
+        <IconLabelWithTitle
+          icon="Calendar_White"
+          title="Date"
+          style={styles['sponsor-hero-event-data-content']}
+        >
+          TBA, Early 2022
+        </IconLabelWithTitle>
       </div>
-      <div className={styles['sponsor-previous-sponsors']}>
-        <Stack size="small" className={styles['previous-sponsors-content']}>
-          <H2>Previous Sponsors</H2>
-          <Grid
-            small
-            items={pastSponsors.sponsors}
-            basePath={pastSponsors.base}
-          />
-        </Stack>
-      </div>
+      <ButtonLink
+        className={styles['sponsor-hero-link']}
+        type="primary"
+        theme="dark"
+        href="mailto:sponsorship@unihack.net?subject=UNIHACK 2022 Sponsorship"
+        onClick={() => {
+          event({
+            action: 'hero_button_clicked',
+            category: AnalyticsCategory.SPONSORSHIP,
+            label: 'Clicked on Hero Button',
+          });
+        }}
+      >
+        Enquire Now
+      </ButtonLink>
     </div>
   </section>
 );

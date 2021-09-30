@@ -6,21 +6,42 @@ import styles from './icon-label.module.scss';
 
 const cx = classNames.bind(styles);
 
-type Props = {
+type IconLabelProps = {
   icon: string;
   title?: string;
   style?: string;
   children: React.ReactNode;
 };
 
-export const IconLabel = ({ icon, title, children, style }: Props) => {
+type IconLabelWithTitleProps = {
+  icon: string;
+  title?: string;
+  style?: string;
+  children: React.ReactNode;
+};
+
+export const IconLabel = ({ icon, children, style }: IconLabelProps) => {
   return (
     <div className={cx('icon-section', style)}>
       <Icon icon={icon} />
-      <div className={cx('icon-content')}>
-        {!!title && <H4>{title}</H4>}
-        <p>{children}</p>
+      <p>{children}</p>
+    </div>
+  );
+};
+
+export const IconLabelWithTitle = ({
+  icon,
+  title,
+  children,
+  style,
+}: IconLabelWithTitleProps) => {
+  return (
+    <div className={cx('icon-section', 'icon-section-with-title', style)}>
+      <div className={cx('icon-title')}>
+        <Icon icon={icon} />
+        <H4>{title}</H4>
       </div>
+      <p>{children}</p>
     </div>
   );
 };
