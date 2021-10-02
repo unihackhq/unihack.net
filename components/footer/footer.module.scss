@@ -69,15 +69,14 @@
   &-social {
     ul {
       list-style: none;
-      margin: 0 0 $base * 0.5;
       padding: 0;
 
       li {
         display: inline-block;
-        margin-left: $base * 2;
+        margin-right: $base * 2;
 
-        &:first-child {
-          margin-left: 0;
+        &:last-child {
+          margin-right: 0;
         }
       }
 
@@ -92,10 +91,19 @@
       }
     }
   }
-  &-social {
-    margin-bottom: $base * 2;
-
+  &-info {
     ul {
+      margin: 0 0 $base * 2;
+
+      @include md {
+        margin: 0 0 $base * 0.5;
+      }
+    }
+  }
+  &-social {
+    ul {
+      margin: 0 0 $base * 2;
+
       a {
         width: 24px;
         height: 24px;
