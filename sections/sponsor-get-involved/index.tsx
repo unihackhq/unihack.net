@@ -9,16 +9,22 @@ import ToolsLottie from '@content/lottie/tools.json';
 interface LottiePlayerTypes {
   src: object;
   id: string;
+  loop?: boolean;
 }
 
-const LottiePlayer: React.FC<LottiePlayerTypes> = ({ src, id }) => {
+const LottiePlayer: React.FC<LottiePlayerTypes> = ({
+  src,
+  id,
+  loop = true,
+}) => {
   return (
     <Player
       id={id}
       className={styles['sponsor-get-involved-lottie']}
       src={src}
       autoplay={true}
-      loop={true}
+      keepLastFrame={true}
+      loop={loop}
     />
   );
 };
@@ -39,6 +45,7 @@ const SponsorGetInvolved: React.FC = () => (
           <LottiePlayer
             id="sponsor-get-involved-marketing"
             src={MarketingLottie}
+            loop={false}
           />
           <Text>Increase brand awareness</Text>
         </div>
