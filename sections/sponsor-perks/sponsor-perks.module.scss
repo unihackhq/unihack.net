@@ -2,10 +2,7 @@
 @import '../../styles/spacing.scss';
 
 .sponsor-perks {
-  &-container {
-    background-color: $secondary;
-    padding-top: $space-xxlarge;
-  }
+  background-color: $secondary;
 
   &-header {
     @include page-margin;
@@ -19,11 +16,11 @@
     .perks {
       margin-top: $space-large;
       display: grid;
-      grid-gap: $base;
+      grid-gap: $base * 2;
 
       @include sm {
         grid-template-columns: 1fr 1fr;
-        grid-gap: $base * 2;
+        grid-gap: $base * 3;
       }
 
       @include lg {

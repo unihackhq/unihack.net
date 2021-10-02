@@ -23,7 +23,9 @@
     "paths": {
       "@components/*": ["./components/*"],
       "@layouts/*": ["./layouts/*"],
-      "@sections/*": ["./sections/*"]
+      "@sections/*": ["./sections/*"],
+      "@lib/*": ["./lib/*"],
+      "@content/*": ["./content/*"]
     }
   },
 

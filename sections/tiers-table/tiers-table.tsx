@@ -1,28 +1,37 @@
 import React from 'react';
-import styles from './tiers-table.module.scss';
 import Table from '@components/table/table';
 import { ColumnI } from '@components/table/column/column.interface';
 import { CellI } from '@components/table/cell/cell.interface';
-import { H2, Text } from '@components/typography/typography';
-import Stack from '@components/stack/stack';
+import { H2XL } from '@components/typography/typography';
+import { event, AnalyticsCategory } from '@lib/gtag';
+import { SPONSORSHIP_EMAIL } from '@lib/constants';
+
+import styles from './tiers-table.module.scss';
 import { PackageI } from './package.interface';
 import { CustomPerkI } from './custom-perk.interface';
-import data from '../../content/2020/sponsorship-packages.json';
+import data from '@content/sponsorship/sponsorship-packages.json';
 
 const TiersTable = () => (
   <section className={styles['get-involved']}>
-    <Stack size="medium">
-      <Stack size="small">
-        <H2>Get Involved</H2>
-        <Text>
-          One size doesn't fit all - to discuss how we can tailor your UNIHACK
-          experience, email us at{' '}
-          <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a>{' '}
-          and we'll be in touch!
-        </Text>
-      </Stack>
-      <Table columns={transformPackages(data)} rows={data.perks} />
-    </Stack>
+    <H2XL>Which tier is right for you?</H2XL>
+    <p>
+      One size doesn't fit all - to discuss how we can tailor your UNIHACK
+      experience, email us at{' '}
+      <a
+        href={SPONSORSHIP_EMAIL}
+        onClick={() => {
+          event({
+            action: 'sponsorship.tiers_table.email_link.click',
+            category: AnalyticsCategory.SPONSORSHIP,
+            label: 'Sponsorship - Tiers Table - Click on Email Link',
+          });
+        }}
+      >
+        sponsorship@unihack.net
+      </a>{' '}
+      and we'll be in touch!
+    </p>
+    <Table columns={transformPackages(data)} rows={data.perks} />
   </section>
 );
 
@@ -38,7 +47,7 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
       subtitle,
       accentColour: tier.name.toLowerCase(),
       footerText: tier.price,
-      cellData: transformPackagePerks(tier, sponsorshipData.perks.length)
+      cellData: transformPackagePerks(tier, sponsorshipData.perks.length),
     };
   });
 };
@@ -50,7 +59,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   tier.perks.map((perk: number) => {
     cells[perk - 1] = {
       key: generateKey(tier.name, perk - 1),
-      isChecked: true
+      isChecked: true,
     };
   });
 
@@ -58,7 +67,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   tier.customPerks.map((perk: CustomPerkI) => {
     cells[perk.perkID - 1] = {
       key: generateKey(tier.name, perk.perkID - 1),
-      content: perk.content
+      content: perk.content,
     };
   });
 
@@ -66,7 +75,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   while (cells.length < totalPerks) {
     cells[cells.length] = {
       key: generateKey(tier.name, cells.length + 1),
-      isChecked: false
+      isChecked: false,
     };
   }
 

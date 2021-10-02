@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './sponsor-prompt.module.scss';
 import ButtonLink from '@components/button/button-link';
-import { H2, Text } from '@components/typography/typography';
+import { H2XL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
-import { event, AnalyticsCategory } from '../../lib/gtag';
+import { event, AnalyticsCategory } from '@lib/gtag';
+import { SPONSORSHIP_EMAIL } from '@lib/constants';
 
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
@@ -11,7 +12,7 @@ const SponsorPrompt = () => (
       <span className={styles['sponsor-prompt-image']}></span>
       <Stack size="medium" className={styles['sponsor-prompt-content']}>
         <Stack size="small">
-          <H2>Contact us to become a sponsor today!</H2>
+          <H2XL>Become a sponsor today!</H2XL>
           <Text>
             Working with UNIHACK as a sponsor provides companies a unique
             opportunity to connect with some of the most talented university
@@ -20,12 +21,12 @@ const SponsorPrompt = () => (
           <Text>
             Interested in sponsoring UNIHACK 2022? Email us at{' '}
             <a
-              href="mailto:sponsorship@unihack.net"
+              href={SPONSORSHIP_EMAIL}
               onClick={() =>
                 event({
-                  action: 'prompt_email_clicked',
+                  action: 'sponsorship.sponsor_prompt.email_link.click',
                   category: AnalyticsCategory.SPONSORSHIP,
-                  label: 'Clicked on Prompt Email',
+                  label: 'Sponsorship - Sponsor Prompt - Click on Email Link',
                 })
               }
             >
@@ -39,12 +40,12 @@ const SponsorPrompt = () => (
             className={styles['sponsor-prompt-link']}
             type="primary"
             theme="dark"
-            href="mailto:sponsorship@unihack.net?subject=General Sponsorship Enquiry"
+            href={SPONSORSHIP_EMAIL}
             onClick={() => {
               event({
-                action: 'prompt_button_clicked',
+                action: 'sponsorship.sponsor_prompt.button.click',
                 category: AnalyticsCategory.SPONSORSHIP,
-                label: 'Clicked on Prompt Button',
+                label: 'Sponsorship - Sponsor Prompt - Click on Button',
               });
             }}
           >

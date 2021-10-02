@@ -1,43 +1,53 @@
 import React from 'react';
 import styles from './sponsor-hero.module.scss';
-import { H2, Text } from '@components/typography/typography';
-import Stack from '@components/stack/stack';
-import { IconLabel } from '@components/icon-label/icon-label';
+import { Text } from '@components/typography/typography';
+import { IconLabelWithTitle } from '@components/icon-label/icon-label';
+import ButtonLink from '@components/button/button-link';
+import { event, AnalyticsCategory } from '@lib/gtag';
+import { SPONSORSHIP_EMAIL } from '@lib/constants';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
-    <div
-      className={styles['sponsor-hero-content']}
-      style={{
-        background: 'url(/images/sponsor-hero.jpg)',
-        backgroundSize: 'cover'
-      }}
-    >
-      <div className={styles['sponsor-hero-content-left']}>
-        <Stack size="medium">
-          <Stack size="small">
-            <Stack size="medium">
-              <H2>What is UNIHACK?</H2>
-              <Text>
-                UNIHACK is where Australia's upcoming generation of tech
-                disrupters build and showcase their innovative and market-ready
-                projects over a 48-hour period.
-              </Text>
-              <Text>
-                Come join us in the imagination revolution for the opportunity
-                to meet and recruit amazing talent, undertake brand promotion,
-                and receive live product feedback.
-              </Text>
-            </Stack>
-          </Stack>
-          <Stack size="small">
-            <IconLabel icon="Calendar">TBA, Early 2022</IconLabel>
-            <IconLabel icon="Location">
-              Remote (Australia &amp; New Zealand)
-            </IconLabel>
-          </Stack>
-        </Stack>
+    <div className={styles['sponsor-hero-container']}>
+      <h1>
+        Join us in the <span>imagination revolution</span>
+      </h1>
+      <Text>
+        UNIHACK is where Australia’s upcoming generation of tech disrupters
+        build and showcase their innovative and market-ready projects over a
+        48-hour period.
+      </Text>
+      <div className={styles['sponsor-hero-event-data']}>
+        <IconLabelWithTitle
+          icon="Location_White"
+          title="Location"
+          style={styles['sponsor-hero-event-data-content']}
+        >
+          Australia &amp; New Zealand
+        </IconLabelWithTitle>
+        <IconLabelWithTitle
+          icon="Calendar_White"
+          title="Date"
+          style={styles['sponsor-hero-event-data-content']}
+        >
+          TBA, Early 2022
+        </IconLabelWithTitle>
       </div>
+      <ButtonLink
+        className={styles['sponsor-hero-link']}
+        type="primary"
+        theme="dark"
+        href={SPONSORSHIP_EMAIL}
+        onClick={() => {
+          event({
+            action: 'sponsorship.sponsor_hero.button.click',
+            category: AnalyticsCategory.SPONSORSHIP,
+            label: 'Sponsorship - Sponsor Hero - Click on Button',
+          });
+        }}
+      >
+        Enquire Now
+      </ButtonLink>
     </div>
   </section>
 );

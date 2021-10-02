@@ -46,6 +46,15 @@
   }
 }
 
+@mixin h2xl {
+  @include no-margin;
+  @include h2xl-mobile;
+
+  @include md {
+    @include h2xl-desktop;
+  }
+}
+
 @mixin h3 {
   @include no-margin;
   @include h4-desktop;
@@ -80,7 +89,7 @@
 
 @mixin underline($color) {
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     width: 100%;

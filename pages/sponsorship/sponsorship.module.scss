@@ -1,12 +1,7 @@
 @import '../../styles/breakpoints.scss';
 @import '../../styles/spacing.scss';
 
-.content {
-  @include xsm {
-    padding-top: $space-medium;
-  }
-
-  @include md {
-    padding-top: $space-xxlarge;
-  }
+.tiers {
+  border-top: 1px solid #e0e0e0;
+  padding-bottom: $space-xxlarge;
 }

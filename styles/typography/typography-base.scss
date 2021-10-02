@@ -34,14 +34,14 @@
 }
 
 @mixin hl-mobile {
-  font-size: 40px;
+  font-size: 42px;
   line-height: 48px;
   font-weight: 600;
   letter-spacing: -0.06em;
 }
 
 @mixin h1-desktop {
-  font-size: 40px;
+  font-size: 42px;
   line-height: 48px;
   font-weight: 400;
   letter-spacing: 0;
@@ -69,7 +69,7 @@
 }
 
 @mixin h4-desktop {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0;
@@ -110,4 +110,18 @@
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0;
+}
+
+@mixin h2xl-mobile {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+@mixin h2xl-desktop {
+  font-size: 42px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  font-weight: 600;
 }

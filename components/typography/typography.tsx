@@ -30,6 +30,10 @@ const H2 = (props: HeadingProps) => (
   <h2 className={cx('h2', props.className)}>{props.children}</h2>
 );
 
+const H2XL = (props: HeadingProps) => (
+  <h2 className={cx('h2xl', props.className)}>{props.children}</h2>
+);
+
 const H3 = (props: HeadingProps) => (
   <h3 className={cx('h3', props.className)}>{props.children}</h3>
 );
@@ -53,4 +57,4 @@ const Text = (props: TextProps) => {
   );
 };
 
-export { HXL, HL, H1, H2, H3, H4, Text };
+export { HXL, HL, H1, H2, H2XL, H3, H4, Text };

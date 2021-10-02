@@ -1,0 +1,49 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/typography/typography.scss';
+
+.sponsor-get-involved {
+  padding: $space-xxlarge 0;
+
+  h2 {
+    margin: 0 0 $base * 2;
+  }
+
+  &-content {
+    @include page-margin;
+    text-align: center;
+    max-width: 980px;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $space-xlarge;
+
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: $space-xlarge;
+    }
+
+    &-item {
+      p {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 21px;
+        @include md {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  &-lottie {
+    height: 180px;
+    margin: 0 0 $base 0 !important;
+    @include md {
+      height: 220px;
+    }
+  }
+}
