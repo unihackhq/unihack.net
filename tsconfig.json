@@ -24,6 +24,7 @@
       "@components/*": ["./components/*"],
       "@layouts/*": ["./layouts/*"],
       "@sections/*": ["./sections/*"],
+      "@lib/*": ["./lib/*"],
       "@content/*": ["./content/*"]
     }
   },

@@ -1,12 +1,15 @@
 import React from 'react';
-import styles from './tiers-table.module.scss';
 import Table from '@components/table/table';
 import { ColumnI } from '@components/table/column/column.interface';
 import { CellI } from '@components/table/cell/cell.interface';
 import { H2XL } from '@components/typography/typography';
+import { event, AnalyticsCategory } from '@lib/gtag';
+import { SPONSORSHIP_EMAIL } from '@lib/constants';
+
+import styles from './tiers-table.module.scss';
 import { PackageI } from './package.interface';
 import { CustomPerkI } from './custom-perk.interface';
-import data from '../../content/2020/sponsorship-packages.json';
+import data from '@content/sponsorship/sponsorship-packages.json';
 
 const TiersTable = () => (
   <section className={styles['get-involved']}>
@@ -14,8 +17,19 @@ const TiersTable = () => (
     <p>
       One size doesn't fit all - to discuss how we can tailor your UNIHACK
       experience, email us at{' '}
-      <a href="mailto:sponsorship@unihack.net">sponsorship@unihack.net</a> and
-      we'll be in touch!
+      <a
+        href={SPONSORSHIP_EMAIL}
+        onClick={() => {
+          event({
+            action: 'sponsorship.tiers_table.email_link.click',
+            category: AnalyticsCategory.SPONSORSHIP,
+            label: 'Sponsorship - Tiers Table - Click on Email Link',
+          });
+        }}
+      >
+        sponsorship@unihack.net
+      </a>{' '}
+      and we'll be in touch!
     </p>
     <Table columns={transformPackages(data)} rows={data.perks} />
   </section>

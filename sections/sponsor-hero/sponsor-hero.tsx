@@ -3,7 +3,8 @@ import styles from './sponsor-hero.module.scss';
 import { Text } from '@components/typography/typography';
 import { IconLabelWithTitle } from '@components/icon-label/icon-label';
 import ButtonLink from '@components/button/button-link';
-import { event, AnalyticsCategory } from '../../lib/gtag';
+import { event, AnalyticsCategory } from '@lib/gtag';
+import { SPONSORSHIP_EMAIL } from '@lib/constants';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
@@ -36,12 +37,12 @@ const SponsorHero = () => (
         className={styles['sponsor-hero-link']}
         type="primary"
         theme="dark"
-        href="mailto:sponsorship@unihack.net?subject=UNIHACK 2022 Sponsorship"
+        href={SPONSORSHIP_EMAIL}
         onClick={() => {
           event({
-            action: 'hero_button_clicked',
+            action: 'sponsorship.sponsor_hero.button.click',
             category: AnalyticsCategory.SPONSORSHIP,
-            label: 'Clicked on Hero Button',
+            label: 'Sponsorship - Sponsor Hero - Click on Button',
           });
         }}
       >
