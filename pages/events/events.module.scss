@@ -1,8 +1,7 @@
 @import '../../styles/styles.scss';
 
-.events {
+.content {
   @include page-margin;
-  display: flex;
   padding: {
     top: $base * 7;
     bottom: $base * 7;
