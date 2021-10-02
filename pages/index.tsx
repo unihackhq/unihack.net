@@ -23,7 +23,7 @@ const Index = () => (
         <Divider />
         <Faqs />
         <section className={styles.cities}>
-          <CityBanner city="Melbourne" year="2019" href="/2019" />
+          <CityBanner city="Melbourne" year="2019" href="/events/2019" />
           <CityBanner
             city="Sydney"
             year="2018"

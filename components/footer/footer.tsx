@@ -28,6 +28,11 @@ const Footer = () => (
             </Link>
           </li>
           <li>
+            <Link href="/conduct">
+              <a>Code of Conduct</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/terms">
               <a>Terms of Service</a>
             </Link>

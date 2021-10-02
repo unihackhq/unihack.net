@@ -26,7 +26,7 @@ import { WinnerModel } from '@components/winner/winner.model';
 
 const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
-  const event = router.query.event;
+  const event = router.query.year;
 
   return (
     <div>
@@ -63,8 +63,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   events = events.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
 
   // Get the paths we want to pre-render based on event directories
-  const paths = events.map((event: string) => {
-    return { params: { event } };
+  const paths = events.map((year: string) => {
+    return { params: { year } };
   });
 
   // We'll pre-render only these paths at build time.
@@ -76,7 +76,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
   const eventContentDirectory = path.join(
     process.cwd(),
-    `content/events/${params!.event}`
+    `content/events/${params!.year}`
   );
 
   const filenames = await fs.readdir(eventContentDirectory);
