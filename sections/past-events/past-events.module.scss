@@ -1,0 +1,17 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+
+.past-events {
+  display: grid;
+  grid-template-columns: auto;
+  gap: $space-medium $space-medium;
+
+  @include sm {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include lg {
+    gap: $space-xlarge $space-medium;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
