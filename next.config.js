@@ -30,6 +30,7 @@ module.exports = {
       '/': { page: '/' },
       '/about': { page: '/about' },
       '/rules': { page: '/rules' },
+      '/conduct': { page: '/conduct' },
       '/sponsorship': { page: '/sponsorship' },
       '/privacy': { page: '/privacy' },
       '/terms': { page: '/terms' }
