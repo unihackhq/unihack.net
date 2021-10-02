@@ -3,7 +3,7 @@
 @import '../../styles/typography/typography.scss';
 
 .previous-sponsors {
-  padding: 0 0 $space-xxlarge;
+  padding: 0;
 
   h2 {
     margin-bottom: $base * 4;
@@ -12,10 +12,13 @@
 
   &-wrapper {
     max-width: 1200px;
-    padding: $space-xxlarge;
-    margin: -$space-xxlarge auto 0;
-    position: relative;
     background: white;
+    padding: $space-xlarge 0;
+
+    @include xl {
+      padding: $space-xlarge;
+      margin: -$space-xlarge * 2 auto 0;
+    }
   }
 
   &-container {
@@ -31,6 +34,7 @@
 }
 
 .previous-sponsors-grid {
+  place-self: center;
   @include md {
     grid-template-columns: repeat(6, 1fr) !important;
   }

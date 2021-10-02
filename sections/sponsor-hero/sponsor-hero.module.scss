@@ -7,15 +7,24 @@
   background: black url('../../public/images/sponsor-hero.png') center center
     no-repeat;
   background-size: cover;
-  height: 720px;
   display: flex;
   align-content: center;
   align-items: center;
 
+  @include md {
+    height: 800px;
+  }
+
   &-container {
     @include page-margin;
-    max-width: 760px;
-    text-align: center;
+
+    @include sm {
+      text-align: center;
+    }
+
+    @include lg {
+      max-width: 760px;
+    }
 
     h1 {
       font-weight: 600;
@@ -29,12 +38,7 @@
         display: inline-block;
       }
 
-      @include lg {
-        line-height: 48px;
-        font-size: 36px;
-      }
-
-      @include xl {
+      @include md {
         line-height: 70px;
         font-size: 64px;
       }
@@ -43,7 +47,7 @@
     p {
       margin: 0 0 $base * 4;
       font-size: 18px;
-      line-height: 21px;
+      line-height: 28px;
       color: white;
     }
   }
@@ -55,19 +59,26 @@
   &-event-data {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: left;
-    margin: 0 0 $base * 4;
+
+    @include sm {
+      flex-direction: row;
+      margin: 0 0 $base * 4;
+    }
 
     &-content {
-      margin: 0 $base * 2;
-
+      margin: 0 0 $base * 4;
       h4 {
         color: white;
       }
-      p {
-        color: white;
-        padding-bottom: $base;
-        border-bottom: 3px solid $primary;
+      @include sm {
+        margin: 0 $base * 2;
+
+        p {
+          padding-bottom: $base;
+          border-bottom: 3px solid $primary;
+        }
       }
     }
   }

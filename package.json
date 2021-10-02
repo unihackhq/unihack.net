@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/unihackhq/unihack.net#readme",
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.4.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.1.2",
     "moment": "^2.24.0",

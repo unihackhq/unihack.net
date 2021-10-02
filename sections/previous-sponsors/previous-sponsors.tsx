@@ -8,7 +8,7 @@ const PreviousSponsors = () => (
   <section className={styles['previous-sponsors']}>
     <div className={styles['previous-sponsors-wrapper']}>
       <div className={styles['previous-sponsors-container']}>
-        <H2XL>Previous Sponsors</H2XL>
+        <H2XL>Past Sponsors</H2XL>
         <Grid
           items={pastSponsors.sponsors}
           basePath={pastSponsors.base}
