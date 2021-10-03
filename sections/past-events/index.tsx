@@ -10,13 +10,16 @@ export interface EventPost extends EventInfo {
   devPost: boolean;
 }
 
-// TODO: Sort by date
+const stringSort = (a: string, b: string): number => (b > a ? 1 : -1);
+
 export const PastEvent = (data: PastEventDescription) => {
   return (
     <div className={styles['past-events']}>
-      {Object.keys(data).map(eventPath => (
-        <Event eventDetail={data[eventPath]} eventPath={eventPath} />
-      ))}
+      {Object.keys(data)
+        .sort(stringSort)
+        .map((eventPath, i) => (
+          <Event key={i} eventDetail={data[eventPath]} eventPath={eventPath} />
+        ))}
     </div>
   );
 };
