@@ -24,7 +24,6 @@ const FilterButton: FC<FilterButtonProps> = ({
     onClick={() => handleClick(tag)}
     className={tag === currentTag ? styles.selected : ''}
   >
-    {console.log(currentTag, tag)}
     {tag}
   </button>
 );
