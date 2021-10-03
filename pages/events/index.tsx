@@ -41,14 +41,14 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
   let pastEventDescription: PastEventDescription = {} as PastEventDescription;
 
   await Promise.all(
-    events.map(async year => {
+    events.map(async event => {
       let eventPath: string = path.join(
         process.cwd(),
-        `content/events/${year}/`
+        `content/events/${event}/`
       );
 
       let info = await fs.readFile(`${eventPath}/info.json`, 'utf8');
-      pastEventDescription[year] = {
+      pastEventDescription[event] = {
         ...JSON.parse(info),
         /**
          * NOTE: Check if .eventignore exists to redirect to devpost
