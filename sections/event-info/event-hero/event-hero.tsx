@@ -12,6 +12,7 @@ export type EventInfo = {
   devpostUrl: string;
   title: string;
   coverImage: string;
+  tags: string[];
 };
 
 type Props = {

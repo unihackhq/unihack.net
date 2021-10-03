@@ -9,32 +9,59 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
 import Filter from '@sections/event-filter';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 
 export const PreviousEvent: FC<InferGetStaticPropsType<
   typeof getStaticProps
->> = props => (
-  <div>
-    <Head>
-      <title>Previous events</title>
-    </Head>
+>> = ({ pastEventDescription }) => {
+  const [tag, setTag] = useState('all');
 
-    <Page>
-      <Header />
-      <PageNavigation
-        backLinkTitle="Home"
-        backLinkHref="/"
-        underlineColor="yellow"
-      >
-        Previous Events.
-      </PageNavigation>
-      <Stack size="large" className={styles.content}>
-        <Filter options={['Melbourne', 'Sydney']} />
-        <PastEvent {...props.pastEventDescription} />
-      </Stack>
-    </Page>
-  </div>
-);
+  const handleChangeTag = (tag: string) => {
+    setTag(tag.toLowerCase());
+  };
+
+  const filteredEvents = Object.keys(pastEventDescription)
+    .filter(
+      event =>
+        pastEventDescription[event].tags
+          .map(t => t.toLowerCase())
+          .includes(tag) || tag == 'all'
+    )
+    .reduce(
+      (obj, key) => ({
+        ...obj,
+        [key]: pastEventDescription[key]
+      }),
+      {}
+    );
+
+  return (
+    <div>
+      <Head>
+        <title>Previous events</title>
+      </Head>
+
+      <Page>
+        <Header />
+        <PageNavigation
+          backLinkTitle="Home"
+          backLinkHref="/"
+          underlineColor="yellow"
+        >
+          Previous Events.
+        </PageNavigation>
+        <Stack size="large" className={styles.content}>
+          <Filter
+            options={['Melbourne', 'Sydney']}
+            handleClick={handleChangeTag}
+            currentTag={tag}
+          />
+          <PastEvent {...filteredEvents} />
+        </Stack>
+      </Page>
+    </div>
+  );
+};
 
 export default PreviousEvent;
 
