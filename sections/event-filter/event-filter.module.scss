@@ -2,34 +2,42 @@
 @import '../../styles/typography/typography.scss';
 .filter {
   & span {
-    @include body-bold;
+    color: $secondary;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
   }
 
   & .buttons {
     display: inline-flex;
-    margin-left: $base;
+    margin-left: $base * 2;
     justify-content: space-between;
 
     & > button + * {
-      margin-left: $base;
+      margin-left: $base * 2;
     }
   }
 
   & button {
     background: $white;
-    color: rgba(31, 37, 42, 0.5);
-    border: 2px solid rgba(31, 37, 42, 0.5);
-    border-radius: 5px;
-    padding: $base/2 $base * 3;
-    @include body-bold;
+    color: #6d767d;
+    border: 2px solid;
+    border-color: #6d767d;
+    border-radius: 8px;
+    padding: ($base/2 * 3 - 2px) ($base * 5);
+    // @include body-bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.5s ease;
+    font-size: $base * 2;
+    line-height: 18px;
+    font-weight: bold;
 
     &:hover,
     &.selected {
       color: $white;
       background: $secondary;
+      border-color: $secondary;
     }
   }
 
