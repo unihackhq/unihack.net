@@ -42,13 +42,22 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
 
   await Promise.all(
     events.map(async year => {
-      let eventInfoPath: string = path.join(
+      let eventPath: string = path.join(
         process.cwd(),
-        `content/events/${year}/info.json`
+        `content/events/${year}/`
       );
 
-      let info = await fs.readFile(eventInfoPath, 'utf8');
-      pastEventDescription[year] = JSON.parse(info);
+      let info = await fs.readFile(`${eventPath}/info.json`, 'utf8');
+      pastEventDescription[year] = {
+        ...JSON.parse(info),
+        /**
+         * NOTE: Check if .eventignore exists to redirect to devpost
+         * This check only happens server-side so shouldn't affect performance?
+         */
+        devPost: !!(await fs
+          .stat(`${eventPath}/.eventignore`)
+          .catch(e => false))
+      };
       return info;
     })
   );
