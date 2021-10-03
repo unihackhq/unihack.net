@@ -12,14 +12,16 @@ export const Event = ({ eventDetail, eventPath }: Props) => (
     href={eventDetail.devPost ? eventDetail.devpostUrl : `/events/${eventPath}`}
   >
     <div className={styles.event}>
-      <Stack size="small" className={styles.header}>
+      <Stack size="xsmall" className={styles.header}>
         <div className={styles['header-title']}>
           <H3> {eventDetail.title} </H3>
         </div>
 
         <Stack size="xsmall">
-          <Text> {eventDetail.location} </Text>
-          <Text> {eventDetail.date} </Text>
+          <div className={styles.description}>
+            <Text> {eventDetail.location} </Text>
+            <Text> {eventDetail.date} </Text>
+          </div>
         </Stack>
       </Stack>
       <div

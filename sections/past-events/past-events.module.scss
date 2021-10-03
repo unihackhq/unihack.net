@@ -4,14 +4,14 @@
 .past-events {
   display: grid;
   grid-template-columns: auto;
-  gap: $space-medium $space-medium;
+  gap: $space-medium $space-large;
 
   @include sm {
     grid-template-columns: 1fr 1fr;
   }
 
   @include lg {
-    gap: $space-xlarge $space-medium;
+    gap: $space-large $space-xlarge;
     grid-template-columns: repeat(3, 1fr);
   }
 }
