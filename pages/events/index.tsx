@@ -90,7 +90,7 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
          */
         devPost: !!(await fs
           .stat(`${eventPath}/.eventignore`)
-          .catch(e => false))
+          .catch(_ => false))
       };
       return info;
     })
