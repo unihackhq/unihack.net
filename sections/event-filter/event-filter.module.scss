@@ -1,0 +1,42 @@
+@import '../../styles/styles.scss';
+@import '../../styles/typography/typography.scss';
+.filter {
+  & span {
+    @include body-bold;
+  }
+
+  & .buttons {
+    display: inline-flex;
+    margin-left: $base;
+    justify-content: space-between;
+
+    & > button + * {
+      margin-left: $base;
+    }
+  }
+
+  & button {
+    background: $white;
+    color: rgba(31, 37, 42, 0.5);
+    border: 2px solid rgba(31, 37, 42, 0.5);
+    border-radius: 5px;
+    padding: $base/2 $base * 3;
+    @include body-bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &.selected {
+      color: $white;
+      background: $secondary;
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include sm {
+    justify-content: flex-start;
+  }
+}
