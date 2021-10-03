@@ -38,23 +38,25 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
   // Filter out hidden files
   events = events.filter(item => !/(^|\/)\.[^\/\.]/g.test(item));
 
-  let pastEventDescription: Array<PastEventDescription> = await Promise.all(
+  let pastEventDescription: PastEventDescription = {} as PastEventDescription;
+
+  await Promise.all(
     events.map(async year => {
       let eventInfoPath: string = path.join(
         process.cwd(),
         `content/events/${year}/info.json`
       );
-      return {
-        [year]: JSON.parse(await fs.readFile(eventInfoPath, 'utf8'))
-      };
+
+      let info = await fs.readFile(eventInfoPath, 'utf8');
+      pastEventDescription[year] = JSON.parse(info);
+      return info;
     })
   );
-
   return {
-    props: { pastEventDescription } as Content
+    props: { pastEventDescription }
   };
 };
 
 type Content = {
-  pastEventDescription: PastEventDescription[];
+  pastEventDescription: PastEventDescription;
 };

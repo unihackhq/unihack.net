@@ -1,19 +1,18 @@
-import { Event } from "@components/event/";
-import { EventModel } from "@components/event/event.model";
+import { Event } from '@components/event/';
 import styles from './past-events.module.scss';
+import { EventInfo } from '@sections/event-info/event-hero/event-hero';
 
-let test: EventModel = {
-  title: "test strign",
-  location: "event location",
-  date: "today",
-  imagePath: "/images/perks/giveaways.jpg"
-}
-export const PastEvent = () => {
-  return <div className={styles["past-events"]}>
-    <Event {...test}/>
-    <Event {...test}/>
-    <Event {...test}/>
-    <Event {...test}/>
-    <Event {...test}/>
-  </div>
-}
+export type PastEventDescription = {
+  [year: string]: EventInfo;
+};
+
+// TODO: Sort by date
+export const PastEvent = (data: PastEventDescription) => {
+  return (
+    <div className={styles['past-events']}>
+      {Object.keys(data).map(year => (
+        <Event {...data[year]} />
+      ))}
+    </div>
+  );
+};
