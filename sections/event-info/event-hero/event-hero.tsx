@@ -10,6 +10,8 @@ export type EventInfo = {
   date: string;
   location: string;
   devpostUrl: string;
+  title: string;
+  coverImage: string;
 };
 
 type Props = {
