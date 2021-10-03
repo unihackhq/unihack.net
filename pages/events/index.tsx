@@ -8,8 +8,12 @@ import { PastEvent, PastEventDescription } from '@sections/past-events';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
+import Filter from '@sections/event-filter';
+import { FC } from 'react';
 
-export default (props: InferGetStaticPropsType<typeof getStaticProps>) => (
+export const PreviousEvent: FC<InferGetStaticPropsType<
+  typeof getStaticProps
+>> = props => (
   <div>
     <Head>
       <title>Previous events</title>
@@ -24,12 +28,15 @@ export default (props: InferGetStaticPropsType<typeof getStaticProps>) => (
       >
         Previous Events.
       </PageNavigation>
-      <Stack size="xxlarge" className={styles.content}>
+      <Stack size="large" className={styles.content}>
+        <Filter options={['Melbourne', 'Sydney']} />
         <PastEvent {...props.pastEventDescription} />
       </Stack>
     </Page>
   </div>
 );
+
+export default PreviousEvent;
 
 export const getStaticProps: GetStaticProps<Content> = async () => {
   const eventsDirectory = path.join(process.cwd(), 'content/events');

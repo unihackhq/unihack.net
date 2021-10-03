@@ -1,6 +1,7 @@
 import { Event } from '@components/event/';
 import styles from './past-events.module.scss';
 import { EventInfo } from '@sections/event-info/event-hero/event-hero';
+import { FC } from 'react';
 
 export type PastEventDescription = {
   [event: string]: EventPost;
@@ -12,7 +13,7 @@ export interface EventPost extends EventInfo {
 
 const stringSort = (a: string, b: string): number => (b > a ? 1 : -1);
 
-export const PastEvent = (data: PastEventDescription) => {
+export const PastEvent: FC<PastEventDescription> = data => {
   return (
     <div className={styles['past-events']}>
       {Object.keys(data)
