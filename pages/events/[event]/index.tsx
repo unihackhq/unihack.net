@@ -18,7 +18,7 @@ import { PrizeData } from '@sections/event-info/prizes/prize-data.model';
 import { SponsorData } from '@sections/event-info/sponsors/sponsor-data.model';
 import { EventScheduleData } from '@sections/event-info/event-schedule/event-schedule-data.model';
 import EventHero, {
-  EventInfo,
+  EventInfo
 } from '@sections/event-info/event-hero/event-hero';
 import Divider from '@components/divider/divider';
 import { StatType } from '@components/stats-banner/stat/stat';
@@ -26,7 +26,7 @@ import { WinnerModel } from '@components/winner/winner.model';
 
 const Event = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
-  const event = router.query.year;
+  const event = router.query.event;
 
   return (
     <div>
@@ -60,11 +60,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   let events = await fs.readdir(eventsDirectory);
 
   // Filter out hidden files
-  events = events.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
+  events = events.filter(item => !/(^|\/)\.[^\/\.]/g.test(item));
 
   // Get the paths we want to pre-render based on event directories
-  const paths = events.map((year: string) => {
-    return { params: { year } };
+  const paths = events.map((event: string) => {
+    return { params: { event } };
   });
 
   // We'll pre-render only these paths at build time.
@@ -76,18 +76,25 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
   const eventContentDirectory = path.join(
     process.cwd(),
-    `content/events/${params!.year}`
+    `content/events/${params!.event}`
   );
 
   const filenames = await fs.readdir(eventContentDirectory);
 
-  const content = filenames.map(async (filename) => {
+  if (filenames.includes('.eventignore')) {
+    // These events don't have any page. Should redirect to devpost
+    return {
+      notFound: true
+    };
+  }
+
+  const content = filenames.map(async filename => {
     const filePath = path.join(eventContentDirectory, filename);
     const fileContents = await fs.readFile(filePath, 'utf8');
 
     // Return an object where the property name is the filename minus the ".json" extension
     return {
-      [path.parse(filename).name]: JSON.parse(fileContents),
+      [path.parse(filename).name]: JSON.parse(fileContents)
     };
   });
 
@@ -99,8 +106,8 @@ export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
 
   return {
     props: {
-      ...transformedContent,
-    },
+      ...transformedContent
+    }
   };
 };
 
