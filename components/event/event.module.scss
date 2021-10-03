@@ -5,6 +5,7 @@
   background-color: $white;
   border: 2px solid $secondary;
   box-shadow: 4px 4px 0px $secondary;
+  cursor: pointer;
 
   & .header {
     padding: ($base * 5) ($base * 3);
