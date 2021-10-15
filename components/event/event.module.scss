@@ -7,6 +7,9 @@
   border: 2px solid $secondary;
   box-shadow: 4px 4px 0px $secondary;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   & .header {
     padding: ($base * 4) ($base * 3);
