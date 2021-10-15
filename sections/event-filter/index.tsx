@@ -2,17 +2,19 @@ import styles from './event-filter.module.scss';
 import { FC } from 'react';
 import { H4 } from '@components/typography/typography';
 
+type tags = 'all' | 'melbourne' | 'sydney';
+
 type Props = {
-  options: string[];
+  options: tags[];
 } & FilterProp;
 
 type FilterProp = {
-  handleClick: (tag: string) => void;
+  handleClick: (tag: tags) => void;
   currentTag: string;
 };
 
 type FilterButtonProps = {
-  tag: string;
+  tag: tags;
 } & FilterProp;
 
 const FilterButton: FC<FilterButtonProps> = ({
@@ -33,13 +35,7 @@ const Filter: FC<Props> = ({ options, handleClick, currentTag }) => (
   <div className={styles.filter}>
     <H4>Filter events</H4>
     <div className={styles.buttons}>
-      <FilterButton
-        tag={'all'}
-        handleClick={handleClick}
-        currentTag={currentTag}
-      />
       {options?.map(tag => {
-        tag = tag.toLowerCase();
         return (
           <FilterButton
             key={tag}
@@ -54,3 +50,4 @@ const Filter: FC<Props> = ({ options, handleClick, currentTag }) => (
 );
 
 export default Filter;
+export type { tags };

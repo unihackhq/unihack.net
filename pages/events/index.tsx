@@ -8,16 +8,22 @@ import { PastEvent, PastEventDescription } from '@sections/past-events';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
-import Filter from '@sections/event-filter';
+import Filter, { tags } from '@sections/event-filter';
 import { FC, useState } from 'react';
 
 export const PreviousEvent: FC<InferGetStaticPropsType<
   typeof getStaticProps
 >> = ({ pastEventDescription }) => {
-  const [tag, setTag] = useState('all');
+  const DisplayTags: { [tag in tags]: string } = {
+    all: 'All',
+    melbourne: 'Melbourne',
+    sydney: 'Sydney'
+  };
 
-  const handleChangeTag = (tag: string) => {
-    setTag(tag.toLowerCase());
+  const [tag, setTag] = useState<tags>('all');
+
+  const handleChangeTag = (tag: tags) => {
+    setTag(tag);
   };
 
   const filteredEvents = Object.keys(pastEventDescription)
@@ -52,7 +58,7 @@ export const PreviousEvent: FC<InferGetStaticPropsType<
         </PageNavigation>
         <Stack size="large" className={styles.content}>
           <Filter
-            options={['Melbourne', 'Sydney']}
+            options={Object.keys(DisplayTags) as tags[]}
             handleClick={handleChangeTag}
             currentTag={tag}
           />
