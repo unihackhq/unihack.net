@@ -2,7 +2,7 @@ import styles from './event-filter.module.scss';
 import { FC } from 'react';
 import { H4 } from '@components/typography/typography';
 
-type tags = 'all' | 'melbourne' | 'sydney';
+export type tags = 'all' | 'melbourne' | 'sydney';
 
 type Props = {
   options: tags[];
@@ -50,4 +50,3 @@ const Filter: FC<Props> = ({ options, handleClick, currentTag }) => (
 );
 
 export default Filter;
-export type { tags };
