@@ -9,7 +9,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
 import Filter, { tags } from '@sections/event-filter';
-import { FC, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 
 export const PreviousEvent: FC<InferGetStaticPropsType<
   typeof getStaticProps
@@ -26,20 +26,17 @@ export const PreviousEvent: FC<InferGetStaticPropsType<
     setTag(tag);
   };
 
-  const filteredEvents = Object.keys(pastEventDescription)
-    .filter(
-      event =>
-        pastEventDescription[event].tags
-          .map(t => t.toLowerCase())
-          .includes(tag) || tag == 'all'
-    )
-    .reduce(
-      (obj, key) => ({
-        ...obj,
-        [key]: pastEventDescription[key]
-      }),
-      {}
-    );
+  const filteredEvents = useMemo(() => {
+    if (tag === 'all') return pastEventDescription;
+    return Object.keys(pastEventDescription).reduce((obj, event) => {
+      console.log(tag, pastEventDescription[event].tags);
+      if (pastEventDescription[event].tags.includes(tag)) {
+        console.log('yee');
+        obj[event] = pastEventDescription[event];
+      }
+      return obj;
+    }, {} as any);
+  }, [tag]);
 
   return (
     <div>
