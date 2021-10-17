@@ -44,7 +44,8 @@ module.exports = {
       '/conduct': { page: '/conduct' },
       '/sponsorship': { page: '/sponsorship' },
       '/privacy': { page: '/privacy' },
-      '/terms': { page: '/terms' }
+      '/terms': { page: '/terms' },
+      '/contact': { page: '/contact' }
     };
   }
 };

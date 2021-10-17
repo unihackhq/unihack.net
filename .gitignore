@@ -9,3 +9,4 @@
 /.idea
 .now
 .DS_Store
+.env.local

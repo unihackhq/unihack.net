@@ -1,0 +1,145 @@
+@import '../../styles/styles.scss';
+
+.contact-us {
+  @include page-margin;
+
+  &-content {
+    background-color: $white;
+    color: $secondary;
+    padding: $base * 4 $base * 2;
+    margin-bottom: $base * 2;
+    box-shadow: 0px $base * 0.5 $base rgba(39, 39, 39, 0.07);
+
+    @include md {
+      padding: $base * 8 $base * 16;
+    }
+
+    p {
+      font-size: $base * 2;
+      font-weight: normal;
+      @include md {
+        font-size: $base * 3;
+      }
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-right: $base;
+      font-family: 'Poppins';
+
+      label {
+        font-weight: 500;
+        font-size: $base * 2;
+        height: $base * 3;
+      }
+
+      input {
+        font-size: $base * 2;
+        height: $base * 6;
+        border: 1px solid rgba(31, 37, 42, 0.26);
+        box-sizing: border-box;
+        padding: $base;
+
+        &:focus-visible {
+          outline: none;
+          box-shadow: 0px 0px $base $pacific;
+          border: 1px solid $pacific;
+        }
+      }
+
+      textarea {
+        height: $base * 32;
+        font-size: $base * 2;
+        border: 1px solid rgba(31, 37, 42, 0.26);
+        box-sizing: border-box;
+        padding: $base;
+        font-family: 'Poppins';
+        &:focus-visible {
+          outline: none;
+          box-shadow: 0px 0px $base $pacific;
+          border: 1px solid $pacific;
+        }
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      @include md {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &-toast {
+    .toast {
+      margin-bottom: $base * 2;
+      height: $base * 14;
+      box-shadow: 0px 4px 10px rgba(39, 39, 39, 0.07);
+      font-size: $base * 2;
+      padding: $base * 2 $base * 4;
+      color: $white;
+      @include md {
+        font-size: $base * 3;
+        padding: $base * 3 $base * 20;
+      }
+    }
+
+    .success {
+      @extend .toast;
+      background-color: $midori;
+    }
+
+    .error {
+      @extend .toast;
+      background-color: $red;
+    }
+  }
+
+  &-select {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: $base * 4 0;
+
+    @include md {
+      width: 720px;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: $base * 3;
+      padding: $base 0;
+    }
+
+    select {
+      font-size: $base * 3;
+      height: $base * 6;
+      border: 1px solid rgba(31, 37, 42, 0.26);
+      box-sizing: border-box;
+      padding-left: $base;
+      padding-right: $base * 2;
+      color: #888888;
+
+      background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        radial-gradient(rgba(221, 221, 221, 0) 70%, transparent 72%);
+      background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
+      background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+      background-repeat: no-repeat;
+
+      -moz-appearance: none; /* Firefox */
+      -webkit-appearance: none; /* Safari and Chrome */
+      appearance: none;
+
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0px 0px $base $pacific;
+        border: 1px solid $pacific;
+      }
+    }
+  }
+}
