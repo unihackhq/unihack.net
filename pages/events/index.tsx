@@ -29,9 +29,7 @@ export const PreviousEvent: FC<InferGetStaticPropsType<
   const filteredEvents = useMemo(() => {
     if (tag === 'all') return pastEventDescription;
     return Object.keys(pastEventDescription).reduce((obj, event) => {
-      console.log(tag, pastEventDescription[event].tags);
       if (pastEventDescription[event].tags.includes(tag)) {
-        console.log('yee');
         obj[event] = pastEventDescription[event];
       }
       return obj;
