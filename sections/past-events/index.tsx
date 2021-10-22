@@ -4,12 +4,8 @@ import { EventInfo } from '@sections/event-info/event-hero/event-hero';
 import { FC } from 'react';
 
 export type PastEventDescription = {
-  [event: string]: EventPost;
+  [event: string]: EventInfo;
 };
-
-export interface EventPost extends EventInfo {
-  devPost: boolean;
-}
 
 const stringSort = (a: string, b: string): number => (b > a ? 1 : -1);
 

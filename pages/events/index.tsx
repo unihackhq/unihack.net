@@ -29,9 +29,7 @@ export const PreviousEvent: FC<InferGetStaticPropsType<
   const filteredEvents = useMemo(() => {
     if (tag === 'all') return pastEventDescription;
     return Object.keys(pastEventDescription).reduce((obj, event) => {
-      console.log(tag, pastEventDescription[event].tags);
       if (pastEventDescription[event].tags.includes(tag)) {
-        console.log('yee');
         obj[event] = pastEventDescription[event];
       }
       return obj;
@@ -86,14 +84,14 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
 
       let info = await fs.readFile(`${eventPath}/info.json`, 'utf8');
       pastEventDescription[event] = {
-        ...JSON.parse(info),
+        ...JSON.parse(info)
         /**
          * NOTE: Check if .eventignore exists to redirect to devpost
          * This check only happens server-side so shouldn't affect performance?
          */
-        devPost: !!(await fs
-          .stat(`${eventPath}/.eventignore`)
-          .catch(_ => false))
+        // devPost: !!(await fs
+        //   .stat(`${eventPath}/.eventignore`)
+        //   .catch(_ => false))
       };
       return info;
     })

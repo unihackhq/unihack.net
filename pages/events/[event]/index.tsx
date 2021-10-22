@@ -81,13 +81,6 @@ export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
 
   const filenames = await fs.readdir(eventContentDirectory);
 
-  if (filenames.includes('.eventignore')) {
-    // These events don't have any page. Should redirect to devpost
-    return {
-      notFound: true
-    };
-  }
-
   const content = filenames.map(async filename => {
     const filePath = path.join(eventContentDirectory, filename);
     const fileContents = await fs.readFile(filePath, 'utf8');
@@ -103,6 +96,13 @@ export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
     (obj, item) => ((obj[Object.keys(item)[0]] = Object.values(item)[0]), obj),
     {}
   ) as Content;
+
+  if (transformedContent.info.redirectToDevpost) {
+    // These events don't have any page. Return 404 instead
+    return {
+      notFound: true
+    };
+  }
 
   return {
     props: {

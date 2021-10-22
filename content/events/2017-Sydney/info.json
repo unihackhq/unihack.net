@@ -2,6 +2,7 @@
   "date": "19-20 August, 2017",
   "location": "Stone and Chalk, Sydney",
   "devpostUrl": "https://unihack2017syd.devpost.com/",
+  "redirectToDevpost": true,
   "tags": ["sydney"],
   "title": "Sydney 2017",
   "coverImage": "Sydney-2017.jpg"

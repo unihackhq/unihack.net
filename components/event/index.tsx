@@ -1,15 +1,19 @@
 import styles from './event.module.scss';
-import { EventPost } from '@sections/past-events';
+import { EventInfo } from '@sections/event-info/event-hero/event-hero';
 import Stack from '@components/stack/stack';
 import { H3, Text } from '@components/typography/typography';
 import Link from 'next/link';
 type Props = {
-  eventDetail: EventPost;
+  eventDetail: EventInfo;
   eventPath: string;
 };
 export const Event = ({ eventDetail, eventPath }: Props) => (
   <Link
-    href={eventDetail.devPost ? eventDetail.devpostUrl : `/events/${eventPath}`}
+    href={
+      eventDetail.redirectToDevpost
+        ? eventDetail.devpostUrl
+        : `/events/${eventPath}`
+    }
   >
     <div className={styles.event}>
       <Stack size="xsmall" className={styles.header}>
