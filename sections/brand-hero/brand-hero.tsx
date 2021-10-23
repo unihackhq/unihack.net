@@ -4,6 +4,7 @@ import ButtonLink from '@components/button/button-link';
 import { H2, HXL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '../../lib/gtag';
+import Image from 'next/image';
 
 const BrandHero = () => (
   <section className={styles['brand-hero']}>
@@ -32,7 +33,13 @@ const BrandHero = () => (
       </div>
     </Stack>
     <div className={styles['brand-hero-graphic']}>
-      <img src={`/images/brand-hero.svg`} alt="UNIHACK graphic" />
+      <Image
+        src="/images/brand-hero.svg"
+        layout="intrinsic"
+        height="500"
+        width="500"
+        alt="UNIHACK graphic"
+      />
     </div>
   </section>
 );
