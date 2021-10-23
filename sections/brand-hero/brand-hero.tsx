@@ -36,8 +36,8 @@ const BrandHero = () => (
       <Image
         src="/images/brand-hero.svg"
         layout="intrinsic"
-        height="500"
-        width="500"
+        height="473"
+        width="550"
         alt="UNIHACK graphic"
       />
     </div>
