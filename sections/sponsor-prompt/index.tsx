@@ -5,11 +5,16 @@ import { H2XL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
+import Image from 'next/image'
+import sponsorCallout from '../../public/images/sponsor-callout.jpg';
 
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
     <div className={styles['sponsor-prompt-container']}>
-      <span className={styles['sponsor-prompt-image']}></span>
+      {/* <span className={styles['sponsor-prompt-image']}></span> */}
+      <span className={styles['sponsor-prompt-image']}>
+        <Image src={sponsorCallout} layout="fill" objectFit = "cover" priority={true} />
+      </span>
       <Stack size="medium" className={styles['sponsor-prompt-content']}>
         <Stack size="small">
           <H2XL>Become a sponsor today!</H2XL>

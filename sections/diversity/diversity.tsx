@@ -3,13 +3,15 @@ import styles from './diversity.module.scss';
 import ButtonLink from '@components/button/button-link';
 import { H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import Image from 'next/image';
+import diversityCommitment from '../../public/images/diversity-commitment.jpg';
 
 const Diversity = () => (
   <section className={styles.diversity}>
     <div className={styles['diversity-content']}>
       <Stack size="medium">
         <H2>Diversity Commitment</H2>
-        <img src="/images/diversity-commitment.jpg" />
+        <Image src={diversityCommitment} layout = "intrinsic" height = "550" width="1200"/>
         <Text>
           The organisers of UNIHACK are committed in increasing the diversity of
           UNIHACK competitors. We will be collaborating with Women in ICT and
