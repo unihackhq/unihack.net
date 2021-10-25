@@ -89,9 +89,6 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
          * NOTE: Check if .eventignore exists to redirect to devpost
          * This check only happens server-side so shouldn't affect performance?
          */
-        // devPost: !!(await fs
-        //   .stat(`${eventPath}/.eventignore`)
-        //   .catch(_ => false))
       };
       return info;
     })

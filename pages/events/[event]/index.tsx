@@ -100,10 +100,7 @@ export const getStaticProps: GetStaticProps<Content> = async ({ params }) => {
   if (transformedContent.info.redirectToDevpost) {
     // These events don't have any page. Redirect 302 to devpostURL
     return {
-      redirect: {
-        permanent: false,
-        destination: transformedContent.info.devpostUrl
-      }
+      notFound: true
     };
   }
 
