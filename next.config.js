@@ -50,7 +50,7 @@ module.exports = {
   },
 };
 
-const withImages = require('next-images');
+// const withImages = require('next-images');
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)$/,
 });
@@ -61,5 +61,5 @@ module.exports = withPlugins([
     {
       pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
     },
-  ],withImages
+  ]
 ]);
