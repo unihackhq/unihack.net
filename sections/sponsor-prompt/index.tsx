@@ -6,13 +6,14 @@ import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
 import Image from 'next/image'
+import sponsorCallout from '../../public/images/sponsor-callout.jpg';
 
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
     <div className={styles['sponsor-prompt-container']}>
       {/* <span className={styles['sponsor-prompt-image']}></span> */}
       <span className={styles['sponsor-prompt-image']}>
-        <Image src="/../public/images/sponsor-callout.jpg" layout="fill" />
+        <Image src={sponsorCallout} layout="fill" objectFit = "cover" priority={true} />
       </span>
       <Stack size="medium" className={styles['sponsor-prompt-content']}>
         <Stack size="small">
@@ -30,7 +31,7 @@ const SponsorPrompt = () => (
                 event({
                   action: 'sponsorship.sponsor_prompt.email_link.click',
                   category: AnalyticsCategory.SPONSORSHIP,
-                  label: 'Sponsorship - Sponsor Prompt - Click on Email Link'
+                  label: 'Sponsorship - Sponsor Prompt - Click on Email Link',
                 })
               }
             >
@@ -49,7 +50,7 @@ const SponsorPrompt = () => (
               event({
                 action: 'sponsorship.sponsor_prompt.button.click',
                 category: AnalyticsCategory.SPONSORSHIP,
-                label: 'Sponsorship - Sponsor Prompt - Click on Button'
+                label: 'Sponsorship - Sponsor Prompt - Click on Button',
               });
             }}
           >

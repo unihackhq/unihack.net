@@ -5,15 +5,15 @@ import { IconLabelWithTitle } from '@components/icon-label/icon-label';
 import ButtonLink from '@components/button/button-link';
 import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
-import Image from 'next/image'
+import Image from 'next/image';
+import sponsorHero from '../../public/images/sponsor-hero.png';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
     <Image
-      src="/../public/images/sponsor-hero.png"
+      src={sponsorHero}
       layout="fill"
       objectFit="cover"
-
     />
     <div className={styles['sponsor-hero-container']}>
       <h1>
