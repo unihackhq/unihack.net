@@ -13,7 +13,7 @@ const SponsorPrompt = () => (
     <div className={styles['sponsor-prompt-container']}>
       {/* <span className={styles['sponsor-prompt-image']}></span> */}
       <span className={styles['sponsor-prompt-image']}>
-        <Image src={sponsorCallout} layout="fill" priority={true} />
+        <Image src={sponsorCallout} layout="fill" objectFit = "cover" priority={true} />
       </span>
       <Stack size="medium" className={styles['sponsor-prompt-content']}>
         <Stack size="small">
