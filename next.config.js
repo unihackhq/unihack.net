@@ -64,3 +64,15 @@ module.exports = withPlugins([
     },
   ],withImages
 ]);
+
+// next.config.js
+module.exports = {
+  async rewrites() {
+      return [
+        {
+          source: '/api/:path*',
+          destination: 'https://'+ process.env.VERCEL_URL+'/:path*',
+        },
+      ]
+    },
+};
