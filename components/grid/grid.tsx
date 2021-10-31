@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './grid.module.scss';
 import { GridItemI } from './grid-item.interface';
+import Image from 'next/image'
 
 const cx = classNames.bind(styles);
 
@@ -13,7 +14,7 @@ type Props = {
 const Grid = ({ style, basePath, items }: Props) => {
   const gridItems = items.map((item: GridItemI) => (
     <div key={item.name}>
-      <img src={`${basePath}${item.imagePath}`} alt={item.name} />
+      <Image src={`${basePath}${item.imagePath}`} alt={item.name} height="300" width = "500"/>
     </div>
   ));
 

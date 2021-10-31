@@ -5,9 +5,16 @@ import { IconLabelWithTitle } from '@components/icon-label/icon-label';
 import ButtonLink from '@components/button/button-link';
 import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
+import Image from 'next/image';
+import sponsorHero from '../../public/images/sponsor-hero.png';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
+    <Image
+      src={sponsorHero}
+      layout="fill"
+      objectFit="cover"
+    />
     <div className={styles['sponsor-hero-container']}>
       <h1>
         Join us in the <span>imagination revolution</span>
@@ -42,7 +49,7 @@ const SponsorHero = () => (
           event({
             action: 'sponsorship.sponsor_hero.button.click',
             category: AnalyticsCategory.SPONSORSHIP,
-            label: 'Sponsorship - Sponsor Hero - Click on Button',
+            label: 'Sponsorship - Sponsor Hero - Click on Button'
           });
         }}
       >

@@ -11,6 +11,7 @@ import Divider from '@components/divider/divider';
 import Stack from '@components/stack/stack';
 import BrandHero from 'sections/brand-hero/brand-hero';
 
+
 const Index = () => (
   <div>
     <Head>

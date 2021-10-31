@@ -13,8 +13,6 @@
   &-image {
     position: absolute;
     display: none;
-    background: $midori url('../../public/images/sponsor-callout.jpg') center
-      center no-repeat;
     background-size: cover;
 
     @include md {

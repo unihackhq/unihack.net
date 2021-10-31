@@ -1,15 +1,19 @@
-@import '../../styles/styles.scss';
-@import '../../styles/spacing.scss';
-@import '../../styles/typography/typography.scss';
+@import "../../styles/styles.scss";
+@import "../../styles/spacing.scss";
+@import "../../styles/typography/typography.scss";
+
+.sponsor-hero-container {
+  z-index: 1;
+}
 
 .sponsor-hero {
+  z-index: 0;
   padding: $space-xxlarge 0;
-  background: black url('../../public/images/sponsor-hero.png') center center
-    no-repeat;
-  background-size: cover;
   display: flex;
   align-content: center;
   align-items: center;
+  // box-sizing: content-box !important;
+  position: relative;
 
   @include md {
     height: 800px;
