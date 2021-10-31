@@ -73,7 +73,6 @@ const ContactUs = () => {
               Please fill in this quick form and we will get back to you as soon
               as possible.
             </Text>
-            <Text bold>{process.env.REACT_APP_VERCEL_URL}</Text>
             <form className={styles.form} onSubmit={submitForm}>
               <Stack size="small">
                 <div className={styles.row}>
