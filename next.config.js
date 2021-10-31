@@ -72,7 +72,7 @@ module.exports = {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://' + process.env.VERCEL_URL + '/:path*'
+        destination: 'https://' + process.env.VERCEL_URL ?? '' + '/:path*'
       }
     ];
   }
