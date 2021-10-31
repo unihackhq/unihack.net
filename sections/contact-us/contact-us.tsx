@@ -15,12 +15,16 @@ const ContactUs = () => {
     type: ''
   });
 
+  console.log(process.env);
   const submitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const res = await fetch(`${window.location.origin}/api/submit-form`, {
-      method: 'POST',
-      body: JSON.stringify({ firstName, lastName, email, purpose, message })
-    });
+    const res = await fetch(
+      `${process.env.REACT_APP_VERCEL_URL}/api/submit-form`,
+      {
+        method: 'POST',
+        body: JSON.stringify({ firstName, lastName, email, purpose, message })
+      }
+    );
     // Success if status code is 201
     if (res.status === 201) {
       setToast({
@@ -46,12 +50,16 @@ const ContactUs = () => {
           id="purpose"
           value={purpose}
           onChange={e => setPurpose(e.target.value)}
+          autoFocus
         >
           <option value="">Select your option</option>
-          <option value="Web Development">Web Development</option>
-          <option value="App Development">App Development</option>
-          <option value="Query / Question">Query / Question</option>
-          <option value="Feedback / Message">Feedback / Message</option>
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Sponsorship">Sponsorship</option>
+          <option value="Marketing and Press">Marketing and Press</option>
+          <option value="Code of Conduct / Rules Violation">
+            Code of Conduct / Rules Violation
+          </option>
+          <option value="Report a Bug">Report a Bug</option>
         </select>
       </div>
       {toast.message && (
@@ -59,72 +67,74 @@ const ContactUs = () => {
           <div className={styles[`${toast.type}`]}>{toast.message}</div>
         </div>
       )}
-      <div className={styles['contact-us-content']}>
-        <Stack size="medium" className={styles.form_card}>
-          <Text bold>
-            Please fill in this quick form and we will get back to you as soon
-            as possible.
-          </Text>
-          <form className={styles.form} onSubmit={submitForm}>
-            <Stack size="small">
-              <div className={styles.row}>
-                <div className={styles.inputs}>
-                  <label htmlFor="name">First Name</label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    placeholder="First Name..."
-                    value={firstName}
-                    onChange={e => setFirstName(e.target.value)}
-                    required
-                  />
-                </div>
+      {purpose && (
+        <div className={styles['contact-us-content']}>
+          <Stack size="medium" className={styles.form_card}>
+            <Text bold>
+              Please fill in this quick form and we will get back to you as soon
+              as possible.
+            </Text>
+            <form className={styles.form} onSubmit={submitForm}>
+              <Stack size="small">
+                <div className={styles.row}>
+                  <div className={styles.inputs}>
+                    <label htmlFor="name">First Name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      placeholder="First Name..."
+                      value={firstName}
+                      onChange={e => setFirstName(e.target.value)}
+                      required
+                    />
+                  </div>
 
+                  <div className={styles.inputs}>
+                    <label htmlFor="name">Last Name</label>
+                    <input
+                      type="text"
+                      id="lname"
+                      name="lname"
+                      placeholder="Last Name..."
+                      value={lastName}
+                      onChange={e => setLastName(e.target.value)}
+                      required
+                    />
+                  </div>
+                </div>
                 <div className={styles.inputs}>
-                  <label htmlFor="name">Last Name</label>
+                  <label htmlFor="email">Email Address</label>
                   <input
-                    type="text"
-                    id="lname"
-                    name="lname"
-                    placeholder="Last Name..."
-                    value={lastName}
-                    onChange={e => setLastName(e.target.value)}
+                    type="email"
+                    name="email"
+                    placeholder="Email..."
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
                     required
                   />
                 </div>
-              </div>
-              <div className={styles.inputs}>
-                <label htmlFor="email">Email Address</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email..."
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  required
-                />
-              </div>
-              <div className={styles.inputs}>
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Message..."
-                  value={message}
-                  onChange={e => setMessage(e.target.value)}
-                  required
-                ></textarea>
-              </div>
-              <div>
-                <Button type="primary" theme="light">
-                  Send Message
-                </Button>
-              </div>
-            </Stack>
-          </form>
-        </Stack>
-      </div>
+                <div className={styles.inputs}>
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message..."
+                    value={message}
+                    onChange={e => setMessage(e.target.value)}
+                    required
+                  ></textarea>
+                </div>
+                <div>
+                  <Button type="primary" theme="light">
+                    Send Message
+                  </Button>
+                </div>
+              </Stack>
+            </form>
+          </Stack>
+        </div>
+      )}
     </section>
   );
 };
