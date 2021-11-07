@@ -1,4 +1,3 @@
-const withPlugins = require('next-compose-plugins');
 const redirects = async () => {
   return [
     {
@@ -51,29 +50,13 @@ module.exports = {
   }
 };
 
-const withImages = require('next-images');
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)$/
 });
 
-module.exports = withPlugins([
-  [
-    withMDX,
-    {
-      pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
-    }
-  ],
-  withImages
-]);
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
+});
 
-// next.config.js
-module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'https://' + process.env.VERCEL_URL ?? '' + '/:path*'
-      }
-    ];
-  }
-};
+const withImages = require('next-images');
+module.exports = withImages();
