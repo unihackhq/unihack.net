@@ -17,13 +17,10 @@ const ContactUs = () => {
 
   const submitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const res = await fetch(
-      `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/submit-form`,
-      {
-        method: 'POST',
-        body: JSON.stringify({ firstName, lastName, email, purpose, message })
-      }
-    );
+    const res = await fetch(`/api/submit-form`, {
+      method: 'POST',
+      body: JSON.stringify({ firstName, lastName, email, purpose, message })
+    });
     // Success if status code is 201
     if (res.status === 201) {
       setToast({
