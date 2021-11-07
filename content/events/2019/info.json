@@ -1,5 +1,9 @@
 {
   "date": "16-17 March, 2019",
   "location": "Telstra Labs, Melbourne",
-  "devpostUrl": "https://unihack2019.devpost.com/project-gallery"
+  "devpostUrl": "https://unihack2019.devpost.com/project-gallery",
+  "redirectToDevpost": false,
+  "tags": ["melbourne"],
+  "title": "Melbourne 2019",
+  "coverImage": "2019.jpg"
 }

@@ -1,0 +1,27 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+@import '../../styles/typography/typography.scss';
+
+.event {
+  background-color: $white;
+  border: 2px solid $secondary;
+  box-shadow: 4px 4px 0px $secondary;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & .header {
+    padding: ($base * 4) ($base * 3);
+  }
+
+  & .image {
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+  }
+
+  .description {
+    color: #7a8186;
+  }
+}

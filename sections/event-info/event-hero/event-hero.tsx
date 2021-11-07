@@ -10,6 +10,10 @@ export type EventInfo = {
   date: string;
   location: string;
   devpostUrl: string;
+  redirectToDevpost: boolean;
+  title: string;
+  coverImage: string;
+  tags: string[];
 };
 
 type Props = {
