@@ -14,7 +14,8 @@ const Header = () => {
 
   const menuItems: MenuItemI[] = [
     { text: 'Sponsor', href: '/sponsorship' },
-    { text: 'About', href: '/about' }
+    { text: 'About', href: '/about' },
+    { text: 'Contact', href: '/contact' }
   ];
 
   return (

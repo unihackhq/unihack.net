@@ -46,6 +46,7 @@ module.exports = {
       '/sponsorship': { page: '/sponsorship' },
       '/privacy': { page: '/privacy' },
       '/terms': { page: '/terms' },
+      '/contact': { page: '/contact' }
     };
   },
 };
