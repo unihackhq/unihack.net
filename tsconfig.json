@@ -30,5 +30,5 @@
   },
 
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "mdx.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "additional.d.ts"]
+  "include": ["next-env.d.ts", "mdx.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "additional.d.ts", "styled-jsx.d.ts"]
 }
