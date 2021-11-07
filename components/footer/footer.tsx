@@ -38,9 +38,9 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <a href="mailto:team@unihack.net?subject=General Enquiry">
-              Contact Us
-            </a>
+            <Link href="/contact">
+              <a>Contact Us</a>
+            </Link>
           </li>
         </ul>
         <div className={styles.copyright}>

@@ -9,3 +9,5 @@
 /.idea
 .now
 .DS_Store
+.vercel
+.env

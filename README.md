@@ -32,6 +32,18 @@ You can run this locally in development mode by running the following command:
 npm run dev
 ```
 
+To use the environment variables you will need the vercel CLI:
+
+```
+npm i -g vercel
+```
+
+You can pull the environment variables by running the following command and following the prompt:
+
+```
+vercel env pull
+```
+
 Development mode includes hot-code reloading, error reporting and other
 functionality from Next.js. You can read more [here](https://nextjs.org/docs/api-reference/cli#development)
 
