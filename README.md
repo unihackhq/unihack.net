@@ -78,6 +78,10 @@ npm run lint
 - `sections`: Page sections - takes in content and components
 - `styles`: Global styles and SASS stylesheet variables
 
+### Image Component
+
+This website uses next.js image component to render images. Please use <Image/> instead of <img> when declaring images. More information here: https://nextjs.org/docs/api-reference/next/image
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
