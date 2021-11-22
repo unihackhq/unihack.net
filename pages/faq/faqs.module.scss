@@ -1,0 +1,130 @@
+@import '../../styles/styles.scss';
+@import '../../styles/typography/typography.scss';
+
+.faqs {
+  @include page-margin;
+  display: flex;
+  flex-direction: column;
+  padding-top: $base * 7;
+  padding-bottom: $base * 7;
+
+  @include md {
+    flex-direction: row;
+  }
+
+
+  &-title {
+    margin-bottom: $base * 4;
+    align-self: flex-start;
+    @include md {
+      margin-bottom: $base * 8;
+      margin-right: $base * 8;
+    }
+
+  }
+
+  &-content {
+    flex: 1;
+  }
+
+
+  h2 {
+    @include h2;
+    display: inline-block;
+    position:relative;
+    padding: 0;
+    margin-top: $base * 8;
+
+    &:before {
+      background: $midori;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      content: ' ';
+      position: absolute;
+      height: 5px;
+      z-index: -999;
+      @include md {
+        bottom: 5px;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    @include h4;
+    margin: $base * 2 0 0;
+  }
+
+  a {
+    @include link;
+    color: $pacific;
+    text-decoration: underline;
+  }
+
+  ol,
+  ul {
+    margin: $base * 2 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: list;
+
+    li {
+      padding: 0 0 0 $base * 3;
+      margin-bottom: $base * 2;
+      position: relative;
+      counter-increment: list;
+      position: relative;
+
+      &:before {
+        left: 0;
+        position: absolute;
+        text-align: left;
+      }
+
+      blockquote {
+        border-left: 5px solid $salmon;
+        background: adjust-color($salmon, $alpha: -0.9);
+        padding: $base 0 $base ($base * 3 - 5px);
+        margin: $base * 2 0 0;
+        border-radius: 4px;
+      }
+    }
+
+    p {
+      margin-top: $base * 2;
+      max-width: none;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  ol li:before {
+    content: counters(list, '.') '.';
+  }
+
+  ul li:before {
+    content: '\21B3';
+  }
+
+  p {
+    @include body;
+  }
+
+  strong {
+    @include body-bold;
+  }
+
+  .introduction {
+    @include body;
+    background: $primary;
+    padding: $base * 2;
+    margin: $base * 2 0 0 0;
+    border-radius: 4px;
+  }
+}
