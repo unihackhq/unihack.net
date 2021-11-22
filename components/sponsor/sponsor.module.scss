@@ -1,25 +1,36 @@
 @import '../../styles/styles.scss';
 
 .sponsor {
-  background-color: $secondary;
+  @include page-margin;
+  border-radius: 5px;
+  height: 440px;
+  position: relative;
+  overflow: hidden;
 
   &-content {
-    @include page-margin;
+    position: absolute;
+    padding: $base * 6;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 
-    padding-top: $base * 4;
-    padding-bottom: $base * 4;
+  h2 {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
     color: white;
+    font-weight: 600;
+    margin: 0;
+  }
 
-    ul {
-      margin: 0;
-    }
-
-    span {
-      color: $primary;
-    }
-
-    .actions {
-      @include action-container;
-    }
+  p {
+    margin: 0 0 $base * 4;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: white;
   }
 }

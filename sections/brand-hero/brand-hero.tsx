@@ -5,17 +5,13 @@ import { H2, HXL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '../../lib/gtag';
 import Image from 'next/image';
-import brandHero from '../../public/images/brand-hero.svg';
+import brandHero from '';
 
 const BrandHero = () => (
   <section className={styles['brand-hero']}>
-    <Stack size="large" className={styles['brand-hero-info']}>
-      <div>
-        <HXL className={styles.salmon}>Create.</HXL>
-        <HXL className={styles.midori}>Experience.</HXL>
-        <HXL className={styles.pacific}>Share.</HXL>
-      </div>
-      <H2>UNIHACK 2021 has concluded.</H2>
+    <Stack size="small" className={styles['brand-hero-content']}>
+      <HXL className={styles.logo}>UNIHACK 2022</HXL>
+      <p>The Imagination Hackathon <span>is coming back on February 25</span></p>
       <div className={styles.actions}>
         <ButtonLink
           type="primary"
@@ -29,19 +25,24 @@ const BrandHero = () => (
             });
           }}
         >
-          More from UNIHACK 2021
+          Pre-register Now
+        </ButtonLink>
+        <ButtonLink
+          type="primary"
+          theme="light"
+          href="/events/2021"
+          onClick={() => {
+            event({
+              action: 'brand_hero_button_clicked',
+              category: AnalyticsCategory.EVENT,
+              label: 'Clicked "More from UNIHACK 2021"'
+            });
+          }}
+        >
+          Join the Discord
         </ButtonLink>
       </div>
     </Stack>
-    <div className={styles['brand-hero-graphic']}>
-      <Image
-        src={brandHero}
-        layout="intrinsic"
-        height="473"
-        width="550"
-        alt="UNIHACK graphic"
-      />
-    </div>
   </section>
 );
 

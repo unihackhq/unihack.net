@@ -11,6 +11,10 @@
     &.light {
       @include button-theme($secondary, $secondary, $white);
     }
+
+    &.transparent {
+      @include button-theme($white, $white, transparent);
+    }
   }
 
 

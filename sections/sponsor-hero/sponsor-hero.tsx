@@ -14,6 +14,7 @@ const SponsorHero = () => (
       src={sponsorHero}
       layout="fill"
       objectFit="cover"
+      placeholder="blur"
     />
     <div className={styles['sponsor-hero-container']}>
       <h1>

@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 type Props = {
   type: 'primary' | 'secondary';
-  theme: 'light' | 'dark';
+  theme: 'light' | 'dark' | 'transparent';
   href: string;
   target?: string;
   onClick?: () => void;

@@ -10,3 +10,11 @@
     flex-direction: row;
   }
 }
+
+.index {
+  background: url('../public/images/homepage/2022-hero.png') top center no-repeat;
+
+  .grid {
+    padding-bottom: $base * 8;
+  }
+}
