@@ -12,27 +12,27 @@ const ContactUs = () => {
   const [email, setEmail] = useState('');
   const [toast, setToast] = useState({
     message: '',
-    type: ''
+    type: '',
   });
 
   const submitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const res = await fetch(`/api/submit-form`, {
       method: 'POST',
-      body: JSON.stringify({ firstName, lastName, email, purpose, message })
+      body: JSON.stringify({ firstName, lastName, email, purpose, message }),
     });
     // Success if status code is 201
     if (res.status === 201) {
       setToast({
         message:
           'Your message has been sent. We will try and get back to you as soon as we can.',
-        type: 'success'
+        type: 'success',
       });
     } else {
       setToast({
         message:
           'Something went wrong when submitting your form. Please email: team@unihack.net',
-        type: 'error'
+        type: 'error',
       });
     }
   };
@@ -45,7 +45,7 @@ const ContactUs = () => {
           name="purpose"
           id="purpose"
           value={purpose}
-          onChange={e => setPurpose(e.target.value)}
+          onChange={(e) => setPurpose(e.target.value)}
           autoFocus
         >
           <option value="">Select your option</option>
@@ -81,7 +81,7 @@ const ContactUs = () => {
                       name="fname"
                       placeholder="First Name..."
                       value={firstName}
-                      onChange={e => setFirstName(e.target.value)}
+                      onChange={(e) => setFirstName(e.target.value)}
                       required
                     />
                   </div>
@@ -94,7 +94,7 @@ const ContactUs = () => {
                       name="lname"
                       placeholder="Last Name..."
                       value={lastName}
-                      onChange={e => setLastName(e.target.value)}
+                      onChange={(e) => setLastName(e.target.value)}
                       required
                     />
                   </div>
@@ -106,7 +106,7 @@ const ContactUs = () => {
                     name="email"
                     placeholder="Email..."
                     value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
@@ -117,7 +117,7 @@ const ContactUs = () => {
                     id="message"
                     placeholder="Message..."
                     value={message}
-                    onChange={e => setMessage(e.target.value)}
+                    onChange={(e) => setMessage(e.target.value)}
                     required
                   ></textarea>
                 </div>

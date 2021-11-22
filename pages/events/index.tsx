@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Page from '@layouts/page/page';
-import Header from '@components/header/header';
 import Stack from '@components/stack/stack';
 import { PageNavigation } from '@components/page-navigation/page-navigation';
 import styles from './events.module.scss';
@@ -11,58 +10,56 @@ import path from 'path';
 import Filter, { tags } from '@sections/event-filter';
 import { FC, useMemo, useState } from 'react';
 
-export const PreviousEvent: FC<InferGetStaticPropsType<
-  typeof getStaticProps
->> = ({ pastEventDescription }) => {
-  const DisplayTags: { [tag in tags]: string } = {
-    all: 'All',
-    melbourne: 'Melbourne',
-    sydney: 'Sydney'
+export const PreviousEvent: FC<InferGetStaticPropsType<typeof getStaticProps>> =
+  ({ pastEventDescription }) => {
+    const DisplayTags: { [tag in tags]: string } = {
+      all: 'All',
+      melbourne: 'Melbourne',
+      sydney: 'Sydney',
+    };
+
+    const [tag, setTag] = useState<tags>('all');
+
+    const handleChangeTag = (tag: tags) => {
+      setTag(tag);
+    };
+
+    const filteredEvents = useMemo(() => {
+      if (tag === 'all') return pastEventDescription;
+      return Object.keys(pastEventDescription).reduce((obj, event) => {
+        if (pastEventDescription[event].tags.includes(tag)) {
+          obj[event] = pastEventDescription[event];
+        }
+        return obj;
+      }, {} as any);
+    }, [tag]);
+
+    return (
+      <div>
+        <Head>
+          <title>Previous events</title>
+        </Head>
+
+        <Page>
+          <PageNavigation
+            backLinkTitle="Home"
+            backLinkHref="/"
+            underlineColor="yellow"
+          >
+            Previous Events.
+          </PageNavigation>
+          <Stack size="large" className={styles.content}>
+            <Filter
+              options={Object.keys(DisplayTags) as tags[]}
+              handleClick={handleChangeTag}
+              currentTag={tag}
+            />
+            <PastEvent {...filteredEvents} />
+          </Stack>
+        </Page>
+      </div>
+    );
   };
-
-  const [tag, setTag] = useState<tags>('all');
-
-  const handleChangeTag = (tag: tags) => {
-    setTag(tag);
-  };
-
-  const filteredEvents = useMemo(() => {
-    if (tag === 'all') return pastEventDescription;
-    return Object.keys(pastEventDescription).reduce((obj, event) => {
-      if (pastEventDescription[event].tags.includes(tag)) {
-        obj[event] = pastEventDescription[event];
-      }
-      return obj;
-    }, {} as any);
-  }, [tag]);
-
-  return (
-    <div>
-      <Head>
-        <title>Previous events</title>
-      </Head>
-
-      <Page>
-        <Header />
-        <PageNavigation
-          backLinkTitle="Home"
-          backLinkHref="/"
-          underlineColor="yellow"
-        >
-          Previous Events.
-        </PageNavigation>
-        <Stack size="large" className={styles.content}>
-          <Filter
-            options={Object.keys(DisplayTags) as tags[]}
-            handleClick={handleChangeTag}
-            currentTag={tag}
-          />
-          <PastEvent {...filteredEvents} />
-        </Stack>
-      </Page>
-    </div>
-  );
-};
 
 export default PreviousEvent;
 
@@ -71,12 +68,12 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
   let events = await fs.readdir(eventsDirectory);
 
   // Filter out hidden files
-  events = events.filter(item => !/(^|\/)\.[^\/\.]/g.test(item));
+  events = events.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
 
   let pastEventDescription: PastEventDescription = {} as PastEventDescription;
 
   await Promise.all(
-    events.map(async event => {
+    events.map(async (event) => {
       let eventPath: string = path.join(
         process.cwd(),
         `content/events/${event}/`
@@ -84,7 +81,7 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
 
       let info = await fs.readFile(`${eventPath}/info.json`, 'utf8');
       pastEventDescription[event] = {
-        ...JSON.parse(info)
+        ...JSON.parse(info),
         /**
          * NOTE: Check if .eventignore exists to redirect to devpost
          * This check only happens server-side so shouldn't affect performance?
@@ -94,7 +91,7 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
     })
   );
   return {
-    props: { pastEventDescription }
+    props: { pastEventDescription },
   };
 };
 

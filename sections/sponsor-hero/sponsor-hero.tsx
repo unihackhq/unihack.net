@@ -50,7 +50,7 @@ const SponsorHero = () => (
           event({
             action: 'sponsorship.sponsor_hero.button.click',
             category: AnalyticsCategory.SPONSORSHIP,
-            label: 'Sponsorship - Sponsor Hero - Click on Button'
+            label: 'Sponsorship - Sponsor Hero - Click on Button',
           });
         }}
       >

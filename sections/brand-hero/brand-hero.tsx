@@ -11,7 +11,9 @@ const BrandHero = () => (
   <section className={styles['brand-hero']}>
     <Stack size="small" className={styles['brand-hero-content']}>
       <HXL className={styles.logo}>UNIHACK 2022</HXL>
-      <p>The Imagination Hackathon <span>is coming back on February 25</span></p>
+      <p>
+        The Imagination Hackathon <span>is coming back on February 25</span>
+      </p>
       <div className={styles.actions}>
         <ButtonLink
           type="primary"
@@ -21,7 +23,7 @@ const BrandHero = () => (
             event({
               action: 'brand_hero_button_clicked',
               category: AnalyticsCategory.EVENT,
-              label: 'Clicked "More from UNIHACK 2021"'
+              label: 'Clicked "More from UNIHACK 2021"',
             });
           }}
         >
@@ -35,7 +37,7 @@ const BrandHero = () => (
             event({
               action: 'brand_hero_button_clicked',
               category: AnalyticsCategory.EVENT,
-              label: 'Clicked "More from UNIHACK 2021"'
+              label: 'Clicked "More from UNIHACK 2021"',
             });
           }}
         >

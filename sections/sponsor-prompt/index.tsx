@@ -5,7 +5,7 @@ import { H2XL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
-import Image from 'next/image'
+import Image from 'next/image';
 import sponsorCallout from '../../public/images/sponsor-callout.jpg';
 
 const SponsorPrompt = () => (
@@ -13,7 +13,12 @@ const SponsorPrompt = () => (
     <div className={styles['sponsor-prompt-container']}>
       {/* <span className={styles['sponsor-prompt-image']}></span> */}
       <span className={styles['sponsor-prompt-image']}>
-        <Image src={sponsorCallout} layout="fill" objectFit = "cover" priority={true} />
+        <Image
+          src={sponsorCallout}
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+        />
       </span>
       <Stack size="medium" className={styles['sponsor-prompt-content']}>
         <Stack size="small">

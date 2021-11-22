@@ -17,7 +17,6 @@ const Footer = () => (
       <Logo baseColor="#343E46" topColor="#343E46" />
       <div className={styles['footer-info']}>
         <ul>
-
           <li>
             <Link href="/rules">
               <a>Rules</a>

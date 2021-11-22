@@ -22,7 +22,7 @@ function calculateTimeLeft() {
     timeLeft = {
       hours: Math.floor(difference / (1000 * 60 * 60)).toString(),
       minutes: Math.floor((difference / 1000 / 60) % 60).toString(),
-      seconds: Math.floor((difference / 1000) % 60).toString()
+      seconds: Math.floor((difference / 1000) % 60).toString(),
     };
 
     if (timeLeft.hours.length < 2) {

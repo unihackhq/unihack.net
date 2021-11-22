@@ -18,7 +18,6 @@ export default () => (
       <title>UNIHACK 2022 — Sponsorship</title>
     </Head>
     <Page>
-      <Header />
       <Stack size="xxlarge">
         <SponsorHero />
         <PreviousSponsors />

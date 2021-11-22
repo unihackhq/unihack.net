@@ -9,7 +9,7 @@ export type PastEventDescription = {
 
 const stringSort = (a: string, b: string): number => (b > a ? 1 : -1);
 
-export const PastEvent: FC<PastEventDescription> = data => {
+export const PastEvent: FC<PastEventDescription> = (data) => {
   return (
     <div className={styles['past-events']}>
       {Object.keys(data)

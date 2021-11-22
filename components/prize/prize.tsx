@@ -21,7 +21,7 @@ export const Prize = ({ prize }: PropTypes) => {
       <hr className={styles.divider} />
       <div className={styles['prize-content']}>
         <Stack size="xsmall">
-          {prize.contents.map(prizeContent => {
+          {prize.contents.map((prizeContent) => {
             return <Text key={prizeContent}>{prizeContent}</Text>;
           })}
         </Stack>

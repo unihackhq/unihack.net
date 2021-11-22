@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Menu = (props: Props) => {
-  const menuItems = props.items.map(item => (
+  const menuItems = props.items.map((item) => (
     <MenuItem key={item.text} href={item.href}>
       {item.text}
     </MenuItem>

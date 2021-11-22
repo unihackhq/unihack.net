@@ -12,7 +12,6 @@ export default () => (
       <title>Contact Us - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <PageNavigation
         backLinkTitle="Home"
         backLinkHref="/"

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import styles from './rules.module.scss';
 import Page from '@layouts/page/page';
-import Header from '@components/header/header';
 import { HL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import Rules from '../../content/pages/rules.mdx';
@@ -12,7 +11,6 @@ const RulesPage = () => (
       <title>Rules - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <section className={styles['rules']}>
         <div className={styles['rules-content']}>
           <Stack size="medium">

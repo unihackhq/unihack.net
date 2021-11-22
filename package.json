@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "tslint **/*.tsx",
+    "prettier": "prettier **/*.tsx -w",
     "export": "next export"
   },
   "repository": {

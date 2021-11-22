@@ -14,7 +14,7 @@ const Judges = ({ data }: PropTypes) => {
     return (
       <React.Fragment key={title}>
         <H2>{title}</H2>
-        {panel.map(judge => (
+        {panel.map((judge) => (
           <Judge key={judge.name} judge={judge} />
         ))}
       </React.Fragment>

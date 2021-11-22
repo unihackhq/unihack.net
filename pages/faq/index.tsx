@@ -12,15 +12,14 @@ const FAQPage = () => (
       <title>FAQs - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <section className={styles['faqs']}>
         <div className={styles['faqs-title']}>
           <HXL>FAQs</HXL>
         </div>
         <div className={styles['faqs-content']}>
-            <Stack size="small">
-              <FAQContent />
-            </Stack>
+          <Stack size="small">
+            <FAQContent />
+          </Stack>
         </div>
       </section>
     </Page>
