@@ -17,11 +17,7 @@ const Footer = () => (
       <Logo baseColor="#343E46" topColor="#343E46" />
       <div className={styles['footer-info']}>
         <ul>
-          <li>
-            <Link href="/privacy">
-              <a>Privacy Policy</a>
-            </Link>
-          </li>
+
           <li>
             <Link href="/rules">
               <a>Rules</a>
@@ -33,8 +29,19 @@ const Footer = () => (
             </Link>
           </li>
           <li>
+            <Link href="/privacy">
+              <a>Privacy Policy</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/terms">
               <a>Terms of Service</a>
+            </Link>
+          </li>
+          <li className={styles.spacer} />
+          <li>
+            <Link href="/about">
+              <a>About UNIHACK</a>
             </Link>
           </li>
           <li>

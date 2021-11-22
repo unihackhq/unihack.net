@@ -37,7 +37,7 @@ const SponsorHero = () => (
           title="Date"
           style={styles['sponsor-hero-event-data-content']}
         >
-          TBA, Early 2022
+          February 25 - 27, 2022
         </IconLabelWithTitle>
       </div>
       <ButtonLink

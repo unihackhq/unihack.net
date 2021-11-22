@@ -80,6 +80,13 @@
         }
       }
 
+      li.spacer {
+        display: none;
+        @include md {
+          display: block;
+        }
+      }
+
       a {
         color: $footer_link;
         font-weight: 500;

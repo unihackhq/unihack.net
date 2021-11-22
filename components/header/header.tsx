@@ -13,9 +13,10 @@ const Header = () => {
   };
 
   const menuItems: MenuItemI[] = [
+    { text: '2022', href: '/' },
+    { text: 'Past Events', href: '/events' },
     { text: 'Sponsor', href: '/sponsorship' },
-    { text: 'About', href: '/about' },
-    { text: 'Contact', href: '/contact' }
+    { text: 'FAQs', href: '/faq' },
   ];
 
   return (
