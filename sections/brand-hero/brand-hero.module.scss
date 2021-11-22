@@ -5,9 +5,12 @@
 .brand-hero {
   display: flex;
   flex-direction: column-reverse;
-  height: 600px;
-  padding-top: $space-xxlarge;
+  height: 400px;
   color: $secondary;
+
+  @include md {
+    height: 600px;
+  }
 
   &-content {
     @include page-margin;
@@ -16,19 +19,35 @@
 
   .logo {
     background: url('../../public/images/2022-logo.svg') top center no-repeat;
+    background-size: cover;
     text-indent: -999em;
     display: block;
-    height: 72px;
-    width: 306px;
+    height: 48px;
+    width: 204px;
     margin: 0 auto;
+
+    @include md {
+      height: 72px;
+      width: 306px;
+    }
+  
   }
 
   p {
     margin: 0;
-    font-size: 36px;
-    line-height: 48px;
+  }
+
+  p.title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 700;
     letter-spacing:  -1px;
+
+    @include md {
+      font-size: 36px;
+      line-height: 48px;
+    }
 
     span {
       font-weight: 300;

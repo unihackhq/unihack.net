@@ -1,19 +1,20 @@
 import React from 'react';
 import styles from './brand-hero.module.scss';
 import ButtonLink from '@components/button/button-link';
-import { H2, HXL } from '@components/typography/typography';
+import { HXL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '../../lib/gtag';
-import Image from 'next/image';
-import brandHero from '';
 
 const BrandHero = () => (
   <section className={styles['brand-hero']}>
     <Stack size="small" className={styles['brand-hero-content']}>
       <HXL className={styles.logo}>UNIHACK 2022</HXL>
-      <p>
+      <Text className={styles.title}>
         The Imagination Hackathon <span>is coming back on February 25</span>
-      </p>
+      </Text>
+      <Text>
+        Open to all Australia and New Zealand university/TAFE students
+      </Text>
       <div className={styles.actions}>
         <ButtonLink
           type="primary"
@@ -21,9 +22,9 @@ const BrandHero = () => (
           href="/events/2021"
           onClick={() => {
             event({
-              action: 'brand_hero_button_clicked',
+              action: 'brand_hero_preregistration_button_clicked',
               category: AnalyticsCategory.EVENT,
-              label: 'Clicked "More from UNIHACK 2021"',
+              label: 'Clicked "Pre-Registration Link"',
             });
           }}
         >
@@ -32,12 +33,12 @@ const BrandHero = () => (
         <ButtonLink
           type="primary"
           theme="light"
-          href="/events/2021"
+          href="https://discord.gg/MfuzHurGpd"
           onClick={() => {
             event({
-              action: 'brand_hero_button_clicked',
+              action: 'brand_hero_join_discord_button_clicked',
               category: AnalyticsCategory.EVENT,
-              label: 'Clicked "More from UNIHACK 2021"',
+              label: 'Clicked "Join Discord"',
             });
           }}
         >
