@@ -15,6 +15,16 @@
   background: url('../public/images/homepage/2022-hero.png') top center no-repeat;
 
   .grid {
-    padding-bottom: $base * 8;
+    @include page-margin;
+
+    .row {
+      display: grid;
+      grid-gap: $base * 3;
+      margin-bottom: $base * 3;
+      
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 }
