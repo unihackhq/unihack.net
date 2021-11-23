@@ -5,7 +5,7 @@
 .brand-hero {
   display: flex;
   flex-direction: column-reverse;
-  height: 400px;
+  height: 500px;
   color: $secondary;
 
   @include md {
@@ -56,6 +56,12 @@
   }
 
   .actions > a {
-    margin: 0 $base;
+    display: flex;
+    margin: $base 0;
+
+    @include md {
+      margin: 0 $base;
+      display: inline-flex;
+    }
   }
 }

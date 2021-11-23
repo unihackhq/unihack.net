@@ -29,11 +29,16 @@
 
   .grid {
     @include page-margin;
+    margin-top: $base * 4;
+
+    @include md {
+      margin-top: $base * 8;
+    }
 
     .row {
       display: grid;
       grid-gap: $base * 3;
-      margin-bottom: $base * 3;
+      margin: $base * 3 0;
       
       @include md {
         grid-template-columns: repeat(2, 1fr);

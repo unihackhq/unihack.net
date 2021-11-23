@@ -3,6 +3,9 @@
 @import '../../styles/typography/typography.scss';
 
 .icon-section {
+  display: flex;
+  align-items: center;
+
   img {
     margin-right: $space-small;
   }
@@ -13,6 +16,8 @@
 }
 
 .icon-section-with-title {
+  display: block;
+  
   .icon-title {
     display: flex;
     align-items: center;

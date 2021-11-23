@@ -17,7 +17,7 @@ const Index = () => (
       <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
     <Page>
-      <Stack size="xxlarge" className={styles.index}>
+      <div className={styles.index}>
         <BrandHero />
         <div className={styles.grid}>
           <div className={styles.row}>
@@ -50,7 +50,7 @@ const Index = () => (
           </div>
           <Sponsor />
         </div>
-      </Stack>
+      </div>
     </Page>
   </div>
 );
