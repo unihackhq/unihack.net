@@ -17,10 +17,9 @@ const conductPage = () => (
             <HL>Code of Conduct</HL>
             <div className={styles['introduction']}>
               <strong>
-                {' '}
                 We believe that every single person has the right to hack in a
-                safe and welcoming environment.{' '}
-              </strong>
+                safe and welcoming environment.
+              </strong>{' '}
               This is why we have a code of conduct that applies to
               participants, sponsors, judges, mentors, organisers, volunteers,
               guests, observers and any other person at a UNIHACK event, or any

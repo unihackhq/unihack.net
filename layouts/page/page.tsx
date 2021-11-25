@@ -90,7 +90,7 @@ const Page = (props: Props) => {
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
           rel="stylesheet"
-        />{' '}
+        />
       </Head>
       <Header />
       <div className={styles['main-content']}>{props.children}</div>
