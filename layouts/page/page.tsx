@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Head from 'next/head';
 
 import styles from './page.module.scss';
+import Header from '@components/header/header';
 import Footer from '@components/footer/footer';
 import { COLORS } from '../../styles/styles';
 
@@ -80,12 +81,18 @@ const Page = (props: Props) => {
           sizes="167x167"
           href="/favicons/apple-touch-icon-167x167.png"
         />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
+      <Header />
       <div className={styles['main-content']}>{props.children}</div>
       <Footer />
     </div>

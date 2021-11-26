@@ -25,7 +25,7 @@ const Perk = (props: Props) => {
   return (
     <Card noInset className={`${styles.perk} ${props.className}`}>
       <div className={styles['perk-img']}>
-        <Image src={props.imgSrc} layout="intrinsic" height = "280" width="420"/>
+        <Image src={props.imgSrc} layout="intrinsic" height="280" width="420" />
       </div>
       <Stack size="medium" className={styles['perk-desc']}>
         <H3>{props.title}</H3>

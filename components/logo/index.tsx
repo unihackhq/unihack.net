@@ -11,7 +11,7 @@ export const Logo: React.FC<PropTypes> = ({
   baseColor = '#FCC300',
   topColor = '#1F252A',
   wordmarkColor = '#1F252A',
-  showWordmark
+  showWordmark,
 }) => {
   const width = showWordmark ? 176 : 34;
   return (

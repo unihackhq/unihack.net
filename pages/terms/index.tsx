@@ -3,7 +3,6 @@ import Head from 'next/head';
 import styles from './terms.module.scss';
 
 import Page from '@layouts/page/page';
-import Header from '@components/header/header';
 import { H2, HL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -13,7 +12,6 @@ export default () => (
       <title>Terms of Service - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <section className={styles.terms}>
         <div className={styles['terms-content']}>
           <Stack size="medium">

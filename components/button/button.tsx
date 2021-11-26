@@ -8,7 +8,9 @@ type Props = {
 };
 
 const Button = (props: Props) => (
-  <button className={`${styles.btn} ${styles[props.type]} ${styles[props.theme]}`}>
+  <button
+    className={`${styles.btn} ${styles[props.type]} ${styles[props.theme]}`}
+  >
     {props.children}
   </button>
 );

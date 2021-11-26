@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 
 import Page from '../../layouts/page/page';
-import Header from '../../components/header/header';
 import ContactUs from '../../sections/contact-us/contact-us';
 import { PageNavigation } from '@components/page-navigation/page-navigation';
 
@@ -12,7 +11,6 @@ export default () => (
       <title>Contact Us - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <PageNavigation
         backLinkTitle="Home"
         backLinkHref="/"

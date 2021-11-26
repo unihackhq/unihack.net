@@ -31,7 +31,7 @@ export const Event = ({ eventDetail, eventPath }: Props) => (
       <div
         className={styles.image}
         style={{
-          backgroundImage: `url('images/covers/${eventDetail.coverImage}')`
+          backgroundImage: `url('images/covers/${eventDetail.coverImage}')`,
         }}
       ></div>
     </div>

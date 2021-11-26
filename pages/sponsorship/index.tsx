@@ -1,7 +1,5 @@
 import Head from 'next/head';
-
 import Page from '@layouts/page/page';
-import Header from '@components/header/header';
 import SponsorHero from '@sections/sponsor-hero/sponsor-hero';
 import Addons from '@sections/sponsor-addons/sponsor-addons';
 import PreviousSponsors from '@sections/previous-sponsors/previous-sponsors';
@@ -13,12 +11,11 @@ import Stack from '@components/stack/stack';
 import styles from './sponsorship.module.scss';
 
 export default () => (
-  <div>
+  <>
     <Head>
       <title>UNIHACK 2022 — Sponsorship</title>
     </Head>
     <Page>
-      <Header />
       <Stack size="xxlarge">
         <SponsorHero />
         <PreviousSponsors />
@@ -31,5 +28,5 @@ export default () => (
         <SponsorPrompt />
       </Stack>
     </Page>
-  </div>
+  </>
 );

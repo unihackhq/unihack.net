@@ -4,7 +4,6 @@ import Link from 'next/link';
 import styles from './privacy.module.scss';
 
 import Page from '@layouts/page/page';
-import Header from '@components/header/header';
 import { HL, H2, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
@@ -14,7 +13,6 @@ export default () => (
       <title>Privacy Policy - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <section className={styles['privacy-policy']}>
         <div className={styles['privacy-policy-content']}>
           <Stack size="medium">

@@ -20,7 +20,7 @@ type FilterButtonProps = {
 const FilterButton: FC<FilterButtonProps> = ({
   currentTag,
   handleClick,
-  tag
+  tag,
 }) => (
   <button
     key={tag}
@@ -35,7 +35,7 @@ const Filter: FC<Props> = ({ options, handleClick, currentTag }) => (
   <div className={styles.filter}>
     <H4>Filter events</H4>
     <div className={styles.buttons}>
-      {options?.map(tag => {
+      {options?.map((tag) => {
         return (
           <FilterButton
             key={tag}

@@ -14,6 +14,7 @@ const SponsorHero = () => (
       src={sponsorHero}
       layout="fill"
       objectFit="cover"
+      placeholder="blur"
     />
     <div className={styles['sponsor-hero-container']}>
       <h1>
@@ -37,7 +38,7 @@ const SponsorHero = () => (
           title="Date"
           style={styles['sponsor-hero-event-data-content']}
         >
-          TBA, Early 2022
+          February 25 - 27, 2022
         </IconLabelWithTitle>
       </div>
       <ButtonLink
@@ -49,7 +50,7 @@ const SponsorHero = () => (
           event({
             action: 'sponsorship.sponsor_hero.button.click',
             category: AnalyticsCategory.SPONSORSHIP,
-            label: 'Sponsorship - Sponsor Hero - Click on Button'
+            label: 'Sponsorship - Sponsor Hero - Click on Button',
           });
         }}
       >

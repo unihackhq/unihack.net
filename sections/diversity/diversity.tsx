@@ -11,7 +11,12 @@ const Diversity = () => (
     <div className={styles['diversity-content']}>
       <Stack size="medium">
         <H2>Diversity Commitment</H2>
-        <Image src={diversityCommitment} layout = "intrinsic" height = "550" width="1200"/>
+        <Image
+          src={diversityCommitment}
+          layout="intrinsic"
+          height="550"
+          width="1200"
+        />
         <Text>
           The organisers of UNIHACK are committed in increasing the diversity of
           UNIHACK competitors. We will be collaborating with Women in ICT and

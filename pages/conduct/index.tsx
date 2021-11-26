@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import styles from './conduct.module.scss';
 import Page from '@layouts/page/page';
-import Header from '@components/header/header';
 import { HL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import Rules from '../../content/pages/code-of-conduct.mdx';
@@ -12,14 +11,15 @@ const conductPage = () => (
       <title>Code of Conduct - UNIHACK</title>
     </Head>
     <Page>
-      <Header />
       <section className={styles['conduct']}>
         <div className={styles['conduct-content']}>
           <Stack size="medium">
             <HL>Code of Conduct</HL>
             <div className={styles['introduction']}>
-              <strong> We believe that every single person has the right to hack in a
-              safe and welcoming environment. </strong>
+              <strong>
+                We believe that every single person has the right to hack in a
+                safe and welcoming environment.
+              </strong>{' '}
               This is why we have a code of conduct that applies to
               participants, sponsors, judges, mentors, organisers, volunteers,
               guests, observers and any other person at a UNIHACK event, or any

@@ -4,6 +4,7 @@
 .sponsor-prompt {
   background: $midori;
   padding-bottom: $space-xxlarge;
+  margin-bottom: $base * -4;
 
   &-container {
     @include page-margin;

@@ -24,7 +24,7 @@ const Sponsors = ({ data }: PropTypes) => {
               <hr className={`${styles['tier-accent']} ${styles.platinum}`} />
             </div>
             <div className={styles['logo-center']}>
-              {data.sponsors.platinum.map(sponsor => {
+              {data.sponsors.platinum.map((sponsor) => {
                 return (
                   <img
                     key={sponsor.name}

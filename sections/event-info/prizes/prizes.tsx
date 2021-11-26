@@ -10,15 +10,15 @@ type PropTypes = {
 };
 
 const Prizes = ({ data }: PropTypes) => {
-  const mainPrizes = data.main.map(prize => {
+  const mainPrizes = data.main.map((prize) => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
-  const categoryPrizes = data.category.map(prize => {
+  const categoryPrizes = data.category.map((prize) => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
-  const sponsorPrizes = data.sponsor.map(prize => {
+  const sponsorPrizes = data.sponsor.map((prize) => {
     return <Prize key={prize.title} prize={prize} />;
   });
 

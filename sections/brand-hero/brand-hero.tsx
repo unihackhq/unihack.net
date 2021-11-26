@@ -1,47 +1,51 @@
 import React from 'react';
 import styles from './brand-hero.module.scss';
 import ButtonLink from '@components/button/button-link';
-import { H2, HXL } from '@components/typography/typography';
+import { HXL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '../../lib/gtag';
-import Image from 'next/image';
-import brandHero from '../../public/images/brand-hero.svg';
 
 const BrandHero = () => (
   <section className={styles['brand-hero']}>
-    <Stack size="large" className={styles['brand-hero-info']}>
-      <div>
-        <HXL className={styles.salmon}>Create.</HXL>
-        <HXL className={styles.midori}>Experience.</HXL>
-        <HXL className={styles.pacific}>Share.</HXL>
-      </div>
-      <H2>UNIHACK 2021 has concluded.</H2>
+    <Stack size="small" className={styles['brand-hero-content']}>
+      <HXL className={styles.logo}>UNIHACK 2022</HXL>
+      <Text className={styles.title}>
+        The Imagination Hackathon <span>is coming back on February 25</span>
+      </Text>
+      <Text>
+        Open to all Australia and New Zealand university/TAFE students
+      </Text>
       <div className={styles.actions}>
         <ButtonLink
           type="primary"
           theme="light"
-          href="/events/2021"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScBvuU4VDabnj4AoBX7W-3JuGg1GiG1fJJqEnOLWBRX9FOCzQ/viewform?usp=sf_link"
           onClick={() => {
             event({
-              action: 'brand_hero_button_clicked',
+              action: 'brand_hero_preregistration_button_clicked',
               category: AnalyticsCategory.EVENT,
-              label: 'Clicked "More from UNIHACK 2021"'
+              label: 'Clicked "Pre-Registration Link"',
             });
           }}
         >
-          More from UNIHACK 2021
+          Pre-register Now
+        </ButtonLink>
+        <ButtonLink
+          type="primary"
+          theme="light"
+          href="https://discord.gg/MfuzHurGpd"
+          onClick={() => {
+            event({
+              action: 'brand_hero_join_discord_button_clicked',
+              category: AnalyticsCategory.EVENT,
+              label: 'Clicked "Join Discord"',
+            });
+          }}
+        >
+          Join the Discord
         </ButtonLink>
       </div>
     </Stack>
-    <div className={styles['brand-hero-graphic']}>
-      <Image
-        src={brandHero}
-        layout="intrinsic"
-        height="473"
-        width="550"
-        alt="UNIHACK graphic"
-      />
-    </div>
   </section>
 );
 

@@ -25,27 +25,25 @@ class EventSchedule extends React.Component<PropTypes, State> {
     this.state = {
       allDays: Object.keys(props.data) as Day[],
       day,
-      events: props.data[day]
+      events: props.data[day],
     };
   }
 
   public componentDidMount() {
     const validDays = this.state.allDays;
-    let day = moment()
-      .format('dddd')
-      .toLowerCase() as Day;
+    let day = moment().format('dddd').toLowerCase() as Day;
 
     day = validDays.includes(day) ? day : this.state.day;
     this.setState({
       day,
-      events: this.props.data[day]
+      events: this.props.data[day],
     });
   }
 
   private setDay = (day: Day) => () => {
     this.setState({
       day,
-      events: this.props.data[day]
+      events: this.props.data[day],
     });
   };
 
@@ -85,7 +83,9 @@ class EventSchedule extends React.Component<PropTypes, State> {
             <div className={styles['schedule-main']}>
               <Stack size="small" className={styles['schedule-controller']}>
                 <div className={styles['day-selectors']}>
-                  {this.state.allDays.map(day => this.getSelectorButtons(day))}
+                  {this.state.allDays.map((day) =>
+                    this.getSelectorButtons(day)
+                  )}
                 </div>
                 <Schedule data={this.state.events} />
               </Stack>

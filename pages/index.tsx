@@ -3,14 +3,12 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
-import Faqs from '../sections/faqs/faqs';
-import CityBanner from '@components/city-banner/city-banner';
 import Sponsor from '@components/sponsor/sponsor';
-import Header from '@components/header/header';
-import Divider from '@components/divider/divider';
-import Stack from '@components/stack/stack';
 import BrandHero from 'sections/brand-hero/brand-hero';
+import HomeCard from '@components/home-card';
 
+import inspirationImage from '../public/images/homepage/past.png';
+import faqsImage from '../public/images/homepage/faqs.png';
 
 const Index = () => (
   <div>
@@ -18,22 +16,40 @@ const Index = () => (
       <title>UNIHACK — Australia's premier student hackathon</title>
     </Head>
     <Page>
-      <Header />
-      <Stack size="xxlarge">
+      <div className={styles.index}>
         <BrandHero />
-        <Divider />
-        <Faqs />
-        <section className={styles.cities}>
-          <CityBanner city="Melbourne" year="2019" href="/events/2019" />
-          <CityBanner
-            city="Sydney"
-            year="2018"
-            href="https://unihack2018syd.devpost.com/"
-            left
-          />
-        </section>
-      </Stack>
-      <Sponsor />
+        <div className={styles.grid}>
+          <div className={styles.row}>
+            <HomeCard
+              image={inspirationImage}
+              title={
+                <>
+                  Looking for inspiration?
+                  <br />
+                  See what people did last year!
+                </>
+              }
+              placeholderColor="purple"
+              buttonLink="/events/2021"
+              buttonText="Revisit UNIHACK 2021"
+            />
+            <HomeCard
+              image={faqsImage}
+              title={
+                <>
+                  Questions about UNIHACK?
+                  <br />
+                  We have answers.
+                </>
+              }
+              placeholderColor="pacific"
+              buttonLink="/faq"
+              buttonText="Our FAQs"
+            />
+          </div>
+          <Sponsor />
+        </div>
+      </div>
     </Page>
   </div>
 );

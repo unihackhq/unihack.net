@@ -10,3 +10,39 @@
     flex-direction: row;
   }
 }
+
+.index {
+  background: url('../public/images/homepage/2022-hero.png') top center no-repeat;
+  background-size: 800px;
+
+  @include sm {
+    background-size: 1000px;
+  }
+
+  @include md {
+    background-size: 1200px;
+  }
+
+  @include lg {
+    background-size: 1400px;
+  }
+
+  .grid {
+    @include page-margin;
+    margin-top: $base * 4;
+
+    @include md {
+      margin-top: $base * 8;
+    }
+
+    .row {
+      display: grid;
+      grid-gap: $base * 3;
+      margin: $base * 3 0;
+      
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

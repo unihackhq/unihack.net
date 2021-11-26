@@ -19,11 +19,16 @@ const redirects = async () => {
       permanent: false,
     },
     {
-      source: '/conduct',
+      source: '/preregister',
       destination:
-        'https://github.com/unihackhq/rules/blob/master/code-of-conduct.md',
+        'https://docs.google.com/forms/d/e/1FAIpQLScBvuU4VDabnj4AoBX7W-3JuGg1GiG1fJJqEnOLWBRX9FOCzQ/viewform?usp=sf_link',
       permanent: false,
     },
+    {
+      source: '/discord',
+      destination: 'https://discord.gg/MfuzHurGpd',
+      permanent: false,
+    }
   ];
 };
 

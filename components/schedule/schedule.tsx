@@ -52,13 +52,13 @@ class Schedule extends React.Component<Props, State> {
   }
 
   private buildScheduleItems(state: State) {
-    return this.props.data.map(scheduleEvent => {
+    return this.props.data.map((scheduleEvent) => {
       const startTime = this.convertTime(scheduleEvent.startTime);
 
       if (startTime.isValid()) {
         const scheduleItem: ScheduleItemI = {
           ...scheduleEvent,
-          startTime: startTime.format('h:mm a')
+          startTime: startTime.format('h:mm a'),
         };
 
         const endTime = this.convertTime(scheduleEvent.endTime);
