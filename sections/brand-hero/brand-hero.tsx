@@ -19,7 +19,7 @@ const BrandHero = () => (
         <ButtonLink
           type="primary"
           theme="light"
-          href="/events/2021"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScBvuU4VDabnj4AoBX7W-3JuGg1GiG1fJJqEnOLWBRX9FOCzQ/viewform?usp=sf_link"
           onClick={() => {
             event({
               action: 'brand_hero_preregistration_button_clicked',

@@ -4,7 +4,6 @@ import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
 import Sponsor from '@components/sponsor/sponsor';
-import Stack from '@components/stack/stack';
 import BrandHero from 'sections/brand-hero/brand-hero';
 import HomeCard from '@components/home-card';
 
