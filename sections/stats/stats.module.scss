@@ -1,0 +1,80 @@
+@import "../../styles/styles.scss";
+@import "../../styles/spacing.scss";
+@import "../../styles/typography/typography.scss";
+
+.stats {
+  padding: 0;
+  z-index: 1;
+  position: relative;
+
+  h2 {
+    margin-bottom: $base * 4;
+    text-align: center;
+  }
+
+  &-wrapper {
+    max-width: 1200px;
+    background: white;
+    padding: $space-xlarge 0;
+
+    @include xl {
+      padding: $space-xlarge;
+      margin: -$space-xlarge * 2 auto 0;
+    }
+  }
+
+  &-container {
+    @include page-margin;
+
+    p {
+      font-size: 21px;
+      margin-top: $base * 2;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+.previous-sponsors-grid {
+  place-self: center;
+  @include md {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-flex {
+display: flex;
+ justify-content: space-evenly;
+ padding: $space-medium;
+
+}
+.stats-events {
+h2{
+    color: $pacific;
+ }
+}
+
+.stats-students {
+h2{
+    color: $midori;
+ }
+}
+
+.stats-ideas {
+h2{
+    color: $salmon;
+ }
+}
+
+
+.stats-bike {
+h2{
+    color: $primary;
+ }
+}
