@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './stats.module.scss';
-import pastSponsors from '@content/sponsorship/past-sponsors.json';
-import Grid from '@components/grid/grid';
 import { H4, H2XL, H3 } from '@components/typography/typography';
 
 const Stats = () => (
