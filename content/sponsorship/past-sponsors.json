@@ -38,6 +38,10 @@
       "imagePath": "/Twilio.svg"
     },
     {
+      "name": "Zendesk",
+      "imagePath": "/Zendesk.svg"
+    },
+    {
       "name": "Telstra",
       "imagePath": "/Telstra.svg"
     },
@@ -48,10 +52,6 @@
     {
       "name": "Carsales",
       "imagePath": "/Carsales.svg"
-    },
-    {
-      "name": "REA Group",
-      "imagePath": "/REA Group.svg"
     },
     {
       "name": "DigIO",
