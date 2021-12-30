@@ -6,7 +6,7 @@ const AboutUs = () => (
   <section className={styles['about-us']}>
     <div className={styles['about-us-container']}>
       <div className={styles['about-us-left']}>
-        <H3>The longer version</H3>
+        <span><H3>The longer version</H3></span>
       </div>
       <div className={styles['about-us-content']}>
         <Stack size="medium">

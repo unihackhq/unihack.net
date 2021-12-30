@@ -27,31 +27,34 @@
 
   .images {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
-    border: 5px solid $salmon;
+    margin-bottom: $base *10;
+    border: 3px solid $salmon;
 
     &:nth-of-type(4n + 2) {
-      border: 2px solid $midori;
+      border: 3px solid $midori;
     }
 
     &:nth-of-type(4n + 3) {
-      border: 2px solid $pacific;
+      border: 3px solid $pacific;
     }
 
     &:nth-of-type(4n + 4) {
-      border: 2px solid $primary;
+      border: 3px solid $primary;
     }
   }
 
   .content {
     h3 {
       margin-top: $base;
-      font-size: 16px;
+      font-size: 13px;
     }
 
     p {
       margin: 0;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }

@@ -7,26 +7,13 @@
   padding-top: $base * 10;
   padding-bottom: $base * 20;
 
-  &-content {
+  &-container {
     @include page-margin;
     display: flex;
-    align-items: center;
-
-    h1 {
-      align-self: flex-start;
-      margin-bottom: 24px;
-    }
 
     h3 {
-      color: #808080;
-      text-align: center;
-      font-weight: 400;
+      margin-right: $base * 5;
+      width: 250px;
     }
-
   }
-}
-
-.about-us-container {
-   display: flex;
-   width: 80%;
 }

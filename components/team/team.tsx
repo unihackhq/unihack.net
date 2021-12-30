@@ -14,7 +14,7 @@ type Props = {
 
 const Team = ({ style, basePath, items }: Props) => {
   const teamItems = items.map((item: TeamItemI) => (
-    <div key={item.name}>
+    <div className={cx('images')}>
       <Image
         className={styles.images}
         src={`${basePath}${item.imagePath}`}
@@ -23,8 +23,8 @@ const Team = ({ style, basePath, items }: Props) => {
         width="500"
       />
       <div className={styles.content}>
-      <H3>{item.name}</H3>
-      <Text className={styles.title}>{item.role}</Text>
+        <H3>{item.name}</H3>
+        <Text className={styles.title}>{item.role}</Text>
       </div>
     </div>
   ));

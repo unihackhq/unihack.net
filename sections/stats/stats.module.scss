@@ -57,18 +57,21 @@ display: flex;
 .stats-events {
 h2{
     color: $pacific;
+    margin-bottom: $base;
  }
 }
 
 .stats-students {
 h2{
     color: $midori;
+    margin-bottom: $base;
  }
 }
 
 .stats-ideas {
 h2{
     color: $salmon;
+    margin-bottom: $base;
  }
 }
 
@@ -76,5 +79,6 @@ h2{
 .stats-bike {
 h2{
     color: $primary;
+    margin-bottom: $base;
  }
 }
