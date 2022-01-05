@@ -79,12 +79,14 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
         process.cwd(),
         `content/events/${event}/`
       );
-      const info = JSON.parse(await fs.readFile(`${eventPath}/info.json`, 'utf8')) as EventInfo;
+      const info = JSON.parse(
+        await fs.readFile(`${eventPath}/info.json`, 'utf8')
+      ) as EventInfo;
       if (!info?.hidden) pastEventDescription[event] = info;
-      return info
+      return info;
     })
-  )
-  
+  );
+
   return {
     props: { pastEventDescription },
   };

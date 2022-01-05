@@ -13,7 +13,6 @@ import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
 import HomeRegister from '@components/home-register';
 
-
 const Index = () => (
   <div>
     <Head>
@@ -56,7 +55,11 @@ const Index = () => (
       </div>
       <div className={styles.sponsors}>
         <div className={styles.grid}>
-          <Sponsors data={sponsorData} isHomepage={true} className={styles.sponsorListing} />
+          <Sponsors
+            data={sponsorData}
+            isHomepage={true}
+            className={styles.sponsorListing}
+          />
           <Sponsor />
         </div>
       </div>

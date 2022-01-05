@@ -6,7 +6,7 @@ import Stack from '@components/stack/stack';
 import { SponsorData } from './sponsor-data.model';
 import classNames from 'classnames/bind';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
 type PropTypes = {
   data: SponsorData;
@@ -16,7 +16,7 @@ type PropTypes = {
 
 const Sponsors = ({ data, isHomepage, className }: PropTypes) => {
   return (
-    <section className={cx({'event-page-sponsors': !isHomepage }, className)}>
+    <section className={cx({ 'event-page-sponsors': !isHomepage }, className)}>
       <Stack size="xlarge" className={styles['event-page-sponsors-content']}>
         <Stack size="small">
           <HL>Sponsors</HL>
