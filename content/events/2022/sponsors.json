@@ -51,6 +51,10 @@
       {
         "name": "echoAR",
         "imagePath": "/echoAR.svg"
+      },
+      {
+        "name": "Monash FIT",
+        "imagePath": "/Monash FIT.svg"
       }
     ]
   }

@@ -84,8 +84,7 @@ const HomeRegister: React.FC<Props> = ({ className }) => (
             closer to the event.
           </p>
           <p>
-            Alternatively, consider asking if your friends are interested in
-            joining in. In addition, reach out to your university's IT student
+            Alternatively, consider reaching out to your university's IT student
             society if they can help out.
           </p>
         </div>
@@ -95,12 +94,12 @@ const HomeRegister: React.FC<Props> = ({ className }) => (
             <span>4.</span> Keep an eye on your inbox!
           </h3>
           <p>
-            We have a number of pre-hack and post-hack events in the pipeline -
+            We have a number of pre-hack and post-hack events planned -
             including workshops and Q&amp;A sessions with some of our sponsors.
           </p>
           <p>
-            So make sure you check your email inbox when we release when those
-            events will happen.
+            So make sure you check your email inbox to find out when these events
+            will occur.
           </p>
         </div>
       </div>
