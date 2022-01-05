@@ -1,0 +1,57 @@
+{
+  "base": "/images/sponsors",
+  "sponsors": {
+    "platinum": [
+      {
+        "name": "Atlassian",
+        "imagePath": "/Atlassian.svg"
+      }
+    ],
+    "gold": [
+      {
+        "name": "Arcitecta",
+        "imagePath": "/Arcitecta.svg"
+      },
+      {
+        "name": "Bukalapak",
+        "imagePath": "/Bukalapak.svg"
+      },
+      {
+        "name": "Fresho",
+        "imagePath": "/Fresho.svg"
+      },
+      {
+        "name": "Macquarie Group",
+        "imagePath": "/Macquarie.svg"
+      },
+      {
+        "name": "Medipass",
+        "imagePath": "/Medipass.svg"
+      },
+      {
+        "name": "PwC",
+        "imagePath": "/PwC.svg"
+      },
+      {
+        "name": "Xero",
+        "imagePath": "/Xero.svg"
+      }
+    ],
+    "silver": [
+      {
+        "name": "Twilio",
+        "imagePath": "/Twilio.svg"
+      }
+    ],
+    "bronze": [
+      {
+        "name": "Adobe",
+        "imagePath": "/Adobe.svg"
+      },
+      {
+        "name": "echoAR",
+        "imagePath": "/echoAR.svg"
+      }
+    ]
+  }
+}

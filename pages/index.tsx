@@ -3,12 +3,15 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
+import BrandHero from '@sections/brand-hero/brand-hero';
+import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Sponsor from '@components/sponsor/sponsor';
-import BrandHero from 'sections/brand-hero/brand-hero';
 import HomeCard from '@components/home-card';
 
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
+import sponsorData from '@content/events/2022/sponsors.json';
+
 
 const Index = () => (
   <div>
@@ -47,6 +50,11 @@ const Index = () => (
               buttonText="Our FAQs"
             />
           </div>
+        </div>
+      </div>
+      <div className={styles.sponsors}>
+        <div className={styles.grid}>
+          <Sponsors data={sponsorData} isHomepage={true} className={styles.sponsorListing} />
           <Sponsor />
         </div>
       </div>
