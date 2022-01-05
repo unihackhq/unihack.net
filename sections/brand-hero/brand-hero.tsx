@@ -10,9 +10,9 @@ const BrandHero = () => (
     <Stack size="small" className={styles['brand-hero-content']}>
       <HXL className={styles.logo}>UNIHACK 2022</HXL>
       <Text className={styles.title}>
-        The Imagination Hackathon <span>is coming back on February 25</span>
+        Register for the Imagination Hackathon! <span>We are back on February 25</span>
       </Text>
-      <Text>
+      <Text className={styles.subtitle}>
         Open to all Australia and New Zealand university/TAFE students
       </Text>
       <div className={styles.actions}>
@@ -22,27 +22,13 @@ const BrandHero = () => (
           href="https://docs.google.com/forms/d/e/1FAIpQLScBvuU4VDabnj4AoBX7W-3JuGg1GiG1fJJqEnOLWBRX9FOCzQ/viewform?usp=sf_link"
           onClick={() => {
             event({
-              action: 'brand_hero_preregistration_button_clicked',
+              action: 'brand_hero_registration_button_clicked',
               category: AnalyticsCategory.EVENT,
-              label: 'Clicked "Pre-Registration Link"',
+              label: 'Clicked "Registration Link"',
             });
           }}
         >
-          Pre-register Now
-        </ButtonLink>
-        <ButtonLink
-          type="primary"
-          theme="light"
-          href="https://discord.gg/MfuzHurGpd"
-          onClick={() => {
-            event({
-              action: 'brand_hero_join_discord_button_clicked',
-              category: AnalyticsCategory.EVENT,
-              label: 'Clicked "Join Discord"',
-            });
-          }}
-        >
-          Join the Discord
+          Register Now
         </ButtonLink>
       </div>
     </Stack>

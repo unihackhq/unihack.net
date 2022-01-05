@@ -11,6 +11,7 @@ import HomeCard from '@components/home-card';
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
+import HomeRegister from '@components/home-register';
 
 
 const Index = () => (
@@ -22,6 +23,7 @@ const Index = () => (
       <div className={styles.index}>
         <BrandHero />
         <div className={styles.grid}>
+          <HomeRegister />
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
