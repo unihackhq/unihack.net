@@ -48,9 +48,9 @@ const HomeRegister: React.FC<Props> = ({ className }) => (
             <span>2.</span> Register your team
           </h3>
           <p>
-            Got a team ready to go? Make sure you register it on our new Team
-            Management app. This lets you manage who is in your team, and lets
-            you notify us of any changes.
+            Got a team ready to go? Make sure you register it on our new Team Management portal. 
+            This lets you tell us who is in your team, what you are working on, and notifies us 
+            instantly of any changes.
           </p>
           <p>
             <strong>
@@ -94,12 +94,13 @@ const HomeRegister: React.FC<Props> = ({ className }) => (
             <span>4.</span> Keep an eye on your inbox!
           </h3>
           <p>
-            We have a number of pre-hack and post-hack events planned -
-            including workshops and Q&amp;A sessions with some of our sponsors.
+            Want to know when we will announce the prizes for this year's event? What about 
+            the workshops, pre-hack and post-hack events that we have planned with some 
+            of our sponsors? We will send out email notifications when we are ready to
+            announce them to you.
           </p>
           <p>
-            So make sure you check your email inbox to find out when these events
-            will occur.
+            So make sure you keep checking your email inbox about any and all UNIHACK news.
           </p>
         </div>
       </div>

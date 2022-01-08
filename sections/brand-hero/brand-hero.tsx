@@ -20,7 +20,7 @@ const BrandHero = () => (
         <ButtonLink
           type="primary"
           theme="light"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScBvuU4VDabnj4AoBX7W-3JuGg1GiG1fJJqEnOLWBRX9FOCzQ/viewform?usp=sf_link"
+          href="https://events.humanitix.com/unihack-2022"
           onClick={() => {
             event({
               action: 'brand_hero_registration_button_clicked',
