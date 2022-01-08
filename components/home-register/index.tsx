@@ -96,11 +96,12 @@ const HomeRegister: React.FC<Props> = ({ className }) => (
           <p>
             Want to know when we will announce the prizes for this year's event? What about 
             the workshops, pre-hack and post-hack events that we have planned with some 
-            of our sponsors? We will send out email notifications when we are ready to
-            announce them to you.
+            of our sponsors? 
           </p>
           <p>
-            So make sure you keep checking your email inbox about any and all UNIHACK news.
+            We will send out email notifications when we are ready to
+            announce them to you. So make sure you keep checking your email inbox about 
+            any and all UNIHACK news.
           </p>
         </div>
       </div>
