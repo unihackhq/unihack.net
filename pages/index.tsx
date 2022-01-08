@@ -12,6 +12,7 @@ import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
 import HomeRegister from '@components/home-register';
+import { JudgingCriteria } from '@components/judging-criteria';
 
 const Index = () => (
   <div>
@@ -53,6 +54,7 @@ const Index = () => (
           </div>
         </div>
       </div>
+      <JudgingCriteria />
       <div className={styles.sponsors}>
         <div className={styles.grid}>
           <Sponsors

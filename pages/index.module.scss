@@ -20,6 +20,7 @@
 .grid {
   @include page-margin;
   padding-top: $base * 4;
+  padding-bottom: $base * 4;
 
   @include md {
     padding-top: $base * 8;
@@ -37,13 +38,6 @@
 }
 
 .sponsors {
-
-  border-top: 1px solid #e0e0e0;
-
-  @include md {
-    margin-top: $base * 10;
-  }
-
   .sponsorListing {
     margin: 0 0 $base * 4;
   }
