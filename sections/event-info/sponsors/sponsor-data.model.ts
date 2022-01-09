@@ -1,11 +1,13 @@
 import { GridItemI } from '@components/grid/grid-item.interface';
 
+type SponsorTier = 'platinum' | 'gold' | 'silver' | 'bronze'
+
 export type SponsorData = {
   base: string;
+  titles?: {
+    [key in SponsorTier]?: string;
+  },
   sponsors: {
-    platinum: GridItemI[];
-    gold: GridItemI[];
-    silver: GridItemI[];
-    bronze: GridItemI[];
+    [key in SponsorTier]: GridItemI[];
   };
 };

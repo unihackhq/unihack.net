@@ -1,5 +1,8 @@
 {
   "base": "/images/sponsors",
+  "titles": {
+    "platinum": "Platinum and D&I"
+  },
   "sponsors": {
     "platinum": [
       {
@@ -27,6 +30,10 @@
       {
         "name": "Medipass",
         "imagePath": "/Medipass.svg"
+      },
+      {
+        "name": "Optiver",
+        "imagePath": "/Optiver.svg"
       },
       {
         "name": "PwC",
