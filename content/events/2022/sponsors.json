@@ -35,6 +35,10 @@
       {
         "name": "Xero",
         "imagePath": "/Xero.svg"
+      },
+      {
+        "name": "Zendesk",
+        "imagePath": "/Zendesk.svg"
       }
     ],
     "silver": [
