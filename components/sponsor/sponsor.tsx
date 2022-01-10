@@ -5,9 +5,15 @@ import styles from './sponsor.module.scss';
 import ButtonLink from '../button/button-link';
 import image from '../../public/images/homepage/sponsorship.png';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
-const Sponsor = ({standalone, className}: {standalone?: boolean, className?: string}) => (
+const Sponsor = ({
+  standalone,
+  className,
+}: {
+  standalone?: boolean;
+  className?: string;
+}) => (
   <section className={cx('sponsor', { standalone }, className)}>
     <Image
       src={image}

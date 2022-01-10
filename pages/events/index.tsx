@@ -9,6 +9,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Filter, { tags } from '@sections/event-filter';
 import { FC, useMemo, useState } from 'react';
+import { EventInfo } from '@sections/event-info/event-hero/event-hero';
 
 export const PreviousEvent: FC<InferGetStaticPropsType<typeof getStaticProps>> =
   ({ pastEventDescription }) => {
@@ -74,22 +75,18 @@ export const getStaticProps: GetStaticProps<Content> = async () => {
 
   await Promise.all(
     events.map(async (event) => {
-      let eventPath: string = path.join(
+      const eventPath: string = path.join(
         process.cwd(),
         `content/events/${event}/`
       );
-
-      let info = await fs.readFile(`${eventPath}/info.json`, 'utf8');
-      pastEventDescription[event] = {
-        ...JSON.parse(info),
-        /**
-         * NOTE: Check if .eventignore exists to redirect to devpost
-         * This check only happens server-side so shouldn't affect performance?
-         */
-      };
+      const info = JSON.parse(
+        await fs.readFile(`${eventPath}/info.json`, 'utf8')
+      ) as EventInfo;
+      if (!info?.hidden) pastEventDescription[event] = info;
       return info;
     })
   );
+
   return {
     props: { pastEventDescription },
   };

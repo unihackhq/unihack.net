@@ -1,16 +1,5 @@
 @import '../styles/styles.scss';
 
-.cities {
-  display: flex;
-  @include xsm {
-    flex-direction: column;
-  }
-
-  @include sm {
-    flex-direction: row;
-  }
-}
-
 .index {
   background: url('../public/images/homepage/2022-hero.png') top center no-repeat;
   background-size: 800px;
@@ -26,23 +15,30 @@
   @include lg {
     background-size: 1400px;
   }
+}
 
-  .grid {
-    @include page-margin;
-    margin-top: $base * 4;
+.grid {
+  @include page-margin;
+  padding-top: $base * 4;
+  padding-bottom: $base * 4;
 
+  @include md {
+    padding-top: $base * 8;
+  }
+
+  .row {
+    display: grid;
+    grid-gap: $base * 3;
+    margin: $base * 3 0;
+    
     @include md {
-      margin-top: $base * 8;
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
+}
 
-    .row {
-      display: grid;
-      grid-gap: $base * 3;
-      margin: $base * 3 0;
-      
-      @include md {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+.sponsors {
+  .sponsorListing {
+    margin: 0 0 $base * 4;
   }
 }

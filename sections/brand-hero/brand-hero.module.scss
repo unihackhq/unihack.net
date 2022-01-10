@@ -14,7 +14,11 @@
 
   &-content {
     @include page-margin;
-    text-align: center;
+    text-align: left;
+
+    @include md {
+      text-align: center;
+    }
   }
 
   .logo {
@@ -24,11 +28,12 @@
     display: block;
     height: 48px;
     width: 204px;
-    margin: 0 auto;
+    margin: 0;
 
     @include md {
       height: 72px;
       width: 306px;
+      margin: 0 auto;
     }
   
   }
@@ -55,13 +60,32 @@
     }
   }
 
+  p.subtitle {
+    margin: $base 0;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing:  -1px;
+
+    @include md {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400;
+      margin: $base * 2 0;  
+    }
+  }
+
   .actions > a {
     display: flex;
     margin: $base 0;
 
     @include md {
       margin: 0 $base;
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      height: 64px;
       display: inline-flex;
+      transition: all 0.1s;
     }
   }
 }

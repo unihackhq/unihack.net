@@ -14,6 +14,7 @@ export type EventInfo = {
   title: string;
   coverImage: string;
   tags: string[];
+  hidden?: boolean;
 };
 
 type Props = {
