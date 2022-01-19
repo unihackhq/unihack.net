@@ -7,7 +7,7 @@ import Footer from '@components/footer/footer';
 import { COLORS } from '../../styles/styles';
 
 const description = `
-  UNIHACK is Australia's premier student hackathon, based in Melbourne and Sydney.
+  UNIHACK is Australia's premier student hackathon.
   Students get 48 hours to design and build something awesome – an app, website, piece of hardware... anything goes.
   Solve a problem, impress us and win some prizes!
 `;

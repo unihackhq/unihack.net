@@ -17,7 +17,7 @@ import { JudgingCriteria } from '@components/judging-criteria';
 const Index = () => (
   <div>
     <Head>
-      <title>UNIHACK — Australia's premier student hackathon</title>
+      <title>UNIHACK 2022 - February 25-27, 2022</title>
     </Head>
     <Page>
       <div className={styles.index}>
