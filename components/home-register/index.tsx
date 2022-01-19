@@ -13,7 +13,7 @@ interface Props {
 const HomeRegister: React.FC<Props> = ({ className }) => (
   <section className={cx('home-register', className)}>
     <div className={cx('home-register-content')}>
-      <h2>Participating at UNIHACK? Here's what you need to do...</h2>
+      <h2>Already registered? Here's what you need to do next...</h2>
 
       <div className={cx('home-register-grid')}>
         <div className={cx('home-register-section')}>
