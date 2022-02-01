@@ -53,3 +53,7 @@
 .body-bold {
   @include body-bold;
 }
+
+.small {
+  @include small;
+}

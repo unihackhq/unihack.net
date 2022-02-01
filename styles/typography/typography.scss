@@ -87,6 +87,15 @@
   }
 }
 
+@mixin small {
+  @include no-margin;
+  @include small-mobile;
+
+  @include md {
+    @include small-desktop;
+  }
+}
+
 @mixin underline($color) {
   &:before {
     content: '';

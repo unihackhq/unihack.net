@@ -11,8 +11,9 @@ import HomeCard from '@components/home-card';
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
+import prizesData from '@content/events/2022/prizes.json';
 import HomeRegister from '@components/home-register';
-import { JudgingCriteria } from '@components/judging-criteria';
+import Prizes from '@sections/event-info/prizes/prizes';
 
 const Index = () => (
   <div>
@@ -54,7 +55,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <JudgingCriteria />
+      <Prizes data={prizesData.prizes} />
       <div className={styles.sponsors}>
         <div className={styles.grid}>
           <Sponsors
