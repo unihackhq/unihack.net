@@ -12,12 +12,18 @@
     ],
     "gold": [
       {
-        "name": "Arcitecta",
-        "imagePath": "/Arcitecta.svg"
+        "name": "Bosch",
+        "imagePath": "/Bosch.svg",
+        "hidden": true
       },
       {
         "name": "Bukalapak",
         "imagePath": "/Bukalapak.svg"
+      },
+      {
+        "name": "Carsales",
+        "imagePath": "/Carsales.svg",
+        "hidden": true
       },
       {
         "name": "Fresho",
