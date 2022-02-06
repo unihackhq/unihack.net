@@ -12,16 +12,19 @@ type Props = {
 };
 
 const Grid = ({ style, basePath, items }: Props) => {
-  const gridItems = items.map((item: GridItemI) => (
-    <div key={item.name}>
-      <Image
-        src={`${basePath}${item.imagePath}`}
-        alt={item.name}
-        height="300"
-        width="500"
-      />
-    </div>
-  ));
+  const gridItems = items.map((item: GridItemI) => {
+    if (item.hidden) return null
+    return (
+      <div key={item.name}>
+        <Image
+          src={`${basePath}${item.imagePath}`}
+          alt={item.name}
+          height="300"
+          width="500"
+        />
+      </div>
+    )
+  });
 
   return <div className={cx('grid', style)}>{gridItems}</div>;
 };
