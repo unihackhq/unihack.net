@@ -6,7 +6,7 @@
         "imagePath": "/images/prizes/first-place.svg",
         "contents": [
           "$4000 cash",
-          "TBA"
+          "Amazon Echo Show 8 for each team member"
         ]
       },
       {
@@ -14,13 +14,13 @@
         "imagePath": "/images/prizes/second-place.svg",
         "contents": [
           "$2000 cash",
-          "TBA"
+          "Lenovo Smart Clock 2 for each team member"
         ]
       },
       {
         "title": "3rd Place",
         "imagePath": "/images/prizes/third-place.svg",
-        "contents": ["$1000 cash", "TBA"]
+        "contents": ["$1000 cash", "JBL Link Bluetooth Speaker for each team member"]
       }
     ],
     "category": [
@@ -28,38 +28,38 @@
         "title": "Best Design",
         "description": "Awarded to the most usable and best looking user interface.",
         "imagePath": "/images/prizes/best-design.svg",
-        "contents": ["TBA"]
+        "contents": ["Adobe Creative Cloud Subscription for each team member"]
       },
       {
         "title": "Most Creative Idea",
         "description": "The project that has the most original idea or reinvention.",
         "imagePath": "/images/prizes/most-creative.svg",
-        "contents": ["TBA"]
+        "contents": ["Wacom One tablet for each team member"]
       },
       {
         "title": "Best Social Impact",
         "description": "The best idea that addresses a pressing issue in our society today.",
         "imagePath": "/images/prizes/best-social-impact.svg",
-        "contents": ["TBA"]
+        "contents": ["Frank Green Tap-to-Pay Reusable Cup for each team member"]
       },
       {
         "title": "First Timers Prize",
         "description": "The best project created by first-time hackathon participants.",
         "subtext": "To be eligible, at least 50% of your team must have not attended a hackathon.",
         "imagePath": "/images/prizes/first-time.svg",
-        "contents": ["TBA"]
+        "contents": ["Logitech G213 Mechanical Keyboard for each team member"]
       },
       {
         "title": "Most Entertaining Pitch",
         "description": "Can you summarise your pitch in in three minutes - whilst also being engaging and entertaining?",
         "imagePath": "/images/prizes/best-pitch.svg",
-        "contents": ["TBA"]
+        "contents": ["Amazon Echo Dot for each team member"]
       },
       {
         "title": "People's Choice Award",
         "description": "The project that wins the hearts and votes of the people.",
         "imagePath": "/images/prizes/people-choice.svg",
-        "contents": ["TBA"]
+        "contents": ["Morphie Charge Stream Powerstation for each team member"]
       },
       {
         "title": "Best Social Media Prize",
