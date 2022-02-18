@@ -12,9 +12,10 @@ import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
 import scheduleData from '@content/events/2022/schedule.json';
-import { JudgingCriteria } from '@components/judging-criteria';
+import prizesData from '@content/events/2022/prizes.json';
 import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
 import EventChecklist from '@sections/event-info/event-checklist';
+import Prizes from '@sections/event-info/prizes/prizes';
 
 const Index = () => (
   <div>
@@ -59,7 +60,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <JudgingCriteria />
+      <Prizes data={prizesData.prizes} />
       <div className={styles.sponsors}>
         <div className={styles.grid}>
           <Sponsors
