@@ -14,15 +14,7 @@ const ScheduleItem = (props: Props) => {
 
   return (
     <div className={`${styles['schedule-item']} ${activeClass} ${futureClass}`}>
-      <div className={styles['schedule-item-indicator']}>
-        <div
-          className={`${styles['schedule-item-indicator-line']} ${styles.head}`}
-        />
-        <div className={styles['schedule-item-indicator-dot']} />
-        <div
-          className={`${styles['schedule-item-indicator-line']} ${styles.tail}`}
-        />
-      </div>
+      <div className={styles['schedule-item-indicator-dot']} />
       <Text bold className={styles['schedule-item-time']}>
         {props.scheduleItem.startTime}
       </Text>

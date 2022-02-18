@@ -4,120 +4,69 @@ $past-grey: #6c6c6c;
 
 .schedule-item {
   display: flex;
-  align-items: center;
-  color: $past-grey;
-  height: $base * 5;
-  border-bottom: 1px solid lighten($secondary, 14%);
+  position: relative;
+  align-self: flex-start;
+  color: $midori-l50;
+  border-bottom: 1px solid $midori-l50;
   position: relative;
   transition: color 0.5s ease;
+  padding: $base * 2 0;
 
-  &.active {
-    color: $primary;
+  &:before {
+    content: '';
+    width: $base / 2;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+    background-color: $midori-l50;
+    z-index: 1;
   }
 
-  &.future {
-    color: $light-grey;
-  }
-
-  &.active, &.future {
-    .schedule-item-indicator-dot {
-      border: 4px solid $primary;
-    }
-  }
-
-  &.active {
-    .schedule-item-indicator-line {
-      background: $primary;
-
-      &.head {
-        background: $past-grey;
-      }
-    }
-    + .active, + .future {
-      .schedule-item-indicator-line {
-        background-color: $primary;
-      }
-    }
-  }
-
-  &.future {
-    .schedule-item-indicator-line.tail {
-      background-color: $primary;
-    }
-
-    + .future {
-      .schedule-item-indicator-line {
-        background-color: $primary;
-      }
-    }
-  }
-
-  &-indicator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-
-    &-line {
-      width: 14px;
-      height: 100%;
-      margin: -2px 0;
-      background-color: $past-grey;
-      border-left: 4px solid $secondary;
-      border-right: 4px solid $secondary;
-      transition: background-color 0.5s ease;
-    }
-
-    &-dot {
-      position: relative;
-      width: $base * 3;
-      height: $base * 3;
-      border-radius: 50%;
-      border: 4px solid $past-grey;
-      flex-shrink: 0;
-      transition: all 0.5s ease;
-    }
-    
-    @include xsm {
-      margin-right: $base;
-    }
-
-    @include sm {
-      margin-left: $base * 2;
-      margin-right: $base * 3;
-    }
-  }
-
-  &:first-of-type {
-    .schedule-item-indicator-line.head {
-      background-color: $secondary;
-    }
-  }
-
-  &:last-of-type {
-    .schedule-item-indicator-line.tail {
-      z-index: -1;
-      background-color: $secondary;
-    }
-  }
-
-  &-time {
+  .schedule-item-indicator-dot {
+    position: relative;
+    z-index: 99;
+    background: $midori;
+    width: $base * 3;
+    height: $base * 3;
+    border-radius: 50%;
+    margin-right: $base * 2;
+    border: 4px solid $midori-l50;
     flex-shrink: 0;
-    padding: $base 0;
+    transition: all 0.5s ease;
+  }
 
-    @include xsm {
-      padding-right: $base;
-      flex-basis: 30%;
-    }
-
-    @include sm {
-      padding-right: $base * 3;
-      flex-basis: 30%;
+  &:last-child {
+    border-bottom: 0px solid;
+    &:before {
+      bottom: 50%;
     }
   }
 
-  &-title {
-    padding: $base 0;
-    width: 100%;
+  &:first-child {
+    &:before {
+      top: $base * 2;
+    }
+  }
+
+  .schedule-item-time {
+    width: 100px;
+  }
+
+  .schedule-item-title {
+    flex: 1;
+  }
+
+  &.active,
+  &.future {
+    color: white;
+
+    &:before {
+      background: white;
+    }
+
+    .schedule-item-indicator-dot {
+      border: 4px solid white;
+    }
   }
 }
