@@ -47,7 +47,7 @@ const EventChecklist = () => {
           <ButtonLink
             type="primary"
             theme="light"
-            href="https://events.humanitix.com/unihack-2022"
+            href="https://discord.gg/c5WkvETkj8"
           >
             Discord
           </ButtonLink>
@@ -60,7 +60,7 @@ const EventChecklist = () => {
           <ButtonLink
             type="primary"
             theme="light"
-            href="https://events.humanitix.com/unihack-2022"
+            href="https://unihack2022.devpost.com"
           >
             Devpost
           </ButtonLink>
