@@ -1,0 +1,82 @@
+{
+  "prizes": {
+    "main": [
+      {
+        "title": "1st Place",
+        "imagePath": "/images/prizes/first-place.svg",
+        "contents": [
+          "$4000 cash",
+          "Amazon Echo Show 8 for each team member"
+        ]
+      },
+      {
+        "title": "2nd Place",
+        "imagePath": "/images/prizes/second-place.svg",
+        "contents": [
+          "$2000 cash",
+          "Lenovo Smart Clock 2 for each team member"
+        ]
+      },
+      {
+        "title": "3rd Place",
+        "imagePath": "/images/prizes/third-place.svg",
+        "contents": ["$1000 cash", "JBL Link Bluetooth Speaker for each team member"]
+      }
+    ],
+    "category": [
+      {
+        "title": "Best Design",
+        "description": "Awarded to the most usable and best looking user interface.",
+        "imagePath": "/images/prizes/best-design.svg",
+        "contents": ["Adobe Creative Cloud Subscription for each team member"]
+      },
+      {
+        "title": "Most Creative Idea",
+        "description": "The project that has the most original idea or reinvention.",
+        "imagePath": "/images/prizes/most-creative.svg",
+        "contents": ["Wacom One tablet for each team member"]
+      },
+      {
+        "title": "Best Social Impact",
+        "description": "The best idea that addresses a pressing issue in our society today.",
+        "imagePath": "/images/prizes/best-social-impact.svg",
+        "contents": ["Frank Green Tap-to-Pay Reusable Cup for each team member"]
+      },
+      {
+        "title": "First Timers Prize",
+        "description": "The best project created by first-time hackathon participants.",
+        "subtext": "To be eligible, at least 50% of your team must have not attended a hackathon.",
+        "imagePath": "/images/prizes/first-time.svg",
+        "contents": ["Logitech G213 Mechanical Keyboard for each team member"]
+      },
+      {
+        "title": "Most Entertaining Pitch",
+        "description": "Can you summarise your pitch in in three minutes - whilst also being engaging and entertaining?",
+        "imagePath": "/images/prizes/best-pitch.svg",
+        "contents": ["Amazon Echo Dot for each team member"]
+      },
+      {
+        "title": "People's Choice Award",
+        "description": "The project that wins the hearts and votes of the people.",
+        "imagePath": "/images/prizes/people-choice.svg",
+        "contents": ["Morphie Charge Stream Powerstation for each team member"]
+      },
+      {
+        "title": "Best Social Media Prize",
+        "description": "Send out the best tweet, message, photo, story or short video that sums up your experience of #UNIHACK2022.",
+        "imagePath": "/images/prizes/socm.svg",
+        "subtext": "This is an individual prize.",
+        "contents": ["TBA"]
+      },
+      {
+        "title": "Best Meme",
+        "description": "Make the best meme during the event and post it on the UNIHACK Discord. I couldn't make it any more obvious.",
+        "imagePath": "/images/prizes/meme.svg",
+        "subtext": "This is an individual prize.",
+        "contents": ["Totally a secret"]
+      }
+
+    ],
+    "sponsor": []
+  }
+}

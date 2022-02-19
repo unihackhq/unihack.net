@@ -11,8 +11,11 @@ import HomeCard from '@components/home-card';
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
-import HomeRegister from '@components/home-register';
-import { JudgingCriteria } from '@components/judging-criteria';
+import scheduleData from '@content/events/2022/schedule.json';
+import prizesData from '@content/events/2022/prizes.json';
+import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
+import EventChecklist from '@sections/event-info/event-checklist';
+import Prizes from '@sections/event-info/prizes/prizes';
 
 const Index = () => (
   <div>
@@ -23,20 +26,23 @@ const Index = () => (
       <div className={styles.index}>
         <BrandHero />
         <div className={styles.grid}>
-          <HomeRegister />
+          <div className={styles.row}>
+            <EventSchedule data={scheduleData} />
+            <EventChecklist />
+          </div>
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
               title={
                 <>
-                  Looking for inspiration?
+                  Looking for team members?
                   <br />
-                  See what people did last year!
+                  Join the Discord!
                 </>
               }
               placeholderColor="purple"
-              buttonLink="/events/2021"
-              buttonText="Revisit UNIHACK 2021"
+              buttonLink="https://discord.gg/c5WkvETkj8"
+              buttonText="Visit the #team-finder channel"
             />
             <HomeCard
               image={faqsImage}
@@ -54,7 +60,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <JudgingCriteria />
+      <Prizes data={prizesData.prizes} />
       <div className={styles.sponsors}>
         <div className={styles.grid}>
           <Sponsors

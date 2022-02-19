@@ -10,16 +10,16 @@ type PropTypes = {
   data: PrizeData;
 };
 
-const Prizes = ({ data }: PropTypes) => {
-  const mainPrizes = data.main.map((prize) => {
+const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
+  const mainPrizes = main.map((prize) => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
-  const categoryPrizes = data.category.map((prize) => {
+  const categoryPrizes = category.map((prize) => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
-  const sponsorPrizes = data.sponsor.map((prize) => {
+  const sponsorPrizes = sponsor.map((prize) => {
     return <Prize key={prize.title} prize={prize} />;
   });
 
@@ -42,10 +42,12 @@ const Prizes = ({ data }: PropTypes) => {
             <H2>Category Prizes</H2>
             <div className={styles['prize-grid']}>{categoryPrizes}</div>
           </Stack>
-          <Stack size="medium" className="prize-section">
-            <H2>Sponsor Prizes</H2>
-            <div className={styles['prize-grid']}>{sponsorPrizes}</div>
-          </Stack>
+          {sponsor.length > 0 && (
+            <Stack size="medium" className="prize-section">
+              <H2>Sponsor Prizes</H2>
+              <div className={styles['prize-grid']}>{sponsorPrizes}</div>
+            </Stack>
+          )}
         </Stack>
       </div>
     </Stack>

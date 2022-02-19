@@ -2,4 +2,7 @@
 
 .schedule {
   width: 100%;
+  flex: 1;
+  background: $midori;
+  padding: $base * 2 $base * 4;
 }
