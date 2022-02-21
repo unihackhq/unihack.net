@@ -37,8 +37,8 @@
         "contents": ["Wacom One tablet for each team member"]
       },
       {
-        "title": "Best Social Impact",
-        "description": "The best idea that addresses a pressing issue in our society today.",
+        "title": "Local Impact Prize",
+        "description": "The best idea that addresses an issue in your local community.",
         "imagePath": "/images/prizes/best-social-impact.svg",
         "contents": ["Frank Green Tap-to-Pay Reusable Cup for each team member"]
       },
@@ -77,6 +77,36 @@
       }
 
     ],
-    "sponsor": []
+    "sponsor": [
+      {
+        "title": "Global Social Impact Prize",
+        "description": "The best idea that addresses one of the UN Sustainable Development Goals or antoehr global issue in our society today",
+        "imagePath": "/images/sponsors/Atlassian.svg",
+        "contents": [
+          "TBA"
+        ]
+      },
+      {
+        "title": "The Customer Experience Award",
+        "description": "Awarded to the team who delivers the project that has the best customer experience for its users",
+        "imagePath": "/images/sponsors/Zendesk.svg",
+        "contents": [
+          "$300 Coles Myer Gift Card for each team member"
+        ]
+      },
+      {
+        "title": "Engineering Excellence Prize",
+        "description": "Engineers, we want to see you innovate in solving problems and demonstrate passion in the ways you can create and deliver your solution",
+        "imagePath": "/images/sponsors/Macquarie.svg",
+        "contents": [
+          "A pair of Apple AirPod Pros for each team member",
+          "A session with Macquarie engineers with tech experience relevant to your team"
+        ]
+      },
+      {
+        "title": "TBA",
+        "description": "More prizes will be announced soon..."
+      }
+    ]
   }
 }

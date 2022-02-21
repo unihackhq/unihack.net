@@ -13,20 +13,24 @@ export const Prize = ({ prize }: PropTypes) => {
     <div className={styles.prize}>
       <Stack size="small" className={styles.header}>
         <div className={styles['header-title']}>
-          <img src={prize.imagePath} alt="" />
+          {prize.imagePath && <img src={prize.imagePath} alt="" />}
           <H3>{prize.title}</H3>
         </div>
         {prize.description && <Text>{prize.description}</Text>}
         {prize.subtext && <Subtext>{prize.subtext}</Subtext>}
       </Stack>
-      <hr className={styles.divider} />
-      <div className={styles['prize-content']}>
-        <Stack size="xsmall">
-          {prize.contents.map((prizeContent) => {
-            return <Text key={prizeContent}>{prizeContent}</Text>;
-          })}
-        </Stack>
-      </div>
+      {prize.contents && (
+        <>
+          <hr className={styles.divider} />
+          <div className={styles['prize-content']}>
+            <Stack size="xsmall">
+              {prize.contents.map((prizeContent) => {
+                return <Text key={prizeContent}>{prizeContent}</Text>;
+              })}
+            </Stack>
+          </div>
+        </>
+      )}
     </div>
   );
 };
