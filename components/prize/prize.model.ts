@@ -3,6 +3,6 @@ export type PrizeModel = {
   description?: string;
   subtext?: string;
   individual?: boolean;
-  imagePath: string;
-  contents: string[];
+  imagePath?: string;
+  contents?: string[];
 }
