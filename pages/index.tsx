@@ -15,7 +15,7 @@ import prizesData from '@content/events/2022/prizes.json';
 import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
 import EventChecklist from '@sections/event-info/event-checklist';
 import Prizes from '@sections/event-info/prizes/prizes';
-import Stream from '@sections/stream/stream';
+import BrandHero from '@sections/brand-hero/brand-hero';
 
 const Index = () => (
   <div>
@@ -24,7 +24,8 @@ const Index = () => (
     </Head>
     <Page>
       <div className={styles.index}>
-        <Stream />
+        <BrandHero />
+
         <div className={styles.grid}>
           <div className={styles.row}>
             <EventSchedule data={scheduleData} />
