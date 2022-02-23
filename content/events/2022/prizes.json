@@ -87,11 +87,19 @@
         ]
       },
       {
-        "title": "The Customer Experience Award",
-        "description": "Awarded to the team who delivers the project that has the best customer experience for its users",
-        "imagePath": "/images/sponsors/Zendesk.svg",
+        "title": "Most Scalable Prize",
+        "description": "Do you have a big dream? Are you someone who likes to think large? The most scalable hack will be awarded to the team that is able to roll out their idea on scale in a big kind of way! This could be via streamlining, outsourcing, automation, or speed!",
+        "imagePath": "/images/sponsors/Bukalapak.svg",
         "contents": [
-          "$300 Coles Myer Gift Card for each team member"
+          "An internship with Bukalapak for each team member"
+        ]
+      },
+      {
+        "title": "Food Waste Warrior Prize",
+        "description": "There's enough food produced in the world to feed everyone - and a third of food produced is wasted. This prize goes to the team that can solve the problem of food wastage at any point in the food supply chain.",
+        "imagePath": "/images/sponsors/Fresho.svg",
+        "contents": [
+          "TBA"
         ]
       },
       {
@@ -124,13 +132,14 @@
         ]
       },
       {
-        "title": "Food Waste Warrior Prize",
-        "description": "There's enough food produced in the world to feed everyone - and a third of food produced is wasted. This prize goes to the team that can solve the problem of food wastage at any point in the food supply chain.",
-        "imagePath": "/images/sponsors/Fresho.svg",
+        "title": "The Customer Experience Award",
+        "description": "Awarded to the team who delivers the project that has the best customer experience for its users",
+        "imagePath": "/images/sponsors/Zendesk.svg",
         "contents": [
-          "TBA"
+          "$300 Coles Myer Gift Card for each team member"
         ]
       },
+      
       {
         "title": "Ig UNIHACK Prize",
         "description": "This is a satiric prize awarded to the unusual or trivial hacks, the aim being to \"honour achievements that first make people laugh, and then make them think.\"",
