@@ -27,7 +27,7 @@ const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
     <Stack size="xlarge" className={styles['event-page-prizes']}>
       <Stack size="xlarge" className={styles['event-page-prizes-content']}>
         <Stack size="small">
-          <HL>Prizes</HL>
+          <HL id="prizes">Prizes</HL>
           <Text>What you can win and how to win them.</Text>
         </Stack>
         <Stack size="medium" className={styles['prize-section']}>

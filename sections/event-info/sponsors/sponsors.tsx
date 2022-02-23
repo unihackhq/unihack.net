@@ -19,7 +19,7 @@ const Sponsors = ({ data, isHomepage, className }: PropTypes) => {
     <section className={cx({ 'event-page-sponsors': !isHomepage }, className)}>
       <Stack size="xlarge" className={styles['event-page-sponsors-content']}>
         <Stack size="small">
-          <HL>Sponsors</HL>
+          <HL id="sponsors">Sponsors</HL>
           <Text>Without whom this event would not be possible...</Text>
         </Stack>
         <Stack size="xlarge">

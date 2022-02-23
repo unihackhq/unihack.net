@@ -12,10 +12,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // const menuItems: MenuItemI[] = [
+  //   { text: '2022', href: '/' },
+  //   { text: 'Past Events', href: '/events' },
+  //   { text: 'Sponsor', href: '/sponsorship' },
+  //   { text: 'FAQs', href: '/faq' },
+  // ];
+
   const menuItems: MenuItemI[] = [
     { text: '2022', href: '/' },
-    { text: 'Past Events', href: '/events' },
-    { text: 'Sponsor', href: '/sponsorship' },
+    { text: 'Prizes', href: '/#prizes' },
+    { text: 'Sponsors', href: '/#sponsors' },
     { text: 'FAQs', href: '/faq' },
   ];
 
