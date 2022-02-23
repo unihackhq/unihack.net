@@ -6,7 +6,8 @@
         "imagePath": "/images/prizes/first-place.svg",
         "contents": [
           "$4000 cash",
-          "Amazon Echo Show 8 for each team member"
+          "Amazon Echo Show 8 for each team member",
+          "$100 MyDeal gift card for each team member"
         ]
       },
       {
@@ -92,6 +93,14 @@
         "imagePath": "/images/sponsors/Bukalapak.svg",
         "contents": [
           "An internship with Bukalapak for each team member"
+        ]
+      },
+      {
+        "title": "Most Innovative Hack",
+        "description": "We're on the hunt for the most innovative hack which sparks enthusiasm, improves quality of life and helps conserve natural resources whilst through an honest and fair approach.",
+        "imagePath": "/images/sponsors/Bosch.svg",
+        "contents": [
+          "Two 3D printers for the entire team"
         ]
       },
       {
