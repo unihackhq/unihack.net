@@ -6,7 +6,8 @@
         "imagePath": "/images/prizes/first-place.svg",
         "contents": [
           "$4000 cash",
-          "Amazon Echo Show 8 for each team member"
+          "Amazon Echo Show 8 for each team member",
+          "$100 MyDeal gift card for each team member"
         ]
       },
       {
@@ -83,15 +84,31 @@
         "description": "The best idea that addresses one of the UN Sustainable Development Goals or another global issue in our society today",
         "imagePath": "/images/sponsors/Atlassian.svg",
         "contents": [
-          "TBA"
+          "$1000 in total of JB Hi-Fi Gift Cards (for the entire team)"
         ]
       },
       {
-        "title": "The Customer Experience Award",
-        "description": "Awarded to the team who delivers the project that has the best customer experience for its users",
-        "imagePath": "/images/sponsors/Zendesk.svg",
+        "title": "Most Scalable Prize",
+        "description": "Do you have a big dream? Are you someone who likes to think large? The most scalable hack will be awarded to the team that is able to roll out their idea on scale in a big kind of way! This could be via streamlining, outsourcing, automation, or speed!",
+        "imagePath": "/images/sponsors/Bukalapak.svg",
         "contents": [
-          "$300 Coles Myer Gift Card for each team member"
+          "An internship with Bukalapak for each team member"
+        ]
+      },
+      {
+        "title": "Most Innovative Hack",
+        "description": "We're on the hunt for the most innovative hack which sparks enthusiasm, improves quality of life and helps conserve natural resources whilst through an honest and fair approach.",
+        "imagePath": "/images/sponsors/Bosch.svg",
+        "contents": [
+          "A 3D printer for the entire team"
+        ]
+      },
+      {
+        "title": "Food Waste Warrior Prize",
+        "description": "There's enough food produced in the world to feed everyone - and a third of food produced is wasted. This prize goes to the team that can solve the problem of food wastage at any point in the food supply chain.",
+        "imagePath": "/images/sponsors/Fresho.svg",
+        "contents": [
+          "$100 Rockpool Gift Card for each team member"
         ]
       },
       {
@@ -104,8 +121,43 @@
         ]
       },
       {
-        "title": "TBA",
-        "description": "More prizes will be announced soon..."
+        "title": "Creative Pitch Prize",
+        "description": "We are looking for the most compelling and quality pitch! Tell us your story, sell your idea to us and don't be afraid to get creative and incorporate other digital tools and technology!",
+        "imagePath": "/images/sponsors/PwC.svg",
+        "contents": [
+          "Jabra Elite 85T True Wireless ANC In-Ear Headphones",
+          "Samsung Galaxy Watch 3",
+          "Logitech G PRO X Mechanical Gaming Keyboard",
+          "(Up to two each of each prize to cater for a team of up to six.)"
+        ]
+      },
+      {
+        "title": "Data Analytics Prize",
+        "description": "Calling all data lovers! We are looking for compelling insights derived from data. Incorporate data analytics and visualisation incorporated as part of your final solution and as part of the pitch.",
+        "imagePath": "/images/sponsors/PwC.svg",
+        "contents": [
+          "Logitech G PRO X Superlight Wireless Gaming Mouse",
+          "Beats Fit Pro True Wireless Noise Cancelling Earbuds",
+          "Fitbit Versa 2 Smart Fitness Watch",
+          "(Up to two each of each prize to cater for a team of up to six.)"
+        ]
+      },
+      {
+        "title": "The Customer Experience Award",
+        "description": "Awarded to the team who delivers the project that has the best customer experience for its users",
+        "imagePath": "/images/sponsors/Zendesk.svg",
+        "contents": [
+          "$300 Coles Myer Gift Card for each team member"
+        ]
+      },
+      
+      {
+        "title": "Ig UNIHACK Prize",
+        "description": "This is a satiric prize awarded to the unusual or trivial hacks, the aim being to \"honour achievements that first make people laugh, and then make them think.\"",
+        "imagePath": "/images/prizes/unihack-alumni.png",
+        "contents": [
+          "TBA"
+        ]
       }
     ]
   }

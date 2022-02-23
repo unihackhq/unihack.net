@@ -3,7 +3,6 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
-import BrandHero from '@sections/brand-hero/brand-hero';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Sponsor from '@components/sponsor/sponsor';
 import HomeCard from '@components/home-card';
@@ -16,6 +15,7 @@ import prizesData from '@content/events/2022/prizes.json';
 import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
 import EventChecklist from '@sections/event-info/event-checklist';
 import Prizes from '@sections/event-info/prizes/prizes';
+import BrandHero from '@sections/brand-hero/brand-hero';
 
 const Index = () => (
   <div>
@@ -25,6 +25,7 @@ const Index = () => (
     <Page>
       <div className={styles.index}>
         <BrandHero />
+
         <div className={styles.grid}>
           <div className={styles.row}>
             <EventSchedule data={scheduleData} />

@@ -5,6 +5,7 @@ import styles from './typography.module.scss';
 const cx = classNames.bind(styles);
 
 type HeadingProps = {
+  id?: string;
   children: ReactNode;
   className?: string;
   underlineColor?: 'yellow' | 'midori' | 'pacific' | 'salmon';
@@ -19,7 +20,9 @@ const HXL = (props: HeadingProps) => (
 );
 
 const HL = (props: HeadingProps) => (
-  <h1 className={cx('hl', props.className)}>{props.children}</h1>
+  <h1 id={props.id} className={cx('hl', props.className)}>
+    {props.children}
+  </h1>
 );
 
 const H1 = (props: HeadingProps) => (
@@ -58,7 +61,7 @@ const Text = (props: TextProps) => {
 };
 
 const Subtext = (props: TextProps) => {
-  return <p className={cx('small', props.className)}>{props.children}</p>
-}
+  return <p className={cx('small', props.className)}>{props.children}</p>;
+};
 
 export { HXL, HL, H1, H2, H2XL, H3, H4, Text, Subtext };

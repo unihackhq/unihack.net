@@ -9,19 +9,6 @@ const EventChecklist = () => {
       <ul>
         <li>
           <div className={styles['checklist-content']}>
-            <h3>Register yourself!</h3>
-            <p>You can still sign and participate on the day!</p>
-          </div>
-          <ButtonLink
-            type="primary"
-            theme="light"
-            href="https://events.humanitix.com/unihack-2022"
-          >
-            Sign Up
-          </ButtonLink>
-        </li>
-        <li>
-          <div className={styles['checklist-content']}>
             <h3>Register your team!</h3>
             <p>So we know you (and your friends) are competing!</p>
             <p>
