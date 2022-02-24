@@ -1,0 +1,159 @@
+{
+  "judges": [
+    {
+      "title": "Main Prize",
+      "panel": [
+        {
+          "name": "Jeanette Cheah",
+          "title": "CEO & Founder",
+          "org": "Hacker Exchange",
+          "imagePath": "images/judges/jeanette-cheah.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://hacker.exchange/"
+            },
+            {
+              "name": "Instagram",
+              "href": "https://instagram.com/hackerexchange"
+            }
+          ]
+        },
+        {
+          "name": "David Lei",
+          "title": "Software Engineer",
+          "org": "Google",
+          "imagePath": "images/judges/david-lei.png"
+        },
+        {
+          "name": "Bec Martin",
+          "title": "CTO",
+          "org": "MailTumble",
+          "imagePath": "images/judges/bec-martin.jpg",
+          "links": [
+            {
+              "name": "LinkedIn",
+              "href": "https://www.linkedin.com/in/bec-martin-8806a938/"
+            }
+          ]
+        },
+        {
+          "name": "Milan Pintar",
+          "title": "Senior Product Manager",
+          "org": "Telstra",
+          "imagePath": "images/judges/milan-pintar.jpeg"
+        },
+        {
+          "name": "Patrick Shaw",
+          "title": "Software Engineer",
+          "org": "Atlassian",
+          "imagePath": "images/judges/patrick-shaw.jpg"
+        },
+        {
+          "name": "Samantha Wong",
+          "title": "Co-founder",
+          "org": "Pory.io",
+          "imagePath": "images/judges/samantha-wong.png",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://pory.io"
+            }
+          ]
+        },
+        {
+          "name": "Long Zheng",
+          "title": "Head of Product - Podcasting",
+          "org": "Triton Digital",
+          "imagePath": "images/judges/long-zheng.jpg",
+          "links": [
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/longzheng"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Most Creative Idea",
+      "panel": [
+        {
+          "name": "Robert Koch",
+          "title": "Cloud Architect",
+          "org": "Amazon Web Services",
+          "imagePath": "images/judges/robert-koch.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://me.kochie.io"
+            }
+          ]
+        }
+        
+      ]
+    },
+    {
+      "title": "Best Design",
+      "panel": [
+        {
+          "name": "Anthony Roberts",
+          "title": "Product Engineer",
+          "org": "Mindset Health",
+          "imagePath": "images/judges/anthony-roberts.png",
+          "links": [
+            {
+              "name": "LinkedIn",
+              "href": "https://www.linkedin.com/in/anthonycr0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Local Impact Hack",
+      "panel": [
+        {
+          "name": "Kate Illsley",
+          "title": "Practice Lead - Partnerships & Experience",
+          "org": "Method Recruitment",
+          "imagePath": "images/judges/kate-illsley.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://www.kateillsley.com.au/"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/kate_illsley"
+            },
+            {
+              "name": "LinkedIn",
+              "href": "https://www.linkedin.com/in/kateillsley/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "First Timers Prize",
+      "panel": [
+        {
+          "name": "James Dale",
+          "title": "App Developer",
+          "imagePath": "images/judges/james-dale.jpeg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://jamesdale.com.au"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/_JamesDale"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

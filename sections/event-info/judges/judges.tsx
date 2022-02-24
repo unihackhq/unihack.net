@@ -25,7 +25,7 @@ const Judges = ({ data }: PropTypes) => {
     <Stack size="xlarge" className={styles['event-page-judges']}>
       <Stack size="xlarge" className={styles['event-page-judges-content']}>
         <Stack size="small">
-          <HL id="judges">Judges</HL>
+          <HL>Judges</HL>
           <Text>Here to be impressed, so make an impression.</Text>
         </Stack>
         <div className={styles['event-page-judges-grid']}>

@@ -4,7 +4,7 @@
 .event-page-judges {
   background-color: $secondary;
   margin-top: 64px;
-  padding-bottom: 64px;
+  padding: $base * 4;
 
   &-content {
     @include page-margin;
