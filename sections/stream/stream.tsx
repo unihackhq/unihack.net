@@ -61,7 +61,13 @@ const Stream = () => {
         <Stack size="medium">
           <H2>{timeLeft}</H2>
           <div className={styles['stream-container']}>
-            <TwitchPlayer muted width="100%" height="100%" channel="unihack" />
+            <TwitchPlayer
+              muted
+              autoplay
+              width="100%"
+              height="100%"
+              channel="unihack"
+            />
           </div>
         </Stack>
       </div>

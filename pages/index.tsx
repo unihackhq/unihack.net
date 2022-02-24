@@ -12,10 +12,12 @@ import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
 import scheduleData from '@content/events/2022/schedule.json';
 import prizesData from '@content/events/2022/prizes.json';
+import judgesData from '@content/events/2022/judges.json';
 import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
 import EventChecklist from '@sections/event-info/event-checklist';
+import EventJudges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
-import BrandHero from '@sections/brand-hero/brand-hero';
+import Stream from '@sections/stream/stream';
 
 const Index = () => (
   <div>
@@ -24,8 +26,7 @@ const Index = () => (
     </Head>
     <Page>
       <div className={styles.index}>
-        <BrandHero />
-
+        <Stream />
         <div className={styles.grid}>
           <div className={styles.row}>
             <EventSchedule data={scheduleData} />
@@ -62,6 +63,7 @@ const Index = () => (
         </div>
       </div>
       <Prizes data={prizesData.prizes} />
+      <EventJudges data={judgesData.judges} />
       <div className={styles.sponsors}>
         <div className={styles.grid}>
           <Sponsors
