@@ -151,7 +151,12 @@
           "$300 Coles Myer Gift Card for each team member"
         ]
       },
-      
+      {
+        "title": "Best Use of Twilio",
+        "description": "For the hack that best makes use of the Twilio API",
+        "imagePath": "/images/sponsors/Twilio.svg",
+        "contents": ["AirPods for each team member"]
+      },
       {
         "title": "Ig UNIHACK Prize",
         "description": "This is a satiric prize awarded to the unusual or trivial hacks, the aim being to \"honour achievements that first make people laugh, and then make them think.\"",
