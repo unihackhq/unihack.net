@@ -4,7 +4,7 @@ import styles from './stream.module.scss';
 import { H2 } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 
-function calculateTimeLeft() {
+export function calculateTimeLeft() {
   // Date object is for Sydney/Melbourne time 7th March 2021 5pm
   const start = +new Date('2022/02/25 18:30 +1100');
   const now = +new Date();

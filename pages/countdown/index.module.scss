@@ -1,0 +1,35 @@
+@import '../../styles/styles.scss';
+
+.countdown {
+  height: 100vh;
+  width: 100vw;
+  background: $secondary;
+  padding: $base * 4;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin: $base * 2;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $fonts;
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  .big {
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0 auto 12px auto;
+    opacity: 1;
+  }
+}
