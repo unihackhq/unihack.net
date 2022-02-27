@@ -10,7 +10,6 @@ import HomeCard from '@components/home-card';
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import sponsorData from '@content/events/2022/sponsors.json';
-import scheduleData from '@content/events/2022/schedule.json';
 import prizesData from '@content/events/2022/prizes.json';
 import judgesData from '@content/events/2022/judges.json';
 import EventJudges from '@sections/event-info/judges/judges';
