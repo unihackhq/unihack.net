@@ -13,8 +13,6 @@ import sponsorData from '@content/events/2022/sponsors.json';
 import scheduleData from '@content/events/2022/schedule.json';
 import prizesData from '@content/events/2022/prizes.json';
 import judgesData from '@content/events/2022/judges.json';
-import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
-import EventChecklist from '@sections/event-info/event-checklist';
 import EventJudges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Stream from '@sections/stream/stream';
@@ -29,35 +27,24 @@ const Index = () => (
         <Stream />
         <div className={styles.grid}>
           <div className={styles.row}>
-            <EventSchedule data={scheduleData} />
-            <EventChecklist />
-          </div>
-          <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
               title={
                 <>
-                  Looking for team members?
-                  <br />
-                  Join the Discord!
+                  Have your say <br />
+                  Vote for People's Choice!
                 </>
               }
               placeholderColor="purple"
-              buttonLink="https://discord.gg/c5WkvETkj8"
-              buttonText="Visit the #team-finder channel"
+              buttonLink="https://unihack2022.devpost.com"
+              buttonText="Visit the Devpost"
             />
             <HomeCard
               image={faqsImage}
-              title={
-                <>
-                  Questions about UNIHACK?
-                  <br />
-                  We have answers.
-                </>
-              }
+              title={<>Looking to skill up or give back to the community?</>}
               placeholderColor="pacific"
-              buttonLink="/faq"
-              buttonText="Our FAQs"
+              buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
+              buttonText="Join the team today"
             />
           </div>
         </div>
