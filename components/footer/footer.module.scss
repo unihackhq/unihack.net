@@ -63,6 +63,12 @@
         }
       }
     }
+    .hosting {
+      margin-top: $base * 4;
+      img {
+        height: 36px;
+      }
+    }
   }
 
   &-info,

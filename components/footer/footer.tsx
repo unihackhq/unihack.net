@@ -53,6 +53,11 @@ const Footer = () => (
           <Text>© {new Date().getFullYear()} UNIHACK Incorporated</Text>
           <Text>Proudly made in Melbourne 🇦🇺</Text>
         </div>
+        <div className={styles.hosting}>
+          <a href="https://vercel.com/?utm_source=team_EPsCE3tmBMa6zenfP9k7v3VK&utm_campaign=oss">
+            <img src="/powered-by-vercel.svg" />
+          </a>
+        </div>
       </div>
       <div className={styles['footer-social']}>
         <ul>
