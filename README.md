@@ -6,7 +6,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Powered by Vercel](/public/powered-by-vercel.svg])](https://vercel.com/?utm_source=team_EPsCE3tmBMa6zenfP9k7v3VK&utm_campaign=oss)
+[![Powered by Vercel](/public/powered-by-vercel.svg)](https://vercel.com/?utm_source=team_EPsCE3tmBMa6zenfP9k7v3VK&utm_campaign=oss)
 
 This is the source code that powers the [unihack.net](unihack.net) website. This
 website is running on the [Next.js][next.js] framework, using both [TypeScript][typescript] and [SASS][sass].
