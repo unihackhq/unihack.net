@@ -35,7 +35,7 @@ export const Winner = ({ winner }: PropTypes) => (
               className={styles.prize}
             >
               <div className={styles['prize-name']}>
-                <img src={prize.imagePath} alt="" />
+                <span><img src={prize.imagePath} alt={prize.title} /></span>
                 <Text bold>{prize.title}</Text>
               </div>
             </div>

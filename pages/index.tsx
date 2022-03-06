@@ -15,6 +15,8 @@ import judgesData from '@content/events/2022/judges.json';
 import EventJudges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Stream from '@sections/stream/stream';
+import winnersData from '@content/events/2022/winners.json';
+import Winners from '@sections/event-info/winners/winners';
 
 const Index = () => (
   <div>
@@ -28,25 +30,21 @@ const Index = () => (
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
-              title={
-                <>
-                  Have your say <br />
-                  Vote for People's Choice!
-                </>
-              }
+              title="Get the latest news about our future events"
               placeholderColor="purple"
-              buttonLink="https://unihack2022.devpost.com"
-              buttonText="Visit the Devpost"
+              buttonLink="https://discord.gg/MfuzHurGpd"
+              buttonText="Join our Discord"
             />
             <HomeCard
               image={faqsImage}
-              title={<>Looking to skill up or give back to the community?</>}
+              title={<>Interested in joining the team?<br />We'd love to have you!</>}
               placeholderColor="pacific"
               buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
-              buttonText="Join the team today"
+              buttonText="Submit your application!"
             />
           </div>
         </div>
+        <Winners data={winnersData} devpostUrl="https://unihack2022.devpost.com" />
       </div>
       <Prizes data={prizesData.prizes} />
       <EventJudges data={judgesData.judges} />
