@@ -30,14 +30,14 @@ const Index = () => (
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
-              title="Join the UNIHACK Community on Discord!"
+              title="Get the latest news about our future events"
               placeholderColor="purple"
               buttonLink="https://discord.gg/MfuzHurGpd"
-              buttonText="Join Discord"
+              buttonText="Join our Discord"
             />
             <HomeCard
               image={faqsImage}
-              title="Interested in joining the team?"
+              title={<>Interested in joining the team?<br />We'd love to have you!</>}
               placeholderColor="pacific"
               buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
               buttonText="Submit your application!"
