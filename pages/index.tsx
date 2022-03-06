@@ -30,26 +30,21 @@ const Index = () => (
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
-              title={
-                <>
-                  Have your say <br />
-                  Vote for People's Choice!
-                </>
-              }
+              title="Join the UNIHACK Community on Discord!"
               placeholderColor="purple"
-              buttonLink="https://unihack2022.devpost.com"
-              buttonText="Visit the Devpost"
+              buttonLink="https://discord.gg/MfuzHurGpd"
+              buttonText="Join Discord"
             />
             <HomeCard
               image={faqsImage}
-              title={<>Looking to skill up or give back to the community?</>}
+              title="Interested in joining the team?"
               placeholderColor="pacific"
               buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
-              buttonText="Join the team today"
+              buttonText="Submit your application!"
             />
           </div>
-        </div><Winners data={winnersData} devpostUrl="https://unihack2022.devpost.com" />
-
+        </div>
+        <Winners data={winnersData} devpostUrl="https://unihack2022.devpost.com" />
       </div>
       <Prizes data={prizesData.prizes} />
       <EventJudges data={judgesData.judges} />
