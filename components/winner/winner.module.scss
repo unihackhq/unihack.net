@@ -52,7 +52,7 @@
 
     .winner-description {
       @include lg {
-        height: 56px;
+        height: $base * 10;
       }
     }
   }
@@ -78,7 +78,7 @@
       display: inline-flex;
       align-items: center;
       width: 100%;
-  
+      
   
       img {
         padding-right: $base;

@@ -15,6 +15,8 @@ import judgesData from '@content/events/2022/judges.json';
 import EventJudges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Stream from '@sections/stream/stream';
+import winnersData from '@content/events/2022/winners.json';
+import Winners from '@sections/event-info/winners/winners';
 
 const Index = () => (
   <div>
@@ -46,7 +48,8 @@ const Index = () => (
               buttonText="Join the team today"
             />
           </div>
-        </div>
+        </div><Winners data={winnersData} devpostUrl="https://unihack2022.devpost.com" />
+
       </div>
       <Prizes data={prizesData.prizes} />
       <EventJudges data={judgesData.judges} />
