@@ -1,0 +1,100 @@
+{
+  "base": "/images/team",
+  "members": [
+    {
+      "name": "Becca Chang",
+      "imagePath": "/Blank.png",
+      "role": "President"
+    },
+    {
+      "name": "Terence Huynh",
+      "imagePath": "/Terence.png",
+      "role": "Tech Lead"
+    },
+    {
+      "name": "Daniel Sykes-Turner",
+      "imagePath": "/Daniel.jpg",
+      "role": "Treasurer"
+    },
+    {
+      "name": "Nicholas Whittaker",
+      "imagePath": "/nickw.png",
+      "role": "Logistics Lead"
+    },
+    {
+      "name": "Kevin Lu",
+      "imagePath": "/blank.png",
+      "role": "Sponsorship Lead"
+    },
+    {
+      "name": "Alfie Torres",
+      "imagePath": "/Blank.png",
+      "role": "Marketing Lead"
+    },
+    {
+      "name": "Pauline Mascarinas",
+      "imagePath": "/Blank.png",
+      "role": "Marketing Officer"
+    },
+    {
+      "name": "Milindi Kodikara",
+      "imagePath": "/mili.jpeg",
+      "role": "Marketing Officer"
+    },
+    {
+      "name": "Joey Yuen",
+      "imagePath": "/Blank.png",
+      "role": "Marketing Officer"
+    },
+    {
+      "name": "Nick Ang",
+      "imagePath": "/nicka.jpeg",
+      "role": "Tech Officer"
+    },
+    {
+      "name": "Austin Pham",
+      "imagePath": "/Blank.png",
+      "role": "Tech Officer"
+    },
+    {
+      "name": "Sameer Syed",
+      "imagePath": "/Blank.png",
+      "role": "Tech Officer"
+    },
+    {
+      "name": "Madeline Long",
+      "imagePath": "/Blank.png",
+      "role": "Tech Officer"
+    },
+    {
+      "name": "Uday Kumar",
+      "imagePath": "/Blank.png",
+      "role": "Logistics Officer"
+    },
+    {
+      "name": "Yagebu Xie",
+      "imagePath": "/yagebu.jpg",
+      "role": "Logistics Officer"
+    },
+    {
+      "name": "Karl-Samouth Cheam",
+      "imagePath": "/Blank.png",
+      "role": "Logistics Officer"
+    },
+    {
+      "name": "Bryan Wong",
+      "imagePath": "/Blank.png",
+      "role": "Sponsorship Officer"
+    },
+    {
+      "name": "Palaash Srivastava",
+      "imagePath": "/Blank.png",
+      "role": "Sponsorship Officer"
+    },
+    {
+      "name": "Irene Ung",
+      "imagePath": "/Blank.png",
+      "role": "Sponsorship Officer"
+    }
+  ]
+}

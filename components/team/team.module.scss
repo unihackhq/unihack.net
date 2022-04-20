@@ -1,0 +1,60 @@
+@import '../../styles/styles.scss';
+
+.team {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 24px;
+
+  @include ksm {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+
+  @include sm {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+
+  @include md {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 32px 48px;
+  }
+
+  .images {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: $base *10;
+    border: 3px solid $salmon;
+
+    &:nth-of-type(4n + 2) {
+      border: 3px solid $midori;
+    }
+
+    &:nth-of-type(4n + 3) {
+      border: 3px solid $pacific;
+    }
+
+    &:nth-of-type(4n + 4) {
+      border: 3px solid $primary;
+    }
+  }
+
+  .content {
+    h3 {
+      margin-top: $base;
+      font-size: 13px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+}

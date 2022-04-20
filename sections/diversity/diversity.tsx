@@ -34,10 +34,19 @@ const Diversity = () => (
         <div className="actions">
           <ButtonLink
             theme="light"
-            href="https://github.com/unihackhq/rules/blob/master/code-of-conduct.md"
+            href="/conduct"
             type="secondary"
           >
-            Read the Hack Code of Conduct
+            Read our Code of Conduct
+          </ButtonLink>
+        </div>
+        <div className="actions">
+          <ButtonLink
+            theme="light"
+            href="/conduct"
+            type="secondary"
+          >
+            Apply for our Diversity Scholarship
           </ButtonLink>
         </div>
       </Stack>

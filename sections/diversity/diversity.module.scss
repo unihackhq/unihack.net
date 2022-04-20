@@ -6,7 +6,6 @@
   flex-direction: column;
   padding-top: $base * 7;
   padding-bottom: $base * 7;
-  background-color: $white;
 
   &-content {
     @include page-margin;
@@ -15,6 +14,7 @@
     align-items: center;
 
     h2 {
+      margin-top: $base * 5;
       margin-bottom: $base * 3;
     }
 
@@ -30,4 +30,8 @@
     }
 
   }
+}
+
+.diversity-content {
+    border-top: 1px solid #e0e0e0;
 }
