@@ -1,0 +1,177 @@
+[
+  {
+    "hack": {
+      "name": "DJ PAL",
+      "description": "DJ PAL matches your music to the mood of the room.",
+      "videoPath": "https://www.youtube.com/watch?v=dmX9bsaMZ6M",
+      "devpostUrl": "https://devpost.com/software/dj-pal",
+      "prizes": [
+        { "title": "1st Place", "imagePath": "/images/prizes/first-place.svg" },
+        { "title": "Creative Pitch Prize", "imagePath": "/images/sponsors/pwc.svg" },
+        { "title": "Ig UNIHACK Prize", "imagePath": "/images/prizes/unihack-alumni.png" }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Greenways",
+      "description": "Compare your personal and local community's efforts in reducing their carbon footprint.",
+      "videoPath": "https://www.youtube.com/watch?v=-5ehivAe_mU",
+      "devpostUrl": "https://devpost.com/software/greenways-bkytwg",
+      "prizes": [
+        { "title": "2nd Place", "imagePath": "/images/prizes/second-place.svg" },
+        {
+          "title": "Best Design",
+          "imagePath": "/images/prizes/best-design.svg"
+        },
+        {
+          "title": "Best Global Social Impact Hack",
+          "imagePath": "/images/sponsors/Atlassian.svg"
+        },
+        {
+          "title": "Most Scalable Hack",
+          "imagePath": "/images/sponsors/Bukalapak.svg"
+        },
+        {
+          "title": "Most Innovative Hack",
+          "imagePath": "/images/sponsors/Bosch.svg"
+        },
+        {
+          "title": "Commit to Greatness Prize",
+          "imagePath": "/images/sponsors/Tyro.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "S2T",
+      "description": "Reduce communication barriers using AI between AUSLAN and non-AUSLAN people.",
+      "videoPath": "https://www.youtube.com/watch?v=RzBJdXrmFrA",
+      "devpostUrl": "https://devpost.com/software/s2t",
+      "prizes": [
+        { "title": "3rd Place", "imagePath": "/images/prizes/third-place.svg" },
+        {
+          "title": "People's Choice",
+          "imagePath": "/images/prizes/people-choice.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Trashy",
+      "description": "Helping society move towards a more circular economy, by providing a platform to obtain recyclable waste.",
+      "videoPath": "https://www.youtube.com/watch?v=C9I6n03z1jM",
+      "devpostUrl": "https://devpost.com/software/new-leaf-qgxbwh",
+      "prizes": [
+        {
+          "title": "First Timers' Prize",
+          "imagePath": "/images/prizes/first-time.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Zom-B-Gone",
+      "description": " Don't become a zombie. Break your mindless usage habits.",
+      "videoPath": "https://www.youtube.com/watch?v=UiO_hqI4FBc",
+      "devpostUrl": "https://devpost.com/software/zom-b-gone",
+      "prizes": [
+        {
+          "title": "Most Creative Idea",
+          "imagePath": "/images/prizes/most-creative.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "CrowdMap",
+      "description": " Empowering sustainable cities and communities through fast geospatial reporting and citizen science.",
+      "videoPath": "https://www.youtube.com/watch?v=-yS2HtbtZBI",
+      "devpostUrl": "https://devpost.com/software/crowdmap-qmd0ob",
+      "prizes": [
+        {
+          "title": "Local Impact Prize",
+          "imagePath": "/images/prizes/best-social-impact.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Food Frog",
+      "description": "Organise your cooking and reduce food waste whilst keeping an eye on the environment AND your wallet!",
+      "videoPath": "https://www.youtube.com/watch?v=-Hi49qtzTPQ",
+      "devpostUrl": "https://devpost.com/software/unobtainable-magic-tesseract",
+      "prizes": [
+        {
+          "title": "Most Entertaining Pitch",
+          "imagePath": "/images/prizes/best-pitch.svg"
+        },
+        {
+          "title": "The Customer Experience Award",
+          "imagePath": "/images/sponsors/Zendesk.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Best Before",
+      "description": "Use Best Before to scan, manage, plan your food and know exactly when your food will expire.",
+      "videoPath": "https://www.youtube.com/watch?v=XAPpTjb_QBI",
+      "devpostUrl": "https://devpost.com/software/best-before-yn83l9",
+      "prizes": [
+        {
+          "title": "Food Waste Warrior Prize",
+          "imagePath": "/images/sponsors/Fresho.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "Qube",
+      "description": "Qube is an app that allows you to search, book and queue doctor appointments.",
+      "devpostUrl": "https://devpost.com/software/qube",
+      "videoPath": "https://www.youtube.com/watch?v=Li-OjXVe4dk",
+      "prizes": [
+        {
+          "title": "Engineering Excellence Prize",
+          "imagePath": "/images/sponsors/Macquarie.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "NiteLyte",
+      "description": "Let us light your path through the night!",
+      "videoPath": "https://www.youtube.com/watch?v=g3aKrzLc2zU",
+      "devpostUrl": "https://devpost.com/software/nitelyte",
+      "prizes": [
+        {
+          "title": "Best Use of Twilio",
+          "imagePath": "/images/sponsors/Twilio.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
+      "name": "MiniMelbourne",
+      "description": "Provides up-to-date information to train commuters in real time in 3D space.",
+      "videoPath": "https://www.youtube.com/watch?v=J0w6qxigvxI",
+      "devpostUrl": "https://devpost.com/software/minimebourne",
+      "prizes": [
+        {
+          "title": "Data Analytics Prize",
+          "imagePath": "/images/sponsors/PwC.svg"
+        }
+      ]
+    }
+  }
+]

@@ -1,9 +1,9 @@
 {
   "date": "25-27 February, 2022",
   "location": "Online",
-  "devpostUrl": "/",
-  "redirectToDevpost": true,
-  "hidden": true,
+  "devpostUrl": "https://unihack2022.devpost.com/project-gallery",
+  "redirectToDevpost": false,
+  "hidden": false,
   "tags": ["remote"],
   "title": "2022",
   "coverImage": "2022.svg"

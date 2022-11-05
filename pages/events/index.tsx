@@ -6,7 +6,7 @@ import styles from './events.module.scss';
 import { PastEvent } from '@sections/past-events';
 import { GetStaticProps } from 'next';
 import Filter, { Tags } from '@sections/event-filter';
-import { FC, useEffect, useMemo, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { getPastEventInfo } from './utils/directory';
 import { PastEvents } from './types';
 

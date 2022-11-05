@@ -6,7 +6,7 @@ import ButtonLink from '@components/button/button-link';
 import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
 import Image from 'next/image';
-import sponsorHero from '../../public/images/sponsor-hero.png';
+import sponsorHero from '../../../public/images/sponsor-hero.png';
 
 const SponsorHero = () => (
   <section className={styles['sponsor-hero']}>
@@ -38,7 +38,7 @@ const SponsorHero = () => (
           title="Date"
           style={styles['sponsor-hero-event-data-content']}
         >
-          February 25 - 27, 2022
+          March 2023
         </IconLabelWithTitle>
       </div>
       <ButtonLink

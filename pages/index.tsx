@@ -3,27 +3,21 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
-import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Sponsor from '@components/sponsor/sponsor';
 import HomeCard from '@components/home-card';
 
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
-import sponsorData from '@content/events/2022/sponsors.json';
-import prizesData from '@content/events/2022/prizes.json';
-import judgesData from '@content/events/2022/judges.json';
-import EventJudges from '@sections/event-info/judges/judges';
-import Prizes from '@sections/event-info/prizes/prizes';
-import Stream from '@sections/stream/stream';
+import BrandHero from '@sections/brand-hero/brand-hero';
 
 const Index = () => (
   <div>
     <Head>
-      <title>UNIHACK 2022 - February 25-27, 2022</title>
+      <title>UNIHACK 2023 - Coming Soon</title>
     </Head>
     <Page>
       <div className={styles.index}>
-        <Stream />
+        <BrandHero />
         <div className={styles.grid}>
           <div className={styles.row}>
             <HomeCard
@@ -46,17 +40,6 @@ const Index = () => (
               buttonText="Join the team today"
             />
           </div>
-        </div>
-      </div>
-      <Prizes data={prizesData.prizes} />
-      <EventJudges data={judgesData.judges} />
-      <div className={styles.sponsors}>
-        <div className={styles.grid}>
-          <Sponsors
-            data={sponsorData}
-            isHomepage={true}
-            className={styles.sponsorListing}
-          />
           <Sponsor />
         </div>
       </div>

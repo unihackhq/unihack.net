@@ -31,7 +31,6 @@ const Event = (props: EventContent) => {
             event={event as string}
             info={props.info}
           />
-          <Divider />
           <Winners data={props.winners} devpostUrl={props.info.devpostUrl} />
           <Divider />
           <Prizes data={props.prizes.prizes} />

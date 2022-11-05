@@ -7,7 +7,8 @@ export type WinnerModel = {
 export type Hack = {
   name:  string;
   description: string
-  imagePath: string;
+  imagePath?: string;
+  videoPath?: string;
   devpostUrl: string;
   prizes: Exclude<PrizeModel, 'description' | 'contents'>[]
 };
