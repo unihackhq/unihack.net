@@ -11,7 +11,6 @@ import sponsorCallout from '../../public/images/sponsor-callout.jpg';
 const SponsorPrompt = () => (
   <section className={styles['sponsor-prompt']} id="sponsor-prompt">
     <div className={styles['sponsor-prompt-container']}>
-      {/* <span className={styles['sponsor-prompt-image']}></span> */}
       <span className={styles['sponsor-prompt-image']}>
         <Image
           src={sponsorCallout}
