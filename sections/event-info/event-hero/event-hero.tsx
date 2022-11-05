@@ -28,7 +28,11 @@ const EventHero = ({ stats, event, info }: Props) => (
     <Stack size="xxlarge">
       <div className={styles['hero-header']}>
         <Stack size="medium" className={styles['hero-header-info']}>
-          <PageNavigation backLinkTitle="Home" backLinkHref="/" ignoreMargin>
+          <PageNavigation
+            backLinkTitle="Events"
+            backLinkHref="/events"
+            ignoreMargin
+          >
             <div>
               UNIHACK
               <div>

@@ -2,19 +2,19 @@ import styles from './event-filter.module.scss';
 import { FC } from 'react';
 import { H4 } from '@components/typography/typography';
 
-export type tags = 'all' | 'melbourne' | 'sydney';
+export type Tags = 'all' | 'melbourne' | 'sydney';
 
 type Props = {
-  options: tags[];
+  options: Tags[];
 } & FilterProp;
 
 type FilterProp = {
-  handleClick: (tag: tags) => void;
+  handleClick: (tag: Tags) => void;
   currentTag: string;
 };
 
 type FilterButtonProps = {
-  tag: tags;
+  tag: Tags;
 } & FilterProp;
 
 const FilterButton: FC<FilterButtonProps> = ({

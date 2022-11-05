@@ -1,37 +1,33 @@
 import styles from './event.module.scss';
-import { EventInfo } from '@sections/event-info/event-hero/event-hero';
 import Stack from '@components/stack/stack';
 import { H3, Text } from '@components/typography/typography';
 import Link from 'next/link';
 type Props = {
-  eventDetail: EventInfo;
-  eventPath: string;
+  link: string;
+  title: string;
+  location: string;
+  date: string;
+  image: string;
 };
-export const Event = ({ eventDetail, eventPath }: Props) => (
-  <Link
-    href={
-      eventDetail.redirectToDevpost
-        ? eventDetail.devpostUrl
-        : `/events/${eventPath}`
-    }
-  >
+export const Event = ({ link, title, date, location, image }: Props) => (
+  <Link href={link}>
     <div className={styles.event}>
       <Stack size="xsmall" className={styles.header}>
         <div className={styles['header-title']}>
-          <H3> {eventDetail.title} </H3>
+          <H3>{title}</H3>
         </div>
 
         <Stack size="xsmall">
           <div className={styles.description}>
-            <Text> {eventDetail.location} </Text>
-            <Text> {eventDetail.date} </Text>
+            <Text>{location}</Text>
+            <Text>{date}</Text>
           </div>
         </Stack>
       </Stack>
       <div
         className={styles.image}
         style={{
-          backgroundImage: `url('images/covers/${eventDetail.coverImage}')`,
+          backgroundImage: `url('images/covers/${image}')`,
         }}
       ></div>
     </div>
