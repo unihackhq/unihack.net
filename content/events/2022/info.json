@@ -6,5 +6,6 @@
   "hidden": false,
   "tags": ["remote"],
   "title": "2022",
-  "coverImage": "2022.svg"
+  "coverImage": "covers/2022.png",
+  "eventImage": "events/2022-logo.svg"
 }

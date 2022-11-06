@@ -7,7 +7,7 @@ import { PastEvent } from '@sections/past-events';
 import { GetStaticProps } from 'next';
 import Filter, { Tags } from '@sections/event-filter';
 import { FC, useEffect, useState } from 'react';
-import { getPastEventInfo } from './utils/directory';
+import { getPastEventInfo } from '@lib/directory';
 import { PastEvents } from './types';
 
 const DisplayTags: { [tag in Tags]: string } = {

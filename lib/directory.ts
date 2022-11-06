@@ -1,6 +1,6 @@
 import path from "path";
 import { promises as fs } from 'fs';
-import { EventContent } from "../types";
+import { EventContent } from "../pages/events/types";
 import { EventInfo } from "@sections/event-info/event-hero/event-hero";
 
 export const getEventsList = async () => {

@@ -27,7 +27,7 @@ export const Event = ({ link, title, date, location, image }: Props) => (
       <div
         className={styles.image}
         style={{
-          backgroundImage: `url('images/covers/${image}')`,
+          backgroundImage: `url('images/${image}')`,
         }}
       ></div>
     </div>

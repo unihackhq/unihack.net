@@ -1,6 +1,6 @@
 const withPlugins = require('next-compose-plugins');
-const path = require('path');
 const { config } = require('process');
+
 const redirects = async () => {
   return [
     {
@@ -18,17 +18,6 @@ const redirects = async () => {
 };
 
 const webpack = async (config, options) => {
-  console.log(config);
-
-  const modifiedConfig = {
-    ...config,
-    resolve: {
-      alias: {
-        styles: path.join(__dirname, 'styles')
-      }
-    }
-  }
-
   return config;
 };
 

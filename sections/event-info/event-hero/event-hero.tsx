@@ -13,17 +13,19 @@ export type EventInfo = {
   redirectToDevpost: boolean;
   title: string;
   coverImage: string;
+  eventImage?: string;
   tags: string[];
   hidden?: boolean;
 };
 
 type Props = {
   event: string;
+  eventImage: string;
   stats: StatType[];
   info: EventInfo;
 };
 
-const EventHero = ({ stats, event, info }: Props) => (
+const EventHero = ({ stats, event, eventImage, info }: Props) => (
   <section className={styles.hero}>
     <Stack size="xxlarge">
       <div className={styles['hero-header']}>
@@ -47,10 +49,7 @@ const EventHero = ({ stats, event, info }: Props) => (
           <IconLabel icon="Location">{info.location}</IconLabel>
         </Stack>
         <div className={styles['hero-header-graphic']}>
-          <img
-            src={`/images/${event}-hero.svg`}
-            alt={`UNIHACK ${event} graphic`}
-          />
+          <img src={`/images/${eventImage}`} alt={`UNIHACK ${event} graphic`} />
         </div>
       </div>
       <StatsBanner stats={stats} />

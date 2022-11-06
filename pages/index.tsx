@@ -22,22 +22,19 @@ const Index = () => (
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
-              title={
-                <>
-                  Have your say <br />
-                  Vote for People's Choice!
-                </>
-              }
+              title={<>Looking to skill up or give back to the community?</>}
               placeholderColor="purple"
-              buttonLink="https://unihack2022.devpost.com"
-              buttonText="Visit the Devpost"
+              buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
+              buttonText="Join the team today"
             />
             <HomeCard
               image={faqsImage}
-              title={<>Looking to skill up or give back to the community?</>}
+              title={
+                <>We run Australia's largest university student hackathon</>
+              }
               placeholderColor="pacific"
-              buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
-              buttonText="Join the team today"
+              buttonLink="/about"
+              buttonText="What is UNIHACK?"
             />
           </div>
           <Sponsor />

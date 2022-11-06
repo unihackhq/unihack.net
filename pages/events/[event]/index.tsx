@@ -10,7 +10,7 @@ import Judges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Winners from '@sections/event-info/winners/winners';
-import { getEventsList, getFilesFromEvent } from '../utils/directory';
+import { getEventsList, getFilesFromEvent } from '@lib/directory';
 import { EventContent } from '../types';
 import EventHero from '@sections/event-info/event-hero/event-hero';
 import Divider from '@components/divider/divider';
@@ -30,6 +30,7 @@ const Event = (props: EventContent) => {
             stats={props.stats}
             event={event as string}
             info={props.info}
+            eventImage={props.info.eventImage ?? props.info.coverImage}
           />
           <Winners data={props.winners} devpostUrl={props.info.devpostUrl} />
           <Divider />
