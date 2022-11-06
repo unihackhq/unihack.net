@@ -2,20 +2,28 @@
   {
     "hack": {
       "name": "DJ PAL",
-      "description": "DJ PAL matches your music to the mood of the room.",
+      "description": " DJ PAL matches your music to the mood of the room.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/851/918/datas/medium.png",
       "videoPath": "https://www.youtube.com/watch?v=dmX9bsaMZ6M",
       "devpostUrl": "https://devpost.com/software/dj-pal",
       "prizes": [
         { "title": "1st Place", "imagePath": "/images/prizes/first-place.svg" },
-        { "title": "Creative Pitch Prize", "imagePath": "/images/sponsors/pwc.svg" },
-        { "title": "Ig UNIHACK Prize", "imagePath": "/images/prizes/unihack-alumni.png" }
+        {
+          "title": "Creative Pitch Prize",
+          "imagePath": "/images/sponsors/PwC.svg"
+        },
+        {
+          "title": "Ig UNIHACK Prize",
+          "imagePath": "/images/prizes/unihack-alumni.png"
+        }
       ]
     }
   },
   {
     "hack": {
-      "name": "Greenways",
-      "description": "Compare your personal and local community's efforts in reducing their carbon footprint.",
+      "name": "GreenWays",
+      "description": "Compare your personal and local community's efforts in reducing our carbon footprint.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/851/098/datas/medium.png",
       "videoPath": "https://www.youtube.com/watch?v=-5ehivAe_mU",
       "devpostUrl": "https://devpost.com/software/greenways-bkytwg",
       "prizes": [
@@ -29,7 +37,7 @@
           "imagePath": "/images/sponsors/Atlassian.svg"
         },
         {
-          "title": "Most Scalable Hack",
+          "title": "Most Scalable Prize",
           "imagePath": "/images/sponsors/Bukalapak.svg"
         },
         {
@@ -45,9 +53,10 @@
   },
   {
     "hack": {
-      "name": "S2T",
-      "description": "Reduce communication barriers using AI between AUSLAN and non-AUSLAN people.",
+      "name": "S2T (LSTM)",
+      "description": "Using AI to reduce communication barriers between AUSLAN and non-AUSLAN users.",
       "videoPath": "https://www.youtube.com/watch?v=RzBJdXrmFrA",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/849/872/datas/medium.PNG",
       "devpostUrl": "https://devpost.com/software/s2t",
       "prizes": [
         { "title": "3rd Place", "imagePath": "/images/prizes/third-place.svg" },
@@ -60,23 +69,10 @@
   },
   {
     "hack": {
-      "name": "Trashy",
-      "description": "Helping society move towards a more circular economy, by providing a platform to obtain recyclable waste.",
-      "videoPath": "https://www.youtube.com/watch?v=C9I6n03z1jM",
-      "devpostUrl": "https://devpost.com/software/new-leaf-qgxbwh",
-      "prizes": [
-        {
-          "title": "First Timers' Prize",
-          "imagePath": "/images/prizes/first-time.svg"
-        }
-      ]
-    }
-  },
-  {
-    "hack": {
       "name": "Zom-B-Gone",
-      "description": " Don't become a zombie. Break your mindless usage habits.",
+      "description": "Don't become a zombie. Break your mindless usage habits.",
       "videoPath": "https://www.youtube.com/watch?v=UiO_hqI4FBc",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/852/129/datas/medium.jpg",
       "devpostUrl": "https://devpost.com/software/zom-b-gone",
       "prizes": [
         {
@@ -88,9 +84,10 @@
   },
   {
     "hack": {
-      "name": "CrowdMap",
-      "description": " Empowering sustainable cities and communities through fast geospatial reporting and citizen science.",
+      "name": "Crowdmap",
+      "description": "An easily deployable, effective communication system.",
       "videoPath": "https://www.youtube.com/watch?v=-yS2HtbtZBI",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/852/010/datas/medium.png",
       "devpostUrl": "https://devpost.com/software/crowdmap-qmd0ob",
       "prizes": [
         {
@@ -102,9 +99,25 @@
   },
   {
     "hack": {
+      "name": "Trashy",
+      "description": "A platform to obtain recyclable waste and move towards a more circular economy.",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/852/077/datas/medium.png",
+      "videoPath": "https://www.youtube.com/watch?v=C9I6n03z1jM",
+      "devpostUrl": "https://devpost.com/software/new-leaf-qgxbwh",
+      "prizes": [
+        {
+          "title": "First Timers Prize",
+          "imagePath": "/images/prizes/first-time.svg"
+        }
+      ]
+    }
+  },
+  {
+    "hack": {
       "name": "Food Frog",
       "description": "Organise your cooking and reduce food waste whilst keeping an eye on the environment AND your wallet!",
       "videoPath": "https://www.youtube.com/watch?v=-Hi49qtzTPQ",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/851/246/datas/medium.png",
       "devpostUrl": "https://devpost.com/software/unobtainable-magic-tesseract",
       "prizes": [
         {
@@ -123,6 +136,7 @@
       "name": "Best Before",
       "description": "Use Best Before to scan, manage, plan your food and know exactly when your food will expire.",
       "videoPath": "https://www.youtube.com/watch?v=XAPpTjb_QBI",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/851/769/datas/medium.png",
       "devpostUrl": "https://devpost.com/software/best-before-yn83l9",
       "prizes": [
         {
@@ -136,8 +150,9 @@
     "hack": {
       "name": "Qube",
       "description": "Qube is an app that allows you to search, book and queue doctor appointments.",
-      "devpostUrl": "https://devpost.com/software/qube",
       "videoPath": "https://www.youtube.com/watch?v=Li-OjXVe4dk",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/852/269/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/qube",
       "prizes": [
         {
           "title": "Engineering Excellence Prize",
@@ -148,28 +163,30 @@
   },
   {
     "hack": {
-      "name": "NiteLyte",
-      "description": "Let us light your path through the night!",
-      "videoPath": "https://www.youtube.com/watch?v=g3aKrzLc2zU",
-      "devpostUrl": "https://devpost.com/software/nitelyte",
+      "name": "MiniMelbourne",
+      "description": "Provides most up-to-date and relevant information to train commuters in real time in 3D space.",
+      "videoPath": "https://www.youtube.com/watch?v=J0w6qxigvxI",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/851/062/datas/medium.jpg",
+      "devpostUrl": "https://devpost.com/software/minimebourne",
       "prizes": [
         {
-          "title": "Best Use of Twilio",
-          "imagePath": "/images/sponsors/Twilio.svg"
+          "title": "Data Analytics Prize",
+          "imagePath": "/images/sponsors/PwC.svg"
         }
       ]
     }
   },
   {
     "hack": {
-      "name": "MiniMelbourne",
-      "description": "Provides up-to-date information to train commuters in real time in 3D space.",
-      "videoPath": "https://www.youtube.com/watch?v=J0w6qxigvxI",
-      "devpostUrl": "https://devpost.com/software/minimebourne",
+      "name": "NiteLyte",
+      "description": " Let us light your path through the night!",
+      "videoPath": "https://www.youtube.com/watch?v=g3aKrzLc2zU",
+      "imagePath": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/851/878/datas/medium.png",
+      "devpostUrl": "https://devpost.com/software/nitelyte",
       "prizes": [
         {
-          "title": "Data Analytics Prize",
-          "imagePath": "/images/sponsors/PwC.svg"
+          "title": "Best use of Twilio",
+          "imagePath": "/images/sponsors/Twilio.svg"
         }
       ]
     }

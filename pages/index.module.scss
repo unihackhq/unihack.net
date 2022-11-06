@@ -3,6 +3,7 @@
 .index {
   background: url('../public/images/homepage/2022-hero.png') top center no-repeat;
   background-size: 800px;
+  margin-bottom: $base * 4;
 
   @include sm {
     background-size: 1000px;
