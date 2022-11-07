@@ -10,8 +10,7 @@ import Judges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Winners from '@sections/event-info/winners/winners';
-import { getEventsList, getFilesFromEvent } from '@lib/directory';
-import { EventContent } from '../types';
+import { EventContent, getEventsList, getFilesFromEvent } from '@lib/directory';
 import EventHero from '@sections/event-info/event-hero/event-hero';
 import Divider from '@components/divider/divider';
 
