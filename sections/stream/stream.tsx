@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { TwitchPlayer } from 'react-twitch-embed';
 import styles from './stream.module.scss';
 import { H2 } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
+import ReactPlayer from 'react-player/twitch';
 
 export function calculateTimeLeft() {
   // Date object is for Sydney/Melbourne time 7th March 2021 5pm
@@ -61,12 +61,10 @@ const Stream = () => {
         <Stack size="medium">
           <H2>{timeLeft}</H2>
           <div className={styles['stream-container']}>
-            <TwitchPlayer
-              muted
-              autoplay
+            <ReactPlayer
               width="100%"
               height="100%"
-              channel="unihack"
+              url="https://twitch.tv/unihack"
             />
           </div>
         </Stack>

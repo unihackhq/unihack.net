@@ -1,5 +1,5 @@
-@import '../../styles/styles.scss';
-@import '../../styles/spacing.scss';
+@import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
 
 .sponsor-prompt {
   background: $midori;
@@ -44,6 +44,11 @@
 
     @include lg {
       width: 400px;
+      min-height: 300px;
+    }
+
+    @include xl {
+      min-height: 800px;
     }
 
     h2 {

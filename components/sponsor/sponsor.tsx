@@ -27,7 +27,7 @@ const Sponsor = ({
       <h2>Looking to sponsor?</h2>
       <p>Join us in the Imagination Revolution</p>
       <ButtonLink theme="transparent" type="primary" href="/sponsorship">
-        Sponsor UNIHACK 2022
+        Sponsor UNIHACK 2023
       </ButtonLink>
     </div>
   </section>

@@ -1,22 +1,30 @@
-const { Client } = require('@notionhq/client');
+import { Client } from '@notionhq/client'
+import type { NextApiRequest, NextApiResponse } from 'next'
 
 const notion = new Client({
   auth: process.env.NOTION_API_KEY
 });
 
-export default async function handler(req, res) {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  const databaseId = process.env.NOTION_DATABASE_ID
+
   if (req.method !== 'POST') {
     return res
       .status(405)
       .json({ message: `${req.method} requests are not allowed` });
   }
+
+  if (!databaseId) {
+    return res.status(500).json({ message: 'Notion integration not connected'})
+  }
+
   try {
     const { firstName, lastName, email, purpose, message } = JSON.parse(
       req.body
     );
     await notion.pages.create({
       parent: {
-        database_id: process.env.NOTION_DATABASE_ID
+        database_id: databaseId
       },
       properties: {
         FirstName: {

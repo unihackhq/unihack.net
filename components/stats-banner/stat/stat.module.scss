@@ -1,37 +1,37 @@
 @import '../../../styles/colours.scss';
+@import '../../../styles/typography/typography.scss';
 
 .stat {
-  color: $salmon;
+  background: $salmon;
+  flex: 1;
+  border-radius: 8px;
 
-  &:nth-of-type(4n + 2) {
-    color: $midori;
+  p {
+    text-align: center;
+    color: $white;
   }
 
-  &:nth-of-type(4n + 3) {
-    color: $pacific;
+  span {
+    @include hl;
+    display: block;
   }
 
-  &:nth-of-type(4n + 4) {
-    color: $primary;
+  &:nth-of-type(4n + 2),
+  &.midori {
+    background: $midori;
   }
 
-  .salmon {
-    color: $salmon;
-  }
-
-  .midori {
-    color: $midori;
-  }
-
+  &:nth-of-type(4n + 3),
   .pacific {
-    color: $pacific;
+    background: $pacific;
   }
 
+  &:nth-of-type(4n + 4),
   .yellow {
-    color: $primary;
-  }
+    background: $primary;
 
-  .name {
-    color: $secondary;
+    p {
+      color: $secondary;
+    }
   }
 }

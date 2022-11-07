@@ -1,6 +1,6 @@
-@import "../../styles/styles.scss";
-@import "../../styles/spacing.scss";
-@import "../../styles/typography/typography.scss";
+@import "../../../styles/styles.scss";
+@import "../../../styles/spacing.scss";
+@import "../../../styles/typography/typography.scss";
 
 .sponsor-hero-container {
   z-index: 1;
@@ -79,6 +79,7 @@
       }
       @include sm {
         margin: 0 $base * 2;
+        min-width: 250px;
 
         p {
           padding-bottom: $base;

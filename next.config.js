@@ -1,4 +1,6 @@
 const withPlugins = require('next-compose-plugins');
+const { config } = require('process');
+
 const redirects = async () => {
   return [
     {
@@ -16,8 +18,6 @@ const redirects = async () => {
 };
 
 const webpack = async (config, options) => {
-  console.log(config);
-
   return config;
 };
 

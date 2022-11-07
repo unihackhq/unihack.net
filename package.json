@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "licenses": [{
-    "type": "MIT"
-  }],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "tslint **/*.tsx",
+    "lint": "eslint .",
     "prettier": "prettier **/*.tsx -w",
     "export": "next export"
   },
@@ -36,7 +38,7 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-twitch-embed": "^2.1.0",
+    "react-player": "^2.11.0",
     "sass": "^1.43.3"
   },
   "devDependencies": {
@@ -45,13 +47,12 @@
     "@types/node": "^13.13.52",
     "@types/react": "^16.14.19",
     "@types/styled-jsx": "^2.2.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
     "all-contributors-cli": "^6.20.0",
     "classnames": "^2.3.1",
+    "eslint": "^8.27.0",
     "prettier": "2.4.1",
-    "tslint": "^5.16.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.3.0",
-    "tslint-react": "^4.1.0",
     "typescript": "^4.4.4"
   }
 }

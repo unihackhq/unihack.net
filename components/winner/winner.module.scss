@@ -52,7 +52,7 @@
 
     .winner-description {
       @include lg {
-        height: $base * 10;
+        height: 80px;
       }
     }
   }

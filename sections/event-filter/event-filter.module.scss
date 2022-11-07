@@ -1,47 +1,32 @@
 @import '../../styles/styles.scss';
 @import '../../styles/typography/typography.scss';
 .filter {
+  h4 {
+    font-size: 1rem;
+    margin: 0 0 $base * 2;
+    text-transform: uppercase;
+  }
+
   & .buttons {
     display: flex;
-    flex-direction: column;
-
     width: 100%;
-    & > button {
-      margin-top: $base * 2;
-    }
-    justify-content: space-between;
-
-    @include ksm {
-      flex-direction: row;
+    
+    * + * {
       margin-left: $base * 2;
-      width: fit-content;
-
-      & button {
-        margin-top: 0;
-      }
-
-      & > button + * {
-        margin-left: $base * 2;
-      }
     }
   }
 
   & button {
     color: #6d767d;
-    border: 2px solid;
-    border-color: #6d767d;
+    border: 2px solid #ababab;
+    background: transparent;
     border-radius: 8px;
-    padding: ($base/2 * 3 - 2px) ($base * 1);
+    padding: $base $base * 2;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.5s ease;
-    font-size: $base * 2;
-    line-height: 18px;
+    font-size: 0.875rem;
     font-weight: bold;
-
-    @include sm {
-      padding: ($base/2 * 3 - 2px) ($base * 5);
-    }
 
     &:hover,
     &.selected {
@@ -49,15 +34,5 @@
       background: $secondary;
       border-color: $secondary;
     }
-  }
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: start;
-  flex-direction: column;
-  @include ksm {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
   }
 }

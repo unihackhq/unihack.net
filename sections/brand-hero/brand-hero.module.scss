@@ -21,23 +21,6 @@
     }
   }
 
-  .logo {
-    background: url('../../public/images/2022-logo.svg') top center no-repeat;
-    background-size: cover;
-    text-indent: -999em;
-    display: block;
-    height: 48px;
-    width: 204px;
-    margin: 0;
-
-    @include md {
-      height: 72px;
-      width: 306px;
-      margin: 0 auto;
-    }
-  
-  }
-
   p {
     margin: 0;
   }

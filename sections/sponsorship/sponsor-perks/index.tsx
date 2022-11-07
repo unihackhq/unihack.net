@@ -1,6 +1,6 @@
 import styles from './sponsor-perks.module.scss';
-import Perk from './perk/perk';
-import perkData from '../../content/perks.json';
+import Perk from './perk';
+import perkData from '@content/perks.json';
 import { H2XL } from '@components/typography/typography';
 
 const SponsorPerks = () => {

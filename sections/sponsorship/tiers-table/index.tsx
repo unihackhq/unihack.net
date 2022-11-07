@@ -7,8 +7,7 @@ import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
 
 import styles from './tiers-table.module.scss';
-import { PackageI } from './package.interface';
-import { CustomPerkI } from './custom-perk.interface';
+import { Package, CustomPerk } from './types';
 import data from '@content/sponsorship/sponsorship-packages.json';
 
 const TiersTable = () => (
@@ -36,7 +35,7 @@ const TiersTable = () => (
 );
 
 const transformPackages = (sponsorshipData: any): ColumnI[] => {
-  return sponsorshipData.packages.map((tier: PackageI) => {
+  return sponsorshipData.packages.map((tier: Package) => {
     const capacity = parseInt(tier.maxCapacity, 10);
     const subtitle =
       capacity > 0 ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}` : '';
@@ -52,7 +51,7 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
   });
 };
 
-const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
+const transformPackagePerks = (tier: Package, totalPerks: number) => {
   const cells: CellI[] = [];
 
   // Active perks
@@ -64,7 +63,7 @@ const transformPackagePerks = (tier: PackageI, totalPerks: number) => {
   });
 
   // Custom perks
-  tier.customPerks.map((perk: CustomPerkI) => {
+  tier.customPerks.map((perk: CustomPerk) => {
     cells[perk.perkID - 1] = {
       key: generateKey(tier.name, perk.perkID - 1),
       content: perk.content,
