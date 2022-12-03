@@ -14,6 +14,7 @@ export default () => (
   <>
     <Head>
       <title>Sponsor UNIHACK 2023</title>
+      <meta property="og:title" content="Sponsor UNIHACK 2023" key="title" />
     </Head>
     <Page>
       <Stack size="xxlarge">
