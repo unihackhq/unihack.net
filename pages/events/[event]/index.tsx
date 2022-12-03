@@ -22,6 +22,7 @@ const Event = (props: EventContent) => {
     <div>
       <Head>
         <title>UNIHACK {event}</title>
+        <meta property="og:title" content={`UNIHACK ${event}`} key="title" />
       </Head>
       <Page>
         <Stack size="xxlarge">

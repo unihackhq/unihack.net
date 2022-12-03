@@ -14,6 +14,11 @@ const Index = () => (
   <div>
     <Head>
       <title>UNIHACK 2023 - Coming Soon</title>
+      <meta
+        property="og:title"
+        content={`UNIHACK 2023 - Coming Soon`}
+        key="title"
+      />
     </Head>
     <Page>
       <div className={styles.index}>

@@ -11,6 +11,7 @@ export default () => (
   <div>
     <Head>
       <title>About Us - UNIHACK</title>
+      <meta property="og:title" content="About UNIHACK" key="title" />
     </Head>
     <Page>
       <PageNavigation
