@@ -7,14 +7,19 @@ import Stack from '@components/stack/stack';
 const BrandHero = () => (
   <section className={styles['brand-hero']}>
     <Stack size="small" className={styles['brand-hero-content']}>
-      <Text className={styles.title}>We are coming back for UNIHACK 2023.</Text>
+      <Text className={styles.title}>
+        <span>Pre-registration is NOW OPEN.</span>
+      </Text>
       <Text className={styles.subtitle}>
-        In the meantime, you can revisit what happened at UNIHACK 2022, and see
-        the incredible ideas from university students.
+        Be the first to know when we open for 2023.
       </Text>
       <div className={styles.actions}>
-        <ButtonLink type="primary" theme="light" href="/events/2022">
-          See this year's winners
+        <ButtonLink
+          type="primary"
+          theme="transparent"
+          href="https://forms.gle/pDS9xbnBN4Ki4gNVA"
+        >
+          Pre-register now
         </ButtonLink>
       </div>
     </Stack>
