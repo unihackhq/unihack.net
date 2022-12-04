@@ -21,8 +21,8 @@ const Index = () => (
       />
     </Head>
     <Page>
+      <BrandHero />
       <div className={styles.index}>
-        <BrandHero />
         <div className={styles.grid}>
           <div className={styles.row}>
             <HomeCard
