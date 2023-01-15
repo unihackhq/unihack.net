@@ -1,0 +1,43 @@
+@import '../../../styles/styles.scss';
+
+.discord-row {
+  border-radius: 5px;
+  padding: 32px;
+  position: relative;
+  background-color: #9333ea;
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  &-content {
+    flex: 1;
+    margin-bottom: 16px;
+
+    @include lg {
+      margin-bottom: 0px;
+    }
+  
+
+    h2 {
+      margin: 0 0 4px;
+      padding: 0;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    p {
+      color: #e9d5ff;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

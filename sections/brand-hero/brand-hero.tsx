@@ -8,18 +8,25 @@ const BrandHero = () => (
   <section className={styles['brand-hero']}>
     <Stack size="small" className={styles['brand-hero-content']}>
       <Text className={styles.title}>
-        <span>Pre-registration is NOW OPEN.</span>
+        <span>UNIHACK is back on March 3!</span>
       </Text>
       <Text className={styles.subtitle}>
-        Be the first to know when we open for 2023.
+        The Imagination Hackathon returns.
       </Text>
       <div className={styles.actions}>
         <ButtonLink
           type="primary"
           theme="transparent"
-          href="https://forms.gle/pDS9xbnBN4Ki4gNVA"
+          href="https://manage.unihack.net/signup"
         >
-          Pre-register now
+          Register Now
+        </ButtonLink>
+        <ButtonLink
+          type="primary"
+          theme="transparent"
+          href="https://manage.unihack.net"
+        >
+          Manage My Team
         </ButtonLink>
       </div>
     </Stack>
