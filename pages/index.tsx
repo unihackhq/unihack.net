@@ -9,6 +9,7 @@ import HomeCard from '@components/home-card';
 import inspirationImage from '../public/images/homepage/past.png';
 import faqsImage from '../public/images/homepage/faqs.png';
 import BrandHero from '@sections/brand-hero/brand-hero';
+import { JoinDiscord } from '@sections/homepage/discord';
 
 const Index = () => (
   <div>
@@ -24,6 +25,7 @@ const Index = () => (
       <BrandHero />
       <div className={styles.index}>
         <div className={styles.grid}>
+          <JoinDiscord />
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}

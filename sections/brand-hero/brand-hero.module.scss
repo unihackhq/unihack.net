@@ -6,8 +6,8 @@
   display: flex;
   align-items: flex-end;
   height: 500px;
-  background: $pacific-d50 url('../../public/images/homepage/2023-pre-reg-hero.png') center center no-repeat;
-  background-size: cover;
+  background: url('../../public/images/homepage/2023-reg-hero.png') -400px center no-repeat, linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-size: auto 500px;
   color: $white;
   padding: $base * 4 0;
   position: relative;
@@ -20,21 +20,14 @@
     left: 0;
     bottom: 0;
     display: block;
-    background-color: rgba($pacific-d50, 30%);
+    background: rgba(0, 0, 0,0.3)
   }
 
   @include md {
     height: 620px;
+    background-position: center center;
     background-size: auto 620px;
     align-items: center;
-
-    
-  }
-
-  @include lg {
-    &:before {
-      display: none;
-    }
   }
 
   &-content {
@@ -67,7 +60,6 @@
     padding: 0;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing:  -1px;
 
     @include md {
       margin: $base * 2 0 0;
