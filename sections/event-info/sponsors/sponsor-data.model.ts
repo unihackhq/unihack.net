@@ -8,6 +8,6 @@ export type SponsorData = {
     [key in SponsorTier]?: string;
   },
   sponsors: {
-    [key in SponsorTier]: GridItemI[];
+    [key in SponsorTier]?: GridItemI[];
   };
 };

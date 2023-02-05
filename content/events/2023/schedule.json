@@ -1,0 +1,68 @@
+{
+  "friday": [
+    {
+      "startTime": "2023-03-03 18:00 +1100",
+      "endTime": "2023-03-03 18:30 +1100",
+      "title": "Opening Ceremony - Live on Twitch"
+    },
+    {
+      "startTime": "2023-03-03 18:30 +1100",
+      "endTime": "2023-03-03 19:00 +1100",
+      "title": "Hacking Begins!"
+    },
+    {
+      "startTime": "2023-03-03 19:00 +1100",
+      "endTime": "2023-03-03 19:30 +1100",
+      "title": "Team Match-Making"
+    },
+    {
+      "startTime": "2023-03-03 21:00 +1100",
+      "endTime": "2023-03-03 21:15 +1100",
+      "title": "Team Registration & Checkpoint #1 Due"
+    }
+  ],
+  "saturday": [
+    {
+      "startTime": "2023-03-04 10:30 +1100",
+      "endTime": "2023-03-04 14:30 +1100",
+      "title": "Mentor 1:1s - Ideation"
+    },
+    {
+      "startTime": "2023-03-04 12:00 +1100",
+      "endTime": "2023-03-04 12:15 +1100",
+      "title": "Checkpoint #2"
+    },
+    {
+      "startTime": "2023-03-04 20:00 +1100",
+      "endTime": "2023-03-04 20:30 +1100",
+      "title": "Checkpoint #3"
+    }
+  ],
+  "sunday": [
+    {
+      "startTime": "2023-03-05 00:00 +1100",
+      "endTime": "2023-03-05 01:00 +1100",
+      "title": "🤔"
+    },
+    {
+      "startTime": "2023-03-05 09:00 +1100",
+      "endTime": "2023-03-05 09:30 +1100",
+      "title": "Checkpoint #4"
+    },
+    {
+      "startTime": "2023-03-05 10:30 +1100",
+      "endTime": "2023-03-05 14:30 +1100",
+      "title": "Mentor 1:1s - Pitching"
+    },
+    {
+      "startTime": "2023-03-05 17:00 +1100",
+      "endTime": "2023-03-05 17:30 +1100",
+      "title": "Hacking Ends!"
+    },
+    {
+      "startTime": "2023-03-05 17:30 +1100",
+      "endTime": "2023-03-05 18:00 +1100",
+      "title": "Closing Ceremony - Live on Twitch"
+    }
+  ]
+}

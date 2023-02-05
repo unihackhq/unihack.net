@@ -9,12 +9,8 @@ const EventChecklist = () => {
       <ul>
         <li>
           <div className={styles['checklist-content']}>
-            <h3>Register your team!</h3>
+            <h3>Register yourself and your team!</h3>
             <p>So we know you (and your friends) are competing!</p>
-            <p>
-              Only one person from your team needs to register your team on
-              behalf of everyone.
-            </p>
           </div>
           <ButtonLink
             type="primary"
@@ -26,17 +22,13 @@ const EventChecklist = () => {
         </li>
         <li>
           <div className={styles['checklist-content']}>
-            <h3>Join the Discord!</h3>
+            <h3>Read the Participants Handbook!</h3>
             <p>
-              Where you'll find mentors, more friends, and raffles for days.
+              Find out everything you need to know about the competition here!
             </p>
           </div>
-          <ButtonLink
-            type="primary"
-            theme="light"
-            href="https://discord.gg/c5WkvETkj8"
-          >
-            Discord
+          <ButtonLink type="primary" theme="light" href="#">
+            TBA
           </ButtonLink>
         </li>
         <li>
