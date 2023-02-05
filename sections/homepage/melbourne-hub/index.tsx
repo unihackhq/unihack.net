@@ -17,7 +17,7 @@ export const MelbourneHub = () => {
         <ButtonLink
           type="primary"
           theme="transparent"
-          href="/2023-melbourne-hub"
+          href="/2023-melbourne-hub#top"
         >
           More Info
         </ButtonLink>

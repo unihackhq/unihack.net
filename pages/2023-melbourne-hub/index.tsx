@@ -91,7 +91,7 @@ export default () => (
     <Page>
       <div className={styles.intro}>
         <div className={styles.container}>
-          <h1>
+          <h1 id="top">
             Melbourne Hub <span>at Monash University Clayton</span>
           </h1>
           <p className={styles.withWired}>
