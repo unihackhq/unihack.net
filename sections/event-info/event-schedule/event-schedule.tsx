@@ -1,6 +1,6 @@
 import styles from './event-schedule.module.scss';
 import React from 'react';
-import moment from 'moment';
+// import moment from 'moment';
 import Schedule from '@components/schedule/schedule';
 import { ScheduleItemI } from '@components/schedule/schedule-item/schedule-item.interface';
 import { Text } from '@components/typography/typography';
@@ -20,7 +20,6 @@ class EventSchedule extends React.Component<PropTypes, State> {
   constructor(props: PropTypes) {
     super(props);
     const day = Object.keys(props.data)[0] as Day;
-
     this.state = {
       allDays: Object.keys(props.data) as Day[],
       day,
@@ -28,16 +27,16 @@ class EventSchedule extends React.Component<PropTypes, State> {
     };
   }
 
-  public componentDidMount() {
-    const validDays = this.state.allDays;
-    let day = moment().format('dddd').toLowerCase() as Day;
+  // public componentDidMount() {
+  //   const validDays = this.state.allDays;
+  //   let day = moment().format('dddd').toLowerCase() as Day;
 
-    day = validDays.includes(day) ? day : this.state.day;
-    this.setState({
-      day,
-      events: this.props.data[day],
-    });
-  }
+  //   day = validDays.includes(day) ? day : this.state.day;
+  //   this.setState({
+  //     day,
+  //     events: this.props.data[day],
+  //   });
+  // }
 
   private setDay = (day: Day) => () => {
     this.setState({
@@ -53,11 +52,11 @@ class EventSchedule extends React.Component<PropTypes, State> {
   private buttonText(day: Day) {
     switch (day) {
       case 'friday':
-        return 'FRI 25th';
+        return 'FRI 3RD';
       case 'saturday':
-        return 'SAT 26th';
+        return 'SAT 4TH';
       case 'sunday':
-        return 'SUN 27th';
+        return 'SUN 5TH';
     }
   }
 
@@ -82,7 +81,7 @@ class EventSchedule extends React.Component<PropTypes, State> {
           {this.state.allDays.map((day) => this.getSelectorButtons(day))}
         </div>
         <Schedule data={this.state.events} />
-        <Text> The winners will be announced on March 6.</Text>
+        <Text> The winners will be announced on March 12.</Text>
       </section>
     );
   }
