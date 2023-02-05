@@ -1,0 +1,21 @@
+{
+  "prizes": {
+    "main": [
+      {
+        "title": "1st Place",
+        "imagePath": "/images/prizes/first-place.svg",
+        "contents": ["TBA"]
+      },
+      {
+        "title": "2nd Place",
+        "imagePath": "/images/prizes/second-place.svg",
+        "contents": ["TBA"]
+      },
+      {
+        "title": "3rd Place",
+        "imagePath": "/images/prizes/third-place.svg",
+        "contents": ["TBA"]
+      }
+    ]
+  }
+}

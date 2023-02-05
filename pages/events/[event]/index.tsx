@@ -10,7 +10,11 @@ import Judges from '@sections/event-info/judges/judges';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Winners from '@sections/event-info/winners/winners';
-import { EventContent, getEventsList, getFilesFromEvent } from '@lib/directory';
+import {
+  EventContent,
+  getFilesFromEvent,
+  getPastEventInfo,
+} from '@lib/directory';
 import EventHero from '@sections/event-info/event-hero/event-hero';
 import Divider from '@components/divider/divider';
 
@@ -46,12 +50,16 @@ const Event = (props: EventContent) => {
 
 // This function gets called at build time
 export const getStaticPaths: GetStaticPaths = async () => {
-  const events = await getEventsList();
+  const events = await getPastEventInfo();
 
   // Get the paths we want to pre-render based on event directories
-  const paths = events.map((event: string) => {
-    return { params: { event } };
-  });
+  const paths = Object.keys(events)
+    .filter((event: string) => {
+      return events[event].redirectToDevpost === false;
+    })
+    .map((event: string) => {
+      return { params: { event } };
+    });
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
