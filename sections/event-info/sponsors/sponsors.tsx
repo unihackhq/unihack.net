@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './sponsors.module.scss';
 import Grid from '@components/grid/grid';
-import { H2, HL, Text } from '@components/typography/typography';
+import { H2, HL } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { SponsorData } from './sponsor-data.model';
 import classNames from 'classnames/bind';
@@ -10,12 +10,14 @@ const cx = classNames.bind(styles);
 
 type PropTypes = {
   data: SponsorData;
+  title?: string;
   className?: string;
   isHomepage?: boolean;
 };
 
 const Sponsors = ({
   data: { sponsors, titles, base },
+  title = 'Sponsors',
   isHomepage,
   className,
 }: PropTypes) => {
@@ -23,8 +25,7 @@ const Sponsors = ({
     <section className={cx({ 'event-page-sponsors': !isHomepage }, className)}>
       <Stack size="xlarge" className={styles['event-page-sponsors-content']}>
         <Stack size="small">
-          <HL id="sponsors">Sponsors</HL>
-          <Text>Without whom this event would not be possible...</Text>
+          <HL id="sponsors">{title}</HL>
         </Stack>
         <Stack size="xlarge">
           {sponsors.platinum && (

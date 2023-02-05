@@ -24,7 +24,7 @@ const ButtonLink = (props: Props) => {
 };
 
 const ButtonLinkInternal = (props: Props) => (
-  <Link href={props.href}>
+  <Link href={props.href} scroll={true}>
     <a
       className={cx(props.type, props.theme, 'btn', props.className)}
       target={props.target ? props.target : ''}
