@@ -3,21 +3,22 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
-import Sponsor from '@components/sponsor/sponsor';
-import HomeCard from '@components/home-card';
-
-import inspirationImage from '../public/images/homepage/past.png';
-import faqsImage from '../public/images/homepage/faqs.png';
 import BrandHero from '@sections/brand-hero/brand-hero';
 import { JoinDiscord } from '@sections/homepage/discord';
+import Sponsors from '@sections/event-info/sponsors/sponsors';
+import Schedule from '@sections/event-info/event-schedule/event-schedule';
+
+import SponsorData from '@content/events/2023/sponsors.json';
+import ScheduleData from '@content/events/2023/schedule.json';
+import EventChecklist from '@sections/event-info/event-checklist';
 
 const Index = () => (
   <div>
     <Head>
-      <title>UNIHACK 2023 - Coming Soon</title>
+      <title>UNIHACK 2023 - March 3-5, 2023</title>
       <meta
         property="og:title"
-        content={`UNIHACK 2023 - Coming Soon`}
+        content={`UNIHACK 2023 - March 3-5, 2023`}
         key="title"
       />
     </Head>
@@ -27,26 +28,12 @@ const Index = () => (
         <div className={styles.grid}>
           <JoinDiscord />
           <div className={styles.row}>
-            <HomeCard
-              image={inspirationImage}
-              title={<>Looking to skill up or give back to the community?</>}
-              placeholderColor="purple"
-              buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
-              buttonText="Join the team today"
-            />
-            <HomeCard
-              image={faqsImage}
-              title={
-                <>We run Australia's largest university student hackathon</>
-              }
-              placeholderColor="pacific"
-              buttonLink="/about"
-              buttonText="What is UNIHACK?"
-            />
+            <Schedule data={ScheduleData} />
+            <EventChecklist />
           </div>
-          <Sponsor />
         </div>
       </div>
+      <Sponsors data={SponsorData} />
     </Page>
   </div>
 );
