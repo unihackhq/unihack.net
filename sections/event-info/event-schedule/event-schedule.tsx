@@ -1,6 +1,6 @@
 import styles from './event-schedule.module.scss';
 import React from 'react';
-import moment from 'moment';
+// import moment from 'moment';
 import Schedule from '@components/schedule/schedule';
 import { ScheduleItemI } from '@components/schedule/schedule-item/schedule-item.interface';
 import { Text } from '@components/typography/typography';
