@@ -1,0 +1,219 @@
+@import '../../styles/styles.scss';
+
+.container {
+  @include page-margin;
+  padding-top: $base * 2;
+  padding-bottom: $base * 4;
+
+  .row {
+    display: grid;
+    grid-gap: $base * 3;
+    margin: $base * 3 0 0;
+    
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.intro {
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  padding-top: $base * 4;
+  padding-bottom: $base * 4;
+  margin: 0 auto 32px;
+
+  h1 {
+    font-size: 2.625rem;
+    line-height: 3rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin: 0 0 $base * 12;
+    color: white;
+
+    @include md {
+      font-size: 4rem;
+      line-height: 4.25rem;  
+    }
+
+    span {
+      display: block;
+      font-weight: 300;
+    }
+  }
+
+  p.withWired {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin: 0;
+    color: white;
+
+    span {
+      display: block;
+      width: 188px;
+      height: 28px;
+      margin-top: $base;
+      text-indent: -999em;
+      background: url('../../public/images/wired-logo-white.png') top left no-repeat;
+      background-size: contain;
+
+      @include md {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: $base;
+      }
+    }
+  }
+
+  .container {
+    padding-top: $base * 4;
+    padding-bottom: $base * 4;  
+  }
+
+  .buttons {
+    margin-top: $base * 4;
+
+    a {
+      margin-right: $base * 2;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.register {
+  padding: $base * 4;
+  border-radius: 5px;
+  border: 3px solid $pacific;
+
+  h1 {
+    color: $pacific;
+    margin: 0 0 $base * 2;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 2rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $base * 4;
+
+    h2 {
+      color: $pacific;
+      font-size: 1.3125rem;
+      font-weight: 600;
+      margin: 0 0 $base;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0 0 $base * 2;
+      font-weight: 400;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+  }
+
+}
+
+.location {
+  padding: $base * 4;
+  border-radius: 5px;
+  border: 3px solid #d0d0d0;
+
+  h1 {
+    color: $secondary;
+    margin: 0 0 $base * 2;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 2rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $base * 4;
+
+    @include lg {
+      grid-template-columns: 40% 30% 30%;
+    }
+
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.3125rem;
+      margin: 0 0 $base * 2;
+      font-weight: 300;
+    }
+  }
+
+  .address {
+    grid-column: 1 / span 2;
+    @include lg {
+      grid-column: 1;
+    }
+  }
+
+  .time p {
+    margin: 0;
+  }
+}
+
+.wired {
+  background: #672676;
+  padding: $base * 4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  &-logo {
+    margin-bottom: $base * 4;
+    
+    @include sm {
+      flex: 1;
+      margin-left: $base * 4;
+      margin-bottom: 0;
+    }  
+
+    @include md {
+      flex: unset;
+      width: 320px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    flex: 1;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: white;
+  }
+}

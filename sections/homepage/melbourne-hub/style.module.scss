@@ -1,0 +1,67 @@
+@import '../../../styles/styles.scss';
+
+.hub-row {
+  border-radius: 5px;
+  padding: 32px;
+  position: relative;
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  &-content {
+    flex: 1;
+    margin-bottom: 16px;
+
+    @include md {
+      margin-bottom: 0px;
+    }
+  
+
+    h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin: 0 0 $base * 2;
+      color: white;
+
+      span {
+        display: block;
+        font-weight: 300;
+      }
+    }
+
+    p {
+      color: white;
+      margin: 0;
+      padding: 0;
+
+      span {
+        display: block;
+        width: 188px;
+        height: 28px;
+        margin-top: $base;
+        margin-bottom: 0;
+        text-indent: -999em;
+        background: url('../../../public/images/wired-logo-white.png') top left no-repeat;
+        background-size: contain;
+  
+        @include md {
+          display: inline-block;
+          margin-top: 0;
+          margin-left: $base;
+        }
+      }
+  
+    }
+  }
+}
