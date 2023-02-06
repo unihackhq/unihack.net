@@ -97,8 +97,12 @@
 
   .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: $base * 4;
+
+    @include md {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     h2 {
       color: $pacific;
