@@ -63,6 +63,62 @@
       }
     }
   }
+
+  .container {
+    padding-top: $base * 4;
+    padding-bottom: $base * 4;  
+  }
+
+  .buttons {
+    margin-top: $base * 4;
+
+    a {
+      margin-right: $base * 2;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.register {
+  padding: $base * 4;
+  border-radius: 5px;
+  border: 3px solid $pacific;
+
+  h1 {
+    color: $pacific;
+    margin: 0 0 $base * 2;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 2rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $base * 4;
+
+    h2 {
+      color: $pacific;
+      font-size: 1.3125rem;
+      font-weight: 600;
+      margin: 0 0 $base;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0 0 $base * 2;
+      font-weight: 400;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+  }
+
 }
 
 .location {

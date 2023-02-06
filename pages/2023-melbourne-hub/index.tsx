@@ -35,6 +35,50 @@ const WiredMonashTag = () => {
   );
 };
 
+const Register = () => {
+  return (
+    <section>
+      <div className={styles.register}>
+        <h1>How To Register</h1>
+        <div className={styles.row}>
+          <div className={styles.section}>
+            <h2>Register Yourself</h2>
+            <p>Sign up by registering yourself on the Team Management App</p>
+            <ButtonLink
+              theme="light"
+              type="primary"
+              href="https://manage.unihack.net/signup"
+            >
+              Register Now
+            </ButtonLink>
+          </div>
+          <div className={styles.section}>
+            <h2>Create Your Team</h2>
+            <p>
+              Create your team, or get your friends to add you to their team.
+            </p>
+            <ButtonLink
+              theme="light"
+              type="primary"
+              href="https://manage.unihack.net"
+            >
+              Manage My Team
+            </ButtonLink>
+          </div>
+          <div className={styles.section}>
+            <h2>Let us know...</h2>
+            <p>
+              Once your team is created, let us know if you are interested by
+              filling out the <strong>Pre-event: Melbourne Hub</strong>{' '}
+              checkpoint.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Location = () => {
   return (
     <section>
@@ -101,6 +145,7 @@ export default () => (
       </div>
       <div className={styles.container}>
         <Stack size="xxlarge">
+          <Register />
           <Location />
           <section>
             <ComingSoon title="Prizes" description="To be announced soon" />
