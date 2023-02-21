@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './prizes.module.scss';
-import { H2, HL, Text } from '@components/typography/typography';
+import { H2, HL, Subtitle } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { Prize } from '@components/prize/prize';
 import { PrizeData } from './prize-data.model';
@@ -28,7 +28,7 @@ const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
       <Stack size="xlarge" className={styles['event-page-prizes-content']}>
         <Stack size="small">
           <HL id="prizes">Prizes</HL>
-          <Text>What you can win and how to win them.</Text>
+          <Subtitle>What you can win and how to win them.</Subtitle>
         </Stack>
         <Stack size="medium" className={styles['prize-section']}>
           <H2>Main Prizes</H2>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './judges.module.scss';
-import { H2, HL, Text } from '@components/typography/typography';
+import { H2, HL, Subtitle } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { Judge } from '@components/judge/judge';
 import { JudgeGroup } from './judge-group.model';
@@ -26,7 +26,7 @@ const Judges = ({ data }: PropTypes) => {
       <Stack size="xlarge" className={styles['event-page-judges-content']}>
         <Stack size="small">
           <HL>Judges</HL>
-          <Text>Here to be impressed, so make an impression.</Text>
+          <Subtitle>Here to be impressed, so make an impression.</Subtitle>
         </Stack>
         <div className={styles['event-page-judges-grid']}>
           {data.map(renderSection)}
