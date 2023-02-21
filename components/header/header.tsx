@@ -12,10 +12,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // const menuItems: MenuItemI[] = [
+  //   { text: 'Past Events', href: '/events' },
+  //   { text: 'Sponsor', href: '/sponsorship' },
+  //   { text: 'Recruitment', href: 'http://go.unihack.net/team' },
+  //   { text: 'Blog', href: 'https://medium.com/unihack-blog' },
+  // ];
+
   const menuItems: MenuItemI[] = [
-    { text: 'Past Events', href: '/events' },
-    { text: 'Sponsor', href: '/sponsorship' },
-    { text: 'Recruitment', href: 'http://go.unihack.net/team' },
+    { text: 'Workshops', href: '#workshops' },
+    { text: 'Sponsors', href: '#sponsors' },
+    { text: 'Register Now', href: 'https://manage.unihack.net' },
     { text: 'Blog', href: 'https://medium.com/unihack-blog' },
   ];
 
