@@ -10,9 +10,11 @@ import Schedule from '@sections/event-info/event-schedule/event-schedule';
 
 import SponsorData from '@content/events/2023/sponsors.json';
 import ScheduleData from '@content/events/2023/schedule.json';
+import WorkshopData from '@content/events/2023/workshops.json';
 import EventChecklist from '@sections/event-info/event-checklist';
 import { ComingSoon } from '@sections/homepage/coming-soon';
 import { MelbourneHub } from '@sections/homepage/melbourne-hub';
+import Workshops from '@sections/event-info/workshops';
 
 const Index = () => (
   <div>
@@ -37,7 +39,7 @@ const Index = () => (
             title="Prizes & Judges"
             description="To be announced soon"
           />
-          <ComingSoon title="Workshops" description="To be announced soon" />
+          <Workshops data={WorkshopData} />
           <MelbourneHub />
         </div>
       </div>

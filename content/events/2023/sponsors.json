@@ -22,6 +22,12 @@
         "name": "Xero",
         "imagePath": "/Xero.svg"
       }
+    ],
+    "silver": [
+      {
+        "name": "GitHub",
+        "imagePath": "/GitHub.svg"
+      }
     ]
   }
 }

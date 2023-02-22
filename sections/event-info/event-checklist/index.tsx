@@ -22,6 +22,22 @@ const EventChecklist = () => {
         </li>
         <li>
           <div className={styles['checklist-content']}>
+            <h3>Buy some swag!</h3>
+            <p>
+              Registration is free for everyone - but if you're looking for
+              something extra, our swag pack is available to buy.
+            </p>
+          </div>
+          <ButtonLink
+            type="primary"
+            theme="light"
+            href="https://merch.unihack.net"
+          >
+            Buy Merch
+          </ButtonLink>
+        </li>
+        <li>
+          <div className={styles['checklist-content']}>
             <h3>Read the Participants Handbook!</h3>
             <p>
               Find out everything you need to know about the competition here!
@@ -34,12 +50,12 @@ const EventChecklist = () => {
         <li>
           <div className={styles['checklist-content']}>
             <h3>Submit your entry on Devpost!</h3>
-            <p>Here is where you'll submit your entries for UNIHACK 2022!</p>
+            <p>Here is where you'll submit your entries for UNIHACK 2023!</p>
           </div>
           <ButtonLink
             type="primary"
             theme="light"
-            href="https://unihack2022.devpost.com"
+            href="https://unihack2023.devpost.com"
           >
             Devpost
           </ButtonLink>

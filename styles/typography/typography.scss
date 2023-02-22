@@ -96,6 +96,15 @@
   }
 }
 
+@mixin subtitle {
+  @include no-margin;
+  @include subtitle-mobile;
+
+  @include md {
+    @include subtitle-desktop;
+  }
+}
+
 @mixin underline($color) {
   &:before {
     content: '';

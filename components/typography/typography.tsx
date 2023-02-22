@@ -64,4 +64,8 @@ const Subtext = (props: TextProps) => {
   return <p className={cx('small', props.className)}>{props.children}</p>;
 };
 
-export { HXL, HL, H1, H2, H2XL, H3, H4, Text, Subtext };
+const Subtitle = (props: TextProps) => {
+  return <p className={cx('subtitle', props.className)}>{props.children}</p>;
+};
+
+export { HXL, HL, H1, H2, H2XL, H3, H4, Text, Subtext, Subtitle };

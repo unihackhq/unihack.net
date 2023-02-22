@@ -139,3 +139,17 @@
   letter-spacing: -2px;
   font-weight: 600;
 }
+
+@mixin subtitle-desktop {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+@mixin subtitle-mobile {
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
