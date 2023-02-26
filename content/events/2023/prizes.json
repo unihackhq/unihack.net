@@ -4,17 +4,131 @@
       {
         "title": "1st Place",
         "imagePath": "/images/prizes/first-place.svg",
-        "contents": ["TBA"]
+        "contents": [
+          "$4000 cash",
+          "Sennhesier HD350 Wireless Heaphones for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
       },
       {
         "title": "2nd Place",
         "imagePath": "/images/prizes/second-place.svg",
-        "contents": ["TBA"]
+        "contents": [
+          "$2000 cash",
+          "Ember Smart Mug for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
       },
       {
         "title": "3rd Place",
         "imagePath": "/images/prizes/third-place.svg",
-        "contents": ["TBA"]
+        "contents": [
+          "$1000 cash",
+          "Amazon Echo Dot with Clock for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      }
+    ],
+    "category": [
+      {
+        "title": "Best Design",
+        "description": "Awarded to the most usable and best looking user interface.",
+        "imagePath": "/images/prizes/best-design.svg",
+        "contents": [
+          "Blunt Metro Umbrella for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      },
+      {
+        "title": "Most Creative Idea",
+        "description": "The project that has the most original idea or reinvention.",
+        "imagePath": "/images/prizes/most-creative.svg",
+        "contents": [
+          "Elgato Stream Deck Mini for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      },
+      {
+        "title": "Social Impact Prize",
+        "description": "The best idea that addresses an issue in your local community.",
+        "imagePath": "/images/prizes/best-social-impact.svg",
+        "contents": [
+          "Frank Green Tea Set for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      },
+      {
+        "title": "First Timers Prize",
+        "description": "The best project created by first-time hackathon participants.",
+        "subtext": "To be eligible, at least 50% of your team must have not attended a hackathon.",
+        "imagePath": "/images/prizes/first-time.svg",
+        "contents": [
+          "$100 Prezzee Gift Card for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      },
+      {
+        "title": "Most Entertaining Pitch",
+        "description": "Can you summarise your pitch in in three minutes - whilst also being engaging and entertaining?",
+        "imagePath": "/images/prizes/best-pitch.svg",
+        "contents": [
+          "Edifier G1000 2.0 RGB Speakers for each team member",
+          "HEX Swag Pack + Interview on their 'Friends of HEX' vodcast",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      },
+      {
+        "title": "People's Choice Award",
+        "description": "The project that wins the hearts and votes of the people.",
+        "imagePath": "/images/prizes/people-choice.svg",
+        "contents": [
+          "An Oodie for each team member",
+          "Free Personal Branding Micro Course from HEX"
+        ]
+      },
+      {
+        "title": "Best Social Media Prize",
+        "description": "Send out the best tweet, message, photo, story or short video that sums up your experience of #UNIHACK2022.",
+        "imagePath": "/images/prizes/socm.svg",
+        "subtext": "This is an individual prize.",
+        "contents": ["Fujifilm Instax Stax of Fun Bundle"]
+      },
+      {
+        "title": "Best Meme",
+        "description": "Make the best meme during the event and post it on the UNIHACK Discord. I couldn't make it any more obvious.",
+        "imagePath": "/images/prizes/meme.svg",
+        "subtext": "This is an individual prize.",
+        "contents": ["Totally a secret"]
+      }
+    ],
+    "sponsor": [
+      {
+        "title": "Most Healthy Hack",
+        "description": "We're looking for something that helps people live a healthier life. It could help people be more in control of their health. Or it could be something that improves the health systems around them.",
+        "imagePath": "/images/sponsors/Miga Health.svg",
+        "contents": ["$1000 for the entire team"]
+      },
+      {
+        "title": "Creative Data-Driven Pitch Prize",
+        "description": "We are looking for the most compelling and quality pitch that incorporates data analytics and visualisation elements! Tell us your story, sell your idea to us and don't be afraid to get creative and incorporate digital tools and technology!",
+        "imagePath": "/images/sponsors/PwC.svg",
+        "contents": [
+          "Jabra Elite 7 Pro ANC True Wireless ANC In-Ear Headphones",
+          "Corsair K65 RGB Mini 60% Mechnical Keyboard",
+          "Logitech G502 X Wired Gaming Mouse",
+          "(One item per person, subject to quantity)"
+        ]
+      },
+      {
+        "title": "Most #Human Prize",
+        "description": "One of Xero’s core values is #Human. It's the core to the way that we work, think about our customers and treat each other. Xeros are authentic, inclusive and really care. This prize will look at your individuality, showing your authenticity and your unique attributes. It will also look at the empathy of your design, pitch and product. Is it inclusive and approachable? Are you willing to be vulnerable, share fears, failures and learnings?",
+        "imagePath": "/images/sponsors/Xero.svg",
+        "contents": [
+          "1:1 personalised meeting with three different Xero staff, including:",
+          "a grad advisor to look at your resume and give you job application advice;",
+          "a grad people leader for general career coaching chat and to talk through what to expect in a grad program;",
+          "and, a senior engineer to learn more about engineering at Xero"
+        ]
       }
     ]
   }
