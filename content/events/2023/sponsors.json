@@ -27,7 +27,20 @@
       {
         "name": "GitHub",
         "imagePath": "/GitHub.svg"
+      },
+      {
+        "name": "HEX",
+        "imagePath": "/HEX.svg"
+      }
+    ],
+    "bronze": [
+      {
+        "name": "Zerocube",
+        "imagePath": "/Zerocube.svg"
       }
     ]
+  },
+  "titles": {
+    "bronze": "Partners"
   }
 }

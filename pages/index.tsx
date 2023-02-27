@@ -11,10 +11,13 @@ import Schedule from '@sections/event-info/event-schedule/event-schedule';
 import SponsorData from '@content/events/2023/sponsors.json';
 import ScheduleData from '@content/events/2023/schedule.json';
 import WorkshopData from '@content/events/2023/workshops.json';
+import PrizeData from '@content/events/2023/prizes.json';
 import EventChecklist from '@sections/event-info/event-checklist';
-import { ComingSoon } from '@sections/homepage/coming-soon';
+// import { ComingSoon } from '@sections/homepage/coming-soon';
 import { MelbourneHub } from '@sections/homepage/melbourne-hub';
 import Workshops from '@sections/event-info/workshops';
+import Prizes from '@sections/event-info/prizes/prizes';
+import Stack from '@components/stack/stack';
 
 const Index = () => (
   <div>
@@ -35,15 +38,14 @@ const Index = () => (
             <Schedule data={ScheduleData} />
             <EventChecklist />
           </div>
-          <ComingSoon
-            title="Prizes & Judges"
-            description="To be announced soon"
-          />
           <Workshops data={WorkshopData} />
           <MelbourneHub />
         </div>
       </div>
-      <Sponsors data={SponsorData} />
+      <Stack size="xlarge">
+        <Prizes data={PrizeData.prizes} />
+        <Sponsors data={SponsorData} />
+      </Stack>
     </Page>
   </div>
 );
