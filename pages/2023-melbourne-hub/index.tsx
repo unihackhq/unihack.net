@@ -4,7 +4,6 @@ import Page from '@layouts/page/page';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 
 import SponsorData from '@content/events/2023/sponsors.json';
-import { ComingSoon } from '@sections/homepage/coming-soon';
 
 import styles from './index.module.scss';
 import ButtonLink from '@components/button/button-link';
