@@ -3,7 +3,6 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import Page from '../layouts/page/page';
-import BrandHero from '@sections/brand-hero/brand-hero';
 import { JoinDiscord } from '@sections/homepage/discord';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 import Schedule from '@sections/event-info/event-schedule/event-schedule';
@@ -18,6 +17,7 @@ import { MelbourneHub } from '@sections/homepage/melbourne-hub';
 import Workshops from '@sections/event-info/workshops';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Stack from '@components/stack/stack';
+import Stream from '@sections/stream/stream';
 
 const Index = () => (
   <div>
@@ -30,7 +30,7 @@ const Index = () => (
       />
     </Head>
     <Page>
-      <BrandHero />
+      <Stream />
       <div className={styles.index}>
         <div className={styles.grid}>
           <JoinDiscord />

@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player/twitch';
 
 export function calculateTimeLeft() {
   // Date object is for Sydney/Melbourne time 7th March 2021 5pm
-  const start = +new Date('2022/02/25 18:30 +1100');
+  const start = +new Date('2023/03/03 18:00 +1100');
   const now = +new Date();
   let timeString = '';
 
@@ -15,7 +15,7 @@ export function calculateTimeLeft() {
     return timeString;
   }
 
-  const difference = +new Date('2022/02/27 17:00 +1100') - now;
+  const difference = +new Date('2023/03/05 17:00 +1100') - now;
   let timeLeft = { hours: '00', minutes: '00', seconds: '00' };
 
   if (difference > 0) {
