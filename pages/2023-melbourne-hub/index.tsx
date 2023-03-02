@@ -111,7 +111,7 @@ const Location = () => {
           <div className={styles.time}>
             <h2>March 4 - March 5</h2>
             <p>G54 Lecture Theatre</p>
-            <p>10AM - 6PM</p>
+            <p>10AM - 9PM</p>
           </div>
         </div>
       </div>
@@ -147,9 +147,6 @@ export default () => (
         <Stack size="xxlarge">
           <Register />
           <Location />
-          <section>
-            <ComingSoon title="Prizes" description="To be announced soon" />
-          </section>
           <Sponsors data={SponsorData} title="UNIHACK Sponsors" />
           <WiredMonashTag />
         </Stack>
