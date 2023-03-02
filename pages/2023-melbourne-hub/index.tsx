@@ -4,7 +4,6 @@ import Page from '@layouts/page/page';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 
 import SponsorData from '@content/events/2023/sponsors.json';
-import { ComingSoon } from '@sections/homepage/coming-soon';
 
 import styles from './index.module.scss';
 import ButtonLink from '@components/button/button-link';
@@ -111,7 +110,7 @@ const Location = () => {
           <div className={styles.time}>
             <h2>March 4 - March 5</h2>
             <p>G54 Lecture Theatre</p>
-            <p>10AM - 6PM</p>
+            <p>10AM - 9PM</p>
           </div>
         </div>
       </div>
@@ -147,9 +146,6 @@ export default () => (
         <Stack size="xxlarge">
           <Register />
           <Location />
-          <section>
-            <ComingSoon title="Prizes" description="To be announced soon" />
-          </section>
           <Sponsors data={SponsorData} title="UNIHACK Sponsors" />
           <WiredMonashTag />
         </Stack>
