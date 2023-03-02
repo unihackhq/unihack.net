@@ -3,6 +3,8 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 import { Logo } from '@components/logo';
 
+const END_DATE = '2023/03/05 17:00 + 1100'
+
 interface TimeLeft {
   countdown: boolean;
   hours?: string;
@@ -13,7 +15,7 @@ interface TimeLeft {
 export const calculateTimeLeft = (): TimeLeft => {
   // Date object is for Sydney/Melbourne time 7th March 2021 5pm
   const now = +new Date();
-  const difference = +new Date('2022/02/27 17:00 +1100') - now;
+  const difference = +new Date(END_DATE) - now;
   let timeLeft = { hours: '00', minutes: '00', seconds: '00' };
 
   if (difference > 0) {
@@ -54,7 +56,7 @@ const Index = () => {
   return (
     <section className={styles.countdown}>
       <Head>
-        <title>UNIHACK 2022 - Countdown</title>
+        <title>UNIHACK 2023 - Countdown</title>
       </Head>
       <Logo
         baseColor="white"
