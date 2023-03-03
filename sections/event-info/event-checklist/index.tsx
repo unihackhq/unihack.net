@@ -43,8 +43,12 @@ const EventChecklist = () => {
               Find out everything you need to know about the competition here!
             </p>
           </div>
-          <ButtonLink type="primary" theme="light" href="#">
-            TBA
+          <ButtonLink
+            type="primary"
+            theme="light"
+            href="https://unihack.notion.site/2023-Participants-Handbook-5aced37a11934bbcbe6a5071b4d624f6"
+          >
+            Handbook
           </ButtonLink>
         </li>
         <li>
