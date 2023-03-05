@@ -1,0 +1,163 @@
+{
+  "judges": [
+    {
+      "title": "Main Prize",
+      "panel": [
+        {
+          "name": "András Bubics",
+          "title": "Lead Consultant",
+          "org": "DIUS",
+          "imagePath": "images/judges/andras-bubics.jpg",
+          "links": [
+            {
+              "name": "LinkedIn",
+              "href": "https://www.linkedin.com/in/andras-bubics/"
+            }
+          ]
+        },
+        {
+          "name": "Jeanette Cheah",
+          "title": "CEO & Co-Founder",
+          "org": "Hacker Exchange",
+          "imagePath": "images/judges/jeanette-cheah.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://hacker.exchange/"
+            },
+            {
+              "name": "Instagram",
+              "href": "https://instagram.com/hackerexchange"
+            }
+          ]
+        },
+        {
+          "name": "Robert Koch",
+          "title": "Cloud Architect",
+          "org": "Amazon Web Services",
+          "imagePath": "images/judges/robert-koch.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://me.kochie.io"
+            }
+          ]
+        },
+        {
+          "name": "Bec Martin",
+          "title": "CTO",
+          "org": "MailTumble",
+          "imagePath": "images/judges/bec-martin.jpg",
+          "links": [
+            {
+              "name": "LinkedIn",
+              "href": "https://www.linkedin.com/in/bec-martin-8806a938/"
+            }
+          ]
+        },
+        {
+          "name": "Phil Nash",
+          "title": "Developer Advocate",
+          "org": "Sonar",
+          "imagePath": "images/judges/phil-nash.jpg"
+        },
+        {
+          "name": "Devin Watson",
+          "title": "Software Engineer",
+          "org": "Atlassian",
+          "imagePath": "images/judges/devin-watson.jpg"
+        },
+        {
+          "name": "Samantha Wong",
+          "title": "Co-founder",
+          "org": "Pory.io",
+          "imagePath": "images/judges/samantha-wong-2.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://pory.io"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Most Creative Idea",
+      "panel": [
+        {
+          "name": "Lauren Santarossa",
+          "title": "Strategic Initiative Lead",
+          "org": "IRESS",
+          "imagePath": "images/judges/lauren-santarossa.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Best Design",
+      "panel": [
+        {
+          "name": "James Dale",
+          "title": "Founder",
+          "org": "Friday Engineering",
+          "imagePath": "images/judges/james-dale.jpeg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://https://friday.engineering"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/_JamesDale"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Impact Prize",
+      "panel": [
+        {
+          "name": "Xavier Ho",
+          "title": "Interaction Design Lecturer",
+          "org": "Monash University",
+          "imagePath": "images/judges/xavier-ho.jpg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://jtg.design"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/Xavier_Ho"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "First Timers Prize",
+      "panel": [
+        {
+          "name": "Eric Jiang",
+          "title": "Software Engineer",
+          "org": "Google",
+          "imagePath": "images/judges/eric-jiang.jpeg",
+          "links": [
+            {
+              "name": "Website",
+              "href": "https://ericjiang.dev"
+            },
+            {
+              "name": "Twitter",
+              "href": "https://twitter.com/ericjiang97"
+            },
+            {
+              "name": "LinkedIn",
+              "href": "https://linkedin.com/in/ericjiang97"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
