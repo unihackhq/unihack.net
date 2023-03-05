@@ -39,7 +39,7 @@ const Index = () => (
           <div className={styles.row}>
             <HomeCard
               image={inspirationImage}
-              title={<>Vote for the People's Chioce Award</>}
+              title={<>Vote for the People's Choice Award</>}
               placeholderColor="purple"
               buttonLink="https://unihack2023.devpost.com/"
               buttonText="Vote NOW!"
