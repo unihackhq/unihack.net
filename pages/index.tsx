@@ -13,7 +13,6 @@ import PrizeData from '@content/events/2023/prizes.json';
 import JudgesData from '@content/events/2023/judges.json';
 import EventChecklist from '@sections/event-info/event-checklist';
 // import { ComingSoon } from '@sections/homepage/coming-soon';
-import { MelbourneHub } from '@sections/homepage/melbourne-hub';
 import Workshops from '@sections/event-info/workshops';
 import Prizes from '@sections/event-info/prizes/prizes';
 import Stack from '@components/stack/stack';
