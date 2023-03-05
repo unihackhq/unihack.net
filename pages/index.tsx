@@ -60,7 +60,6 @@ const Index = () => (
             <EventChecklist />
           </div>
           <Workshops data={WorkshopData} />
-          <MelbourneHub />
         </div>
       </div>
       <Stack size="xlarge">
