@@ -14,6 +14,7 @@ const description = `
 
 type Props = {
   featureBackground?: boolean;
+  headerless?: boolean;
   children: ReactNode;
 };
 
@@ -92,7 +93,7 @@ const Page = (props: Props) => {
           rel="stylesheet"
         />
       </Head>
-      <Header />
+      {!props.headerless && <Header />}
       <div className={styles['main-content']}>{props.children}</div>
       <Footer />
     </div>
