@@ -1,73 +1,54 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
-
-import Page from '../layouts/page/page';
-import Sponsors from '@sections/event-info/sponsors/sponsors';
-import Schedule from '@sections/event-info/event-schedule/event-schedule';
-
-import SponsorData from '@content/events/2023/sponsors.json';
-import ScheduleData from '@content/events/2023/schedule.json';
-import WorkshopData from '@content/events/2023/workshops.json';
-import PrizeData from '@content/events/2023/prizes.json';
-import JudgesData from '@content/events/2023/judges.json';
-import EventChecklist from '@sections/event-info/event-checklist';
-// import { ComingSoon } from '@sections/homepage/coming-soon';
-import Workshops from '@sections/event-info/workshops';
-import Prizes from '@sections/event-info/prizes/prizes';
-import Stack from '@components/stack/stack';
-import Stream from '@sections/stream/stream';
-import Judges from '@sections/event-info/judges/judges';
-import HomeCard from '@components/home-card';
-import inspirationImage from '../public/images/homepage/past.png';
-import faqsImage from '../public/images/homepage/faqs.png';
+import Page from '@layouts/page/page';
+import Link from 'next/link';
+import { Logo } from '@components/logo';
+import ButtonLink from '@components/button/button-link';
 
 const Index = () => (
-  <div>
+  <Page headerless>
     <Head>
-      <title>UNIHACK 2023 - March 3-5, 2023</title>
+      <title>UNIHACK 2024 - Coming Soon - March 1-3, 2024</title>
       <meta
         property="og:title"
-        content={`UNIHACK 2023 - March 3-5, 2023`}
+        content={`UNIHACK 2024 - Coming Soon - March 1-3, 2024`}
         key="title"
       />
     </Head>
-    <Page>
-      <Stream />
-      <div className={styles.index}>
-        <div className={styles.grid}>
-          <div className={styles.row}>
-            <HomeCard
-              image={inspirationImage}
-              title={<>Vote for the People's Choice Award</>}
-              placeholderColor="purple"
-              buttonLink="https://unihack2023.devpost.com/"
-              buttonText="Vote NOW!"
-            />
-            <HomeCard
-              image={faqsImage}
-              title={
-                <>We run Australia's largest university student hackathon</>
-              }
-              placeholderColor="pacific"
-              buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
-              buttonText="Join the team today"
-            />
-          </div>
-          <div className={styles.row}>
-            <Schedule data={ScheduleData} />
-            <EventChecklist />
-          </div>
-          <Workshops data={WorkshopData} />
-        </div>
+    <div className={styles.homepage}>
+      <div className={styles.logo}>
+        <Logo baseColor="black" topColor="black" />
       </div>
-      <Stack size="xlarge">
-        <Prizes data={PrizeData.prizes} />
-        <Judges data={JudgesData.judges} />
-        <Sponsors data={SponsorData} />
-      </Stack>
-    </Page>
-  </div>
+      <h1>
+        UNIHACK returns on <span>March 1-3, 2024</span>
+      </h1>
+      <p>
+        We're currently making some changes to our website in preparation for
+        UNIHACK 2024. But in the meantime, you can pre-register your interest.
+      </p>
+      <p className={styles['preregister']}>
+        <ButtonLink
+          type="primary"
+          theme="light"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdKoXcLr1mg6QIH7s0kcaWrV6MQhMn9N-AXuWcDUDz3RV6Ltw/viewform?usp=pp_url"
+        >
+          Pre-register now
+        </ButtonLink>
+      </p>
+      <p className={styles['past-events']}>
+        Looking for our <Link href="/events">past events</Link>?
+      </p>
+      <div className={styles.sponsorship}>
+        <h2>Looking to sponsor/partner?</h2>
+        <p>
+          We are still in the process of finalising our sponsorship packages.
+          But if you want to get in touch, you can reach us at{' '}
+          <strong>sponsorship@unihack.net</strong>
+        </p>
+      </div>
+    </div>
+  </Page>
 );
 
 export default Index;
