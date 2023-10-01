@@ -13,8 +13,8 @@ import styles from './sponsorship.module.scss';
 export default () => (
   <>
     <Head>
-      <title>Sponsor UNIHACK 2023</title>
-      <meta property="og:title" content="Sponsor UNIHACK 2023" key="title" />
+      <title>Sponsor UNIHACK 2024</title>
+      <meta property="og:title" content="Sponsor UNIHACK 2024" key="title" />
     </Head>
     <Page>
       <Stack size="xxlarge">

@@ -6,14 +6,21 @@
   @include xsm {
     .nav {
       display: none;
-      flex-direction: column;
-      align-items: flex-end;
-  
-      list-style: none;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
       margin: 0;
-      margin-top: $base;
-      padding: 0;
-  
+      background: rgba(0,0,0, 0.95);
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+
+      padding-top: 72px;
+      
       &.nav-show {
         display: flex;
       }
@@ -31,34 +38,36 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 999;
   
       width: 32px;
-      height: 30px;
+      height: 32px;
       padding: 0;
       border: 2px solid $secondary;
-      background-color: white;
+      background-color: transparent;
       cursor: pointer;
-  
-      box-shadow: 4px 4px 0px $secondary;
-  
-      &:hover {
-        box-shadow: 3px 3px 0px 0px $secondary;
-        transform: translate(1px, 1px);
-      }
-  
-      &:active {
-        box-shadow: none;
-        transform: translate(4px, 4px);
-      }
   
       &:focus {
         outline: none;
       }
 
       svg {
-        width: 20px;
+        width: 16px;
         height: 16px;
+        fill: $secondary;
       }
+
+      &.nav-show {
+        color: white;
+        border: 2px solid white;
+        position: fixed;
+
+        svg {
+          fill: white;
+        }
+      }
+
+      
     }
   }
 
@@ -70,10 +79,12 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-  
-      list-style: none;
-      margin: 0;
       padding: 0;
+      position: relative;
+      width: auto;
+      height: auto;
+      background: transparent;
+  
     }
 
     .menu-container {

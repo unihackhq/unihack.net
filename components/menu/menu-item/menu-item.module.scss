@@ -1,13 +1,7 @@
 @import '../../../styles/styles.scss';
 
 .menu-item {
-  &.dark {
-    & a {
-      @include md {
-        @include link-underline($white);
-      }
-    }
-  }
+
 
   @include xsm {
     display: block;
@@ -21,24 +15,19 @@
   @include md {
     margin-bottom: 0;
     &:not(:first-of-type) {
-      margin-left: $base * 5;
+      margin-left: 24px;
     }
   }
 
   & a {
     @include xsm {
-      @include link;
       display: flex;
       align-items: center;
-      padding: $base $base * 2;
-      width: 150px;
-      height: 40px;
-      background-color: white;
-      border: 2px solid $secondary;
-      box-shadow: 4px 4px 0px $secondary;
+      color: white;
+      text-decoration: none;
 
       p {
-        font-weight: 600;
+        font-weight: 500;
       }
     }
 
@@ -53,22 +42,12 @@
       box-shadow: none;
       text-transform: none;
 
-      p {
-        font-weight: normal;
-      }
-
       @include link-underline;
     }
 
     &:hover {
       @include xsm {
-        box-shadow: 3px 3px 0px 0px $secondary;
-        transform: translate(1px, 1px);
-      }
-
-      @include md {
-        box-shadow: none;
-        transform: none;
+        text-decoration: underline;
       }
     }
 
