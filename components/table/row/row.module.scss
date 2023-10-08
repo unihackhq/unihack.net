@@ -3,11 +3,11 @@
 .row {
   display: flex;
   align-items: center;
-  height: 40px;
-  background-color: rgba($color: #fff, $alpha: 0.5);
+  height: $table_row_height;
+  background-color: rgba($color: #fff, $alpha: 0.6);
   padding-left: $base * 2;
   grid-row: auto;
-  border-radius: 20px;
+  border-radius: 4px;
 
   p {
     vertical-align: middle;

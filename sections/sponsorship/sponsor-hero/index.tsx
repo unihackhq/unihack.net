@@ -27,24 +27,24 @@ const SponsorHero = () => (
       </Text>
       <div className={styles['sponsor-hero-event-data']}>
         <IconLabelWithTitle
+          icon="Calendar_White"
+          title="Date"
+          style={styles['sponsor-hero-event-data-content']}
+        >
+          1-3 March 2024
+        </IconLabelWithTitle>
+        <IconLabelWithTitle
           icon="Location_White"
           title="Location"
           style={styles['sponsor-hero-event-data-content']}
         >
           Australia &amp; New Zealand
         </IconLabelWithTitle>
-        <IconLabelWithTitle
-          icon="Calendar_White"
-          title="Date"
-          style={styles['sponsor-hero-event-data-content']}
-        >
-          March 2023
-        </IconLabelWithTitle>
       </div>
       <ButtonLink
         className={styles['sponsor-hero-link']}
         type="primary"
-        theme="dark"
+        theme="transparent"
         href={SPONSORSHIP_EMAIL}
         onClick={() => {
           event({

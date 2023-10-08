@@ -1,102 +1,141 @@
 {
   "packages": [
     {
-      "id": 4,
+      "id": 5,
       "name": "Platinum",
-      "price": "$10,000",
-      "maxCapacity": "1",
-      "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
-      "customPerks": [{ "perkID": 5, "content": "10" }]
+      "price": "$10,000+",
+      "maxCapacity": "2",
+      "maxCapacityUnit": "sponsors",
+      "perks": [
+        1,
+        { "perkID": 2, "content": "10" },
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        { "perkID": 13, "isChecked": true, "notes": "remote + hub" },
+        14
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hub Partner",
+      "price": "$5,000+",
+      "maxCapacity": "2",
+      "maxCapacityUnit": "per hub",
+      "perks": [
+        1,
+        { "perkID": 2, "content": "8" },
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        { "perkID": 13, "isChecked": true, "notes": "at hub only" },
+        { "perkID": 14, "isChecked": true, "notes": "for the specific hub" }
+      ]
     },
     {
       "id": 3,
       "name": "Gold",
       "price": "$3,000",
-      "maxCapacity": "15",
-      "perks": [1, 2, 3, 4, 6, 7, 8, 9, 10],
-      "customPerks": [{ "perkID": 5, "content": "6" }]
+      "perks": [1, { "perkID": 2, "content": "6" }, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     },
     {
       "id": 2,
       "name": "Silver",
-      "price": "$1,500",
+      "price": "$1,800",
       "maxCapacity": "",
-      "perks": [1, 2, 3, 4],
-      "customPerks": [{ "perkID": 5, "content": "3" }]
+      "perks": [1, { "perkID": 2, "content": "3" }, 3, 4, 5, 6]
     },
     {
       "id": 1,
       "name": "Bronze",
-      "price": "$750",
+      "price": "$900",
       "maxCapacity": "",
-      "perks": [1, 2, 3],
-      "customPerks": []
+      "perks": [{ "perkID": 2, "content": "0" }, 3, 4]
     }
   ],
   "perks": [
     {
       "id": 1,
-      "name": "Company giveaways",
-      "description": "Swag, tools and APIs."
-    },
-    {
-      "id": 2,
-      "name": "Mailouts and social posts",
-      "description": "Get your brand out to our community."
-    },
-    {
-      "id": 3,
-      "name": "API & tools roundup",
-      "description": "Include branding on social media posts, marketing material."
-    },
-    {
-      "id": 4,
-      "name": "Custom prizes",
-      "description": "Increase exposure for your brand, product or API through themed custom prizes."
-    },
-    {
-      "id": 5,
       "name": "Send mentors",
       "description": "Work with students during the hackathon and find your next team hire."
     },
     {
+      "id": 2,
+      "name": "Max mentors at any one time",
+      "description": "Work with students during the hackathon and find your next team hire."
+    },
+    {
+      "id": 3,
+      "name": "Company giveaways",
+      "description": "Swag, tools and APIs."
+    },
+    {
+      "id": 4,
+      "name": "Email mailouts and social posts",
+      "description": "Get your brand out to our community."
+    },
+    {
+      "id": 5,
+      "name": "Featured in our API/tools roundup",
+      "description": "Include branding on social media posts, marketing material."
+    },
+    {
       "id": 6,
+      "name": "Add sponsor prizes",
+      "description": "Increase exposure for your brand, product or API through themed custom prizes."
+    },
+
+    {
+      "id": 7,
       "name": "Branding on UNIHACK merch",
       "description": "Including participant handbooks, t-shirts and banners."
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Run recruitment campaigns",
       "description": "On-the-day recruitment and job opportunity mailouts."
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Resume and attendee list",
       "description": "Receive resumes of competitors who opt-in."
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Host an event (or workshop)",
       "description": "Engage with students before the hackathon."
     },
     {
-      "id": 10,
-      "name": "Product/API demo",
+      "id": 11,
+      "name": "Demonstrate API or product to students",
       "description": "Show off a product or API that students can use during the hack with a 5 minute demo during the Opening Ceremony"
     },
     {
-      "id": 11,
-      "name": "Keynote address",
-      "description": "Kick off the hackathon with a speech by your most esteemed representative."
-    },
-    {
       "id": 12,
-      "name": "Judge & award main prize",
+      "name": "Main prize judge spot",
       "description": "Get to judge all the hacks and present the main prizes."
     },
     {
       "id": 13,
-      "name": "Co-branding",
+      "name": "Address at opening ceremony",
+      "description": "Kick off the hackathon with a speech by your most esteemed representative."
+    },
+    {
+      "id": 14,
+      "name": "Event co-branding",
       "description": "All promotions will have your company’s name."
     }
   ]

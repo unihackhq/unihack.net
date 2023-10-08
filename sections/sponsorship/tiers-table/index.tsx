@@ -38,7 +38,9 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
   return sponsorshipData.packages.map((tier: Package) => {
     const capacity = parseInt(tier.maxCapacity, 10);
     const subtitle =
-      capacity > 0 ? `Max ${capacity} sponsor${capacity > 1 ? 's' : ''}` : '';
+      capacity > 0
+        ? `Max ${capacity} ${tier.maxCapacityUnit ?? 'sponsor'}`
+        : '';
 
     return {
       id: tier.id,
@@ -54,28 +56,26 @@ const transformPackages = (sponsorshipData: any): ColumnI[] => {
 const transformPackagePerks = (tier: Package, totalPerks: number) => {
   const cells: CellI[] = [];
 
-  // Active perks
-  tier.perks.map((perk: number) => {
-    cells[perk - 1] = {
-      key: generateKey(tier.name, perk - 1),
-      isChecked: true,
-    };
-  });
+  for (let i = 0; i < totalPerks; i++) {
+    const perk = tier.perks.find((perk) => {
+      if (typeof perk === 'number') {
+        return perk === i + 1;
+      }
+      return perk.perkID === i + 1;
+    });
 
-  // Custom perks
-  tier.customPerks.map((perk: CustomPerk) => {
-    cells[perk.perkID - 1] = {
-      key: generateKey(tier.name, perk.perkID - 1),
-      content: perk.content,
-    };
-  });
-
-  // Inactive perks
-  while (cells.length < totalPerks) {
-    cells[cells.length] = {
-      key: generateKey(tier.name, cells.length + 1),
-      isChecked: false,
-    };
+    if (!perk || perk === undefined) {
+      cells[i] = { key: generateKey(tier.name, i), isChecked: false };
+    } else if (typeof perk === 'number') {
+      cells[i] = { key: generateKey(tier.name, i), isChecked: true };
+    } else {
+      cells[i] = {
+        key: generateKey(tier.name, i),
+        content: perk?.content,
+        isChecked: perk?.isChecked,
+        notes: perk?.notes,
+      };
+    }
   }
 
   return cells;

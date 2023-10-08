@@ -1,6 +1,8 @@
 export interface CustomPerk {
     perkID: number;
-    content: string;
+    content?: string;
+    isChecked?: boolean;
+    notes?: string;
 }
 
 export interface Package {
@@ -9,8 +11,8 @@ export interface Package {
     price: string;
     colour: string;
     maxCapacity: string;
-    perks: number[];
-    customPerks: CustomPerk[];
+    maxCapacityUnit?: string;
+    perks: (number | CustomPerk)[];
 }
 
 export interface Perk {
