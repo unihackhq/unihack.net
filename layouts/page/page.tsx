@@ -4,7 +4,6 @@ import Head from 'next/head';
 import styles from './page.module.scss';
 import Header from '@components/header/header';
 import Footer from '@components/footer/footer';
-import { COLORS } from '../../styles/styles';
 
 const description = `
   UNIHACK is Australia's premier student hackathon.
