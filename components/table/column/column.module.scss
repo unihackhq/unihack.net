@@ -34,6 +34,11 @@ $subtitleColour: #515151;
     flex-direction: column;
     align-items: center;
 
+    h3 {
+      font-size: 21px;
+      letter-spacing: -1px;
+    }
+
     p {
       font-size: 13px;
       color: $subtitleColour;

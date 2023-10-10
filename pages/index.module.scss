@@ -61,7 +61,7 @@
     font-weight: 400;
     max-width: 480px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto $base * 4;
 
     a {
       color: $pacific;
@@ -69,28 +69,6 @@
 
     a:hover {
       color: $pacific-d50;
-    }
-  }
-  
-  .sponsorship {
-    background: $midori;
-    padding: 36px;
-    border-radius: 8px;
-    text-align: center;
-    color: white;
-    max-width: 640px;
-    margin: 36px auto 0;
-
-    h2 {
-      color: white;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0 0 16px;
-    }
-
-    p {
-      margin: 0;
     }
   }
 }

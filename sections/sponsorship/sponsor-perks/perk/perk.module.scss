@@ -3,7 +3,8 @@
 
 .perk {
   display: flex;
-  border-radius: 0px;
+  border-radius: 8px;
+  overflow: hidden;
 
   @include xsm {
     flex-direction: column;
@@ -12,7 +13,6 @@
   @include lg {
     display: inline-table;
     max-width: 420px;
-    margin-right: $base * 4;
   }
 
   .perk-img {
@@ -24,6 +24,10 @@
     }
   }
 
+  h3 {
+    letter-spacing: -1px;
+  }
+
   .perk-desc {
     padding: $space-large;
     color: $secondary;
@@ -32,6 +36,18 @@
 
     @include md {
       padding: $space-large $space-xlarge;
+    }
+
+    ul {
+      padding: 0 0 0 $base * 3;
+
+      ::marker {
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: $base;
+      }
     }
   }
 }

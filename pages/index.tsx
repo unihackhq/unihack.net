@@ -5,6 +5,7 @@ import Page from '@layouts/page/page';
 import Link from 'next/link';
 import { Logo } from '@components/logo';
 import ButtonLink from '@components/button/button-link';
+import Sponsor from '@components/sponsor/sponsor';
 
 const Index = () => (
   <Page headerless>
@@ -39,14 +40,7 @@ const Index = () => (
       <p className={styles['past-events']}>
         Looking for our <Link href="/events">past events</Link>?
       </p>
-      <div className={styles.sponsorship}>
-        <h2>Looking to sponsor/partner?</h2>
-        <p>
-          We are still in the process of finalising our sponsorship packages.
-          But if you want to get in touch, you can reach us at{' '}
-          <strong>sponsorship@unihack.net</strong>
-        </p>
-      </div>
+      <Sponsor />
     </div>
   </Page>
 );

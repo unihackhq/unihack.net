@@ -4,13 +4,14 @@
 .sponsor-perks {
   background-color: $secondary;
 
+
   &-header {
     @include page-margin;
     color: $light_grey;
   }
 
   &-content {
-    @include offset-scroll;
+    @include page-margin;
     padding-bottom: $space-xxlarge;
 
     .perks {
@@ -20,20 +21,20 @@
 
       @include sm {
         grid-template-columns: 1fr 1fr;
-        grid-gap: $base * 3;
       }
 
-      @include lg {
-        display: flex;
-        &:after {
-          display: block;
-          content: '';
-          padding-right: $space-xxlarge;
-        }
+      @include md {
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
       .perk-item {
         flex-shrink: 0;
+
+        p {
+          margin-bottom: $base * 2;
+          line-height: 24px;
+          font-size: 14px;
+        }
       }
     }
   }
