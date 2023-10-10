@@ -7,7 +7,7 @@ import { event, AnalyticsCategory } from '@lib/gtag';
 import { SPONSORSHIP_EMAIL } from '@lib/constants';
 
 import styles from './tiers-table.module.scss';
-import { Package, CustomPerk } from './types';
+import { Package } from './types';
 import data from '@content/sponsorship/sponsorship-packages.json';
 
 const TiersTable = () => (

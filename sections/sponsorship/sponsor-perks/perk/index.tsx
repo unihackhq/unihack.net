@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import styles from './perk.module.scss';
 import Card from '@components/card/card';
 import { H3, Text } from '@components/typography/typography';
