@@ -3,7 +3,10 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
-    "lib": ["dom", "es2019"],
+    "lib": [
+      "dom",
+      "es2019"
+    ],
     "module": "esnext",
     "noEmit": true,
     "noUnusedLocals": true,
@@ -21,14 +24,34 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./components/*"],
-      "@layouts/*": ["./layouts/*"],
-      "@sections/*": ["./sections/*"],
-      "@lib/*": ["./lib/*"],
-      "@content/*": ["./content/*"]
-    }
+      "@components/*": [
+        "./components/*"
+      ],
+      "@layouts/*": [
+        "./layouts/*"
+      ],
+      "@sections/*": [
+        "./sections/*"
+      ],
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@content/*": [
+        "./content/*"
+      ]
+    },
+    "incremental": true
   },
-
-  "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "mdx.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "additional.d.ts", "styled-jsx.d.ts"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "mdx.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mdx",
+    "additional.d.ts",
+    "styled-jsx.d.ts"
+  ]
 }
