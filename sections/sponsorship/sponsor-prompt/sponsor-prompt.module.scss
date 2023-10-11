@@ -36,7 +36,7 @@
   }
 
   &-content {
-    color: $white;
+    color: $midori;
 
     @include md {
       width: 360px;
@@ -61,6 +61,7 @@
       line-height: 28px;
       font-weight: 200;
       margin: 0 0 $base * 2;
+      color: $white;
 
       & a {
         @include link-underline($white);
@@ -73,7 +74,5 @@
     }
   }
 
-  &-link {
-    background-color: transparent !important;
-  }
+
 }

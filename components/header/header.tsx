@@ -13,8 +13,8 @@ const Header = () => {
   };
 
   const menuItems: MenuItemI[] = [
-    { text: 'Past Events', href: '/events' },
-    // { text: 'Sponsor', href: '/sponsorship' },
+    // { text: 'Past Events', href: '/events' },
+    { text: 'Sponsor', href: '/sponsorship' },
     { text: 'Recruitment', href: 'http://go.unihack.net/team' },
     { text: 'Blog', href: 'https://medium.com/unihack-blog' },
   ];

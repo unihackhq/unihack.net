@@ -5,6 +5,7 @@ import { Text } from '@components/typography/typography';
 type Props = {
   checked?: boolean;
   content?: string;
+  notes?: string;
 };
 
 const Cell = (props: Props) => (
@@ -16,6 +17,7 @@ const Cell = (props: Props) => (
     ) : (
       <Cross />
     )}
+    <span>{props.notes}</span>
   </div>
 );
 

@@ -25,7 +25,7 @@ $subtitleColour: #515151;
   }
 
   @include xl {
-    width: 176px;
+    width: 160px;
   }
 
   &-header,
@@ -33,6 +33,11 @@ $subtitleColour: #515151;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h3 {
+      font-size: 21px;
+      letter-spacing: -1px;
+    }
 
     p {
       font-size: 13px;

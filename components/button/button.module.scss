@@ -13,7 +13,7 @@
     }
 
     &.transparent {
-      @include button-theme($white, $white, transparent);
+      @include button-theme($white, $white, inherit);
     }
   }
 
@@ -27,6 +27,9 @@
       @include button-theme(rgba(255, 255, 255, 0.5), $white, $secondary);
     }
 
+    &.transparent {
+      @include button-theme($secondary, $secondary, transparent);
+    }
   }
 
 }

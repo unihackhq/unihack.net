@@ -2,8 +2,12 @@
 @import '../../../styles/typography/typography.scss';
 
 .get-involved {
-  @include page-margin;
-  margin-bottom: $base * 3;
+  margin: 0 $base * 2 $base * 3;  
+  
+  @include md {
+    max-width: 1100px;
+    margin: 0 auto $base * 3;  
+  }
 
   h2 {
     margin: 0 0 $base * 2;

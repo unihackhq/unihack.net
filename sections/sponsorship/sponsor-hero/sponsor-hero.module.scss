@@ -2,10 +2,6 @@
 @import "../../../styles/spacing.scss";
 @import "../../../styles/typography/typography.scss";
 
-.sponsor-hero-container {
-  z-index: 1;
-}
-
 .sponsor-hero {
   z-index: 0;
   padding: $space-xxlarge 0;
@@ -22,6 +18,7 @@
 
   &-container {
     @include page-margin;
+    z-index: 1;
 
     @include sm {
       text-align: center;
@@ -49,16 +46,16 @@
       }
     }
 
+    a {
+      color: $secondary;
+    }
+
     p {
       margin: 0 0 $base * 4;
       font-size: 18px;
       line-height: 28px;
       color: white;
     }
-  }
-
-  &-link {
-    background-color: transparent !important;
   }
 
   &-event-data {
@@ -88,4 +85,5 @@
       }
     }
   }
+
 }

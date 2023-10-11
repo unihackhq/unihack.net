@@ -3,10 +3,13 @@
 @import '../../../styles/typography/typography.scss';
 
 .sponsor-addons {
-  background-color: $light_grey;
 
   &-content {
     @include page-margin;
+    background-color: $light_grey;
+    border: 1px solid #d0d0d0;
+    padding: 32px;
+    border-radius: 8px;
 
     .addons {
       display: grid;

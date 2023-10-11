@@ -101,15 +101,20 @@ $floatingShadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
   text-decoration: none;
 }
 
-@mixin button-theme($border, $color, $background) {
-  border: 2px solid $border;
-  box-shadow: 4px 4px 0px $border;
+@mixin button-theme($border, $color, $background, $hoverColor:"") {
+  border: 3px solid $border;
+  border-radius: 48px;
   color: $color;
   background-color: $background;
 
   &:hover {
-    box-shadow: 3px 3px 0px $border;
-    transform: translateX(1px) translateY(1px);
+    background-color: $color;
+    @if $hoverColor != "" {
+      color: $hoverColor;
+    }
+    @else {
+      color: $background;
+    }
   }
 
   &:active {

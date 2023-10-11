@@ -48,7 +48,7 @@ const SponsorPrompt = () => (
           <ButtonLink
             className={styles['sponsor-prompt-link']}
             type="primary"
-            theme="dark"
+            theme="transparent"
             href={SPONSORSHIP_EMAIL}
             onClick={() => {
               event({

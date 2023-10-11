@@ -16,7 +16,7 @@ const Table = (props: Props) => {
   return (
     <div
       className={styles.table}
-      style={{ gridTemplateRows: `96px repeat(${totalRows}, 40px) 96px` }}
+      style={{ gridTemplateRows: `96px repeat(${totalRows}, 60px) 96px` }}
     >
       <div className={styles.rows}>
         {props.rows.map((row: RowData) => {

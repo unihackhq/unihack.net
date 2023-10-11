@@ -7,13 +7,14 @@
   column-gap: $base * 2;
   row-gap: $base;
   position: relative;
+  z-index: 99;
 
   @include md {
     grid-template-columns: 240px auto;
     column-gap: $base * 3;
     row-gap: $base * 2;
   }
-
+  
   .rows {
     display: grid;
     width: 100%;
@@ -35,7 +36,6 @@
     grid-row: 1 / -1;
 
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
     overflow-y: hidden;
   }

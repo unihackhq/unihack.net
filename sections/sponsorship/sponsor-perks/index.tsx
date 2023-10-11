@@ -10,10 +10,8 @@ const SponsorPerks = () => {
       className={styles['perk-item']}
       title={perk.title}
       imgSrc={perk.imgSrc}
-      listItems={perk.listItems}
-    >
-      {perk.desc}
-    </Perk>
+      desc={perk.desc}
+    />
   ));
 
   return (

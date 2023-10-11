@@ -6,10 +6,7 @@
   position: relative;
   overflow: hidden;
   background-color: $midori;
-
-  &.standalone {
-    @include page-margin;
-  }
+  color: $midori;
 
   @include md {
     height: 440px;

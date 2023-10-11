@@ -33,7 +33,12 @@ const createCells = (cellData: CellI[]) => {
   const cells: JSX.Element[] = [];
   cellData.map((cell: CellI, index: number) => {
     cells[index] = (
-      <Cell key={cell.key} checked={cell.isChecked} content={cell.content} />
+      <Cell
+        key={cell.key}
+        checked={cell.isChecked}
+        content={cell.content}
+        notes={cell.notes}
+      />
     );
   });
 
