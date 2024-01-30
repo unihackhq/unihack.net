@@ -3,41 +3,41 @@
 @import '../../styles/styles.scss';
 
 .brand-hero {
-  display: flex;
-  align-items: flex-end;
-  height: 500px;
-  background: url('../../public/images/homepage/2023-reg-hero.png') -400px center no-repeat, linear-gradient(to top, #4481eb 0%, #04befe 100%);
-  background-size: auto 500px;
-  color: $white;
-  padding: $base * 4 0;
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: block;
-    background: rgba(0, 0, 0,0.3)
-  }
-
-  @include md {
-    height: 620px;
-    background-position: center center;
-    background-size: auto 620px;
-    align-items: center;
-  }
+  background-color: $electric-blue;
 
   &-content {
     @include page-margin;
-    text-align: left;
+    text-align: center;
     z-index: 1;
+    height: 600px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+
+    > div {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    mask: url('../../public/images/events/2024-logo.svg') center center no-repeat;
+    mask-size: contain;
+    background-color: white;
+    height: 60px;
+    text-indent: -999em;
+    display: block;
+    padding: 0;
+    margin: 0 0 24px;
+
+    @include md {
+      height: 120px;
+    }
   }
 
   p {
     margin: 0;
+    color: white;
   }
 
   p.title {
@@ -51,22 +51,20 @@
       margin: 0;
       font-size: 48px;
       line-height: 54px;
-      width: 400px;
     }
   }
 
   p.subtitle {
     margin: $base * 2 0 0;
     padding: 0;
-    font-size: 18px;
-    line-height: 24px;
+    display: none;
 
     @include md {
       margin: $base * 2 0 0;
+      display: block;
       font-size: 28px;
       line-height: 32px;
       font-weight: 300;
-      width: 400px;
     }
   }
 
@@ -81,12 +79,15 @@
 
     @include md {
       margin: 0 $base;
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 600;
-      letter-spacing: -1px;
       height: 64px;
       display: inline-flex;
       transition: all 0.1s;
+    }
+
+    &:hover {
+      color: $electric-blue !important;
     }
   }
 }

@@ -2,73 +2,11 @@
 
 .homepage {
   @include page-margin;
-  padding: 64px 0;
+  position: relative;
+  margin-top: -70px;
+  z-index: 2;
 
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    svg {
-      width: 64px;
-      height: 64px;
-    }
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 32px 0;
-
-    span {
-      display: block;
-      font-size: 2.5rem;
-      line-height: 3rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0px;
-
-      @include md {
-        font-size: 5rem;
-        line-height: 6rem;  
-        letter-spacing: -2px;
-      }
-    }
-  }
-
-  > p {
-    font-size: 1.125rem;
-    text-align: center;
-    max-width: 640px;
-    margin: 0 auto 32px;
-    
-    @include md {
-      letter-spacing: -1px;
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
-  }
-
-  p.preregister {
-    letter-spacing: 0;
-  }
-
-  p.past-events {
-    font-size: 0.875rem;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    max-width: 480px;
-    text-align: center;
-    margin: 0 auto $base * 4;
-
-    a {
-      color: $pacific;
-    }
-
-    a:hover {
-      color: $pacific-d50;
-    }
+  > * {
+    margin-bottom: 32px;
   }
 }
