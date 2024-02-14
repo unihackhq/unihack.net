@@ -1,0 +1,103 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+
+.prize {
+  background-color: $white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: ($base * 2);
+  
+  @include lg {
+    padding: ($base * 5) ($base * 3);
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      @include xsm {
+        flex-direction: row;
+        align-self: flex-start;
+  
+        img {
+          height: 50px;
+        }
+  
+        > * + * {
+          padding-left: $space-xsmall;
+        }
+      }
+  
+      @include lg {
+        flex-direction: column;
+
+        h3 {
+          align-self: flex-start;
+        }
+  
+        img {
+          height: auto;
+        }
+  
+        > * + * {
+          padding-left: 0;
+          padding-top: $space-xsmall;
+        }
+      }
+    }
+
+    
+  }
+
+  .prize-content {
+    border-top: 4px solid #e0e0e0;
+    margin-top: $space-medium;
+    align-self: flex-start;
+    font-size: 0.875rem;
+    width: 100%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+      }
+      
+      li:not(:last-child) {
+        margin-bottom: $space-small;
+      }
+      
+      li::before {
+        content: "•";
+        margin-right: $space-xsmall;
+      }
+    }
+
+    @include xsm {
+      margin-top: $space-small;
+      padding-top: $space-small;
+    }
+
+    @include md {
+      font-size: 1rem;
+    }
+
+    @include lg {
+      padding-top: $space-medium;
+    }
+  }
+
+}

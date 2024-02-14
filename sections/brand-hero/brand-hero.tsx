@@ -10,10 +10,10 @@ const BrandHero = () => (
       <Stack size="small">
         <h1>UNIHACK 2024</h1>
         <Text className={styles.title}>
-          <span>UNIHACK is back on March 1!</span>
+          <span>Get ready for UNIHACK 2024!</span>
         </Text>
         <Text className={styles.subtitle}>
-          Ten years of showcasing student innovation.
+          The competition starts at 6PM (Sydney time) on March 1.
         </Text>
         <div className={styles.actions}>
           <ButtonLink

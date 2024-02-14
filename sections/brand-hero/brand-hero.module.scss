@@ -43,7 +43,7 @@
   p.title {
     margin: 0 0 0 -2px;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing:  -1px;
 
@@ -57,7 +57,7 @@
   p.subtitle {
     margin: $base * 2 0 0;
     padding: 0;
-    display: none;
+    font-size: 18px;
 
     @include md {
       margin: $base * 2 0 0;

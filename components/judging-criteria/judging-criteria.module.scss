@@ -2,12 +2,17 @@
 @import '../../styles/spacing.scss';
 
 .judging-section {
-  background-color: $secondary;
-  padding: $space-xlarge 0;
-  color: $light_grey;
+  background-color: #f0f0f0;
+  padding: 32px 24px;
+  color: rgba($secondary, 0.7);
+  border-radius: 5px;
 
-  .judging-section-content {
-    @include page-margin;
+  @include md {
+    padding: 32px;
+  }
+
+  h3, h4 {
+    color: $secondary;
   }
  
   .criteria-grid {
