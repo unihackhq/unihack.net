@@ -1,0 +1,50 @@
+@import '../../../styles/styles.scss';
+@import '../../../styles/spacing.scss';
+
+.main-prize,
+.category-prize {
+  h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin: 0 0 16px;
+    color: $electric-blue;
+
+    @include md {
+      font-size: 3rem;
+      letter-spacing: -2px;
+      margin: 0 0 24px;
+    }
+  }
+
+  .prize-list {
+    display: grid;
+    gap: 16px;
+    margin: 0 0 $space-medium;  
+
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin: 0 0 $space-xlarge;    
+    }
+  }
+}
+
+.main-prize {
+  @include md {
+    overflow: hidden;
+    position: relative;
+    padding: 32px;
+
+    &:before {
+      border: 2px solid $electric-blue;
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      bottom: 32%;
+      right: 0;
+      z-index: -1;
+      border-radius: 5px;
+    }  
+  }
+}

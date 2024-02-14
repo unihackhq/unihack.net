@@ -6,6 +6,9 @@ import Sponsor from '@components/sponsor/sponsor';
 import BrandHero from '@sections/brand-hero/brand-hero';
 import { ComingSoon } from '@sections/homepage/coming-soon';
 import { JoinDiscord } from '@sections/homepage/discord';
+import Prizes from '@sections/homepage/prizes/prizes';
+
+import { prizes } from '@content/events/2024/prizes.json';
 
 const Index = () => (
   <Page headerless>
@@ -20,11 +23,15 @@ const Index = () => (
     <BrandHero />
     <div className={styles.homepage}>
       <JoinDiscord />
+      <Prizes data={prizes} />
       <ComingSoon
         title="Sydney Hub"
         description="We will release more information about how to participate from our Sydney Hub soon."
       />
-      <ComingSoon title="Prizes" description="" />
+      <ComingSoon
+        title="Melbourne Hub"
+        description="We will release more information about how to participate from our Melbourne Hub soon."
+      />
       <Sponsor />
     </div>
   </Page>

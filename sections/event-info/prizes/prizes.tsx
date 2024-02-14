@@ -34,22 +34,18 @@ const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
           <H2>Main Prizes</H2>
           <div className={styles['prize-grid']}>{mainPrizes}</div>
         </Stack>
-      </Stack>
-      <JudgingCriteria />
-      <div className={styles['event-page-prizes-content']}>
-        <Stack size="xlarge">
-          <Stack size="medium" className="prize-section">
-            <H2>Category Prizes</H2>
-            <div className={styles['prize-grid']}>{categoryPrizes}</div>
-          </Stack>
-          {sponsor.length > 0 && (
-            <Stack size="medium" className="prize-section">
-              <H2>Sponsor Prizes</H2>
-              <div className={styles['prize-grid']}>{sponsorPrizes}</div>
-            </Stack>
-          )}
+        <JudgingCriteria />
+        <Stack size="medium" className="prize-section">
+          <H2>Category Prizes</H2>
+          <div className={styles['prize-grid']}>{categoryPrizes}</div>
         </Stack>
-      </div>
+        {sponsor.length > 0 && (
+          <Stack size="medium" className="prize-section">
+            <H2>Sponsor Prizes</H2>
+            <div className={styles['prize-grid']}>{sponsorPrizes}</div>
+          </Stack>
+        )}
+      </Stack>
     </Stack>
   );
 };
