@@ -2,13 +2,18 @@ import React from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Page from '@layouts/page/page';
-import Sponsor from '@components/sponsor/sponsor';
 import BrandHero from '@sections/brand-hero/brand-hero';
-import { ComingSoon } from '@sections/homepage/coming-soon';
 import { JoinDiscord } from '@sections/homepage/discord';
 import Prizes from '@sections/homepage/prizes/prizes';
 
+import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
+import EventChecklist from '@sections/event-info/event-checklist';
+import Sponsors from '@sections/event-info/sponsors/sponsors';
+
 import { prizes } from '@content/events/2024/prizes.json';
+import schedule from '@content/events/2024/schedule.json';
+import sponsors from '@content/events/2024/sponsors.json';
+import { MelbourneHub, SydneyHub } from '@sections/homepage/hubs';
 
 const Index = () => (
   <Page headerless>
@@ -22,17 +27,17 @@ const Index = () => (
     </Head>
     <BrandHero />
     <div className={styles.homepage}>
+      <div className={styles.grid}>
+        <MelbourneHub />
+        <SydneyHub />
+      </div>
+      <div className={styles.grid}>
+        <EventSchedule data={schedule} />
+        <EventChecklist />
+      </div>
       <JoinDiscord />
       <Prizes data={prizes} />
-      <ComingSoon
-        title="Sydney Hub"
-        description="We will release more information about how to participate from our Sydney Hub soon."
-      />
-      <ComingSoon
-        title="Melbourne Hub"
-        description="We will release more information about how to participate from our Melbourne Hub soon."
-      />
-      <Sponsor />
+      <Sponsors data={sponsors} />
     </div>
   </Page>
 );

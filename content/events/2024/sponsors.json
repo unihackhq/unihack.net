@@ -1,0 +1,41 @@
+{
+  "base": "/images/sponsors",
+  "sponsors": {
+    "gold": [
+      {
+        "name": "Atlassian",
+        "imagePath": "/Atlassian.svg"
+      },
+
+      {
+        "name": "Miga Health",
+        "imagePath": "/Miga Health.svg"
+      }
+    ],
+    "silver": [
+      {
+        "name": "Amazon AWS",
+        "imagePath": "/Amazon AWS.svg"
+      },
+      {
+        "name": "Redactive AI",
+        "imagePath": "/Redactive.png"
+      }
+    ],
+    "bronze": [
+      {
+        "name": "Carsales",
+        "imagePath": "/Carsales.svg"
+      }
+    ],
+    "other": [
+      {
+        "name": "Zerocube",
+        "imagePath": "/Zerocube.svg"
+      }
+    ]
+  },
+  "titles": {
+    "other": "Partners"
+  }
+}

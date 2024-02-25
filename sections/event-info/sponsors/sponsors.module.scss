@@ -2,7 +2,6 @@
 @import '../../../styles/spacing.scss';
 
 .event-page-sponsors {
-  background-color: $light_grey;
   color: $secondary;
   padding-bottom: 64px;
 
@@ -55,6 +54,10 @@
 
       &.bronze {
         border-top: 4px solid $bronze;
+      }
+
+      &.other {
+        border-top: 4px solid #e0e0e0;
       }
     }
   }

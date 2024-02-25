@@ -6,15 +6,19 @@ import { PrizeModel } from './prize.model';
 
 type PropTypes = {
   prize: PrizeModel;
+  isSponsor?: boolean;
 };
 
-export const Prize = ({ prize }: PropTypes) => {
+export const Prize = ({ prize, isSponsor }: PropTypes) => {
   return (
     <div className={styles.prize}>
       <Stack size="small" className={styles.header}>
         <div className={styles['header-title']}>
           {prize.imagePath && <img src={prize.imagePath} alt="" />}
-          <H3>{prize.title}</H3>
+          <H3>
+            {isSponsor && <span>Sponsor</span>}
+            {prize.title}
+          </H3>
         </div>
         {prize.description && <Text>{prize.description}</Text>}
         {prize.subtext && <Subtext>{prize.subtext}</Subtext>}

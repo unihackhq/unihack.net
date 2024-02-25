@@ -5,6 +5,10 @@
   padding-top: $base * 2;
   padding-bottom: $base * 4;
 
+  > * {
+    margin-bottom: 64px;
+  }
+
   .row {
     display: grid;
     grid-gap: $base * 3;
@@ -21,6 +25,22 @@
   padding-top: $base * 4;
   padding-bottom: $base * 4;
   margin: 0 auto 32px;
+
+  &.sydney {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  }
+
+  a {
+    mask: url('../../public/images/events/2024-logo.svg') left center no-repeat;
+    mask-size: contain;
+    background-color: white;
+    height: 60px;
+    width: 100px;
+    text-indent: -999em;
+    display: block;
+    padding: 0;
+    margin: 0 0 24px;
+  }
 
   h1 {
     font-size: 2.625rem;
@@ -41,7 +61,7 @@
     }
   }
 
-  p.withWired {
+  p {
     font-size: 1.5rem;
     line-height: 1.75rem;
     margin: 0;
@@ -83,12 +103,9 @@
 }
 
 .register {
-  padding: $base * 4;
-  border-radius: 5px;
-  border: 3px solid $pacific;
 
-  h1 {
-    color: $pacific;
+  h2 {
+    color: $electric-blue;
     margin: 0 0 $base * 2;
     font-weight: 600;
     letter-spacing: -1px;
@@ -98,17 +115,35 @@
   .row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: $base * 4;
+    grid-gap: $base * 6;
 
     @include md {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    h2 {
-      color: $pacific;
+    > div {
+      counter-increment: registerCounter;
+    }
+
+    h3 {
+      color: $electric-blue;
       font-size: 1.3125rem;
       font-weight: 600;
       margin: 0 0 $base;
+    }
+
+    h3:before {
+      content: counter(registerCounter);
+      display: block;
+      background: $electric-blue;
+      padding: 4px;
+      width: 24px;
+      height: 24px;
+      color: white;
+      border-radius: 50%;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 8px
     }
 
     p {
@@ -130,7 +165,7 @@
   border-radius: 5px;
   border: 3px solid #d0d0d0;
 
-  h1 {
+  h2 {
     color: $secondary;
     margin: 0 0 $base * 2;
     font-weight: 600;
@@ -140,18 +175,22 @@
 
   .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: $base * 4;
 
-    @include lg {
-      grid-template-columns: 40% 30% 30%;
+    @include md {
+      grid-template-columns: 1fr 1fr;
     }
 
-    h2 {
+    h3 {
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 1px;
+      margin: $base * 2 0 0 0;
+    }
+
+    h3:first-child {
       margin: 0;
     }
 
@@ -160,22 +199,19 @@
       margin: 0 0 $base * 2;
       font-weight: 300;
     }
-  }
 
-  .address {
-    grid-column: 1 / span 2;
-    @include lg {
-      grid-column: 1;
+    p.time {
+      font-size: 1.5rem;
     }
-  }
 
-  .time p {
-    margin: 0;
+    p.concat {
+      margin: 0;
+    }
   }
 }
 
-.wired {
-  background: #672676;
+.club {
+  background-color: rgb(100 116 139);
   padding: $base * 4;
   border-radius: 5px;
   display: flex;
@@ -197,7 +233,7 @@
 
     @include md {
       flex: unset;
-      width: 320px;
+      width: 200px;
     }
 
     img {
@@ -209,7 +245,7 @@
     flex: 1;
   }
 
-  h1 {
+  h2 {
     color: white;
     margin: 0;
     font-weight: 600;

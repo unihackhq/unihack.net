@@ -75,6 +75,15 @@ const Sponsors = ({
               <Grid items={sponsors.bronze} basePath={base} />
             </Stack>
           )}
+          {sponsors.other && (
+            <Stack size="large">
+              <div className={styles['tier-title']}>
+                <H2>{titles?.bronze ?? 'Other Partners'}</H2>
+                <hr className={`${styles['tier-accent']} ${styles.other}`} />
+              </div>
+              <Grid items={sponsors.other} basePath={base} />
+            </Stack>
+          )}
         </Stack>
       </Stack>
     </section>

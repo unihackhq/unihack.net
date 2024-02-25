@@ -25,13 +25,13 @@ $past-grey: #6c6c6c;
       height: 60px;
 
       &:hover {
-        color: $midori;
+        color: $electric-blue;
       }
 
       &.active,
       &:focus {
         color: white;
-        background: $midori;
+        background: $electric-blue;
         color: white;
       }
     }
@@ -41,10 +41,10 @@ $past-grey: #6c6c6c;
     font-size: 16px;
     line-height: 16px;
     border-radius: 0 0 5px 5px;
-    border: 2px solid $midori;
+    border: 2px solid $electric-blue;
     border-top: 0;
     padding: $base * 4;
-    color: $midori;
+    color: $electric-blue;
 
     @include md {
       font-size: 18px;
