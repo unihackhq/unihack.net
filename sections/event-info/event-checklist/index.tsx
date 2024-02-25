@@ -43,23 +43,19 @@ const EventChecklist = () => {
               Find out everything you need to know about the competition here!
             </p>
           </div>
-          <ButtonLink
-            type="primary"
-            theme="light"
-            href="https://unihack.notion.site/2023-Participants-Handbook-5aced37a11934bbcbe6a5071b4d624f6"
-          >
-            Handbook
+          <ButtonLink type="primary" theme="light" href="#">
+            TBA
           </ButtonLink>
         </li>
         <li>
           <div className={styles['checklist-content']}>
             <h3>Submit your entry on Devpost!</h3>
-            <p>Here is where you'll submit your entries for UNIHACK 2023!</p>
+            <p>Here is where you'll submit your entries for UNIHACK!</p>
           </div>
           <ButtonLink
             type="primary"
             theme="light"
-            href="https://unihack2023.devpost.com"
+            href="https://unihack2024.devpost.com"
           >
             Devpost
           </ButtonLink>

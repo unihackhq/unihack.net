@@ -1,6 +1,6 @@
 import { GridItemI } from '@components/grid/grid-item.interface';
 
-type SponsorTier = 'platinum' | 'gold' | 'silver' | 'bronze'
+type SponsorTier = 'platinum' | 'gold' | 'silver' | 'bronze' | 'other'
 
 export type SponsorData = {
   base: string;
