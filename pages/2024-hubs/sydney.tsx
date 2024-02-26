@@ -110,9 +110,9 @@ const Location = () => {
           </div>
           <div className={styles.time}>
             <h3>March 2</h3>
-            <p>10AM - 8PM</p>
+            <p>9:30AM - 5:30PM</p>
             <h3>March 3</h3>
-            <p>10AM - 6PM</p>
+            <p>9:30AM - 5:30PM</p>
           </div>
         </div>
       </div>
