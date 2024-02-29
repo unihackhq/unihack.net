@@ -20,12 +20,17 @@ const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
         </div>
         <JudgingCriteria />
       </div>
-      <div className={styles['category-prize']}>
-        <h2>Sponsor &amp; Category Prizes</h2>
+      <div className={styles['sponsor-prize']}>
+        <h2>Sponsor Prizes</h2>
         <div className={styles['prize-list']}>
           {sponsor.map((prize) => {
             return <Prize key={prize.title} prize={prize} isSponsor={true} />;
           })}
+        </div>
+      </div>
+      <div className={styles['category-prize']}>
+        <h2>Category Prizes</h2>
+        <div className={styles['prize-list']}>
           {category.map((prize) => {
             return <Prize key={prize.title} prize={prize} />;
           })}

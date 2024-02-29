@@ -88,6 +88,18 @@
         "description": "We're looking for something that helps people live a healthier life. It could help people be more in control of their health. Or it could be something that improves the health systems around them.",
         "imagePath": "/images/sponsors/Miga Health.svg",
         "contents": ["$750 for the entire team"]
+      },
+      {
+        "title": "Best Use Case of Redactive AI",
+        "description": "We are looking for the best AI use case that builds on top of Redactive. We are a developer platform that helps connect permissioned data to AI applications. You don't need to spend time creating connections to external data sources or setup vector databases. Using our API developers can quickly get started making AI applications and be confident that sensitive data isn't leaked using our permissions platform.",
+        "links": [
+          {
+            "title": "API Docs",
+            "link": "https://dashboard.staging.redactive.ai/api/docs"
+          }
+        ],
+        "imagePath": "/images/sponsors/Redactive.png",
+        "contents": ["$1000 for the entire team"]
       }
     ]
   }
