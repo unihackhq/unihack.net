@@ -98,7 +98,7 @@ const Location = () => {
         <h2>Location &amp; Opening Hours</h2>
         <div className={styles.row}>
           <div>
-            <h3>March 3</h3>
+            <h3>March 1</h3>
             <p className={styles.time}>6PM - 8PM</p>
             <p className={styles.concat}>C1 Theatre</p>
             <p>25 Exhibition Walk</p>
@@ -111,8 +111,8 @@ const Location = () => {
             </ButtonLink>
           </div>
           <div>
-            <h3>March 4 - March 5</h3>
-            <p className={styles.time}>10AM - 9PM</p>
+            <h3>March 2 - March 3</h3>
+            <p className={styles.time}>10AM - 8PM</p>
             <p className={styles.concat}>G54 Lecture Theatre</p>
             <p className={styles.concat}>Learning and Teaching Building</p>
             <p>19 Ancora Imparo Way</p>
