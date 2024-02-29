@@ -4,5 +4,11 @@ export type PrizeModel = {
   subtext?: string;
   individual?: boolean;
   imagePath?: string;
+  links?: PrizeLinksModel[];
   contents?: string[];
+}
+
+export type PrizeLinksModel = {
+  title: string;
+  link: string
 }

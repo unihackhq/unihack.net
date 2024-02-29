@@ -2,6 +2,7 @@
 @import '../../../styles/spacing.scss';
 
 .main-prize,
+.sponsor-prize,
 .category-prize {
   h2 {
     font-size: 2rem;
@@ -46,5 +47,11 @@
       z-index: -1;
       border-radius: 5px;
     }  
+  }
+}
+
+.sponsor-prize .prize-list {
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
