@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Page from '@layouts/page/page';
-import BrandHero from '@sections/brand-hero/brand-hero';
+import BrandHero from '@sections/brand-hero/stream-hero';
 import { JoinDiscord } from '@sections/homepage/discord';
 import Prizes from '@sections/homepage/prizes/prizes';
 

@@ -11,7 +11,7 @@ type PropTypes = {
 const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
   return (
     <>
-      <div className={styles['main-prize']}>
+      <div className={styles['main-prize']} id="prizes">
         <h2>Main Prize</h2>
         <div className={styles['prize-list']}>
           {main.map((prize) => {

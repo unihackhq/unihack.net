@@ -2,18 +2,18 @@
 @import '../../styles/spacing.scss';
 @import '../../styles/styles.scss';
 
-.brand-hero {
+.brand-hero,
+.stream-hero {
   background-color: $electric-blue;
+  padding-bottom: 70px;
 
   &-content {
     @include page-margin;
     text-align: center;
     z-index: 1;
-    height: 600px;
     display: flex;
     align-content: center;
     align-items: center;
-    padding-bottom: 70px;
 
     > div {
       width: 100%;
@@ -41,7 +41,7 @@
   }
 
   p.title {
-    margin: 0 0 0 -2px;
+    margin: 0;
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
@@ -54,10 +54,25 @@
     }
   }
 
+  p.time {
+    margin: 0;
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing:  -1px;
+
+    @include md {
+      margin: 0;
+      font-size: 72px;
+      line-height: 84px;
+    }
+  }
+
   p.subtitle {
     margin: $base * 2 0 0;
     padding: 0;
     font-size: 18px;
+    line-height: 24px;
 
     @include md {
       margin: $base * 2 0 0;
@@ -89,5 +104,33 @@
     &:hover {
       color: $electric-blue !important;
     }
+  }
+}
+
+.stream-hero {
+  padding: 48px 0 118px;
+
+  .stream {
+    @include page-margin;
+    background-color: $secondary;
+    margin-top: 48px;
+    height: 240px;
+
+    @include md {
+      height: 600px;
+      margin-top: 48px;
+      overflow: hidden;
+    }
+  }
+
+  h1 {
+   height: 60px;
+   margin: 0;
+  }
+}
+
+.brand-hero {
+  &-content {
+    height: 600px;
   }
 }
