@@ -76,17 +76,10 @@ const StreamHero = () => {
             theme="transparent"
             href="https://unihack2024.devpost.com"
           >
-            DevPost
+            Visit DevPost
           </ButtonLink>
-          <ButtonLink type="primary" theme="transparent" href="#prizes">
-            Prizes
-          </ButtonLink>
-          <ButtonLink
-            type="primary"
-            theme="transparent"
-            href="https://manage.unihack.net"
-          >
-            Manage My Team
+          <ButtonLink type="primary" theme="transparent" href="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform">
+            Want to join the team?
           </ButtonLink>
           <ButtonLink
             type="primary"
