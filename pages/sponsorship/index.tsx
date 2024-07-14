@@ -1,33 +1,27 @@
 import Head from 'next/head';
 import Page from '@layouts/page/page';
 import SponsorHero from '@sections/sponsorship/sponsor-hero';
-import Addons from '@sections/sponsorship/sponsor-addons';
 import PreviousSponsors from '@sections/sponsorship/previous-sponsors';
-import SponsorPerks from '@sections/sponsorship/sponsor-perks';
 import SponsorPrompt from '@sections/sponsorship/sponsor-prompt';
 import SponsorGetInvolved from '@sections/sponsorship/sponsor-get-involved';
-import TiersTable from '@sections/sponsorship/tiers-table';
 import Stack from '@components/stack/stack';
 import styles from './sponsorship.module.scss';
+import SponsorEventOutline from '@sections/sponsorship/sponsor-event-outline';
 
 export default () => (
   <>
     <Head>
-      <title>Sponsor UNIHACK 2024</title>
-      <meta property="og:title" content="Sponsor UNIHACK 2024" key="title" />
+      <title>Sponsor UNIHACK 2025</title>
+      <meta property="og:title" content="Sponsor UNIHACK 2025" key="title" />
     </Head>
     <Page>
-      <Stack size="xxlarge">
-        <SponsorHero />
-        <PreviousSponsors />
+      <SponsorHero />
+      <Stack size="xxlarge" className={styles.body}>
         <SponsorGetInvolved />
-        <Stack size="large" className={styles.tiers}>
-          <TiersTable />
-          <Addons />
-        </Stack>
-        <SponsorPerks />
-        <SponsorPrompt />
+        <SponsorEventOutline />
+        <PreviousSponsors />
       </Stack>
+      <SponsorPrompt />
     </Page>
   </>
 );

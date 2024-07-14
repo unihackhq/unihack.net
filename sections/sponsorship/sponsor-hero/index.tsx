@@ -4,7 +4,7 @@ import { Text } from '@components/typography/typography';
 import { IconLabelWithTitle } from '@components/icon-label/icon-label';
 import ButtonLink from '@components/button/button-link';
 import { event, AnalyticsCategory } from '@lib/gtag';
-import { SPONSORSHIP_EMAIL } from '@lib/constants';
+import { SPONSORSHIP_FILE } from '@lib/constants';
 import Image from 'next/image';
 import sponsorHero from '../../../public/images/sponsor-hero.png';
 
@@ -31,7 +31,7 @@ const SponsorHero = () => (
           title="Date"
           style={styles['sponsor-hero-event-data-content']}
         >
-          1-3 March 2024
+          14-16 March 2025
         </IconLabelWithTitle>
         <IconLabelWithTitle
           icon="Location_White"
@@ -45,7 +45,7 @@ const SponsorHero = () => (
         className={styles['sponsor-hero-link']}
         type="primary"
         theme="transparent"
-        href={SPONSORSHIP_EMAIL}
+        href={SPONSORSHIP_FILE}
         onClick={() => {
           event({
             action: 'sponsorship.sponsor_hero.button.click',
@@ -54,7 +54,7 @@ const SponsorHero = () => (
           });
         }}
       >
-        Enquire Now
+        Download Prospectus
       </ButtonLink>
     </div>
   </section>

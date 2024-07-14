@@ -2,58 +2,63 @@
 @import '../../../styles/spacing.scss';
 
 .sponsor-prompt {
-  background: $midori;
-  padding-bottom: $space-xxlarge;
+  background: $primary;
   margin-bottom: $base * -4;
 
   &-container {
     @include page-margin;
     position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include xl {
+      flex-direction: row;
+    }
   }
 
   &-image {
     position: absolute;
     display: none;
-    background-size: cover;
-
+    
     @include md {
       display: block;
-      top: -$space-xxlarge;
-      bottom: -$space-xxlarge;
-      right: -$base * 3;
-      left: 400px;
+      position: relative;
+      height: 500px;
+      margin: 0 -32px;
     }
 
     @include lg {
-      left: 440px;
-      right: calc((970px - 100vw) / 2);
+      margin: 0 -64px;
     }
 
     @include xl {
-      left: 480px;
+      margin: 0;
+      height: unset;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 460px;
       right: calc((1100px - 100vw) / 2);
     }
   }
 
   &-content {
-    color: $midori;
+    color: $secondary;
+    padding: 32px 0;
 
     @include md {
-      width: 360px;
-    }
-
-    @include lg {
-      width: 400px;
-      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     @include xl {
-      min-height: 800px;
+      width: 430px;
+      height: 800px;
     }
 
     h2 {
-      color: $white;
-      margin: 0 0 $base * 2;
+      margin: 0 0 $base * 2 0;
     }
 
     p {
@@ -61,18 +66,21 @@
       line-height: 28px;
       font-weight: 200;
       margin: 0 0 $base * 2;
-      color: $white;
+      color: $secondary;
 
       & a {
-        @include link-underline($white);
+        @include link-underline($secondary);
         font-weight: 600;
       }
     }
-
-    .actions {
-      @include action-container;
-    }
   }
 
+  .actions {
+    @include action-container;
+
+    & a:hover {
+      color: $primary !important;
+    }
+  }
 
 }

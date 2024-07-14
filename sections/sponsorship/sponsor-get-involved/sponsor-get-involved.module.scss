@@ -4,36 +4,38 @@
 
 .sponsor-get-involved {
   padding: $space-xxlarge 0;
-
-  h2 {
-    margin: 0 0 $base * 2;
-  }
+  background-color: $light_grey;
 
   &-content {
     @include page-margin;
-    text-align: center;
-    max-width: 980px;
   }
 
   &-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: $space-xlarge;
+    grid-gap: 32px;
+    max-width: 980px;
+    margin: 0 auto;
 
     @include md {
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: $space-xlarge;
     }
 
     &-item {
+      background-color: white;
+      padding: 32px;
+
       p {
         margin: 0;
         text-align: center;
         font-size: 16px;
         line-height: 21px;
+
         @include md {
-          font-size: 18px;
-          line-height: 24px;
+          letter-spacing: -1px;
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 28px;
         }
       }
     }
@@ -44,6 +46,17 @@
     margin: 0 0 $base 0 !important;
     @include md {
       height: 220px;
+    }
+  }
+
+  .actions {
+    @include action-container;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    
+    & a:hover {
+      color: $light_grey !important;
     }
   }
 }
