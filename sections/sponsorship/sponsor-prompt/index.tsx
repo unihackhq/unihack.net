@@ -4,7 +4,7 @@ import ButtonLink from '@components/button/button-link';
 import { H2XL, Text } from '@components/typography/typography';
 import Stack from '@components/stack/stack';
 import { event, AnalyticsCategory } from '@lib/gtag';
-import { SPONSORSHIP_EMAIL } from '@lib/constants';
+import { SPONSORSHIP_EMAIL, SPONSORSHIP_FILE } from '@lib/constants';
 import Image from 'next/image';
 import sponsorCallout from '../../../public/images/sponsor-callout.jpg';
 
@@ -47,7 +47,22 @@ const SponsorPrompt = () => (
         <div className={styles.actions}>
           <ButtonLink
             className={styles['sponsor-prompt-link']}
-            type="primary"
+            type="secondary"
+            theme="transparent"
+            href={SPONSORSHIP_FILE}
+            onClick={() => {
+              event({
+                action: 'sponsorship.sponsor_prompt.button.click',
+                category: AnalyticsCategory.SPONSORSHIP,
+                label: 'Sponsorship - Sponsor Prompt - Download Prospectus',
+              });
+            }}
+          >
+            Download Prospectus
+          </ButtonLink>
+          <ButtonLink
+            className={styles['sponsor-prompt-link']}
+            type="secondary"
             theme="transparent"
             href={SPONSORSHIP_EMAIL}
             onClick={() => {

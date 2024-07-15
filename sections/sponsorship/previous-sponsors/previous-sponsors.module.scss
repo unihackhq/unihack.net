@@ -3,25 +3,8 @@
 @import "../../../styles/typography/typography.scss";
 
 .previous-sponsors {
-  padding: 0;
   z-index: 1;
   position: relative;
-
-  h2 {
-    margin-bottom: $base * 4;
-    text-align: center;
-  }
-
-  &-wrapper {
-    max-width: 1200px;
-    background: white;
-    padding: $space-xlarge 0;
-
-    @include xl {
-      padding: $space-xlarge;
-      margin: -$space-xlarge * 2 auto 0;
-    }
-  }
 
   &-container {
     @include page-margin;
