@@ -4,8 +4,12 @@
 
 .brand-hero,
 .stream-hero {
-  background-color: $electric-blue;
-  padding-bottom: 70px;
+  background-color: black;
+
+  @media (min-width: 1400px) {
+    margin: 0 100px;
+    border-radius: 0px 0px 4px 4px;
+  }
 
   &-content {
     @include page-margin;
@@ -21,9 +25,9 @@
   }
 
   h1 {
-    mask: url('../../public/images/events/2024-logo.svg') center center no-repeat;
+    mask: url('../../public/images/unihack.svg') center center no-repeat;
     mask-size: contain;
-    background-color: white;
+    background-color: $white;
     height: 60px;
     text-indent: -999em;
     display: block;
@@ -37,7 +41,7 @@
 
   p {
     margin: 0;
-    color: white;
+    color: $white;
   }
 
   p.title {

@@ -14,7 +14,7 @@ const Footer = () => (
       </Text>
     </div>
     <div className={styles['footer-content']}>
-      <Logo baseColor="#343E46" topColor="#343E46" />
+      <Logo baseColor="#c0c0c0" topColor="#c0c0c0" />
       <div className={styles['footer-info']}>
         <ul>
           <li>

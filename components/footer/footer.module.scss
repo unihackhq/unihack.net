@@ -2,15 +2,16 @@
 @import '../../styles/typography/typography.scss';
 
 .footer {
+  @include page-margin;
   background-color: $footer_color;
-  padding-top: $base * 4;
-  padding-bottom: $base * 10;
+  padding: $base * 4;
+  border-radius: 4px;
+  margin-bottom: $base * 8;
 
   &-content {
-    @include page-margin;
     display: flex;
     flex-direction: column-reverse;
-    font-size: 14px;
+    font-size: 12px;
 
     @include sm {
       flex-direction: row;
@@ -18,14 +19,10 @@
   }
 
   &-acknowledgement {
-    @include page-margin;
-
     p {
-      @include body;
-      color: $white;
-      margin: 0 0 $base * 4;
+      font-weight: 500;
+      font-size: 14px;
       padding: 0 0 $base * 4;
-      border-bottom: 1px solid $footer_border;
     }
   }
 
@@ -48,7 +45,7 @@
     .copyright {
       p {
         font-weight: normal;
-        font-size: 14px;
+        font-size: 12px;
         color: $footer_text;
         margin-top: 0;
         margin-bottom: 0;
@@ -80,7 +77,6 @@
       li {
         display: inline-block;
         margin-right: $base * 2;
-
         &:last-child {
           margin-right: 0;
         }
@@ -99,7 +95,7 @@
         text-decoration: none;
 
         &:hover {
-          color: white;
+          text-decoration: underline;
         }
       }
     }
@@ -117,9 +113,13 @@
     ul {
       margin: 0 0 $base * 2;
 
+      li {
+        margin-right: $base * 3;
+      }
+    
       a {
-        width: 24px;
-        height: 24px;
+        width: 16px;
+        height: 16px;
         display: block;
       }
     }
