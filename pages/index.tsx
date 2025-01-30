@@ -7,6 +7,8 @@ import HomeCard from '@components/home-card';
 
 import inspirationImage from '../public/images/homepage/past.png';
 import sponsorshipImage from '../public/images/homepage/sponsorship-small.png';
+import { JoinDiscord } from '@sections/homepage/discord';
+import EventChecklist from '@sections/event-info/event-checklist';
 
 const Index = () => (
   <Page headerless>
@@ -20,6 +22,8 @@ const Index = () => (
     </Head>
     <BrandHero />
     <div className={styles.homepage}>
+      <JoinDiscord />
+      <EventChecklist />
       <div className={styles.grid}>
         <HomeCard
           image={inspirationImage}

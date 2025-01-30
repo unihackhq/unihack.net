@@ -4,7 +4,7 @@
 
 .brand-hero,
 .stream-hero {
-  background-color: black;
+  background: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8); 
 
   @media (min-width: 1400px) {
     margin: 0 100px;
@@ -106,7 +106,7 @@
     }
 
     &:hover {
-      color: $electric-blue !important;
+      color: #C779D0 !important;
     }
   }
 }
@@ -135,6 +135,10 @@
 
 .brand-hero {
   &-content {
-    height: 600px;
+    padding: 48px 0 100px;
+    @include md {
+      min-height: 600px;
+      height: 80vh;
+    }
   }
 }
