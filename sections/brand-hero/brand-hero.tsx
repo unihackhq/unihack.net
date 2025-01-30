@@ -10,18 +10,25 @@ const BrandHero = () => (
       <Stack size="small">
         <h1>UNIHACK 2025 - 14-16 March, 2025</h1>
         <Text className={styles.title}>
-          <span>We're back for 2025!</span>
+          <span>March 14-16, 2025</span>
         </Text>
         <Text className={styles.subtitle}>
-          The Imagination Hackathon returns on March 14 - 16.
+          The Imagination Hackathon is back for another year.
         </Text>
         <div className={styles.actions}>
           <ButtonLink
             type="primary"
             theme="transparent"
-            href="https://docs.google.com/forms/d/1sXlbyscxc3SPwm9_1Z_4RvBd2AgpTrsbLkEfdqIOPNQ"
+            href="https://manage.unihack.net"
           >
-            Pre-register
+            Register Now
+          </ButtonLink>
+          <ButtonLink
+            type="primary"
+            theme="transparent"
+            href="https://merch.unihack.net"
+          >
+            Buy Swag (coming soon)
           </ButtonLink>
         </div>
       </Stack>

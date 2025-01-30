@@ -4,12 +4,12 @@
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  border: 2px solid $electric-blue;
+  border: 3px solid rgba($electric-blue, 0.7);
   padding: $base * 4;
 
   h2 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 36px;
     margin: 0 0 $base * 2;
     font-weight: 600;
     letter-spacing: -1px;
@@ -32,9 +32,17 @@
     border-bottom: 1px solid rgba($electric-blue, 0.3);
     margin: 0;
     display: flex;
+    align-items: center;
 
     > a {
       width: 140px;
+      border-color: $electric-blue !important;
+      color: $electric-blue !important;
+
+      &:hover {
+        color: white !important;
+        background-color: $electric-blue !important;
+      }
     }
 
     &:first-child {
@@ -53,23 +61,18 @@
   }
 
   h3 {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    color: $electric-blue;
-    margin: 0 0 $base * 1 0;
+    margin: 0 0 2px 0;
   }
 
   p {
     color: $secondary;
     font-size: 14px;
     line-height: 21px;
-    margin: 0 0 $base * 1 0;
-
-    &:last-child {
-      margin: 0;
-    }
+    margin: 0;
   }
 
 }

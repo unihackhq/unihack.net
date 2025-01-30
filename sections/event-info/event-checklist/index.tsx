@@ -56,13 +56,9 @@ const EventChecklist = () => {
             <h3>Submit your entry on Devpost!</h3>
             <p>Here is where you'll submit your entries for UNIHACK!</p>
           </div>
-          <ButtonLink
-            type="primary"
-            theme="light"
-            href="https://unihack2024.devpost.com"
-          >
+          {/* <ButtonLink type="primary" theme="light" href="#">
             Devpost
-          </ButtonLink>
+          </ButtonLink> */}
         </li>
       </ul>
     </section>
