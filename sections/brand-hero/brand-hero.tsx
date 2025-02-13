@@ -28,7 +28,7 @@ const BrandHero = () => (
             theme="transparent"
             href="https://merch.unihack.net"
           >
-            Buy Swag (coming soon)
+            Buy Swag
           </ButtonLink>
         </div>
       </Stack>
