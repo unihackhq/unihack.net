@@ -1,0 +1,88 @@
+{
+  "prizes": {
+    "main": [
+      {
+        "title": "1st Place",
+        "imagePath": "/images/prizes/first-place.svg",
+        "contents": [
+          "$5000 cash",
+          "Bose QuietComfort SE headphones for each team member",
+          "Amazon Fire TV Cube for each team member"
+        ]
+      },
+      {
+        "title": "2nd Place",
+        "imagePath": "/images/prizes/second-place.svg",
+        "contents": ["$2500 cash", "Sennheiser HD450BT for each team member"]
+      },
+      {
+        "title": "3rd Place",
+        "imagePath": "/images/prizes/third-place.svg",
+        "contents": ["$1500 cash", "Amazon Echo Show 5 for each team member"]
+      }
+    ],
+    "category": [
+      {
+        "title": "Best Design",
+        "description": "Awarded to the most usable and best looking user interface.",
+        "imagePath": "/images/prizes/best-design.svg",
+        "contents": ["Frank Green Coffee Lovers Set for each team member"]
+      },
+      {
+        "title": "Most Creative Idea",
+        "description": "The project that has the most original idea or reinvention.",
+        "imagePath": "/images/prizes/most-creative.svg",
+        "contents": ["Keychron K1 Wireless Keyboard for each team member"]
+      },
+      {
+        "title": "First Timers Prize",
+        "description": "The best project created by first-time hackathon participants.",
+        "subtext": "To be eligible, at least 50% of your team must have not attended a hackathon.",
+        "imagePath": "/images/prizes/first-time.svg",
+        "contents": [
+          "Bose Soundlink Micro Bluetooth Speakers for each team member"
+        ]
+      },
+      {
+        "title": "Most Entertaining Pitch",
+        "description": "Can you summarise your pitch in in three minutes - whilst also being engaging and entertaining?",
+        "imagePath": "/images/prizes/best-pitch.svg",
+        "contents": [
+          "Ostritch Pillow for each team member",
+          "LAMY Swift Rollerball pen with Studio Milligram Notebook for each team member"
+        ]
+      },
+      {
+        "title": "People's Choice Award",
+        "description": "The project that wins the hearts and votes of the people.",
+        "imagePath": "/images/prizes/people-choice.svg",
+        "contents": [
+          "Amazon Echo smart speaker for each team member",
+          "Desktop vacuum cleaner for each team member"
+        ]
+      },
+      {
+        "title": "Best Social Media Prize",
+        "description": "Send out the best tweet, message, photo, story or short video that sums up your experience of #UNIHACK2024.",
+        "imagePath": "/images/prizes/socm.svg",
+        "subtext": "This is an individual prize.",
+        "contents": ["DJI Osmo Mobile SE Gimbal"]
+      },
+      {
+        "title": "Best Meme",
+        "description": "Make the best meme during the event and post it on the UNIHACK Discord. I couldn't make it any more obvious.",
+        "imagePath": "/images/prizes/meme.svg",
+        "subtext": "This is an individual prize.",
+        "contents": ["Totally a secret"]
+      }
+    ],
+    "sponsor": [
+      {
+        "title": "Social Impact Prize",
+        "description": "The best idea that addresses an issue in your local community.",
+        "imagePath": "/images/prizes/Atlassian.svg",
+        "contents": ["Crumpler Communal Dwelling Bag for each team member"]
+      }
+    ]
+  }
+}

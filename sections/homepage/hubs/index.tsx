@@ -12,7 +12,7 @@ export const SydneyHub = () => {
         <p>at UNSW Kensington</p>
       </div>
       <div>
-        <ButtonLink type="primary" theme="transparent" href="/2024-hubs/sydney">
+        <ButtonLink type="primary" theme="transparent" href="/hubs/sydney">
           More Info
         </ButtonLink>
       </div>
@@ -28,11 +28,7 @@ export const MelbourneHub = () => {
         <p>at Monash University Clayton</p>
       </div>
       <div>
-        <ButtonLink
-          type="primary"
-          theme="transparent"
-          href="/2024-hubs/melbourne"
-        >
+        <ButtonLink type="primary" theme="transparent" href="/hubs/melbourne">
           More Info
         </ButtonLink>
       </div>

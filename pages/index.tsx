@@ -3,12 +3,15 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 import Page from '@layouts/page/page';
 import BrandHero from '@sections/brand-hero/brand-hero';
-import HomeCard from '@components/home-card';
+// import HomeCard from '@components/home-card';
 
-import inspirationImage from '../public/images/homepage/past.png';
-import sponsorshipImage from '../public/images/homepage/sponsorship-small.png';
+// import inspirationImage from '../public/images/homepage/past.png';
+// import sponsorshipImage from '../public/images/homepage/sponsorship-small.png';
 import { JoinDiscord } from '@sections/homepage/discord';
 import EventChecklist from '@sections/event-info/event-checklist';
+import { MelbourneHub, SydneyHub } from '@sections/homepage/hubs';
+import Sponsors from '@sections/event-info/sponsors/sponsors';
+import sponsors from '@content/events/2025/sponsors.json';
 
 const Index = () => (
   <Page headerless>
@@ -23,23 +26,12 @@ const Index = () => (
     <BrandHero />
     <div className={styles.homepage}>
       <JoinDiscord />
-      <EventChecklist />
       <div className={styles.grid}>
-        <HomeCard
-          image={inspirationImage}
-          title={<>Want to see what won last year?</>}
-          placeholderColor="purple"
-          buttonLink="https://unihack2024.devpost.com/"
-          buttonText="Visit 2024 DevPost!"
-        />
-        <HomeCard
-          image={sponsorshipImage}
-          title={<>Interested in partnering?</>}
-          placeholderColor="midori"
-          buttonLink="/sponsorship"
-          buttonText="Sponsor UNIHACK 2025"
-        />
+        <MelbourneHub />
+        <SydneyHub />
       </div>
+      <EventChecklist />
+      <Sponsors data={sponsors} />
     </div>
   </Page>
 );

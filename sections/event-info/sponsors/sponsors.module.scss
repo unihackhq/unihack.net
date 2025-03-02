@@ -3,62 +3,71 @@
 
 .event-page-sponsors {
   color: $secondary;
-  padding-bottom: 64px;
-
-  &-content {
-    @include page-margin;
-    display: flex;
-    flex-direction: column;
-
-    .logo-center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-
-      .company-logo {
-        width: 50%;
-        height: auto;
-
-        @include md {
-          height: 150px;
-          width: auto;
-        }
-      }
-
-      > * + * {
-        padding-left: $space-medium;
-
-        @include md {
-          padding-left: $space-xlarge;
-        }
-      }
+  max-width: 600px;
+  margin: 0 auto 64px auto;
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .sponsor-row {
+    h3 {
+      text-align:  center;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;;
+    }
+    
+    .sponsor-row-logos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 8px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    .tier-accent {
-      width: 100%;
+    .company-logo {
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      padding: 8px 16px;
       margin: 0;
-      border: none;
-      
-      &.platinum {
-        border-top: 4px solid $platinum;
-      }
+    }
 
-      &.gold {
-        border-top: 4px solid $gold;
-      }
+    .company-logo img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+    }
 
-      &.silver {
-        border-top: 4px solid $silver;
-      }
+    &.platinum, &.diamond {
+      .sponsor-row-logos {
+        grid-template-columns: 1fr;
+      }  
+      .company-logo img {
+        width: 170px;
+      }  
+    }
 
-      &.bronze {
-        border-top: 4px solid $bronze;
-      }
+    &.gold {
+      .sponsor-row-logos {
+        grid-template-columns: 1fr 1fr;
+      }  
+      .company-logo img {
+        width: 150px;
+      }  
+    }
 
-      &.other {
-        border-top: 4px solid #e0e0e0;
-      }
+    /** This should always be the last rule evaluated for CSS */
+    &.isSolo {
+      .sponsor-row-logos {
+        grid-template-columns: 1fr;
+      }  
     }
   }
 }
