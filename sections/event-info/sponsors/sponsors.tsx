@@ -30,15 +30,16 @@ export const Sponsors = ({ data: { sponsors, titles, base } }: PropTypes) => {
     <section className={cx('event-page-sponsors')}>
       <h2>Sponsors</h2>
       {SPONSOR_TIER_ORDER.map((tier) => {
-        if (!sponsors[tier] || sponsors[tier].length === 0) {
+        const sponsorData = sponsors[tier];
+        if (sponsorData === undefined || sponsorData.length === 0) {
           return null;
         }
-        const isSolo = sponsors[tier].length === 1;
+        const isSolo = sponsorData.length === 1;
         return (
           <div className={cx('sponsor-row', tier, { isSolo })} key={tier}>
             <h3>{titles?.[tier] ?? defaultTitles[tier]}</h3>
             <ul className={cx('sponsor-row-logos')}>
-              {sponsors[tier].map((sponsor) => {
+              {sponsorData.map((sponsor) => {
                 return (
                   <li className={cx('company-logo')}>
                     <img
