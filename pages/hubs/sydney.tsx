@@ -83,7 +83,6 @@ const Register = () => {
               RSVP Here
             </ButtonLink>
           </div>
-          </div>
         </div>
       </div>
     </section>
