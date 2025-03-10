@@ -99,9 +99,7 @@ const Location = () => {
           <div className={styles.address}>
             <h3>Address</h3>
             <p>
-              G03/G04/G09/G10
-              <br />
-              Electrical Engineering Building (G17)
+              M17, June Griffith Building
               <br />
               UNSW Kensington Campus
               <br />
@@ -110,7 +108,7 @@ const Location = () => {
             <ButtonLink
               theme="light"
               type="primary"
-              href="https://link.mazemap.com/bE2R5G1R"
+              href="https://link.mazemap.com/SVPyn5yW"
             >
               Directions
             </ButtonLink>
