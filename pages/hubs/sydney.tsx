@@ -70,11 +70,19 @@ const Register = () => {
             </ButtonLink>
           </div>
           <div className={styles.section}>
-            <h3>Come over!</h3>
+            <h3>Let us know!</h3>
             <p>
-              Visit the UNIHACK Sydney Hub on Saturday and Sunday, and keep an
+              Let us know if you're attending the UNIHACK Sydney Hub on Saturday and/or Sunday, and keep an
               eye on the Discord for any updates!
             </p>
+            <ButtonLink
+              theme="light"
+              type="primary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe6T8sc7vup_N48bDDjWtJF_8X8XDuVKd47LcbHwgDKppqCeg/viewform"
+            >
+              RSVP Here
+            </ButtonLink>
+          </div>
           </div>
         </div>
       </div>
