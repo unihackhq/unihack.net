@@ -7,18 +7,27 @@
         "contents": [
           "$5000 cash",
           "Bose QuietComfort SE headphones for each team member",
-          "Amazon Fire TV Cube for each team member"
+          "Bellroy Tech Kit pouch for each team member",
+          "Logitech MX Keys S Combo + MX Biro for each team member"
         ]
       },
       {
         "title": "2nd Place",
         "imagePath": "/images/prizes/second-place.svg",
-        "contents": ["$2500 cash", "Sennheiser HD450BT for each team member"]
+        "contents": [
+          "$2400 cash",
+          "Sennheiser HD450BT for each team member",
+          "Logitech MX Anywhere 3 + MX Keys Mini for each team member"
+        ]
       },
       {
         "title": "3rd Place",
         "imagePath": "/images/prizes/third-place.svg",
-        "contents": ["$1500 cash", "Amazon Echo Show 5 for each team member"]
+        "contents": [
+          "$1200 cash",
+          "Amazon Echo for each team member",
+          "Logitech MX Biro for each team member"
+        ]
       }
     ],
     "category": [
@@ -26,40 +35,32 @@
         "title": "Best Design",
         "description": "Awarded to the most usable and best looking user interface.",
         "imagePath": "/images/prizes/best-design.svg",
-        "contents": ["Frank Green Coffee Lovers Set for each team member"]
+        "contents": ["Blunt Metro Compact Umbrella for each team member"]
       },
       {
         "title": "Most Creative Idea",
         "description": "The project that has the most original idea or reinvention.",
         "imagePath": "/images/prizes/most-creative.svg",
-        "contents": ["Keychron K1 Wireless Keyboard for each team member"]
+        "contents": ["Frank Green Essentials Set for each team member"]
       },
       {
         "title": "First Timers Prize",
         "description": "The best project created by first-time hackathon participants.",
         "subtext": "To be eligible, at least 50% of your team must have not attended a hackathon.",
         "imagePath": "/images/prizes/first-time.svg",
-        "contents": [
-          "Bose Soundlink Micro Bluetooth Speakers for each team member"
-        ]
+        "contents": ["Belkin BoostCharge Pro for each team member"]
       },
       {
         "title": "Most Entertaining Pitch",
         "description": "Can you summarise your pitch in in three minutes - whilst also being engaging and entertaining?",
         "imagePath": "/images/prizes/best-pitch.svg",
-        "contents": [
-          "Ostritch Pillow for each team member",
-          "LAMY Swift Rollerball pen with Studio Milligram Notebook for each team member"
-        ]
+        "contents": ["Stanley Cup for each team member"]
       },
       {
         "title": "People's Choice Award",
         "description": "The project that wins the hearts and votes of the people.",
         "imagePath": "/images/prizes/people-choice.svg",
-        "contents": [
-          "Amazon Echo smart speaker for each team member",
-          "Desktop vacuum cleaner for each team member"
-        ]
+        "contents": ["Ultimate Ears MINIROLL Speaker for each team member"]
       },
       {
         "title": "Best Social Media Prize",
@@ -80,8 +81,15 @@
       {
         "title": "Social Impact Prize",
         "description": "The best idea that addresses an issue in your local community.",
-        "imagePath": "/images/prizes/Atlassian.svg",
+        "imagePath": "/images/sponsors/Atlassian.svg",
         "contents": ["Crumpler Communal Dwelling Bag for each team member"]
+      },
+      {
+        "title": "Best Use of Datastax APIs",
+        "description": "The best idea that uses any Datastax technologies (including AstraDB and Langflow)",
+        "subtext": "In your pitch and DevPost submission, you must demonstrate how you use Datastax technologies in your project.",
+        "imagePath": "/images/sponsors/Datastax.svg",
+        "contents": ["Keychron K8 mechanical keyboard for each team member"]
       }
     ]
   }

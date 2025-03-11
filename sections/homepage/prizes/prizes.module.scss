@@ -4,6 +4,11 @@
 .main-prize,
 .sponsor-prize,
 .category-prize {
+
+  > div {
+    margin-bottom: 24px;
+  }
+
   h2 {
     font-size: 2rem;
     letter-spacing: -1px;
@@ -37,12 +42,12 @@
     padding: 32px;
 
     &:before {
-      border: 2px solid $electric-blue;
+      border: 3px solid rgba($electric-blue, 0.7);
       position: absolute;
       content: '';
       left: 0;
       top: 0;
-      bottom: 32%;
+      height: calc(100% - 260px);
       right: 0;
       z-index: -1;
       border-radius: 5px;

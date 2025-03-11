@@ -52,11 +52,11 @@ class EventSchedule extends React.Component<PropTypes, State> {
   private buttonText(day: Day) {
     switch (day) {
       case 'friday':
-        return 'FRI 1ST';
+        return 'FRI';
       case 'saturday':
-        return 'SAT 2ND';
+        return 'SAT';
       case 'sunday':
-        return 'SUN 3RD';
+        return 'SUN';
     }
   }
 
@@ -81,7 +81,7 @@ class EventSchedule extends React.Component<PropTypes, State> {
           {this.state.allDays.map((day) => this.getSelectorButtons(day))}
         </div>
         <Schedule data={this.state.events} />
-        <Text> The winners will be announced on March 11.</Text>
+        <Text> The winners will be announced on March 24.</Text>
       </section>
     );
   }

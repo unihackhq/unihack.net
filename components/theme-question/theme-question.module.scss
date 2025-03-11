@@ -1,0 +1,32 @@
+@import '../../styles/styles.scss';
+@import '../../styles/spacing.scss';
+
+.theme-question {
+  background-color: $electric-blue;
+  padding: 32px 24px;
+  color: white;
+  border-radius: 5px;
+
+  @include md {
+    padding: 32px;
+  }
+
+  h3 {
+    color: white;
+    margin: 0 0 16px;
+  }
+
+  p {
+    font-size: 0.875rem;
+    margin: 0 0 16px;
+
+    @include md {
+      font-size: 1.125rem;
+      margin: 0 0 16px;  
+    }
+  } 
+
+  p:last-child {
+    margin: 0;
+  }
+}

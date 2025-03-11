@@ -12,6 +12,10 @@ import EventChecklist from '@sections/event-info/event-checklist';
 import { MelbourneHub, SydneyHub } from '@sections/homepage/hubs';
 import Sponsors from '@sections/event-info/sponsors/sponsors';
 import sponsors from '@content/events/2025/sponsors.json';
+import prizes from '@content/events/2025/prizes.json';
+import schedule from '@content/events/2025/schedule.json';
+import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
+import Prizes from '@sections/homepage/prizes/prizes';
 
 const Index = () => (
   <Page headerless>
@@ -30,7 +34,11 @@ const Index = () => (
         <MelbourneHub />
         <SydneyHub />
       </div>
-      <EventChecklist />
+      <div className={styles.grid}>
+        <EventChecklist />
+        <EventSchedule data={schedule} />
+      </div>
+      <Prizes data={prizes.prizes} />
       <Sponsors data={sponsors} />
     </div>
   </Page>

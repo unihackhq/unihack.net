@@ -6,9 +6,19 @@
       "title": "Opening Ceremony - Live on Twitch"
     },
     {
-      "startTime": "2025-03-14 18:20 +1100",
-      "endTime": "2025-03-14 19:00 +1100",
+      "startTime": "2025-03-14 18:15 +1100",
+      "endTime": "2025-03-14 18:30 +1100",
       "title": "Hacking Begins!"
+    },
+    {
+      "startTime": "2025-03-14 18:30 +1100",
+      "endTime": "2025-03-14 19:00 +1100",
+      "title": "Discord: Team Matchmaking"
+    },
+    {
+      "startTime": "2025-03-14 19:00 +1100",
+      "endTime": "2025-03-14 21:00 +1100",
+      "title": "Hacking continues..."
     },
     {
       "startTime": "2025-03-14 21:00 +1100",

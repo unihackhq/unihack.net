@@ -3,6 +3,7 @@ import styles from './prizes.module.scss';
 import { PrizeData } from './prize-data.model';
 import { JudgingCriteria } from '@components/judging-criteria';
 import { Prize } from '@components/new-prize/prize';
+import { ThemeQuestion } from '@components/theme-question';
 
 type PropTypes = {
   data: PrizeData;
@@ -19,6 +20,7 @@ const Prizes = ({ data: { main, category, sponsor } }: PropTypes) => {
           })}
         </div>
         <JudgingCriteria />
+        <ThemeQuestion />
       </div>
       <div className={styles['sponsor-prize']}>
         <h2>Sponsor Prizes</h2>
