@@ -52,7 +52,7 @@ const StreamHero = () => {
     <section className={styles['stream-hero']}>
       <div className={styles['stream-hero-content']}>
         <Stack size="medium">
-          <h1>UNIHACK 2024</h1>
+          <h1>UNIHACK 2025</h1>
           {title && (
             <Text className={styles.title}>
               {title ?? 'Get ready for UNIHACK 2024!'}
@@ -74,11 +74,15 @@ const StreamHero = () => {
           <ButtonLink
             type="primary"
             theme="transparent"
-            href="https://unihack2024.devpost.com"
+            href="https://unihack2025.devpost.com"
           >
             Visit DevPost
           </ButtonLink>
-          <ButtonLink type="primary" theme="transparent" href="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform">
+          <ButtonLink
+            type="primary"
+            theme="transparent"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
+          >
             Want to join the team?
           </ButtonLink>
           <ButtonLink
