@@ -13,7 +13,7 @@ const BrandHero = () => (
           <span>March 14-16, 2025</span>
         </Text>
         <Text className={styles.subtitle}>
-          The Imagination Hackathon is back for another year.
+          We return 6:00PM AEDT on Friday March 14.
         </Text>
         <div className={styles.actions}>
           <ButtonLink
