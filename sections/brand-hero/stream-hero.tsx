@@ -5,14 +5,18 @@ import Stack from '@components/stack/stack';
 import ReactPlayer from 'react-player/twitch';
 import ButtonLink from '@components/button/button-link';
 
-const START_DATE = '2024/03/01 18:00 +1100';
-const END_DATE = '2024/03/03 17:00 +1100';
+const START_DATE = '2025/03/14 18:00 +1100';
+const END_DATE = '2025/03/16 17:00 +1100';
+const CLOSING_DATE = '2025/03/16 18:00 +1100';
 
 const calculateTimeLeft = () => {
   const start = +new Date(START_DATE);
   const now = +new Date();
   if (now < start) {
-    return { title: 'Hacking starts 6PM today (Melbourne time)' };
+    return {
+      title: 'March 14 - 16, 2025',
+      subtitle: 'Hacking starts 6PM today (Melbourne time)',
+    };
   }
 
   const diff = +new Date(END_DATE) - now;
@@ -32,9 +36,17 @@ const calculateTimeLeft = () => {
     };
   }
 
+  const closing = +new Date(CLOSING_DATE);
+  if (now < closing) {
+    return {
+      title: 'Get your submissions in now.',
+      subtitle: 'Closing Ceremony begins on 5:30PM (Melbourne time)',
+    };
+  }
+
   return {
     title: `Good luck everyone! 🚀`,
-    subtitle: 'Winners announcement on March 11, 6PM (Melbourne time)',
+    subtitle: 'Winners announcement on March 24, 6PM (Melbourne time)',
   };
 };
 
@@ -51,11 +63,11 @@ const StreamHero = () => {
   return (
     <section className={styles['stream-hero']}>
       <div className={styles['stream-hero-content']}>
-        <Stack size="medium">
-          <h1>UNIHACK 2025</h1>
+        <Stack size="small">
+          <h1>UNIHACK 2025 - 14-16 March, 2025</h1>
           {title && (
             <Text className={styles.title}>
-              {title ?? 'Get ready for UNIHACK 2024!'}
+              {title ?? 'Get ready for UNIHACK 2025!'}
             </Text>
           )}
           {time && <Text className={styles.time}>{time}</Text>}
@@ -81,9 +93,9 @@ const StreamHero = () => {
           <ButtonLink
             type="primary"
             theme="transparent"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScWRbp9lMacf0Xjul2y2kgLvgsTYqDo1BlrDWBkEAac0UrY0w/viewform"
+            href="https://manage.unihack.net"
           >
-            Want to join the team?
+            Register Now
           </ButtonLink>
           <ButtonLink
             type="primary"

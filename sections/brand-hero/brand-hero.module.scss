@@ -73,13 +73,12 @@
   }
 
   p.subtitle {
-    margin: $base * 2 0 0;
+    margin: $base 0 0;
     padding: 0;
     font-size: 18px;
     line-height: 24px;
 
     @include md {
-      margin: $base * 2 0 0;
       display: block;
       font-size: 28px;
       line-height: 32px;
@@ -128,8 +127,7 @@
   }
 
   h1 {
-   height: 60px;
-   margin: 0;
+    height: 72px;
   }
 }
 

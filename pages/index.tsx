@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Page from '@layouts/page/page';
-import BrandHero from '@sections/brand-hero/brand-hero';
+// import BrandHero from '@sections/brand-hero/brand-hero';
 // import HomeCard from '@components/home-card';
 
 // import inspirationImage from '../public/images/homepage/past.png';
@@ -16,6 +16,7 @@ import prizes from '@content/events/2025/prizes.json';
 import schedule from '@content/events/2025/schedule.json';
 import EventSchedule from '@sections/event-info/event-schedule/event-schedule';
 import Prizes from '@sections/homepage/prizes/prizes';
+import StreamHero from '@sections/brand-hero/stream-hero';
 
 const Index = () => (
   <Page headerless>
@@ -27,7 +28,7 @@ const Index = () => (
         key="title"
       />
     </Head>
-    <BrandHero />
+    <StreamHero />
     <div className={styles.homepage}>
       <JoinDiscord />
       <div className={styles.grid}>
