@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 import { Logo } from '@components/logo';
 
-const END_DATE = '2024/03/03 17:00 +1100';
+const END_DATE = '2025/04/16 17:00 +1100';
 
 interface TimeLeft {
   countdown: boolean;
@@ -56,14 +56,9 @@ const Index = () => {
   return (
     <section className={styles.countdown}>
       <Head>
-        <title>UNIHACK 2024 - Countdown</title>
+        <title>UNIHACK 2025 - Countdown</title>
       </Head>
-      <Logo
-        baseColor="white"
-        topColor="white"
-        showWordmark
-        wordmarkColor="white"
-      />
+      <h1>UNIHACK 2025</h1>
       {!timeLeft.countdown && (
         <p className={styles.big}>Good luck everyone! 🚀</p>
       )}
