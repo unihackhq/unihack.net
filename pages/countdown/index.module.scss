@@ -3,7 +3,7 @@
 .countdown {
   height: 100vh;
   width: 100vw;
-  background: $secondary;
+  background: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8); 
   padding: $base * 4;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,15 @@
   align-items: center;
   justify-content: center;
 
-  svg {
-    margin: $base * 2;
+  h1 {
+    mask: url('../../public/images/events/2025-logo.svg') center center no-repeat;
+    mask-size: contain;
+    background-color: $white;
+    height: 120px;
+    text-indent: -999em;
+    display: block;
+    padding: 0;
+    margin: 0 0 24px;
   }
 
   p {
