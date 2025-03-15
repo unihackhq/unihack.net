@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 import { Logo } from '@components/logo';
 
-const END_DATE = '2025/04/16 17:00 +1100';
+const END_DATE = '2025/03/16 17:00 +1100';
 
 interface TimeLeft {
   countdown: boolean;
