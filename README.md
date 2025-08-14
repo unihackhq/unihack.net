@@ -6,8 +6,6 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Powered by Vercel](/public/powered-by-vercel.svg)](https://vercel.com/?utm_source=team_EPsCE3tmBMa6zenfP9k7v3VK&utm_campaign=oss)
-
 This is the source code that powers the [unihack.net](unihack.net) website. This
 website is running on the [Next.js][next.js] framework, using both [TypeScript][typescript] and [SASS][sass].
 
@@ -17,7 +15,10 @@ website is running on the [Next.js][next.js] framework, using both [TypeScript][
 
 You will need:
 
-- Node 10.x or above
+- Node 22.x or above
+
+Because we use Yarn PnP, you may need to [follow the following instructions](https://yarnpkg.com/getting-started/editor-sdks#vscode)
+to develop on this website.
 
 ### Installing
 
@@ -25,7 +26,7 @@ You should be able to install all the dependencies by running the following
 command:
 
 ```
-npm install
+yarn install
 ```
 
 ### Running Locally
@@ -33,13 +34,13 @@ npm install
 You can run this locally in development mode by running the following command:
 
 ```
-npm run dev
+yarn dev
 ```
 
 To use the environment variables you will need the vercel CLI:
 
 ```
-npm i -g vercel
+yarn install vercel
 ```
 
 You can pull the environment variables by running the following command and following the prompt:
@@ -57,20 +58,12 @@ You can also run it locally in "production mode" - which allows you to see what
 the site looks like when deployed _before_ you merge. You can do this by:
 
 ```
-npm run build
-npm start
+yarn build
+yarn start
 ```
 
 You can read more about production mode [here](https://nextjs.org/docs/api-reference/cli#production)
 
-### Linting
-
-We use `tslint` to ensure code consistency, readability, and maintainability. You
-can run this through:
-
-```
-npm run lint
-```
 
 ### Folder Structure
 
