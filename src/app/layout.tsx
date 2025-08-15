@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+import { Footer } from "@/components/footer";
 import "./globals.css";
+
+config.autoAddCss = false
 
 const soraFont = Sora({
   variable: "--font-sora",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${soraFont.variable} antialiased`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

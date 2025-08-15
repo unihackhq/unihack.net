@@ -1,0 +1,29 @@
+@utility home-section {
+  width: var(--container-6xl);
+  margin: 0 auto;
+  padding: 120px 0;
+
+  h2 {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: -1px;
+      text-align: center;
+      width: 640px;
+      margin: 0 auto 32px;
+  }
+
+  p {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 18px;
+      color: #BDC8D7;
+  }
+
+  &> .centerText {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

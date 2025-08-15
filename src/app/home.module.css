@@ -1,0 +1,49 @@
+.home_hero {
+    background: url('/bg-hero.jpg') top center no-repeat;
+    background-size: 100% auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: var(--font-sora);
+}
+
+.home_header {
+    position: relative;
+    width: var(--container-6xl);
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 60px 0 0 62px;
+
+    h1 {
+        font-size: 96px;
+        width: var(--container-xl);
+        line-height: 96px;
+        font-weight: 700;
+        letter-spacing: -5px;
+    }
+}
+
+.home_header_text {
+    width: 400px;
+    float: right;
+    margin-top: -80px;
+
+    p {
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -1px;
+        font-weight: 300;
+        margin: 0 0 24px;
+    }
+
+    a {
+        margin-bottom: 12px;
+    }
+}
+
+.home_section_faqs {
+    h2 {
+        background: linear-gradient(90deg, #E1EA3B, #E210EA);
+        background-clip: text;
+        color: transparent;
+    }
+}

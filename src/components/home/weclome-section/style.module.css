@@ -1,0 +1,10 @@
+@import "../../../styles/home.css";
+
+.section {
+    @apply home-section;
+    h2 {
+        background: linear-gradient(90deg, #0A99F2, #19CF50);
+        background-clip: text;
+        color: transparent;
+    }
+}

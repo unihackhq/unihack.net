@@ -1,0 +1,22 @@
+@reference "tailwindcss";
+
+.container {
+    width: var(--container-6xl);
+    margin: 0 auto 20px;
+    height: 120px;
+    padding: 60px 0 0;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+
+    span {
+        font-family: var(--font-sora);
+        font-size: 48px;
+        font-weight: 200;
+        line-height: 60px;
+        margin-left: 16px;
+        letter-spacing: -2px;
+    }
+}
