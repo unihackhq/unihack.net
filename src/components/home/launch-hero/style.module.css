@@ -1,0 +1,62 @@
+@import '../../../styles/home.css';
+
+.home_header {
+  @apply home-section;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @variant lg {
+    min-height: 600px;
+    padding: 100px 0 0 62px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: -5px;
+
+    @variant lg {
+      font-size: 72px;
+      line-height: 72px;
+      width: 400px;
+    }
+
+    @variant xl {
+      font-size: 96px;
+      line-height: 96px;
+      letter-spacing: -5px;
+      width: 60px;
+    }
+  }
+}
+
+.home_header_text {
+  @variant lg {
+    float: right;
+    margin-top: -90px;
+    width: 400px;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    font-weight: 300;
+    margin: 0 0 24px;
+
+    @variant lg {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  a {
+    margin-bottom: 12px;
+  }
+}

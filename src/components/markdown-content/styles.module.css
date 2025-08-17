@@ -1,0 +1,59 @@
+@reference "tailwindcss";
+@import '../../styles/core.css';
+
+.container {
+  @apply layout-container;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  max-width: 640px;
+  font-family: var(--font-sora);
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    font-weight: 300;
+    color: #bdc8d7;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    margin-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 64px;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol, ul {
+    margin-left: 24px;
+    margin-bottom: 18px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    color: #bdc8d7;
+    font-weight: 300;
+    position: relative;
+  }
+}

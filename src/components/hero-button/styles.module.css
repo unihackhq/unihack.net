@@ -1,21 +1,21 @@
 a.button {
-    display: flex;
-    border: 1px solid rgba(255,255,255,0.3);
-    padding: 16px;
-    margin: 0 0 12px;
-    border-radius: 8px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  margin: 0 0 12px;
+  border-radius: 8px;
 
-    svg {
-        align-self: center;
-        margin-left: auto;
-        opacity: 0.3;
-    }
+  svg {
+    align-self: center;
+    margin-left: auto;
+    opacity: 0.3;
+  }
 }
 
 a.button:hover {
-    border: 1px solid white;
-    transition: 0.2s;
-    svg {
-        opacity: 1;
-    }
+  border: 1px solid white;
+  transition: 0.2s;
+  svg {
+    opacity: 1;
+  }
 }

@@ -1,33 +1,46 @@
-import styles from "./style.module.css";
+import styles from './style.module.css';
+import Image from 'next/image';
+import logitech from './logos/logitech-w.svg';
+import datastax from './logos/datastax-w.svg';
+import atlassian from './logos/atlassian-w.svg';
+import twilio from './logos/twilio-w.svg';
+import { Button } from '@/components/button';
 
 export const HomeSponsorUsSection = () => {
-    return (
-      <section className={styles.section} id="sponsor-us">
+  return (
+    <section className={styles.section} id="sponsor-us">
       <h2>Sponsor us</h2>
       <div className={styles.centerText}>
-        <p>Our sponsors make it possible for us to bring together hundreds of emerging developers, designers, thinkers and builders.</p>
+        <p>
+          Our sponsors make it possible for us to bring together hundreds of
+          emerging developers, designers, thinkers and builders.
+        </p>
       </div>
       <div className={styles.sponsorGridWrapper}>
         <p>Past sponsors include</p>
         <div className={styles.sponsorGrid}>
           <div className={styles.sponsorGridItem}>
-            <img src="/images/sponsor-us/sponsor-1.png" alt="Sponsor 1" />
+            <Image src={logitech} alt="Logitech" />
           </div>
           <div className={styles.sponsorGridItem}>
-            <img src="/images/sponsor-us/sponsor-2.png" alt="Sponsor 2" />
+            <Image src={atlassian} alt="Atlassian" />
           </div>
           <div className={styles.sponsorGridItem}>
-            <img src="/images/sponsor-us/sponsor-3.png" alt="Sponsor 3" />
+            <Image src={datastax} alt="Datastax" />
           </div>
           <div className={styles.sponsorGridItem}>
-            <img src="/images/sponsor-us/sponsor-4.png" alt="Sponsor 4" />
+            <Image src={twilio} alt="Twilio" />
           </div>
         </div>
       </div>
       <div className={styles.centerText}>
-        <p>Want to help support and nurture the next generation of tech talent? Shoot us an email at <strong>sponsorship@unihack.net</strong>.</p>
+        <p>
+          Want to help support and nurture the next generation of tech talent?
+          Shoot us an email at <strong>sponsorship@unihack.net</strong>.
+        </p>
+        <Button href="mailto:sponsorship@unihack.net" text="Email us" />
+        <Button href="https://forms.gle/1234567890" text="Sponsor form" />
       </div>
     </section>
-
-    )
-}
+  );
+};
