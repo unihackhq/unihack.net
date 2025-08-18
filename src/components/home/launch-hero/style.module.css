@@ -7,6 +7,7 @@
   text-align: left;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 
   @variant lg {
     min-height: 600px;
@@ -22,12 +23,6 @@
     letter-spacing: -5px;
 
     @variant lg {
-      font-size: 72px;
-      line-height: 72px;
-      width: 400px;
-    }
-
-    @variant xl {
       font-size: 96px;
       line-height: 96px;
       letter-spacing: -5px;
@@ -40,7 +35,7 @@
   @variant lg {
     float: right;
     margin-top: -90px;
-    width: 400px;
+    width: 360px;
   }
 
   p {
@@ -49,6 +44,7 @@
     letter-spacing: -1px;
     font-weight: 300;
     margin: 0 0 24px;
+    color: white;
 
     @variant lg {
       font-size: 24px;

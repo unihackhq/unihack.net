@@ -1,3 +1,4 @@
+import { Button } from '@/components/button';
 import styles from './style.module.css';
 
 export const HomeWelcomeSection = () => {
@@ -42,6 +43,7 @@ export const HomeWelcomeSection = () => {
             If you have completed but not had your graduation ceremony, you are
             still eligible to participate.
           </p>
+          <Button href="/rules" text="Read Rules" />
         </div>
       </div>
     </section>

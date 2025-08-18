@@ -7,7 +7,7 @@ export const LaunchHero = () => {
       <h1>The Imagination Hackathon</h1>
       <div className={styles.home_header_text}>
         <p>UNIHACK 2026 returns on March 13 - 15, 2026</p>
-        <HeroButton text="Looking to sponsor?" href="#" />
+        <HeroButton text="Looking to sponsor?" href="#sponsor-us" />
         <HeroButton text="Pre-register now" href="#" />
       </div>
     </div>

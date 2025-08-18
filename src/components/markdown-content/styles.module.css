@@ -20,6 +20,14 @@
     font-weight: 600;
   }
 
+  a {
+    color: var(--color-sky-500);
+
+    &:hover {
+      color: var(--color-sky-700)
+    }
+  }
+
   h1 {
     font-size: 64px;
     line-height: 64px;

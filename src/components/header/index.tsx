@@ -3,7 +3,7 @@ import { Logo } from '../logo';
 import styles from './header.module.css';
 
 interface HeaderProps {
-  isPage: boolean;
+  isPage?: boolean;
 }
 
 export const Header = ({ isPage = false }: HeaderProps) => {

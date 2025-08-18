@@ -21,16 +21,25 @@
   }
 
   .gridItem {
-    border: 2px solid white;
+    border: 5px solid #0a99f2;
     padding: 24px;
     border-radius: 12px;
 
     h3 {
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 21px;
+      line-height: 21px;
       font-weight: 600;
       margin-bottom: 12px;
       letter-spacing: -1px;
+      color: #0a99f2;
+    }
+
+    &:nth-child(2) {
+      border-color: #19cf50;
+
+      h3 {
+        color: #19cf50;
+      }
     }
 
     p {
@@ -41,6 +50,10 @@
 
     p:last-child {
       margin-bottom: 0;
+    }
+
+    > a {
+      font-size: 12px;
     }
   }
 }

@@ -8,14 +8,17 @@ a.button {
   svg {
     align-self: center;
     margin-left: auto;
-    opacity: 0.3;
+    margin-right: 8px;
+    opacity: 0.7;
   }
 }
 
 a.button:hover {
   border: 1px solid white;
-  transition: 0.2s;
+  transition: 0.2s ease-in;
+
   svg {
     opacity: 1;
+    margin-right: 0;
   }
 }

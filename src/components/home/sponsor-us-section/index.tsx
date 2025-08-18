@@ -38,8 +38,8 @@ export const HomeSponsorUsSection = () => {
           Want to help support and nurture the next generation of tech talent?
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
+        <Button href="./files/unihack-2026-sponsorship-prospectus.pdf" text="Sponsorship Prospectus" />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />
-        <Button href="https://forms.gle/1234567890" text="Sponsor form" />
       </div>
     </section>
   );
