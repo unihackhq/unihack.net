@@ -1,0 +1,29 @@
+.button {
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 16px 8px 36px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  display: inline-block;
+
+  svg {
+    margin-left: 8px;
+    width: 12px;
+    visibility: hidden;
+  }
+
+  &:hover {
+    background-color: white;
+    padding: 8px 26px 8px 26px;
+    color: black;
+
+    svg {
+      visibility: visible;
+      animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  }
+}

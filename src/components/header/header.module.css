@@ -1,0 +1,60 @@
+@import '../../styles/core.css';
+
+.container {
+  @apply layout-container;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @variant md {
+    padding-top: 60px;
+  }
+}
+
+.logo {
+  position: relative;
+  display: flex;
+
+  img {
+    height: 48px;
+    width: auto;
+
+    @variant md {
+      height: 60px;
+    }
+  }
+
+  span {
+    font-family: var(--font-sora);
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 48px;
+    margin-left: 8px;
+    letter-spacing: -2px;
+
+    @variant md {
+      font-size: 42px;
+      line-height: 64px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.container.mini {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  .logo {
+    img {
+      height: 48px;
+    }
+    span {
+      line-height: 50px;
+      font-size: 32px;
+      font-weight: 700;
+      margin-left: 16px;
+    }
+  }
+}

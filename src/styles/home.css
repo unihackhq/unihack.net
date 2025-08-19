@@ -1,0 +1,42 @@
+@import './core.css';
+
+@utility home-section {
+  @apply layout-container;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    max-width: 640px;
+    margin: 0 auto 32px;
+
+    @variant md {
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 18px;
+    color: #bdc8d7;
+  }
+
+  & > .centerText {
+    max-width: 600px;
+    margin: 0 auto;
+
+    @variant md {
+      text-align: center;
+    }
+  }
+
+  @variant lg {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

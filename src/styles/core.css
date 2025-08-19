@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+@utility layout-container {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @variant lg {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @variant xl {
+    width: 1200px;
+  }
+}

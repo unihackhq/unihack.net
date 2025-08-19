@@ -1,0 +1,23 @@
+@reference "tailwindcss";
+
+.home_hero {
+  background: url('/img/bg-hero.jpg') top center no-repeat;
+  background-size: auto 600px;
+  font-family: var(--font-sora);
+
+  @variant md {
+    background-size: 100% 800px;
+  }
+
+  @variant lg {
+    background-size: 100% 1000px;
+  }
+}
+
+.home_section_faqs {
+  h2 {
+    background: linear-gradient(90deg, #e1ea3b, #e210ea);
+    background-clip: text;
+    color: transparent;
+  }
+}

@@ -1,9 +1,0 @@
-@import '../../styles/styles.scss';
-
-.content {
-  @include page-margin;
-  padding: {
-    top: $base * 5;
-    bottom: $base * 5;
-  }
-}

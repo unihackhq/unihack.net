@@ -1,0 +1,34 @@
+@import '../../styles/core.css';
+
+.footer {
+  background: #111112;
+  color: white;
+  font-size: 12px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  @apply layout-container;
+  max-width: 600px;
+  margin: 0 auto;
+
+  p {
+    font-family: var(--font-sora);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  p.acknowledgement {
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+  }
+
+  img {
+    margin: 0 auto 12px;
+  }
+}
