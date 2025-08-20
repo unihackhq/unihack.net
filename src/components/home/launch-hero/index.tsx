@@ -8,7 +8,7 @@ export const LaunchHero = () => {
       <div className={styles.home_header_text}>
         <p>UNIHACK 2026 returns on March 13 - 15, 2026</p>
         <HeroButton text="Looking to sponsor?" href="#sponsor-us" />
-        {/* <HeroButton text="Pre-register now" href="#" /> */}
+        <HeroButton text="Pre-register now" href="https://forms.gle/71FoGkSikJuGEAcQ7" />
       </div>
     </div>
   );
