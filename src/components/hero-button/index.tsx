@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface Props {
@@ -11,7 +11,7 @@ export const HeroButton: React.FC<Props> = ({ href, text }) => {
   return (
     <a className={styles.button} href={href}>
       {text}
-      <FontAwesomeIcon icon={faChevronRight} />
+      <FontAwesomeIcon icon={faArrowRight} />
     </a>
   );
 };
