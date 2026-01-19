@@ -10,8 +10,7 @@
   border-bottom: 1px solid rgba(255,255,255,0.1);
 
   @variant lg {
-    min-height: 600px;
-    padding: 100px 0 0 62px;
+    padding: 100px 0 100px 64px;
     text-align: left;
   }
 
@@ -19,23 +18,29 @@
     font-size: 64px;
     line-height: 64px;
     margin-bottom: 24px;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: -5px;
+    text-align: center;
 
     @variant lg {
       font-size: 96px;
       line-height: 96px;
       letter-spacing: -5px;
-      width: 60px;
+      margin-bottom: 48px;
+    }
+
+    span {
+      font-weight: 700;
+      display: inline-block;
     }
   }
 }
 
 .home_header_text {
   @variant lg {
-    float: right;
-    margin-top: -90px;
-    width: 360px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
   }
 
   p {
@@ -54,5 +59,7 @@
 
   a {
     margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
   }
 }
