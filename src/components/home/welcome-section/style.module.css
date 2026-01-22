@@ -7,6 +7,7 @@
     background: linear-gradient(90deg, #0a99f2, #19cf50);
     background-clip: text;
     color: transparent;
+    max-width: 640px;
   }
 }
 

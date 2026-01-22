@@ -4,14 +4,18 @@
   @apply layout-container;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 
   h2 {
     font-weight: 700;
     font-size: 42px;
-    line-height: 42px;
+    line-height: 48px;
     letter-spacing: -1px;
-    max-width: 640px;
     margin: 0 auto 32px;
+    display: inline;
 
     @variant md {
       text-align: center;
