@@ -89,6 +89,19 @@ export const EventSchedule = () => {
           />
           <EventDay day="Sunday" date="March 15" events={dateState.sunday} />
         </div>
+        <div className={styles.judging_break}>
+          <div className={styles.judging_content}>
+            <div className={styles.winners_text}>
+              <h3>
+                March 16 - 20 <span>Judging Week</span>
+              </h3>
+              <p>
+                Our panel of expert judges will review all submitted projects
+                during this week to find our winners.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className={styles.winners_announcement}>
           <div className={styles.event_border}>
             <h3>

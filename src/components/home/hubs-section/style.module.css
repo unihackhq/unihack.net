@@ -1,0 +1,112 @@
+@import '../../../styles/home.css';
+@reference "tailwindcss";
+
+.section {
+  @apply home-section;
+  padding-top: 0;
+  align-items: flex-start;
+
+  @variant md {
+    align-items: center;
+  }
+
+  h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 12px;
+    letter-spacing: -1px;
+    text-align: left;
+  }
+
+  .centerText {
+    max-width: 600px;
+    margin-bottom: 24px;
+    text-align: left;
+    @variant md {
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      color: #bdc8d7;
+    }
+  }
+
+}
+
+.discordBanner {
+  width: 100%;
+ background-image: linear-gradient(to right bottom, #da45ff, #bf4bf8, #a44ff0, #8951e5, #6f51da);  border-radius: 12px;
+  padding: 24px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  @variant md {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+  }
+
+  a:hover {
+    color: #6330b4;
+  }
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+
+  @variant md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gridItem {
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    border-radius: 12px;
+
+    h4 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color:rgba(255, 255, 255, 0.5)
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 300;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    > a {
+      font-size: 12px;
+    }
+  }
+}
