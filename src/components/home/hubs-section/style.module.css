@@ -3,96 +3,47 @@
 
 .section {
   @apply home-section;
-  padding-top: 0;
   align-items: flex-start;
+  padding-top: 0;
 
   @variant md {
     align-items: center;
   }
 
-  h3 {
-    color: white;
-    font-size: 28px;
-    font-weight: 500;
-    margin: 0 0 12px;
-    letter-spacing: -1px;
-    text-align: left;
-  }
-
-  .centerText {
-    max-width: 600px;
-    margin-bottom: 24px;
-    text-align: left;
-    @variant md {
-      text-align: center;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 300;
-      color: #bdc8d7;
-    }
-  }
-
-}
-
-.discordBanner {
-  width: 100%;
- background-image: linear-gradient(to right bottom, #da45ff, #bf4bf8, #a44ff0, #8951e5, #6f51da);  border-radius: 12px;
-  padding: 24px;
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-
-  @variant md {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  p {
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
-    text-align: center;
-  }
-
-  a:hover {
-    color: #6330b4;
+  h2 {
+    background: linear-gradient(to left, #ff8008, #ffc837);
+    background-clip: text;
+    color: transparent;
+    max-width: 640px;
   }
 
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 24px;
   width: 100%;
+  margin-bottom: 24px;
 
   @variant md {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .gridItem {
-    border: 1px dashed rgba(255, 255, 255, 0.3);
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 24px;
     border-radius: 12px;
+    border: 5px solid #FFC837;
 
     h4 {
       margin: 0;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color:rgba(255, 255, 255, 0.5)
+      color: #FFC837;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
     p {

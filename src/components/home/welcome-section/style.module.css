@@ -27,20 +27,13 @@
     border-radius: 12px;
 
     h3 {
-      font-size: 21px;
+      font-size: 18px;
       line-height: 21px;
-      font-weight: 600;
+      font-weight: 700;
+      text-transform: uppercase;
       margin-bottom: 12px;
-      letter-spacing: -1px;
+      letter-spacing: 2px;
       color: #0a99f2;
-    }
-
-    &:nth-child(2) {
-      border-color: #19cf50;
-
-      h3 {
-        color: #19cf50;
-      }
     }
 
     p {

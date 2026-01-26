@@ -1,0 +1,65 @@
+@import '../../styles/home.css';
+@reference "tailwindcss";
+
+.stretch {
+  background: linear-gradient(to bottom, #aa076b, #61045f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @variant lg {
+    width: 100vw;
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+  }
+}
+
+.section {
+  @apply home-section;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: white;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 48px;
+
+  @variant md {
+    flex-direction: row;
+  }
+
+  span {
+    svg {
+        width: 64px;
+        height: 64px;
+        display: block;
+        margin: auto;
+    }
+  }
+
+  p.discordText {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+    color: white;
+
+    span {
+        display: block;
+        font-weight: 700;
+    }
+  }
+
+  p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  a:hover {
+    color: #61045f;
+  }
+}
