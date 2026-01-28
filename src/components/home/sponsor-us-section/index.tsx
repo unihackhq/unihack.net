@@ -9,7 +9,7 @@ import { Button } from '@/components/button';
 export const HomeSponsorUsSection = () => {
   return (
     <section className={styles.section} id="sponsor-us">
-      <h2>Sponsor us</h2>
+      <h2>Sponsor Us</h2>
       <div className={styles.centerText}>
         <p>
           Our sponsors make it possible for us to bring together hundreds of
@@ -38,7 +38,10 @@ export const HomeSponsorUsSection = () => {
           Want to help support and nurture the next generation of tech talent?
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
-        <Button href="./files/unihack-2026-sponsorship-prospectus.pdf" text="Sponsorship Prospectus" />
+        <Button
+          href="./files/unihack-2026-sponsorship-prospectus.pdf"
+          text="Sponsorship Prospectus"
+        />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />
       </div>
     </section>

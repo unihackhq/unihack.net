@@ -3,37 +3,47 @@
 
 .section {
   @apply home-section;
+  align-items: flex-start;
+  padding-top: 0;
+
+  @variant md {
+    align-items: center;
+  }
+
   h2 {
-    background: linear-gradient(90deg, #0a99f2, #19cf50);
+    background: linear-gradient(to left, #ff8008, #ffc837);
     background-clip: text;
     color: transparent;
     max-width: 640px;
   }
+
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 24px;
-  margin-top: 48px;
+  width: 100%;
+  margin-bottom: 24px;
 
   @variant md {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .gridItem {
-    border: 5px solid #0a99f2;
     padding: 24px;
     border-radius: 12px;
+    border: 5px solid #FFC837;
 
-    h3 {
+    h4 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #FFC837;
       font-size: 18px;
       line-height: 21px;
       font-weight: 700;
-      text-transform: uppercase;
       margin-bottom: 12px;
-      letter-spacing: 2px;
-      color: #0a99f2;
     }
 
     p {
