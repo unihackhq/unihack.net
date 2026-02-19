@@ -13,8 +13,8 @@ export const HubStepsSection = ({ signUpLink }: HubStepsSectionProps) => {
         <div className={styles.section}>
           <h3>Register Yourself</h3>
           <p>
-            Sign up to participate in this year's UNIHACK event - this is the
-            important bit.
+            Sign up to participate in this year&apos;s UNIHACK event - this is
+            the important bit.
           </p>
           <Button href="https://manage.unihack.net/signup" text="Sign Up" />
         </div>
