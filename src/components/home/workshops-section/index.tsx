@@ -14,14 +14,14 @@ interface Workshop {
 const workshops: Workshop[] = [
   {
     title: 'Build an agentic app in Elastic',
-    dateTime: '25 February, 4:00 PM - 5:00 PM',
+    dateTime: '25 February, 4:00 PM - 5:00 PM AEDT',
     link: 'https://events.humanitix.com/unihack-x-elastic-build-an-agentic-app-in-elastic?mc_cid=24283086bc',
     sponsorLogo: elastic,
     sponsorName: 'Elastic',
   },
   {
     title: 'Elastic Security - Navigation to Investigation',
-    dateTime: '26 February, 4:00 PM - 5:00 PM',
+    dateTime: '26 February, 4:00 PM - 5:00 PM AEDT',
     link: 'https://events.humanitix.com/unihack-x-elastic-elastic-security-navigation-to-investigation?mc_cid=24283086bc',
     sponsorLogo: elastic,
     sponsorName: 'Elastic',
