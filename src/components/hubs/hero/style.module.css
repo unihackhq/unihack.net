@@ -1,0 +1,80 @@
+@import '../../../styles/home.css';
+
+.home_header {
+  @apply home-section;
+  position: relative;
+  align-items: flex-start;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 30px;
+
+  h1 {
+    width: 100%;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    text-align: left;
+
+    span {
+      display: block;
+      font-weight: 200;
+    }
+
+    @variant sm {
+      font-size: 64px;
+      line-height: 72px;
+      letter-spacing: -5px;
+    }
+
+    @variant lg {
+      font-size: 96px;
+      line-height: 96px;
+      letter-spacing: -5px;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.hub_host {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 16px;
+
+  h6 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .hub_host_wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 200px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 16px;
+    
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .logo:hover {
+    background: rgba(255,255,255,0.05)
+  }
+}
+
