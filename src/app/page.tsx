@@ -6,6 +6,7 @@ import { LaunchHero } from '@/components/home/launch-hero';
 import { EventSchedule } from '@/components/schedule';
 import { HubsSection } from '@/components/home/hubs-section';
 import { DiscordBanner } from '@/components/discord-banner';
+import { WorkshopsSection } from '@/components/home/workshops-section';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HubsSection />
       <DiscordBanner />
       <EventSchedule />
+      <WorkshopsSection />
       <HomeEventSponsorsSection />
     </div>
   );
