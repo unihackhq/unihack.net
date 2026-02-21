@@ -1,4 +1,4 @@
-import { Header } from '@/components/header';
+import { Header, HomeNav } from '@/components/header';
 import styles from './home.module.css';
 import { HomeWelcomeSection } from '@/components/home/welcome-section';
 import { HomeEventSponsorsSection } from '@/components/home/sponsor-us-section';
@@ -12,7 +12,7 @@ import { PrizesSection } from '@/components/home/prizes-section';
 export default function Home() {
   return (
     <div className={styles.home_hero}>
-      <Header />
+      <Header nav={HomeNav} />
       <LaunchHero />
       <HomeWelcomeSection />
       <HubsSection />

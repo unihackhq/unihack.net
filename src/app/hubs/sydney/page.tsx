@@ -18,12 +18,12 @@ export default function Home() {
         host={[
           {
             name: 'UNSW DevSoc',
-            link: '#',
+            link: 'https://devsoc.app',
             logo: <Image src={devsocLogo} alt="UNSW DevSoc Logo" />,
           },
           {
             name: 'UNSW WIT',
-            link: '#',
+            link: 'https://unswwit.com',
             logo: <Image src={witLogo} alt="UNSW WIT Logo" />,
           },
         ]}

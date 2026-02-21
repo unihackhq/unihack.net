@@ -27,9 +27,10 @@ export const HomeWelcomeSection = () => {
             eligible for the Main Prize.
           </p>
           <p>
-            Some of our prizes (TBD) do have specific challenges or themes, and
-            we strongly encourage you to use them to shape your idea.
+            Some of our prizes do have specific challenges or themes, and we
+            strongly encourage you to use them to shape your idea.
           </p>
+          <Button href="/prizes" text="View Prizes" />
         </div>
         <div className={styles.gridItem}>
           <h3>Can I participate?</h3>
