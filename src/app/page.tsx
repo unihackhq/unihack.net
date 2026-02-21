@@ -7,6 +7,7 @@ import { EventSchedule } from '@/components/schedule';
 import { HubsSection } from '@/components/home/hubs-section';
 import { DiscordBanner } from '@/components/discord-banner';
 import { WorkshopsSection } from '@/components/home/workshops-section';
+import { PrizesSection } from '@/components/home/prizes-section';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <DiscordBanner />
       <EventSchedule />
       <WorkshopsSection />
+      <PrizesSection />
       <HomeEventSponsorsSection />
     </div>
   );

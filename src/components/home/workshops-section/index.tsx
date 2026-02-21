@@ -1,7 +1,7 @@
 import styles from './style.module.css';
 import Image, { StaticImageData } from 'next/image';
 import { Button } from '@/components/button';
-import elastic from '../sponsor-us-section/logos/elastic-w.svg';
+import elastic from '@/assets/logos/elastic-w.svg';
 
 interface Workshop {
   title: string;

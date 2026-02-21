@@ -1,0 +1,46 @@
+@import '../../../../styles/home.css';
+
+.judging-section {
+
+  border: 2px solid #2d2d2d;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 24px;
+
+  h5 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+
+  h6 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #bdc8d7;
+  }
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+
+  @variant md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
