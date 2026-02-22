@@ -30,7 +30,7 @@ export const HomeWelcomeSection = () => {
             Some of our prizes do have specific challenges or themes, and we
             strongly encourage you to use them to shape your idea.
           </p>
-          <Button href="/prizes" text="View Prizes" />
+          <Button href="#prizes" text="View Prizes" />
         </div>
         <div className={styles.gridItem}>
           <h3>Can I participate?</h3>

@@ -42,7 +42,7 @@ const mainPrizes: MainPrize[] = [
   },
 ];
 
-const sponsorPrizes: CategoryPrize[] = [
+const optinPrizes: CategoryPrize[] = [
   {
     title: 'First Timers Prize',
     description:
@@ -81,9 +81,6 @@ const sponsorPrizes: CategoryPrize[] = [
       'This is an opportunity to communicate (concisely) why you should win!',
     ],
   },
-];
-
-const categoryPrizes: CategoryPrize[] = [
   {
     title: 'Best Design',
     description: 'Awarded to the most usable and best looking user interface.',
@@ -101,21 +98,41 @@ const categoryPrizes: CategoryPrize[] = [
     prize: ['TBA'],
   },
   {
+    title: 'Most Fun Idea',
+    description:
+      'Create the most fun and delightful experience, whether that be a game, a bot, or something else entirely.',
+    prize: ['TBA'],
+  },
+];
+
+const specialPrizes: CategoryPrize[] = [
+  {
     title: 'Most Entertaining Pitch',
     description:
-      'Can you summarise your pitch in in three minutes - whilst also being engaging and entertaining?',
+      'Can you summarise your pitch in three minutes - whilst also being engaging and entertaining?',
     prize: ['TBA'],
+    additionalCriteria: [
+      'All entries that are successfully visible on the UNIHACK 2026 Devpost will be considered for this prize, and no opt-in is necessary.',
+      'This prize is determined by the UNIHACK Organizers, and the winner will be the team that delivers the most engaging and entertaining pitch video.',
+    ],
   },
   {
     title: "People's Choice Award",
     description: 'The project that wins the hearts and votes of the people.',
     prize: ['TBA'],
+    additionalCriteria: [
+      'All entries that are successfully visible on the UNIHACK 2026 Devpost will be considered for this prize, and no opt-in is necessary.',
+      'The winner of this prize will be determined by public voting on Devpost, where the project that receives the most votes from the community will be crowned the People’s Choice.',
+    ],
   },
   {
     title: 'Best Meme',
     description:
       "Make the best meme during the event and post it on the UNIHACK Discord. I couldn't make it any more obvious. (This is an individual prize)",
     prize: ['Totally a secret'],
+    additionalCriteria: [
+      'To win this prize, simply create and share something on the #memes-and-dreams channel on the UNIHACK Discord server during the event.',
+    ],
   },
 ];
 
@@ -134,10 +151,10 @@ export const PrizesSection = () => {
     <section className={styles.section} id="prizes">
       <h2>Prizes</h2>
 
-      {/* Main Prizes */}
       <div className={styles.subsection}>
         <div className={styles.subsectionHeader}>
           <h3>Main Prize</h3>
+          <p>All teams automatically enter the Main Prize.</p>
         </div>
         <div className={styles.mainPrizesGrid}>
           {mainPrizes.map((prize, index) => (
@@ -158,13 +175,17 @@ export const PrizesSection = () => {
         <JudgingCriteria />
       </div>
 
-      {/* Category/Sponsor Prizes */}
       <div className={styles.subsection}>
         <div className={styles.subsectionHeader}>
-          <h3>Sponsor Prizes</h3>
+          <h3>Category Prizes</h3>
+          <p>
+            You must opt-in for these prizes when you submit your project on
+            Devpost to be eligible for them. You can opt-in for as many
+            sponsored prizes as you think are relevant to your project.
+          </p>
         </div>
         <div className={styles.categoryPrizesGrid}>
-          {sponsorPrizes.map((prize, index) => (
+          {optinPrizes.map((prize, index) => (
             <div key={index} className={styles.categoryPrizeCard}>
               {prize.sponsorLogo && (
                 <div className={styles.sponsorLogo}>
@@ -202,10 +223,11 @@ export const PrizesSection = () => {
 
       <div className={styles.subsection}>
         <div className={styles.subsectionHeader}>
-          <h3>Category Prizes</h3>
+          <h3>Special Prizes</h3>
+          <p>You are automatically considered once fulfilling the criteria.</p>
         </div>
         <div className={styles.categoryPrizesGrid}>
-          {categoryPrizes.map((prize, index) => (
+          {specialPrizes.map((prize, index) => (
             <div key={index} className={styles.categoryPrizeCard}>
               <h4>{prize.title}</h4>
               <div className={styles.prizeDescription}>

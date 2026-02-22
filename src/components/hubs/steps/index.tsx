@@ -17,7 +17,10 @@ export const HubStepsSection = ({ signUpLink }: HubStepsSectionProps) => {
             the important bit.
           </p>
           <div className="links">
-            <Button href="https://manage.unihack.net/signup" text="Sign Up" />
+            <Button
+              href="https://manage.unihack.net/auth/signup"
+              text="Sign Up"
+            />
           </div>
         </div>
         <div className={styles.section}>
