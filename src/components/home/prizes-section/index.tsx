@@ -34,7 +34,7 @@ const mainPrizes: MainPrize[] = [
   },
   {
     place: 'Second Place',
-    prize: ['$2,400 in cash', 'Crumpler Communal Dwelling backpack per person'],
+    prize: ['$2,000 in cash', 'Crumpler Communal Dwelling backpack per person'],
   },
   {
     place: 'Third Place',
