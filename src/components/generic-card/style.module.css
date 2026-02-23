@@ -1,0 +1,65 @@
+.card {
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.filled {
+    background: var(--primary-color, transparent);
+  }
+
+  &.outline {
+    border: 2px solid var(--secondary-color, transparent);
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: var(--secondary-color, 'white');
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .subtext {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--secondary-color, 'white');
+    margin-bottom: 24px;
+  }
+
+  .sponsorLogo {
+    display: flex;
+    margin-bottom: 8px;
+    min-height: 30px;
+
+    img {
+      width: 100%;
+      max-width: 100px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+
+    a {
+      border-color: var(--secondary-color, 'white');
+      color: var(--secondary-color, 'white');
+    }
+
+    a:hover {
+      background: var(--secondary-color, 'white');
+      border: 1px solid transparent;
+      color: var(--primary-color, transparent);
+    }
+  }
+}
+

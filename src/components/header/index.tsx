@@ -4,9 +4,36 @@ import styles from './header.module.css';
 
 interface HeaderProps {
   isPage?: boolean;
+  nav?: {
+    name: string;
+    link: string;
+  }[];
 }
 
-export const Header = ({ isPage = false }: HeaderProps) => {
+export const HomeNav = [
+  {
+    name: 'Hubs',
+    link: '#hubs',
+  },
+  {
+    name: 'Schedule',
+    link: '#schedule',
+  },
+  {
+    name: 'Workshops',
+    link: '#workshops',
+  },
+  {
+    name: 'Prizes',
+    link: '#prizes',
+  },
+  {
+    name: 'Sponsors',
+    link: '#sponsor-us',
+  },
+];
+
+export const Header = ({ isPage = false, nav }: HeaderProps) => {
   return (
     <header className={`${styles.container} ${isPage ? styles.mini : ''}`}>
       <nav>
@@ -14,6 +41,15 @@ export const Header = ({ isPage = false }: HeaderProps) => {
           <Logo />
           <span>{isPage ? 'UNIHACK' : '2026'}</span>
         </Link>
+        {nav && (
+          <ul className={styles.navLinks}>
+            {nav.map((item, index) => (
+              <li key={index}>
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
     </header>
   );

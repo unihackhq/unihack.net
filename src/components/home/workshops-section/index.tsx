@@ -1,7 +1,10 @@
 import styles from './style.module.css';
 import Image, { StaticImageData } from 'next/image';
-import { Button } from '@/components/button';
-import elastic from '../sponsor-us-section/logos/elastic-w.svg';
+import elastic from '@/assets/logos/elastic-w.svg';
+import { GenericCard } from '@/components/generic-card';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 interface Workshop {
   title: string;
@@ -40,24 +43,19 @@ export const WorkshopsSection = () => {
       </div>
       <div className={styles.workshopsGrid}>
         {workshops.map((workshop, index) => (
-          <div key={index} className={styles.workshopCard}>
-            <div className={styles.workshopContent}>
-              <div className={styles.sponsorLogo}>
+          <GenericCard
+            key={index}
+            primaryColor="#e2034a"
+            title={workshop.title}
+            subtext={workshop.dateTime}
+            header={
+              <div className={cx('sponsorLogo')}>
                 <Image src={workshop.sponsorLogo} alt={workshop.sponsorName} />
               </div>
-              <h3>{workshop.title}</h3>
-              <p className={styles.dateTime}>{workshop.dateTime}</p>
-            </div>
-            <div className={styles.workshopActions}>
-              <Button href={workshop.link} text="Learn More" />
-            </div>
-          </div>
+            }
+            actions={[{ href: workshop.link, text: 'Learn More' }]}
+          />
         ))}
-        {workshops.length === 0 && (
-          <div className={styles.noWorkshops}>
-            <p>Workshops coming soon! Check back later for updates.</p>
-          </div>
-        )}
       </div>
     </section>
   );

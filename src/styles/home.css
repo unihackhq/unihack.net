@@ -14,8 +14,9 @@
     font-size: 42px;
     line-height: 48px;
     letter-spacing: -1px;
-    margin: 0 auto 32px;
+    margin: 0 0 32px;
     display: inline;
+    width: 100%;
 
     @variant md {
       text-align: center;
@@ -31,11 +32,11 @@
   }
 
   & > .centerText {
-    max-width: 600px;
     margin: 0 auto;
 
     @variant md {
       text-align: center;
+      max-width: 600px;
     }
   }
 

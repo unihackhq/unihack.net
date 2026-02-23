@@ -1,5 +1,28 @@
-import { Button } from '@/components/button';
+import { GenericCard } from '@/components/generic-card';
 import styles from './style.module.css';
+
+import monashCoding from '@/assets/logos/mac-logo.svg';
+import devsocLogo from '@/assets/logos/devsoc-logo.svg';
+import witLogo from '@/assets/logos/wit-logo.png';
+import Image from 'next/image';
+
+const Hubs = [
+  {
+    name: 'Melborne Hub',
+    location: 'Monash University Clayton',
+    signUpLink: '/hubs/melbourne',
+    logos: [{ src: monashCoding, alt: 'Monash Association of Coding' }],
+  },
+  {
+    name: 'Sydney Hub',
+    location: 'UNSW Kensington',
+    signUpLink: '/hubs/sydney',
+    logos: [
+      { src: devsocLogo, alt: 'UNSW DevSoc' },
+      { src: witLogo, alt: 'UNSW WIT' },
+    ],
+  },
+];
 
 export const HubsSection = () => {
   return (
@@ -16,7 +39,6 @@ export const HubsSection = () => {
             Just make sure you and your team are registered and connected on our
             Discord.
           </p>
-          <Button href="https://discord.gg/xXvZ3gbGBM" text="Join Discord" />
         </div>
         <div className={`${styles.gridItem} ${styles.hubs}`}>
           <h4>... or at one of our hubs</h4>
@@ -28,8 +50,27 @@ export const HubsSection = () => {
             Participating from a hub is not mandatory - you can still join
             remotely!
           </p>
-          <Button href="#" text="Locations TBA" />
         </div>
+      </div>
+      <div className={styles.hubsListings}>
+        {Hubs.map((hub, index) => (
+          <GenericCard
+            key={index}
+            primaryColor="#000000"
+            secondaryColor="#ffc837"
+            mode="outline"
+            title={hub.name}
+            subtext={hub.location}
+            footer={
+              <div className={styles.hubLogos}>
+                {hub.logos.map((logo, index) => (
+                  <Image key={index} src={logo.src} alt={logo.alt} />
+                ))}
+              </div>
+            }
+            actions={[{ href: hub.signUpLink, text: 'Learn More' }]}
+          />
+        ))}
       </div>
     </section>
   );

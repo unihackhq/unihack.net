@@ -36,35 +36,6 @@
   }
 }
 
-.workshopCard {
-  background: #e2034a;
-  border-radius: 8px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  h3 {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-    margin: 0 0 12px 0;
-    color: #ffffff;
-  }
-}
-
-.workshopContent {
-  flex: 1;
-}
-
-.dateTime {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 24px;
-}
-
 .sponsorLogo {
   display: flex;
   margin-bottom: 8px;
@@ -75,27 +46,5 @@
     max-width: 100px;
     height: auto;
     object-fit: contain;
-  }
-}
-
-.workshopActions {
-  display: flex;
-  gap: 12px;
-
-
-  a:hover {
-    border: 1px solid transparent;
-    color: #e2034a;
-  }
-}
-
-.noWorkshops {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 48px 24px;
-  
-  p {
-    font-size: 18px;
-    color: #bdc8d7;
   }
 }

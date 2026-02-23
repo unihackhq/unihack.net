@@ -1,0 +1,291 @@
+@import '../../../styles/home.css';
+
+.section {
+  @apply home-section;
+
+  h2 {
+    background: linear-gradient(90deg, #f2c94c, #f2994a);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .centerText:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
+.subsection {
+  width: 100%;
+  margin-bottom: 120px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .subsectionHeader {
+    margin: 0 auto 24px auto;
+
+    p {
+        text-align: center;
+        margin-top: 12px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f2c94c;
+  }
+}
+
+/* Main Prizes */
+.mainPrizesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  margin: 0 auto;
+
+  @variant md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mainPrizeCard {
+  border-radius: 8px;
+  padding: 4px;
+  text-align: left;
+
+  .mainPrizeInner {
+    padding: 24px;
+    border-radius: 8px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  h4 {
+    margin: 0 0 12px 0;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1px;
+  }
+
+  ul {
+    list-style: disc;
+    padding: 0 0 0 12px;
+
+    li {
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0 0 12px 0;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(1) {
+    background: linear-gradient(135deg, rgb(242, 201, 76), rgb(242, 153, 74));
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(135deg, rgb(189, 195, 199), rgb(149, 165, 166));
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(135deg, rgb(205, 127, 50), rgb(149, 77, 0));
+  }
+}
+
+/* Category/Sponsor Prizes */
+.categoryPrizesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  width: 100%;
+
+  @variant md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @variant lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categoryPrizeCard {
+  border: 2px solid rgba(242, 201, 76, 0.3);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #bdc8d7;
+    margin: 0 0 16px 0;
+  }
+}
+
+.prizeDescription {
+  flex: 1;
+}
+
+.sponsorLogo {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  height: 60px;
+
+  img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #bdc8d7;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.prizeValue {
+  color: #f2c94c;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid rgba(242, 201, 76, 0.3);
+
+  ul {
+    list-style: disc;
+    padding: 0 0 0 12px;
+
+    li {
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0 0 12px 0;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+  }
+}
+
+.criteriaButton {
+  background: transparent;
+  border: 1px solid #f2c94c;
+  color: #f2c94c;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    background: #f2c94c;
+    color: #000000;
+  }
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.modalContent {
+  background: #111;
+  border-top: 5px solid #f2c94c;
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f2c94c;
+    margin: 0 0 16px 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #bdc8d7;
+    margin: 0 0 18px 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #f2c94c;
+  }
+}
+
+.modalBody {
+  font-size: 16px;
+  line-height: 24px;
+  color: #bdc8d7;
+  white-space: pre-wrap;
+}

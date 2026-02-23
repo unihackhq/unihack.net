@@ -1,12 +1,12 @@
 import styles from './style.module.css';
 import Image from 'next/image';
-import logitech from './logos/logitech-w.svg';
-import datastax from './logos/datastax-w.svg';
-import atlassian from './logos/atlassian-w.svg';
-import twilio from './logos/twilio-w.svg';
-import elastic from './logos/elastic-w.svg';
-import quantium from './logos/quantium-w.svg';
-import monash from './logos/monash-w.svg';
+import logitech from '@/assets/logos/logitech-w.svg';
+import datastax from '@/assets/logos/datastax-w.svg';
+import atlassian from '@/assets/logos/atlassian-w.svg';
+import twilio from '@/assets/logos/twilio-w.svg';
+import elastic from '@/assets/logos/elastic-w.svg';
+import quantium from '@/assets/logos/quantium-w.svg';
+import monash from '@/assets/logos/monash-w.svg';
 
 import { Button } from '@/components/button';
 
