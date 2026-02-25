@@ -14,11 +14,11 @@ export default function Home() {
       <Header />
       <HubsHero
         hubName="Canberra Hub"
-        location="Australian National University, Canberra"
+        location="Australian National University"
         host={[
           {
             name: 'ANU CSSA',
-            link: 'https:/cssa.club',
+            link: 'https://cssa.club',
             logo: <Image src={cssaLogo} alt="ANU CSSA Logo" />,
           },
         ]}
