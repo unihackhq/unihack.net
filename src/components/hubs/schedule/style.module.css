@@ -2,8 +2,8 @@
 @reference "tailwindcss";
 
 .stretch {
-  border-top: 1px solid rgba(255,255,255, 0.1);
-  border-bottom: 1px solid rgba(255,255,255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #111;
   @variant lg {
     width: 100vw;
@@ -19,7 +19,14 @@
   @apply home-section;
 
   h2 {
-    background-image: linear-gradient(to right, #d53369, #e25357, #e5734b, #e29147, #daae51);
+    background-image: linear-gradient(
+      to right,
+      #d53369,
+      #e25357,
+      #e5734b,
+      #e29147,
+      #daae51
+    );
     background-clip: text;
     color: transparent;
     margin: 0;
@@ -73,13 +80,20 @@ p.timezone_disclaimer {
       }
     }
 
-    p {
+    p:first-of-type {
       font-weight: 300;
       font-size: 28px;
       line-height: 32px;
       color: #bdc8d7;
       font-weight: 200;
       letter-spacing: -1px;
+    }
+
+    p:not(:first-of-type) {
+      font-size: 16px;
+      line-height: 24px;
+      color: #bdc8d7;
+      font-weight: 300;
     }
 
     @variant sm {
@@ -91,7 +105,8 @@ p.timezone_disclaimer {
     }
   }
 
-  .time, .location {
+  .time,
+  .location {
     @variant md {
       flex: 1;
     }
@@ -109,9 +124,13 @@ p.timezone_disclaimer {
       margin-bottom: 4px;
       color: #bdc8d7;
     }
-    a {
+
+    .links {
       margin-top: 24px;
+    }
+
+    .links a {
+      margin: 8px 8px 0 0;
     }
   }
 }
-

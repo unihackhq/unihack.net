@@ -2,8 +2,8 @@
 @reference "tailwindcss";
 
 .stretch {
-  border-top: 1px solid rgba(255,255,255, 0.1);
-  border-bottom: 1px solid rgba(255,255,255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #111;
   @variant lg {
     width: 100vw;
@@ -19,7 +19,14 @@
   @apply home-section;
 
   h2 {
-    background-image: linear-gradient(to right, #d53369, #e25357, #e5734b, #e29147, #daae51);
+    background-image: linear-gradient(
+      to right,
+      #d53369,
+      #e25357,
+      #e5734b,
+      #e29147,
+      #daae51
+    );
     background-clip: text;
     color: transparent;
     margin: 0;
@@ -68,7 +75,7 @@ p.timezone_disclaimer {
       border-color: #d53369;
       color: #d53369;
     }
-    
+
     &.sunday {
       border-color: #daae51;
       color: #daae51;
@@ -80,14 +87,13 @@ p.timezone_disclaimer {
     padding: 0;
     margin: 0;
   }
-
 }
 
 .event_item {
   display: flex;
   flex-direction: column;
   padding: 16px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   &:last-child {
     border-bottom: none;
@@ -119,7 +125,7 @@ p.timezone_disclaimer {
     color: #bdc8d7;
     margin: 0;
   }
-} 
+}
 
 .judging_break {
   margin: 24px 0 0;
@@ -135,7 +141,7 @@ p.timezone_disclaimer {
     margin: 0 auto;
     height: 100%;
     width: 1px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .judging_content {
@@ -172,7 +178,14 @@ p.timezone_disclaimer {
 }
 
 .winners_announcement {
-  background-image: linear-gradient(to right, #d53369, #e25357, #e5734b, #e29147, #daae51);
+  background-image: linear-gradient(
+    to right,
+    #d53369,
+    #e25357,
+    #e5734b,
+    #e29147,
+    #daae51
+  );
   border-radius: 8px;
   width: 100%;
   margin: 24px 5px 5px;

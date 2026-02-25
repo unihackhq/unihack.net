@@ -7,6 +7,7 @@ import Image from 'next/image';
 import devsocLogo from '@/assets/logos/devsoc-logo.svg';
 import witLogo from '@/assets/logos/wit-logo.png';
 import { HubStepsSection } from '@/components/hubs/steps';
+import { HubEventSchedule } from '@/components/hubs/schedule';
 
 export default function Home() {
   return (
@@ -28,7 +29,43 @@ export default function Home() {
           },
         ]}
       />
-      <HubStepsSection />
+      <HubStepsSection
+        signupLinks={[
+          {
+            href: 'https://forms.gle/4SKyxnEMzx9ENdRQ9',
+            text: 'Register for Sat/Sun',
+          },
+          {
+            href: 'https://join.atlassian.com/event-31237/talentcommunity/form?lang=en-US',
+            text: 'Register for Fri',
+          },
+        ]}
+      />
+      <HubEventSchedule
+        friday={{
+          time: '5:00PM - 9:00PM',
+          subtext: 'Come watch the Opening Ceremony at Atlassian HQ.',
+          extraText: [
+            'Spots are limited - only open to those that have registered to participate in UNIHACK.',
+            'Registration is seperate to the main Hub registration for Saturday and Sunday.',
+          ],
+          signupLink:
+            'https://join.atlassian.com/event-31237/talentcommunity/form?lang=en-US',
+          location: ['Atlassian HQ', '363 George Street, Sydney'],
+          locationMapLink:
+            'https://www.anu.edu.au/maps/skaidrite-darius-building',
+        }}
+        weekend={{
+          time: ['Saturday 9:00AM - 6:00PM', 'Sunday 9:00AM - 6:00PM'],
+          location: [
+            'Quadrangle G034',
+            'Quadrangle Building E15',
+            'UNSW Kensington',
+          ],
+          signupLink: 'https://forms.gle/4SKyxnEMzx9ENdRQ9',
+          locationMapLink: 'https://link.mazemap.com/9Sk22I7i',
+        }}
+      />
       <DiscordBanner />
       <HomeEventSponsorsSection />
     </div>

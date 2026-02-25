@@ -4,7 +4,7 @@ import { HomeEventSponsorsSection } from '@/components/home/sponsor-us-section';
 import { DiscordBanner } from '@/components/discord-banner';
 import { HubsHero } from '@/components/hubs/hero';
 import Image from 'next/image';
-import macLogo from '@/assets/logos/mac-logo.svg';
+import cssaLogo from '@/assets/logos/cssa-logo.svg';
 import { HubStepsSection } from '@/components/hubs/steps';
 import { HubEventSchedule } from '@/components/hubs/schedule';
 
@@ -13,22 +13,20 @@ export default function Home() {
     <div className={styles.home_hero}>
       <Header />
       <HubsHero
-        hubName="Melbourne Hub"
-        location="Monash University, Clayton"
+        hubName="Canberra Hub"
+        location="Australian National University, Canberra"
         host={[
           {
-            name: 'Monash Association of Coding',
-            link: 'https:/monashcoding.com',
-            logo: (
-              <Image src={macLogo} alt="Monash Association of Coding Logo" />
-            ),
+            name: 'ANU CSSA',
+            link: 'https:/cssa.club',
+            logo: <Image src={cssaLogo} alt="ANU CSSA Logo" />,
           },
         ]}
       />
       <HubStepsSection
         signupLinks={[
           {
-            href: 'https://events.humanitix.com/unihack-2026',
+            href: 'https://campus.hellorubric.com/?eid=54544',
             text: 'Register for the Hub',
           },
         ]}
@@ -37,22 +35,21 @@ export default function Home() {
         friday={{
           time: '6:00PM - 8:00PM',
           location: [
-            'LG02',
-            'Technology and Design Building',
-            '20 Exhibition Walk',
+            'N115/N116',
+            'Skaidrite Darius Building 108',
+            '108 North Road, Canberra',
           ],
           locationMapLink:
-            'https://www.monash.edu/__data/assets/pdf_file/0004/2658973/Clayton-campus-map.pdf',
+            'https://www.anu.edu.au/maps/skaidrite-darius-building',
         }}
         weekend={{
           time: ['Saturday 9:30AM - 5:30PM', 'Sunday 9:30AM - 6:00PM'],
           location: [
-            'LG02',
-            'Technology and Design Building',
-            '20 Exhibition Walk',
+            'Innovation Space, Level 2',
+            'Birch Building 35',
+            '35 Science Road, Canberra',
           ],
-          locationMapLink:
-            'https://www.monash.edu/__data/assets/pdf_file/0004/2658973/Clayton-campus-map.pdf',
+          locationMapLink: 'https://www.anu.edu.au/maps/birch-building',
         }}
       />
       <DiscordBanner />

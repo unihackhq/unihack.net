@@ -2,7 +2,11 @@
 @reference "tailwindcss";
 
 .stretch {
-  background: linear-gradient(to bottom, #aa076b, #61045f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom,
+    #aa076b,
+    #61045f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   @variant lg {
     width: 100vw;
     position: relative;
@@ -29,10 +33,10 @@
 
   span {
     svg {
-        width: 64px;
-        height: 64px;
-        display: block;
-        margin: auto;
+      width: 64px;
+      height: 64px;
+      display: block;
+      margin: auto;
     }
   }
 
@@ -45,8 +49,8 @@
     color: white;
 
     span {
-        display: block;
-        font-weight: 700;
+      display: block;
+      font-weight: 700;
     }
   }
 

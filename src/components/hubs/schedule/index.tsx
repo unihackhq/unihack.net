@@ -4,14 +4,18 @@ import styles from './style.module.css';
 
 interface HubEventScheduleProps {
   friday: {
+    subtext?: string;
+    extraText?: string[];
     time: string;
     location: string[];
     locationMapLink?: string;
+    signupLink?: string;
   };
   weekend: {
     time: string[];
     location: string[];
     locationMapLink?: string;
+    signupLink?: string;
   };
 }
 
@@ -31,7 +35,11 @@ export const HubEventSchedule = ({
             <h3>
               Friday <span>March 13</span>
             </h3>
-            <p>Watch the opening ceremony and form teams.</p>
+            <p>
+              {friday.subtext || 'Watch the opening ceremony and form teams.'}
+            </p>
+            {friday.extraText &&
+              friday.extraText.map((text, index) => <p key={index}>{text}</p>)}
           </div>
           <div className={styles.time}>
             <h4>Time</h4>
@@ -42,9 +50,14 @@ export const HubEventSchedule = ({
             {friday.location.map((loc, index) => (
               <p key={index}>{loc}</p>
             ))}
-            {friday.locationMapLink && (
-              <Button href={friday.locationMapLink} text="View Map" />
-            )}
+            <div className={styles.links}>
+              {friday.locationMapLink && (
+                <Button href={friday.locationMapLink} text="View Map" />
+              )}
+              {friday.signupLink && (
+                <Button href={friday.signupLink} text="Book Your Spot" />
+              )}
+            </div>
           </div>
         </div>
         <div className={`${styles.weekend} ${styles.slot}`}>
@@ -68,9 +81,14 @@ export const HubEventSchedule = ({
             {weekend.location.map((loc, index) => (
               <p key={index}>{loc}</p>
             ))}
-            {weekend.locationMapLink && (
-              <Button href={weekend.locationMapLink} text="View Map" />
-            )}
+            <div className={styles.links}>
+              {weekend.locationMapLink && (
+                <Button href={weekend.locationMapLink} text="View Map" />
+              )}
+              {weekend.signupLink && (
+                <Button href={weekend.signupLink} text="Register" />
+              )}
+            </div>
           </div>
         </div>
       </div>
