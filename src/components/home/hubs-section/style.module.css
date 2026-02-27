@@ -17,7 +17,6 @@
     max-width: 640px;
     text-align: left;
   }
-
 }
 
 .hubsListings {
@@ -28,7 +27,7 @@
   margin-top: 48px;
 
   @variant md {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .hubLogos {
@@ -58,7 +57,7 @@
   .gridItem {
     h4 {
       margin: 0;
-      color: #FFC837;
+      color: #ffc837;
       font-size: 18px;
       line-height: 24px;
       font-weight: 700;

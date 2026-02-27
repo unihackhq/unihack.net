@@ -22,37 +22,37 @@ export const metadata: Metadata = {
       {
         sizes: '16x16',
         type: 'image/png',
-        url: '/favicons/favicon-16x16.png'
+        url: '/favicons/favicon-16x16.png',
       },
       {
         sizes: '32x32',
         type: 'image/png',
-        url: '/favicons/favicon-32x32.png'
+        url: '/favicons/favicon-32x32.png',
       },
       {
         sizes: '96x96',
         type: 'image/png',
-        url: '/favicons/favicon-96x96.png'
-      }
+        url: '/favicons/favicon-96x96.png',
+      },
     ],
     apple: [
       {
         sizes: '180x180',
         type: 'image/png',
-        url: '/favicons/apple-touch-icon-180x180.png'
+        url: '/favicons/apple-touch-icon-180x180.png',
       },
       {
         sizes: '152x152',
         type: 'image/png',
-        url: '/favicons/apple-touch-icon-152x152.png'
+        url: '/favicons/apple-touch-icon-152x152.png',
       },
       {
         sizes: '167x167',
         type: 'image/png',
-        url: '/favicons/apple-touch-icon-167x167.png'
-      }
-    ]
-  }
+        url: '/favicons/apple-touch-icon-167x167.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

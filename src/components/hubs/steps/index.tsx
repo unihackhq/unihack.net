@@ -2,10 +2,10 @@ import { Button } from '@/components/button';
 import styles from './style.module.css';
 
 interface HubStepsSectionProps {
-  signUpLink?: string;
+  signupLinks: { href: string; text: string }[];
 }
 
-export const HubStepsSection = ({ signUpLink }: HubStepsSectionProps) => {
+export const HubStepsSection = ({ signupLinks }: HubStepsSectionProps) => {
   return (
     <div className={styles.hub_steps_section}>
       <div className={styles.steps_wrapper}>
@@ -39,11 +39,10 @@ export const HubStepsSection = ({ signUpLink }: HubStepsSectionProps) => {
             Once your team is created, book your spot at the Hub so we know you
             and your team are coming!
           </p>
-          <div className="links">
-            {signUpLink && (
-              <Button href={signUpLink} text="Register for the Hub" />
-            )}
-            {!signUpLink && <Button href="#" text="Coming Soon" />}
+          <div className={styles.links}>
+            {signupLinks.map((link, index) => (
+              <Button key={index} href={link.href} text={link.text} />
+            ))}
           </div>
         </div>
       </div>

@@ -1,10 +1,12 @@
 import { GenericCard } from '@/components/generic-card';
+import Image from 'next/image';
+
 import styles from './style.module.css';
 
 import monashCoding from '@/assets/logos/mac-logo.svg';
 import devsocLogo from '@/assets/logos/devsoc-logo.svg';
 import witLogo from '@/assets/logos/wit-logo.png';
-import Image from 'next/image';
+import cssaLogo from '@/assets/logos/cssa-logo.svg';
 
 const Hubs = [
   {
@@ -21,6 +23,12 @@ const Hubs = [
       { src: devsocLogo, alt: 'UNSW DevSoc' },
       { src: witLogo, alt: 'UNSW WIT' },
     ],
+  },
+  {
+    name: 'Canberra Hub',
+    location: 'Australian National University',
+    signUpLink: '/hubs/canberra',
+    logos: [{ src: cssaLogo, alt: 'ANU CSSA' }],
   },
 ];
 

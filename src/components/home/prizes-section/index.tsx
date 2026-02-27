@@ -84,18 +84,18 @@ const optinPrizes: CategoryPrize[] = [
   {
     title: 'Best Design',
     description: 'Awarded to the most usable and best looking user interface.',
-    prize: ['TBA'],
+    prize: ['Ostritchpillow Go Neck Pillow per person'],
   },
   {
     title: 'Most Creative Idea',
     description: 'The project that has the most original idea or reinvention.',
-    prize: ['TBA'],
+    prize: ['Twelve South AirFly Pro 2 per person'],
   },
   {
     title: 'Social Impact Prize',
     description:
       'The best idea that addresses an issue in your local community.',
-    prize: ['TBA'],
+    prize: ['Blunt Metro Compact Umbrella per person'],
   },
   {
     title: 'Most Fun Idea',
@@ -110,7 +110,7 @@ const specialPrizes: CategoryPrize[] = [
     title: 'Most Entertaining Pitch',
     description:
       'Can you summarise your pitch in three minutes - whilst also being engaging and entertaining?',
-    prize: ['TBA'],
+    prize: ['Kodak CHARMERA Digital Keyring Camera per person'],
     additionalCriteria: [
       'All entries that are successfully visible on the UNIHACK 2026 Devpost will be considered for this prize, and no opt-in is necessary.',
       'This prize is determined by the UNIHACK Organizers, and the winner will be the team that delivers the most engaging and entertaining pitch video.',
