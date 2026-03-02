@@ -29,6 +29,20 @@ const workshops: Workshop[] = [
     sponsorLogo: elastic,
     sponsorName: 'Elastic',
   },
+  {
+    title: 'How to monitor your app with Elastic',
+    dateTime: '11 March, 4:00 PM - 5:00 PM AEDT',
+    link: 'https://events.humanitix.com/unihack-x-elastic-how-to-monitor-your-app-with-elastic',
+    sponsorLogo: elastic,
+    sponsorName: 'Elastic',
+  },
+  {
+    title: 'Agentic workflows with Elastic',
+    dateTime: '12 March, 4:00 PM - 4:30 PM AEDT',
+    link: 'https://events.humanitix.com/unihack-x-elastic-agentic-workflows-with-elastic',
+    sponsorLogo: elastic,
+    sponsorName: 'Elastic',
+  },
 ];
 
 export const WorkshopsSection = () => {
