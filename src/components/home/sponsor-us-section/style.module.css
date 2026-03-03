@@ -25,6 +25,7 @@
 
 .sponsorGridWrapper {
   margin-bottom: 48px;
+  width: 100%;
   max-width: 800px;
 
   h3 {
@@ -45,9 +46,10 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+    width: 100%;
   }
 
-  .sponsorGridItem {
+  a.sponsorGridItem {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,15 +57,37 @@
     border-radius: 8px;
     text-align: center;
     height: 80px;
-    flex: 0 1 calc(33.333% - 16px);
-    min-width: 250px;
     padding: 16px;
+    margin: 0;
+    width: 100%;
+
+    @variant sm {
+      flex: 0 1 calc(50% - 16px);
+      width: 250px;
+    }
+
+    @variant md {
+      flex: 0 1 calc(33.333% - 16px);
+      width: 250px;
+    }
+
+    &:hover {
+      border-color: #7dea10;
+      background: transparent;
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       margin: 16px;
+    }
+  }
+
+  &.tierDiamond {
+    a.sponsorGridItem {
+      flex: 1;
+      height: 120px;
     }
   }
 }

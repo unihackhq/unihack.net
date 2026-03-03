@@ -1,5 +1,5 @@
-import styles from './style.module.css';
 import Image from 'next/image';
+import classNames from 'classnames/bind';
 import logitech from '@/assets/logos/logitech-w.svg';
 import datastax from '@/assets/logos/datastax-w.svg';
 import atlassian from '@/assets/logos/atlassian-w.svg';
@@ -7,8 +7,13 @@ import twilio from '@/assets/logos/twilio-w.svg';
 import elastic from '@/assets/logos/elastic-w.svg';
 import quantium from '@/assets/logos/quantium-w.svg';
 import monash from '@/assets/logos/monash-w.svg';
+import euLogo from '@/assets/logos/eu-logo-horiz.svg';
 
 import { Button } from '@/components/button';
+
+import styles from './style.module.css';
+
+const cx = classNames.bind(styles);
 
 export const HomeSponsorUsSection = () => {
   return (
@@ -62,29 +67,37 @@ export const HomeEventSponsorsSection = () => {
           emerging developers, designers, thinkers and builders.
         </p>
       </div>
-      <div className={styles.sponsorGridWrapper}>
-        <h3>Gold Sponsors</h3>
+      <div className={cx('sponsorGridWrapper', 'tierDiamond')}>
+        <h3>Diamond Sponsor</h3>
         <div className={styles.sponsorGrid}>
-          <div className={styles.sponsorGridItem}>
-            <Image src={atlassian} alt="Atlassian" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={elastic} alt="Elastic" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={quantium} alt="Quantium" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={monash} alt="Monash University" />
-          </div>
+          <a className={styles.sponsorGridItem} href="https://www.eeas.europa.eu/delegations/australia_en">
+            <Image src={euLogo} alt="European Union" />
+          </a>
         </div>
       </div>
-      <div className={styles.sponsorGridWrapper}>
+      <div className={cx('sponsorGridWrapper', 'tierGold')}>
+        <h3>Gold Sponsors</h3>
+        <div className={styles.sponsorGrid}>
+          <a className={styles.sponsorGridItem} href="https://www.atlassian.com/company/careers/earlycareers">
+            <Image src={atlassian} alt="Atlassian" />
+          </a>
+          <a className={styles.sponsorGridItem} href="https://www.elastic.co/">
+            <Image src={elastic} alt="Elastic" />
+          </a>
+          <a className={styles.sponsorGridItem} href="https://quantium.com/graduate-academy/">
+            <Image src={quantium} alt="Quantium" />
+          </a>
+          <a className={styles.sponsorGridItem} href="https://www.monash.edu/it">
+            <Image src={monash} alt="Monash University" />
+          </a>
+        </div>
+      </div>
+      <div className={cx('sponsorGridWrapper', 'tierBronze')}>
         <h3>Bronze Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <div className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="https://www.twilio.com/en-us">
             <Image src={twilio} alt="Twilio" />
-          </div>
+          </a>
         </div>
       </div>
       <div className={styles.centerText}>

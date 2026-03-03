@@ -7,6 +7,7 @@ import { useState } from 'react';
 import atlassianLogo from '@/assets/logos/atlassian-w.svg';
 import quantiumLogo from '@/assets/logos/quantium-w.svg';
 import elasticLogo from '@/assets/logos/elastic-w.svg';
+import euLogo from '@/assets/logos/eu-logo-horiz.svg';
 import { JudgingCriteria } from './judging-criteria';
 
 interface MainPrize {
@@ -43,11 +44,23 @@ const mainPrizes: MainPrize[] = [
 ];
 
 const optinPrizes: CategoryPrize[] = [
+   {
+    title: 'The EU Shared Future Prize',
+    description:
+      'Projects that work towards a secure & stable future, and reflect the spirit of cooperation. (Open to AU-based participants only)',
+    prize: ['TBA'],
+    sponsorLogo: euLogo,
+    sponsorName: 'Funded by the European Union',
+    additionalCriteria: [
+      'The EU Shared Future Prize is open only to Australia-based applicants. It will recognise the project that best contributes to a secure and safe future — whether in cybersecurity, democratic integrity, infrastructure protection, crisis response, community safety or any field that involves resilience.',
+      'Applications should include a statement of reasoning/motivation as part of their DevPost submission.',
+    ],
+  },
   {
     title: 'First Timers Prize',
     description:
       'The best project created by first-time hackathon participants.',
-    prize: ['TBA'],
+    prize: ['Deltahub Reusable To-Do List Stand per person'],
     sponsorLogo: atlassianLogo,
     sponsorName: 'Atlassian',
     additionalCriteria: [
@@ -59,7 +72,7 @@ const optinPrizes: CategoryPrize[] = [
     title: 'Best Use of Elastic Technology',
     description:
       'Demonstrate the most innovative and effective use of Elastic technology in their project.',
-    prize: ['TBA'],
+    prize: ['$100 Prezzee Gift Card per person'],
     sponsorLogo: elasticLogo,
     sponsorName: 'Elastic',
     additionalCriteria: [
@@ -101,7 +114,7 @@ const optinPrizes: CategoryPrize[] = [
     title: 'Most Fun Idea',
     description:
       'Create the most fun and delightful experience, whether that be a game, a bot, or something else entirely.',
-    prize: ['TBA'],
+    prize: ['LEGO Super Mario Game Boy per person'],
   },
 ];
 
@@ -119,7 +132,7 @@ const specialPrizes: CategoryPrize[] = [
   {
     title: "People's Choice Award",
     description: 'The project that wins the hearts and votes of the people.',
-    prize: ['TBA'],
+    prize: ['Amazon Echo Pop per person'],
     additionalCriteria: [
       'All entries that are successfully visible on the UNIHACK 2026 Devpost will be considered for this prize, and no opt-in is necessary.',
       'The winner of this prize will be determined by public voting on Devpost, where the project that receives the most votes from the community will be crowned the People’s Choice.',

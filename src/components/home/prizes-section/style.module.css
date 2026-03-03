@@ -113,10 +113,6 @@
   @variant md {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @variant lg {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .categoryPrizeCard {
@@ -158,7 +154,7 @@
 
   img {
     width: 100%;
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
     object-fit: contain;
   }

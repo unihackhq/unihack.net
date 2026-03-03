@@ -8,11 +8,12 @@ import { HubsSection } from '@/components/home/hubs-section';
 import { DiscordBanner } from '@/components/discord-banner';
 import { WorkshopsSection } from '@/components/home/workshops-section';
 import { PrizesSection } from '@/components/home/prizes-section';
+import { EventLogo } from '@/components/logo';
 
 export default function Home() {
   return (
     <div className={styles.home_hero}>
-      <Header nav={HomeNav} />
+      <Header nav={HomeNav} logo={<EventLogo />} />
       <LaunchHero />
       <HomeWelcomeSection />
       <HubsSection />
