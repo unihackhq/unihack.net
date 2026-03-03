@@ -70,7 +70,7 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierDiamond')}>
         <h3>Diamond Sponsor</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="#">
+          <a className={styles.sponsorGridItem} href="https://www.eeas.europa.eu/delegations/australia_en">
             <Image src={euLogo} alt="European Union" />
           </a>
         </div>

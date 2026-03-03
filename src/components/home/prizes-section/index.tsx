@@ -52,7 +52,7 @@ const optinPrizes: CategoryPrize[] = [
     sponsorLogo: euLogo,
     sponsorName: 'Funded by the European Union',
     additionalCriteria: [
-      'The EU Shared Future Prize is open only to Australia-based applicants. It will recognise the project that best reflects resilience — whether in cybersecurity, democratic integrity, infrastructure protection, crisis response, community safety or any field that contributes to a secure and safe future.',
+      'The EU Shared Future Prize is open only to Australia-based applicants. It will recognise the project that best contributes to a secure and safe future — whether in cybersecurity, democratic integrity, infrastructure protection, crisis response, community safety or any field that involves resilience.',
       'Applications should include a statement of reasoning/motivation as part of their DevPost submission.',
     ],
   },
