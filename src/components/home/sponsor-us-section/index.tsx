@@ -70,7 +70,7 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierDiamond')}>
         <h3>Diamond Sponsor</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="#">
             <Image src={euLogo} alt="European Union" />
           </a>
         </div>
@@ -78,16 +78,16 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierGold')}>
         <h3>Gold Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="https://www.atlassian.com/company/careers/earlycareers">
             <Image src={atlassian} alt="Atlassian" />
           </a>
-          <a className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="https://www.elastic.co/">
             <Image src={elastic} alt="Elastic" />
           </a>
-          <a className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="https://quantium.com/graduate-academy/">
             <Image src={quantium} alt="Quantium" />
           </a>
-          <a className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="https://www.monash.edu/it">
             <Image src={monash} alt="Monash University" />
           </a>
         </div>
@@ -95,7 +95,7 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierBronze')}>
         <h3>Bronze Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem} href="https://www.twilio.com/en-us">
             <Image src={twilio} alt="Twilio" />
           </a>
         </div>
