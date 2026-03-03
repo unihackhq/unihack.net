@@ -7,7 +7,7 @@ import twilio from '@/assets/logos/twilio-w.svg';
 import elastic from '@/assets/logos/elastic-w.svg';
 import quantium from '@/assets/logos/quantium-w.svg';
 import monash from '@/assets/logos/monash-w.svg';
-import euLogo from '@/assets/logos/eu-logo-alt.svg';
+import euLogo from '@/assets/logos/eu-logo-horiz.svg';
 
 import { Button } from '@/components/button';
 

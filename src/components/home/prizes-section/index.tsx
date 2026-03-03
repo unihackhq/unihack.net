@@ -7,7 +7,7 @@ import { useState } from 'react';
 import atlassianLogo from '@/assets/logos/atlassian-w.svg';
 import quantiumLogo from '@/assets/logos/quantium-w.svg';
 import elasticLogo from '@/assets/logos/elastic-w.svg';
-import euLogo from '@/assets/logos/eu-logo-alt.svg';
+import euLogo from '@/assets/logos/eu-logo-horiz.svg';
 import { JudgingCriteria } from './judging-criteria';
 
 interface MainPrize {
