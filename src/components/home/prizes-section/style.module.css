@@ -113,10 +113,6 @@
   @variant md {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @variant lg {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .categoryPrizeCard {

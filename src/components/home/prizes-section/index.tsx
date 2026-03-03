@@ -7,6 +7,7 @@ import { useState } from 'react';
 import atlassianLogo from '@/assets/logos/atlassian-w.svg';
 import quantiumLogo from '@/assets/logos/quantium-w.svg';
 import elasticLogo from '@/assets/logos/elastic-w.svg';
+import euLogo from '@/assets/logos/eu-logo-alt.svg';
 import { JudgingCriteria } from './judging-criteria';
 
 interface MainPrize {
@@ -43,6 +44,18 @@ const mainPrizes: MainPrize[] = [
 ];
 
 const optinPrizes: CategoryPrize[] = [
+   {
+    title: 'The EU Shared Future Prize',
+    description:
+      'Projects that work towards a secure & stable future, and reflect the spirit of cooperation. (Open to AU-based participants only)',
+    prize: ['TBA'],
+    sponsorLogo: euLogo,
+    sponsorName: 'Funded by the European Union',
+    additionalCriteria: [
+      'The EU Shared Future Prize is open only to Australia-based applicants. It will recognise the project that best reflects resilience — whether in cybersecurity, democratic integrity, infrastructure protection, crisis response, community safety or any field that contributes to a secure and safe future.',
+      'Applications should include a statement of reasoning/motivation as part of their DevPost submission.',
+    ],
+  },
   {
     title: 'First Timers Prize',
     description:

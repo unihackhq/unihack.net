@@ -7,11 +7,12 @@ import Image from 'next/image';
 import macLogo from '@/assets/logos/mac-logo.svg';
 import { HubStepsSection } from '@/components/hubs/steps';
 import { HubEventSchedule } from '@/components/hubs/schedule';
+import { EventLogo } from '@/components/logo';
 
 export default function Home() {
   return (
     <div className={styles.home_hero}>
-      <Header />
+      <Header logo={<EventLogo />} />
       <HubsHero
         hubName="Melbourne Hub"
         location="Monash University, Clayton"

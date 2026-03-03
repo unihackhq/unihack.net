@@ -31,7 +31,7 @@
     width: auto;
 
     @variant md {
-      height: 60px;
+      height: 100px;
     }
   }
 
