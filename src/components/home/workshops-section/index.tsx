@@ -1,6 +1,7 @@
 import styles from './style.module.css';
 import Image, { StaticImageData } from 'next/image';
 import elastic from '@/assets/logos/elastic-w.svg';
+import quantium from '@/assets/logos/quantium-w.svg';
 import { GenericCard } from '@/components/generic-card';
 import classNames from 'classnames/bind';
 
@@ -28,6 +29,13 @@ const workshops: Workshop[] = [
     link: 'https://events.humanitix.com/unihack-x-elastic-elastic-security-navigation-to-investigation?mc_cid=24283086bc',
     sponsorLogo: elastic,
     sponsorName: 'Elastic',
+  },
+  {
+    title: 'Building with AI - How Quantium Approaches Complex Problems Using Generative AI',
+    dateTime: '10 March, 4:00 PM - 5:00 PM AEDT',
+    link: 'https://events.humanitix.com/unihack-x-quantium-building-with-ai-how-quantium-approaches-complex-problems-using-generative-ai',
+    sponsorLogo: quantium,
+    sponsorName: 'Quantium',
   },
   {
     title: 'How to monitor your app with Elastic',
