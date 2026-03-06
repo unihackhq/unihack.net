@@ -59,12 +59,12 @@ export default function Home() {
         weekend={{
           time: ['Saturday 9:00AM - 6:00PM', 'Sunday 9:00AM - 6:00PM'],
           location: [
-            'Quadrangle G034',
-            'Quadrangle Building E15',
+            'Room G26',
+            'UNSW Business School E12',
             'UNSW Kensington',
           ],
           signupLink: 'https://forms.gle/4SKyxnEMzx9ENdRQ9',
-          locationMapLink: 'https://link.mazemap.com/9Sk22I7i',
+          locationMapLink: 'https://link.mazemap.com/wSsrC0jQ',
         }}
       />
       <DiscordBanner />
