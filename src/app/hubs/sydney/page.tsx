@@ -36,22 +36,17 @@ export default function Home() {
             href: 'https://forms.gle/4SKyxnEMzx9ENdRQ9',
             text: 'Register for Sat/Sun',
           },
-          {
-            href: 'https://join.atlassian.com/event-31237/talentcommunity/form?lang=en-US',
-            text: 'Register for Fri',
-          },
         ]}
       />
       <HubEventSchedule
         friday={{
           time: '5:00PM - 9:00PM',
-          subtext: 'Come watch the Opening Ceremony at Atlassian HQ.',
+          subtext:
+            'The Atlassian-hosted Sydney Opening Ceremony is now closed for registrations.',
           extraText: [
-            'Spots are limited - only open to those that have registered to participate in UNIHACK.',
-            'Registration is seperate to the main Hub registration for Saturday and Sunday.',
+            'You can still watch the Opening Ceremony online.',
+            'Saturday and Sunday hub registration is still open separately.',
           ],
-          signupLink:
-            'https://join.atlassian.com/event-31237/talentcommunity/form?lang=en-US',
           location: ['Atlassian HQ', '363 George Street, Sydney'],
           locationMapLink:
             'https://www.anu.edu.au/maps/skaidrite-darius-building',
