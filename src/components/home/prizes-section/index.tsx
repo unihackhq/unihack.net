@@ -31,6 +31,7 @@ const mainPrizes: MainPrize[] = [
       '$5,000 in cash',
       'Bose Headphones per person',
       'NOMAD Tracking Card Air per person',
+      'Rushfaster EDC Backpack per person (thank you to Rushfaster)'
     ],
   },
   {

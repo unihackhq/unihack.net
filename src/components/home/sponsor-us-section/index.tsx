@@ -8,6 +8,7 @@ import elastic from '@/assets/logos/elastic-w.svg';
 import quantium from '@/assets/logos/quantium-w.svg';
 import monash from '@/assets/logos/monash-w.svg';
 import euLogo from '@/assets/logos/eu-logo-horiz.svg';
+import rushfaster from '@/assets/logos/rushfaster-w.png';
 
 import { Button } from '@/components/button';
 
@@ -97,6 +98,9 @@ export const HomeEventSponsorsSection = () => {
         <div className={styles.sponsorGrid}>
           <a className={styles.sponsorGridItem} href="https://www.twilio.com/en-us">
             <Image src={twilio} alt="Twilio" />
+          </a>
+          <a className={styles.sponsorGridItem} href="https://rushfaster.com.au/pages/student">
+            <Image src={rushfaster} alt="Rushfaster" />
           </a>
         </div>
       </div>
