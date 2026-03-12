@@ -31,7 +31,7 @@ const mainPrizes: MainPrize[] = [
       '$5,000 in cash',
       'Bose Headphones per person',
       'NOMAD Tracking Card Air per person',
-      'Rushfaster EDC Backpack per person (thank you to Rushfaster)'
+      'Rushfaster EDC Backpack per person (thank you to Rushfaster)',
     ],
   },
   {
@@ -45,11 +45,13 @@ const mainPrizes: MainPrize[] = [
 ];
 
 const optinPrizes: CategoryPrize[] = [
-   {
+  {
     title: 'The EU Shared Future Prize',
     description:
       'Projects that work towards a secure & stable future, and reflect the spirit of cooperation. (Open to AU-based participants only)',
-    prize: ['TBA'],
+    prize: [
+      'Sennheiser ACCENTUM Wireless Noise Cancelling On-Ear headphones per person',
+    ],
     sponsorLogo: euLogo,
     sponsorName: 'Funded by the European Union',
     additionalCriteria: [
@@ -85,7 +87,9 @@ const optinPrizes: CategoryPrize[] = [
     title: 'AI Solutions Prize',
     description:
       'Awarded to the team that best uses AI as an impactful part of your solution.',
-    prize: ['TBA'],
+    prize: [
+      "Team mentoring session with Quantium's Ben Chan (Head of AI), and free swag",
+    ],
     sponsorLogo: quantiumLogo,
     sponsorName: 'Quantium',
     additionalCriteria: [
