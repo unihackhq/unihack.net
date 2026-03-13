@@ -1,0 +1,64 @@
+@import '../../../styles/home.css';
+
+.home_header {
+  @apply home-section;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @variant lg {
+    text-align: left;
+  }
+
+  .twitch_player {
+    width: 100%;
+    height: auto;
+    margin-bottom: 36px;
+    aspect-ratio: 16 / 9;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+      display: inline-block;
+    }
+  }
+}
+
+.home_header_text {
+  @variant lg {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    font-weight: 300;
+    margin: 0 0 24px;
+    color: white;
+
+    @variant lg {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  a {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
+  }
+}

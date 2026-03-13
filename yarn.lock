@@ -4309,6 +4309,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-twitch-embed@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "react-twitch-embed@npm:3.0.2"
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/cfca888dac2c418484faef1d794b089d2058091900e4e06449541b4340ca679e4f830ee0b40c4eb3a493ee3bcd3c85e1ca3ae7a11b4a187922e4b1d133f872b8
+  languageName: node
+  linkType: hard
+
 "react@npm:19.1.0":
   version: 19.1.0
   resolution: "react@npm:19.1.0"
@@ -5186,6 +5196,7 @@ __metadata:
     prettier: "npm:^3.5.3"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
+    react-twitch-embed: "npm:^3.0.2"
     tailwindcss: "npm:^4"
     typescript: "npm:^5"
   languageName: unknown
