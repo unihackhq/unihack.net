@@ -11,9 +11,14 @@ export const VideoHero = () => {
       </h1>
       <div className={styles.home_header_text}>
         <HeroButton
-          text="Want to help plan 2027? Join the team!"
-          href="https://unihack.net/join/"
+          text="The Winners"
+          href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
         />
+        <HeroButton
+          text="View all projects"
+          href="https://unihack2026.devpost.com/project-gallery/"
+        />
+        <HeroButton text="Join the team!" href="https://unihack.net/join/" />
       </div>
       <TwitchPlayer
         channel="unihack"

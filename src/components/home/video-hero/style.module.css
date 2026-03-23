@@ -16,7 +16,7 @@
   .twitch_player {
     width: 100%;
     height: auto;
-    margin-bottom: 36px;
+    margin-top: 36px;
     aspect-ratio: 16 / 9;
   }
 
