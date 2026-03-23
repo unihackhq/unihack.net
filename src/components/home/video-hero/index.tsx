@@ -12,7 +12,7 @@ export const VideoHero = () => {
       <div className={styles.home_header_text}>
         <HeroButton
           text="The Winners"
-          href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          href="https://medium.com/unihack-blog/a68e8b120dc3"
         />
         <HeroButton
           text="View all projects"
