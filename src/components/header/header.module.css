@@ -1,4 +1,4 @@
-@import '../../styles/core.css';
+@import '#styles/core.css';
 
 .container {
   @apply layout-container;

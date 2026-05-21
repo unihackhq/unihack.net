@@ -13,6 +13,9 @@
   "engines": {
     "node": "22.x"
   },
+  "imports": {
+    "#styles/*.css": "./src/styles/*.css"
+  },
   "dependencies": {
     "@date-fns/tz": "^1.4.1",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
@@ -28,7 +31,8 @@
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",
-    "react-twitch-embed": "^3.0.2"
+    "react-twitch-embed": "^3.0.2",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
@@ -42,7 +46,6 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react-hooks": "^7.1.1",
     "prettier": "^3.8.3",
-    "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.9.2"
