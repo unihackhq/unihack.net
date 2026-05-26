@@ -1,5 +1,4 @@
-@import '#styles/home.css';
-@reference "tailwindcss";
+@reference '#styles/home.css';
 
 .stretch {
   background: linear-gradient(

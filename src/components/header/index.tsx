@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Logo } from '../logo';
-import styles from './header.module.css';
+import styles from './style.module.css';
 
 interface HeaderProps {
   isPage?: boolean;
@@ -44,22 +44,25 @@ export const DefaultLogo = () => {
   )
 }
 
-export const Header = ({ logo, isPage, nav }: HeaderProps) => {
+export const Header = ({ logo, nav }: HeaderProps) => {
   return (
-    <header className={`${styles.container} ${isPage ? styles.mini : ''}`}>
+    <header className={styles.header}>
       <nav>
+        <div></div>
         <Link href="/" aria-label="UNIHACK Home" className={styles.logo}>
           { logo || (<DefaultLogo />)} 
         </Link>
-        {nav && (
-          <ul className={styles.navLinks}>
-            {nav.map((item, index) => (
-              <li key={index}>
-                <Link href={item.link}>{item.name}</Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        <div>
+          {nav && (
+            <ul className={styles.navLinks}>
+              {nav.map((item, index) => (
+                <li key={index}>
+                  <Link href={item.link}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </nav>
     </header>
   );

@@ -1,0 +1,82 @@
+@reference '#styles/core.css';
+
+.container {
+  p {
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
+
+  a {
+    color: var(--color-sky-400);
+    font-weight: 500;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--color-sky-600);
+    }
+  }
+
+  h2 {
+    @apply mt-24 mb-4 text-2xl/8;
+    font-weight: 600;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol,
+  ul {
+    @apply ml-8;
+  }
+
+  li {
+    padding-left: 12px;
+  }
+}
+
+.markdown-container {
+  @apply container;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-family: var(--font-sora);
+  position: relative;
+
+  @variant lg {
+    padding-left: 360px;
+  }
+
+  @variant xl {
+    padding-left: 500px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    margin-bottom: 36px;
+
+    @variant lg {
+      position: absolute;
+      left: 0;
+      width: 300px;
+      border-left: 8px solid white;
+      padding-left: 32px;
+    }
+
+    @variant xl {
+      font-size: 64px;
+      line-height: 64px;
+      letter-spacing: -5px;
+    }
+  }
+}

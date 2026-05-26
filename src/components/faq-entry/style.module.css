@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.entry {
+    @apply py-6 px-2;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    
+    &:first-of-type {
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .icon {
+        margin-top: 8px;
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+    }
+
+    button {
+        @apply text-xl/8;
+        min-height: 32px;
+        font-weight: 500;
+        display: flex;
+        text-align: left;
+        flex-direction: row-reverse;
+        cursor: pointer;
+        position: relative;
+        align-items: top;
+    }
+
+    .answer {
+        margin-top: 16px;
+    }
+}

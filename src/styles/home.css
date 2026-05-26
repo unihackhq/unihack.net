@@ -1,9 +1,8 @@
+@reference "tailwindcss";
 @import './core.css';
 
 @utility home-section {
-  @apply layout-container;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @apply container py-8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +39,6 @@
   }
 
   @variant lg {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    @apply py-16;
   }
 }

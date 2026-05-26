@@ -1,4 +1,4 @@
-import styles from './style.module.css';
+import styles from './styles.module.css';
 import { Button } from '@/components/button';
 import classNames from 'classnames/bind';
 

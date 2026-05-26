@@ -1,6 +1,7 @@
-import { Header } from '@/components/header';
-import { MarkdownContent } from '@/components/markdown-content';
 import React from 'react';
+
+import styles from './styles.module.css';
+import { PageContent } from '@/components/page-content';
 
 export default function MarkdownPageLayout({
   children,
@@ -9,8 +10,8 @@ export default function MarkdownPageLayout({
 }>) {
   return (
     <>
-      <Header isPage={true} />
-      <MarkdownContent>{children}</MarkdownContent>
+      <div className={styles.background} />
+      <PageContent className={styles.container}>{children}</PageContent>
     </>
   );
 }

@@ -21,17 +21,15 @@ const nextConfig: NextConfig = {
         destination: 'https://discord.gg/MfuzHurGpd',
         permanent: false,
       },
-      {
-        source: '/about',
-        destination: '/',
-        permanent: false,
-      }
     ];
   },
 };
 
 const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
+  options: {
+    remarkPlugins: ['remark-frontmatter', 'remark-mdx-frontmatter'],
+  }
 });
 
 export default withMDX(nextConfig);
