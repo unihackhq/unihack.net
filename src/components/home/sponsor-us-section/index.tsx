@@ -45,7 +45,7 @@ export const HomeSponsorUsSection = () => {
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
         <Button
-          href="./files/unihack-2026-sponsorship-prospectus.pdf"
+          href="/sponsor"
           text="Sponsorship Prospectus"
         />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />

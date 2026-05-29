@@ -117,11 +117,6 @@
     font-weight: 700;
     font-size: 30px;
     letter-spacing: -1px;
-
-    @variant md {
-      font-size: 48px;
-      letter-spacing: -2px;
-    }
   }
 
   > div {
@@ -172,6 +167,70 @@
       color: white;
     }
   }
+}
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 0;
+  min-height: 300px;
+
+
+  > div {
+    @apply container;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+
+    @variant md {
+      text-align: center;
+      display: block;
+
+      a {
+        margin: 0 4px;
+      }
+    }
+  }
+  
+  &:before {
+    content: '';
+    background: #001e78;
+    filter: blur(100);
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -99;
+    border-radius: 0 0 50% 50%;
+  }
+
+  p {
+    color: white;
+    
+    @variant md {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 300;
+      letter-spacing: -1px;
+      margin-bottom: 4px;
+
+      a {
+        font-weight: 700;
+      }
+
+      &:last-of-type {
+        margin-bottom: 64px;
+      }
+    }
+
+    
+  }
+
+  a {
+    text-align: center;
+  }
+
 }
 
 .header {

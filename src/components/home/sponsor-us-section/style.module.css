@@ -4,7 +4,7 @@
   @apply home-section;
 
   h2 {
-    background: linear-gradient(90deg, #3bdeea, #7dea10);
+    background: linear-gradient(315deg, #0c00a7 0.000%, #0009c2 20.000%, #0257e2 40.000%, #2095fc 60.000%, #56c2ff 80.000%, #a3defa 100.000%);
     background-clip: text;
     color: transparent;
   }
@@ -18,8 +18,9 @@
   }
 
   a:hover {
-    border: 1px solid transparent;
-    background: linear-gradient(90deg, #3bdeea, #7dea10);
+    border: 1px solid #0c00a7;
+    background: linear-gradient(315deg, #0c00a7 0.000%, #0009c2 20.000%, #0257e2 40.000%, #2095fc 60.000%, #56c2ff 80.000%, #a3defa 100.000%);
+    color: white;
   }
 }
 
@@ -72,7 +73,7 @@
     }
 
     &:hover {
-      border-color: #7dea10;
+      border-color: #2095fc;
       background: transparent;
     }
 
