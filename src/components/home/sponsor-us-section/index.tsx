@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import classNames from 'classnames/bind';
 import logitech from '@/assets/logos/logitech-w.svg';
-import datastax from '@/assets/logos/datastax-w.svg';
 import atlassian from '@/assets/logos/atlassian-w.svg';
 import twilio from '@/assets/logos/twilio-w.svg';
 import elastic from '@/assets/logos/elastic-w.svg';
