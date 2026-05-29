@@ -1,0 +1,243 @@
+@reference '#styles/core.css';
+
+.background {
+}
+
+.numbers {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  > div {
+    @apply container;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px 8px;
+
+      @variant md {
+        grid-gap: 64px;
+      }
+    }
+
+  .stat {
+    text-transform: uppercase;
+    text-align: center;
+    
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      color: white;
+    }
+
+    span {
+      display: block;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 60px;
+
+      @variant md {
+        font-size: 72px;
+        line-height: 80px;
+      }
+    }
+  }
+}
+
+.event {
+  padding-bottom: 0;
+  background: white;
+  
+  > div {
+    @apply container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @variant md {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+  svg {
+    width: 16px;
+    height: 100%;
+    margin-right: 16px
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    color: black;
+
+    @variant md {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+.why {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -1px;
+
+    @variant md {
+      font-size: 48px;
+      letter-spacing: -2px;
+    }
+  }
+
+  > div {
+    @apply container;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+
+    @variant sm {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @variant lg {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .reason {
+    background-color: #0049d8;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 32px;
+    border-radius: 8px;
+  
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 8px;
+
+      svg {
+        margin-right: 16px;
+        width: 16px;
+        height: 16px;
+      }
+
+      h3 {
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 16px;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 21px;
+      padding-left: 32px;
+      color: white;
+    }
+  }
+}
+
+.header {
+  height: max(40vh, 400px);
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 102px 0 36px;
+
+  &:before {
+    content: '';
+    background: linear-gradient(180deg, #00084f 0.000%, #001e78 25.000%, #0034a6 50.000%, #0049d8 75.000%, #005eff 100.000%);    
+    bottom: 0;
+    top: -102px;
+    left: 0;
+    right: 0;
+    z-index: -999;
+    position: absolute;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  > div {
+    @apply container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  h1 {
+    @apply text-4xl;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 8px;
+    color: white;
+
+    @variant md {
+      @apply text-6xl;
+      letter-spacing: -2px;
+    }
+  }
+
+  p {
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  .floating {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+  }
+
+  a:hover {
+    color: #001e78;
+  }
+}

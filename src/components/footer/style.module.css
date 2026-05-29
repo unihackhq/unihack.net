@@ -12,8 +12,7 @@
 
   .grid {
       margin-bottom: 36px;
-
-      @variant md {
+      @variant xl {
         display: flex;
         justify-content: space-between;
       }
@@ -23,11 +22,7 @@
     margin-right: 64px;
     margin-bottom: 64px;
 
-    @variant md {
-      width: 50%;
-    }
-
-    @variant lg {
+    @variant xl {
       width: 500px;
     }
   
@@ -55,7 +50,7 @@
 
   .links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 64px;
 
     h6 {

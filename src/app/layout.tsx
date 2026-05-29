@@ -10,15 +10,11 @@ const soraFont = Sora({
 import '#styles/globals.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
-
-
+import { Providers } from './providers';
 
 config.autoAddCss = false;
-
-
 
 export const metadata: Metadata = {
   title: {
@@ -73,9 +69,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${soraFont.variable} antialiased`}>
-        <Header isPage={true} />
-        {children}
-        <Footer />
+        <Providers>
+          <Header isPage={true} />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

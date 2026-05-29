@@ -14,24 +14,12 @@ interface HeaderProps {
 
 export const HomeNav = [
   {
-    name: 'Hubs',
-    link: '#hubs',
+    name: 'Sponsor',
+    link: '/sponsor',
   },
   {
-    name: 'Schedule',
-    link: '#schedule',
-  },
-  {
-    name: 'Workshops',
-    link: '#workshops',
-  },
-  {
-    name: 'Prizes',
-    link: '#prizes',
-  },
-  {
-    name: 'Sponsors',
-    link: '#sponsor-us',
+    name: 'FAQs',
+    link: '/faqs',
   },
 ];
 
@@ -44,24 +32,21 @@ export const DefaultLogo = () => {
   )
 }
 
-export const Header = ({ logo, nav }: HeaderProps) => {
+export const Header = ({ logo }: HeaderProps) => {
   return (
     <header className={styles.header}>
       <nav>
-        <div></div>
         <Link href="/" aria-label="UNIHACK Home" className={styles.logo}>
           { logo || (<DefaultLogo />)} 
         </Link>
         <div>
-          {nav && (
-            <ul className={styles.navLinks}>
-              {nav.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.link}>{item.name}</Link>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul className={styles.navLinks}>
+            {HomeNav.map((item, index) => (
+              <li key={index}>
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
     </header>

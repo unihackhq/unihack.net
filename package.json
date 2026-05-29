@@ -17,6 +17,7 @@
     "#styles/*.css": "./src/styles/*.css"
   },
   "dependencies": {
+    "@bprogress/next": "^3.2.12",
     "@date-fns/tz": "^1.4.1",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-brands-svg-icons": "^7.2.0",

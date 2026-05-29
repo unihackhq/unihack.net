@@ -18,12 +18,16 @@ export const Footer = () => (
         <div>
           <h6>Navigation</h6>
           <ul>
-            {/**<li><Link prefetch={false} href="/about">About UNIHACK</Link></li>
-            <li><Link prefetch={false} href="/rules">History</Link></li>
-            <li><Link prefetch={false} href="/rules">Sponsorship</Link></li>**/}
+            <li><Link prefetch={false} href="/about">About UNIHACK</Link></li>
+            <li><Link prefetch={false} href="/privacy">Privacy Policy</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Event Info</h6>
+          <ul>
+            <li><Link prefetch={false} href="/faqs">FAQs</Link></li>
             <li><Link prefetch={false} href="/rules">Event Rules</Link></li>
             <li><Link prefetch={false} href="/conduct">Code of Conduct</Link></li>
-            <li><Link prefetch={false} href="/privacy">Privacy Policy</Link></li>
           </ul>
         </div>
         <div>

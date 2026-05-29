@@ -17,14 +17,13 @@
   margin-top: 64px;
   margin-bottom: 64px;
   font-family: var(--font-sora);
-  position: relative;
 
   @variant lg {
-    padding-left: 360px;
-  }
-
-  @variant xl {
-    padding-left: 500px;
+    display: flex;
+    .questions {
+      width: 80%;
+      margin-left: 48px;
+    }
   }
 
   p {
@@ -56,16 +55,9 @@
     }
 
     @variant lg {
-      position: absolute;
-      left: 0;
-      width: 300px;
       border-left: 8px solid white;
       padding-left: 32px;
     }
-    
   }
 
-   h1 + h2 {
-      margin-top: 0;
-  }
 }

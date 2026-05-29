@@ -9,28 +9,29 @@ import styles from './style.module.css';
 interface Props {
     id: string;
     title: string;
+    content: React.ReactNode;
     isAlreadyExpanded?: boolean;
 }
 
-export const FaqEntry: React.FC<React.PropsWithChildren<Props>> = ({ id, title, children, isAlreadyExpanded }) => {
+export const FaqEntry: React.FC<Props> = ({ id, title, content, isAlreadyExpanded }) => {
     const [expanded, setExpand] = useState(isAlreadyExpanded); 
+    const onClick = () => setExpand(prev => !prev);
 
-    const onClick = () => {
-        setExpand(prev => !prev);
-    }
-
-    return <section className={styles.entry}>
-        <button onClick={onClick} aria-expanded={expanded} data-expandable={id}>
-            {title}
-            <FontAwesomeIcon 
-                className={styles.icon} 
-                icon={expanded ? faMinus : faPlus}
-                aria-hidden="true"
-                focusable="false"
-            />
-        </button>
-        <div id={id} className={styles.answer} hidden={!expanded}>
-            {children}
+    return (
+        <div className={styles.entry} data-exapnded={expanded}>
+            <button onClick={onClick} aria-expanded={expanded} aria-controls={id}>
+                {title}
+                <FontAwesomeIcon 
+                    className={styles.icon} 
+                    icon={expanded ? faMinus : faPlus}
+                    aria-hidden="true"
+                    aria-label={expanded ? 'Close' : 'Expand'}
+                    focusable="false"
+                />
+            </button>
+            <div id={id} className={styles.answer} hidden={!expanded}>
+                {content}
+            </div>
         </div>
-    </section>
+    )
 }

@@ -2,18 +2,9 @@
 
 .entry {
     @apply py-6 px-2;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    
-    &:first-of-type {
-        border-top: 1px solid rgba(255,255,255,0.3);
-    }
-
-    .icon {
-        margin-top: 8px;
-        margin-right: 8px;
-        width: 16px;
-        height: 16px;
-    }
+    border-bottom: 1px solid var(--color-sky-950);
+    border-top: 1px solid var(--color-sky-950);
+    margin-top: -1px;
 
     button {
         @apply text-xl/8;
@@ -21,10 +12,23 @@
         font-weight: 500;
         display: flex;
         text-align: left;
-        flex-direction: row-reverse;
+        flex-direction: row;
         cursor: pointer;
         position: relative;
         align-items: top;
+        width: 100%;
+
+        &:hover {
+            color: var(--color-sky-400);
+        }
+
+        .icon {
+            margin-top: 8px;
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            order: -1;
+        }
     }
 
     .answer {

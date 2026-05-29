@@ -4,7 +4,6 @@
   height: 300px;
   position: relative;
 
-
   @variant md {
     height: max(70vh, 400px);
   }
@@ -49,5 +48,38 @@
     margin: 0px 16px;
     position: absolute;
     text-transform: uppercase;
+  }
+}
+
+.content {
+  max-width: 720px;
+  margin: 64px auto;
+
+  h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  p.intro {
+    @apply text-6xl/18;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 8px 0 64px;
+    color: white;
+
+    span {
+      padding: 0px 8px;
+      background: white;
+      color: var(--background);
+    }
+  }
+
+  .imagination {
+    font-weight: 700;
+    background: linear-gradient(95deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    color: transparent;
+    background-clip: text;
   }
 }

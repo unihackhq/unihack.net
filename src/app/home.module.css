@@ -1,23 +1,55 @@
 @reference "tailwindcss";
 
-.home_hero {
-  background: url('/img/bg-hero.jpg') top center no-repeat;
-  background-size: auto 600px;
-  font-family: var(--font-sora);
+.hero {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: conic-gradient(from 90deg, #fffff7 0.000deg, #ffffa5 60.000deg, #ff7a44 120.000deg, #990708 180.000deg, #00000f 240.000deg, #005355 300.000deg, #31e2b7 360.000deg);
+    opacity: 0.7;
+    z-index: -99;
+  }
+  display: flex;
+  margin-top: -102px;
+  height: max(60vh, 400px);
+  position: relative;
 
-  @variant md {
-    background-size: 100% 800px;
+  .container {
+    flex: 1;
+    margin: 0 30px;
+    padding: 140px 0px 64px;
+    text-align: left;
+
+    @variant lg {
+      padding: 64px 32px;
+      align-content: center;
+    }
   }
 
-  @variant lg {
-    background-size: 100% 1000px;
-  }
-}
+  .contentBox {
 
-.home_section_faqs {
+    @variant lg {
+      width: 500px;
+    }
+  }
+
   h2 {
-    background: linear-gradient(90deg, #e1ea3b, #e210ea);
-    background-clip: text;
-    color: transparent;
+    span {
+      font-weight: 900;
+      border-bottom: 5px solid white;
+    }
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    font-weight: 200;
+
+    @variant lg {
+      font-size: 48px;
+      line-height: 66px;
+    }
   }
 }

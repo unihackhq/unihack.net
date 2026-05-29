@@ -29,18 +29,15 @@ export const HomeSponsorUsSection = () => {
       <div className={styles.sponsorGridWrapper}>
         <p>Past sponsors include</p>
         <div className={styles.sponsorGrid}>
-          <div className={styles.sponsorGridItem}>
+          <a className={styles.sponsorGridItem}>
             <Image src={logitech} alt="Logitech" />
-          </div>
-          <div className={styles.sponsorGridItem}>
+          </a>
+          <a className={styles.sponsorGridItem}>
             <Image src={atlassian} alt="Atlassian" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={datastax} alt="Datastax" />
-          </div>
-          <div className={styles.sponsorGridItem}>
+          </a>
+          <a className={styles.sponsorGridItem}>
             <Image src={twilio} alt="Twilio" />
-          </div>
+          </a>
         </div>
       </div>
       <div className={styles.centerText}>
