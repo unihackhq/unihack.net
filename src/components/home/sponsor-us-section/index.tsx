@@ -35,6 +35,9 @@ export const HomeSponsorUsSection = () => {
             <Image src={atlassian} alt="Atlassian" />
           </a>
           <a className={styles.sponsorGridItem}>
+            <Image src={elastic} alt="Elastic" />
+          </a>
+          <a className={styles.sponsorGridItem}>
             <Image src={twilio} alt="Twilio" />
           </a>
         </div>
@@ -44,10 +47,7 @@ export const HomeSponsorUsSection = () => {
           Want to help support and nurture the next generation of tech talent?
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
-        <Button
-          href="/sponsor"
-          text="Sponsorship Prospectus"
-        />
+        <Button href="/sponsor" text="Sponsorship Prospectus" />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />
       </div>
     </section>
@@ -67,7 +67,10 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierDiamond')}>
         <h3>Diamond Sponsor</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="https://www.eeas.europa.eu/delegations/australia_en">
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.eeas.europa.eu/delegations/australia_en"
+          >
             <Image src={euLogo} alt="European Union" />
           </a>
         </div>
@@ -75,16 +78,25 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierGold')}>
         <h3>Gold Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="https://www.atlassian.com/company/careers/earlycareers">
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.atlassian.com/company/careers/earlycareers"
+          >
             <Image src={atlassian} alt="Atlassian" />
           </a>
           <a className={styles.sponsorGridItem} href="https://www.elastic.co/">
             <Image src={elastic} alt="Elastic" />
           </a>
-          <a className={styles.sponsorGridItem} href="https://quantium.com/graduate-academy/">
+          <a
+            className={styles.sponsorGridItem}
+            href="https://quantium.com/graduate-academy/"
+          >
             <Image src={quantium} alt="Quantium" />
           </a>
-          <a className={styles.sponsorGridItem} href="https://www.monash.edu/it">
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.monash.edu/it"
+          >
             <Image src={monash} alt="Monash University" />
           </a>
         </div>
@@ -92,10 +104,16 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierBronze')}>
         <h3>Bronze Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="https://www.twilio.com/en-us">
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.twilio.com/en-us"
+          >
             <Image src={twilio} alt="Twilio" />
           </a>
-          <a className={styles.sponsorGridItem} href="https://rushfaster.com.au/pages/student">
+          <a
+            className={styles.sponsorGridItem}
+            href="https://rushfaster.com.au/pages/student"
+          >
             <Image src={rushfaster} alt="Rushfaster" />
           </a>
         </div>

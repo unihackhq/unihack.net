@@ -1,4 +1,4 @@
-@reference "tailwindcss";
+@reference 'tailwindcss';
 @import './core.css';
 
 @utility home-section {
@@ -8,24 +8,23 @@
   align-items: center;
 
   h2 {
+    @apply text-3xl;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 48px;
+    margin: 0 0 24px;
     letter-spacing: -1px;
-    margin: 0 0 32px;
-    display: inline;
     width: 100%;
 
     @variant md {
+      @apply text-4xl;
       text-align: center;
+      margin: 0 0 36px;
     }
   }
 
   p {
-    font-size: 18px;
-    line-height: 24px;
+    @apply text-base;
     font-weight: 300;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     color: #bdc8d7;
   }
 

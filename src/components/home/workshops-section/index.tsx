@@ -31,7 +31,8 @@ const workshops: Workshop[] = [
     sponsorName: 'Elastic',
   },
   {
-    title: 'Building with AI - How Quantium Approaches Complex Problems Using Generative AI',
+    title:
+      'Building with AI - How Quantium Approaches Complex Problems Using Generative AI',
     dateTime: '10 March, 4:00 PM - 5:00 PM AEDT',
     link: 'https://events.humanitix.com/unihack-x-quantium-building-with-ai-how-quantium-approaches-complex-problems-using-generative-ai',
     sponsorLogo: quantium,

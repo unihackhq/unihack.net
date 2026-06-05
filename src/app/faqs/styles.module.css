@@ -1,7 +1,12 @@
 @reference '#styles/core.css';
 
 .background {
-  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   opacity: 50%;
   height: 200px;
   position: absolute;
@@ -14,7 +19,7 @@
 
 .container {
   @apply container;
-  margin-top: 64px;
+  margin-top: 160px;
   margin-bottom: 64px;
   font-family: var(--font-sora);
 
@@ -59,5 +64,4 @@
       padding-left: 32px;
     }
   }
-
 }

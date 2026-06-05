@@ -19,18 +19,19 @@
   > div {
     @apply container;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 32px 8px;
 
-      @variant md {
-        grid-gap: 64px;
-      }
+    @variant md {
+      grid-gap: 64px;
+      grid-template-columns: 1fr 1fr 1fr;
     }
+  }
 
   .stat {
     text-transform: uppercase;
     text-align: center;
-    
+
     p {
       margin: 0;
       font-size: 14px;
@@ -55,19 +56,20 @@
 
 .event {
   padding-bottom: 0;
-  background: white;
-  
+  background: #00084f;
+
   > div {
     @apply container;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border-radius: 50px;
     padding-top: 16px;
     padding-bottom: 16px;
+    display: grid;
+    grid-gap: 16px;
 
     @variant md {
+      display: flex;
       padding-top: 32px;
       padding-bottom: 32px;
     }
@@ -76,13 +78,13 @@
   .item {
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
   }
 
   svg {
     width: 16px;
     height: 100%;
-    margin-right: 16px
+    margin-right: 16px;
   }
 
   span {
@@ -97,7 +99,7 @@
     font-size: 12px;
     line-height: 16px;
     margin: 0;
-    color: black;
+    color: white;
 
     @variant md {
       font-size: 18px;
@@ -109,7 +111,7 @@
 .why {
   padding-top: 64px;
   padding-bottom: 64px;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
   h2 {
     text-align: center;
@@ -136,10 +138,10 @@
 
   .reason {
     background-color: #0049d8;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 32px;
     border-radius: 8px;
-  
+
     > div {
       display: flex;
       flex-direction: row;
@@ -175,7 +177,6 @@
   padding: 64px 0;
   min-height: 300px;
 
-
   > div {
     @apply container;
     display: grid;
@@ -191,7 +192,7 @@
       }
     }
   }
-  
+
   &:before {
     content: '';
     background: #001e78;
@@ -207,7 +208,7 @@
 
   p {
     color: white;
-    
+
     @variant md {
       font-size: 24px;
       line-height: 32px;
@@ -223,18 +224,15 @@
         margin-bottom: 64px;
       }
     }
-
-    
   }
 
   a {
     text-align: center;
   }
-
 }
 
 .header {
-  height: max(40vh, 400px);
+  height: max(70vh, 400px);
   text-align: center;
   position: relative;
   display: flex;
@@ -243,9 +241,16 @@
 
   &:before {
     content: '';
-    background: linear-gradient(180deg, #00084f 0.000%, #001e78 25.000%, #0034a6 50.000%, #0049d8 75.000%, #005eff 100.000%);    
+    background: linear-gradient(
+      180deg,
+      #00084f 0%,
+      #001e78 25%,
+      #0034a6 50%,
+      #0049d8 75%,
+      #005eff 100%
+    );
     bottom: 0;
-    top: -102px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: -999;
@@ -256,7 +261,7 @@
     position: absolute;
     content: '';
     height: 1px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     left: 0;
     bottom: 0;
     right: 0;
@@ -277,23 +282,38 @@
     margin: 0 0 8px;
     color: white;
 
-    @variant md {
+    @variant lg {
       @apply text-6xl;
-      letter-spacing: -2px;
+      letter-spacing: -4px;
+      margin: 0 0 16px;
     }
   }
 
   p {
+    @apply text-2xl;
     color: white;
     font-weight: 300;
-    font-size: 24px;
+    letter-spacing: -1px;
+
+    @variant lg {
+      @apply text-4xl;
+      letter-spacing: -2px;
+    }
   }
 
   .floating {
     position: absolute;
     bottom: 32px;
-    left: 0;
-    right: 0;
+    left: 16px;
+    right: 16px;
+
+    a {
+      display: block;
+
+      @variant md {
+        display: inline-block;
+      }
+    }
   }
 
   a:hover {

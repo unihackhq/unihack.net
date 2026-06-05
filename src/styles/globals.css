@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #01020e;
@@ -15,7 +15,8 @@ strong {
   font-weight: 600;
 }
 
-p, li {
-    @apply text-base/6 mb-4;
-    color: var(--color-gray-400);
+p,
+li {
+  @apply text-base/6 mb-4;
+  color: var(--color-gray-400);
 }

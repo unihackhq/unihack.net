@@ -1,18 +1,15 @@
-import { HeroButton } from '@/components/hero-button';
-import styles from './style.module.css';
+import styles from './styles.module.css';
 
 export const LaunchHero = () => {
   return (
-    <div className={styles.home_header}>
-      <h1>
-        <span>Congratulations to the winners!</span> See you in 2027!
-      </h1>
-      <div className={styles.home_header_text}>
-        <HeroButton
-          text="Want to help plan 2027? Join the team!"
-          href="https://unihack.net/join/"
-        />
+    <section className={styles.hero}>
+      <div className={styles.container}>
+        <div className={styles.contentBox}>
+          <h2>
+            The Imagination Hackathon returns on <span>March 12-14, 2027</span>
+          </h2>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,7 +1,7 @@
 @reference '#styles/core.css';
 
 .footer {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   font-size: 12px;
   padding: 60px 0;
@@ -11,11 +11,11 @@
   @apply container;
 
   .grid {
-      margin-bottom: 36px;
-      @variant xl {
-        display: flex;
-        justify-content: space-between;
-      }
+    margin-bottom: 36px;
+    @variant xl {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .acknowledgement {
@@ -25,12 +25,12 @@
     @variant xl {
       width: 500px;
     }
-  
+
     .logo {
       position: relative;
       display: flex;
       margin-bottom: 24px;
-    
+
       img {
         height: 36px;
         width: auto;
@@ -50,8 +50,11 @@
 
   .links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 64px;
+
+    @variant md {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     h6 {
       @apply text-sm mb-2;
@@ -65,7 +68,7 @@
       font-family: var(--font-sora);
     }
 
-     a {
+    a {
       color: var(--color-gray-500);
       padding: 4px 0;
       display: block;

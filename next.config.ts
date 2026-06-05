@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
     resolveAlias: {
       '@/styles': './src/styles'
     }
-  }, 
+  },
+  experimental: {
+    turbopackFileSystemCacheForDev: false
+  },
   pageExtensions: ['md', 'mdx', 'ts', 'tsx'],
   redirects: async () => {
     return [

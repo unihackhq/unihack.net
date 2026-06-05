@@ -53,11 +53,7 @@ export default function Home() {
         }}
         weekend={{
           time: ['Saturday 9:00AM - 6:00PM', 'Sunday 9:00AM - 6:00PM'],
-          location: [
-            'Room G26',
-            'UNSW Business School E12',
-            'UNSW Kensington',
-          ],
+          location: ['Room G26', 'UNSW Business School E12', 'UNSW Kensington'],
           signupLink: 'https://forms.gle/4SKyxnEMzx9ENdRQ9',
           locationMapLink: 'https://link.mazemap.com/wSsrC0jQ',
         }}

@@ -13,6 +13,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Providers } from './providers';
+import { mergeClassNames } from '@/utils/classnames';
 
 config.autoAddCss = false;
 
@@ -68,9 +69,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${soraFont.variable} antialiased`}>
+      <body className={mergeClassNames(soraFont.variable, 'antialiased')}>
         <Providers>
-          <Header isPage={true} />
+          <Header />
           {children}
           <Footer />
         </Providers>

@@ -1,0 +1,96 @@
+@reference "#styles/core.css";
+
+.hero {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: conic-gradient(
+      from 60deg,
+      #fffff7 0deg,
+      #ffffa5 60deg,
+      #ff7a44 120deg,
+      #990708 180deg,
+      #00000f 240deg,
+      #005355 300deg,
+      #31e2b7 360deg
+    );
+    z-index: -99;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0, var(--background), transparent);
+    z-index: -98;
+  }
+
+  display: flex;
+  height: max(75vh, 400px);
+  position: relative;
+
+  > div {
+    @apply container;
+    padding-top: 140px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+    text-align: left;
+    align-content: center;
+
+    @variant md {
+      text-align: center;
+    }
+
+    @variant lg {
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .contentBox {
+    @variant lg {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    @apply text-xl/1;
+    margin: 0;
+    letter-spacing: -1px;
+    font-weight: 300;
+
+    span {
+      @apply text-3xl/16;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      display: block;
+      width: fit-content;
+
+      @variant md {
+        margin: 0 auto;
+      }
+    }
+
+    @variant md {
+      @apply text-3xl/12;
+      letter-spacing: -2px;
+
+      span {
+        @apply text-6xl/16;
+        letter-spacing: -2px;
+      }
+    }
+  }
+}
