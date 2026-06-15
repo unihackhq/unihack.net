@@ -1,10 +1,10 @@
-import { Event } from './types';
+import { Event } from "./types";
 
 export const event: Event = {
-  name: 'UNIHACK 2024',
-  year: 2024,
-  devpostUrl: 'https://unihack2024.devpost.com/',
-  startDate: new Date('2024-03-01'),
-  endDate: new Date('2024-03-03'),
-  prizes: [],
+	name: "UNIHACK 2024",
+	year: 2024,
+	devpostUrl: "https://unihack2024.devpost.com/",
+	startDate: new Date("2024-03-01"),
+	endDate: new Date("2024-03-03"),
+	prizes: [],
 };

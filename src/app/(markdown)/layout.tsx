@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import styles from './styles.module.css';
-import { PageContent } from '@/components/page-content';
+import styles from "./styles.module.css";
+import { PageContent } from "@/components/page-content";
 
 export default function MarkdownPageLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <>
-      <div className={styles.background} />
-      <PageContent className={styles.container}>{children}</PageContent>
-    </>
-  );
+	return (
+		<>
+			<div className={styles.background} />
+			<PageContent className={styles.container}>{children}</PageContent>
+		</>
+	);
 }

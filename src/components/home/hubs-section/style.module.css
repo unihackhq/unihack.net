@@ -1,92 +1,92 @@
-@import '#styles/home.css';
+@import "#styles/home.css";
 
 .section {
-  @apply home-section;
-  align-items: flex-start;
-  padding-top: 0;
+	@apply home-section;
+	align-items: flex-start;
+	padding-top: 0;
 
-  @variant md {
-    align-items: flex-start;
-  }
+	@variant md {
+		align-items: flex-start;
+	}
 
-  h2 {
-    background: linear-gradient(to left, #ff8008, #ffc837);
-    background-clip: text;
-    color: transparent;
-    max-width: 640px;
-    text-align: left;
-  }
+	h2 {
+		background: linear-gradient(to left, #ff8008, #ffc837);
+		background-clip: text;
+		color: transparent;
+		max-width: 640px;
+		text-align: left;
+	}
 }
 
 .hubsListings {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
-  width: 100%;
-  margin-top: 48px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 24px;
+	width: 100%;
+	margin-top: 48px;
 
-  @variant md {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	@variant md {
+		grid-template-columns: repeat(3, 1fr);
+	}
 
-  .hubLogos {
-    gap: 16px;
-    display: flex;
-    margin-top: 32px;
+	.hubLogos {
+		gap: 16px;
+		display: flex;
+		margin-top: 32px;
 
-    img {
-      width: auto;
-      height: 36px;
-      object-fit: contain;
-    }
-  }
+		img {
+			width: auto;
+			height: 36px;
+			object-fit: contain;
+		}
+	}
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
-  width: 100%;
-  margin-bottom: 24px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 24px;
+	width: 100%;
+	margin-bottom: 24px;
 
-  @variant md {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	@variant md {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-  .gridItem {
-    h4 {
-      margin: 0;
-      color: #ffc837;
-      font-size: 18px;
-      line-height: 24px;
-      font-weight: 700;
-      margin-bottom: 12px;
+	.gridItem {
+		h4 {
+			margin: 0;
+			color: #ffc837;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 700;
+			margin-bottom: 12px;
 
-      @variant md {
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: -1px;
-      }
-    }
+			@variant md {
+				font-size: 24px;
+				line-height: 28px;
+				letter-spacing: -1px;
+			}
+		}
 
-    p {
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 400;
+		p {
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: 400;
 
-      @variant md {
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 300;
-      }
-    }
+			@variant md {
+				font-size: 18px;
+				line-height: 24px;
+				font-weight: 300;
+			}
+		}
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+		p:last-child {
+			margin-bottom: 0;
+		}
 
-    > a {
-      font-size: 12px;
-    }
-  }
+		> a {
+			font-size: 12px;
+		}
+	}
 }

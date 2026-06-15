@@ -1,5 +1,5 @@
 export interface EventScheduleItem {
-  datetime: string;
-  title: string;
-  description?: string;
+	datetime: string;
+	title: string;
+	description?: string;
 }

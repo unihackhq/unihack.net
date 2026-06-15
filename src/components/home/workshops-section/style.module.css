@@ -1,50 +1,50 @@
-@import '#styles/home.css';
+@import "#styles/home.css";
 
 .section {
-  @apply home-section;
+	@apply home-section;
 
-  h2 {
-    background: linear-gradient(135deg, #aa076b, #e2034a);
-    background-clip: text;
-    color: transparent;
-  }
+	h2 {
+		background: linear-gradient(135deg, #aa076b, #e2034a);
+		background-clip: text;
+		color: transparent;
+	}
 
-  p {
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
-  }
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		color: white;
+	}
 }
 
 .workshopsGrid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
-  width: 100%;
-  margin-top: 48px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 24px;
+	width: 100%;
+	margin-top: 48px;
 
-  @variant md {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	@variant md {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-  @variant lg {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	@variant lg {
+		grid-template-columns: repeat(3, 1fr);
+	}
 
-  > a {
-    text-decoration: none;
-  }
+	> a {
+		text-decoration: none;
+	}
 }
 
 .sponsorLogo {
-  display: flex;
-  margin-bottom: 8px;
-  min-height: 30px;
+	display: flex;
+	margin-bottom: 8px;
+	min-height: 30px;
 
-  img {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    object-fit: contain;
-  }
+	img {
+		width: 100%;
+		max-width: 100px;
+		height: auto;
+		object-fit: contain;
+	}
 }

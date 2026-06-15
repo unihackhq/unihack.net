@@ -1,43 +1,43 @@
-@reference 'tailwindcss';
-@import './core.css';
+@reference "tailwindcss";
+@import "./core.css";
 
 @utility home-section {
-  @apply container py-8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	@apply container py-8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  h2 {
-    @apply text-3xl;
-    font-weight: 700;
-    margin: 0 0 24px;
-    letter-spacing: -1px;
-    width: 100%;
+	h2 {
+		@apply text-3xl;
+		font-weight: 700;
+		margin: 0 0 24px;
+		letter-spacing: -1px;
+		width: 100%;
 
-    @variant md {
-      @apply text-4xl;
-      text-align: center;
-      margin: 0 0 36px;
-    }
-  }
+		@variant md {
+			@apply text-4xl;
+			text-align: center;
+			margin: 0 0 36px;
+		}
+	}
 
-  p {
-    @apply text-base;
-    font-weight: 300;
-    margin-bottom: 8px;
-    color: #bdc8d7;
-  }
+	p {
+		@apply text-base;
+		font-weight: 300;
+		margin-bottom: 8px;
+		color: #bdc8d7;
+	}
 
-  & > .centerText {
-    margin: 0 auto;
+	& > .centerText {
+		margin: 0 auto;
 
-    @variant md {
-      text-align: center;
-      max-width: 600px;
-    }
-  }
+		@variant md {
+			text-align: center;
+			max-width: 600px;
+		}
+	}
 
-  @variant lg {
-    @apply py-16;
-  }
+	@variant lg {
+		@apply py-16;
+	}
 }
