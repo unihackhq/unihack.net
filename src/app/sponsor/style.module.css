@@ -1,23 +1,47 @@
 @reference '#styles/core.css';
 
-.background {
-}
-
-.numbers {
-  padding-top: 64px;
-  padding-bottom: 64px;
+.section {
+  padding-top: 128px;
+  padding-bottom: 128px;
 
   h2 {
     text-align: center;
     margin-bottom: 32px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -1px;
   }
 
   > div {
     @apply container;
+  }
+}
+
+.quote {
+  blockquote {
+    margin-bottom: 48px;
+  }
+
+  blockquote p {
+    @apply text-6xl;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: white;
+  }
+
+  a {
+    @apply text-xl;
+    color: var(--palette-blue);
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.numbers {
+  > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px 8px;
@@ -44,11 +68,11 @@
       display: block;
       font-size: 48px;
       font-weight: 900;
-      line-height: 60px;
+      line-height: 64px;
 
       @variant md {
         font-size: 72px;
-        line-height: 80px;
+        line-height: 88px;
       }
     }
   }
@@ -59,7 +83,6 @@
   background: #00084f;
 
   > div {
-    @apply container;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -108,73 +131,9 @@
   }
 }
 
-.why {
-  padding-top: 64px;
-  padding-bottom: 64px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-
-  h2 {
-    text-align: center;
-    margin-bottom: 32px;
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: -1px;
-  }
-
-  > div {
-    @apply container;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-
-    @variant sm {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @variant lg {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
-  .reason {
-    background-color: #0049d8;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 32px;
-    border-radius: 8px;
-
-    > div {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-bottom: 8px;
-
-      svg {
-        margin-right: 16px;
-        width: 16px;
-        height: 16px;
-      }
-
-      h3 {
-        font-weight: 600;
-        line-height: 24px;
-        font-size: 16px;
-      }
-    }
-
-    p {
-      margin: 0;
-      font-size: 14px;
-      line-height: 21px;
-      padding-left: 32px;
-      color: white;
-    }
-  }
-}
-
 .contact {
   position: relative;
   overflow: hidden;
-  padding: 64px 0;
   min-height: 300px;
 
   > div {
@@ -195,7 +154,8 @@
 
   &:before {
     content: '';
-    background: #001e78;
+    background: var(--palette-blue);
+    opacity: 0.4;
     filter: blur(100);
     height: 120px;
     position: absolute;
@@ -233,90 +193,115 @@
 
 .header {
   height: max(70vh, 400px);
-  text-align: center;
   position: relative;
-  display: flex;
-  align-items: center;
-  padding-top: 102px 0 36px;
-
-  &:before {
-    content: '';
-    background: linear-gradient(
-      180deg,
-      #00084f 0%,
-      #001e78 25%,
-      #0034a6 50%,
-      #0049d8 75%,
-      #005eff 100%
-    );
-    bottom: 0;
+  padding: 102px 0 0;
+  
+  .overlay {
+    position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: -999;
-    position: absolute;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
   }
 
-  &:after {
-    position: absolute;
+  &:before {
     content: '';
-    height: 1px;
-    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(0, var(--background), transparent);
+    position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
   }
 
-  > div {
+  .content {
     @apply container;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     height: 100%;
-  }
+    position: relative;
+    text-align: center;
+    z-index: 2;
 
-  h1 {
-    @apply text-4xl;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 0 0 8px;
-    color: white;
-
-    @variant lg {
-      @apply text-6xl;
-      letter-spacing: -4px;
-      margin: 0 0 16px;
-    }
-  }
-
-  p {
-    @apply text-2xl;
-    color: white;
-    font-weight: 300;
-    letter-spacing: -1px;
-
-    @variant lg {
+    h1 {
       @apply text-4xl;
-      letter-spacing: -2px;
-    }
-  }
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin: 0 0 8px;
+      color: white;
 
-  .floating {
-    position: absolute;
-    bottom: 32px;
-    left: 16px;
-    right: 16px;
-
-    a {
-      display: block;
-
-      @variant md {
-        display: inline-block;
+      @variant lg {
+        @apply text-6xl;
+        letter-spacing: -4px;
+        margin: 0 0 16px;
       }
     }
+
+    p {
+      @apply text-2xl;
+      color: white;
+      font-weight: 300;
+      letter-spacing: -1px;
+
+      @variant lg {
+        @apply text-4xl;
+        letter-spacing: -2px;
+      }
+    }
+    
+    p.date {
+      @apply text-xl;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      margin-top: 48px;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+    a:hover {
+      color: #001e78;
+    }
   }
 
-  a:hover {
-    color: #001e78;
+  .credit {
+    @apply container;
+
+    p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      padding: 8px 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+  }
+
+  
+}
+
+#sponsorGrid {
+  > .grid {
+    gap: 24px;
+  }
+  a.gridItem {
+    height: 72px;
+    flex: 0 1 calc(25% - 24px);
+    width: calc(25% - 24px);
+    border: 0;
   }
 }

@@ -12,6 +12,7 @@ import rushfaster from '@/assets/logos/rushfaster-w.png';
 import { Button } from '@/components/button';
 
 import styles from './style.module.css';
+import { SponsorGrid } from '@/components/sponsor-page/sponsor-grid';
 
 const cx = classNames.bind(styles);
 
@@ -25,23 +26,24 @@ export const HomeSponsorUsSection = () => {
           emerging developers, designers, thinkers and builders.
         </p>
       </div>
-      <div className={styles.sponsorGridWrapper}>
-        <p>Past sponsors include</p>
-        <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem}>
-            <Image src={logitech} alt="Logitech" />
-          </a>
-          <a className={styles.sponsorGridItem}>
-            <Image src={atlassian} alt="Atlassian" />
-          </a>
-          <a className={styles.sponsorGridItem}>
-            <Image src={elastic} alt="Elastic" />
-          </a>
-          <a className={styles.sponsorGridItem}>
-            <Image src={twilio} alt="Twilio" />
-          </a>
-        </div>
-      </div>
+      <SponsorGrid
+        prefix={
+          <p>Past sponsors include</p>
+        }
+        items={[{
+          src: logitech,
+          alt: "Logitech",
+        },{
+          src: atlassian,
+          alt: "Atlassian",
+        },{
+          src: elastic,
+          alt: "Elastic",
+        },{
+          src: twilio,
+          alt: "Twilio",
+        }]}
+      />
       <div className={styles.centerText}>
         <p>
           Want to help support and nurture the next generation of tech talent?

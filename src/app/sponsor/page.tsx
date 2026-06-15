@@ -1,112 +1,49 @@
+import classNames from 'classnames/bind';
 import styles from './style.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faBullhorn,
   faCalendar,
-  faCube,
-  faHandshake,
-  faMapLocationDot,
-  faPersonChalkboard,
-  faThumbsUp,
-  faUserGroup,
 } from '@fortawesome/free-solid-svg-icons';
+import logitech from '@/assets/logos/logitech-w.svg';
+import atlassian from '@/assets/logos/atlassian-w.svg';
+import twilio from '@/assets/logos/twilio-w.svg';
+import elastic from '@/assets/logos/elastic-w.svg';
+import monash from '@/assets/logos/monash-w.svg';
+import aws from '@/assets/logos/aws-w.svg';
+import xero from '@/assets/logos/xero-w.svg';
+import eu from '@/assets/logos/eu-logo-horiz.svg'
+import bg from './sponsor-unihack-bg.jpg';
+
 import { Button } from '@/components/button';
+import { SponsorGrid } from '@/components/sponsor-page/sponsor-grid';
+import Image from 'next/image';
+import { SponsorReasonsWhy } from '../../components/sponsor-page/reasons-why';
+
+const cx = classNames.bind(styles);
 
 export default function AboutPage() {
   return (
     <>
-      <div className={styles.background}></div>
-      <header className={styles.header}>
-        <div>
+      <header className={cx('header')}>
+        <div className={styles.overlay}>
+          <Image src={bg} alt="Students looking at stickers" />
+        </div>
+        <div className={cx('content')}>
           <h1>Sponsor UNIHACK 2027</h1>
           <p>Help us support the next generation of tech talent.</p>
-          <div className={styles.floating}>
-            <Button href="#" text="Read More" />
-          </div>
+          <p className={styles.date}>
+            <FontAwesomeIcon icon={faCalendar} />
+            March 12-14, 2027
+          </p>
+        </div>
+        <div className={cx('credit')}>
+          <p>
+            <strong>Image Credit:</strong> European Union/Melissa Hobbs
+          </p>
         </div>
       </header>
-      <section className={styles.event}>
-        <div>
-          <div className={styles.item}>
-            <FontAwesomeIcon icon={faCalendar} />
-            <p>
-              <span>Date</span>March 12-14, 2027
-            </p>
-          </div>
-          <div className={styles.item}>
-            <FontAwesomeIcon icon={faMapLocationDot} />
-            <p>
-              <span>Location</span>Australia and New Zealand
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className={styles.why}>
-        <h2>But why?</h2>
-        <div>
-          <div className={styles.reason}>
-            <div>
-              <FontAwesomeIcon icon={faUserGroup} />
-              <h3>Access Top Talent</h3>
-            </div>
-            <p>
-              Gain access and recruit from a pool of 1000+ high-quality,
-              AI-ready student developers from Australia's leading universities.
-            </p>
-          </div>
-          <div className={styles.reason}>
-            <div>
-              <FontAwesomeIcon icon={faHandshake} />
-              <h3>Mentorship &amp; Impact</h3>
-            </div>
-            <p>
-              Guide students through all sorts of challenges - techincal and
-              non-technical - by mentoring students during the weekend.
-            </p>
-          </div>
-          <div className={styles.reason}>
-            <div>
-              <FontAwesomeIcon icon={faCube} />
-              <h3>Product Integration</h3>
-            </div>
-            <p>
-              Introduce your platform or tools and see how the students
-              integrate them into their prototypes.
-            </p>
-          </div>
-          <div className={styles.reason}>
-            <div>
-              <FontAwesomeIcon icon={faPersonChalkboard} />
-              <h3>Direct Interaction</h3>
-            </div>
-            <p>
-              Demonstrate your company's expertise and share knowledge to
-              students by running workshops or panels.
-            </p>
-          </div>
-          <div className={styles.reason}>
-            <div>
-              <FontAwesomeIcon icon={faBullhorn} />
-              <h3>Increase Brand Visibility</h3>
-            </div>
-            <p>
-              Increase your brand's visibility to students through social media
-              channels, events, networking nights, and on-site activations.
-            </p>
-          </div>
-          <div className={styles.reason}>
-            <div>
-              <FontAwesomeIcon icon={faThumbsUp} />
-              <h3>Support the Next Generation</h3>
-            </div>
-            <p>
-              Associate your brand with identifying, uplifting, and nurturing
-              the next generation of Australian and New Zealand tech talent.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className={styles.numbers}>
+      
+      <section className={cx('section', 'numbers')}>
         <h2>2026 in numbers...</h2>
         <div>
           <div className={styles.stat}>
@@ -141,7 +78,62 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section className={styles.contact}>
+
+      <SponsorReasonsWhy />
+      
+      <section className={cx('section', 'past')}>
+      <h2>Current and previous supporters include...</h2>
+      <SponsorGrid
+        id={styles.sponsorGrid}
+        className={styles.grid}
+        gridItemClassName={styles.gridItem}
+        items={[{
+          src: atlassian,
+          alt: "Atlassian",
+        },
+        {
+          src: xero,
+          alt: "Xero",
+        },
+        {
+          src: elastic,
+          alt: "Elastic",
+        },{
+          src: twilio,
+          alt: "Twilio",
+        },
+        {
+          src: aws,
+          alt: "AWS",
+        },
+        {
+          src: logitech,
+          alt: "Logitech",
+        },
+        {
+          src: monash,
+          alt: "Monash University",
+        },
+        {
+          src: eu,
+          alt: "European Union",
+        }
+        ]}
+      />
+      </section>
+      <section className={cx('section', 'quote')}>
+        <div>
+        <blockquote>
+          <p>"The skills they displayed at UNIHACK 2026 are exactly what the industry needs, 
+            and I am confident they will have a significant impact on our work environment 
+            in the years to come."
+          </p>
+        </blockquote>
+        <p><a href="https://www.elastic.co/blog/unihack-2026">
+          Read how Elastic supported participants by providing mentorship and resources; and saw students push the boundaries of what their tech could do...</a></p>
+        </div>
+      </section>
+      <section className={cx('section', 'contact')}>
         <div>
           <p>
             Want to help support and nurture the next generation of tech talent?

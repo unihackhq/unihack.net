@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 export const LaunchHero = () => {
   return (
     <section className={styles.hero}>
+      <video src="/video/mosaic.webm" autoPlay loop muted />
       <div className={styles.container}>
         <div className={styles.contentBox}>
           <h2>

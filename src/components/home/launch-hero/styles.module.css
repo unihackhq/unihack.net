@@ -1,25 +1,13 @@
 @reference "#styles/core.css";
 
 .hero {
-  &:before {
-    content: '';
-    display: block;
+
+  video {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: conic-gradient(
-      from 60deg,
-      #fffff7 0deg,
-      #ffffa5 60deg,
-      #ff7a44 120deg,
-      #990708 180deg,
-      #00000f 240deg,
-      #005355 300deg,
-      #31e2b7 360deg
-    );
     z-index: -99;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &:after {
@@ -30,7 +18,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(0, var(--background), transparent);
+    background: linear-gradient(0, var(--background), rgba(1, 2, 14, 0.6));
     z-index: -98;
   }
 
@@ -77,6 +65,7 @@
       letter-spacing: 0;
       display: block;
       width: fit-content;
+      color: var(--palette-yellow);
 
       @variant md {
         margin: 0 auto;
@@ -90,6 +79,16 @@
       span {
         @apply text-6xl/16;
         letter-spacing: -2px;
+      }
+    }
+
+    @variant xl {
+      @apply text-5xl/24;
+      letter-spacing: -3px;
+
+      span {
+        @apply text-8xl/20;
+        letter-spacing: -3px;
       }
     }
   }

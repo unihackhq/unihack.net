@@ -3,6 +3,10 @@
 :root {
   --background: #01020e;
   --foreground: #ffffff;
+  --palette-yellow: #FFD23F;
+  --palette-blue: #3FD2FF;
+  --palette-pink: #FF3F8E;
+  --palette-purple: #7762F6;
 }
 
 body {

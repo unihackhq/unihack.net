@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './style.module.css';
 
-import bg from '@/assets/photos/about-unihack-bg.jpg';
+import bg from './about-unihack-bg.jpg';
 import { PageContent } from '@/components/page-content';
 
 export default function AboutPage() {
