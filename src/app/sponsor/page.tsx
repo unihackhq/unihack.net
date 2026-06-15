@@ -18,6 +18,7 @@ import { Button } from '@/components/button';
 import { SponsorGrid } from '@/components/sponsor-page/sponsor-grid';
 import Image from 'next/image';
 import { SponsorReasonsWhy } from '../../components/sponsor-page/reasons-why';
+import { SponsorWelcomeSection } from '@/components/sponsor-page/welcome-section';
 
 const cx = classNames.bind(styles);
 
@@ -42,6 +43,8 @@ export default function AboutPage() {
           </p>
         </div>
       </header>
+
+      <SponsorWelcomeSection />
       
       <section className={cx('section', 'numbers')}>
         <h2>2026 in numbers...</h2>
