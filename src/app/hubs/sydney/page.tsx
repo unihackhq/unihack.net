@@ -27,19 +27,8 @@ export default function Home() {
             logo: <Image alt="UNSW WIT Logo" src={witLogo} />,
           },
         ]}
-        host={[
-          {
-            name: 'UNSW DevSoc',
-            link: 'https://devsoc.app',
-            logo: <Image alt="UNSW DevSoc Logo" src={devsocLogo} />,
-          },
-          {
-            name: 'UNSW WIT',
-            link: 'https://unswwit.com',
-            logo: <Image alt="UNSW WIT Logo" src={witLogo} />,
-          },
-        ]}
         hubName="Sydney Hub"
+        location="UNSW"
       />
       <HubStepsSection
         signupLinks={[

@@ -23,16 +23,8 @@ export default function Home() {
             ),
           },
         ]}
-        host={[
-          {
-            name: 'Monash Association of Coding',
-            link: 'https:/monashcoding.com',
-            logo: (
-              <Image alt="Monash Association of Coding Logo" src={macLogo} />
-            ),
-          },
-        ]}
         hubName="Melbourne Hub"
+        location="Monash University"
       />
       <HubStepsSection
         signupLinks={[

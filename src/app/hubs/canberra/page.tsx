@@ -21,14 +21,8 @@ export default function Home() {
             logo: <Image alt="ANU CSSA Logo" src={cssaLogo} />,
           },
         ]}
-        host={[
-          {
-            name: 'ANU CSSA',
-            link: 'https://cssa.club',
-            logo: <Image alt="ANU CSSA Logo" src={cssaLogo} />,
-          },
-        ]}
         hubName="Canberra Hub"
+        location="ANU"
       />
       <HubStepsSection
         signupLinks={[

@@ -6,7 +6,6 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import styles from './styles.module.css'
 
 interface Context {
   isOpen: boolean
