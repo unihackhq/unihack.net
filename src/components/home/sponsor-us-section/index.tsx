@@ -27,22 +27,25 @@ export const HomeSponsorUsSection = () => {
         </p>
       </div>
       <SponsorGrid
-        prefix={
-          <p>Past sponsors include</p>
-        }
-        items={[{
-          src: logitech,
-          alt: "Logitech",
-        },{
-          src: atlassian,
-          alt: "Atlassian",
-        },{
-          src: elastic,
-          alt: "Elastic",
-        },{
-          src: twilio,
-          alt: "Twilio",
-        }]}
+        prefix={<p>Past sponsors include</p>}
+        items={[
+          {
+            src: logitech,
+            alt: 'Logitech',
+          },
+          {
+            src: atlassian,
+            alt: 'Atlassian',
+          },
+          {
+            src: elastic,
+            alt: 'Elastic',
+          },
+          {
+            src: twilio,
+            alt: 'Twilio',
+          },
+        ]}
       />
       <div className={styles.centerText}>
         <p>

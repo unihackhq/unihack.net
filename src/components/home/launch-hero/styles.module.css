@@ -1,7 +1,6 @@
 @reference "#styles/core.css";
 
 .hero {
-
   video {
     position: absolute;
     z-index: -99;
