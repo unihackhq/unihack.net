@@ -1,22 +1,22 @@
 @import "#styles/sponsor.css";
 
 .section {
-	@apply sponsor-section;
-	border-bottom: 1px solid #323232;
+  @apply sponsor-section;
+  border-bottom: 1px solid #323232;
 
-	> div {
-		max-width: 600px;
-	}
+  > div {
+    max-width: 600px;
+  }
 
-	p {
-		color: white;
-		font-size: 18px;
-		line-height: 24px;
-		font-weight: 300;
-		margin-bottom: 32px;
-	}
+  p {
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
 
-	p:last-child {
-		margin-bottom: 0;
-	}
+  p:last-child {
+    margin-bottom: 0;
+  }
 }

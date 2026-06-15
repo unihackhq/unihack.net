@@ -1,37 +1,37 @@
 @reference "tailwindcss";
 
 .entry {
-	@apply py-6 px-2;
-	border-bottom: 1px solid var(--color-sky-950);
-	border-top: 1px solid var(--color-sky-950);
-	margin-top: -1px;
+  @apply py-6 px-2;
+  border-bottom: 1px solid var(--color-sky-950);
+  border-top: 1px solid var(--color-sky-950);
+  margin-top: -1px;
 
-	button {
-		@apply text-xl/8;
-		min-height: 32px;
-		font-weight: 500;
-		display: flex;
-		text-align: left;
-		flex-direction: row;
-		cursor: pointer;
-		position: relative;
-		align-items: top;
-		width: 100%;
+  button {
+    @apply text-xl/8;
+    min-height: 32px;
+    font-weight: 500;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+    align-items: top;
+    width: 100%;
 
-		&:hover {
-			color: var(--color-sky-400);
-		}
+    &:hover {
+      color: var(--color-sky-400);
+    }
 
-		.icon {
-			margin-top: 8px;
-			margin-right: 8px;
-			width: 16px;
-			height: 16px;
-			order: -1;
-		}
-	}
+    .icon {
+      margin-top: 8px;
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      order: -1;
+    }
+  }
 
-	.answer {
-		margin-top: 16px;
-	}
+  .answer {
+    margin-top: 16px;
+  }
 }

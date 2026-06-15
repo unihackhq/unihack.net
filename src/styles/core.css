@@ -1,14 +1,14 @@
 @reference "tailwindcss";
 
 @utility container {
-	@apply px-6;
-	margin: 0 auto;
+  @apply px-6;
+  margin: 0 auto;
 
-	@variant lg {
-		@apply px-0;
-	}
+  @variant lg {
+    @apply px-0;
+  }
 
-	@variant xl {
-		width: 1200px;
-	}
+  @variant xl {
+    width: 1200px;
+  }
 }

@@ -1,75 +1,75 @@
 @reference "#styles/core.css";
 
 .background {
-	background: linear-gradient(
-		90deg,
-		rgba(2, 0, 36, 1) 0%,
-		rgba(9, 9, 121, 1) 35%,
-		rgba(0, 212, 255, 1) 100%
-	);
-	opacity: 50%;
-	height: 200px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: -999;
-	filter: blur(100);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  opacity: 50%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  filter: blur(100);
 }
 
 .container {
-	@apply container;
-	margin-top: 160px;
-	margin-bottom: 64px;
-	font-family: var(--font-sora);
-	position: relative;
+  @apply container;
+  margin-top: 160px;
+  margin-bottom: 64px;
+  font-family: var(--font-sora);
+  position: relative;
 
-	@variant lg {
-		padding-left: 360px;
-	}
+  @variant lg {
+    padding-left: 360px;
+  }
 
-	@variant xl {
-		padding-left: 500px;
-	}
+  @variant xl {
+    padding-left: 500px;
+  }
 
-	p {
-		margin-bottom: 18px;
-		font-weight: 300;
-	}
+  p {
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
 
-	a {
-		color: var(--color-sky-400);
-		font-weight: 500;
-		text-decoration: underline;
+  a {
+    color: var(--color-sky-400);
+    font-weight: 500;
+    text-decoration: underline;
 
-		&:hover {
-			color: var(--color-sky-600);
-		}
-	}
+    &:hover {
+      color: var(--color-sky-600);
+    }
+  }
 
-	h1 {
-		font-size: 48px;
-		line-height: 48px;
-		font-weight: 600;
-		letter-spacing: -3px;
-		margin-bottom: 36px;
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    margin-bottom: 36px;
 
-		@variant xl {
-			font-size: 64px;
-			line-height: 64px;
-			letter-spacing: -5px;
-		}
+    @variant xl {
+      font-size: 64px;
+      line-height: 64px;
+      letter-spacing: -5px;
+    }
 
-		@variant lg {
-			position: absolute;
-			left: 0;
-			width: 300px;
-			border-left: 8px solid white;
-			padding-left: 32px;
-		}
-	}
+    @variant lg {
+      position: absolute;
+      left: 0;
+      width: 300px;
+      border-left: 8px solid white;
+      padding-left: 32px;
+    }
+  }
 
-	h1 + h2 {
-		margin-top: 0;
-	}
+  h1 + h2 {
+    margin-top: 0;
+  }
 }

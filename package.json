@@ -1,49 +1,49 @@
 {
-	"name": "unihack-website",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "biome lint",
-		"format": "biome format --write ."
-	},
-	"engines": {
-		"node": "22.x"
-	},
-	"imports": {
-		"#styles/*.css": "./src/styles/*.css"
-	},
-	"dependencies": {
-		"@bprogress/next": "^3.2.12",
-		"@date-fns/tz": "^1.4.1",
-		"@fortawesome/fontawesome-svg-core": "^7.2.0",
-		"@fortawesome/free-brands-svg-icons": "^7.2.0",
-		"@fortawesome/free-solid-svg-icons": "^7.2.0",
-		"@fortawesome/react-fontawesome": "^3.3.1",
-		"@mdx-js/loader": "^3.1.1",
-		"@mdx-js/react": "^3.1.1",
-		"@next/mdx": "^16.2.6",
-		"@types/mdx": "^2.0.13",
-		"@uidotdev/usehooks": "^2.4.1",
-		"classnames": "^2.5.1",
-		"date-fns": "^4.2.1",
-		"next": "16.2.6",
-		"react": "19.2.6",
-		"react-dom": "19.2.6",
-		"react-twitch-embed": "^3.0.2",
-		"remark-frontmatter": "^5.0.0",
-		"remark-mdx-frontmatter": "^5.2.0",
-		"tailwindcss": "^4.3.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.5.0",
-		"@tailwindcss/postcss": "^4.3.0",
-		"@types/node": "^22.19.19",
-		"@types/react": "^19.2.15",
-		"@types/react-dom": "^19.2.3",
-		"typescript": "^5.9.3"
-	},
-	"packageManager": "yarn@4.9.2"
+  "name": "unihack-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome lint",
+    "format": "biome format --write ."
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "imports": {
+    "#styles/*.css": "./src/styles/*.css"
+  },
+  "dependencies": {
+    "@bprogress/next": "^3.2.12",
+    "@date-fns/tz": "^1.4.1",
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.2.6",
+    "@types/mdx": "^2.0.13",
+    "@uidotdev/usehooks": "^2.4.1",
+    "classnames": "^2.5.1",
+    "date-fns": "^4.2.1",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-twitch-embed": "^3.0.2",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^5.2.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.0",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^22.19.19",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "yarn@4.9.2"
 }

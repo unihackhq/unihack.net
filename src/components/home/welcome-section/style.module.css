@@ -1,55 +1,55 @@
 @import "#styles/home.css";
 
 .section {
-	@apply home-section;
-	h2 {
-		max-width: 640px;
-	}
+  @apply home-section;
+  h2 {
+    max-width: 640px;
+  }
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	gap: 32px;
-	margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  margin-top: 48px;
 
-	@variant md {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  @variant md {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-	.gridItem {
-		border: 2px solid var(--palette-yellow);
-		padding: 24px;
-		border-radius: 12px;
+  .gridItem {
+    border: 2px solid var(--palette-yellow);
+    padding: 24px;
+    border-radius: 12px;
 
-		h3 {
-			@apply text-sm;
-			font-weight: 700;
-			text-transform: uppercase;
-			margin-bottom: 12px;
-			letter-spacing: 2px;
-			color: var(--palette-yellow);
-		}
+    h3 {
+      @apply text-sm;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      color: var(--palette-yellow);
+    }
 
-		p {
-			@apply text-sm;
-			font-weight: 300;
-			margin-bottom: 16px;
-		}
+    p {
+      @apply text-sm;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
 
-		p:last-child {
-			margin-bottom: 0;
-		}
+    p:last-child {
+      margin-bottom: 0;
+    }
 
-		> a {
-			font-size: 12px;
-			color: var(--palette-yellow);
-			border-color: var(--palette-yellow);
+    > a {
+      font-size: 12px;
+      color: var(--palette-yellow);
+      border-color: var(--palette-yellow);
 
-			&:hover {
-				background: var(--palette-yellow);
-				color: var(--background);
-			}
-		}
-	}
+      &:hover {
+        background: var(--palette-yellow);
+        color: var(--background);
+      }
+    }
+  }
 }

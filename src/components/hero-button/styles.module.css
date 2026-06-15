@@ -1,23 +1,23 @@
 a.button {
-	display: flex;
-	border: 1px solid rgba(255, 255, 255, 0.7);
-	padding: 16px 24px;
-	margin: 0 0 12px;
-	border-radius: 32px;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 700;
-	text-align: center;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 16px 24px;
+  margin: 0 0 12px;
+  border-radius: 32px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
 
-	svg {
-		align-self: center;
-		margin-left: auto;
-		opacity: 0.3;
-	}
+  svg {
+    align-self: center;
+    margin-left: auto;
+    opacity: 0.3;
+  }
 }
 
 a.button:hover {
-	svg {
-		opacity: 1;
-	}
+  svg {
+    opacity: 1;
+  }
 }

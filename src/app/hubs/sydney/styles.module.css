@@ -1,21 +1,21 @@
 @reference "tailwindcss";
 
 .home_hero {
-	font-family: var(--font-sora);
+  font-family: var(--font-sora);
 
-	@variant md {
-		background-size: 100% 800px;
-	}
+  @variant md {
+    background-size: 100% 800px;
+  }
 
-	@variant lg {
-		background-size: 100% 1000px;
-	}
+  @variant lg {
+    background-size: 100% 1000px;
+  }
 }
 
 .home_section_faqs {
-	h2 {
-		background: linear-gradient(90deg, #e1ea3b, #e210ea);
-		background-clip: text;
-		color: transparent;
-	}
+  h2 {
+    background: linear-gradient(90deg, #e1ea3b, #e210ea);
+    background-clip: text;
+    color: transparent;
+  }
 }

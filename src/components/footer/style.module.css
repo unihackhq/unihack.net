@@ -1,92 +1,92 @@
 @reference "#styles/core.css";
 
 .footer {
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	color: white;
-	font-size: 12px;
-	padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 12px;
+  padding: 60px 0;
 }
 
 .container {
-	@apply container;
+  @apply container;
 
-	.grid {
-		margin-bottom: 36px;
-		@variant xl {
-			display: flex;
-			justify-content: space-between;
-		}
-	}
+  .grid {
+    margin-bottom: 36px;
+    @variant xl {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
-	.acknowledgement {
-		margin-right: 64px;
-		margin-bottom: 64px;
+  .acknowledgement {
+    margin-right: 64px;
+    margin-bottom: 64px;
 
-		@variant xl {
-			width: 500px;
-		}
+    @variant xl {
+      width: 500px;
+    }
 
-		.logo {
-			position: relative;
-			display: flex;
-			margin-bottom: 24px;
+    .logo {
+      position: relative;
+      display: flex;
+      margin-bottom: 24px;
 
-			img {
-				height: 36px;
-				width: auto;
-			}
+      img {
+        height: 36px;
+        width: auto;
+      }
 
-			span {
-				font-family: var(--font-sora);
-				font-size: 24px;
-				font-weight: 700;
-				line-height: 36px;
-				margin-left: 8px;
-				letter-spacing: -1px;
-				flex: 1;
-			}
-		}
-	}
+      span {
+        font-family: var(--font-sora);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-left: 8px;
+        letter-spacing: -1px;
+        flex: 1;
+      }
+    }
+  }
 
-	.links {
-		display: grid;
-		grid-gap: 64px;
+  .links {
+    display: grid;
+    grid-gap: 64px;
 
-		@variant md {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
+    @variant md {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
-		h6 {
-			@apply text-sm mb-2;
-			font-weight: 700;
-			font-family: var(--font-sora);
-			text-transform: uppercase;
-		}
+    h6 {
+      @apply text-sm mb-2;
+      font-weight: 700;
+      font-family: var(--font-sora);
+      text-transform: uppercase;
+    }
 
-		li {
-			@apply text-sm m-0;
-			font-family: var(--font-sora);
-		}
+    li {
+      @apply text-sm m-0;
+      font-family: var(--font-sora);
+    }
 
-		a {
-			color: var(--color-gray-500);
-			padding: 4px 0;
-			display: block;
+    a {
+      color: var(--color-gray-500);
+      padding: 4px 0;
+      display: block;
 
-			&:hover {
-				color: white;
-			}
-		}
-	}
+      &:hover {
+        color: white;
+      }
+    }
+  }
 
-	.copyright p {
-		margin: 0;
-		font-size: 12px;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
+  .copyright p {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
-	img {
-		margin: 0 auto 12px;
-	}
+  img {
+    margin: 0 auto 12px;
+  }
 }
