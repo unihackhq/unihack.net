@@ -1,18 +1,18 @@
-import styles from './style.module.css';
-import Image, { StaticImageData } from 'next/image';
-import elastic from '@/assets/logos/elastic-w.svg';
-import quantium from '@/assets/logos/quantium-w.svg';
-import { GenericCard } from '@/components/generic-card';
-import classNames from 'classnames/bind';
+import classNames from 'classnames/bind'
+import Image, { type StaticImageData } from 'next/image'
+import elastic from '@/assets/logos/elastic-w.svg'
+import quantium from '@/assets/logos/quantium-w.svg'
+import { GenericCard } from '@/components/generic-card'
+import styles from './style.module.css'
 
-const cx = classNames.bind(styles);
+const cx = classNames.bind(styles)
 
 interface Workshop {
-  title: string;
-  dateTime: string;
-  link: string;
-  sponsorLogo: StaticImageData;
-  sponsorName: string;
+  title: string
+  dateTime: string
+  link: string
+  sponsorLogo: StaticImageData
+  sponsorName: string
 }
 
 const workshops: Workshop[] = [
@@ -31,7 +31,8 @@ const workshops: Workshop[] = [
     sponsorName: 'Elastic',
   },
   {
-    title: 'Building with AI - How Quantium Approaches Complex Problems Using Generative AI',
+    title:
+      'Building with AI - How Quantium Approaches Complex Problems Using Generative AI',
     dateTime: '10 March, 4:00 PM - 5:00 PM AEDT',
     link: 'https://events.humanitix.com/unihack-x-quantium-building-with-ai-how-quantium-approaches-complex-problems-using-generative-ai',
     sponsorLogo: quantium,
@@ -51,7 +52,7 @@ const workshops: Workshop[] = [
     sponsorLogo: elastic,
     sponsorName: 'Elastic',
   },
-];
+]
 
 export const WorkshopsSection = () => {
   return (
@@ -66,19 +67,18 @@ export const WorkshopsSection = () => {
       <div className={styles.workshopsGrid}>
         {workshops.map((workshop, index) => (
           <GenericCard
+            actions={[{ href: workshop.link, text: 'Learn More' }]}
+            header={
+              <div className={cx('sponsorLogo')}>
+                <Image alt={workshop.sponsorName} src={workshop.sponsorLogo} />
+              </div>
+            }
             key={index}
             primaryColor="#e2034a"
             title={workshop.title}
-            subtext={workshop.dateTime}
-            header={
-              <div className={cx('sponsorLogo')}>
-                <Image src={workshop.sponsorLogo} alt={workshop.sponsorName} />
-              </div>
-            }
-            actions={[{ href: workshop.link, text: 'Learn More' }]}
           />
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

@@ -1,32 +1,50 @@
-@import '../../../styles/home.css';
+@reference "#styles/home.css";
 
 .section {
   @apply home-section;
 
   h2 {
-    background: linear-gradient(90deg, #3bdeea, #7dea10);
-    background-clip: text;
-    color: transparent;
+    color: white;
   }
 
   .centerText:not(:last-child) {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
+    text-align: left;
+
+    @variant md {
+      text-align: center;
+    }
   }
 
   a {
-    margin: 0 8px;
+    margin: 8px 0;
+    display: block;
+    text-align: center;
+
+    @variant md {
+      display: inline-block;
+      margin: 0 8px;
+    }
   }
 
   a:hover {
-    border: 1px solid transparent;
-    background: linear-gradient(90deg, #3bdeea, #7dea10);
+    border: 1px solid #0c00a7;
+    background: linear-gradient(
+      315deg,
+      #0c00a7 0%,
+      #0009c2 20%,
+      #0257e2 40%,
+      #2095fc 60%,
+      #56c2ff 80%,
+      #a3defa 100%
+    );
+    color: white;
   }
 }
 
 .sponsorGridWrapper {
   margin-bottom: 48px;
   width: 100%;
-  max-width: 800px;
 
   h3 {
     text-align: center;
@@ -37,16 +55,20 @@
   }
 
   p {
-    text-align: center;
     margin-bottom: 16px;
+    @variant md {
+      text-align: center;
+    }
   }
 
   .sponsorGrid {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
     justify-content: center;
     width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
   }
 
   a.sponsorGridItem {
@@ -63,16 +85,16 @@
 
     @variant sm {
       flex: 0 1 calc(50% - 16px);
-      width: 250px;
+      width: calc(50% - 16px);
     }
 
     @variant md {
-      flex: 0 1 calc(33.333% - 16px);
-      width: 250px;
+      flex: 0 1 calc(24% - 16px);
+      width: calc(24% - 16px);
     }
 
     &:hover {
-      border-color: #7dea10;
+      border-color: #2095fc;
       background: transparent;
     }
 

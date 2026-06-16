@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #01020e;
+  --foreground: #ffffff;
+  --palette-yellow: #ffd23f;
+  --palette-blue: #3fd2ff;
+  --palette-pink: #ff3f8e;
+  --palette-purple: #7762f6;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sora);
+}
+
+strong {
+  font-weight: 600;
+}
+
+p,
+li {
+  @apply text-base/6 mb-4;
+  color: var(--color-gray-400);
+}

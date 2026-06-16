@@ -1,0 +1,88 @@
+@import "#styles/core.css";
+
+.navShell {
+  @apply transition-transform duration-300;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+  &[data-dir="down"][data-scrolled="true"] {
+    translate: 0 -100%;
+  }
+}
+
+.header {
+  @apply backdrop-blur-lg transition-transform duration-300;
+  margin: 30px 16px 0;
+  padding: 0 32px;
+  height: 72px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 64px;
+  will-change: transform;
+
+  nav {
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  margin: 0 36px;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+
+  span {
+    font-family: var(--font-sora);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 8px;
+    letter-spacing: -1px;
+  }
+}
+
+.navLeft {
+  justify-content: flex-start;
+  display: flex;
+  flex: 1;
+}
+
+.navRight {
+  justify-content: flex-end;
+  display: flex;
+  flex: 1;
+}
+
+.navLinks {
+  display: none;
+  gap: 36px;
+
+  @variant md {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+    margin: 0;
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+      transition: color 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

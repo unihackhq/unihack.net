@@ -1,10 +1,10 @@
-import styles from './styles.module.css';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from './styles.module.css'
 
 interface Props {
-  href: string;
-  text: string;
+  href: string
+  text: string
 }
 
 export const HeroButton: React.FC<Props> = ({ href, text }) => {
@@ -13,5 +13,5 @@ export const HeroButton: React.FC<Props> = ({ href, text }) => {
       {text}
       <FontAwesomeIcon icon={faArrowRight} />
     </a>
-  );
-};
+  )
+}

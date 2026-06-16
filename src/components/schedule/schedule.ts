@@ -1,4 +1,4 @@
-import { EventScheduleItem } from './types';
+import type { EventScheduleItem } from './types'
 
 export const schedule: EventScheduleItem[] = [
   {
@@ -68,4 +68,4 @@ export const schedule: EventScheduleItem[] = [
     datetime: '2026-03-15T18:00:00+11:00',
     title: 'Goodbye (for now)!',
   },
-];
+]

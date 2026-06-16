@@ -1,28 +1,28 @@
-import { Header } from '@/components/header';
-import styles from './styles.module.css';
-import { HomeEventSponsorsSection } from '@/components/home/sponsor-us-section';
-import { DiscordBanner } from '@/components/discord-banner';
-import { HubsHero } from '@/components/hubs/hero';
-import Image from 'next/image';
-import cssaLogo from '@/assets/logos/cssa-logo.svg';
-import { HubStepsSection } from '@/components/hubs/steps';
-import { HubEventSchedule } from '@/components/hubs/schedule';
-import { EventLogo } from '@/components/logo';
+import Image from 'next/image'
+import cssaLogo from '@/assets/logos/cssa-logo.svg'
+import { DiscordBanner } from '@/components/discord-banner'
+import { Header } from '@/components/header'
+import { HomeEventSponsorsSection } from '@/components/home/sponsor-us-section'
+import { HubsHero } from '@/components/hubs/hero'
+import { HubEventSchedule } from '@/components/hubs/schedule'
+import { HubStepsSection } from '@/components/hubs/steps'
+import { EventLogo } from '@/components/logo'
+import styles from './styles.module.css'
 
 export default function Home() {
   return (
     <div className={styles.home_hero}>
       <Header logo={<EventLogo />} />
       <HubsHero
-        hubName="Canberra Hub"
-        location="Australian National University"
         host={[
           {
             name: 'ANU CSSA',
             link: 'https://cssa.club',
-            logo: <Image src={cssaLogo} alt="ANU CSSA Logo" />,
+            logo: <Image alt="ANU CSSA Logo" src={cssaLogo} />,
           },
         ]}
+        hubName="Canberra Hub"
+        location="ANU"
       />
       <HubStepsSection
         signupLinks={[
@@ -56,5 +56,5 @@ export default function Home() {
       <DiscordBanner />
       <HomeEventSponsorsSection />
     </div>
-  );
+  )
 }

@@ -1,20 +1,19 @@
-import Image from 'next/image';
-import classNames from 'classnames/bind';
-import logitech from '@/assets/logos/logitech-w.svg';
-import datastax from '@/assets/logos/datastax-w.svg';
-import atlassian from '@/assets/logos/atlassian-w.svg';
-import twilio from '@/assets/logos/twilio-w.svg';
-import elastic from '@/assets/logos/elastic-w.svg';
-import quantium from '@/assets/logos/quantium-w.svg';
-import monash from '@/assets/logos/monash-w.svg';
-import euLogo from '@/assets/logos/eu-logo-horiz.svg';
-import rushfaster from '@/assets/logos/rushfaster-w.png';
+import classNames from 'classnames/bind'
+import Image from 'next/image'
+import atlassian from '@/assets/logos/atlassian-w.svg'
+import elastic from '@/assets/logos/elastic-w.svg'
+import euLogo from '@/assets/logos/eu-logo-horiz.svg'
+import logitech from '@/assets/logos/logitech-w.svg'
+import monash from '@/assets/logos/monash-w.svg'
+import quantium from '@/assets/logos/quantium-w.svg'
+import rushfaster from '@/assets/logos/rushfaster-w.png'
+import twilio from '@/assets/logos/twilio-w.svg'
 
-import { Button } from '@/components/button';
+import { Button } from '@/components/button'
+import { SponsorGrid } from '@/components/sponsor-page/sponsor-grid'
+import styles from './style.module.css'
 
-import styles from './style.module.css';
-
-const cx = classNames.bind(styles);
+const cx = classNames.bind(styles)
 
 export const HomeSponsorUsSection = () => {
   return (
@@ -26,37 +25,38 @@ export const HomeSponsorUsSection = () => {
           emerging developers, designers, thinkers and builders.
         </p>
       </div>
-      <div className={styles.sponsorGridWrapper}>
-        <p>Past sponsors include</p>
-        <div className={styles.sponsorGrid}>
-          <div className={styles.sponsorGridItem}>
-            <Image src={logitech} alt="Logitech" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={atlassian} alt="Atlassian" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={datastax} alt="Datastax" />
-          </div>
-          <div className={styles.sponsorGridItem}>
-            <Image src={twilio} alt="Twilio" />
-          </div>
-        </div>
-      </div>
+      <SponsorGrid
+        items={[
+          {
+            src: logitech,
+            alt: 'Logitech',
+          },
+          {
+            src: atlassian,
+            alt: 'Atlassian',
+          },
+          {
+            src: elastic,
+            alt: 'Elastic',
+          },
+          {
+            src: twilio,
+            alt: 'Twilio',
+          },
+        ]}
+        prefix={<p>Past sponsors include</p>}
+      />
       <div className={styles.centerText}>
         <p>
           Want to help support and nurture the next generation of tech talent?
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
-        <Button
-          href="./files/unihack-2026-sponsorship-prospectus.pdf"
-          text="Sponsorship Prospectus"
-        />
+        <Button href="/sponsor" text="Sponsorship Prospectus" />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />
       </div>
     </section>
-  );
-};
+  )
+}
 
 export const HomeEventSponsorsSection = () => {
   return (
@@ -71,36 +71,54 @@ export const HomeEventSponsorsSection = () => {
       <div className={cx('sponsorGridWrapper', 'tierDiamond')}>
         <h3>Diamond Sponsor</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="https://www.eeas.europa.eu/delegations/australia_en">
-            <Image src={euLogo} alt="European Union" />
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.eeas.europa.eu/delegations/australia_en"
+          >
+            <Image alt="European Union" src={euLogo} />
           </a>
         </div>
       </div>
       <div className={cx('sponsorGridWrapper', 'tierGold')}>
         <h3>Gold Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="https://www.atlassian.com/company/careers/earlycareers">
-            <Image src={atlassian} alt="Atlassian" />
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.atlassian.com/company/careers/earlycareers"
+          >
+            <Image alt="Atlassian" src={atlassian} />
           </a>
           <a className={styles.sponsorGridItem} href="https://www.elastic.co/">
-            <Image src={elastic} alt="Elastic" />
+            <Image alt="Elastic" src={elastic} />
           </a>
-          <a className={styles.sponsorGridItem} href="https://quantium.com/graduate-academy/">
-            <Image src={quantium} alt="Quantium" />
+          <a
+            className={styles.sponsorGridItem}
+            href="https://quantium.com/graduate-academy/"
+          >
+            <Image alt="Quantium" src={quantium} />
           </a>
-          <a className={styles.sponsorGridItem} href="https://www.monash.edu/it">
-            <Image src={monash} alt="Monash University" />
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.monash.edu/it"
+          >
+            <Image alt="Monash University" src={monash} />
           </a>
         </div>
       </div>
       <div className={cx('sponsorGridWrapper', 'tierBronze')}>
         <h3>Bronze Sponsors</h3>
         <div className={styles.sponsorGrid}>
-          <a className={styles.sponsorGridItem} href="https://www.twilio.com/en-us">
-            <Image src={twilio} alt="Twilio" />
+          <a
+            className={styles.sponsorGridItem}
+            href="https://www.twilio.com/en-us"
+          >
+            <Image alt="Twilio" src={twilio} />
           </a>
-          <a className={styles.sponsorGridItem} href="https://rushfaster.com.au/pages/student">
-            <Image src={rushfaster} alt="Rushfaster" />
+          <a
+            className={styles.sponsorGridItem}
+            href="https://rushfaster.com.au/pages/student"
+          >
+            <Image alt="Rushfaster" src={rushfaster} />
           </a>
         </div>
       </div>
@@ -110,11 +128,11 @@ export const HomeEventSponsorsSection = () => {
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
         <Button
-          href="./files/unihack-2026-sponsorship-prospectus.pdf"
+          href="./files/unihack-2027-sponsorship-prospectus.pdf"
           text="Sponsorship Prospectus"
         />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />
       </div>
     </section>
-  );
-};
+  )
+}

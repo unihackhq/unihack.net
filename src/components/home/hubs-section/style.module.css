@@ -1,5 +1,4 @@
-@import '../../../styles/home.css';
-@reference "tailwindcss";
+@import "#styles/home.css";
 
 .section {
   @apply home-section;

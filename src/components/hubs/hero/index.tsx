@@ -1,9 +1,9 @@
-import styles from './style.module.css';
+import styles from './style.module.css'
 
 interface HubsHeroProps {
-  hubName: string;
-  location: string;
-  host: { name: string; link: string; logo: React.ReactNode }[];
+  hubName: string
+  location: string
+  host: { name: string; link: string; logo: React.ReactNode }[]
 }
 
 export const HubsHero = ({ hubName, location, host }: HubsHeroProps) => {
@@ -17,10 +17,10 @@ export const HubsHero = ({ hubName, location, host }: HubsHeroProps) => {
         <div className={styles.hub_host_wrap}>
           {host.map((h, index) => (
             <a
-              key={index}
-              href={h.link}
-              className={styles.logo}
               aria-label={h.name}
+              className={styles.logo}
+              href={h.link}
+              key={index}
             >
               {h.logo}
             </a>
@@ -28,5 +28,5 @@ export const HubsHero = ({ hubName, location, host }: HubsHeroProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

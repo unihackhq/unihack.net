@@ -1,22 +1,22 @@
-'use client';
-import { Button } from '@/components/button';
-import styles from './style.module.css';
+'use client'
+import { Button } from '@/components/button'
+import styles from './style.module.css'
 
 interface HubEventScheduleProps {
   friday: {
-    subtext?: string;
-    extraText?: string[];
-    time: string;
-    location: string[];
-    locationMapLink?: string;
-    signupLink?: string;
-  };
+    subtext?: string
+    extraText?: string[]
+    time: string
+    location: string[]
+    locationMapLink?: string
+    signupLink?: string
+  }
   weekend: {
-    time: string[];
-    location: string[];
-    locationMapLink?: string;
-    signupLink?: string;
-  };
+    time: string[]
+    location: string[]
+    locationMapLink?: string
+    signupLink?: string
+  }
 }
 
 export const HubEventSchedule = ({
@@ -38,8 +38,9 @@ export const HubEventSchedule = ({
             <p>
               {friday.subtext || 'Watch the opening ceremony and form teams.'}
             </p>
-            {friday.extraText &&
-              friday.extraText.map((text, index) => <p key={index}>{text}</p>)}
+            {friday.extraText?.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
           </div>
           <div className={styles.time}>
             <h4>Time</h4>
@@ -93,5 +94,5 @@ export const HubEventSchedule = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

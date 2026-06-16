@@ -1,7 +1,7 @@
-@import '../../../styles/core.css';
+@import "#styles/core.css";
 
 .hub_steps_section {
-  @apply layout-container;
+  @apply container;
 
   h2 {
     color: #3bdeea;

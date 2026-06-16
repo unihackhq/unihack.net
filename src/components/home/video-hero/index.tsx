@@ -1,7 +1,7 @@
-'use client';
-import { HeroButton } from '@/components/hero-button';
-import styles from './style.module.css';
-import { TwitchPlayer } from 'react-twitch-embed';
+'use client'
+import { TwitchPlayer } from 'react-twitch-embed'
+import { HeroButton } from '@/components/hero-button'
+import styles from './style.module.css'
 
 export const VideoHero = () => {
   return (
@@ -11,21 +11,21 @@ export const VideoHero = () => {
       </h1>
       <div className={styles.home_header_text}>
         <HeroButton
-          text="The Winners"
           href="https://medium.com/unihack-blog/a68e8b120dc3"
+          text="The Winners"
         />
         <HeroButton
-          text="View all projects"
           href="https://unihack2026.devpost.com/project-gallery/"
+          text="View all projects"
         />
-        <HeroButton text="Join the team!" href="https://unihack.net/join/" />
+        <HeroButton href="https://unihack.net/join/" text="Join the team!" />
       </div>
       <TwitchPlayer
         channel="unihack"
-        width="100%"
-        height="auto"
         className={styles.twitch_player}
+        height="auto"
+        width="100%"
       />
     </div>
-  );
-};
+  )
+}

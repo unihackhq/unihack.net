@@ -1,13 +1,13 @@
-'use client';
-import { TZDate } from '@date-fns/tz';
-import styles from './style.module.css';
-import { EventScheduleItem } from './types';
-import { schedule } from './schedule';
+'use client'
+import { TZDate } from '@date-fns/tz'
+import { schedule } from './schedule'
+import styles from './style.module.css'
+import type { EventScheduleItem } from './types'
 
 interface EventScheduleState {
-  friday: EventScheduleItem[];
-  saturday: EventScheduleItem[];
-  sunday: EventScheduleItem[];
+  friday: EventScheduleItem[]
+  saturday: EventScheduleItem[]
+  sunday: EventScheduleItem[]
 }
 
 export const EventItem = ({ item }: { item: EventScheduleItem }) => {
@@ -28,17 +28,17 @@ export const EventItem = ({ item }: { item: EventScheduleItem }) => {
         <p className={styles.event_description}>{item.description}</p>
       )}
     </li>
-  );
-};
+  )
+}
 
 export const EventDay = ({
   day,
   date,
   events,
 }: {
-  day: string;
-  date: string;
-  events: EventScheduleItem[];
+  day: string
+  date: string
+  events: EventScheduleItem[]
 }) => {
   return (
     <div className={`${styles.event_border} ${styles[day.toLowerCase()]}`}>
@@ -47,31 +47,31 @@ export const EventDay = ({
       </h3>
       <ul>
         {events.map((item, index) => (
-          <EventItem key={index} item={item} />
+          <EventItem item={item} key={index} />
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
 export const EventSchedule = () => {
   const dateState: EventScheduleState = schedule.reduce<EventScheduleState>(
     (acc, item) => {
-      const date = new TZDate(item.datetime, 'Australia/Sydney');
-      const day = date.getDay();
+      const date = new TZDate(item.datetime, 'Australia/Sydney')
+      const day = date.getDay()
 
       if (day === 5) {
-        acc.friday.push(item);
+        acc.friday.push(item)
       } else if (day === 6) {
-        acc.saturday.push(item);
+        acc.saturday.push(item)
       } else if (day === 0) {
-        acc.sunday.push(item);
+        acc.sunday.push(item)
       }
 
-      return acc;
+      return acc
     },
     { friday: [], saturday: [], sunday: [] },
-  );
+  )
 
   return (
     <section className={styles.stretch} id="schedule">
@@ -81,13 +81,13 @@ export const EventSchedule = () => {
           All times are in Sydney/Melbourne/Canberra time.
         </p>
         <div className={styles.schedule_grid}>
-          <EventDay day="Friday" date="March 13" events={dateState.friday} />
+          <EventDay date="March 13" day="Friday" events={dateState.friday} />
           <EventDay
-            day="Saturday"
             date="March 14"
+            day="Saturday"
             events={dateState.saturday}
           />
-          <EventDay day="Sunday" date="March 15" events={dateState.sunday} />
+          <EventDay date="March 15" day="Sunday" events={dateState.sunday} />
         </div>
         <div className={styles.judging_break}>
           <div className={styles.judging_content}>
@@ -118,5 +118,5 @@ export const EventSchedule = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

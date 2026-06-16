@@ -1,4 +1,4 @@
-@import '../../../styles/home.css';
+@import "#styles/home.css";
 
 .section {
   @apply home-section;

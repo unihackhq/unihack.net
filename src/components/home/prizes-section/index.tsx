@@ -1,27 +1,26 @@
-'use client';
+'use client'
 
-import styles from './style.module.css';
-import Image, { StaticImageData } from 'next/image';
-import { useState } from 'react';
-
-import atlassianLogo from '@/assets/logos/atlassian-w.svg';
-import quantiumLogo from '@/assets/logos/quantium-w.svg';
-import elasticLogo from '@/assets/logos/elastic-w.svg';
-import euLogo from '@/assets/logos/eu-logo-horiz.svg';
-import { JudgingCriteria } from './judging-criteria';
+import Image, { type StaticImageData } from 'next/image'
+import { useState } from 'react'
+import atlassianLogo from '@/assets/logos/atlassian-w.svg'
+import elasticLogo from '@/assets/logos/elastic-w.svg'
+import euLogo from '@/assets/logos/eu-logo-horiz.svg'
+import quantiumLogo from '@/assets/logos/quantium-w.svg'
+import { JudgingCriteria } from './judging-criteria'
+import styles from './style.module.css'
 
 interface MainPrize {
-  place: string;
-  prize: string[];
+  place: string
+  prize: string[]
 }
 
 interface CategoryPrize {
-  title: string;
-  description: string;
-  prize: string[];
-  sponsorLogo?: StaticImageData;
-  sponsorName?: string;
-  additionalCriteria?: string[];
+  title: string
+  description: string
+  prize: string[]
+  sponsorLogo?: StaticImageData
+  sponsorName?: string
+  additionalCriteria?: string[]
 }
 
 const mainPrizes: MainPrize[] = [
@@ -42,7 +41,7 @@ const mainPrizes: MainPrize[] = [
     place: 'Third Place',
     prize: ['Bellroy Pack Well Travel kit per person'],
   },
-];
+]
 
 const optinPrizes: CategoryPrize[] = [
   {
@@ -121,7 +120,7 @@ const optinPrizes: CategoryPrize[] = [
       'Create the most fun and delightful experience, whether that be a game, a bot, or something else entirely.',
     prize: ['LEGO Super Mario Game Boy per person'],
   },
-];
+]
 
 const specialPrizes: CategoryPrize[] = [
   {
@@ -152,18 +151,18 @@ const specialPrizes: CategoryPrize[] = [
       'To win this prize, simply create and share something on the #memes-and-dreams channel on the UNIHACK Discord server during the event.',
     ],
   },
-];
+]
 
 export const PrizesSection = () => {
-  const [modalContent, setModalContent] = useState<string[] | null>(null);
+  const [modalContent, setModalContent] = useState<string[] | null>(null)
 
   const openModal = (content: string[]) => {
-    setModalContent(content);
-  };
+    setModalContent(content)
+  }
 
   const closeModal = () => {
-    setModalContent(null);
-  };
+    setModalContent(null)
+  }
 
   return (
     <section className={styles.section} id="prizes">
@@ -176,12 +175,12 @@ export const PrizesSection = () => {
         </div>
         <div className={styles.mainPrizesGrid}>
           {mainPrizes.map((prize, index) => (
-            <div key={index} className={styles.mainPrizeCard}>
+            <div className={styles.mainPrizeCard} key={index}>
               <div className={styles.mainPrizeInner}>
                 <h4 className={styles.prizePlace}>{prize.place}</h4>
                 <ul className={styles.prizeList}>
                   {prize.prize.map((item, idx) => (
-                    <li key={idx} className={styles.prizeItem}>
+                    <li className={styles.prizeItem} key={idx}>
                       {item}
                     </li>
                   ))}
@@ -204,12 +203,12 @@ export const PrizesSection = () => {
         </div>
         <div className={styles.categoryPrizesGrid}>
           {optinPrizes.map((prize, index) => (
-            <div key={index} className={styles.categoryPrizeCard}>
+            <div className={styles.categoryPrizeCard} key={index}>
               {prize.sponsorLogo && (
                 <div className={styles.sponsorLogo}>
                   <Image
-                    src={prize.sponsorLogo}
                     alt={prize.sponsorName || 'Sponsor'}
+                    src={prize.sponsorLogo}
                   />
                 </div>
               )}
@@ -220,6 +219,7 @@ export const PrizesSection = () => {
                   <button
                     className={styles.criteriaButton}
                     onClick={() => openModal(prize.additionalCriteria!)}
+                    type="button"
                   >
                     Read More
                   </button>
@@ -228,7 +228,7 @@ export const PrizesSection = () => {
               <div className={styles.prizeValue}>
                 <ul className={styles.prizeList}>
                   {prize.prize.map((item, idx) => (
-                    <li key={idx} className={styles.prizeItem}>
+                    <li className={styles.prizeItem} key={idx}>
                       {item}
                     </li>
                   ))}
@@ -246,7 +246,7 @@ export const PrizesSection = () => {
         </div>
         <div className={styles.categoryPrizesGrid}>
           {specialPrizes.map((prize, index) => (
-            <div key={index} className={styles.categoryPrizeCard}>
+            <div className={styles.categoryPrizeCard} key={index}>
               <h4>{prize.title}</h4>
               <div className={styles.prizeDescription}>
                 <p className={styles.description}>{prize.description}</p>
@@ -254,6 +254,7 @@ export const PrizesSection = () => {
                   <button
                     className={styles.criteriaButton}
                     onClick={() => openModal(prize.additionalCriteria!)}
+                    type="button"
                   >
                     Read More
                   </button>
@@ -262,7 +263,7 @@ export const PrizesSection = () => {
               <div className={styles.prizeValue}>
                 <ul className={styles.prizeList}>
                   {prize.prize.map((item, idx) => (
-                    <li key={idx} className={styles.prizeItem}>
+                    <li className={styles.prizeItem} key={idx}>
                       {item}
                     </li>
                   ))}
@@ -275,12 +276,17 @@ export const PrizesSection = () => {
 
       {/* Modal */}
       {modalContent && (
-        <div className={styles.modalOverlay} onClick={closeModal}>
+        <div className={styles.modalOverlay} onClick={closeModal} role="dialog">
           <div
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
+            role="document"
           >
-            <button className={styles.closeButton} onClick={closeModal}>
+            <button
+              className={styles.closeButton}
+              onClick={closeModal}
+              type="button"
+            >
               ×
             </button>
             <h4>Additional Information</h4>
@@ -293,5 +299,5 @@ export const PrizesSection = () => {
         </div>
       )}
     </section>
-  );
-};
+  )
+}

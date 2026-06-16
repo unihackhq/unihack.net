@@ -1,34 +1,34 @@
-import { Header } from '@/components/header';
-import styles from './styles.module.css';
-import { HomeEventSponsorsSection } from '@/components/home/sponsor-us-section';
-import { DiscordBanner } from '@/components/discord-banner';
-import { HubsHero } from '@/components/hubs/hero';
-import Image from 'next/image';
-import devsocLogo from '@/assets/logos/devsoc-logo.svg';
-import witLogo from '@/assets/logos/wit-logo.png';
-import { HubStepsSection } from '@/components/hubs/steps';
-import { HubEventSchedule } from '@/components/hubs/schedule';
-import { EventLogo } from '@/components/logo';
+import Image from 'next/image'
+import devsocLogo from '@/assets/logos/devsoc-logo.svg'
+import witLogo from '@/assets/logos/wit-logo.png'
+import { DiscordBanner } from '@/components/discord-banner'
+import { Header } from '@/components/header'
+import { HomeEventSponsorsSection } from '@/components/home/sponsor-us-section'
+import { HubsHero } from '@/components/hubs/hero'
+import { HubEventSchedule } from '@/components/hubs/schedule'
+import { HubStepsSection } from '@/components/hubs/steps'
+import { EventLogo } from '@/components/logo'
+import styles from './styles.module.css'
 
 export default function Home() {
   return (
     <div className={styles.home_hero}>
       <Header logo={<EventLogo />} />
       <HubsHero
-        hubName="Sydney Hub"
-        location="UNSW Kensington"
         host={[
           {
             name: 'UNSW DevSoc',
             link: 'https://devsoc.app',
-            logo: <Image src={devsocLogo} alt="UNSW DevSoc Logo" />,
+            logo: <Image alt="UNSW DevSoc Logo" src={devsocLogo} />,
           },
           {
             name: 'UNSW WIT',
             link: 'https://unswwit.com',
-            logo: <Image src={witLogo} alt="UNSW WIT Logo" />,
+            logo: <Image alt="UNSW WIT Logo" src={witLogo} />,
           },
         ]}
+        hubName="Sydney Hub"
+        location="UNSW"
       />
       <HubStepsSection
         signupLinks={[
@@ -53,11 +53,7 @@ export default function Home() {
         }}
         weekend={{
           time: ['Saturday 9:00AM - 6:00PM', 'Sunday 9:00AM - 6:00PM'],
-          location: [
-            'Room G26',
-            'UNSW Business School E12',
-            'UNSW Kensington',
-          ],
+          location: ['Room G26', 'UNSW Business School E12', 'UNSW Kensington'],
           signupLink: 'https://forms.gle/4SKyxnEMzx9ENdRQ9',
           locationMapLink: 'https://link.mazemap.com/wSsrC0jQ',
         }}
@@ -65,5 +61,5 @@ export default function Home() {
       <DiscordBanner />
       <HomeEventSponsorsSection />
     </div>
-  );
+  )
 }

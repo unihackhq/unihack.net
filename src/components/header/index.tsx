@@ -1,39 +1,25 @@
-import React from 'react';
-import Link from 'next/link';
-import { Logo } from '../logo';
-import styles from './header.module.css';
+import Link from 'next/link'
+import type React from 'react'
+import { mergeClassNames } from '@/utils/classnames'
+import { Logo } from '../logo'
+import styles from './core.module.css'
+import { MobileNavButton } from './mobile-nav/button'
+import { MobileNavContextProvider } from './mobile-nav/context'
+import { MobileNavMenu } from './mobile-nav/menu'
+import { NavShell } from './shell'
 
 interface HeaderProps {
-  isPage?: boolean;
-  logo?: React.ReactNode;
-  nav?: {
-    name: string;
-    link: string;
-  }[];
+  logo?: React.ReactNode
 }
 
-export const HomeNav = [
-  {
-    name: 'Hubs',
-    link: '#hubs',
-  },
-  {
-    name: 'Schedule',
-    link: '#schedule',
-  },
-  {
-    name: 'Workshops',
-    link: '#workshops',
-  },
-  {
-    name: 'Prizes',
-    link: '#prizes',
-  },
-  {
-    name: 'Sponsors',
-    link: '#sponsor-us',
-  },
-];
+interface NavItem {
+  name: string
+  link: string
+}
+
+interface NavigationProps extends React.HTMLAttributes<HTMLUListElement> {
+  items: NavItem[]
+}
 
 export const DefaultLogo = () => {
   return (
@@ -44,23 +30,71 @@ export const DefaultLogo = () => {
   )
 }
 
-export const Header = ({ logo, isPage, nav }: HeaderProps) => {
+export const Navigation = ({ items, className }: NavigationProps) => {
   return (
-    <header className={`${styles.container} ${isPage ? styles.mini : ''}`}>
-      <nav>
-        <Link href="/" aria-label="UNIHACK Home" className={styles.logo}>
-          { logo || (<DefaultLogo />)} 
-        </Link>
-        {nav && (
-          <ul className={styles.navLinks}>
-            {nav.map((item, index) => (
-              <li key={index}>
-                <Link href={item.link}>{item.name}</Link>
-              </li>
-            ))}
-          </ul>
-        )}
-      </nav>
-    </header>
-  );
-};
+    <ul className={mergeClassNames(styles.navLinks, className)}>
+      {items.map((item, index) => (
+        <li key={index}>
+          <Link href={item.link}>{item.name}</Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export const Header = ({ logo }: HeaderProps) => {
+  return (
+    <NavShell>
+      <MobileNavContextProvider>
+        <MobileNavMenu
+          items={[
+            {
+              name: 'Sponsor UNIHACK 2027',
+              link: '/sponsor',
+            },
+            {
+              name: 'Event FAQs',
+              link: '/faqs',
+            },
+            {
+              name: 'About Us',
+              link: '/about',
+            },
+          ]}
+        />
+        <header className={styles.header}>
+          <nav>
+            <div className={styles.navLeft}>
+              <MobileNavButton />
+              <Navigation
+                items={[
+                  {
+                    name: 'FAQs',
+                    link: '/faqs',
+                  },
+                  {
+                    name: 'Sponsor',
+                    link: '/sponsor',
+                  },
+                ]}
+              />
+            </div>
+            <Link aria-label="UNIHACK Home" className={styles.logo} href="/">
+              {logo || <DefaultLogo />}
+            </Link>
+            <div className={styles.navRight}>
+              <Navigation
+                items={[
+                  {
+                    name: 'About',
+                    link: '/about',
+                  },
+                ]}
+              />
+            </div>
+          </nav>
+        </header>
+      </MobileNavContextProvider>
+    </NavShell>
+  )
+}

@@ -1,12 +1,11 @@
-import { GenericCard } from '@/components/generic-card';
-import Image from 'next/image';
+import Image from 'next/image'
+import cssaLogo from '@/assets/logos/cssa-logo.svg'
+import devsocLogo from '@/assets/logos/devsoc-logo.svg'
 
-import styles from './style.module.css';
-
-import monashCoding from '@/assets/logos/mac-logo.svg';
-import devsocLogo from '@/assets/logos/devsoc-logo.svg';
-import witLogo from '@/assets/logos/wit-logo.png';
-import cssaLogo from '@/assets/logos/cssa-logo.svg';
+import monashCoding from '@/assets/logos/mac-logo.svg'
+import witLogo from '@/assets/logos/wit-logo.png'
+import { GenericCard } from '@/components/generic-card'
+import styles from './style.module.css'
 
 const Hubs = [
   {
@@ -30,7 +29,7 @@ const Hubs = [
     signUpLink: '/hubs/canberra',
     logos: [{ src: cssaLogo, alt: 'ANU CSSA' }],
   },
-];
+]
 
 export const HubsSection = () => {
   return (
@@ -63,23 +62,22 @@ export const HubsSection = () => {
       <div className={styles.hubsListings}>
         {Hubs.map((hub, index) => (
           <GenericCard
-            key={index}
-            primaryColor="#000000"
-            secondaryColor="#ffc837"
-            mode="outline"
-            title={hub.name}
-            subtext={hub.location}
+            actions={[{ href: hub.signUpLink, text: 'Learn More' }]}
             footer={
               <div className={styles.hubLogos}>
                 {hub.logos.map((logo, index) => (
-                  <Image key={index} src={logo.src} alt={logo.alt} />
+                  <Image alt={logo.alt} key={index} src={logo.src} />
                 ))}
               </div>
             }
-            actions={[{ href: hub.signUpLink, text: 'Learn More' }]}
+            key={index}
+            mode="outline"
+            primaryColor="#000000"
+            secondaryColor="#ffc837"
+            title={hub.name}
           />
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

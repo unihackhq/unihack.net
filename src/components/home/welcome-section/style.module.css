@@ -1,12 +1,8 @@
-@import '../../../styles/home.css';
-@reference "tailwindcss";
+@import "#styles/home.css";
 
 .section {
   @apply home-section;
   h2 {
-    background: linear-gradient(90deg, #0a99f2, #19cf50);
-    background-clip: text;
-    color: transparent;
     max-width: 640px;
   }
 }
@@ -14,7 +10,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
+  gap: 32px;
   margin-top: 48px;
 
   @variant md {
@@ -22,24 +18,23 @@
   }
 
   .gridItem {
-    border: 2px solid #0a99f2;
+    border: 2px solid var(--palette-yellow);
     padding: 24px;
     border-radius: 12px;
 
     h3 {
-      font-size: 18px;
-      line-height: 21px;
+      @apply text-sm;
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 12px;
       letter-spacing: 2px;
-      color: #0a99f2;
+      color: var(--palette-yellow);
     }
 
     p {
-      font-size: 14px;
-      line-height: 21px;
+      @apply text-sm;
       font-weight: 300;
+      margin-bottom: 16px;
     }
 
     p:last-child {
@@ -48,6 +43,13 @@
 
     > a {
       font-size: 12px;
+      color: var(--palette-yellow);
+      border-color: var(--palette-yellow);
+
+      &:hover {
+        background: var(--palette-yellow);
+        color: var(--background);
+      }
     }
   }
 }

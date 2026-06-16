@@ -1,0 +1,40 @@
+@reference "#styles/core.css";
+
+.container {
+  p {
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
+
+  a {
+    color: var(--color-sky-400);
+    font-weight: 500;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--color-sky-600);
+    }
+  }
+
+  h2 {
+    @apply mt-24 mb-4 text-2xl/8;
+    font-weight: 600;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol,
+  ul {
+    @apply ml-8;
+  }
+
+  li {
+    padding-left: 12px;
+  }
+}

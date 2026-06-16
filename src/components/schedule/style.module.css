@@ -1,5 +1,4 @@
-@import '../../styles/home.css';
-@reference "tailwindcss";
+@import "#styles/home.css";
 
 .stretch {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -133,7 +132,7 @@ p.timezone_disclaimer {
   position: relative;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

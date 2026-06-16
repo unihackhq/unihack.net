@@ -1,8 +1,8 @@
-import { Button } from '@/components/button';
-import styles from './style.module.css';
+import { Button } from '@/components/button'
+import styles from './style.module.css'
 
 interface HubStepsSectionProps {
-  signupLinks: { href: string; text: string }[];
+  signupLinks: { href: string; text: string }[]
 }
 
 export const HubStepsSection = ({ signupLinks }: HubStepsSectionProps) => {
@@ -41,11 +41,11 @@ export const HubStepsSection = ({ signupLinks }: HubStepsSectionProps) => {
           </p>
           <div className={styles.links}>
             {signupLinks.map((link, index) => (
-              <Button key={index} href={link.href} text={link.text} />
+              <Button href={link.href} key={index} text={link.text} />
             ))}
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

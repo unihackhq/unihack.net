@@ -1,7 +1,15 @@
-import createMDX from '@next/mdx';
-import type { NextConfig } from "next";
+import createMDX from '@next/mdx'
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    resolveAlias: {
+      '@/styles': './src/styles',
+    },
+  },
+  experimental: {
+    turbopackFileSystemCacheForDev: false,
+  },
   pageExtensions: ['md', 'mdx', 'ts', 'tsx'],
   redirects: async () => {
     return [
@@ -16,17 +24,15 @@ const nextConfig: NextConfig = {
         destination: 'https://discord.gg/MfuzHurGpd',
         permanent: false,
       },
-      {
-        source: '/about',
-        destination: '/',
-        permanent: false,
-      }
-    ];
+    ]
   },
-};
+}
 
 const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
-});
+  options: {
+    remarkPlugins: ['remark-frontmatter', 'remark-mdx-frontmatter'],
+  },
+})
 
-export default withMDX(nextConfig);
+export default withMDX(nextConfig)

@@ -1,20 +1,27 @@
-import type { Metadata } from 'next';
-import { Sora } from 'next/font/google';
-import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-
-import { Footer } from '@/components/footer';
-import './globals.css';
-
-config.autoAddCss = false;
+import { config } from '@fortawesome/fontawesome-svg-core'
+import type { Metadata } from 'next'
+import { Sora } from 'next/font/google'
 
 const soraFont = Sora({
   variable: '--font-sora',
   subsets: ['latin'],
-});
+})
+
+import '#styles/globals.css'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
+import { mergeClassNames } from '@/utils/classnames'
+import { Providers } from './providers'
+
+config.autoAddCss = false
 
 export const metadata: Metadata = {
-  title: 'UNIHACK 2026 — March 13-15, 2026 — The Imagination Hackathon',
+  title: {
+    absolute: 'UNIHACK 2026 — March 13-15, 2026 — The Imagination Hackathon',
+    template: '%s | UNIHACK - The Imagination Hackathon',
+  },
   description: "Australia's premier hackathon for university students",
   icons: {
     shortcut: '/favicons/favicon.ico',
@@ -53,19 +60,22 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={`${soraFont.variable} antialiased`}>
-        {children}
-        <Footer />
+      <body className={mergeClassNames(soraFont.variable, 'antialiased')}>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
-  );
+  )
 }

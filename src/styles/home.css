@@ -1,32 +1,30 @@
-@import './core.css';
+@reference "tailwindcss";
+@import "./core.css";
 
 @utility home-section {
-  @apply layout-container;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @apply container py-8;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h2 {
+    @apply text-3xl;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 48px;
+    margin: 0 0 24px;
     letter-spacing: -1px;
-    margin: 0 0 32px;
-    display: inline;
     width: 100%;
 
     @variant md {
+      @apply text-4xl;
       text-align: center;
+      margin: 0 0 36px;
     }
   }
 
   p {
-    font-size: 18px;
-    line-height: 24px;
+    @apply text-base;
     font-weight: 300;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     color: #bdc8d7;
   }
 
@@ -40,7 +38,6 @@
   }
 
   @variant lg {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    @apply py-16;
   }
 }
