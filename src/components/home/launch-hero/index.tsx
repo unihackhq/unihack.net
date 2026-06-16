@@ -6,9 +6,12 @@ export const LaunchHero = () => {
       <video autoPlay loop muted src="/video/mosaic.webm" />
       <div className={styles.container}>
         <div className={styles.contentBox}>
-          <h2>
-            The Imagination Hackathon returns on <span>March 12-14, 2027</span>
-          </h2>
+          <p>
+            The Imagination Hackathon returns on
+          </p>
+          <p>
+            <span>March 12-14, 2027</span>
+          </p>
         </div>
       </div>
     </section>

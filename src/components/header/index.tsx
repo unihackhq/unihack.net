@@ -23,10 +23,10 @@ interface NavigationProps extends React.HTMLAttributes<HTMLUListElement> {
 
 export const DefaultLogo = () => {
   return (
-    <>
+    <div className={styles.baseLogo}>
       <Logo />
       <span>UNIHACK</span>
-    </>
+    </div>
   )
 }
 

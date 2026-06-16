@@ -33,14 +33,8 @@
     text-align: left;
     align-content: center;
 
-    @variant md {
+    @variant sm {
       text-align: center;
-    }
-
-    @variant lg {
-      text-align: left;
-      display: flex;
-      align-items: center;
     }
   }
 
@@ -51,29 +45,24 @@
     }
   }
 
-  h2 {
-    @apply text-xl/1;
-    margin: 0;
-    letter-spacing: -1px;
-    font-weight: 300;
+  p {
+    @apply text-base/6;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: white;
 
     span {
-      @apply text-3xl/16;
+      @apply text-4xl/10;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0;
-      display: block;
-      width: fit-content;
       color: var(--palette-yellow);
-
-      @variant md {
-        margin: 0 auto;
-      }
     }
 
-    @variant md {
-      @apply text-3xl/12;
-      letter-spacing: -2px;
+    @variant sm {
+      @apply text-2xl/6;
+      letter-spacing: -1px;
+      font-weight: 300;
 
       span {
         @apply text-6xl/16;
@@ -81,9 +70,10 @@
       }
     }
 
-    @variant xl {
-      @apply text-5xl/24;
-      letter-spacing: -3px;
+    @variant md {
+      @apply text-4xl/12;
+      margin-bottom: 16px;
+      letter-spacing: -2px;
 
       span {
         @apply text-8xl/20;
