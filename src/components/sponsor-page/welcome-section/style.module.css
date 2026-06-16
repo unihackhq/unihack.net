@@ -11,12 +11,17 @@
   p {
     color: white;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
     font-weight: 300;
     margin-bottom: 32px;
   }
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  strong.highlight {
+    font-weight: 900;
+    color: var(--palette-yellow);
   }
 }

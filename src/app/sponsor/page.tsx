@@ -19,7 +19,7 @@ import styles from './style.module.css'
 
 const cx = classNames.bind(styles)
 
-export default function AboutPage() {
+export default function SponsorUsPage() {
   return (
     <>
       <header className={cx('header')}>
@@ -156,7 +156,7 @@ export default function AboutPage() {
             <strong>sponsorship@unihack.net</strong>.
           </p>
           <Button
-            href="./files/unihack-2026-sponsorship-prospectus.pdf"
+            href="./files/unihack-2027-sponsorship-prospectus.pdf"
             text="Sponsorship Prospectus"
           />
           <Button href="mailto:sponsorship@unihack.net" text="Email us" />

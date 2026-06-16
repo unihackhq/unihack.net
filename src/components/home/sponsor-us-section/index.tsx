@@ -128,7 +128,7 @@ export const HomeEventSponsorsSection = () => {
           Shoot us an email at <strong>sponsorship@unihack.net</strong>.
         </p>
         <Button
-          href="./files/unihack-2026-sponsorship-prospectus.pdf"
+          href="./files/unihack-2027-sponsorship-prospectus.pdf"
           text="Sponsorship Prospectus"
         />
         <Button href="mailto:sponsorship@unihack.net" text="Email us" />

@@ -6,8 +6,8 @@ export const SponsorWelcomeSection = () => {
       <div>
         <p>
           We are Australia's largest hackathon for university students. Our
-          competition attract 1000+ students from across Australia and New
-          Zealand studying software engineering, computer science, and related
+          competition attract <strong className={styles.highlight}>1000+ students from across Australia and New
+          Zealand</strong> studying software engineering, computer science, and related
           disciplines.
         </p>
         <p>
