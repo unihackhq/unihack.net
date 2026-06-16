@@ -23,7 +23,7 @@ export const NavShell: React.FC<PropsWithChildren<unknown>> = ({
       } else if (scrollY < prevScrollY.current) {
         setDirection('up')
       }
-      setScrolled(scrollY == 0 ? false : true)
+      setScrolled(!(scrollY === 0))
       prevScrollY.current = scrollY
       tick = false
     }

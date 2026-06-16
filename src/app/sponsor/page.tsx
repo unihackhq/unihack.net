@@ -24,7 +24,12 @@ export default function AboutPage() {
     <>
       <header className={cx('header')}>
         <div className={styles.overlay}>
-          <Image alt="Students looking at stickers" src={bg} />
+          <Image
+            alt="Students looking at stickers"
+            fill={true}
+            placeholder="blur"
+            src={bg}
+          />
         </div>
         <div className={cx('content')}>
           <h1>Sponsor UNIHACK 2027</h1>

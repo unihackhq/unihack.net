@@ -3,21 +3,39 @@
 .quote {
   @apply sponsor-section;
 
+  > div {
+
+    @variant md {
+      border-left: 5px solid var(--palette-blue);
+      padding: 16px 48px 16px;
+    }
+  }
+
   blockquote {
     margin-bottom: 48px;
   }
 
   blockquote p {
-    @apply text-6xl;
+    @apply text-4xl;
     letter-spacing: -1px;
     font-weight: 700;
     color: white;
+
+    @variant lg {
+      @apply text-6xl;
+      letter-spacing: -1px;
+    }
   }
 
   a {
-    @apply text-xl;
+    @apply text-base;
     color: var(--palette-blue);
     font-weight: 400;
+
+    @variant lg {
+      @apply text-xl;
+      letter-spacing: -1px;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -290,8 +308,13 @@
   }
   a.gridItem {
     height: 72px;
-    flex: 0 1 calc(25% - 24px);
-    width: calc(25% - 24px);
+    flex: 0 1 calc(50% - 24px);
+    width: calc(50% - 24px);
     border: 0;
+
+    @variant md {
+      flex: 0 1 calc(25% - 24px);
+      width: calc(25% - 24px);
+    }
   }
 }

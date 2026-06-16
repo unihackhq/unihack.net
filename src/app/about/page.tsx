@@ -9,7 +9,12 @@ export default function AboutPage() {
     <>
       <div className={styles.background}>
         <div className={styles.overlay}>
-          <Image alt="Students participating at UNIHACK" src={bg} />
+          <Image
+            alt="Students participating at UNIHACK"
+            fill={true}
+            placeholder="blur"
+            src={bg}
+          />
         </div>
         <p>
           <strong>Image Credit:</strong> European Union/Melissa Hobbs

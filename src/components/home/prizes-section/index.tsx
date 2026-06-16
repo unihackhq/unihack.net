@@ -276,11 +276,11 @@ export const PrizesSection = () => {
 
       {/* Modal */}
       {modalContent && (
-        <div className={styles.modalOverlay} onClick={closeModal}>
+        <div className={styles.modalOverlay} onClick={closeModal} role="dialog">
           <div
-            role="dialog"
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
+            role="document"
           >
             <button
               className={styles.closeButton}

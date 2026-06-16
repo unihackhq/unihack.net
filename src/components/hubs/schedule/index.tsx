@@ -38,8 +38,9 @@ export const HubEventSchedule = ({
             <p>
               {friday.subtext || 'Watch the opening ceremony and form teams.'}
             </p>
-            {friday.extraText &&
-              friday.extraText.map((text, index) => <p key={index}>{text}</p>)}
+            {friday.extraText?.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
           </div>
           <div className={styles.time}>
             <h4>Time</h4>

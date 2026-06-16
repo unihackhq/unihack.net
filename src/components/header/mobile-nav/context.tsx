@@ -26,11 +26,11 @@ export const MobileNavContextProvider: React.FC<PropsWithChildren<unknown>> = ({
 
   const openMenu = useCallback(() => {
     setOpen(true)
-  }, [setOpen])
+  }, [])
 
   const closeMenu = useCallback(() => {
     setOpen(false)
-  }, [setOpen])
+  }, [])
 
   const state = useMemo(
     () => ({ isOpen, openMenu, closeMenu }),

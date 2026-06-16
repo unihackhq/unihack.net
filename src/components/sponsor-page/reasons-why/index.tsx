@@ -26,7 +26,11 @@ export const SponsorReasonsWhy = () => {
       <div>
         <div className={cx('reason')}>
           <div className={cx('image')}>
-            <Image alt="Students participating in UNIHACK" src={talent} />
+            <Image
+              alt="Students participating in UNIHACK"
+              placeholder="blur"
+              src={talent}
+            />
           </div>
 
           <div className={cx('content')}>
@@ -42,6 +46,7 @@ export const SponsorReasonsWhy = () => {
           <div className={cx('image')}>
             <Image
               alt="Someone mentoring students at UNIHACK 2026"
+              placeholder="blur"
               src={mentor}
             />
           </div>
@@ -56,7 +61,11 @@ export const SponsorReasonsWhy = () => {
         </div>
         <div className={cx('reason')}>
           <div className={cx('image')}>
-            <Image alt="Student using a VR headset" src={product} />
+            <Image
+              alt="Student using a VR headset"
+              placeholder="blur"
+              src={product}
+            />
           </div>
 
           <div className={cx('content')}>
@@ -73,6 +82,7 @@ export const SponsorReasonsWhy = () => {
           <div className={cx('image')}>
             <Image
               alt="Direct interaction with students at UNIHACK"
+              placeholder="blur"
               src={direct}
             />
           </div>
@@ -90,6 +100,7 @@ export const SponsorReasonsWhy = () => {
           <div className={cx('image')}>
             <Image
               alt="Logitech increasing brand visibility at UNIHACK 2025"
+              placeholder="blur"
               src={brand}
             />
           </div>
@@ -107,6 +118,7 @@ export const SponsorReasonsWhy = () => {
           <div className={cx('image')}>
             <Image
               alt="Supporting the next generation of tech talent at UNIHACK"
+              placeholder="blur"
               src={nextGen}
             />
           </div>
