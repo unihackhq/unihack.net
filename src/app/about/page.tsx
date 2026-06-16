@@ -65,13 +65,13 @@ export default function AboutPage() {
           who are currently working in the industry today.
         </p>
         <p>
-          We work with multiple student societies, university faculities, and
-          other organizations to help run and share our events to university
+          We work with multiple student societies, universities, and
+          tech organizations to help run our events for university
           students across Australia and New Zealand.
         </p>
         <p>
           All funds raised are used to run current and future UNIHACK events;
-          and supporting orther activities to train the next generation of tech
+          and supporting other activities to train the next generation of tech
           talent.
         </p>
       </PageContent>
