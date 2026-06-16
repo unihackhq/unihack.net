@@ -140,7 +140,7 @@ export default function SponsorUsPage() {
           <p>
             <a href="https://www.elastic.co/blog/unihack-2026">
               Read how Elastic supported participants by providing mentorship
-              and resources; and saw students push the boundaries of what their
+              and resources; and witnessed how students pushed the boundaries of what their
               tech could do...
             </a>
           </p>
