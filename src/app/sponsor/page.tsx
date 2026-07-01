@@ -16,8 +16,13 @@ import { SponsorWelcomeSection } from '@/components/sponsor-page/welcome-section
 import { SponsorReasonsWhy } from '../../components/sponsor-page/reasons-why'
 import bg from './sponsor-unihack-bg.jpg'
 import styles from './style.module.css'
+import type { Metadata } from 'next'
 
 const cx = classNames.bind(styles)
+
+export const metadata: Metadata = {
+  title: 'Sponsor UNIHACK 2027'
+}
 
 export default function SponsorUsPage() {
   return (

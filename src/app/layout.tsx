@@ -19,7 +19,7 @@ config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'UNIHACK 2026 — March 13-15, 2026 — The Imagination Hackathon',
+    absolute: 'UNIHACK 2027 — March 12-14, 2027 — The Imagination Hackathon',
     template: '%s | UNIHACK - The Imagination Hackathon',
   },
   description: "Australia's premier hackathon for university students",

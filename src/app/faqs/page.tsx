@@ -2,6 +2,11 @@ import { FaqEntry } from '@/components/faq-entry'
 import { PageContent } from '@/components/page-content'
 import styles from './styles.module.css'
 import { getFaqEntries } from './utils'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Frequently Asked Questions'
+}
 
 export default async function FaqsPage() {
   const pages = await getFaqEntries()

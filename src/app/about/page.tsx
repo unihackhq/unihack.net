@@ -3,6 +3,11 @@ import { PageContent } from '@/components/page-content'
 
 import bg from './about-unihack-bg.jpg'
 import styles from './style.module.css'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About UNIHACK'
+}
 
 export default function AboutPage() {
   return (
