@@ -1,6 +1,8 @@
 import { allEvents } from '@/content/events';
 import { isMainPrize, Prize } from '@/content/events/types';
 
+const dateTimeFormat = new Intl.DateTimeFormat("en", { year: 'numeric', month: 'long', day: 'numeric' });
+
 export interface PagePrizes {
   main: {
     first: Prize | null;
@@ -11,7 +13,7 @@ export interface PagePrizes {
 }
 
 export const formatDates = (startDate: Date, endDate: Date) => {
-  return `${startDate.toLocaleDateString(undefined, { day: 'numeric' })} - ${endDate.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}`;
+  return dateTimeFormat.formatRange(startDate, endDate);
 };
 
 export const validEventIds = allEvents.map((event) => event.id ?? event.year.toString());
