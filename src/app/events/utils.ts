@@ -1,9 +1,9 @@
 import { allEvents } from '@/content/events';
-import { Prize } from '@/content/events/types';
+import { isMainPrize, Prize } from '@/content/events/types';
 
-export interface PrizePage {
+export interface PagePrizes {
   main: {
-    first: Prize;
+    first: Prize | null;
     second?: Prize;
     third?: Prize;
   };
@@ -33,9 +33,29 @@ export const getEventTypeString = (eventType: 'IN_PERSON' | 'VIRTUAL' | 'HYBRID'
   }
 };
 
-export const arrangePrizes = (prizes: Prize[]) => {
-  return prizes.reduce(() => {}, {
-    
-  })
+export const arrangePrizes = (prizes: Prize[]): PagePrizes => {
+  return prizes.reduce<PagePrizes>((acc, prize) => {
+    if (isMainPrize(prize)) {
+      switch(prize.place) {
+        case 'FIRST':
+          acc.main.first = prize;
+          break;
+        case 'SECOND':
+          acc.main.second = prize;
+          break;
+        case 'THIRD':
+          acc.main.third = prize;
+          break;
+        default:
+          acc.other.push(prize);
+      }
+    } else {
+      acc.other.push(prize);
+    }
+    return acc;
+  }, {
+    main: { first: null },
+    other: []
+  });
 
 };

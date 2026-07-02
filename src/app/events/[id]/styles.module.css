@@ -1,0 +1,132 @@
+@reference "#styles/core.css";
+
+.eventInfo {
+  
+  h2 {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+  }
+
+  ul.breadcrumbs {
+    li {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  ul.eventDetails {
+    display: flex;
+    background: rgba(0,0,0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 0;
+    flex-direction: column;
+
+    @variant md {
+      flex-direction: row;
+    }
+
+    li {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+    padding: 16px 24px;
+    text-align: center;
+
+    @variant md {
+      border-bottom: 0px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 24px 48px;
+    }
+
+    &:last-child {
+        border-right: 0px;
+        border-bottom: 0px;
+      }
+
+      span {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 900;
+      display: block;
+      }
+    }
+
+  }
+
+}
+
+.eventWinners {
+  padding: 64px 0;
+  
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+
+    @variant md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    > div:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .prizeGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    @variant md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @variant lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  div {
+    p {
+      margin: 0;
+      color: white;
+      font-size: 14px;
+    }
+  }
+}

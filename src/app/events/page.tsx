@@ -23,6 +23,7 @@ export default async function PastEventsPage() {
                 {event.location && <p>{event.location}</p>}
             </div>
             <div className={styles.links}>
+              <Button text="View Winners" href={`/events/${event.id ?? event.year}`} />
               <Button text="See Projects" href={event.url} />
             </div>
           </div>

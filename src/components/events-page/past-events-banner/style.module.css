@@ -1,0 +1,48 @@
+@reference "#styles/home.css";
+
+.stretch {
+  background: #151617;
+  @variant lg {
+    width: 100vw;
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+  }
+}
+
+.section {
+  @apply home-section;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: white;
+  text-align: center;
+  gap: 24px;
+
+  span {
+    svg {
+      width: 48px;
+      height: 48px;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: white;
+
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  a:hover {
+    color: #1f2429;
+  }
+}

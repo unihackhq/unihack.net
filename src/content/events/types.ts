@@ -24,6 +24,11 @@ interface SponsorPrize extends CommonPrize {
 
 export type Prize = MainPrize | CategoryPrize | SponsorPrize
 
+export type PrizeNote = {
+  text: string[];
+  type: 'INFO' | 'WARNING' | 'ERROR';
+}
+
 export interface Event {
   name: string
   id?: string;
@@ -34,6 +39,7 @@ export interface Event {
   location?: string
   url: string
   prizes: Prize[]
+  prizesNote?: PrizeNote;
 }
 
 export const isSponsorPrize = (prize: Prize): prize is SponsorPrize => {

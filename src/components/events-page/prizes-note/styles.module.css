@@ -1,0 +1,25 @@
+@reference "#styles/core.css";
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  margin: 48px 0;
+
+  svg {
+    margin-right: 16px;
+    color: var(--palette-blue);
+    width: 24px;
+    height: 24px;
+  }
+
+  div {
+    p {
+      margin: 0 0 16px;
+      color: white;
+      line-height: 21px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

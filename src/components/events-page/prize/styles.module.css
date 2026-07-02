@@ -1,0 +1,138 @@
+@reference "#styles/core.css";
+
+.prize {
+  padding: 24px;
+  background: #1f2129;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .prizeHeader {
+    height: 150px;
+  }
+
+  .prizeType {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .prizeName {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .prizeWinner {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: white;
+
+    .prizeUniversity {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 2px;
+      letter-spacing: 0;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+    }
+  }
+
+  .devpost {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.5;
+
+    &:hover {
+      color: #1f2129;
+      opacity: 1;
+    }
+  }
+
+   &.sponsor {
+    background: #001f3f;
+    .prizeType, .prizeName {
+      color: var(--palette-blue);
+    }
+    .devpost:hover {
+      color: #001f3f;
+    }
+  }
+
+  @variant md {
+    &.main {
+      .prizeType {
+        font-size: 13px;
+        margin-bottom: 2px;
+      }
+      .prizeName {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .prizeWinner {
+        font-size: 48px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &.first {
+    background: linear-gradient(45deg, rgb(242, 201, 76), rgb(242, 153, 74));
+    .prizeType, .prizeName, .prizeWinner {
+      color: #4e3c0a;
+    }
+    .prizeWinner span {
+      color: #4e3c0aaa;
+    }
+    .devpost {
+      border-color: #4e3c0a;
+      color: #4e3c0a;
+    }
+    .devpost:hover {
+      border-color: white;
+      color:  rgb(242, 153, 74);
+    }
+  }
+
+  &.second {
+    background: linear-gradient(135deg, rgb(189, 195, 199), rgb(149, 165, 166));
+    .prizeType, .prizeName, .prizeWinner {
+      color: #001f3f
+    }
+    .prizeWinner span {
+      color: #001f3f90;
+    }
+    .devpost {
+      border-color: #001f3f;
+      color: #001f3f;
+    }
+    .devpost:hover {
+      border-color: white;
+      color: #001f3f;
+    }
+  }
+
+  &.third {
+    background: linear-gradient(135deg, rgb(205, 127, 50), rgb(149, 77, 0));
+    .prizeType, .prizeName {
+      color: white;
+    }
+    .devpost:hover {
+      color: rgb(149, 77, 0);
+    }
+  }
+}

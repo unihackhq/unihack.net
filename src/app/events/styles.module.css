@@ -92,6 +92,11 @@ background: linear-gradient(45deg, #1c0218 0.000%, #500013 25.000%, #7a0923 50.0
 
   }
 
+  .links {
+    display: grid;
+    gap: 8px;
+  }
+
   a {
     font-size: 12px;
     display: block;
