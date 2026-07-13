@@ -45,6 +45,23 @@
     }
   }
 
+  .buttons {
+    margin-top: 48px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-align: center;
+    }
+
+    @variant md {
+      flex-direction: row;
+      justify-content: center;
+
+    }
+  }
+
   p {
     @apply text-base/6;
     margin-bottom: 8px;

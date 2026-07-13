@@ -1,3 +1,4 @@
+import { Button } from '@/components/button'
 import styles from './styles.module.css'
 
 export const LaunchHero = () => {
@@ -10,6 +11,16 @@ export const LaunchHero = () => {
           <p>
             <span>March 12-14, 2027</span>
           </p>
+          <div className={styles.buttons}>
+            <Button
+              href="https://forms.gle/B9xc8BdnMq8CpeBW8"
+              text="Pre-register Now"
+            />
+            <Button
+              href="/sponsor"
+              text="Sponsor Us"
+            />
+          </div>
         </div>
       </div>
     </section>
