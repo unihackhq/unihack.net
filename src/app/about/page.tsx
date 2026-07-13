@@ -6,7 +6,7 @@ import styles from './style.module.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About UNIHACK'
+  title: 'About UNIHACK',
 }
 
 export default function AboutPage() {
@@ -70,9 +70,9 @@ export default function AboutPage() {
           who are currently working in the industry today.
         </p>
         <p>
-          We work with multiple student societies, universities, and
-          tech organizations to help run our events for university
-          students across Australia and New Zealand.
+          We work with multiple student societies, universities, and tech
+          organizations to help run our events for university students across
+          Australia and New Zealand.
         </p>
         <p>
           All funds raised are used to run current and future UNIHACK events;

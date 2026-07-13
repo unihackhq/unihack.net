@@ -37,6 +37,7 @@
     line-height: 36px;
     letter-spacing: -1px;
     font-weight: 600;
+    margin-bottom: 0;
     color: white;
 
     .prizeUniversity {
@@ -46,6 +47,7 @@
       letter-spacing: 0;
       color: rgba(255, 255, 255, 0.6);
       text-transform: uppercase;
+      display: block;
     }
   }
 
@@ -54,6 +56,7 @@
     text-align: center;
     font-size: 12px;
     opacity: 0.5;
+    margin-top: 24px;
 
     &:hover {
       color: #1f2129;

@@ -21,7 +21,7 @@ import type { Metadata } from 'next'
 const cx = classNames.bind(styles)
 
 export const metadata: Metadata = {
-  title: 'Sponsor UNIHACK 2027'
+  title: 'Sponsor UNIHACK 2027',
 }
 
 export default function SponsorUsPage() {
@@ -145,8 +145,8 @@ export default function SponsorUsPage() {
           <p>
             <a href="https://www.elastic.co/blog/unihack-2026">
               Read how Elastic supported participants by providing mentorship
-              and resources; and witnessed how students pushed the boundaries of what their
-              tech could do...
+              and resources; and witnessed how students pushed the boundaries of
+              what their tech could do...
             </a>
           </p>
         </div>

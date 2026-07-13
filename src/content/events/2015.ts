@@ -10,7 +10,10 @@ export const event: Event = {
   endDate: new Date('2015-08-16'),
   prizesNote: {
     type: 'INFO',
-    text: ['Some Devpost submissions are incomplete or missing. Some teams may have taken down their submissions.','Between 2015-2019, Devpost was only used to record projects submitted. All judging was done in-person on the final day of the hackathon. As a result, quality of Devpost submissions may vary.']
+    text: [
+      'Some Devpost submissions are incomplete or missing. Some teams may have taken down their submissions.',
+      'Between 2015-2019, Devpost was only used to record projects submitted. All judging was done in-person on the final day of the hackathon. As a result, quality of Devpost submissions may vary.',
+    ],
   },
   prizes: [
     {

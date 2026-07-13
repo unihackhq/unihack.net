@@ -77,7 +77,8 @@ export const event: Event = {
       winner: 'Reverb: Audio Comparison Microservice',
       type: 'SPONSOR',
       sponsor: 'Accenture',
-      devpostUrl: 'https://devpost.com/software/reverb-audio-comparison-microservice',
+      devpostUrl:
+        'https://devpost.com/software/reverb-audio-comparison-microservice',
     },
     {
       name: 'Best Use of TDD',

@@ -5,7 +5,7 @@ import { getFaqEntries } from './utils'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions'
+  title: 'Frequently Asked Questions',
 }
 
 export default async function FaqsPage() {

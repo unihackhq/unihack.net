@@ -9,6 +9,10 @@ export const event: Event = {
   url: 'https://unihack2017mel.devpost.com/',
   startDate: new Date('2017-08-05'),
   endDate: new Date('2017-08-06'),
+  video: {
+    title: 'Recap Video',
+    url: 'https://www.youtube.com/watch?v=21lt9gWXLdA',
+  },
   prizesNote: {
     type: 'INFO',
     text: [

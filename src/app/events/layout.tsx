@@ -7,10 +7,8 @@ export default function PastEventsLayout({
 }) {
   return (
     <>
-    <div className={styles.background} />
-    <div className={styles.container}>
-    {children}
-    </div>
+      <div className={styles.background} />
+      {children}
     </>
   )
 }

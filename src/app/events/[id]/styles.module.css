@@ -1,8 +1,15 @@
 @reference "#styles/core.css";
 
+.container {
+  @apply container;
+  margin-top: 160px;
+  margin-bottom: 64px;
+  font-family: var(--font-sora);
+}
+
+
 .eventInfo {
-  
-  h2 {
+  h1 {
     font-size: 48px;
     line-height: 52px;
     font-weight: 700;
@@ -21,41 +28,51 @@
       }
     }
   }
+}
+
+.eventLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @variant lg {
+    flex-direction: row;
+  }
+
+  aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  > div {
+    flex: 1;
+  }
+
+  @variant md {
+    aside {
+      width: 300px;
+      flex: unset;
+    }
+    aside a {
+      width: auto;
+    }
+  }
 
   ul.eventDetails {
-    display: flex;
-    background: rgba(0,0,0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 0;
-    flex-direction: column;
-
-    @variant md {
-      flex-direction: row;
-    }
 
     li {
-    width: 100%;
     font-size: 16px;
     font-weight: 300;
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 0;
-    padding: 16px 24px;
-    text-align: center;
 
-    @variant md {
-      border-bottom: 0px;
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 24px 48px;
-    }
-
-    &:last-child {
-        border-right: 0px;
-        border-bottom: 0px;
-      }
-
-      span {
+    span {
       font-size: 12px;
       text-transform: uppercase;
       font-weight: 900;
@@ -64,21 +81,49 @@
     }
 
   }
-
 }
 
-.eventWinners {
-  padding: 64px 0;
-  
-  h3 {
-    font-size: 28px;
+.eventContent {
+    background: #101119;
+    border-top: 1px solid var(--palette-pink);
+
+  > div {
+    @apply container
+  }
+
+  h2 {
+    font-size: 32px;
     line-height: 36px;
     color: white;
     letter-spacing: -1px;
     font-weight: 700;
     margin-bottom: 24px;
   }
+}
 
+.eventWinners {
+  padding: 64px 0;
+}
+
+.eventVideo {
+  padding: 0;
+  h2  {
+    font-size: 12px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    svg {
+      margin-right: 4px;
+    }
+  }
+  > div {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+}
+
+.eventWinners {
   .mainGrid {
     display: grid;
     grid-template-columns: 1fr;

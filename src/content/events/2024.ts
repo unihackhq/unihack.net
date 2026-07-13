@@ -8,6 +8,10 @@ export const event: Event = {
   location: 'Australia and New Zealand',
   startDate: new Date('2024-03-01'),
   endDate: new Date('2024-03-03'),
+  video: {
+    title: 'Winners Announcement',
+    url: 'https://www.youtube.com/watch?v=F9DaSEIVCZo',
+  },
   prizes: [
     {
       name: 'First Place',

@@ -5,13 +5,18 @@ export const event: Event = {
   type: 'IN_PERSON',
   year: 2014,
   location: 'York Butter Factory, Melbourne',
-  url:
-    'https://medium.com/unihack-blog/revisiting-unihack-2014-a-photo-essay-26d36a07d0ea',
+  url: 'https://medium.com/unihack-blog/revisiting-unihack-2014-a-photo-essay-26d36a07d0ea',
   startDate: new Date('2014-08-08'),
   endDate: new Date('2014-08-10'),
+  video: {
+    title: 'Recap Video',
+    url: 'https://www.youtube.com/watch?v=5O6w1Ef9-FQ',
+  },
   prizesNote: {
     type: 'INFO',
-    text: ['Devpost was not used in UNIHACK 2014. All pitches were presented in-person.']
+    text: [
+      'Devpost was not used in UNIHACK 2014. All pitches were presented in-person.',
+    ],
   },
   prizes: [
     {
@@ -33,7 +38,7 @@ export const event: Event = {
       name: 'Best Design',
       winner: 'Discovr',
       university: 'Monash',
-    },    
+    },
     {
       type: 'CATEGORY',
       name: 'Most Creative Idea',

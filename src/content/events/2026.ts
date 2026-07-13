@@ -8,6 +8,10 @@ export const event: Event = {
   location: 'Australia and New Zealand',
   startDate: new Date('2026-03-13'),
   endDate: new Date('2026-03-15'),
+  video: {
+    title: 'Winners Announcement',
+    url: 'https://www.youtube.com/watch?v=bPobpirzfmU',
+  },
   prizes: [
     {
       name: 'First Place',
@@ -62,7 +66,8 @@ export const event: Event = {
       type: 'SPONSOR',
       sponsor: 'Quantium',
       winner: 'Safe Trace',
-      devpostUrl: 'https://unihack2026.devpost.com/submissions/969368-safe-trace',
+      devpostUrl:
+        'https://unihack2026.devpost.com/submissions/969368-safe-trace',
       university: 'UQ/Monash',
     },
     {

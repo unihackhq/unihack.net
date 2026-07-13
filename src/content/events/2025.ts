@@ -8,13 +8,18 @@ export const event: Event = {
   location: 'Australia and New Zealand',
   startDate: new Date('2025-03-14'),
   endDate: new Date('2025-03-16'),
+  video: {
+    title: 'Winners Announcement',
+    url: 'https://www.youtube.com/watch?v=gJExC-KZzoQ',
+  },
   prizes: [
     {
       name: 'First Place',
       winner: 'Growth Garden',
       type: 'MAIN',
       place: 'FIRST',
-      devpostUrl: 'https://unihack2025.devpost.com/submissions/630139-growth-garden',
+      devpostUrl:
+        'https://unihack2025.devpost.com/submissions/630139-growth-garden',
     },
     {
       name: 'Second Place',
@@ -42,19 +47,22 @@ export const event: Event = {
       winner: 'Cryptarity',
       type: 'SPONSOR',
       sponsor: 'Atlassian',
-      devpostUrl: 'https://unihack2025.devpost.com/submissions/631011-cryptarity',
+      devpostUrl:
+        'https://unihack2025.devpost.com/submissions/631011-cryptarity',
     },
     {
       name: 'Best Design',
       winner: 'Cryptarity',
       type: 'CATEGORY',
-      devpostUrl: 'https://unihack2025.devpost.com/submissions/631011-cryptarity',
+      devpostUrl:
+        'https://unihack2025.devpost.com/submissions/631011-cryptarity',
     },
     {
       name: 'Most Creative Idea',
       winner: 'EYEVISION',
       type: 'CATEGORY',
-      devpostUrl: 'https://unihack2025.devpost.com/submissions/630128-eyevision',
+      devpostUrl:
+        'https://unihack2025.devpost.com/submissions/630128-eyevision',
     },
     {
       name: "First Timers' Prize",
@@ -72,7 +80,8 @@ export const event: Event = {
       name: "People's Choice Award",
       winner: 'ShelfAware',
       type: 'CATEGORY',
-      devpostUrl: 'https://unihack2025.devpost.com/submissions/630411-shelfaware',
+      devpostUrl:
+        'https://unihack2025.devpost.com/submissions/630411-shelfaware',
     },
   ],
 }

@@ -8,6 +8,10 @@ export const event: Event = {
   location: 'Australia and New Zealand',
   startDate: new Date('2023-03-03'),
   endDate: new Date('2023-03-05'),
+  video: {
+    title: 'Winners Announcement',
+    url: 'https://www.youtube.com/watch?v=NM8SZb8tlWs',
+  },
   prizes: [
     {
       name: 'First Place',
@@ -31,7 +35,7 @@ export const event: Event = {
       devpostUrl: 'https://devpost.com/software/konran',
     },
     {
-      name: "Creative Data-Driven Pitch Prize",
+      name: 'Creative Data-Driven Pitch Prize',
       winner: 'Foodplan',
       type: 'SPONSOR',
       sponsor: 'PwC',

@@ -8,6 +8,10 @@ export const event: Event = {
   location: 'Remote',
   startDate: new Date('2022-02-25'),
   endDate: new Date('2022-02-27'),
+  video: {
+    title: 'Winners Announcement',
+    url: 'https://www.youtube.com/watch?v=fiR0mEczWMQ',
+  },
   prizes: [
     {
       name: 'First Place',

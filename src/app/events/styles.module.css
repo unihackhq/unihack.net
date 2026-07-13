@@ -53,27 +53,33 @@ background: linear-gradient(45deg, #1c0218 0.000%, #500013 25.000%, #7a0923 50.0
 .grid {
   display: grid;
   grid-gap: 48px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
 
   .card {
     padding: 32px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #da8ab310;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 48px;
+
+    @variant md {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+    }
 
     &:hover {
       border-color: #da8ab366;
     }
 
     .content {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 21px;
+          h2 {
+      font-size: 28px;
       letter-spacing: -1px;
       font-weight: 700;
     }
@@ -83,18 +89,13 @@ background: linear-gradient(45deg, #1c0218 0.000%, #500013 25.000%, #7a0923 50.0
     }
 
     p.date {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 700;
       color: white;
       margin: 0;
       text-transform: uppercase;
     }
-
-  }
-
-  .links {
-    display: grid;
-    gap: 8px;
+    }
   }
 
   a {
