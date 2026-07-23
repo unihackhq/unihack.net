@@ -1,10 +1,11 @@
 import { Button } from '@/components/button'
+import ReactPlayer from 'react-player'
 import styles from './styles.module.css'
 
 export const LaunchHero = () => {
   return (
     <section className={styles.hero}>
-      <video autoPlay loop muted src="/video/mosaic.webm" />
+      <ReactPlayer playing playsInline loop muted width="100%" height="100%" src="/video/mosaic.webm" />
       <div className={styles.container}>
         <div className={styles.contentBox}>
           <p>The Imagination Hackathon returns on</p>

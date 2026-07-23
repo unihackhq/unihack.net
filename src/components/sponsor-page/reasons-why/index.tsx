@@ -16,6 +16,8 @@ import product from './sponsor-unihack-product.png'
 import talent from './sponsor-unihack-talent.png'
 import styles from './styles.module.css'
 import nextGen from './support-unihack-next-gen.jpg'
+import { Quote } from '@/components/quote'
+import elastic from '@/assets/logos/elastic-w.svg'
 
 export const cx = classNames.bind(styles)
 
@@ -23,7 +25,7 @@ export const SponsorReasonsWhy = () => {
   return (
     <section className={cx('section', 'why')}>
       <h2>Reasons to Sponsor...</h2>
-      <div>
+      <div className={cx('grid')}>
         <div className={cx('reason')}>
           <div className={cx('image')}>
             <Image

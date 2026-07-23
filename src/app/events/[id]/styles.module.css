@@ -31,12 +31,17 @@
 }
 
 .eventLayout {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #da8ab310;
   display: flex;
   flex-direction: column;
   gap: 60px;
+  border-radius: 8px;
+  padding: 24px;
 
   @variant lg {
     flex-direction: row;
+    padding: 48px;
   }
 
   aside {
@@ -47,6 +52,7 @@
 
     a {
       width: 100%;
+      margin-top: 48px;
       text-align: center;
     }
   }
@@ -65,18 +71,27 @@
     }
   }
 
-  ul.eventDetails {
-
+  ul {
     li {
     font-size: 16px;
     font-weight: 300;
+    margin-bottom: 36px;
     color: white;
 
-    span {
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 900;
-      display: block;
+    &:last-child {
+      margin: 0;
+    }
+
+      span {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 4px;
+        display: block;
+      }
+
+      svg {
+        margin-right: 4px;
       }
     }
 
@@ -84,9 +99,6 @@
 }
 
 .eventContent {
-    background: #101119;
-    border-top: 1px solid var(--palette-pink);
-
   > div {
     @apply container
   }
@@ -101,22 +113,8 @@
   }
 }
 
-.eventWinners {
-  padding: 64px 0;
-}
-
 .eventVideo {
   padding: 0;
-  h2  {
-    font-size: 12px;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    font-weight: 900;
-
-    svg {
-      margin-right: 4px;
-    }
-  }
   > div {
     aspect-ratio: 16/9;
     width: 100%;
@@ -124,6 +122,7 @@
 }
 
 .eventWinners {
+  padding: 64px 0;
   .mainGrid {
     display: grid;
     grid-template-columns: 1fr;

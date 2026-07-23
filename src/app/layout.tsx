@@ -1,10 +1,16 @@
 import { config } from '@fortawesome/fontawesome-svg-core'
 import type { Metadata } from 'next'
-import { Sora } from 'next/font/google'
+import { Sora, Instrument_Serif } from 'next/font/google'
 
 const soraFont = Sora({
-  variable: '--font-sora',
-  subsets: ['latin'],
+    variable: '--font-sora',
+    subsets: ['latin'],
+})
+
+const instrument = Instrument_Serif({
+    variable: '--font-instrument',
+    subsets: ['latin'],
+    weight: ['400'],
 })
 
 import '#styles/globals.css'
@@ -69,7 +75,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mergeClassNames(soraFont.variable, 'antialiased')}>
+      <body className={mergeClassNames(soraFont.variable, instrument.variable, 'antialiased')}>
         <Providers>
           <Header />
           {children}

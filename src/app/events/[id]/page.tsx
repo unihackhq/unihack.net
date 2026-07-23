@@ -72,14 +72,14 @@ const EventVideo = ({
   videoUrl: string
   videoTitle: string
 }) => (
-  <section className={styles.eventVideo}>
-    <h2>
+  <li className={styles.eventVideo}>
+    <span>
       <FontAwesomeIcon icon={faVideo} /> {videoTitle}
-    </h2>
+    </span>
     <div>
       <ReactPlayer src={videoUrl} width="100%" height="100%" autoPlay light />
     </div>
-  </section>
+  </li>
 )
 
 export default async function PastEventPage(props: PageProps<'/events/[id]'>) {
@@ -125,12 +125,14 @@ export default async function PastEventPage(props: PageProps<'/events/[id]'>) {
             </div>
           </aside>
           <div>
-            {event.video && (
+            <ul>
+              {event.video && (
               <EventVideo
                 videoUrl={event.video.url}
                 videoTitle={event.video.title}
               />
             )}
+            </ul>
           </div>
         </div>
       </div>

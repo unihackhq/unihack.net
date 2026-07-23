@@ -1,0 +1,21 @@
+@reference "#styles/sponsor.css";
+
+.section {
+  @apply sponsor-section;
+}
+
+.grid {
+  gap: 24px;
+}
+
+.gridItem {
+  height: 72px;
+  flex: 0 1 calc(50% - 24px);
+  width: calc(50% - 24px);
+  border: 0;
+
+  @variant md {
+    flex: 0 1 calc(25% - 24px);
+    width: calc(25% - 24px);
+  }
+}

@@ -1,0 +1,98 @@
+@reference "#styles/sponsor.css";
+
+.header {
+  height: max(70vh, 400px);
+  position: relative;
+  padding: 102px 0 0;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &:before {
+    content: "";
+    background: linear-gradient(0, var(--background), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .content {
+    @apply container;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    h1 {
+      @apply text-4xl;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin: 0 0 8px;
+      color: white;
+
+      @variant lg {
+        @apply text-6xl;
+        letter-spacing: -4px;
+        margin: 0 0 16px;
+      }
+    }
+
+    p {
+      @apply text-2xl;
+      color: white;
+      font-weight: 300;
+      letter-spacing: -1px;
+
+      @variant lg {
+        @apply text-4xl;
+        letter-spacing: -2px;
+      }
+    }
+
+    p.date {
+      @apply text-xl;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      margin-top: 48px;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+    a:hover {
+      color: #001e78;
+    }
+
+    p.credit {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 8px 0;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0;
+    }
+  }
+}

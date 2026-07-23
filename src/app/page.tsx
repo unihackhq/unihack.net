@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <LaunchHero />
       <HomeWelcomeSection />
-      <PastEventsBanner />
       <HomeSponsorUsSection />
+      <PastEventsBanner />
     </>
   )
 }

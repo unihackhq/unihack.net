@@ -1,0 +1,43 @@
+@reference "#styles/sponsor.css";
+
+.section {
+  @apply sponsor-section;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px 8px;
+
+  @variant md {
+    grid-gap: 64px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.stat {
+  text-transform: uppercase;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: white;
+  }
+
+  span {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 64px;
+
+    @variant md {
+      font-size: 72px;
+      line-height: 88px;
+    }
+  }
+}

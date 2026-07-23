@@ -1,0 +1,57 @@
+@reference "#styles/core.css";
+
+.quote {
+  > p {
+    margin: 0;
+  }
+
+  .logo {
+    margin-bottom: 32px;
+    text-align: left;
+
+    img {
+      width: auto;
+      height: 48px;
+    }
+  }
+
+  blockquote {
+    margin-bottom: 48px;
+  }
+
+  blockquote p {
+    @apply text-4xl;
+    letter-spacing: -1px;
+    font-weight: 400;
+    color: white;
+    font-family: var(--font-instrument);
+
+    @variant lg {
+      @apply text-6xl;
+      letter-spacing: -1px;
+    }
+  }
+
+  a {
+    @apply text-base;
+    color: var(--palette-blue);
+    font-weight: 400;
+
+    @variant lg {
+      @apply text-xl;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.blockquote {
+  position: relative;
+  
+
+  > div {
+    @apply container;
+  }
+}

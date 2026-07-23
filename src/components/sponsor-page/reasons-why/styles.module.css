@@ -2,10 +2,11 @@
 
 .why {
   @apply sponsor-section;
-  > div {
+  
+  .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 32px;
+    grid-gap: 64px 32px;
 
     @variant sm {
       grid-template-columns: 1fr 1fr;
@@ -13,19 +14,18 @@
 
     @variant lg {
       grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 64px;
     }
   }
 
-  .reason {
-    border-radius: 8px;
-    border: 1px solid #2c2d32;
-    background: #1a1a1a;
-    padding: 32px;
-    overflow: hidden;
+  .quote {
+    margin-top: 64px;
+  }
 
+  .reason {
     .image {
       height: 200px;
-      margin: -32px -32px 0;
+      border-radius: 8px;
       overflow: hidden;
       display: flex;
       align-content: center;
