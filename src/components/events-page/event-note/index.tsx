@@ -1,4 +1,4 @@
-import type { PrizeNote } from '@/content/events/types'
+import type { PrizeNote } from '@/types/event'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './styles.module.css'
 import classnames from 'classnames/bind'
@@ -20,7 +20,7 @@ export const getIcon = (note: PrizeNote) => {
   return faCircleInfo
 }
 
-export const PrizeNoteComponent = ({ note }: Props) => {
+export const EventNote = ({ note }: Props) => {
   return (
     <div className={cx('info', note.type.toLowerCase())}>
       <FontAwesomeIcon icon={getIcon(note)} />

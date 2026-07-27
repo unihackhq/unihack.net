@@ -18,13 +18,7 @@ export type QuoteProps = {
   link?: QuoteLink
 }
 
-export const Quote = ({
-  quote,
-  author,
-  image,
-  imageAlt,
-  link,
-}: QuoteProps) => {
+export const Quote = ({ quote, author, image, imageAlt, link }: QuoteProps) => {
   return (
     <div className={styles.quote}>
       {image && (

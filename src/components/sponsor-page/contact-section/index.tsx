@@ -5,7 +5,9 @@ export const SponsorContactSection = () => {
   return (
     <section className={styles.contact}>
       <div>
-        <p>Want to help support and nurture the next generation of tech talent?</p>
+        <p>
+          Want to help support and nurture the next generation of tech talent?
+        </p>
         <p>
           Download our prospectus, and shoot us an email at{' '}
           <strong>sponsorship@unihack.net</strong>.

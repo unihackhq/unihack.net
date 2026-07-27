@@ -1,5 +1,6 @@
 import { allEvents } from '@/content/events'
-import { isMainPrize, type Prize } from '@/content/events/types'
+import { isMainPrize } from '@/utils/events'
+import type { Prize } from '@/types/event'
 
 const dateTimeFormat = new Intl.DateTimeFormat('en', {
   year: 'numeric',

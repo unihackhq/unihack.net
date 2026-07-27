@@ -1,3 +1,4 @@
+import type { EventDefinition } from '@/types/event'
 import { event as event2014 } from './2014'
 import { event as event2015 } from './2015'
 import { event as event2016 } from './2016'
@@ -12,9 +13,8 @@ import { event as event2023 } from './2023'
 import { event as event2024 } from './2024'
 import { event as event2025 } from './2025'
 import { event as event2026 } from './2026'
-import type { Event } from './types'
 
-export const allEvents: Event[] = [
+export const allEvents: EventDefinition[] = [
   event2014,
   event2015,
   event2016,

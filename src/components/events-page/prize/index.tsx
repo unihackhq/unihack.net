@@ -1,9 +1,5 @@
-import {
-  isCategoryPrize,
-  isMainPrize,
-  isSponsorPrize,
-  type Prize,
-} from '@/content/events/types'
+import { isCategoryPrize, isMainPrize, isSponsorPrize } from '@/utils/events'
+import type { Prize } from '@/types/event'
 import styles from './styles.module.css'
 import classnames from 'classnames/bind'
 import { Button } from '@/components/button'

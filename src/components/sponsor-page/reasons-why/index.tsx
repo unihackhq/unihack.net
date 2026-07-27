@@ -16,8 +16,6 @@ import product from './sponsor-unihack-product.png'
 import talent from './sponsor-unihack-talent.png'
 import styles from './styles.module.css'
 import nextGen from './support-unihack-next-gen.jpg'
-import { Quote } from '@/components/quote'
-import elastic from '@/assets/logos/elastic-w.svg'
 
 export const cx = classNames.bind(styles)
 

@@ -1,4 +1,6 @@
-interface CommonPrize {
+import type { StaticImageData as NextImage } from 'next/image'
+
+export interface CommonPrize {
   type: string
   name: string
   winner: string
@@ -6,16 +8,16 @@ interface CommonPrize {
   university?: string
 }
 
-interface MainPrize extends CommonPrize {
+export interface MainPrize extends CommonPrize {
   type: 'MAIN'
   place: 'FIRST' | 'SECOND' | 'THIRD'
 }
 
-interface CategoryPrize extends CommonPrize {
+export interface CategoryPrize extends CommonPrize {
   type: 'CATEGORY'
 }
 
-interface SponsorPrize extends CommonPrize {
+export interface SponsorPrize extends CommonPrize {
   type: 'SPONSOR'
   sponsor: string
 }
@@ -27,7 +29,14 @@ export type PrizeNote = {
   type: 'INFO' | 'WARNING' | 'ERROR'
 }
 
-export interface Event {
+export type EventBrandingBackground = {
+  image: NextImage
+  credit: string
+  altText: string
+  position?: 'top' | 'bottom' | 'center'
+}
+
+export interface EventDefinition {
   name: string
   id?: string
   type: 'IN_PERSON' | 'VIRTUAL' | 'HYBRID'
@@ -42,16 +51,7 @@ export interface Event {
     title: string
     url: string
   }
-}
-
-export const isSponsorPrize = (prize: Prize): prize is SponsorPrize => {
-  return prize.type === 'SPONSOR'
-}
-
-export const isMainPrize = (prize: Prize): prize is MainPrize => {
-  return prize.type === 'MAIN'
-}
-
-export const isCategoryPrize = (prize: Prize): prize is CategoryPrize => {
-  return prize.type === 'CATEGORY'
+  branding?: {
+    background: EventBrandingBackground
+  }
 }

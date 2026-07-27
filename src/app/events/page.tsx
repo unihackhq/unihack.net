@@ -20,13 +20,13 @@ export default async function PastEventsPage() {
         {allEventsByDescendingOrder.map((event, index) => (
           <div className={styles.card} key={index}>
             <div className={styles.content}>
+              <h2>{event.name}</h2>
+            </div>
+            <div className={styles.links}>
+              {event.location && <p>{event.location}</p>}
               <p className={styles.date}>
                 {formatDates(event.startDate, event.endDate)}
               </p>
-              <h2>{event.name}</h2>
-              {event.location && <p>{event.location}</p>}
-            </div>
-            <div className={styles.links}>
               <Button
                 text="View Winners"
                 href={`/events/${event.id ?? event.year}`}

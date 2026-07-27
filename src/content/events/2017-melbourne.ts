@@ -1,6 +1,6 @@
-import type { Event } from './types'
+import type { EventDefinition } from '@/types/event'
 
-export const event: Event = {
+export const event: EventDefinition = {
   name: 'UNIHACK Melbourne 2017',
   id: '2017-melbourne',
   type: 'IN_PERSON',

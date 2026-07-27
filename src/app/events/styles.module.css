@@ -53,10 +53,13 @@
 .grid {
   display: grid;
   grid-gap: 48px;
-  grid-template-columns: 1fr;
+
+  @variant md {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .card {
-    padding: 32px;
+    padding: 24px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: #da8ab310;
@@ -67,47 +70,47 @@
     gap: 48px;
 
     @variant md {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-
-    &:hover {
-      border-color: #da8ab366;
+      padding: 32px;
+      height: 300px;
     }
 
     .content {
-          h2 {
+      h2 {
       font-size: 28px;
       letter-spacing: -1px;
       font-weight: 700;
-    }
-    
-    p {
-      margin: 0;
+      }
     }
 
-    p.date {
-      font-size: 14px;
-      font-weight: 700;
-      color: white;
-      margin: 0;
-      text-transform: uppercase;
-    }
+    .links {
+      p {
+          font-size: 14px;
+          line-height: 21px;
+          color: white;
+          margin: 4px 0 0;
+        }
+      }
+
+      a {
+        font-size: 12px;
+        margin-top: 24px;
+        text-align: center;
+        letter-spacing: 1px;
+        border-color: #da8ab3;
+        color: #da8ab3;
+        &:hover { 
+          background: #da8ab3;
+          color: var(--background);
+        }
+      }
+
+    &:hover {
+      border-color: #da8ab366;
+
+      a {
+        opacity: 1;
+      }
     }
   }
 
-  a {
-    font-size: 12px;
-    display: block;
-    text-align: center;
-    letter-spacing: 1px;
-    border-color: #da8ab3;
-    color: #da8ab3;
-    &:hover { 
-      background: #da8ab3;
-      color: var(--background);
-    }
-  }
 }

@@ -1,0 +1,13 @@
+@reference "#styles/core.css";
+
+.footer {
+  @apply container;
+  
+  p {
+    font-size: 13px;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+}

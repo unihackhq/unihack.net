@@ -3,7 +3,9 @@
 .info {
   display: flex;
   align-items: flex-start;
-  margin: 48px 0;
+  margin: 24px 0;
+  padding: 24px 16px;
+  border-left: 8px solid var(--palette-blue);
 
   svg {
     margin-right: 16px;

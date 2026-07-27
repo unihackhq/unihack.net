@@ -1,0 +1,102 @@
+@reference "#styles/core.css";
+
+ul.breadcrumbs {
+    margin-bottom: 16px;
+    li {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        margin: 0;
+
+        a:hover {
+            color: white;
+        }
+
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+
+.default {
+  h1 {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+  }
+}
+
+.branded {
+  height: max(75vh, 400px);
+  position: relative;
+  padding: 102px 0 0;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999;
+    width: 100%;
+    background: black;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    img.img-top {
+        object-position: top;
+    }
+
+    img.img-bottom {
+        object-position: bottom;
+    }
+
+    img.img-center {
+        object-position: center;
+    }
+  }
+
+  &:before {
+    content: "";
+    background: linear-gradient(0, var(--background), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .content {
+    @apply container;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+    text-align: left;
+    z-index: 2;
+
+    h1 {
+      @apply text-4xl;
+      font-weight: 700;
+      letter-spacing: -1px;
+        margin: 0 0 48px;
+      color: white;
+
+      @variant lg {
+        @apply text-6xl;
+        letter-spacing: -4px;
+      }
+    }
+  }
+}

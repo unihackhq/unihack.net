@@ -11,7 +11,7 @@ export const PastEventsBanner = () => {
           <FontAwesomeIcon icon={faTrophy} />
         </span>
         <div className={styles.content}>
-          <p className={styles.discordText}>Looking for last year's winner?</p>
+          <p>Looking for last year's winner?</p>
           <Button href="/events" text="Visit The Past" />
         </div>
       </div>

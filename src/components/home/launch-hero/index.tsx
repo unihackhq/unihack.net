@@ -5,7 +5,15 @@ import styles from './styles.module.css'
 export const LaunchHero = () => {
   return (
     <section className={styles.hero}>
-      <ReactPlayer playing playsInline loop muted width="100%" height="100%" src="/video/mosaic.webm" />
+      <ReactPlayer
+        playing
+        playsInline
+        loop
+        muted
+        width="100%"
+        height="100%"
+        src="/video/mosaic.webm"
+      />
       <div className={styles.container}>
         <div className={styles.contentBox}>
           <p>The Imagination Hackathon returns on</p>
@@ -17,10 +25,7 @@ export const LaunchHero = () => {
               href="https://forms.gle/B9xc8BdnMq8CpeBW8"
               text="Pre-register Now"
             />
-            <Button
-              href="/sponsor"
-              text="Sponsor Us"
-            />
+            <Button href="/sponsor" text="Sponsor Us" />
           </div>
         </div>
       </div>

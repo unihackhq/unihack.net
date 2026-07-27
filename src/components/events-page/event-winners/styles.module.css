@@ -1,0 +1,30 @@
+@reference "#styles/core.css";
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+
+  @variant md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+.prizeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @variant md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @variant lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

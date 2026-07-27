@@ -1,6 +1,7 @@
-import type { Event } from './types'
+import { EventDefinition } from '@/types/event'
+import background from '@/assets/events/2015-background.jpg'
 
-export const event: Event = {
+export const event: EventDefinition = {
   name: 'UNIHACK 2015',
   type: 'IN_PERSON',
   year: 2015,
@@ -14,6 +15,14 @@ export const event: Event = {
       'Some Devpost submissions are incomplete or missing. Some teams may have taken down their submissions.',
       'Between 2015-2019, Devpost was only used to record projects submitted. All judging was done in-person on the final day of the hackathon. As a result, quality of Devpost submissions may vary.',
     ],
+  },
+  branding: {
+    background: {
+      image: background,
+      altText: "A teddy bear wearing the UNIHACK 2015 shirt",
+      credit: "Tom Solari",
+      position: 'top',
+    }
   },
   prizes: [
     {
