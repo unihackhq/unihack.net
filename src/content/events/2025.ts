@@ -1,4 +1,5 @@
 import type { EventDefinition } from '@/types/event'
+import background from '@/assets/events/2025-background.jpg'
 
 export const event: EventDefinition = {
   name: 'UNIHACK 2025',
@@ -11,6 +12,13 @@ export const event: EventDefinition = {
   video: {
     title: 'Winners Announcement',
     url: 'https://www.youtube.com/watch?v=gJExC-KZzoQ',
+  },
+  branding: {
+    background: {
+      image: background,
+      credit: 'European Union/Melissa Hobbs',
+      altText: 'Participants at UNIHACK 2025 Melbourne Hub'
+    }
   },
   prizes: [
     {
