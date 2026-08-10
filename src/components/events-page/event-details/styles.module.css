@@ -1,13 +1,10 @@
 @reference "#styles/core.css";
 
 .eventLayout {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: #da8ab310;
   display: flex;
   flex-direction: column;
   gap: 60px;
   border-radius: 8px;
-  padding: 24px;
 
   @variant lg {
     flex-direction: row;

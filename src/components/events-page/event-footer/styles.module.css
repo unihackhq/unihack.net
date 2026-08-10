@@ -2,6 +2,8 @@
 
 .footer {
   @apply container;
+  border-top: 0px solid !important;
+  padding-top: 0 !important;
   
   p {
     font-size: 13px;

@@ -30,6 +30,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'FIRST',
       devpostUrl: 'https://devpost.com/software/mangodb',
+      university: 'Melbourne'
     },
     {
       name: 'Second Place',
@@ -37,6 +38,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'SECOND',
       devpostUrl: 'https://devpost.com/software/pyraminx-scheme',
+      university: 'Monash'
     },
     {
       name: 'Third Place',
@@ -44,6 +46,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'THIRD',
       devpostUrl: 'https://devpost.com/software/the-magic-hand',
+      university: 'Monash'
     },
     {
       name: 'Most Elegant Algorithm',
@@ -51,6 +54,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'IMC',
       devpostUrl: 'https://devpost.com/software/pyraminx-scheme',
+      university: 'Monash'
     },
     {
       name: "People's Choice Award",
@@ -58,6 +62,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Microsoft',
       devpostUrl: 'https://devpost.com/software/buiz-e',
+      university: 'Monash'
     },
     {
       name: 'IOT: Invented for Life Award',
@@ -65,6 +70,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Bosch',
       devpostUrl: 'https://devpost.com/software/nodecare',
+      university: "Melbourne"
     },
     {
       name: 'Future Leaders Prize',
@@ -72,6 +78,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'PwC',
       devpostUrl: 'https://devpost.com/software/nodecare',
+      university: 'Melbourne'
     },
     {
       name: 'Universal Design Prize',
@@ -79,6 +86,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Seamless CMS',
       devpostUrl: 'https://devpost.com/software/dequeue',
+      university: 'Monash'
     },
     {
       name: 'The Unicorn Prize',
@@ -87,6 +95,7 @@ export const event: EventDefinition = {
       sponsor: 'Accenture',
       devpostUrl:
         'https://devpost.com/software/reverb-audio-comparison-microservice',
+      university: 'Monash'
     },
     {
       name: 'Best Use of TDD',
@@ -94,6 +103,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Thoughtworks',
       devpostUrl: 'https://devpost.com/software/top-secret-module-project',
+      university: 'Monash/RMIT/UniMelb'
     },
     {
       name: 'Best Marketplace Ready Hack',
@@ -101,6 +111,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Xero',
       devpostUrl: 'https://devpost.com/software/top-secret-module-project',
+      university: 'Monash/RMIT/UniMelb'
     },
     {
       name: 'Best Student Solution',
@@ -108,18 +119,21 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Monash eSolutions',
       devpostUrl: 'https://devpost.com/software/bytegem',
+      university: 'Monash'
     },
     {
       name: 'Best Design',
       winner: 'Buiz-e',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/buiz-e',
+      university: 'Monash'
     },
     {
       name: 'Most Creative Idea',
       winner: 'Canine Synergy Solutions',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/unihack-2016',
+      university: 'RMIT'
     },
   ],
 }

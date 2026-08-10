@@ -18,15 +18,29 @@
     @variant md {
       gap: 128px;
     }
+
+    > section {
+      border-top: 2px solid var(--palette-pink);
+      padding-top: 24px;
+    }
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 36px;
-    color: white;
+    color: var(--palette-white);
+    display: flex;
+    align-items: center;
     letter-spacing: -1px;
     font-weight: 700;
     margin-bottom: 24px;
+
+    svg {
+      margin-right: 8px;
+      color: var(--palette-pink);
+      height: 24px;
+      width: 24px;
+    }
   }
 }
 

@@ -2,6 +2,9 @@ import { allEvents } from '@/content/events'
 import { isMainPrize } from '@/utils/events'
 import type { Prize } from '@/types/event'
 
+const getEventPathId = (event: { id?: string; year: number }) =>
+  event.id ?? event.year.toString()
+
 const dateTimeFormat = new Intl.DateTimeFormat('en', {
   year: 'numeric',
   month: 'long',
@@ -22,7 +25,7 @@ export const formatDates = (startDate: Date, endDate: Date) => {
 }
 
 export const validEventIds = allEvents.map(
-  (event) => event.id ?? event.year.toString(),
+  (event) => getEventPathId(event),
 )
 
 export const allEventsByDescendingOrder = [...allEvents].sort(
@@ -31,8 +34,35 @@ export const allEventsByDescendingOrder = [...allEvents].sort(
 
 export const getEvent = (eventId: string) =>
   allEvents.find(
-    (event) => event.id === eventId || event.year.toString() === eventId,
+    (event) => getEventPathId(event) === eventId,
   )
+
+export const getEventPath = (event: { id?: string; year: number }) =>
+  `/events/${getEventPathId(event)}`
+
+export const getAdjacentEvents = (eventId: string) => {
+  const currentEventIndex = allEventsByDescendingOrder.findIndex(
+    (event) => getEventPathId(event) === eventId,
+  )
+
+  if (currentEventIndex === -1) {
+    return {
+      previousEvent: null,
+      nextEvent: null,
+    }
+  }
+
+  return {
+    previousEvent:
+      currentEventIndex > 0
+        ? allEventsByDescendingOrder[currentEventIndex - 1]
+        : null,
+    nextEvent:
+      currentEventIndex < allEventsByDescendingOrder.length - 1
+        ? allEventsByDescendingOrder[currentEventIndex + 1]
+        : null,
+  }
+}
 
 export const getEventTypeString = (
   eventType: 'IN_PERSON' | 'VIRTUAL' | 'HYBRID',

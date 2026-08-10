@@ -16,7 +16,7 @@ export const event: EventDefinition = {
   branding: {
     background: {
       image: background,
-      credit: 'European Union/Melissa Hobbs',
+      credit: 'Logitech',
       altText: 'Participants at UNIHACK 2025 Melbourne Hub'
     }
   },

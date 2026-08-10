@@ -27,6 +27,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'FIRST',
       devpostUrl: 'https://devpost.com/software/resolvr',
+      university: 'Monash'
     },
     {
       name: 'Second Place',
@@ -34,6 +35,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'SECOND',
       devpostUrl: 'https://devpost.com/software/seatme',
+      university: 'Monash/UniMelb'
     },
     {
       name: 'Third Place',
@@ -41,6 +43,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'THIRD',
       devpostUrl: 'https://devpost.com/software/searchable',
+      university: 'Monash'
     },
     {
       name: 'Complex Challenge Award',
@@ -48,6 +51,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Optiver',
       devpostUrl: 'https://devpost.com/software/resolvr',
+      university: 'Monash'
     },
     {
       name: '#Beautiful Award',
@@ -55,6 +59,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Xero',
       devpostUrl: 'https://devpost.com/software/resolvr',
+      university: 'Monash'
     },
     {
       name: 'Complex Challenge Award',
@@ -62,6 +67,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Optiver',
       devpostUrl: 'https://devpost.com/software/searchable',
+      university: 'Monash'
     },
     {
       name: 'Best Mobile Experience',
@@ -69,6 +75,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'IttyBittyApps',
       devpostUrl: 'https://devpost.com/software/crimefeed',
+      university: 'Monash'
     },
     {
       name: 'Best Use of Accenture API',
@@ -76,6 +83,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Accenture',
       devpostUrl: 'https://devpost.com/software/sweet-dreams-are-made-of-memes',
+      university: 'UniMelb'
     },
     {
       name: 'Best Industrial IOT Hack',
@@ -83,18 +91,21 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Bosch',
       devpostUrl: 'https://devpost.com/software/waitless-gknzs7',
+      university: 'Monash'
     },
     {
       name: 'Best Design',
       winner: 'Crimefeed',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/crimefeed',
+      university: 'Monash'
     },
     {
       name: 'Most Creative Idea',
       winner: 'Pyrome',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/unihack2017',
+      university: 'Monash'
     },
   ],
 }

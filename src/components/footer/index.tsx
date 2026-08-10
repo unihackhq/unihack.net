@@ -28,6 +28,11 @@ export const Footer = () => (
                 </Link>
               </li>
               <li>
+                <Link href="/events" prefetch={false}>
+                  Past Winners
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" prefetch={false}>
                   Privacy Policy
                 </Link>

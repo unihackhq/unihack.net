@@ -1,10 +1,7 @@
 @reference "#styles/core.css";
 
 .eventVideo {
-  padding: 0;
-
-  > div {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-  }
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background: black;
 }

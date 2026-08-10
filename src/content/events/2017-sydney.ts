@@ -23,6 +23,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'FIRST',
       devpostUrl: 'https://devpost.com/software/trusty-tx7uwk',
+      university: 'UTS/Macquarie'
     },
     {
       name: 'Second Place',
@@ -30,6 +31,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'SECOND',
       devpostUrl: 'https://devpost.com/software/charitysync',
+      university: 'UNSW/Macquarie/UTS'
     },
     {
       name: 'Third Place',
@@ -37,6 +39,7 @@ export const event: EventDefinition = {
       type: 'MAIN',
       place: 'THIRD',
       devpostUrl: 'https://devpost.com/software/parzi',
+      university: 'UNSW'
     },
     {
       name: 'Best Use of Accenture API',
@@ -44,6 +47,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Accenture',
       devpostUrl: 'https://devpost.com/software/spidr',
+      university: 'USYD'
     },
     {
       name: 'Most Innovative Solution on Azure',
@@ -51,6 +55,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Microsoft',
       devpostUrl: 'https://devpost.com/software/mootpoint-rbfdha',
+      university: 'USYD'
     },
     {
       name: 'Thoughtworks Prize for Team Collaboration',
@@ -58,6 +63,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Thoughtworks',
       devpostUrl: 'https://devpost.com/software/shrec-yknhxc',
+      university: 'USYD'
     },
     {
       name: 'Most Elegant Algorithm',
@@ -65,6 +71,7 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'IMC',
       devpostUrl: 'https://devpost.com/software/shrec-yknhxc',
+      university: 'USYD'
     },
     {
       name: 'Social and Financial Wellbeing Prize',
@@ -72,24 +79,28 @@ export const event: EventDefinition = {
       type: 'SPONSOR',
       sponsor: 'Commonwealth Bank',
       devpostUrl: 'https://devpost.com/software/trusty-tx7uwk',
+      university: 'UTS/Macquarie'
     },
     {
       name: 'Best Design',
       winner: 'SondR',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/sondr',
+      university: 'USYD'
     },
     {
       name: 'Most Explosive prize',
       winner: 'Spidr',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/spidr',
+      university: 'USYD'
     },
     {
       name: 'Global Citizen Prize',
       winner: 'CharitySync',
       type: 'CATEGORY',
       devpostUrl: 'https://devpost.com/software/charitysync',
+      university: 'UNSW/Macquarie/UTS'
     },
   ],
 }

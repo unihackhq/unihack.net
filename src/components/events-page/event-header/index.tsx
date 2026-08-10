@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 import styles from './styles.module.css'
-import { EventBrandingBackground } from '@/types/event'
+import { EventBrandingBackground, EventDefinition } from '@/types/event'
+import { formatDates, getEventTypeString } from '@/app/events/utils'
+import { ScrollFadeArrowDown } from '@/components/events-page/event-header/scroll-fade-arrow-down'
 
 export const DefaultEventHeader = ({ eventName }: { eventName: string }) => {
     return (
@@ -21,7 +23,7 @@ export const DefaultEventHeader = ({ eventName }: { eventName: string }) => {
     )
 }
 
-export const BrandedEventHeader = ({ eventName, background }: { eventName: string, background: EventBrandingBackground }) => {
+export const BrandedEventHeader = ({ event, background }: { event: EventDefinition, background: EventBrandingBackground }) => {
   return (
     <header className={styles.branded}>
       <div className={styles.overlay}>
@@ -34,16 +36,24 @@ export const BrandedEventHeader = ({ eventName, background }: { eventName: strin
         />
       </div>
       <div className={styles.content}>
-                  <ul className={styles.breadcrumbs}>
-            <li>
-              <Link href="/events" prefetch={false}>
-                <FontAwesomeIcon icon={faArrowLeft} />
-                Past Events
-              </Link>
-            </li>
-          </ul>
-        <h1>{eventName}</h1>
+        <span></span>
+          <h1>{event.name}</h1>
+        <div>
+                    <ul className={styles.eventDetailsList}>
+          <li>
+            <span>Date</span> {formatDates(event.startDate, event.endDate)}
+          </li>
+          <li>
+            <span>Location</span> {event.location}
+          </li>
+          <li>
+            <span>Type</span> {getEventTypeString(event.type)}
+          </li>
+        </ul>
+          <ScrollFadeArrowDown className={styles.arrowDown} />
+      </div>
       </div>
     </header>
+
   )
 }

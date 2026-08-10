@@ -1,5 +1,6 @@
 import { Button } from '@/components/button'
 import styles from './style.module.css'
+import { JudgingCriteria } from '../prizes-section/judging-criteria'
 
 export const HomeWelcomeSection = () => {
   return (
@@ -47,6 +48,7 @@ export const HomeWelcomeSection = () => {
           <Button href="/rules" text="Read Rules" />
         </div>
       </div>
+      <JudgingCriteria />
     </section>
   )
 }

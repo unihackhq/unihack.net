@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import styles from './styles.module.css'
 import { allEventsByDescendingOrder, formatDates } from './utils'
-import { Button } from '@/components/button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export const metadata: Metadata = {
   title: 'Past Events',
@@ -18,21 +19,16 @@ export default async function PastEventsPage() {
       </header>
       <div className={styles.grid}>
         {allEventsByDescendingOrder.map((event, index) => (
-          <div className={styles.card} key={index}>
+          <a className={styles.card} key={index} href={`/events/${event.id ?? event.year}`}>
             <div className={styles.content}>
               <h2>{event.name}</h2>
-            </div>
-            <div className={styles.links}>
               {event.location && <p>{event.location}</p>}
               <p className={styles.date}>
                 {formatDates(event.startDate, event.endDate)}
               </p>
-              <Button
-                text="View Winners"
-                href={`/events/${event.id ?? event.year}`}
-              />
             </div>
-          </div>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </a>
         ))}
       </div>
     </div>

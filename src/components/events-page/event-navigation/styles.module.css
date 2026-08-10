@@ -1,0 +1,84 @@
+@reference "#styles/core.css";
+
+.eventPager {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+
+  @variant md {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @variant lg {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.eventPagerLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  height: 72px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--palette-white);
+  padding: 16px;
+  text-decoration: none;
+  transition: border-color 120ms linear, background-color 120ms linear;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover {
+    border-color: var(--palette-pink);
+    background: rgba(0, 0, 0, 0.25);
+
+    svg {
+        color: var(--palette-pink);
+    }
+  }
+
+  strong {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.eventPagerLabel {
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.alignRight {
+    flex-direction: row-reverse;
+  @variant md {
+    text-align: right;
+  }
+}
+
+.alignCenter {
+    text-align: center;
+    display: none;
+    div {
+        flex: 1;
+    }
+    @variant lg {
+        display: flex;
+    }
+}
+
+.eventPagerSpacer {
+  display: none;
+
+  @variant md {
+    display: block;
+  }
+}

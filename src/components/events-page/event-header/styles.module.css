@@ -31,9 +31,13 @@ ul.breadcrumbs {
 }
 
 .branded {
-  height: max(75vh, 400px);
   position: relative;
-  padding: 102px 0 0;
+  padding: 400px 0 0;
+
+  @variant lg {
+    padding: 100px 0 0;
+    height: 100vh;
+  }
 
   .overlay {
     position: absolute;
@@ -44,6 +48,11 @@ ul.breadcrumbs {
     z-index: -999;
     width: 100%;
     background: black;
+    height: 600px;
+
+    @variant lg {
+      height: 100vh;
+    }
 
     img {
       object-fit: cover;
@@ -62,39 +71,96 @@ ul.breadcrumbs {
     img.img-center {
         object-position: center;
     }
+
+     &:before {
+      content: "";
+      background: linear-gradient(0, var(--background), transparent);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
   }
 
-  &:before {
-    content: "";
-    background: linear-gradient(0, var(--background), transparent);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
+ 
 
   .content {
     @apply container;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    text-align: center;
     height: 100%;
     position: relative;
-    text-align: left;
     z-index: 2;
+
+    @variant md {
+      justify-content: space-between;
+    }
+
+    .arrowDown {
+      display: block;
+      margin: 24px auto;
+      width: 16px;
+      height: 16px;
+      transition: opacity 120ms linear;
+      will-change: opacity;
+
+      @variant lg {
+        margin: 48px auto;
+        width: 36px;
+        height: 36px;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    ul.eventDetailsList {
+      display: flex;
+      margin-top: 24px;
+
+      li {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        color: white;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0;
+
+        @variant lg {
+          font-size: 16px;
+        }
+      }
+
+      span {
+        font-size: 11px;
+        line-height: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 4px;
+        @variant lg {
+          font-size: 13px;
+          line-height: 24px;
+        }
+      }
+    }
 
     h1 {
       @apply text-4xl;
       font-weight: 700;
       letter-spacing: -1px;
-        margin: 0 0 48px;
+      margin: 0;
       color: white;
 
       @variant lg {
-        @apply text-6xl;
+        @apply text-9xl;
         letter-spacing: -4px;
       }
     }
