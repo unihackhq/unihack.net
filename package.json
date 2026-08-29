@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome lint",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "check:styles": "node scripts/check-styles-filenames.js",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "engines": {
     "node": "22.x"

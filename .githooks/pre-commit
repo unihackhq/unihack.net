@@ -1,0 +1,22 @@
+#!/bin/sh
+# Pre-commit hook: run Biome lint and styles filename checker
+# This script is tracked in the repo; package.json prepare sets core.hooksPath to .githooks
+
+echo "Running Biome lint..."
+# run via yarn so PnP context is correct
+yarn lint --silent
+lint_status=$?
+if [ $lint_status -ne 0 ]; then
+  echo "\nBiome lint failed. Aborting commit."
+  exit $lint_status
+fi
+
+echo "Checking styles filenames..."
+node scripts/check-styles-filenames.js
+styles_status=$?
+if [ $styles_status -ne 0 ]; then
+  echo "\nStyles filename check failed. Aborting commit."
+  exit $styles_status
+fi
+
+exit 0
