@@ -4,7 +4,7 @@ import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 interface Props {
   id: string

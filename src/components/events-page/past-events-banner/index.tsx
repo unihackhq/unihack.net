@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button } from '../../button'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 import { faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 export const PastEventsBanner = () => {

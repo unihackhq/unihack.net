@@ -1,7 +1,7 @@
 'use client'
 import { TwitchPlayer } from 'react-twitch-embed'
 import { HeroButton } from '@/components/hero-button'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 export const VideoHero = () => {
   return (

@@ -7,7 +7,7 @@ import monash from '@/assets/logos/monash-w.svg'
 import twilio from '@/assets/logos/twilio-w.svg'
 import xero from '@/assets/logos/xero-w.svg'
 import { SponsorGrid } from '@/components/sponsor-page/sponsor-grid'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 const sponsorItems = [
   {

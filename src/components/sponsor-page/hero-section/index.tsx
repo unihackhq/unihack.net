@@ -2,7 +2,7 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import bg from '@/app/sponsor/sponsor-unihack-bg.jpg'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 export const SponsorHeroSection = () => {
   return (

@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react'
 import { mergeClassNames } from '@/utils/classnames'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 interface PageContentProps
   extends PropsWithChildren<React.HTMLAttributes<HTMLDivElement>> {}

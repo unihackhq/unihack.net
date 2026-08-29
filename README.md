@@ -7,7 +7,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the source code that powers the [unihack.net](unihack.net) website. This
-website is running on the [Next.js][next.js] framework, using both [TypeScript][typescript] and [SASS][sass].
+website is running on the [Next.js][next.js] framework, using both [TypeScript][typescript].
 
 ## Getting Started
 
@@ -67,13 +67,14 @@ You can read more about production mode [here](https://nextjs.org/docs/api-refer
 
 ### Folder Structure
 
-- `components`: Primitive React components used on our website
-- `content`: Content and JSON blobs (e.g. judge biographies, event information)
-- `layouts`: Core layouts
-- `pages`: Next.js pages
+- `src/app`: Website code, uses App Router.
+- `src/assets`: Images and media used by components.
+- `src/components`: Primitive React components used on our website
+- `src/content`: Content and JSON blobs (e.g. judge biographies, event information)
+- `src/styles`: Global styles and SASS stylesheet variables
+- `src/types`: Typescript type files
+- `src/utils`: Utility files
 - `public`: Next.js location to serve static files (e.g. images, robots.txt)
-- `sections`: Page sections - takes in content and components
-- `styles`: Global styles and SASS stylesheet variables
 
 ### Image Component
 
@@ -111,14 +112,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-## Third Party Libraries
-
-Our emojis come from Twitter's [Twemoji][twemoji] library. \n
-Copyright 2020 Twitter, Inc and other contributors. \n
-Code licensed under the MIT License: http://opensource.org/licenses/MIT \n
-Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/
-
 [next.js]: https://nextjs.org/docs/
 [typescript]: https://www.typescriptlang.org/
-[sass]: https://sass-lang.com/
-[twemoji]: https://twemoji.twitter.com/

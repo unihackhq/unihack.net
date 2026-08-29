@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { PageContent } from '@/components/page-content'
 
 import bg from './about-unihack-bg.jpg'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 import type { Metadata } from 'next'
 import { PastEventsBanner } from '@/components/events-page/past-events-banner'
 

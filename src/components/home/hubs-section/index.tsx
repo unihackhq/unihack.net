@@ -5,7 +5,7 @@ import devsocLogo from '@/assets/logos/devsoc-logo.svg'
 import monashCoding from '@/assets/logos/mac-logo.svg'
 import witLogo from '@/assets/logos/wit-logo.png'
 import { GenericCard } from '@/components/generic-card'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 const Hubs = [
   {

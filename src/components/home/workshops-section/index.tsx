@@ -3,7 +3,7 @@ import Image, { type StaticImageData } from 'next/image'
 import elastic from '@/assets/logos/elastic-w.svg'
 import quantium from '@/assets/logos/quantium-w.svg'
 import { GenericCard } from '@/components/generic-card'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 const cx = classNames.bind(styles)
 

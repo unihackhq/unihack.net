@@ -7,7 +7,7 @@ import { SponsorReasonsWhy } from '../../components/sponsor-page/reasons-why'
 import type { Metadata } from 'next'
 import { BlockQuote } from '@/components/quote'
 import elastic from '@/assets/logos/elastic-w.svg'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 export const metadata: Metadata = {
   title: 'Sponsor UNIHACK 2027',

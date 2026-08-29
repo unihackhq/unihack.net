@@ -1,6 +1,6 @@
 'use client'
 import { Button } from '@/components/button'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 interface HubEventScheduleProps {
   friday: {

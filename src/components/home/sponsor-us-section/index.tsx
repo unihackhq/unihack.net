@@ -11,7 +11,7 @@ import twilio from '@/assets/logos/twilio-w.svg'
 
 import { Button } from '@/components/button'
 import { SponsorGrid } from '@/components/sponsor-page/sponsor-grid'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 const cx = classNames.bind(styles)
 

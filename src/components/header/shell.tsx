@@ -2,7 +2,7 @@
 
 import type React from 'react'
 import { type PropsWithChildren, useEffect, useRef, useState } from 'react'
-import styles from './core.module.css'
+import styles from './styles.module.css'
 
 type ScrollDirection = 'up' | 'down'
 

@@ -7,7 +7,7 @@ import elasticLogo from '@/assets/logos/elastic-w.svg'
 import euLogo from '@/assets/logos/eu-logo-horiz.svg'
 import quantiumLogo from '@/assets/logos/quantium-w.svg'
 import { JudgingCriteria } from './judging-criteria'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 interface MainPrize {
   place: string

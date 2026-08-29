@@ -1,5 +1,5 @@
 import { Button } from '@/components/button'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 import { JudgingCriteria } from '../prizes-section/judging-criteria'
 
 export const HomeWelcomeSection = () => {

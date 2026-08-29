@@ -1,7 +1,7 @@
 'use client'
 import { TZDate } from '@date-fns/tz'
 import { schedule } from './schedule'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 import type { EventScheduleItem } from './types'
 
 interface EventScheduleState {

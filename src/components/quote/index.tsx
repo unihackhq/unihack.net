@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import type { ComponentPropsWithoutRef } from 'react'
 import { mergeClassNames } from '@/utils/classnames'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 type QuoteLink = {
   href: string

@@ -1,7 +1,7 @@
 import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button } from '../button'
-import styles from './style.module.css'
+import styles from './styles.module.css'
 
 export const DiscordBanner = () => {
   return (
